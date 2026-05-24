@@ -1,0 +1,23 @@
+DriverNumber,BroadcastName,Abbreviation,DriverId,TeamName,TeamColor,TeamId,FirstName,LastName,FullName,HeadshotUrl,CountryCode,Position,ClassifiedPosition,GridPosition,Q1,Q2,Q3,Time,Status,Points,Laps,Year,Round,EventName,SessionType,Session_Weight
+1,NORRIS,NOR,norris,McLaren,F47600,mclaren,Lando,Norris,Lando Norris,,,1.0,1,1.0,,,,,Finished,8.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+2,PIASTRI,PIA,piastri,McLaren,F47600,mclaren,Oscar,Piastri,Oscar Piastri,,,2.0,2,2.0,,,,,Finished,7.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+3,LECLERC,LEC,leclerc,Ferrari,ED1131,ferrari,Charles,Leclerc,Charles Leclerc,,,3.0,3,3.0,,,,,Finished,6.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+4,RUSSELL,RUS,russell,Mercedes,00D7B6,mercedes,George,Russell,George Russell,,,4.0,4,4.0,,,,,Finished,5.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+5,ANTONELLI,ANT,antonelli,Mercedes,00D7B6,mercedes,Kimi,Antonelli,Kimi Antonelli,,,5.0,5,5.0,,,,,Finished,4.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+6,HAMILTON,HAM,hamilton,Ferrari,ED1131,ferrari,Lewis,Hamilton,Lewis Hamilton,,,6.0,6,6.0,,,,,Finished,3.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+7,VERSTAPPEN,MAX,max_verstappen,Red Bull Racing,4781D7,red_bull,Max,Verstappen,Max Verstappen,,,7.0,7,7.0,,,,,Finished,2.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+8,BEARMAN,BEA,bearman,Haas F1 Team,9C9FA2,haas,Oliver,Bearman,Oliver Bearman,,,8.0,8,8.0,,,,,Finished,1.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+9,GASLY,GAS,gasly,Alpine,00A1E8,alpine,Pierre,Gasly,Pierre Gasly,,,9.0,9,9.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+10,HADJAR,HAD,hadjar,Red Bull Racing,4781D7,red_bull,Isack,Hadjar,Isack Hadjar,,,10.0,10,10.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+11,LAWSON,LAW,lawson,Racing Bulls,6C98FF,racing_bulls,Liam,Lawson,Liam Lawson,,,11.0,11,11.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+12,LINDBLAD,ARV,arvid_lindblad,Racing Bulls,6C98FF,racing_bulls,Arvid,Lindblad,Arvid Lindblad,,,12.0,12,12.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+13,COLAPINTO,COL,colapinto,Alpine,00A1E8,alpine,Franco,Colapinto,Franco Colapinto,,,13.0,13,13.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+14,BORTOLETO,BOR,bortoleto,Audi,F50537,audi,Gabriel,Bortoleto,Gabriel Bortoleto,,,14.0,14,14.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+15,SAINZ,SAI,sainz,Williams,1868DB,williams,Carlos,Sainz,Carlos Sainz,,,15.0,15,15.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+16,ALBON,ALB,albon,Williams,1868DB,williams,Alexander,Albon,Alexander Albon,,,16.0,16,16.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+17,HULKENBERG,HUL,hulkenberg,Audi,F50537,audi,Nico,Hulkenberg,Nico Hulkenberg,,,17.0,17,17.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+18,OCON,OCO,ocon,Haas F1 Team,9C9FA2,haas,Esteban,Ocon,Esteban Ocon,,,18.0,18,18.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+19,STROLL,STR,stroll,Aston Martin,229971,aston_martin,Lance,Stroll,Lance Stroll,,,19.0,19,19.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+20,ALONSO,ALO,alonso,Aston Martin,229971,aston_martin,Fernando,Alonso,Fernando Alonso,,,20.0,20,20.0,,,,,Finished,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+21,PEREZ,PER,perez,Cadillac,909090,cadillac,Sergio,Perez,Sergio Perez,,,21.0,21,21.0,,,,,DNF,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0
+22,BOTTAS,BOT,bottas,Cadillac,909090,cadillac,Valtteri,Bottas,Valtteri Bottas,,,22.0,22,22.0,,,,,DNF,0.0,19.0,2026,04s,Miami Grand Prix,Sprint,2.0

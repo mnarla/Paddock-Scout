@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+   No Podium       1.00      0.95      0.98       152
+      Podium       0.77      1.00      0.87        24
+
+    accuracy                           0.96       176
+   macro avg       0.89      0.98      0.92       176
+weighted avg       0.97      0.96      0.96       176
+
+
