@@ -7,7 +7,6 @@ I designed this project to explore how machine learning, simulation modeling, an
 ---
 
 > [!NOTE]
-> ⚠️ **Project Status: Work in Progress**
 > This project is currently a work in progress! I am still actively adding more features, refining the model, and making sure everything works perfectly under all race weekend scenarios.
 
 ---
@@ -21,9 +20,6 @@ I designed this project to explore how machine learning, simulation modeling, an
 *   **Special Physics & Recovery Modifiers**:
     *   *Overtake Index*: Evaluates midfield and front-runner recovery potential when fast cars start out of position.
     *   *Car Rank Alpha*: Grants the #1 ranked team a +15% recovery probability boost if starting outside the Top 5.
-    *   *Champion's Aura*: Enforces a non-linear decay floor, ensuring championship leaders have a minimum 70% podium probability floor when starting in the Top 10.
-*   **Interactive Web Dashboard**: A gorgeous, dark-themed dashboard built with Streamlit offering two views:
-    *   🔴 **Live Prediction**: Run Monte Carlo simulations, adjust a driver's grid position or form override to test "what-if" scenarios, and view "How the AI Decided" feature contribution breakdowns.
     *   📁 **Race Archive**: Explores historical 2026 race weekends, including Q1/Q2/Q3 qualifying times, practice pace averages, and interactive podium cards.
 
 ---
