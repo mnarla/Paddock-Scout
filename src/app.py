@@ -22,7 +22,7 @@ from utils import safe_encode, FEATURE_LABELS, standings_rank, normalise_color, 
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_pace, podium_from_results
 
 # ── Page config ───────────────────────────────────────────────────────────────
-st.set_page_config(page_title="🏎️ F1 Podium Predictor", page_icon="🏁",
+st.set_page_config(page_title="🏎️ Paddock Scout", page_icon="🏁",
                    layout="wide", initial_sidebar_state="expanded")
 
 st.markdown("""<style>
@@ -249,7 +249,7 @@ else:
     momentum_series, practice_pace, quali_dom, sprint_finish = load_weekend_momentum(
         year, rnd_num, is_sprint)
 
-    st.title("🏎️ F1 AI Podium Predictor — 2026 Season")
+    st.title("🏎️ Paddock Scout — 2026 Season")
     st.caption(f"Live-First · RF v6 · Overtake_Index + Standings_Floor · "
                f"Weekend Momentum (Rd {rnd_num})")
 
