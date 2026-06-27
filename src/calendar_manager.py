@@ -63,13 +63,13 @@ SCHEDULE_2026: Dict[str, Dict[str, Any]] = {
     "Monaco Grand Prix": {
         "date":       datetime(2026, 6, 7),
         "round":      6,
-        "status":     "Scheduled",
+        "status":     "Completed",
         "track_type": "Street",
     },
     "Barcelona Grand Prix": {
         "date":       datetime(2026, 6, 14),
         "round":      7,
-        "status":     "Scheduled",
+        "status":     "Completed",
         "track_type": "Permanent",
     },
     "Austrian Grand Prix": {

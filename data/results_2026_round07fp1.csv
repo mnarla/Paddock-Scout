@@ -1,0 +1,23 @@
+DriverNumber,BroadcastName,Abbreviation,DriverId,TeamName,TeamColor,TeamId,FirstName,LastName,FullName,HeadshotUrl,CountryCode,Position,ClassifiedPosition,GridPosition,Q1,Q2,Q3,Time,Status,Points,Laps,Year,Round,EventName,SessionType,Session_Weight
+3,M VERSTAPPEN,VER,max_verstappen,,,red_bull,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+5,G BORTOLETO,BOR,bortoleto,,,audi,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+10,P GASLY,GAS,gasly,,,alpine,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+14,F ALONSO,ALO,alonso,,,aston_martin,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+16,C LECLERC,LEC,leclerc,,,ferrari,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+18,L STROLL,STR,stroll,,,aston_martin,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+25,C HERTA,HER,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+30,L LAWSON,LAW,lawson,,,rb,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+31,E OCON,OCO,ocon,,,haas,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+36,A IWASA,IWA,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+38,D BEGANOVIC,BEG,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+41,A LINDBLAD,LIN,arvid_lindblad,,,rb,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+43,F COLAPINTO,COL,colapinto,,,alpine,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+46,L BROWNING,BRO,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+55,C SAINZ,SAI,sainz,,,williams,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+63,G RUSSELL,RUS,russell,,,mercedes,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+67,L FORNAROLI,FOR,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+72,F VESTI,VES,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+77,V BOTTAS,BOT,bottas,,,cadillac,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+81,O PIASTRI,PIA,piastri,,,mclaren,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+87,O BEARMAN,BEA,bearman,,,haas,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0
+97,P ARON,ARO,nan,,,nan,,,None None,,,,,,,,,,,,,2026,7,Barcelona Grand Prix,FP1,1.0

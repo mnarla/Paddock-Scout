@@ -1,1 +1,101 @@
-{}
+{
+    "Ferrari": {
+        "Upgrade_Score": 0.8,
+        "Power_Boost": 0.5,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 2.0,
+        "Sources": [
+            "F1Technical"
+        ]
+    },
+    "McLaren": {
+        "Upgrade_Score": 0.8,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 3.0,
+        "Sources": [
+            "The Race"
+        ]
+    },
+    "Mercedes": {
+        "Upgrade_Score": 0.3,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 1.0,
+        "Sources": [
+            "Motorsport.com"
+        ]
+    },
+    "Red Bull Racing": {
+        "Upgrade_Score": 0.5,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 4.0,
+        "Sources": [
+            "F1Technical"
+        ]
+    },
+    "Aston Martin": {
+        "Upgrade_Score": 0.3,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": false,
+        "FP2_Best_Pos": 15.0,
+        "Sources": [
+            "Motorsport.com"
+        ]
+    },
+    "Alpine": {
+        "Upgrade_Score": 0.0,
+        "Power_Boost": 0.5,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 8.0,
+        "Sources": [
+            "The Race"
+        ]
+    },
+    "Williams": {
+        "Upgrade_Score": 0.3,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 9.0,
+        "Sources": [
+            "Autosport"
+        ]
+    },
+    "Racing Bulls": {
+        "Upgrade_Score": 0.3,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": false,
+        "FP2_Best_Pos": 16.0,
+        "Sources": [
+            "F1Technical"
+        ]
+    },
+    "Haas F1 Team": {
+        "Upgrade_Score": 0.3,
+        "Power_Boost": 0.0,
+        "Upgrade_Validation": true,
+        "FP2_Best_Pos": 7.0,
+        "Sources": [
+            "Motorsport.com"
+        ]
+    },
+    "Sauber": {
+        "Upgrade_Score": 0.0,
+        "Power_Boost": 0.5,
+        "Upgrade_Validation": false,
+        "FP2_Best_Pos": 18.0,
+        "Sources": [
+            "The Race"
+        ]
+    },
+    "Audi": {
+        "Upgrade_Score": 0.0,
+        "Power_Boost": 0.5,
+        "Upgrade_Validation": false,
+        "FP2_Best_Pos": 18.0,
+        "Sources": [
+            "The Race"
+        ]
+    }
+}

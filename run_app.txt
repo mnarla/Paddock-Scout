@@ -1,0 +1,13 @@
+# Terminal commands to run the Paddock Scout application (React + Python Backend).
+
+# -------------------------------------------------------------
+# STEP 1: Run the Python API Backend (Terminal 1)
+# -------------------------------------------------------------
+source venv/bin/activate
+python3 src/api_server.py
+
+# -------------------------------------------------------------
+# STEP 2: Run the React Frontend (Terminal 2)
+# -------------------------------------------------------------
+cd frontend
+npm run dev

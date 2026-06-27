@@ -70,6 +70,8 @@ def load_practice_pace(year: int, rnd: int) -> pd.DataFrame:
     if not frames:
         return pd.DataFrame()
     combined = pd.concat(frames, ignore_index=True)
+    if combined["Position"].isna().all():
+        return pd.DataFrame()
     pace = (
         combined.groupby(["FullName", "TeamName"])["Position"]
         .mean()
