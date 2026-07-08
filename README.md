@@ -80,12 +80,30 @@ Run the training pipeline to fit the Random Forest model, serialize the persiste
 python src/train_model.py
 ```
 
-### 6. Start the Web Dashboard
+### 6. Start the Application
 
-Launch the Streamlit web server:
+Paddock Scout uses a FastAPI backend and a React frontend. You will need two terminal windows open:
 
+**Terminal 1: Start the API Backend**
 ```bash
-streamlit run src/app.py
+# Make sure your virtual environment is active
+source venv/bin/activate
+
+# Start the server
+python src/api_server.py
 ```
 
-Open your browser and navigate to **http://localhost:8501** to start predicting podium finishes!
+**Terminal 2: Start the React Frontend**
+```bash
+# Navigate to the frontend directory
+cd frontend
+
+# Install frontend dependencies (if running for the first time)
+npm install
+
+# Start the Vite development server
+npm run dev
+```
+
+Open your browser and navigate to the local address output by Vite (usually **http://localhost:5173**) to start predicting podium finishes!
+
