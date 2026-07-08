@@ -81,7 +81,7 @@ SCHEDULE_2026: Dict[str, Dict[str, Any]] = {
     "British Grand Prix": {
         "date":       datetime(2026, 7, 5),
         "round":      9,
-        "status":     "Scheduled",
+        "status":     "Completed",
         "track_type": "Permanent",
     },
     "Belgian Grand Prix": {
