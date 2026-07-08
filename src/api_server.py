@@ -3,6 +3,7 @@ import sys
 import glob
 import json
 import logging
+import threading
 import numpy as np
 import pandas as pd
 from flask import Flask, jsonify, request
@@ -14,6 +15,7 @@ from simulator import run_simulation, load_assets, build_driver_field, _encode_d
 from utils import safe_encode, standings_rank, normalise_color, track_type, get_neutral_values
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_pace, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
+from data_loader import load_event
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 log = logging.getLogger(__name__)
@@ -22,6 +24,44 @@ app = Flask(__name__)
 CORS(app)
 
 DATA_DIR = "data"
+
+
+# ── Auto-ingest: download missing CSVs for completed races ─────────────────────
+def _ingest_race(race_name: str, round_num: int) -> None:
+    """Background thread target: download all sessions for a completed race."""
+    try:
+        log.info(f"[auto-ingest] Starting download for Round {round_num}: {race_name}")
+        load_event(2026, race_name, rnd=round_num, force=False)
+        log.info(f"[auto-ingest] ✅ Finished Round {round_num}: {race_name}")
+    except Exception as exc:
+        log.warning(f"[auto-ingest] ⚠️  Round {round_num} failed: {exc}")
+
+
+def auto_ingest_missing_data() -> None:
+    """
+    Scan all completed 2026 races and, for any whose main race CSV is absent,
+    spawn a background daemon thread to download it via FastF1.
+
+    This is called once at Flask startup so the server never blocks on ingestion.
+    """
+    past = get_past_races()
+    for race in past:
+        expected_csv = os.path.join(DATA_DIR, f"results_2026_round{race.round_num:02d}.csv")
+        if not os.path.exists(expected_csv):
+            log.info(f"[auto-ingest] Missing data for {race.name} (Rd {race.round_num}) — queuing download")
+            t = threading.Thread(
+                target=_ingest_race,
+                args=(race.name, race.round_num),
+                daemon=True,
+            )
+            t.start()
+        else:
+            log.debug(f"[auto-ingest] Rd {race.round_num:02d} {race.name}: data present, skipping")
+
+
+# Trigger auto-ingest once the Flask app context is available
+with app.app_context():
+    auto_ingest_missing_data()
 UPGRADE_TEAMS = {"McLaren", "Ferrari"}
 
 TEAM_NAME_TO_ID = {
