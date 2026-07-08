@@ -31,7 +31,7 @@ import fastf1
 import pandas as pd
 
 sys.path.insert(0, os.path.dirname(__file__))
-from calendar_manager import get_next_race_full, get_sprint_races, SCHEDULE_2026
+from calendar_manager import get_next_race_full, get_past_races, get_sprint_races, SCHEDULE_2026
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 log = logging.getLogger(__name__)
@@ -183,17 +183,48 @@ def load_current_weekend(force: bool = False) -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+def ingest_past_missing(force: bool = False) -> None:
+    """
+    Download telemetry for every completed race that is missing its race CSV.
+
+    This is the function called by the GitHub Actions cron job so that
+    new race data is fetched and committed automatically each Monday.
+    """
+    past = get_past_races()
+    if not past:
+        log.info("No completed races found yet this season.")
+        return
+
+    for race in past:
+        expected_csv = os.path.join(DATA_DIR, f"results_2026_round{race.round_num:02d}.csv")
+        if not os.path.exists(expected_csv) or force:
+            log.info(f"Missing data for Round {race.round_num} ({race.name}) — downloading …")
+            load_event(
+                year       = race.date.year,
+                event_name = race.name,
+                rnd        = race.round_num,
+                force      = force,
+            )
+        else:
+            log.info(f"Rd {race.round_num:02d} {race.name}: already present, skipping.")
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 def main() -> None:
     setup_environment()
     parser = argparse.ArgumentParser(description="F1 Live Data Loader")
     parser.add_argument("--current", action="store_true",
                         help="Only load the current race weekend (fast)")
+    parser.add_argument("--past-missing", action="store_true",
+                        help="Ingest any completed race that is missing its CSV (used by CI)")
     parser.add_argument("--force", action="store_true",
                         help="Re-download even if CSV already exists")
     args = parser.parse_args()
 
     if args.current:
         load_current_weekend(force=args.force)
+    elif args.past_missing:
+        ingest_past_missing(force=args.force)
     else:
         log.info("Loading all historical seasons …")
         for year in SEASONS:

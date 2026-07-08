@@ -1,0 +1,46 @@
+name: Auto F1 Calendar Ingestion
+
+on:
+  schedule:
+    # Run every Monday at 08:00 UTC (race is on Sunday, data is available by Monday)
+    - cron: '0 8 * * 1'
+  workflow_dispatch: # Also allows manual trigger from GitHub Actions UI
+
+jobs:
+  ingest:
+    name: Ingest Missing Race Data
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install pandas fastf1
+
+      - name: Run past-missing ingestion
+        # Scans completed races, downloads any that are missing a CSV from data/
+        run: |
+          PYTHONPATH=src python3 src/data_loader.py --past-missing
+
+      - name: Commit & push new data
+        run: |
+          git config --global user.name  "Paddock Scout Bot"
+          git config --global user.email "actions@github.com"
+          git add data/
+          # Only commit if any new files were staged
+          if git diff --staged --quiet; then
+            echo "No new race data to commit."
+          else
+            git commit -m "auto-ingest: new race telemetry"
+            git push
+          fi
