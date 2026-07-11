@@ -74,10 +74,10 @@ TEAM_NAME_TO_ID = {
     "Williams": "williams",
     "Haas F1 Team": "haas",
     "Aston Martin": "aston_martin",
-    "Audi": "sauber",
-    "Kick Sauber": "sauber",
-    "Sauber": "sauber",
-    "Cadillac": "sauber"
+    "Audi": "audi",
+    "Kick Sauber": "audi",
+    "Sauber": "audi",
+    "Cadillac": "cadillac"
 }
 
 DRIVER_INFO = {
