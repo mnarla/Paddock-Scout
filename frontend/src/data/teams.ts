@@ -8,7 +8,8 @@ export type TeamId =
   | "williams"
   | "haas"
   | "aston_martin"
-  | "sauber";
+  | "audi"
+  | "cadillac";
 
 export const TEAMS: Record<
   TeamId,
@@ -23,5 +24,6 @@ export const TEAMS: Record<
   rb:           { name: "Racing Bulls",    short: "RB",  color: "#6C98FF", carRank: 7 },
   alpine:       { name: "Alpine",          short: "ALP", color: "#00A1E8", carRank: 8 },
   haas:         { name: "Haas F1 Team",    short: "HAA", color: "#9C9FA2", carRank: 9 },
-  sauber:       { name: "Kick Sauber",     short: "SAU", color: "#01C00E", carRank: 10 },
+  audi:         { name: "Audi",            short: "AUD", color: "#F50537", carRank: 10 },
+  cadillac:     { name: "Cadillac",        short: "CAD", color: "#909090", carRank: 11 },
 };

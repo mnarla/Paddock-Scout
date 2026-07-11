@@ -33,8 +33,10 @@ export const DRIVERS_2026: Driver[] = [
   { id: "stroll",         number: 18, abbr: "STR", first: "Lance",     last: "Stroll",     team: "aston_martin", standingsRank: 16, seasonPoints: 14,  recentForm: 13.0, qualifyingPos: 17 },
   { id: "ocon",           number: 31, abbr: "OCO", first: "Esteban",   last: "Ocon",       team: "haas",         standingsRank: 17, seasonPoints: 9,   recentForm: 13.7, qualifyingPos: 18 },
   { id: "tsunoda",        number: 22, abbr: "TSU", first: "Yuki",      last: "Tsunoda",    team: "rb",           standingsRank: 18, seasonPoints: 7,   recentForm: 14.3, qualifyingPos: 11 },
-  { id: "hulkenberg",     number: 27, abbr: "HUL", first: "Nico",      last: "Hülkenberg", team: "sauber",       standingsRank: 19, seasonPoints: 3,   recentForm: 15.3, qualifyingPos: 19 },
-  { id: "bortoleto",      number: 5,  abbr: "BOR", first: "Gabriel",   last: "Bortoleto",  team: "sauber",       standingsRank: 20, seasonPoints: 1,   recentForm: 16.0, qualifyingPos: 20 },
+  { id: "hulkenberg",     number: 27, abbr: "HUL", first: "Nico",      last: "Hülkenberg", team: "audi",         standingsRank: 19, seasonPoints: 3,   recentForm: 15.3, qualifyingPos: 19 },
+  { id: "bortoleto",      number: 5,  abbr: "BOR", first: "Gabriel",   last: "Bortoleto",  team: "audi",         standingsRank: 20, seasonPoints: 1,   recentForm: 16.0, qualifyingPos: 20 },
+  { id: "perez",          number: 11, abbr: "PER", first: "Sergio",    last: "Perez",      team: "cadillac",     standingsRank: 21, seasonPoints: 0,   recentForm: 17.0, qualifyingPos: 21 },
+  { id: "bottas",         number: 77, abbr: "BOT", first: "Valtteri",  last: "Bottas",     team: "cadillac",     standingsRank: 22, seasonPoints: 0,   recentForm: 18.0, qualifyingPos: 22 },
 ];
 
 export function driverById(id: string): Driver {
