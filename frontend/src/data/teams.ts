@@ -14,8 +14,8 @@ export const TEAMS: Record<
   TeamId,
   { name: string; short: string; color: string; carRank: number }
 > = {
-  ferrari:      { name: "Ferrari",         short: "FER", color: "#ED1131", carRank: 1 },
-  mercedes:     { name: "Mercedes",        short: "MER", color: "#00D7B6", carRank: 2 },
+  ferrari:      { name: "Ferrari",         short: "FER", color: "#ED1131", carRank: 2 },
+  mercedes:     { name: "Mercedes",        short: "MER", color: "#00D7B6", carRank: 1 },
   red_bull:     { name: "Red Bull Racing", short: "RBR", color: "#4781D7", carRank: 3 },
   mclaren:      { name: "McLaren",         short: "MCL", color: "#F47600", carRank: 4 },
   williams:     { name: "Williams",        short: "WIL", color: "#1868DB", carRank: 5 },
