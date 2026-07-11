@@ -18,6 +18,7 @@ import {
   ARCHIVE_ROUNDS,
   type ArchiveDriver,
 } from "@/data/archive";
+import { API_BASE_URL } from "@/lib/config";
 
 export const Route = createFileRoute("/archive")({
   head: () => ({
@@ -50,7 +51,7 @@ function ArchivePage() {
   const [activeTab, setActiveTab] = useState("Race");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/archive-progression")
+    fetch(`${API_BASE_URL}/api/archive-progression`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
@@ -69,7 +70,7 @@ function ArchivePage() {
       return;
     }
     setIsFetchingData(true);
-    fetch(`http://127.0.0.1:8000/api/archive/${selectedRound}`)
+    fetch(`${API_BASE_URL}/api/archive/${selectedRound}`)
       .then((res) => res.json())
       .then((data) => {
         setSessionData(data);

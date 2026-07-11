@@ -5,6 +5,7 @@ import { NEXT_RACE, type RaceInfo } from "@/data/calendar2026";
 import { DRIVERS_2026, driverById, type Driver } from "@/data/drivers2026";
 import { predictDriver } from "@/lib/prediction";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
+import { API_BASE_URL } from "@/lib/config";
 
 import { LiveBanner } from "@/components/paddock/LiveBanner";
 import { WhatIfPanel } from "@/components/paddock/WhatIfPanel";
@@ -42,21 +43,21 @@ function PaddockScoutLive() {
   const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/drivers")
+    fetch(`${API_BASE_URL}/api/drivers`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.length > 0) setDrivers(data);
       })
       .catch((err) => console.error("Error fetching drivers:", err));
 
-    fetch("http://127.0.0.1:8000/api/next-race")
+    fetch(`${API_BASE_URL}/api/next-race`)
       .then((res) => res.json())
       .then((data) => {
         if (data) setRace(data);
       })
       .catch((err) => console.error("Error fetching next-race:", err));
 
-    fetch("http://127.0.0.1:8000/api/upgrades")
+    fetch(`${API_BASE_URL}/api/upgrades`)
       .then((res) => res.json())
       .then((data) => {
         if (data) setUpgrades(data);
@@ -106,7 +107,7 @@ function PaddockScoutLive() {
     });
     setBaseline(localBaseline);
 
-    fetch("http://127.0.0.1:8000/api/predict", {
+    fetch(`${API_BASE_URL}/api/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -131,7 +132,7 @@ function PaddockScoutLive() {
     setPrediction(localPred);
 
     const handler = setTimeout(() => {
-      fetch("http://127.0.0.1:8000/api/predict", {
+      fetch(`${API_BASE_URL}/api/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -156,7 +157,7 @@ function PaddockScoutLive() {
   // Update Monte Carlo simulations
   useEffect(() => {
     setIsSimulating(true);
-    fetch("http://127.0.0.1:8000/api/simulate", {
+    fetch(`${API_BASE_URL}/api/simulate`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
