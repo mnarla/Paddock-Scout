@@ -137,6 +137,14 @@ function ArchivePage() {
               <LineChart
                 data={chartData}
                 margin={{ top: 10, right: 20, bottom: 10, left: 0 }}
+                onClick={(state) => {
+                  if (state && state.activeTooltipIndex !== undefined) {
+                    const roundObj = rounds[state.activeTooltipIndex];
+                    if (roundObj) {
+                      setSelectedRound(roundObj.round);
+                    }
+                  }
+                }}
               >
                 <CartesianGrid stroke="hsl(var(--border))" strokeDasharray="3 3" vertical={false} />
                 <XAxis
