@@ -174,7 +174,7 @@ function PaddockScoutLive() {
 
       <main className="mx-auto max-w-[1600px] px-4 py-5 sm:px-6 sm:py-6">
         <div className="mb-4 rounded-md border border-hairline/60 bg-secondary/15 px-4 py-2.5 text-xs text-muted-foreground">
-          💡 <strong>Disclaimer:</strong> Predictions are based on season form when qualifying or practice data for the next race are not yet available.
+          <strong>Disclaimer:</strong> Predictions are based on season form when qualifying or practice data for the next race are not yet available.
         </div>
 
         {/* Top 3-column grid */}
