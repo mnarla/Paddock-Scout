@@ -633,6 +633,7 @@ def get_archive_progression():
 def run_data_loader_loop():
     time.sleep(5)  # Wait for server to boot fully
     while True:
+        # ── Step 1: Pull latest FastF1 session data ──────────────────────────
         try:
             log.info(" Automated background FastF1 sync starting...")
             loader_path = os.path.join(os.path.dirname(__file__), "data_loader.py")
@@ -640,7 +641,17 @@ def run_data_loader_loop():
             log.info(" Automated background FastF1 sync completed.")
         except Exception as e:
             log.error(f"Error in automated background data loader: {e}")
-        time.sleep(10800)  # Check every 3 hours
+
+        # ── Step 2: Scrape latest upgrade news ───────────────────────────────
+        try:
+            log.info(" Automated background news agent starting...")
+            news_path = os.path.join(os.path.dirname(__file__), "news_agent.py")
+            subprocess.run([sys.executable, news_path], check=True)
+            log.info(" Automated background news agent completed.")
+        except Exception as e:
+            log.error(f"Error in automated background news agent: {e}")
+
+        time.sleep(10800)  # Repeat every 3 hours
 
 if __name__ == "__main__":
     if os.environ.get("WERKZEUG_RUN_MAIN") == "true" or not app.debug:
