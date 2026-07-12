@@ -4,12 +4,16 @@ interface Props {
   prediction: Prediction;
 }
 
-export function FeatureContribution({ prediction }: Props) {
+export function FeatureContribution({ prediction, isSprint }: Props & { isSprint?: boolean }) {
+  const filteredContributions = prediction.contributions.filter(
+    (c) => isSprint || c.key !== "Sprint"
+  );
+
   const maxContrib = Math.max(
-    ...prediction.contributions.map((c) => c.weight * c.value),
+    ...filteredContributions.map((c) => c.weight * c.value),
     0.001
   );
-  const totalWeight = prediction.contributions.reduce((acc, c) => acc + c.weight, 0);
+  const totalWeight = filteredContributions.reduce((acc, c) => acc + c.weight, 0);
 
   return (
     <section className="rounded-lg border border-hairline bg-card">
@@ -28,7 +32,7 @@ export function FeatureContribution({ prediction }: Props) {
       </div>
 
       <div className="space-y-2.5 px-4 py-4">
-        {prediction.contributions.map((c) => {
+        {filteredContributions.map((c) => {
           const contrib = c.weight * c.value;
           const barPct = (contrib / maxContrib) * 100;
           return (
