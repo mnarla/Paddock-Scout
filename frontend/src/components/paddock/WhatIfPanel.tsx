@@ -109,7 +109,7 @@ export function WhatIfPanel({
 
         {/* Form slider */}
         <SliderRow
-          label="Blended Form"
+          label="Recent Form (Avg Finish)"
           value={form}
           min={1}
           max={20}
