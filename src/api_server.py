@@ -364,7 +364,12 @@ def predict():
         "Standings": 0.0,
         "CarRank": 0.0,
         "Track": 0.0,
-        "Sprint": 0.0
+        "RecentForm": 0.0,
+        "Practice": 0.0,
+        "Qualifying": 0.0,
+        "Momentum": 0.0,
+        "Upgrades": 0.0,
+        "Overtake": 0.0
     }
     
     for item in contribs:
@@ -378,8 +383,18 @@ def predict():
             mapped_contribs["CarRank"] += d
         elif k == "Circuit_Encoded":
             mapped_contribs["Track"] += d
-        else:
-            mapped_contribs["Sprint"] += d
+        elif k == "Recent_Form_3R":
+            mapped_contribs["RecentForm"] += d
+        elif k == "Practice_Pace":
+            mapped_contribs["Practice"] += d
+        elif k == "Qualifying_Dominance":
+            mapped_contribs["Qualifying"] += d
+        elif k == "Weekend_Momentum":
+            mapped_contribs["Momentum"] += d
+        elif k == "Upgrade_Impact":
+            mapped_contribs["Upgrades"] += d
+        elif k == "Overtake_Index":
+            mapped_contribs["Overtake"] += d
             
     # Normalize to a total sum of ~0.70 to fit the importance display scale nicely
     total_delta = sum(mapped_contribs.values())
@@ -393,7 +408,12 @@ def predict():
             "Standings": 0.181,
             "CarRank": 0.147,
             "Track": 0.082,
-            "Sprint": 0.065
+            "RecentForm": 0.08,
+            "Practice": 0.06,
+            "Qualifying": 0.08,
+            "Momentum": 0.05,
+            "Upgrades": 0.04,
+            "Overtake": 0.03
         }
         
     frontend_contribs = []

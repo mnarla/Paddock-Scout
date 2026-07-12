@@ -15,7 +15,12 @@ export const FEATURE_WEIGHTS = {
   Standings: 0.181,
   CarRank: 0.147,
   Track: 0.082,
-  Sprint: 0.065,
+  RecentForm: 0.080,
+  Practice: 0.060,
+  Qualifying: 0.080,
+  Momentum: 0.050,
+  Upgrades: 0.040,
+  Overtake: 0.030,
 } as const;
 
 export const FEATURE_LABELS: Record<keyof typeof FEATURE_WEIGHTS, string> = {
@@ -23,7 +28,12 @@ export const FEATURE_LABELS: Record<keyof typeof FEATURE_WEIGHTS, string> = {
   Standings: "Standings Rank",
   CarRank: "Car Rank",
   Track: "Track Type",
-  Sprint: "Sprint Weight",
+  RecentForm: "Recent Form",
+  Practice: "Practice Pace",
+  Qualifying: "Qualifying dominance",
+  Momentum: "Weekend Momentum",
+  Upgrades: "Vehicle Upgrades",
+  Overtake: "Overtake Index",
 };
 
 export interface PredictionInput {
