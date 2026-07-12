@@ -105,7 +105,6 @@ DRIVER_INFO = {
     "bearman": {"number": 87, "abbr": "BEA", "first": "Oliver", "last": "Bearman"},
     "stroll": {"number": 18, "abbr": "STR", "first": "Lance", "last": "Stroll"},
     "ocon": {"number": 31, "abbr": "OCO", "first": "Esteban", "last": "Ocon"},
-    "tsunoda": {"number": 22, "abbr": "TSU", "first": "Yuki", "last": "Tsunoda"},
     "hulkenberg": {"number": 27, "abbr": "HUL", "first": "Nico", "last": "Hülkenberg"},
     "bortoleto": {"number": 5, "abbr": "BOR", "first": "Gabriel", "last": "Bortoleto"},
     "perez": {"number": 11, "abbr": "PER", "first": "Sergio", "last": "Perez"},
