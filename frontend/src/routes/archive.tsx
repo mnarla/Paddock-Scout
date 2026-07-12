@@ -76,6 +76,11 @@ function ArchivePage() {
         setSessionData(data);
         setIsFetchingData(false);
         setActiveTab("Race"); // Reset to Race Results tab on change
+        
+        // Auto-scroll to the session data section so the user sees it loaded
+        setTimeout(() => {
+          document.getElementById('session-data-section')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
       })
       .catch((err) => {
         console.error("Error fetching session data:", err);
@@ -236,7 +241,7 @@ function ArchivePage() {
         </section>
 
         {selectedRound !== null && (
-          <section className="mt-4 rounded-md border border-hairline bg-card p-4 sm:p-5">
+          <section id="session-data-section" className="mt-4 rounded-md border border-hairline bg-card p-4 sm:p-5">
             <div className="mb-4 flex items-center justify-between border-b border-hairline pb-3">
               <div>
                 <h2 className="text-sm font-bold text-foreground uppercase tracking-tight">
@@ -257,7 +262,12 @@ function ArchivePage() {
             ) : sessionData ? (
               <div className="space-y-4">
                 <div className="flex flex-wrap gap-1.5 border-b border-hairline/65 pb-2">
-                  {["Race", "Qualifying", "Practice", ...(sessionData.sprint && sessionData.sprint.length > 0 ? ["Sprint"] : [])].map(tab => (
+                  {["Race", "Qualifying", 
+                    ...(sessionData.fp1 && sessionData.fp1.length > 0 ? ["FP1"] : []),
+                    ...(sessionData.fp2 && sessionData.fp2.length > 0 ? ["FP2"] : []),
+                    ...(sessionData.fp3 && sessionData.fp3.length > 0 ? ["FP3"] : []),
+                    ...(sessionData.sprint && sessionData.sprint.length > 0 ? ["Sprint"] : [])
+                  ].map(tab => (
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
@@ -267,7 +277,7 @@ function ArchivePage() {
                           : "text-muted-foreground hover:bg-secondary/40"
                       }`}
                     >
-                      {tab === "Race" ? "🏁 Race Results" : tab === "Qualifying" ? "⏱️ Qualifying Grid" : tab === "Practice" ? "📊 Practice Pace" : "⚡ Sprint Results"}
+                      {tab === "Race" ? "🏁 Race Results" : tab === "Qualifying" ? "⏱️ Qualifying Grid" : tab.startsWith("FP") ? `🔧 ${tab}` : "⚡ Sprint Results"}
                     </button>
                   ))}
                 </div>
@@ -342,27 +352,25 @@ function ArchivePage() {
                   </div>
                 )}
 
-                {activeTab === "Practice" && (
+                {["FP1", "FP2", "FP3"].includes(activeTab) && (
                   <div className="overflow-x-auto">
-                    {sessionData.practice.length === 0 ? (
-                      <p className="py-4 text-center text-xs text-muted-foreground">No practice pace telemetry available.</p>
+                    {(!sessionData[activeTab.toLowerCase()] || sessionData[activeTab.toLowerCase()].length === 0) ? (
+                      <p className="py-4 text-center text-xs text-muted-foreground">No telemetry available for {activeTab}.</p>
                     ) : (
                       <table className="w-full text-sm">
                         <thead>
                           <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                            <th className="px-2 py-2 text-left w-12">Rank</th>
+                            <th className="px-2 py-2 text-left w-12">Pos</th>
                             <th className="px-2 py-2 text-left">Driver</th>
                             <th className="px-2 py-2 text-left">Team</th>
-                            <th className="px-2 py-2 text-right">Practice Avg Position</th>
                           </tr>
                         </thead>
                         <tbody>
-                          {sessionData.practice.map((row: any, idx: number) => (
+                          {sessionData[activeTab.toLowerCase()].map((row: any) => (
                             <tr key={row.FullName} className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20">
-                              <td className="tabular px-2 py-2 font-bold">{idx + 1}</td>
+                              <td className="tabular px-2 py-2 font-bold">{row.Position || "–"}</td>
                               <td className="px-2 py-2 font-semibold">{row.FullName}</td>
                               <td className="px-2 py-2 text-xs text-muted-foreground">{row.TeamName}</td>
-                              <td className="tabular px-2 py-2 text-right font-semibold text-f1-green">{row["FP Avg Pos"]}</td>
                             </tr>
                           ))}
                         </tbody>

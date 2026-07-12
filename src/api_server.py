@@ -13,7 +13,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from calendar_manager import get_next_race_full, get_past_races, SCHEDULE_2026, get_sprint_races
 from simulator import run_simulation, load_assets, build_driver_field, _encode_driver
 from utils import safe_encode, standings_rank, normalise_color, track_type, get_neutral_values
-from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_pace, podium_from_results
+from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 from data_loader import load_event
 
@@ -510,7 +510,7 @@ def get_archive(round_num):
     race_df = load_race_results(yr, round_num)
     quali_df = load_qualifying(yr, round_num)
     sprint_df = load_sprint(yr, round_num)
-    fp_df = load_practice_pace(yr, round_num)
+    fp_results = load_practice_results(yr, round_num)
     
     podium = []
     if not race_df.empty:
@@ -521,7 +521,9 @@ def get_archive(round_num):
         "podium": podium,
         "qualifying": quali_df.replace({np.nan: None}).to_dict(orient="records") if not quali_df.empty else [],
         "sprint": sprint_df.replace({np.nan: None}).to_dict(orient="records") if not sprint_df.empty else [],
-        "practice": fp_df.replace({np.nan: None}).to_dict(orient="records") if not fp_df.empty else []
+        "fp1": fp_results.get("fp1", pd.DataFrame()).replace({np.nan: None}).to_dict(orient="records") if not fp_results.get("fp1", pd.DataFrame()).empty else [],
+        "fp2": fp_results.get("fp2", pd.DataFrame()).replace({np.nan: None}).to_dict(orient="records") if not fp_results.get("fp2", pd.DataFrame()).empty else [],
+        "fp3": fp_results.get("fp3", pd.DataFrame()).replace({np.nan: None}).to_dict(orient="records") if not fp_results.get("fp3", pd.DataFrame()).empty else [],
     })
 
 @app.route("/api/upgrades", methods=["GET"])

@@ -57,32 +57,17 @@ def load_sprint(year: int, rnd: int) -> pd.DataFrame:
     return df
 
 
-def load_practice_pace(year: int, rnd: int) -> pd.DataFrame:
-    """Return practice pace table averaged across FP1/FP2/FP3."""
-    frames = []
+def load_practice_results(year: int, rnd: int) -> dict:
+    """Return dict of FP1, FP2, FP3 DataFrames."""
+    results = {}
     for s in ["fp1", "fp2", "fp3"]:
         path = _csv(year, rnd, s)
         if os.path.exists(path):
-            df = pd.read_csv(path)[["FullName", "TeamName", "Position"]].copy()
-            df["Position"] = pd.to_numeric(df["Position"], errors="coerce")
-            df["Session"] = s.upper()
-            frames.append(df)
-    if not frames:
-        return pd.DataFrame()
-    combined = pd.concat(frames, ignore_index=True)
-    if combined["Position"].isna().all():
-        return pd.DataFrame()
-    pace = (
-        combined.groupby(["FullName", "TeamName"])["Position"]
-        .mean()
-        .reset_index()
-        .rename(columns={"Position": "FP Avg Pos"})
-        .sort_values("FP Avg Pos")
-        .reset_index(drop=True)
-    )
-    pace.index += 1
-    pace["FP Avg Pos"] = pace["FP Avg Pos"].apply(lambda x: f"P{x:.1f}")
-    return pace
+            df = pd.read_csv(path)
+            df["Position"] = pd.to_numeric(df.get("Position"), errors="coerce")
+            df = df.sort_values("Position").reset_index(drop=True)
+            results[s] = df
+    return results
 
 
 def podium_from_results(race_df: pd.DataFrame) -> list:

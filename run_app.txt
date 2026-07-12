@@ -3,8 +3,11 @@
 # -------------------------------------------------------------
 # STEP 1: Run the Python API Backend (Terminal 1)
 # -------------------------------------------------------------
+# Activate the virtual environment
 source venv/bin/activate
+# Start the backend server
 python3 src/api_server.py
+
 # -------------------------------------------------------------
 # STEP 2: Run the React Frontend (Terminal 2)
 # -------------------------------------------------------------

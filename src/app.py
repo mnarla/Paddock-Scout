@@ -19,7 +19,7 @@ from simulator import run_simulation, get_feature_contributions
 from news_agent import fetch_race_intelligence
 from calendar_manager import get_next_race_full, get_past_races
 from utils import safe_encode, FEATURE_LABELS, standings_rank, normalise_color, track_type
-from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_pace, podium_from_results
+from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 
 # ── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(page_title="🏎️ Paddock Scout", page_icon="🏁",
@@ -229,13 +229,12 @@ if mode == "📁 Race Archive":
                              hide_index=True, use_container_width=True)
 
     # ── Practice pace ─────────────────────────────────────────────────────────
-    fp_df = load_practice_pace(yr, rnd)
+    fp_results = load_practice_results(yr, rnd)
     with st.expander("🔧 Practice Pace (FP1/FP2/FP3 Average)", expanded=False):
-        if fp_df.empty:
+        if not fp_results or all(df.empty for df in fp_results.values()):
             st.info("No practice data available for this round.")
         else:
-            st.dataframe(fp_df.rename(columns={"FullName":"Driver","TeamName":"Team"}),
-                         use_container_width=True)
+            st.info("Detailed practice results are now only available on the React UI.")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # LIVE PREDICTION TAB
