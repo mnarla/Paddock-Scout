@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 import { DRIVERS_2026, type Driver } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
 
@@ -25,6 +25,17 @@ export function WhatIfPanel({
 }: Props) {
   const team = TEAMS[driver.team];
   const activeDrivers = drivers ?? DRIVERS_2026;
+
+  const sortedDrivers = useMemo(() => {
+    return [...activeDrivers].sort((a, b) => {
+      const nameA = TEAMS[a.team]?.name || "";
+      const nameB = TEAMS[b.team]?.name || "";
+      if (nameA !== nameB) {
+        return nameA.localeCompare(nameB);
+      }
+      return a.last.localeCompare(b.last);
+    });
+  }, [activeDrivers]);
 
   // Subtle effect: snap grid back into bounds if driver changes
   useEffect(() => {
@@ -58,7 +69,7 @@ export function WhatIfPanel({
               onChange={(e) => onDriverChange(e.target.value)}
               className="tabular w-full appearance-none rounded border border-hairline bg-secondary py-2 pl-4 pr-8 text-sm font-semibold text-foreground outline-none focus:border-f1-red"
             >
-              {activeDrivers.map((d) => (
+              {sortedDrivers.map((d) => (
                 <option key={d.id} value={d.id}>
                   #{d.number}  {d.first} {d.last} · {TEAMS[d.team].short}
                 </option>
