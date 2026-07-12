@@ -7,7 +7,7 @@ import type { Driver } from "@/data/drivers2026";
 import { DRIVERS_2026 } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
 import type { RaceInfo } from "@/data/calendar2026";
-import { UPGRADES } from "@/data/upgrades";
+import { UPGRADES, type Upgrade } from "@/data/upgrades";
 
 // Calibrated feature importances from v6 model (sum < 1; rest is residual noise)
 export const FEATURE_WEIGHTS = {
