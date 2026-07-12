@@ -2,7 +2,7 @@
 
 **Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models and live web intelligence agents, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, and predicts the exact podium finishers for the upcoming Grand Prix!
 
-I designed this project to explore how machine learning, simulation modeling, and automated web agents can be brought together into a clean, premium, and highly responsive web application. I'm hoping to continue building and expanding on these concepts as I head into college!
+I designed this project to explore how machine learning, simulation modeling, and automated web agents can be brought together into a clean, premium, and highly responsive web application. I'm hoping to continue building and expanding on these concepts!
 
 ---
 
