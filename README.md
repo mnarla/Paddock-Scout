@@ -29,14 +29,15 @@ I designed this project to explore how machine learning, simulation modeling, an
 ### Prerequisites
 
 *   Python 3.8 to 3.11 installed on your computer.
+*   Node.js (v18 or later) installed on your computer — this is required to run the React frontend.
 *   An active internet connection (to fetch FastF1 schedule and run the live web search agent).
 *   *Note: Zero API keys are needed! Both FastF1 and DuckDuckGo search operate entirely token-free.*
 
 ### 1. Clone this Repository
 
 ```bash
-git clone https://github.com/your-username/f1racepredictor.git
-cd f1racepredictor
+git clone https://github.com/mnarla/Paddock-Scout.git
+cd Paddock-Scout
 ```
 
 ### 2. Set up a Virtual Environment
@@ -63,13 +64,13 @@ pip install -r requirements.txt
 To download all historical seasons (2023–2026) to prepare for model training:
 
 ```bash
-python src/data_loader.py
+python backend/data_loader.py
 ```
 
 Or, fetch just the current race weekend's data (faster):
 
 ```bash
-python src/data_loader.py --current
+python backend/data_loader.py --current
 ```
 
 ### 5. Train the Machine Learning Model
