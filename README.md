@@ -1,13 +1,13 @@
 #  Paddock Scout
 
-**Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models, live web intelligence agents, and stochastic Monte Carlo race simulations, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, runs 1,000 simulated race weekends, and predicts the exact podium finishers for the upcoming Grand Prix!
+**Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models and live web intelligence agents, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, and predicts the exact podium finishers for the upcoming Grand Prix!
 
 I designed this project to explore how machine learning, simulation modeling, and automated web agents can be brought together into a clean, premium, and highly responsive web application. I'm hoping to continue building and expanding on these concepts as I head into college!
 
 ---
 
 > [!NOTE]
-> This project is currently a work in progress! I am still actively adding more features, refining the model, and making sure everything works perfectly under all race weekend scenarios.
+> This project is currently a work in progress! I am still actively refining the model, and making sure everything works perfectly under all race weekend scenarios. The model heavily depends on the race data that it could acquire from the practice or qualifying rounds, so without those it will go off of the 'What If' scenario. 
 
 ---
 
@@ -16,7 +16,6 @@ I designed this project to explore how machine learning, simulation modeling, an
 *   **Machine Learning Pipeline**: Trains a regularized `RandomForestClassifier` on historical F1 data from 2023–2026. The model uses "v6" features (like rolling championship standings, practice pace, and team car ranks) to avoid memorizing driver names, and applies a massive **×100 training weight** to the 2026 era so the model prioritizes current ground-effect aerodynamics and team hierarchies.
 *   **Live Web Intelligence Agent**: Automatically searches top technical motorsport outlets (*The Race*, *F1Technical.net*, *Motorsport.com*) using a DuckDuckGo search agent to extract live updates about MGU-K power clipping, sidepod packages, and wing upgrades.
 *   **Intelligent Upgrade Validation**: Cross-references reported news with real-time FP2 results. If a news outlet reports a "major upgrade" but the team is slower than P15 in practice, the upgrade is flagged as unvalidated and its performance boost is automatically discounted.
-*   **Monte Carlo Race Simulator**: Runs **1,000 stochastic race simulations** per GP weekend, factoring in Gaussian driver performance noise, rain risk forecasts, and track-specific profiles (such as the Miami GP's technical T11–T16 lock-up section).
 *   **Special Physics & Recovery Modifiers**:
     *   *Overtake Index*: Evaluates midfield and front-runner recovery potential when fast cars start out of position.
     *   *Car Rank Alpha*: Grants the #1 ranked team a +15% recovery probability boost if starting outside the Top 5.
@@ -24,7 +23,7 @@ I designed this project to explore how machine learning, simulation modeling, an
 
 ---
 
-## How to Set Up & Run Paddock Scout (for now)
+## How to Set Up & Run Paddock Scout locally
 
 ### Prerequisites
 
