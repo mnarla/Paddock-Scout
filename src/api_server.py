@@ -395,34 +395,57 @@ def predict():
             mapped_contribs["Upgrades"] += d
         elif k == "Overtake_Index":
             mapped_contribs["Overtake"] += d
-            
-    # Normalize to a total sum of ~0.70 to fit the importance display scale nicely
+
+    # Zero out features that relied on missing session data.
+    # pp, qd, sf are Series — empty means no real data was loaded for this race.
+    has_practice    = not pp.empty
+    has_qualifying  = not qd.empty
+    has_sprint      = not sf.empty and ri.is_sprint
+    has_momentum    = has_practice or has_qualifying or has_sprint
+
+    if not has_practice:
+        mapped_contribs["Practice"] = 0.0
+    if not has_qualifying:
+        mapped_contribs["Qualifying"] = 0.0
+    if not has_sprint:
+        pass  # Sprint key doesn't exist in mapped_contribs; handled by frontend isSprint check
+    if not has_momentum:
+        mapped_contribs["Momentum"] = 0.0
+
+    # Normalize to a total sum of ~0.70, redistributing across features that have data
     total_delta = sum(mapped_contribs.values())
     if total_delta > 0:
         scale = 0.70 / total_delta
         for k in mapped_contribs:
             mapped_contribs[k] *= scale
     else:
+        # All-fallback when model produces zero deltas for everything
         mapped_contribs = {
             "Grid": 0.254,
             "Standings": 0.181,
             "CarRank": 0.147,
             "Track": 0.082,
             "RecentForm": 0.08,
-            "Practice": 0.06,
-            "Qualifying": 0.08,
-            "Momentum": 0.05,
+            "Practice": 0.0,
+            "Qualifying": 0.0,
+            "Momentum": 0.0,
             "Upgrades": 0.04,
             "Overtake": 0.03
         }
+        # Renormalize fallback to 0.70 too
+        fb_total = sum(mapped_contribs.values())
+        if fb_total > 0:
+            for k in mapped_contribs:
+                mapped_contribs[k] = mapped_contribs[k] / fb_total * 0.70
         
     frontend_contribs = []
     for k, w in mapped_contribs.items():
-        frontend_contribs.append({
-            "key": k,
-            "weight": float(w),
-            "value": 1.0
-        })
+        if w > 0:  # Only send keys with actual contribution
+            frontend_contribs.append({
+                "key": k,
+                "weight": float(w),
+                "value": 1.0
+            })
 
     # Approximate split into P1, P2, P3
     p3 = raw_prob
