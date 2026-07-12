@@ -39,8 +39,8 @@ export function WhatIfPanel({
 
   // Subtle effect: snap grid back into bounds if driver changes
   useEffect(() => {
-    if (gridPos < 1 || gridPos > 20) onReset();
-  }, [gridPos, onReset]);
+    if (gridPos < 1 || gridPos > activeDrivers.length) onReset();
+  }, [gridPos, activeDrivers.length, onReset]);
 
   return (
     <aside className="rounded-lg border border-hairline bg-card">
@@ -101,7 +101,7 @@ export function WhatIfPanel({
           label="Grid Position"
           value={gridPos}
           min={1}
-          max={20}
+          max={activeDrivers.length}
           step={1}
           format={(v) => `P${v}`}
           onChange={onGridChange}
@@ -112,7 +112,7 @@ export function WhatIfPanel({
           label="Recent Form (Avg Finish)"
           value={form}
           min={1}
-          max={20}
+          max={activeDrivers.length}
           step={0.1}
           format={(v) => v.toFixed(1)}
           onChange={onFormChange}
