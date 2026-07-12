@@ -631,5 +631,20 @@ def get_archive_progression():
         "podiums": podiums
     })
 
+def run_data_loader_loop():
+    time.sleep(5)  # Wait for server to boot fully
+    while True:
+        try:
+            log.info(" Automated background FastF1 sync starting...")
+            loader_path = os.path.join(os.path.dirname(__file__), "data_loader.py")
+            subprocess.run([sys.executable, loader_path, "--current"], check=True)
+            log.info(" Automated background FastF1 sync completed.")
+        except Exception as e:
+            log.error(f"Error in automated background data loader: {e}")
+        time.sleep(10800)  # Check every 3 hours
+
 if __name__ == "__main__":
-    app.run(port=8000, debug=True)
+    if os.environ.get("WERKZEUG_RUN_MAIN") == "true" or not app.debug:
+        threading.Thread(target=run_data_loader_loop, daemon=True).start()
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port, debug=True)
