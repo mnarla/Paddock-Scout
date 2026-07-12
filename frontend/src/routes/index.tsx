@@ -12,8 +12,7 @@ import { WhatIfPanel } from "@/components/paddock/WhatIfPanel";
 import { SelectedDriverCard } from "@/components/paddock/SelectedDriverCard";
 import { FeatureContribution } from "@/components/paddock/FeatureContribution";
 import { UpgradesRail } from "@/components/paddock/UpgradesRail";
-import { MonteCarloTable } from "@/components/paddock/MonteCarloTable";
-import { MonteCarloCharts } from "@/components/paddock/MonteCarloChart";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,13 +21,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Live F1 podium predictions for the 2026 season. What-if scoring, calibrated feature contributions, and 1,000-run Monte Carlo race simulations.",
+          "Live F1 podium predictions for the 2026 season. What-if scoring, calibrated feature contributions, and technical upgrades.",
       },
       { property: "og:title", content: "Paddock Scout · Live Prediction" },
       {
         property: "og:description",
         content:
-          "F1 2026 podium probability dashboard with Monte Carlo simulator and validated technical upgrades.",
+          "F1 2026 podium probability dashboard with validated technical upgrades.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -93,8 +92,7 @@ function PaddockScoutLive() {
     predictDriver({ driver, gridPos, form, race, upgrades })
   );
 
-  const [simData, setSimData] = useState<any>(null);
-  const [isSimulating, setIsSimulating] = useState(false);
+
 
   // Update baseline state when driver, race or upgrades change
   useEffect(() => {
@@ -154,30 +152,7 @@ function PaddockScoutLive() {
     return () => clearTimeout(handler);
   }, [driver, gridPos, form, race, upgrades]);
 
-  // Update Monte Carlo simulations
-  useEffect(() => {
-    setIsSimulating(true);
-    fetch(`${API_BASE_URL}/api/simulate`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        grandPrix: race.name,
-        wetnessFactor: 0.3,
-        upgradeTeams: upgrades.filter(u => u.validated).map(u => u.team),
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data && data.rows) {
-          setSimData(data);
-        }
-        setIsSimulating(false);
-      })
-      .catch((err) => {
-        console.error("Error fetching simulation data:", err);
-        setIsSimulating(false);
-      });
-  }, [race, upgrades]);
+
 
   const onDriverChange = (id: string) => {
     setDriverId(id);
@@ -223,25 +198,7 @@ function PaddockScoutLive() {
           <UpgradesRail upgrades={upgrades} />
         </div>
 
-        {/* Monte Carlo full-width */}
-        <div className="mt-4 space-y-4">
-          <MonteCarloCharts 
-            race={race} 
-            selectedDriverId={driverId} 
-            drivers={drivers} 
-            upgrades={upgrades} 
-            simData={simData}
-            isLoading={isSimulating}
-          />
-          <MonteCarloTable 
-            race={race} 
-            selectedDriverId={driverId} 
-            drivers={drivers} 
-            upgrades={upgrades} 
-            simData={simData}
-            isLoading={isSimulating}
-          />
-        </div>
+
 
         <footer className="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-hairline pt-4 text-[10px] uppercase tracking-wider text-muted-foreground">
           <span>

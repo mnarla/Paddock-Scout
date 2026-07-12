@@ -11,7 +11,7 @@ from flask_cors import CORS
 
 sys.path.insert(0, os.path.dirname(__file__))
 from calendar_manager import get_next_race_full, get_past_races, SCHEDULE_2026, get_sprint_races
-from simulator import run_simulation, load_assets, build_driver_field, _encode_driver
+from simulator import load_assets
 from utils import safe_encode, standings_rank, normalise_color, track_type, get_neutral_values
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
@@ -416,93 +416,6 @@ def predict():
         "contributions": frontend_contribs
     })
 
-@app.route("/api/simulate", methods=["POST"])
-def simulate():
-    data = request.json or {}
-    grand_prix = data.get("grandPrix", get_next_race_full().name)
-    wetness_factor = float(data.get("wetnessFactor", 0.3))
-    upgrade_teams = data.get("upgradeTeams", ["Ferrari", "McLaren"])
-    grid_overrides = data.get("gridOverrides", None)
-    
-    context = {
-        "grand_prix": grand_prix,
-        "track_type": track_type(grand_prix),
-        "wetness_factor": wetness_factor,
-        "upgrade_teams": upgrade_teams,
-        "upgrade_score": 0.8
-    }
-    
-    res = run_simulation(context, grid_overrides=grid_overrides)
-    
-    # Map the simulator result counts_df back to React format
-    rows = []
-    positions = {}
-    
-    # Get details for mapped drivers
-    ctx = build_2026_context()
-    driver_lookup = {}
-    for idx, row in ctx.iterrows():
-        did = row["DriverId"]
-        if did in DRIVER_INFO:
-            driver_lookup[row["FullName"]] = {
-                "id": did,
-                "driver": {
-                    "id": did,
-                    "number": DRIVER_INFO[did]["number"],
-                    "abbr": DRIVER_INFO[did]["abbr"],
-                    "first": DRIVER_INFO[did]["first"],
-                    "last": DRIVER_INFO[did]["last"],
-                    "team": TEAM_NAME_TO_ID.get(row["TeamName"], "sauber")
-                }
-            }
-            
-    # Iterate over full counts
-    counts_df = res["full_counts"]
-    for fullname, row in counts_df.iterrows():
-        if fullname not in driver_lookup:
-            continue
-        dl = driver_lookup[fullname]
-        did = dl["id"]
-        
-        # Calculate rates
-        p1_rate = float(row.get("P1_count", 0)) / 1000.0
-        p2_rate = float(row.get("P2_count", 0)) / 1000.0
-        p3_rate = float(row.get("P3_count", 0)) / 1000.0
-        podium_rate = p1_rate + p2_rate + p3_rate
-        
-        rows.append({
-            "driver": dl["driver"],
-            "p1": p1_rate,
-            "p2": p2_rate,
-            "p3": p3_rate,
-            "podium": podium_rate
-        })
-        
-        # Approximate 20 placements based on P1-P5 counts for charting
-        placement_array = [0] * 20
-        placement_array[0] = int(row.get("P1_count", 0))
-        placement_array[1] = int(row.get("P2_count", 0))
-        placement_array[2] = int(row.get("P3_count", 0))
-        placement_array[3] = int(row.get("P4_count", 0))
-        placement_array[4] = int(row.get("P5_count", 0))
-        
-        # Distribute remaining to make it sum to 1000
-        sum_five = sum(placement_array[:5])
-        rem = 1000 - sum_five
-        if rem > 0:
-            for p in range(5, 20):
-                placement_array[p] = rem // 15
-            placement_array[19] += rem % 15
-            
-        positions[did] = placement_array
-        
-    rows.sort(key=lambda x: x["podium"], reverse=True)
-    
-    return jsonify({
-        "rows": rows,
-        "positions": positions,
-        "nSimulations": 1000
-    })
 
 @app.route("/api/archive/<int:round_num>", methods=["GET"])
 def get_archive(round_num):

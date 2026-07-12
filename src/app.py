@@ -2,7 +2,7 @@
 src/app.py — F1 AI Podium Predictor (Live + Archive)
 =====================================================
 Two-tab dashboard:
-  🔴 LIVE  — next race predictions, Weekend Momentum, Monte Carlo
+  🔴 LIVE  — next race predictions, Weekend Momentum
   📁 ARCHIVE — past race results, qualifying grid, practice pace
 
 Run with:  streamlit run src/app.py
@@ -15,7 +15,7 @@ import streamlit as st
 
 sys.path.insert(0, os.path.dirname(__file__))
 from features import UPGRADE_TEAMS, compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
-from simulator import run_simulation, get_feature_contributions
+from simulator import get_feature_contributions
 from news_agent import fetch_race_intelligence
 from calendar_manager import get_next_race_full, get_past_races
 from utils import safe_encode, FEATURE_LABELS, standings_rank, normalise_color, track_type
@@ -375,56 +375,6 @@ else:
             st.dataframe(mom_df[keep].rename(columns={"FullName":"Driver","TeamName":"Team"}),
                          use_container_width=True,
                          height=min(len(mom_df)*38+50, 700))
-    st.divider()
 
-    # ── SECTION 3: Monte Carlo simulation ─────────────────────────────────────
-    st.subheader("🎲 Monte Carlo Race Simulation")
-    st.markdown("Run **1,000 stochastic simulations** for the full grid. "
-                "Injects random noise, upgrade boosts and Recovery_Boost.")
-    c1, c2 = st.columns([3,1])
-    with c1: st.markdown(f"Simulating the full grid for **{selected_gp}**.")
-    with c2: run_sim = st.button("🏁 Run Race Simulation", type="primary", use_container_width=True)
-
-    if run_sim:
-        with st.spinner("Running 1,000 race simulations … 🏎️"):
-            intel = fetch_race_intelligence(selected_gp)
-            result = run_simulation({
-                "grand_prix": selected_gp,
-                "track_type": track_type(selected_gp),
-                "wetness_factor": intel["Wetness_Factor"],
-                "upgrade_teams": ["Ferrari","McLaren"] if intel["Upgrade_Score"]>0.6 else [],
-                "upgrade_score": intel["Upgrade_Score"],
-            })
-        st.success(f"✅ Completed {result['n_simulations']:,} simulations!")
-        b1,b2 = st.columns(2)
-        with b1: st.metric("Rain Risk",f"{intel['Wetness_Factor']*100:.0f}%")
-        with b2: st.metric("Upgrade Activity",f"{intel['Upgrade_Score']*100:.0f}%")
-        st.divider()
-        st.markdown("### 🏆 Predicted Podium")
-        pos_labels={1:"Wins P1",2:"Finishes P2",3:"Finishes P3"}
-        for p,col in zip(result["podium"],st.columns(3)):
-            clr=p["color"]; bp=f"{p['position_freq']:.1f}"
-            with col:
-                st.markdown(
-                    f'<div style="padding:22px 16px;border-radius:14px;'
-                    f'background:linear-gradient(160deg,#1a1a2e,#16213e);'
-                    f'border-top:6px solid {clr};text-align:center;'
-                    f'box-shadow:0 8px 32px rgba(0,0,0,.55)">'
-                    f'<div style="font-size:2.2rem">{p["medal"]}</div>'
-                    f'<div style="font-size:1.05rem;font-weight:700;margin:6px 0 2px">{p["driver"]}</div>'
-                    f'<div style="color:{clr};font-size:0.82rem;font-weight:600;margin-bottom:12px">{p["team"]}</div>'
-                    f'<div style="border-top:1px solid #2a2a4a;padding-top:12px">'
-                    f'<div style="color:#aaa;font-size:0.72rem;text-transform:uppercase">{pos_labels[p["position"]]}</div>'
-                    f'<div style="font-size:2.6rem;font-weight:800;color:{clr}">{bp}%</div>'
-                    f'<div style="color:#666;font-size:0.7rem">of 1,000 sims</div></div>'
-                    f'<div style="margin-top:10px;background:#0e1117;border-radius:6px;height:8px">'
-                    f'<div style="width:{bp}%;height:8px;border-radius:6px;'
-                    f'background:linear-gradient(90deg,{clr}88,{clr})"></div></div>'
-                    f'<div style="margin-top:8px;color:#888;font-size:0.72rem">'
-                    f'Any podium: <span style="color:{clr};font-weight:600">{p["podium_freq"]:.1f}%</span></div>'
-                    f'</div>', unsafe_allow_html=True)
-        st.divider()
-        with st.expander("📊 Full Frequency Table"):
-            st.dataframe(result["full_counts"], use_container_width=True)
 
 
