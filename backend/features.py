@@ -68,7 +68,7 @@ SPRINT_WEIGHT = 2.5
 # 1.  LOAD ALL CSVs + MAP EVENT NAMES
 # ─────────────────────────────────────────────────────────────────────────────
 def load_all_results(data_dir: str = DATA_DIR) -> pd.DataFrame:
-    """Read every results_*.csv and enrich with EventName from FastF1 schedule."""
+    os.makedirs(CACHE_DIR, exist_ok=True)
     fastf1.Cache.enable_cache(CACHE_DIR)
 
     files = sorted(glob.glob(os.path.join(data_dir, "results_*.csv")))
