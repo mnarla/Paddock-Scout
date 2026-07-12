@@ -66,19 +66,23 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   const standingsScore = (11 - driver.standingsRank) / 10;
   const carScore       = (11 - carRank) / 10;
   const trackScore     = race.trackType === "Street" ? 0.6 : 0.7;
-  const sprintScore    = race.isSprint ? 2.5 * 0.4 : 0.4;
-
-  // Form penalty (lower form = better — closer to P1)
-  const formPenalty = (form - 1) / 19; // 0..1
+  const formScore      = (20 - form) / 19;
+  const practiceScore  = 0.5;
+  const qualiScore     = 0.5;
+  const momentumScore  = 0.5;
+  const overtakeScore  = (15 - (gridPos - carRank)) / 25;
 
   let raw =
-    FEATURE_WEIGHTS.Grid      * gridScore +
-    FEATURE_WEIGHTS.Standings * standingsScore +
-    FEATURE_WEIGHTS.CarRank   * carScore +
-    FEATURE_WEIGHTS.Track     * trackScore +
-    FEATURE_WEIGHTS.Sprint    * sprintScore -
-    0.18 * formPenalty +
-    0.25 * upgradeBoost;
+    FEATURE_WEIGHTS.Grid       * gridScore +
+    FEATURE_WEIGHTS.Standings  * standingsScore +
+    FEATURE_WEIGHTS.CarRank    * carScore +
+    FEATURE_WEIGHTS.Track      * trackScore +
+    FEATURE_WEIGHTS.RecentForm * formScore +
+    FEATURE_WEIGHTS.Practice   * practiceScore +
+    FEATURE_WEIGHTS.Qualifying * qualiScore +
+    FEATURE_WEIGHTS.Momentum   * momentumScore +
+    FEATURE_WEIGHTS.Upgrades   * upgradeBoost +
+    FEATURE_WEIGHTS.Overtake   * overtakeScore;
 
   // Calibration #2: Car_Rank Alpha — top cars get +15% bonus when starting outside top 5
   if (carRank <= 2 && gridPos > 5) raw += 0.15;
@@ -106,11 +110,16 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
     p3,
     podium: p3, // P3 is cumulative "at least podium"
     contributions: [
-      { key: "Grid",      weight: FEATURE_WEIGHTS.Grid,      value: gridScore },
-      { key: "Standings", weight: FEATURE_WEIGHTS.Standings, value: standingsScore },
-      { key: "CarRank",   weight: FEATURE_WEIGHTS.CarRank,   value: carScore },
-      { key: "Track",     weight: FEATURE_WEIGHTS.Track,     value: trackScore },
-      { key: "Sprint",    weight: FEATURE_WEIGHTS.Sprint,    value: sprintScore },
+      { key: "Grid",       weight: FEATURE_WEIGHTS.Grid,       value: gridScore },
+      { key: "Standings",  weight: FEATURE_WEIGHTS.Standings,  value: standingsScore },
+      { key: "CarRank",    weight: FEATURE_WEIGHTS.CarRank,    value: carScore },
+      { key: "Track",      weight: FEATURE_WEIGHTS.Track,      value: trackScore },
+      { key: "RecentForm", weight: FEATURE_WEIGHTS.RecentForm, value: formScore },
+      { key: "Practice",   weight: FEATURE_WEIGHTS.Practice,   value: practiceScore },
+      { key: "Qualifying", weight: FEATURE_WEIGHTS.Qualifying, value: qualiScore },
+      { key: "Momentum",   weight: FEATURE_WEIGHTS.Momentum,   value: momentumScore },
+      { key: "Upgrades",   weight: FEATURE_WEIGHTS.Upgrades,   value: upgradeBoost },
+      { key: "Overtake",   weight: FEATURE_WEIGHTS.Overtake,   value: overtakeScore },
     ],
   };
 }
