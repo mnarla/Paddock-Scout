@@ -30,7 +30,12 @@ export function LiveBanner({ race }: Props) {
   const c = useCountdown(race.date);
   return (
     <header className="sticky top-0 z-30 border-b border-hairline bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:px-6 sm:py-4">
+      <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:px-6 sm:py-4 relative">
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
+          <span className="text-base font-black tracking-[0.25em] text-f1-red uppercase">
+            Paddock Scout
+          </span>
+        </div>
         <div className="flex shrink-0 items-center gap-2">
           <span className="live-pulse inline-block h-2.5 w-2.5 rounded-full bg-f1-red shadow-[0_0_10px_var(--color-f1-red)]" />
           <span className="tabular text-[11px] font-bold tracking-[0.2em] text-f1-red">
