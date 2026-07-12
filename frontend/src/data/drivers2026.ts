@@ -30,13 +30,14 @@ export const DRIVERS_2026: Driver[] = [
   { id: "lawson",         number: 30, abbr: "LAW", first: "Liam",      last: "Lawson",     team: "rb",           standingsRank: 13, seasonPoints: 28,  recentForm: 11.0, qualifyingPos: 12 },
   { id: "colapinto",      number: 43, abbr: "COL", first: "Franco",    last: "Colapinto",  team: "alpine",       standingsRank: 14, seasonPoints: 22,  recentForm: 11.7, qualifyingPos: 16 },
   { id: "bearman",        number: 87, abbr: "BEA", first: "Oliver",    last: "Bearman",    team: "haas",         standingsRank: 15, seasonPoints: 18,  recentForm: 12.3, qualifyingPos: 15 },
-  { id: "stroll",         number: 18, abbr: "STR", first: "Lance",     last: "Stroll",     team: "aston_martin", standingsRank: 16, seasonPoints: 14,  recentForm: 13.0, qualifyingPos: 17 },
-  { id: "ocon",           number: 31, abbr: "OCO", first: "Esteban",   last: "Ocon",       team: "haas",         standingsRank: 17, seasonPoints: 9,   recentForm: 13.7, qualifyingPos: 18 },
-  { id: "tsunoda",        number: 22, abbr: "TSU", first: "Yuki",      last: "Tsunoda",    team: "rb",           standingsRank: 18, seasonPoints: 7,   recentForm: 14.3, qualifyingPos: 11 },
-  { id: "hulkenberg",     number: 27, abbr: "HUL", first: "Nico",      last: "Hülkenberg", team: "audi",         standingsRank: 19, seasonPoints: 3,   recentForm: 15.3, qualifyingPos: 19 },
-  { id: "bortoleto",      number: 5,  abbr: "BOR", first: "Gabriel",   last: "Bortoleto",  team: "audi",         standingsRank: 20, seasonPoints: 1,   recentForm: 16.0, qualifyingPos: 20 },
-  { id: "perez",          number: 11, abbr: "PER", first: "Sergio",    last: "Perez",      team: "cadillac",     standingsRank: 21, seasonPoints: 0,   recentForm: 17.0, qualifyingPos: 21 },
-  { id: "bottas",         number: 77, abbr: "BOT", first: "Valtteri",  last: "Bottas",     team: "cadillac",     standingsRank: 22, seasonPoints: 0,   recentForm: 18.0, qualifyingPos: 22 },
+  { id: "arvid_lindblad", number: 41, abbr: "LIN", first: "Arvid",     last: "Lindblad",   team: "rb",           standingsRank: 16, seasonPoints: 15,  recentForm: 10.5, qualifyingPos: 10 },
+  { id: "stroll",         number: 18, abbr: "STR", first: "Lance",     last: "Stroll",     team: "aston_martin", standingsRank: 17, seasonPoints: 14,  recentForm: 13.0, qualifyingPos: 17 },
+  { id: "ocon",           number: 31, abbr: "OCO", first: "Esteban",   last: "Ocon",       team: "haas",         standingsRank: 18, seasonPoints: 9,   recentForm: 13.7, qualifyingPos: 18 },
+  { id: "tsunoda",        number: 22, abbr: "TSU", first: "Yuki",      last: "Tsunoda",    team: "rb",           standingsRank: 19, seasonPoints: 7,   recentForm: 14.3, qualifyingPos: 11 },
+  { id: "hulkenberg",     number: 27, abbr: "HUL", first: "Nico",      last: "Hülkenberg", team: "audi",         standingsRank: 20, seasonPoints: 3,   recentForm: 15.3, qualifyingPos: 19 },
+  { id: "bortoleto",      number: 5,  abbr: "BOR", first: "Gabriel",   last: "Bortoleto",  team: "audi",         standingsRank: 21, seasonPoints: 1,   recentForm: 16.0, qualifyingPos: 20 },
+  { id: "perez",          number: 11, abbr: "PER", first: "Sergio",    last: "Perez",      team: "cadillac",     standingsRank: 22, seasonPoints: 0,   recentForm: 17.0, qualifyingPos: 21 },
+  { id: "bottas",         number: 77, abbr: "BOT", first: "Valtteri",  last: "Bottas",     team: "cadillac",     standingsRank: 23, seasonPoints: 0,   recentForm: 18.0, qualifyingPos: 22 },
 ];
 
 export function driverById(id: string): Driver {

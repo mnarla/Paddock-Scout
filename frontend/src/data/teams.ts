@@ -21,7 +21,7 @@ export const TEAMS: Record<
   mclaren:      { name: "McLaren",         short: "MCL", color: "#F47600", carRank: 4 },
   williams:     { name: "Williams",        short: "WIL", color: "#1868DB", carRank: 5 },
   aston_martin: { name: "Aston Martin",    short: "AST", color: "#229971", carRank: 6 },
-  rb:           { name: "Racing Bulls",    short: "RB",  color: "#6C98FF", carRank: 7 },
+  rb:           { name: "VCARB",           short: "VCARB", color: "#6C98FF", carRank: 7 },
   alpine:       { name: "Alpine",          short: "ALP", color: "#00A1E8", carRank: 8 },
   haas:         { name: "Haas F1 Team",    short: "HAA", color: "#9C9FA2", carRank: 9 },
   audi:         { name: "Audi",            short: "AUD", color: "#F50537", carRank: 10 },

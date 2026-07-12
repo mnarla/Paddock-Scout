@@ -102,7 +102,8 @@ DRIVER_INFO = {
     "hulkenberg": {"number": 27, "abbr": "HUL", "first": "Nico", "last": "Hülkenberg"},
     "bortoleto": {"number": 5, "abbr": "BOR", "first": "Gabriel", "last": "Bortoleto"},
     "perez": {"number": 11, "abbr": "PER", "first": "Sergio", "last": "Perez"},
-    "bottas": {"number": 77, "abbr": "BOT", "first": "Valtteri", "last": "Bottas"}
+    "bottas": {"number": 77, "abbr": "BOT", "first": "Valtteri", "last": "Bottas"},
+    "arvid_lindblad": {"number": 41, "abbr": "LIN", "first": "Arvid", "last": "Lindblad"}
 }
 
 RACE_METADATA = {
@@ -265,7 +266,7 @@ def get_drivers():
             "abbr": info["abbr"],
             "first": info["first"],
             "last": info["last"],
-            "team": TEAM_NAME_TO_ID.get(row["TeamName"], "sauber"),
+            "team": TEAM_NAME_TO_ID.get(row["TeamName"], "audi"),
             "standingsRank": idx + 1,
             "seasonPoints": int(row["SeasonPoints"]),
             "recentForm": round(form_val, 2),
