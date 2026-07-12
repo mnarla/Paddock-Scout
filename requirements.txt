@@ -6,3 +6,5 @@ numpy
 matplotlib
 seaborn
 duckduckgo-search
+flask
+flask-cors
