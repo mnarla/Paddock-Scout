@@ -18,7 +18,7 @@ from archive_loader import load_race_results, load_qualifying, load_sprint, load
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 from data_loader import load_event
 
-MODEL_PATH = "models/f1_podium_predictor.pkl"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', 'models', 'f1_podium_predictor.pkl')
 
 def load_assets(model_path: str = MODEL_PATH):
     with open(model_path, "rb") as fh:
