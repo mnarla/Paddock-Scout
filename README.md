@@ -77,7 +77,7 @@ python src/data_loader.py --current
 Run the training pipeline to fit the Random Forest model, serialize the persistent label encoders, and output classification reports and charts directly to the `models/` directory:
 
 ```bash
-python src/train_model.py
+python backend/train_model.py
 ```
 
 ### 6. Start the Application
@@ -90,7 +90,7 @@ Paddock Scout uses a FastAPI backend and a React frontend. You will need two ter
 source venv/bin/activate
 
 # Start the server
-python src/api_server.py
+python backend/api_server.py
 ```
 
 **Terminal 2: Start the React Frontend**

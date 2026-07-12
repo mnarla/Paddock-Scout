@@ -9,13 +9,20 @@ import pandas as pd
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
+import pickle
+
 sys.path.insert(0, os.path.dirname(__file__))
 from calendar_manager import get_next_race_full, get_past_races, SCHEDULE_2026, get_sprint_races
-from simulator import load_assets
 from utils import safe_encode, standings_rank, normalise_color, track_type, get_neutral_values
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 from data_loader import load_event
+
+MODEL_PATH = "models/f1_podium_predictor.pkl"
+
+def load_assets(model_path: str = MODEL_PATH):
+    with open(model_path, "rb") as fh:
+        return pickle.load(fh)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 log = logging.getLogger(__name__)
