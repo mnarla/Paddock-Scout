@@ -196,7 +196,7 @@ function PaddockScoutLive() {
               prediction={prediction}
               baseline={baseline}
             />
-            <FeatureContribution prediction={prediction} isSprint={race.isSprint} />
+            <FeatureContribution prediction={prediction} />
           </div>
 
           <UpgradesRail upgrades={upgrades} />

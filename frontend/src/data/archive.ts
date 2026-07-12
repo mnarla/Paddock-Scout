@@ -10,15 +10,15 @@ export interface ArchiveDriver {
 }
 
 export const ARCHIVE_ROUNDS = [
-  { round: 1, short: "AUS", flag: "🇦🇺" },
-  { round: 2, short: "CHN", flag: "🇨🇳" },
-  { round: 3, short: "JPN", flag: "🇯🇵" },
-  { round: 4, short: "MIA", flag: "🇺🇸" },
-  { round: 5, short: "CAN", flag: "🇨🇦" },
-  { round: 6, short: "MON", flag: "🇲🇨" },
-  { round: 7, short: "BAR", flag: "🇪🇸" },
-  { round: 8, short: "AUT", flag: "🇦🇹" },
-  { round: 9, short: "GBR", flag: "🇬🇧" },
+  { round: 1, short: "AUS", flag: "🇦🇺", name: "Australian Grand Prix" },
+  { round: 2, short: "CHN", flag: "🇨🇳", name: "Chinese Grand Prix" },
+  { round: 3, short: "JPN", flag: "🇯🇵", name: "Japanese Grand Prix" },
+  { round: 4, short: "MIA", flag: "🇺🇸", name: "Miami Grand Prix" },
+  { round: 5, short: "CAN", flag: "🇨🇦", name: "Canadian Grand Prix" },
+  { round: 6, short: "MON", flag: "🇲🇨", name: "Monaco Grand Prix" },
+  { round: 7, short: "BAR", flag: "🇪🇸", name: "Barcelona Grand Prix" },
+  { round: 8, short: "AUT", flag: "🇦🇹", name: "Austrian Grand Prix" },
+  { round: 9, short: "GBR", flag: "🇬🇧", name: "British Grand Prix" },
 ];
 
 export const ARCHIVE_DRIVERS: ArchiveDriver[] = [
