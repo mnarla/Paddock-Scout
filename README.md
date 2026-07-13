@@ -7,7 +7,7 @@ I designed this project to explore how machine learning, simulation modeling, an
 ---
 
 > [!NOTE]
-> This project is currently a work in progress! I am still actively refining the model, and making sure everything works perfectly under all race weekend scenarios. The model heavily depends on the race data that it could acquire from the practice or qualifying rounds, so without those it will go off of the 'What If' scenario. Also since I am using Render to deploy the backend, it will take a few minutes for the app to correctly to work as Render shuts down after 15 minutes of activity.
+> This project is currently a work in progress! I am still actively refining the model, and making sure everything works perfectly under all race weekend scenarios. The model heavily depends on the race data that it could acquire from the practice or qualifying rounds, so without those it will go off of the 'What If' scenario. Also since I am using Render to deploy the backend, it will take a few minutes for the app to correctly to work as Render shuts down after 15 minutes of inactivity.
 
 ---
 
