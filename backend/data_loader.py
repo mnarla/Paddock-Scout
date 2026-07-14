@@ -1,5 +1,5 @@
 """
-src/data_loader.py — Live-First F1 Data Loader
+backend/data_loader.py — Live-First F1 Data Loader
 ================================================
 Downloads race results, qualifying, sprint, AND practice sessions
 for the current race weekend as soon as they are available in the FastF1 API.
@@ -17,8 +17,8 @@ CSV naming convention:
   results_{year}_round{rnd:02d}fp3.csv     ← FP3
 
 Usage:
-  python src/data_loader.py              # load all seasons
-  python src/data_loader.py --current   # load current race weekend only
+  python backend/data_loader.py              # load all seasons
+  python backend/data_loader.py --current   # load current race weekend only
 """
 
 import argparse

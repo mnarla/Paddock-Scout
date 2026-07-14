@@ -30,7 +30,7 @@ jobs:
       - name: Run past-missing ingestion
         # Scans completed races, downloads any that are missing a CSV from data/
         run: |
-          PYTHONPATH=src python3 src/data_loader.py --past-missing
+          PYTHONPATH=backend python3 backend/data_loader.py --past-missing
 
       - name: Commit & push new data
         run: |
