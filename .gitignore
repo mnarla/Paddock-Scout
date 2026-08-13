@@ -152,3 +152,7 @@ cython_debug/
 
 # FastF1 cache
 fastf1_cache/
+
+# Graphify output
+graphify-out/
+
