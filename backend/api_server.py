@@ -460,33 +460,19 @@ def predict():
                 "value": 1.0
             })
 
-    # Cumulative podium probability
-    podium_prob = raw_prob
-    
-    # Realistic distribution across individual podium steps based on starting position:
-    # Starting P1-P2 gives highest share to P1 (Win). Starting P5-P10 shifts weight towards P2 & P3.
-    if grid_pos <= 2:
-        p1_share = 0.50
-        p2_share = 0.30
-        p3_share = 0.20
-    elif grid_pos <= 5:
-        p1_share = 0.35
-        p2_share = 0.35
-        p3_share = 0.30
-    else:
-        p1_share = 0.22
-        p2_share = 0.38
-        p3_share = 0.40
-
-    p1 = podium_prob * p1_share
-    p2 = podium_prob * p2_share
-    p3 = podium_prob * p3_share
+    # Cumulative podium probabilities:
+    # p3 = Podium (Finish <= 3) — direct model output
+    # p2 = Top 2 (Finish <= 2) — cumulative top 2
+    # p1 = Win (Finish == 1)   — cumulative win
+    p3 = float(raw_prob)
+    p2 = float(p3 * 0.72)
+    p1 = float(p3 * 0.45)
     
     return jsonify({
         "p1": p1,
         "p2": p2,
         "p3": p3,
-        "podium": podium_prob,
+        "podium": p3,
         "contributions": frontend_contribs
     })
 

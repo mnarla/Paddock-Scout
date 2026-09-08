@@ -47,50 +47,35 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
 
       <div className="border-t border-hairline" />
 
-      {/* Big probability cards */}
-      <div className="bg-secondary/30 px-5 py-2 border-b border-hairline flex items-center justify-between">
-        <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-          Podium Probability (Top 3)
-        </span>
-        <div className="flex items-center gap-2">
-          <span className="tabular text-base font-black text-f1-amber">
-            {Math.round((prediction.podium ?? (prediction.p1 + prediction.p2 + prediction.p3)) * 100)}%
-          </span>
-          {baseline.podium !== undefined && (
-            <span className={`tabular text-[10px] font-bold ${
-              Math.round((prediction.podium - baseline.podium) * 100) > 0 
-                ? "text-f1-green" 
-                : Math.round((prediction.podium - baseline.podium) * 100) < 0 
-                ? "text-f1-red" 
-                : "text-muted-foreground"
-            }`}>
-              {Math.round((prediction.podium - baseline.podium) * 100) > 0 ? "+" : ""}
-              {Math.round((prediction.podium - baseline.podium) * 100)}%
-            </span>
-          )}
-        </div>
-      </div>
-
+      {/* Cumulative Probability Cards */}
       <div className="grid grid-cols-3">
         <ProbCell
-          label="P1 (WIN)"
+          label="WIN (P1)"
+          sublabel="1st Place"
           value={prediction.p1}
           baseline={baseline.p1}
           accent="var(--color-f1-red)"
         />
         <ProbCell
-          label="P2 (2ND)"
+          label="TOP 2"
+          sublabel="1st or 2nd"
           value={prediction.p2}
           baseline={baseline.p2}
           accent="#c0c0c8"
         />
         <ProbCell
-          label="P3 (3RD)"
+          label="PODIUM"
+          sublabel="Top 3 Finish"
           value={prediction.p3}
           baseline={baseline.p3}
           accent="#cd7f32"
           last
         />
+      </div>
+
+      <div className="border-t border-hairline bg-secondary/20 px-4 py-2 text-[10px] text-muted-foreground flex items-center justify-between">
+        <span>* Probabilities represent cumulative milestone thresholds (Win, Top 2, and any Podium step).</span>
+        <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground/80">Cumulative Milestones</span>
       </div>
     </section>
   );
@@ -98,12 +83,14 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
 
 function ProbCell({
   label,
+  sublabel,
   value,
   baseline,
   accent,
   last,
 }: {
   label: string;
+  sublabel?: string;
   value: number;
   baseline: number;
   accent: string;
@@ -117,12 +104,19 @@ function ProbCell({
       className={`relative px-5 py-5 ${last ? "" : "border-r border-hairline"}`}
     >
       <div className="flex items-baseline justify-between">
-        <span
-          className="text-[11px] font-black tracking-[0.2em]"
-          style={{ color: accent }}
-        >
-          {label}
-        </span>
+        <div>
+          <span
+            className="text-[11px] font-black tracking-[0.2em] block"
+            style={{ color: accent }}
+          >
+            {label}
+          </span>
+          {sublabel && (
+            <span className="text-[9px] font-medium text-muted-foreground/80 tracking-normal block mt-0.5">
+              {sublabel}
+            </span>
+          )}
+        </div>
         <span className={`tabular text-[11px] font-bold ${deltaTone}`}>
           {delta > 0 ? "+" : ""}
           {delta}

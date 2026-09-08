@@ -88,33 +88,22 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
     raw -= (gridPos - 10) * 0.04;
   }
 
-  // Smooth sigmoid mapped to total podium chance (0.01 - 0.95)
-  let podium = Math.min(0.95, Math.max(0.01, sig(2.5 * (raw - 0.40))));
+  // Smooth sigmoid mapped to total cumulative podium chance (0.01 - 0.95)
+  const podium = Math.min(0.95, Math.max(0.01, sig(2.5 * (raw - 0.40))));
 
-  // Realistic split into distinct P1 (1st), P2 (2nd), P3 (3rd) positions
-  let p1Share = 0.22;
-  let p2Share = 0.38;
-  let p3Share = 0.40;
-
-  if (gridPos <= 2) {
-    p1Share = 0.50;
-    p2Share = 0.30;
-    p3Share = 0.20;
-  } else if (gridPos <= 5) {
-    p1Share = 0.35;
-    p2Share = 0.35;
-    p3Share = 0.30;
-  }
-
-  const p1 = Math.min(0.90, Math.max(0.005, podium * p1Share));
-  const p2 = Math.min(0.90, Math.max(0.005, podium * p2Share));
-  const p3 = Math.min(0.90, Math.max(0.005, podium * p3Share));
+  // Cumulative progression tiers:
+  // p3 = Podium (Finish <= 3)
+  // p2 = Top 2 (Finish <= 2)
+  // p1 = Win (Finish == 1)
+  const p3 = podium;
+  const p2 = Math.min(0.95, p3 * 0.72);
+  const p1 = Math.min(0.95, p3 * 0.45);
 
   return {
     p1,
     p2,
     p3,
-    podium, // Total cumulative chance of reaching the podium (P1 + P2 + P3)
+    podium: p3, // Total cumulative chance of reaching the podium (Finish <= 3)
     contributions: [
       { key: "Grid",       weight: FEATURE_WEIGHTS.Grid,       value: gridScore },
       { key: "Standings",  weight: FEATURE_WEIGHTS.Standings,  value: standingsScore },
