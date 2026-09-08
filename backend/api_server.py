@@ -503,11 +503,32 @@ def predict():
 
     # Cumulative podium probabilities:
     # p3 = Podium (Finish <= 3) — direct model output
-    # p2 = Top 2 (Finish <= 2) — cumulative top 2
-    # p1 = Win (Finish == 1)   — cumulative win
     p3 = float(raw_prob)
-    p2 = float(p3 * 0.72)
-    p1 = float(p3 * 0.45)
+    
+    # F1 realistic conversion from Podium to Top 2 and Win:
+    # Win probability drops off sharply outside pole/front rows and non-contenders
+    if grid_pos == 1:
+        win_ratio = 0.58
+        top2_ratio = 0.82
+    elif grid_pos == 2:
+        win_ratio = 0.32
+        top2_ratio = 0.65
+    elif grid_pos == 3:
+        win_ratio = 0.16
+        top2_ratio = 0.45
+    elif grid_pos <= 6:
+        win_ratio = 0.06
+        top2_ratio = 0.22
+    elif grid_pos <= 10:
+        win_ratio = 0.015
+        top2_ratio = 0.08
+    else:
+        win_ratio = 0.005
+        top2_ratio = 0.02
+
+    standing_factor = max(0.2, (12.0 - min(11.0, float(s_rank))) / 11.0)
+    p1 = min(0.95, max(0.005, p3 * win_ratio * standing_factor))
+    p2 = min(p3, max(p1 * 1.15, p3 * top2_ratio * standing_factor))
     
     return jsonify({
         "p1": p1,

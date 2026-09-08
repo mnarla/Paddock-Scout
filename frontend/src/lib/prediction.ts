@@ -66,9 +66,9 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
     }, 0);
 
   // Base score components — higher = better podium chance
-  const gridScore      = (11 - gridPos) / 10;                    // 1 at pole, 0 at 11+
-  const standingsScore = (11 - driver.standingsRank) / 10;
-  const carScore       = (11 - carRank) / 10;
+  const gridScore      = Math.max(0, (11 - gridPos) / 10);                    // 1 at pole, 0 at 11+
+  const standingsScore = Math.max(0, (11 - driver.standingsRank) / 10);
+  const carScore       = Math.max(0, (11 - carRank) / 10);
   const trackScore     = race.trackType === "Street" ? 0.6 : 0.7;
   const sprintScore    = race.isSprint ? 2.5 * 0.4 : 0.4;
 
@@ -84,24 +84,44 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
     FEATURE_WEIGHTS.CarRank   * carScore +
     FEATURE_WEIGHTS.Track     * trackScore +
     0.065                     * sprintScore +
-    0.22                      * formFactor +
-    0.25                      * upgradeBoost;
+    0.14                      * formFactor +
+    0.15                      * upgradeBoost;
 
-  // Grid penalty beyond top 10
+  // Grid penalty beyond top 3 and top 10 (podiums in F1 are heavily biased towards top rows)
+  if (gridPos > 3) {
+    raw -= (gridPos - 3) * 0.032;
+  }
   if (gridPos > 10) {
     raw -= (gridPos - 10) * 0.04;
   }
 
-  // Smooth sigmoid mapped to total cumulative podium chance (0.01 - 0.95)
-  const podium = Math.min(0.95, Math.max(0.01, sig(2.5 * (raw - 0.40))));
+  // Calibrated sigmoid mapped to realistic F1 podium rarity
+  const podium = Math.min(0.92, Math.max(0.01, sig(4.8 * (raw - 0.46))));
 
-  // Cumulative progression tiers:
-  // p3 = Podium (Finish <= 3)
-  // p2 = Top 2 (Finish <= 2)
-  // p1 = Win (Finish == 1)
+  // F1 historical conversion: Win and Top 2 odds heavily favor front rows and championship leaders
+  let winRatio = 0.01;
+  let top2Ratio = 0.05;
+  if (gridPos === 1) {
+    winRatio = 0.58;
+    top2Ratio = 0.82;
+  } else if (gridPos === 2) {
+    winRatio = 0.32;
+    top2Ratio = 0.65;
+  } else if (gridPos === 3) {
+    winRatio = 0.16;
+    top2Ratio = 0.45;
+  } else if (gridPos <= 6) {
+    winRatio = 0.06;
+    top2Ratio = 0.22;
+  } else if (gridPos <= 10) {
+    winRatio = 0.015;
+    top2Ratio = 0.08;
+  }
+
+  const standingFactor = Math.max(0.2, (12 - Math.min(11, driver.standingsRank)) / 11);
+  const p1 = Math.min(0.95, Math.max(0.005, podium * winRatio * standingFactor));
+  const p2 = Math.min(podium, Math.max(p1 * 1.15, podium * top2Ratio * standingFactor));
   const p3 = podium;
-  const p2 = Math.min(0.95, p3 * 0.72);
-  const p1 = Math.min(0.95, p3 * 0.45);
 
   return {
     p1,
