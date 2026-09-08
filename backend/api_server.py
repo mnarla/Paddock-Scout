@@ -195,6 +195,11 @@ circuit_enc = assets["circuit_enc"]
 grid_scaler = assets.get("grid_scaler")
 FEATURES = assets["features"]
 
+@app.route("/api/health", methods=["GET"])
+def health_check():
+    """Fast health-check endpoint for uptime monitors to prevent Render cold starts."""
+    return jsonify({"status": "ok", "service": "paddock-scout-backend"})
+
 @app.route("/api/next-race", methods=["GET"])
 def get_next_race():
     ri = get_next_race_full()
