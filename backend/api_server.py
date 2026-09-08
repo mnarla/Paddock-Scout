@@ -323,7 +323,20 @@ def predict():
     
     c_enc = safe_encode(circuit_enc, selected_gp)
     car_rank = float(row.get("Car_Rank", 5))
-    upgrade = 0.5 if team_name in UPGRADE_TEAMS else 0.0
+    
+    # Dynamic upgrade impact from News Agent (can be positive or negative)
+    upgrade = 0.0
+    try:
+        if os.path.exists("live_tech_updates.json"):
+            with open("live_tech_updates.json", "r") as f:
+                tech_data = json.load(f)
+                if team_name in tech_data:
+                    t_info = tech_data[team_name]
+                    # Score is positive for working upgrades, negative for failed upgrades
+                    upgrade = float(t_info.get("Upgrade_Score", 0.0))
+    except Exception:
+        upgrade = 0.5 if team_name in UPGRADE_TEAMS else 0.0
+
     overtake_idx = float(np.clip(grid_pos - car_rank, -10, 15))
     s_rank = standings_rank(ctx, row["FullName"])
     
@@ -537,27 +550,29 @@ def get_upgrades():
         team_id = TEAM_NAME_TO_ID.get(team)
         if not team_id:
             continue
-        upg_score = info.get("Upgrade_Score", 0.0)
-        pwr_boost = info.get("Power_Boost", 0.0)
+        upg_score = float(info.get("Upgrade_Score", 0.0))
+        pwr_boost = float(info.get("Power_Boost", 0.0))
+        component = info.get("Component", "Technical Upgrade")
+        is_defective = info.get("Is_Defective", False)
         
-        if upg_score > 0:
-            upgrades.append({
-                "team": team_id,
-                "component": f"Floor & Wing Upgrade Package (Score: {upg_score})",
-                "category": "Aero",
-                "validated": info.get("Upgrade_Validation", True),
-                "paceDelta": -float(upg_score) * 0.25,
-                "source": "News Agent scraper"
-            })
-        if pwr_boost > 0:
-            upgrades.append({
-                "team": team_id,
-                "component": f"Software & MGU-K Calibration Update (Boost: {pwr_boost})",
-                "category": "Power Unit",
-                "validated": info.get("Upgrade_Validation", True),
-                "paceDelta": -float(pwr_boost) * 0.30,
-                "source": "News Agent scraper"
-            })
+        # Determine pace delta (negative = faster, positive = slower)
+        if "Pace_Delta" in info:
+            pace_delta = float(info["Pace_Delta"])
+        elif is_defective or upg_score < 0:
+            pace_delta = +0.18
+        else:
+            pace_delta = -float(upg_score * 0.22 + pwr_boost * 0.25)
+            
+        category = "Power Unit" if pwr_boost > 0 and upg_score == 0 else "Aero"
+        
+        upgrades.append({
+            "team": team_id,
+            "component": component,
+            "category": category,
+            "validated": info.get("Upgrade_Validation", not is_defective),
+            "paceDelta": round(pace_delta, 2),
+            "source": info.get("Sources", ["News Agent"])[0] if info.get("Sources") else "News Agent"
+        })
             
     return jsonify(upgrades)
 

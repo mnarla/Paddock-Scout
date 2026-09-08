@@ -58,8 +58,12 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   const carRank = TEAMS[driver.team].carRank;
   const activeUpgrades = upgrades ?? UPGRADES;
   const upgradeBoost = activeUpgrades
-    .filter((u) => u.team === driver.team && u.validated)
-    .reduce((acc, u) => acc + Math.abs(u.paceDelta), 0); // seconds saved
+    .filter((u) => u.team === driver.team)
+    .reduce((acc, u) => {
+      // In F1 telemetry, negative paceDelta means faster (saving time e.g. -0.20s -> boost)
+      // Positive paceDelta means slower (correlation failure e.g. +0.18s -> penalty)
+      return acc + (-u.paceDelta);
+    }, 0);
 
   // Base score components — higher = better podium chance
   const gridScore      = (11 - gridPos) / 10;                    // 1 at pole, 0 at 11+

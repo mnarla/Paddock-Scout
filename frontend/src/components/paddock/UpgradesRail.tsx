@@ -32,12 +32,14 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                   </span>
                   <span
                     className={`tabular rounded-sm px-1.5 py-px text-[9px] font-bold ${
-                      u.validated
+                      u.paceDelta > 0
+                        ? "bg-f1-red/15 text-f1-red"
+                        : u.validated
                         ? "bg-f1-green/15 text-f1-green"
                         : "bg-f1-amber/15 text-f1-amber"
                     }`}
                   >
-                    {u.validated ? "✓ VALID" : "⚠ UNVERIFIED"}
+                    {u.paceDelta > 0 ? "✕ DEFECTIVE" : u.validated ? "✓ VALID" : "⚠ UNVERIFIED"}
                   </span>
                 </div>
                 <p className="mt-1 text-sm font-semibold text-foreground">

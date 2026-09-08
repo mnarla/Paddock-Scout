@@ -95,28 +95,71 @@ def build_live_tech_updates() -> Dict[str, dict]:
         
         upg_score = 0.0
         pwr_boost = 0.0
+        component_name = "Aero Package"
         
-        if "major floor" in text or "sidepod" in text:
+        # ── 1. Component Identification ──
+        if "major floor" in text or "floor upgrade" in text:
+            component_name = "Underfloor & Venturi Tunnels"
             upg_score = 0.8
+        elif "sidepod" in text or "radiator inlet" in text:
+            component_name = "Sidepod Undercut & Cooling"
+            upg_score = 0.6
+        elif "front wing" in text or "rear wing" in text or "beam wing" in text:
+            component_name = "Revised Wing Configuration"
+            upg_score = 0.4
         elif "minor wing" in text or "endplate" in text:
-            upg_score = 0.3
-            
-        if "mgu-k" in text or "software map" in text:
-            pwr_boost = 0.5
-            
-        # Validation
-        upg_valid = True
+            component_name = "Wing Endplate & Flap Revision"
+            upg_score = 0.25
+
+        if "mgu-k" in text or "software map" in text or "power unit" in text:
+            pwr_boost = 0.4
+
+        # ── 2. Sentiment & Flaw Detection (Positive vs Negative) ──
+        # Negative signals: porpoising, bouncing, correlation flaw, balance shift, understeer, drag
+        negative_signals = [
+            "porpoising", "bouncing", "correlation issue", "correlation flaw",
+            "wind tunnel disconnect", "balance issue", "drivability issue", "unstable",
+            "struggling with balance", "snap oversteer", "excessive drag", "draggy",
+            "downgrade", "step backwards", "failed upgrade", "abandoned", "scrapped"
+        ]
+        positive_signals = [
+            "step forward", "promising", "gain", "efficient", "faster", "solved balance",
+            "improved stability", "downforce gain", "clean correlation", "matched expectations"
+        ]
+
+        neg_hits = [s for s in negative_signals if s in text]
+        pos_hits = [s for s in positive_signals if s in text]
+
+        is_failed_upgrade = False
+        pace_delta = 0.0
+
+        if neg_hits and len(neg_hits) > len(pos_hits):
+            # Negative upgrade: car went backwards!
+            is_failed_upgrade = True
+            component_name += f" (Correlation Issue: {neg_hits[0]})"
+            pace_delta = +0.12 * len(neg_hits)  # Slower (+0.12s to +0.36s)
+            upg_score = -abs(upg_score if upg_score > 0 else 0.5)
+        elif upg_score > 0 or pwr_boost > 0:
+            # Positive upgrade: car is faster
+            pace_delta = -(upg_score * 0.22 + pwr_boost * 0.25)  # Faster (-0.10s to -0.35s)
+
+        # ── 3. Empirical Practice Pace Validation ──
         fp2_pos = _get_fp2_position(team, year, round_num)
+        upg_valid = True
         
-        # If the news says 'Major Upgrade' but the driver is P15 or worse in FP2
-        if upg_score == 0.8 and fp2_pos >= 15:
+        # If news reported a positive upgrade but car ended P15+ in FP2
+        if upg_score > 0 and fp2_pos >= 15:
             upg_valid = False
-            
-        if upg_score > 0 or pwr_boost > 0:
+            component_name += " [Unverified on Track]"
+
+        if upg_score != 0.0 or pwr_boost > 0 or is_failed_upgrade:
             updates[team] = {
-                "Upgrade_Score": upg_score,
-                "Power_Boost": pwr_boost,
+                "Upgrade_Score": float(upg_score),
+                "Power_Boost": float(pwr_boost),
                 "Upgrade_Validation": upg_valid,
+                "Is_Defective": is_failed_upgrade,
+                "Pace_Delta": round(pace_delta, 3),
+                "Component": component_name,
                 "FP2_Best_Pos": float(fp2_pos),
                 "Sources": ["The Race", "F1Technical", "Motorsport.com"]
             }
