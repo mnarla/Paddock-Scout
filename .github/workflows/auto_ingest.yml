@@ -2,9 +2,14 @@ name: Auto F1 Calendar Ingestion
 
 on:
   schedule:
-    # Run every Monday at 08:00 UTC (race is on Sunday, data is available by Monday)
-    - cron: '0 8 * * 1'
+    # Run every Monday at 14:00 UTC (giving ample time for FIA & F1 timing data to finalize)
+    # and Tuesday at 02:00 UTC as a safety catch-up
+    - cron: '0 14 * * 1'
+    - cron: '0 2 * * 2'
   workflow_dispatch: # Also allows manual trigger from GitHub Actions UI
+
+permissions:
+  contents: write
 
 jobs:
   ingest:
@@ -14,8 +19,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Set up Python
         uses: actions/setup-python@v5
