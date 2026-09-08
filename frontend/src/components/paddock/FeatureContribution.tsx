@@ -5,8 +5,8 @@ interface Props {
 }
 
 export function FeatureContribution({ prediction }: Props) {
-  const maxContrib = Math.max(
-    ...prediction.contributions.map((c) => c.weight * c.value),
+  const maxWeight = Math.max(
+    ...prediction.contributions.map((c) => c.weight),
     0.001
   );
   const totalWeight = prediction.contributions.reduce((acc, c) => acc + c.weight, 0);
@@ -29,8 +29,10 @@ export function FeatureContribution({ prediction }: Props) {
 
       <div className="space-y-2.5 px-4 py-4">
         {prediction.contributions.map((c) => {
-          const contrib = c.weight * c.value;
-          const barPct = (contrib / maxContrib) * 100;
+          // Bar width = feature importance (fixed weight) — always visible regardless of driver
+          const barPct = (c.weight / maxWeight) * 100;
+          // Opacity = how well THIS driver scores on this feature (0..1 clamped)
+          const driverScore = Math.min(1, Math.max(0, c.value));
           return (
             <div key={c.key} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
               <span className="text-[11px] font-medium text-muted-foreground">
@@ -40,7 +42,7 @@ export function FeatureContribution({ prediction }: Props) {
                 <div
                   key={`${c.key}-${barPct.toFixed(1)}`}
                   className="bar-fill h-full bg-gradient-to-r from-f1-red/80 to-f1-red"
-                  style={{ width: `${barPct}%` }}
+                  style={{ width: `${barPct}%`, opacity: 0.3 + 0.7 * driverScore }}
                 />
               </div>
               <span className="tabular w-10 text-right text-[11px] font-bold text-foreground">

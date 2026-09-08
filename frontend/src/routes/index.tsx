@@ -51,6 +51,10 @@ function PaddockScoutLive() {
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
   const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
 
+  // Stable serialized key for upgrades — prevents object-reference churn from triggering
+  // prediction re-fetches on every render when the upgrades array contents haven't changed.
+  const upgradesKey = useMemo(() => JSON.stringify(upgrades), [upgrades]);
+
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/drivers`)
       .then((res) => res.json())
@@ -116,19 +120,20 @@ function PaddockScoutLive() {
     predictDriver({ driver, gridPos, form, race, upgrades })
   );
 
-
-
-  // Update baseline state when driver, race or upgrades change
+  // Update BASELINE when driver/race/upgrades change (independent of what-if sliders).
+  // Uses upgradesKey (stable string) so a new array object from a re-render doesn't re-fire.
   useEffect(() => {
-    const localBaseline = predictDriver({
+    // Optimistic local prediction first
+    setBaseline(predictDriver({
       driver,
       gridPos: driver.qualifyingPos,
       form: driver.recentForm,
       race,
       upgrades,
-    });
-    setBaseline(localBaseline);
+    }));
 
+    // Then refine with server model
+    let cancelled = false;
     fetch(`${API_BASE_URL}/api/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -141,18 +146,20 @@ function PaddockScoutLive() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data && data.podium !== undefined) {
-          setBaseline(data);
-        }
+        if (!cancelled && data && data.podium !== undefined) setBaseline(data);
       })
       .catch((err) => console.error("Error fetching baseline prediction:", err));
-  }, [driver, race, upgrades]);
 
-  // Update what-if prediction state when inputs change
+    return () => { cancelled = true; };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [driver.id, driver.qualifyingPos, driver.recentForm, race.name, upgradesKey]);
+
+  // Update WHAT-IF prediction when sliders or driver change.
+  // Never touches baseline — keeps the two states fully independent.
   useEffect(() => {
-    const localPred = predictDriver({ driver, gridPos, form, race, upgrades });
-    setPrediction(localPred);
+    setPrediction(predictDriver({ driver, gridPos, form, race, upgrades }));
 
+    let cancelled = false;
     const handler = setTimeout(() => {
       fetch(`${API_BASE_URL}/api/predict`, {
         method: "POST",
@@ -166,15 +173,14 @@ function PaddockScoutLive() {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (data && data.podium !== undefined) {
-            setPrediction(data);
-          }
+          if (!cancelled && data && data.podium !== undefined) setPrediction(data);
         })
         .catch((err) => console.error("Error fetching current prediction:", err));
-    }, 150); // Debounce to avoid spamming the backend
+    }, 200);
 
-    return () => clearTimeout(handler);
-  }, [driver, gridPos, form, race, upgrades]);
+    return () => { cancelled = true; clearTimeout(handler); };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [driver.id, gridPos, form, race.name, upgradesKey]);
 
 
 
