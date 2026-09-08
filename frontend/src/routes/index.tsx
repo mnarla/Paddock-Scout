@@ -36,6 +36,16 @@ export const Route = createFileRoute("/")({
   component: PaddockScoutLive,
 });
 
+// Helper to determine if the upcoming Grand Prix has official Qualifying results ready.
+// Qualifying takes place Saturday afternoon (~24-28 hours before Sunday race start).
+// If the Grand Prix is more than 28 hours away (or outside race weekend), qualifying has not occurred yet.
+function isPostQualifyingWeekend(raceDateStr?: string): boolean {
+  if (!raceDateStr) return false;
+  const raceTimestamp = new Date(`${raceDateStr}T14:00:00Z`).getTime();
+  const diffHours = (raceTimestamp - Date.now()) / (1000 * 60 * 60);
+  return diffHours <= 28 && diffHours >= -6;
+}
+
 function PaddockScoutLive() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
@@ -64,11 +74,25 @@ function PaddockScoutLive() {
       .catch((err) => console.error("Error fetching upgrades:", err));
   }, []);
 
+  const isPostQuali = useMemo(() => isPostQualifyingWeekend(race?.date), [race?.date]);
+
+  // When outside race weekend or before Qualifying, default starting grid to championship standings rank
+  const activeDrivers = useMemo(() => {
+    return drivers.map((d, idx) => {
+      const standingsRank = d.standingsRank || idx + 1;
+      return {
+        ...d,
+        standingsRank,
+        qualifyingPos: isPostQuali && d.qualifyingPos ? d.qualifyingPos : standingsRank,
+      };
+    });
+  }, [drivers, isPostQuali]);
+
   const [driverId, setDriverId] = useState<string>("hamilton");
   
   const driver = useMemo(() => {
-    return drivers.find((x) => x.id === driverId) || drivers[0] || DRIVERS_2026[0];
-  }, [drivers, driverId]);
+    return activeDrivers.find((x) => x.id === driverId) || activeDrivers[0] || DRIVERS_2026[0];
+  }, [activeDrivers, driverId]);
 
   const [gridPos, setGridPos] = useState(driver.qualifyingPos);
   const [form, setForm] = useState(driver.recentForm);
@@ -156,7 +180,7 @@ function PaddockScoutLive() {
 
   const onDriverChange = (id: string) => {
     setDriverId(id);
-    const d = drivers.find((x) => x.id === id) || DRIVERS_2026.find((x) => x.id === id);
+    const d = activeDrivers.find((x) => x.id === id) || DRIVERS_2026.find((x) => x.id === id);
     if (d) {
       setGridPos(d.qualifyingPos);
       setForm(d.recentForm);
@@ -187,7 +211,8 @@ function PaddockScoutLive() {
             onGridChange={setGridPos}
             onFormChange={setForm}
             onReset={onReset}
-            drivers={drivers}
+            drivers={activeDrivers}
+            isPostQuali={isPostQuali}
           />
 
           <div className="space-y-4">

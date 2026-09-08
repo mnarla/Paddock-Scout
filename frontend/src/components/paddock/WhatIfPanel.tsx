@@ -11,6 +11,7 @@ interface Props {
   onFormChange: (n: number) => void;
   onReset: () => void;
   drivers?: Driver[];
+  isPostQuali?: boolean;
 }
 
 export function WhatIfPanel({
@@ -22,6 +23,7 @@ export function WhatIfPanel({
   onFormChange,
   onReset,
   drivers,
+  isPostQuali = false,
 }: Props) {
   const team = TEAMS[driver.team];
   const activeDrivers = drivers ?? DRIVERS_2026;
@@ -88,7 +90,7 @@ export function WhatIfPanel({
               </span>
             </span>
             <span>
-              Q{" "}
+              {isPostQuali ? "Q " : "Grid "}
               <span className="tabular text-foreground">
                 P{driver.qualifyingPos}
               </span>
@@ -122,7 +124,7 @@ export function WhatIfPanel({
           onClick={onReset}
           className="w-full rounded border border-hairline bg-secondary px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition hover:border-f1-red hover:text-foreground"
         >
-          Reset to Qualifying
+          {isPostQuali ? "Reset to Qualifying" : "Reset to Default Grid"}
         </button>
       </div>
     </aside>
