@@ -317,8 +317,14 @@ def predict():
     manual_form = float(data.get("form", 11.0))
     selected_gp = data.get("grandPrix", get_next_race_full().name)
     
+    if not driver_id:
+        return jsonify({"error": "driverId is required"}), 400
+
     ctx = build_2026_context()
-    row = ctx[ctx["DriverId"] == driver_id].iloc[0]
+    driver_rows = ctx[ctx["DriverId"] == driver_id]
+    if driver_rows.empty:
+        return jsonify({"error": f"Driver {driver_id} not found in context"}), 404
+    row = driver_rows.iloc[0]
     team_name = row["TeamName"]
     
     c_enc = safe_encode(circuit_enc, selected_gp)
