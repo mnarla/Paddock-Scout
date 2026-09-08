@@ -180,9 +180,13 @@ def build_2026_context():
     ss["Car_Rank"] = ss["TeamName"].map(trank).fillna(trank.max())
     ss["TeamColor"] = ss["TeamColor"].apply(normalise_color)
     
-    qfiles = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*q.csv")))
-    if qfiles:
-        qdf = pd.read_csv(qfiles[-1])
+    # Only populate QualifyingPos if Qualifying has actually taken place
+    # FOR THE CURRENT/UPCOMING RACE. If between races (not race weekend),
+    # default QualifyingPos to NaN so driver defaults to their Championship Standings rank.
+    ri = get_next_race_full()
+    next_q_file = os.path.join(DATA_DIR, f"results_{ri.date.year}_round{ri.round_num:02d}q.csv")
+    if os.path.exists(next_q_file):
+        qdf = pd.read_csv(next_q_file)
         qdf["Position"] = pd.to_numeric(qdf["Position"], errors="coerce")
         ss["QualifyingPos"] = ss["DriverId"].map(qdf.set_index("DriverId")["Position"].dropna().astype(int))
     else:
@@ -269,9 +273,11 @@ def get_drivers():
         if pd.isna(form_val):
             form_val = float(row["Recent_Form_3R"])
             
+        standings_rank = idx + 1
         qual_pos = row["QualifyingPos"]
         if pd.isna(qual_pos):
-            qual_pos = 10.0
+            # Not a race weekend / no Quali yet — default starting grid to championship standings rank
+            qual_pos = float(standings_rank)
             
         drivers.append({
             "id": did,
@@ -280,7 +286,7 @@ def get_drivers():
             "first": info["first"],
             "last": info["last"],
             "team": TEAM_NAME_TO_ID.get(row["TeamName"], "audi"),
-            "standingsRank": idx + 1,
+            "standingsRank": standings_rank,
             "seasonPoints": int(row["SeasonPoints"]),
             "recentForm": round(form_val, 2),
             "qualifyingPos": int(qual_pos)
