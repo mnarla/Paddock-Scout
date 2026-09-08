@@ -48,21 +48,44 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
       <div className="border-t border-hairline" />
 
       {/* Big probability cards */}
+      <div className="bg-secondary/30 px-5 py-2 border-b border-hairline flex items-center justify-between">
+        <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
+          Podium Probability (Top 3)
+        </span>
+        <div className="flex items-center gap-2">
+          <span className="tabular text-base font-black text-f1-amber">
+            {Math.round((prediction.podium ?? (prediction.p1 + prediction.p2 + prediction.p3)) * 100)}%
+          </span>
+          {baseline.podium !== undefined && (
+            <span className={`tabular text-[10px] font-bold ${
+              Math.round((prediction.podium - baseline.podium) * 100) > 0 
+                ? "text-f1-green" 
+                : Math.round((prediction.podium - baseline.podium) * 100) < 0 
+                ? "text-f1-red" 
+                : "text-muted-foreground"
+            }`}>
+              {Math.round((prediction.podium - baseline.podium) * 100) > 0 ? "+" : ""}
+              {Math.round((prediction.podium - baseline.podium) * 100)}%
+            </span>
+          )}
+        </div>
+      </div>
+
       <div className="grid grid-cols-3">
         <ProbCell
-          label="P1"
+          label="P1 (WIN)"
           value={prediction.p1}
           baseline={baseline.p1}
           accent="var(--color-f1-red)"
         />
         <ProbCell
-          label="P2"
+          label="P2 (2ND)"
           value={prediction.p2}
           baseline={baseline.p2}
           accent="#c0c0c8"
         />
         <ProbCell
-          label="P3"
+          label="P3 (3RD)"
           value={prediction.p3}
           baseline={baseline.p3}
           accent="#cd7f32"

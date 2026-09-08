@@ -71,40 +71,50 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   // Form penalty (lower form = better — closer to P1)
   const formPenalty = (form - 1) / 19; // 0..1
 
+  // Form factor: 1 is best, 11 is mid, 20 is worst
+  const formFactor = (11 - form) / 10; // +1.0 at form 1, 0.0 at form 11, -0.9 at form 20
+
   let raw =
     FEATURE_WEIGHTS.Grid      * gridScore +
     FEATURE_WEIGHTS.Standings * standingsScore +
     FEATURE_WEIGHTS.CarRank   * carScore +
     FEATURE_WEIGHTS.Track     * trackScore +
-    0.065                     * sprintScore -
-    0.18                      * formPenalty +
+    0.065                     * sprintScore +
+    0.22                      * formFactor +
     0.25                      * upgradeBoost;
 
-  // Calibration #2: Car_Rank Alpha — top cars get +15% bonus when starting outside top 5
-  if (carRank <= 2 && gridPos > 5) raw += 0.15;
-
-  // Calibration #3: Champion's Aura floor for top-10 starters
-  let p1 = sig(3.2 * (raw - 0.55));
-  let p2 = sig(2.6 * (raw - 0.35));
-  let p3 = sig(2.2 * (raw - 0.20));
-
-  if (gridPos <= 10) {
-    const floor = 0.70 * Math.pow(0.80, driver.standingsRank - 1);
-    p3 = Math.max(p3, floor);
-    p2 = Math.max(p2, floor * 0.7);
-    p1 = Math.max(p1, floor * 0.45);
+  // Grid penalty beyond top 10
+  if (gridPos > 10) {
+    raw -= (gridPos - 10) * 0.04;
   }
 
-  // Clamp
-  p1 = Math.min(0.98, p1);
-  p2 = Math.min(0.98, Math.max(p1 * 0.8, p2));
-  p3 = Math.min(0.99, Math.max(p2, p3));
+  // Smooth sigmoid mapped to total podium chance (0.01 - 0.95)
+  let podium = Math.min(0.95, Math.max(0.01, sig(2.5 * (raw - 0.40))));
+
+  // Realistic split into distinct P1 (1st), P2 (2nd), P3 (3rd) positions
+  let p1Share = 0.22;
+  let p2Share = 0.38;
+  let p3Share = 0.40;
+
+  if (gridPos <= 2) {
+    p1Share = 0.50;
+    p2Share = 0.30;
+    p3Share = 0.20;
+  } else if (gridPos <= 5) {
+    p1Share = 0.35;
+    p2Share = 0.35;
+    p3Share = 0.30;
+  }
+
+  const p1 = Math.min(0.90, Math.max(0.005, podium * p1Share));
+  const p2 = Math.min(0.90, Math.max(0.005, podium * p2Share));
+  const p3 = Math.min(0.90, Math.max(0.005, podium * p3Share));
 
   return {
     p1,
     p2,
     p3,
-    podium: p3, // P3 is cumulative "at least podium"
+    podium, // Total cumulative chance of reaching the podium (P1 + P2 + P3)
     contributions: [
       { key: "Grid",       weight: FEATURE_WEIGHTS.Grid,       value: gridScore },
       { key: "Standings",  weight: FEATURE_WEIGHTS.Standings,  value: standingsScore },

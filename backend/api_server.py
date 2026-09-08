@@ -338,23 +338,23 @@ def predict():
     }
     
     X = np.array([[feature_dict.get(f, 0.0) for f in FEATURES]])
-    raw_prob = clf.predict_proba(X)[0][1]
+    raw_prob = float(clf.predict_proba(X)[0][1])
     
+    # Smooth momentum influence (if fresh session data exists)
     if not momentum_series.empty:
-        raw_prob = min(1.0, raw_prob + max(0.0, (11.0 - wm_val) / 11.0 * 0.15))
+        raw_prob = min(1.0, max(0.0, raw_prob + (11.0 - wm_val) / 11.0 * 0.10))
         
-    # Champion's Aura: Non-linear decay floor. P1 gets 70% floor if in Top 10.
-    if grid_pos <= 10:
-        floor = 0.70 * (0.80 ** (s_rank - 1))
-        raw_prob = max(raw_prob, floor)
-        
-    # Car_Rank Alpha
-    if car_rank == 1 and grid_pos > 5:
-        raw_prob = min(1.0, raw_prob + 0.15)
-    elif car_rank <= 2 and grid_pos > 3:
-        gap = min(grid_pos - 3, 7)
-        raw_prob = min(1.0, raw_prob * (1.0 + 0.015 * gap))
-        
+    # Apply form penalty / bonus smoothly:
+    # manual_form: 1.0 is winning form, 11.0 is mid, 20.0 is backmarker
+    # Slumping drivers (form > 10) are penalized; on-fire drivers (form < 5) get a boost
+    form_factor = (11.0 - manual_form) / 10.0  # +1.0 for form 1, 0.0 for form 11, -0.9 for form 20
+    raw_prob = np.clip(raw_prob * (1.0 + 0.35 * form_factor), 0.01, 0.95)
+
+    # Grid steepness factor: starting deep naturally curtails podium chance
+    if grid_pos > 10:
+        penalty_grid = (grid_pos - 10) * 0.05
+        raw_prob = max(0.005, raw_prob * (1.0 - min(0.85, penalty_grid)))
+
     # Feature contributions
     contribs = []
     neutral = get_neutral_values()
@@ -460,16 +460,33 @@ def predict():
                 "value": 1.0
             })
 
-    # Approximate split into P1, P2, P3
-    p3 = raw_prob
-    p2 = raw_prob * 0.72
-    p1 = raw_prob * 0.45
+    # Cumulative podium probability
+    podium_prob = raw_prob
+    
+    # Realistic distribution across individual podium steps based on starting position:
+    # Starting P1-P2 gives highest share to P1 (Win). Starting P5-P10 shifts weight towards P2 & P3.
+    if grid_pos <= 2:
+        p1_share = 0.50
+        p2_share = 0.30
+        p3_share = 0.20
+    elif grid_pos <= 5:
+        p1_share = 0.35
+        p2_share = 0.35
+        p3_share = 0.30
+    else:
+        p1_share = 0.22
+        p2_share = 0.38
+        p3_share = 0.40
+
+    p1 = podium_prob * p1_share
+    p2 = podium_prob * p2_share
+    p3 = podium_prob * p3_share
     
     return jsonify({
         "p1": p1,
         "p2": p2,
         "p3": p3,
-        "podium": p3,
+        "podium": podium_prob,
         "contributions": frontend_contribs
     })
 
