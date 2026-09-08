@@ -29,22 +29,27 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas fastf1
+          pip install pandas fastf1 duckduckgo-search
 
       - name: Run past-missing ingestion
         # Scans completed races, downloads any that are missing a CSV from data/
         run: |
           PYTHONPATH=backend python3 backend/data_loader.py --past-missing
 
+      - name: Run news agent technical scraper
+        # Scrapes technical upgrade news for the upcoming race weekend
+        run: |
+          PYTHONPATH=backend python3 backend/news_agent.py
+
       - name: Commit & push new data
         run: |
           git config --global user.name  "Paddock Scout Bot"
           git config --global user.email "actions@github.com"
-          git add data/
+          git add data/ live_tech_updates.json
           # Only commit if any new files were staged
           if git diff --staged --quiet; then
-            echo "No new race data to commit."
+            echo "No new race data or technical updates to commit."
           else
-            git commit -m "auto-ingest: new race telemetry"
+            git commit -m "auto-ingest: new race telemetry & technical upgrades"
             git push
           fi

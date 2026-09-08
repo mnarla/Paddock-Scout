@@ -68,9 +68,25 @@ def auto_ingest_missing_data() -> None:
             log.debug(f"[auto-ingest] Rd {race.round_num:02d} {race.name}: data present, skipping")
 
 
+from news_agent import build_live_tech_updates
+
 # Trigger auto-ingest once the Flask app context is available
 with app.app_context():
     auto_ingest_missing_data()
+
+    # Automatically refresh live technical news in the background if older than 24h or missing
+    def _refresh_news():
+        try:
+            update_path = "live_tech_updates.json"
+            needs_update = not os.path.exists(update_path) or (time.time() - os.path.getmtime(update_path) > 86400)
+            if needs_update:
+                log.info("[news-agent] Automatically scraping fresh F1 technical updates...")
+                build_live_tech_updates()
+                log.info("[news-agent] ✅ Technical updates refreshed.")
+        except Exception as exc:
+            log.warning(f"[news-agent] Failed to refresh tech updates: {exc}")
+
+    threading.Thread(target=_refresh_news, daemon=True).start()
 UPGRADE_TEAMS = {"McLaren", "Ferrari"}
 
 TEAM_NAME_TO_ID = {
