@@ -51,21 +51,25 @@ def auto_ingest_missing_data() -> None:
     Scan all completed 2026 races and, for any whose main race CSV is absent,
     spawn a background daemon thread to download it via FastF1.
 
-    This is called once at Flask startup so the server never blocks on ingestion.
+    On memory-constrained production platforms (like Render with a 512MB RAM cap),
+    heavy FastF1 telemetry downloading is disabled inside the web service process.
+    Ingestion is handled safely by the GitHub Actions workflow (.github/workflows/auto_ingest.yml).
     """
-    past = get_past_races()
-    for race in past:
-        expected_csv = os.path.join(DATA_DIR, f"results_2026_round{race.round_num:02d}.csv")
-        if not os.path.exists(expected_csv):
-            log.info(f"[auto-ingest] Missing data for {race.name} (Rd {race.round_num}) — queuing download")
-            t = threading.Thread(
-                target=_ingest_race,
-                args=(race.name, race.round_num),
-                daemon=True,
-            )
-            t.start()
-        else:
-            log.debug(f"[auto-ingest] Rd {race.round_num:02d} {race.name}: data present, skipping")
+    if os.environ.get("RENDER") or os.environ.get("DISABLE_IN_APP_INGEST"):
+        log.info("[auto-ingest] Running in Render production — skipping in-app FastF1 ingestion (managed by GitHub Actions).")
+        return
+
+    def _worker():
+        past = get_past_races()
+        for race in past:
+            expected_csv = os.path.join(DATA_DIR, f"results_2026_round{race.round_num:02d}.csv")
+            if not os.path.exists(expected_csv):
+                log.info(f"[auto-ingest] Missing data for {race.name} (Rd {race.round_num}) — downloading sequentially")
+                _ingest_race(race.name, race.round_num)
+            else:
+                log.debug(f"[auto-ingest] Rd {race.round_num:02d} {race.name}: data present, skipping")
+
+    threading.Thread(target=_worker, daemon=True, name="auto-ingest-worker").start()
 
 
 from news_agent import build_live_tech_updates
