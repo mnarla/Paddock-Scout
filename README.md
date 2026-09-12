@@ -17,10 +17,10 @@ I designed this project to explore how machine learning, simulation modeling, an
 *   **Live Web Intelligence Agent**: Automatically searches top technical motorsport outlets (*The Race*, *F1Technical.net*, *Motorsport.com*) using a DuckDuckGo search agent to extract live updates about MGU-K power clipping, sidepod packages, and wing upgrades.
 *   **Intelligent Upgrade Validation & Honest Tracking**: Cross-references reported news with real-time FP2 results. If a news outlet reports a "major upgrade" but the team is slower than P15 in practice, the upgrade is flagged as unvalidated and its performance boost is discounted. Confirmed, source-cited upgrades display with real pace deltas, while teams awaiting technical reports are shown with transparent `— PENDING` status (no fabricated components).
 *   **Dynamic Session-Aware Feature Breakdown**: Automatically senses which live weekend sessions have concluded. The model cleanly adapts its weighting and status messaging through each phase of the weekend (pre-weekend form weighting $\rightarrow$ Friday practice pace active $\rightarrow$ Saturday fully ingested live grid & momentum), with tailored support for Sprint weekend schedules.
-*   **Chronological Session Countdown**: A live header clock that tracks the upcoming weekend session in chronological order (`FP1` $\rightarrow$ `FP2` $\rightarrow$ `FP3` / `Sprint Shootout` $\rightarrow$ `Qualifying` $\rightarrow$ `Grand Prix`), stepping forward automatically as track action concludes.
+*   **Chronological Session Countdown**: A live header clock that tracks the upcoming weekend session in chronological order (`FP1` $\rightarrow$ `FP2` $\rightarrow$ `FP3` / `Sprint` $\rightarrow$ `Qualifying` $\rightarrow$ `Grand Prix`), stepping forward automatically as track action concludes.
 *   **Special Physics & Recovery Modifiers**:
     *   *Overtake Index*: Evaluates midfield and front-runner recovery potential when fast cars start out of position.
-    *   *Car Rank Alpha*: Grants the #1 ranked team a +15% recovery probability boost if starting outside the Top 5.
+    *   *Car Rank*: Grants the #1 ranked team a +15% recovery probability boost if starting outside the Top 5.
     *   📁 **Race Archive**: Explores historical 2026 race weekends, including Q1/Q2/Q3 qualifying times, practice pace averages, and interactive podium cards.
 
 ---
