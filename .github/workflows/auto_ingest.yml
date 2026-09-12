@@ -2,15 +2,39 @@ name: Auto F1 Calendar Ingestion
 
 on:
   schedule:
-    # Friday evening PST (03:00 UTC Saturday) — Ingests FP1, FP2, Sprint Qualifying
+    # Friday evening:
+    # - 21:00 UTC Friday (European evening / US afternoon)
+    # - 03:00 UTC Saturday (8 PM PST / 11 PM EST Friday evening)
+    - cron: '0 21 * * 5'
     - cron: '0 3 * * 6'
-    # Saturday evening PST (03:00 UTC Sunday) — Ingests FP3, Qualifying, Sprint
+
+    # Saturday evening:
+    # - 21:00 UTC Saturday (European evening / US afternoon)
+    # - 03:00 UTC Sunday (8 PM PST / 11 PM EST Saturday evening)
+    - cron: '0 21 * * 6'
     - cron: '0 3 * * 0'
-    # Monday at 14:00 UTC (06:00 AM PST) — Ingests completed Grand Prix race results
+
+    # Sunday evening & catch-up:
+    # - 21:00 UTC Sunday (European evening / US afternoon)
+    # - 03:00 UTC Monday (8 PM PST / 11 PM EST Sunday evening)
+    # - 14:00 UTC Monday (Safety catch-up)
+    - cron: '0 21 * * 0'
+    - cron: '0 3 * * 1'
     - cron: '0 14 * * 1'
-    # Tuesday at 02:00 UTC (18:00 PST Monday) — Safety catch-up run
-    - cron: '0 2 * * 2'
-  workflow_dispatch: # Also allows manual trigger from GitHub Actions UI
+
+  workflow_dispatch:
+    inputs:
+      day:
+        description: 'Session day to ingest (friday, saturday, sunday, auto, all)'
+        required: true
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - friday
+          - saturday
+          - sunday
+          - all
 
 permissions:
   contents: write
@@ -35,11 +59,36 @@ jobs:
           pip install pandas fastf1 duckduckgo-search
 
       - name: Ingest race weekend sessions & past missing races
-        # 1. Pulls completed practice, qualifying, and sprint sessions for the active weekend
-        # 2. Ingests any completed past races that might be missing
+        # Friday: FP1, FP2
+        # Saturday: FP3, Qualifying, and Sprint (if sprint weekend)
+        # Sunday: Grand Prix Race results
         run: |
-          PYTHONPATH=backend python3 backend/data_loader.py --current
-          PYTHONPATH=backend python3 backend/data_loader.py --past-missing
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            TARGET_DAY="${{ inputs.day }}"
+          else
+            case "${{ github.event.schedule }}" in
+              "0 21 * * 5"|"0 3 * * 6")
+                TARGET_DAY="friday"
+                ;;
+              "0 21 * * 6"|"0 3 * * 0")
+                TARGET_DAY="saturday"
+                ;;
+              "0 21 * * 0"|"0 3 * * 1"|"0 14 * * 1")
+                TARGET_DAY="sunday"
+                ;;
+              *)
+                TARGET_DAY="auto"
+                ;;
+            esac
+          fi
+
+          echo "Ingesting active weekend for target day: $TARGET_DAY"
+          PYTHONPATH=backend python3 backend/data_loader.py --current --day "$TARGET_DAY"
+
+          # On Sunday / Monday runs, also check for any completed past races
+          if [ "$TARGET_DAY" = "sunday" ] || [ "$TARGET_DAY" = "all" ] || [ "$TARGET_DAY" = "auto" ]; then
+            PYTHONPATH=backend python3 backend/data_loader.py --past-missing
+          fi
 
       - name: Run news agent technical scraper
         # Scrapes technical upgrade news for the upcoming race weekend

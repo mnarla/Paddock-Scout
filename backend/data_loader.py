@@ -74,6 +74,68 @@ def _csv_path(year: int, rnd: int, suffix: str) -> str:
     return os.path.join(DATA_DIR, f"results_{year}_round{rnd:02d}{suffix}.csv")
 
 
+def _is_session_results_populated(results: pd.DataFrame) -> bool:
+    """Check whether session results DataFrame contains non-null positions or lap times."""
+    if results is None or results.empty:
+        return False
+    has_pos = "Position" in results.columns and results["Position"].dropna().count() > 0
+    has_time = "Time" in results.columns and results["Time"].dropna().count() > 0
+    return bool(has_pos or has_time)
+
+
+def _is_csv_populated(path: str) -> bool:
+    """Check whether a CSV on disk has non-null positions or times."""
+    if not os.path.exists(path):
+        return False
+    try:
+        df = pd.read_csv(path)
+        return _is_session_results_populated(df)
+    except Exception:
+        return False
+
+
+def get_sessions_for_day(day: str, is_sprint: bool) -> List[str]:
+    """
+    Determine which FastF1 sessions should be fetched for a given day:
+      - 'friday':   FP1 and FP2 (or FP1 and SQ if sprint weekend)
+      - 'saturday': FP3 and Q (or Sprint and Q if sprint weekend)
+      - 'sunday':   Grand Prix Race (R)
+      - 'all':      All weekend sessions
+    """
+    day = day.lower().strip()
+    if day == "friday":
+        return ["FP1", "SQ", "FP2"] if is_sprint else ["FP1", "FP2"]
+    elif day == "saturday":
+        return ["S", "Q"] if is_sprint else ["FP3", "Q"]
+    elif day == "sunday":
+        return ["R"]
+    elif day == "all":
+        return ["FP1", "FP2", "FP3", "Q", "S", "R"]
+    else:
+        raise ValueError(f"Unknown day '{day}'. Allowed: 'friday', 'saturday', 'sunday', 'all', 'auto'.")
+
+
+def resolve_auto_day(now: Optional[object] = None) -> str:
+    """
+    Auto-detect session day based on current weekday:
+      - Friday (weekday 4): 'friday'
+      - Saturday (weekday 5): 'saturday'
+      - Sunday (weekday 6) or Monday (weekday 0): 'sunday'
+      - Other days: 'all'
+    """
+    if now is None:
+        from datetime import datetime
+        now = datetime.now()
+    wd = now.weekday()
+    if wd == 4:
+        return "friday"
+    elif wd == 5:
+        return "saturday"
+    elif wd in (6, 0):
+        return "sunday"
+    return "all"
+
+
 def _save_session(
     year:           int,
     event_name:     str,
@@ -87,7 +149,7 @@ def _save_session(
     Download a single FastF1 session and save results to CSV.
 
     Returns True if saved successfully, False if the session is unavailable
-    (future race, cancelled, or API error).
+    (future race, cancelled, no completed results yet, or API error).
 
     Parameters
     ----------
@@ -99,15 +161,18 @@ def _save_session(
     """
     path = _csv_path(year, rnd, suffix)
     if os.path.exists(path) and not force:
-        log.debug(f"  Already cached: {path}")
-        return True
+        if _is_csv_populated(path):
+            log.debug(f"  Already cached: {path}")
+            return True
+        else:
+            log.info(f"  Existing file {path} has no classified positions/times — attempting refresh")
 
     try:
         session = fastf1.get_session(year, event_name, ff1_key)
         session.load(telemetry=False, laps=False, weather=False, messages=False)
         results = session.results
-        if results is None or results.empty:
-            log.warning(f"  No results: {year} {event_name} [{ff1_key}]")
+        if not _is_session_results_populated(results):
+            log.warning(f"  No completed timings/positions yet: {year} {event_name} [{ff1_key}] — skipping save")
             return False
 
         results = results.copy()
@@ -126,20 +191,25 @@ def _save_session(
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-def load_event(year: int, event_name: str, rnd: int, force: bool = False) -> None:
+def load_event(
+    year: int,
+    event_name: str,
+    rnd: int,
+    sessions: Optional[List[str]] = None,
+    force: bool = False,
+) -> None:
     """
-    Download all available sessions for one race weekend.
-    Attempts to fetch ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R'].
-    If a session doesn't exist, it catches the error and continues.
+    Download specified sessions for one race weekend.
+    Defaults to all sessions if not specified.
     """
     log.info(f"Processing {year} Round {rnd:02d}: {event_name}")
 
-    sessions_to_fetch = ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
-    
+    sessions_to_fetch = sessions if sessions is not None else ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
+
     for ff1_key in sessions_to_fetch:
         suffix = ff1_key.lower() if ff1_key != 'R' else ''
         weight = 2.5 if ff1_key == 'S' else 1.0
-        
+
         _save_session(year, event_name, rnd, ff1_key, suffix, weight, force=force)
 
 
@@ -165,19 +235,25 @@ def load_season(year: int, force: bool = False) -> None:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-def load_current_weekend(force: bool = False) -> None:
+def load_current_weekend(day: str = "all", force: bool = False) -> None:
     """
-    Download all available sessions for the next/current race weekend.
-
-    Called automatically on app startup to pull the latest FP, Sprint,
-    and Qualifying results as soon as they hit the FastF1 API.
+    Download sessions for the next/current race weekend targeted by day:
+      - 'friday':   FP1 and FP2 (and SQ if sprint weekend)
+      - 'saturday': FP3 and Qualifying (and Sprint if sprint weekend)
+      - 'sunday':   Grand Prix Race (R)
+      - 'auto':     Infers day based on current weekday
+      - 'all':      All weekend sessions
     """
     ri = get_next_race_full()
-    log.info(f"Current weekend: {ri.name} (Round {ri.round_num}, {ri.date:%Y-%m-%d})")
+    target_day = resolve_auto_day() if day == "auto" else day
+    sessions = get_sessions_for_day(target_day, ri.is_sprint)
+
+    log.info(f"Current weekend: {ri.name} (Round {ri.round_num}, {ri.date:%Y-%m-%d}) | Target day: {target_day} | Sessions: {sessions}")
     load_event(
         year       = ri.date.year,
         event_name = ri.name,
         rnd        = ri.round_num,
+        sessions   = sessions,
         force      = force,
     )
 
@@ -196,7 +272,7 @@ def ingest_past_missing(force: bool = False) -> None:
         return
 
     for race in past:
-        expected_csv = os.path.join(DATA_DIR, f"results_2026_round{race.round_num:02d}.csv")
+        expected_csv = os.path.join(DATA_DIR, f"results_{year}_round{race.round_num:02d}.csv") if 'year' in locals() else os.path.join(DATA_DIR, f"results_{race.date.year}_round{race.round_num:02d}.csv")
         if not os.path.exists(expected_csv) or force:
             log.info(f"Missing data for Round {race.round_num} ({race.name}) — downloading …")
             load_event(
@@ -215,6 +291,15 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="F1 Live Data Loader")
     parser.add_argument("--current", action="store_true",
                         help="Only load the current race weekend (fast)")
+    parser.add_argument("--day", choices=["friday", "saturday", "sunday", "auto", "all"],
+                        default="all",
+                        help="Which day's sessions to load: friday (FP1, FP2), saturday (FP3, Q, Sprint), sunday (Race), auto, or all")
+    parser.add_argument("--friday", action="store_const", dest="day", const="friday",
+                        help="Shortcut for --day friday (FP1, FP2)")
+    parser.add_argument("--saturday", action="store_const", dest="day", const="saturday",
+                        help="Shortcut for --day saturday (FP3, Q, Sprint)")
+    parser.add_argument("--sunday", action="store_const", dest="day", const="sunday",
+                        help="Shortcut for --day sunday (Race)")
     parser.add_argument("--past-missing", action="store_true",
                         help="Ingest any completed race that is missing its CSV (used by CI)")
     parser.add_argument("--force", action="store_true",
@@ -222,7 +307,7 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.current:
-        load_current_weekend(force=args.force)
+        load_current_weekend(day=args.day, force=args.force)
     elif args.past_missing:
         ingest_past_missing(force=args.force)
     else:
