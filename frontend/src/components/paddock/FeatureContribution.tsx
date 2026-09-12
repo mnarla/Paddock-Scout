@@ -7,30 +7,17 @@ interface Props {
 }
 
 export function FeatureContribution({ prediction, featureWeights }: Props) {
-  const { weights, liveSessionFeatures, isLoading } = featureWeights;
+  const { weights, unavailableFeatures, isLoading } = featureWeights;
 
   // Build a map of driver values from the local prediction (for bar opacity).
   const valueMap: Record<string, number> = {};
-  for (const c of prediction.contributions) {
+  for (const c of (prediction?.contributions || [])) {
     valueMap[c.key] = c.value;
-  }
-
-  // Also capture which keys the API returned with weight === 0 (truly unavailable session data).
-  // A feature is "unavailable" when:
-  //   1. It's classified as a live-session feature (Practice, Qualifying, Momentum), AND
-  //   2. The API returned weight = 0 for it, OR the weights haven't loaded yet.
-  const unavailableKeys = new Set<string>();
-  if (!isLoading && Object.keys(weights).length > 0) {
-    for (const key of liveSessionFeatures) {
-      if ((weights[key] ?? 0) === 0) {
-        unavailableKeys.add(key);
-      }
-    }
   }
 
   // Collect available entries from the API weights (exclude unavailable live-session features).
   const availableEntries = Object.entries(weights).filter(
-    ([key]) => !unavailableKeys.has(key)
+    ([key]) => !unavailableFeatures.has(key)
   );
 
   // Re-normalize so the displayed rows always sum to exactly 1.0 (100%).
@@ -44,8 +31,9 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
   // Sort descending by weight so most important feature is at the top.
   normalizedEntries.sort((a, b) => b.weight - a.weight);
 
-  const isPreRace = unavailableKeys.size > 0;
+  const isPreRace = unavailableFeatures.size > 0;
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
+
 
   return (
     <section className="rounded-lg border border-hairline bg-card">

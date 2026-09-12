@@ -115,7 +115,7 @@ function PaddockScoutLive() {
   useEffect(() => {
     setGridPos(driver.qualifyingPos);
     setForm(driver.recentForm);
-  }, [driver]);
+  }, [driver.id, driver.qualifyingPos, driver.recentForm]);
 
   // ── Client-side prediction cache ────────────────────────────────────────────
   // Caches server predictions keyed by driverId+gridPos+form+raceName.

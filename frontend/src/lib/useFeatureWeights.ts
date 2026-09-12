@@ -14,6 +14,7 @@ import { API_BASE_URL } from "@/lib/config";
 export interface FeatureWeightsData {
   weights: Record<string, number>;
   liveSessionFeatures: Set<string>;
+  unavailableFeatures: Set<string>;
   isLoading: boolean;
   error: boolean;
 }
@@ -21,6 +22,7 @@ export interface FeatureWeightsData {
 const EMPTY: FeatureWeightsData = {
   weights: {},
   liveSessionFeatures: new Set(["Practice", "Qualifying", "Momentum"]),
+  unavailableFeatures: new Set(["Practice", "Qualifying", "Momentum"]),
   isLoading: true,
   error: false,
 };
@@ -36,7 +38,11 @@ export function useFeatureWeights(): FeatureWeightsData {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((data: { weights: Record<string, number>; liveSessionFeatures: string[] }) => {
+      .then((data: {
+        weights: Record<string, number>;
+        liveSessionFeatures?: string[];
+        unavailableFeatures?: string[];
+      }) => {
         if (cancelled) return;
 
         const weights = data.weights ?? {};
@@ -52,6 +58,7 @@ export function useFeatureWeights(): FeatureWeightsData {
         setState({
           weights,
           liveSessionFeatures: new Set(data.liveSessionFeatures ?? ["Practice", "Qualifying", "Momentum"]),
+          unavailableFeatures: new Set(data.unavailableFeatures ?? ["Practice", "Qualifying", "Momentum"]),
           isLoading: false,
           error: false,
         });
@@ -62,6 +69,7 @@ export function useFeatureWeights(): FeatureWeightsData {
         setState({
           weights: {},
           liveSessionFeatures: new Set(["Practice", "Qualifying", "Momentum"]),
+          unavailableFeatures: new Set(["Practice", "Qualifying", "Momentum"]),
           isLoading: false,
           error: true,
         });

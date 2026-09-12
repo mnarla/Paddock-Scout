@@ -373,9 +373,26 @@ def feature_weights():
         log.error(f"[feature-weights] Mapped weights sum to {weight_sum:.6f}")
         return jsonify({"error": f"Mapped weights sum to {weight_sum:.6f}"}), 500
 
+    # Check which live-session features actually have data for the upcoming race
+    ri = get_next_race_full()
+    pp, qd, sf, momentum_series = _get_session_data(ri.date.year, ri.round_num)
+    has_practice   = not pp.empty
+    has_qualifying = not qd.empty
+    has_sprint     = not sf.empty and ri.is_sprint
+    has_momentum   = has_practice or has_qualifying or has_sprint
+
+    unavailable = []
+    if not has_practice:
+        unavailable.append("Practice")
+    if not has_qualifying:
+        unavailable.append("Qualifying")
+    if not has_momentum:
+        unavailable.append("Momentum")
+
     return jsonify({
         "weights": weights,
         "liveSessionFeatures": list(_LIVE_SESSION_FEATURES),
+        "unavailableFeatures": unavailable,
         "modelVersion": "v6",
         "sum": round(weight_sum, 6),
     })
