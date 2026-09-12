@@ -136,6 +136,45 @@ def resolve_auto_day(now: Optional[object] = None) -> str:
     return "all"
 
 
+ABBR_TO_DRIVER_ID = {
+    "HAM": "hamilton", "VER": "max_verstappen", "NOR": "norris", "LEC": "leclerc",
+    "RUS": "russell", "ANT": "antonelli", "PIA": "piastri", "ALO": "alonso",
+    "SAI": "sainz", "GAS": "gasly", "ALB": "albon", "TSU": "tsunoda",
+    "STR": "stroll", "HUL": "hulkenberg", "OCO": "ocon", "BEA": "bearman",
+    "COL": "colapinto", "BOR": "bortoleto", "LAW": "lawson", "BOT": "bottas",
+    "PER": "perez", "LIN": "arvid_lindblad", "HAD": "hadjar"
+}
+
+TEAM_NAME_TO_TEAM_ID = {
+    "Ferrari": "ferrari", "Mercedes": "mercedes", "McLaren": "mclaren",
+    "Red Bull Racing": "red_bull", "Aston Martin": "aston_martin",
+    "Alpine": "alpine", "Williams": "williams", "Racing Bulls": "rb",
+    "Haas F1 Team": "haas", "Audi": "audi", "Cadillac": "cadillac"
+}
+
+
+def _is_session_results_populated(results: pd.DataFrame, is_practice: bool = False) -> bool:
+    """Check whether session results DataFrame contains completed session data."""
+    if results is None or results.empty:
+        return False
+    if is_practice:
+        return len(results) >= 10
+    has_pos = "Position" in results.columns and results["Position"].dropna().count() > 0
+    has_time = "Time" in results.columns and results["Time"].dropna().count() > 0
+    return bool(has_pos or has_time)
+
+
+def _is_csv_populated(path: str, is_practice: bool = False) -> bool:
+    """Check whether a CSV on disk has valid session data."""
+    if not os.path.exists(path):
+        return False
+    try:
+        df = pd.read_csv(path)
+        return _is_session_results_populated(df, is_practice=is_practice)
+    except Exception:
+        return False
+
+
 def _save_session(
     year:           int,
     event_name:     str,
@@ -150,32 +189,35 @@ def _save_session(
 
     Returns True if saved successfully, False if the session is unavailable
     (future race, cancelled, no completed results yet, or API error).
-
-    Parameters
-    ----------
-    year, event_name, rnd : race identity
-    ff1_key  : FastF1 session identifier e.g. 'R', 'Q', 'FP1', 'Sprint'
-    suffix   : CSV filename suffix  e.g. '', 'q', 's', 'fp1'
-    session_weight : written into Session_Weight column (2.5 for Sprint)
-    force    : overwrite an existing CSV even if it already exists
     """
+    is_practice = ff1_key in ('FP1', 'FP2', 'FP3')
     path = _csv_path(year, rnd, suffix)
     if os.path.exists(path) and not force:
-        if _is_csv_populated(path):
+        if _is_csv_populated(path, is_practice=is_practice):
             log.debug(f"  Already cached: {path}")
             return True
         else:
-            log.info(f"  Existing file {path} has no classified positions/times — attempting refresh")
+            log.info(f"  Existing file {path} has no classified data — attempting refresh")
 
     try:
         session = fastf1.get_session(year, event_name, ff1_key)
         session.load(telemetry=False, laps=False, weather=False, messages=False)
         results = session.results
-        if not _is_session_results_populated(results):
+        if not _is_session_results_populated(results, is_practice=is_practice):
             log.warning(f"  No completed timings/positions yet: {year} {event_name} [{ff1_key}] — skipping save")
             return False
 
         results = results.copy()
+        if "DriverId" not in results.columns or results["DriverId"].isna().all() or (results["DriverId"] == "").all():
+            results["DriverId"] = results["Abbreviation"].map(ABBR_TO_DRIVER_ID)
+        else:
+            results["DriverId"] = results["DriverId"].fillna(results["Abbreviation"].map(ABBR_TO_DRIVER_ID))
+
+        if "TeamId" not in results.columns or results["TeamId"].isna().all() or (results["TeamId"] == "").all():
+            results["TeamId"] = results["TeamName"].map(TEAM_NAME_TO_TEAM_ID)
+        else:
+            results["TeamId"] = results["TeamId"].fillna(results["TeamName"].map(TEAM_NAME_TO_TEAM_ID))
+
         results["Year"]           = year
         results["Round"]          = rnd
         results["EventName"]      = event_name

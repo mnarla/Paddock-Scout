@@ -7,7 +7,15 @@ interface Props {
 }
 
 export function FeatureContribution({ prediction, featureWeights }: Props) {
-  const { weights, unavailableFeatures, liveSessionFeatures, isLoading } = featureWeights;
+  const {
+    weights,
+    unavailableFeatures,
+    sessionStage,
+    subheader: apiSubheader,
+    statusMessage: apiStatusMessage,
+    isSprint,
+    isLoading
+  } = featureWeights;
 
   // Build a map of driver values from the local prediction (for bar opacity).
   const valueMap: Record<string, number> = {};
@@ -18,8 +26,30 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
   // Check which session tiers are active
   const hasPractice = !unavailableFeatures.has("Practice");
   const hasQualifying = !unavailableFeatures.has("Qualifying");
-  const isPreWeekend = !hasPractice && !hasQualifying;
-  const isPracticeOnly = hasPractice && !hasQualifying;
+
+  const stage = sessionStage ?? (
+    !hasPractice && !hasQualifying
+      ? "pre_weekend"
+      : hasPractice && !hasQualifying
+      ? "friday_practice"
+      : "fully_ingested"
+  );
+
+  const subheader = apiSubheader ?? (
+    stage === "pre_weekend"
+      ? (isSprint ? "Pre-race form weighting — awaiting FP1 & Sprint Qualifying" : "Pre-race form weighting — awaiting FP1 & FP2")
+      : stage === "friday_practice"
+      ? (isSprint ? "Friday session pace active — awaiting Sprint & qualifying" : "Friday practice pace active — awaiting FP3 & qualifying")
+      : "Pre-race session data fully ingested"
+  );
+
+  const statusMessage = apiStatusMessage ?? (
+    stage === "pre_weekend"
+      ? (isSprint ? "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday FP1, Sprint Qualifying, and Saturday Sprint data." : "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday practice (FP1 & FP2) and Saturday qualifying data.")
+      : stage === "friday_practice"
+      ? (isSprint ? "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited." : "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited.")
+      : (isSprint ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions." : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.")
+  );
 
   // Exclude any feature that is marked unavailable by the backend API
   const availableEntries = Object.entries(weights).filter(([key]) => {
@@ -40,12 +70,6 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
 
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
-  const subheader = isPreWeekend
-    ? "Pre-race form weighting — live session data unavailable"
-    : isPracticeOnly
-    ? "Friday practice pace active — qualifying pending"
-    : "Calibrated v6 — Grid dictatorship dismantled";
-
   return (
     <section className="rounded-lg border border-hairline bg-card">
       <div className="flex items-baseline justify-between border-b border-hairline px-4 py-3">
@@ -62,16 +86,24 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         </span>
       </div>
 
-      {isPreWeekend && (
-        <div className="mx-4 mt-3 rounded border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-[11px] text-amber-400">
-          Live session data unavailable — showing pre-race form weighting only.
-          Weights will update automatically once practice or qualifying data is ingested.
+      {stage === "pre_weekend" && (
+        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-[11px] text-amber-400">
+          <span className="shrink-0 text-xs">⏳</span>
+          <span>{statusMessage}</span>
         </div>
       )}
 
-      {isPracticeOnly && (
-        <div className="mx-4 mt-3 rounded border border-blue-500/30 bg-blue-500/10 px-3 py-2 text-[11px] text-blue-400">
-          Friday practice pace active — qualifying dominance and weekend momentum will update automatically after Saturday sessions.
+      {stage === "friday_practice" && (
+        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-sky-500/30 bg-sky-500/10 px-3 py-2 text-[11px] text-sky-400">
+          <span className="shrink-0 text-xs">🏎️</span>
+          <span>{statusMessage}</span>
+        </div>
+      )}
+
+      {stage === "fully_ingested" && (
+        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-[11px] text-emerald-400">
+          <span className="shrink-0 text-xs">✅</span>
+          <span>{statusMessage}</span>
         </div>
       )}
 

@@ -15,6 +15,11 @@ export interface FeatureWeightsData {
   weights: Record<string, number>;
   liveSessionFeatures: Set<string>;
   unavailableFeatures: Set<string>;
+  isSprint?: boolean;
+  sessionStage?: "pre_weekend" | "friday_practice" | "fully_ingested";
+  subheader?: string;
+  statusMessage?: string;
+  sessionsIngested?: Record<string, boolean>;
   isLoading: boolean;
   error: boolean;
 }
@@ -42,6 +47,11 @@ export function useFeatureWeights(): FeatureWeightsData {
         weights: Record<string, number>;
         liveSessionFeatures?: string[];
         unavailableFeatures?: string[];
+        isSprint?: boolean;
+        sessionStage?: "pre_weekend" | "friday_practice" | "fully_ingested";
+        subheader?: string;
+        statusMessage?: string;
+        sessionsIngested?: Record<string, boolean>;
       }) => {
         if (cancelled) return;
 
@@ -59,6 +69,11 @@ export function useFeatureWeights(): FeatureWeightsData {
           weights,
           liveSessionFeatures: new Set(data.liveSessionFeatures ?? ["Practice", "Qualifying", "Momentum"]),
           unavailableFeatures: new Set(data.unavailableFeatures ?? ["Practice", "Qualifying", "Momentum"]),
+          isSprint: data.isSprint,
+          sessionStage: data.sessionStage,
+          subheader: data.subheader,
+          statusMessage: data.statusMessage,
+          sessionsIngested: data.sessionsIngested,
           isLoading: false,
           error: false,
         });

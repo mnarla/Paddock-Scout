@@ -443,10 +443,60 @@ def feature_weights():
     if not has_momentum:
         unavailable.append("Momentum")
 
+    yr = ri.date.year
+    rnd = ri.round_num
+    fp1_exists = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}fp1.csv"))
+    fp2_exists = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}fp2.csv"))
+    fp3_exists = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}fp3.csv"))
+    sq_exists  = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}sq.csv"))
+    s_exists   = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}s.csv"))
+    q_exists   = os.path.exists(os.path.join(DATA_DIR, f"results_{yr}_round{rnd:02d}q.csv"))
+
+    if ri.is_sprint:
+        # Sprint weekend session stage & messages
+        if has_qualifying or s_exists:
+            stage = "fully_ingested"
+            subheader = "Pre-race session data fully ingested"
+            status_message = "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions."
+        elif has_practice or fp1_exists or sq_exists:
+            stage = "friday_practice"
+            subheader = "Friday session pace active — awaiting Sprint & qualifying"
+            status_message = "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited."
+        else:
+            stage = "pre_weekend"
+            subheader = "Pre-race form weighting — live session data unavailable"
+            status_message = "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday FP1, Sprint Qualifying, and Saturday Sprint data."
+    else:
+        # Standard Grand Prix weekend session stage & messages
+        if has_qualifying or q_exists:
+            stage = "fully_ingested"
+            subheader = "Pre-race session data fully ingested"
+            status_message = "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions."
+        elif has_practice or fp1_exists or fp2_exists:
+            stage = "friday_practice"
+            subheader = "Friday practice pace active — awaiting FP3 & qualifying"
+            status_message = "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited."
+        else:
+            stage = "pre_weekend"
+            subheader = "Pre-race form weighting — live session data unavailable"
+            status_message = "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday practice (FP1 & FP2) and Saturday qualifying data."
+
     return jsonify({
         "weights": weights,
         "liveSessionFeatures": list(_LIVE_SESSION_FEATURES),
         "unavailableFeatures": unavailable,
+        "isSprint": ri.is_sprint,
+        "sessionStage": stage,
+        "subheader": subheader,
+        "statusMessage": status_message,
+        "sessionsIngested": {
+            "fp1": fp1_exists,
+            "fp2": fp2_exists,
+            "fp3": fp3_exists,
+            "sq":  sq_exists,
+            "sprint": s_exists,
+            "qualifying": q_exists,
+        },
         "modelVersion": "v6",
         "sum": round(weight_sum, 6),
     })
