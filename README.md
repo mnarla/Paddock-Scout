@@ -1,13 +1,13 @@
 # 🏎️ Paddock Scout
 
-**Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models and live web intelligence agents, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, and predicts the exact podium finishers for the upcoming Grand Prix!
+**Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models and live web intelligence agents, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, and predicts win, top-2, and podium finish probabilities for any driver on the 2026 grid!
 
 I designed this project to explore how machine learning, simulation modeling, and automated web agents can be brought together into a clean, premium, and highly responsive web application. I'm hoping to continue building and expanding on these concepts!
 
 ---
 
 > [!NOTE]
-> This project is currently a work in progress! I am still actively refining the model, and making sure everything works perfectly under all race weekend scenarios. The model heavily depends on the race data that it could acquire from the practice or qualifying rounds, so without those it will go off of the 'What If' scenario. Also since I am using Render to deploy the backend, it will take a few minutes for the app to correctly to work as Render shuts down after 15 minutes of inactivity.
+> This project is currently a work in progress! I am still actively refining the model and making sure everything works smoothly across all race weekend scenarios. Before a race weekend begins, the model automatically relies on pre-race form weighting (rolling championship standings, team car rank, track suitability, and recent form) until live practice and qualifying sessions are ingested. Additionally, because the backend is hosted on Render's free tier, the web service spins down after 15 minutes of inactivity and may take ~30–50 seconds to wake up on the first request.
 
 ---
 
@@ -18,10 +18,8 @@ I designed this project to explore how machine learning, simulation modeling, an
 *   **Intelligent Upgrade Validation & Honest Tracking**: Cross-references reported news with real-time FP2 results. If a news outlet reports a "major upgrade" but the team is slower than P15 in practice, the upgrade is flagged as unvalidated and its performance boost is discounted. Confirmed, source-cited upgrades display with real pace deltas, while teams awaiting technical reports are shown with transparent `— PENDING` status (no fabricated components).
 *   **Dynamic Session-Aware Feature Breakdown**: Automatically senses which live weekend sessions have concluded. The model cleanly adapts its weighting and status messaging through each phase of the weekend (pre-weekend form weighting $\rightarrow$ Friday practice pace active $\rightarrow$ Saturday fully ingested live grid & momentum), with tailored support for Sprint weekend schedules.
 *   **Chronological Session Countdown**: A live header clock that tracks the upcoming weekend session in chronological order (`FP1` $\rightarrow$ `FP2` $\rightarrow$ `FP3` / `Sprint` $\rightarrow$ `Qualifying` $\rightarrow$ `Grand Prix`), stepping forward automatically as track action concludes.
-*   **Special Physics & Recovery Modifiers**:
-    *   *Overtake Index*: Evaluates midfield and front-runner recovery potential when fast cars start out of position.
-    *   *Car Rank*: Grants the #1 ranked team a +15% recovery probability boost if starting outside the Top 5.
-    *   📁 **Race Archive**: Explores historical 2026 race weekends, including Q1/Q2/Q3 qualifying times, practice pace averages, and interactive podium cards.
+*   **Overtake Index & Recovery Dynamics**: Evaluates midfield and front-runner recovery potential when fast cars start out of position due to penalties or qualifying mishaps by contrasting starting grid position with the car's rolling performance rank (`GridPosition - Car_Rank`).
+*   📁 **Race Archive**: Dedicated historical archive covering every completed 2026 round, including Q1/Q2/Q3 qualifying session results, practice pace averages, and interactive podium classifications.
 
 ---
 
