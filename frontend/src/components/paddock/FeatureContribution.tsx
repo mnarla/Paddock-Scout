@@ -7,7 +7,7 @@ interface Props {
 }
 
 export function FeatureContribution({ prediction, featureWeights }: Props) {
-  const { weights, unavailableFeatures, isLoading } = featureWeights;
+  const { weights, unavailableFeatures, liveSessionFeatures, isLoading } = featureWeights;
 
   // Build a map of driver values from the local prediction (for bar opacity).
   const valueMap: Record<string, number> = {};
@@ -15,10 +15,17 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
     valueMap[c.key] = c.value;
   }
 
-  // Collect available entries from the API weights (exclude unavailable live-session features).
-  const availableEntries = Object.entries(weights).filter(
-    ([key]) => !unavailableFeatures.has(key)
-  );
+  // Pre-race detection: true if any live session feature is unavailable
+  const isPreRace = unavailableFeatures.size > 0;
+
+  // Collect available entries from the API weights.
+  // In pre-race mode, unconditionally exclude any key in unavailableFeatures or liveSessionFeatures
+  // (Practice, Qualifying, Momentum) so they never leak into the pre-race breakdown.
+  const availableEntries = Object.entries(weights).filter(([key]) => {
+    if (unavailableFeatures.has(key)) return false;
+    if (isPreRace && liveSessionFeatures.has(key)) return false;
+    return true;
+  });
 
   // Re-normalize so the displayed rows always sum to exactly 1.0 (100%).
   const availableTotal = availableEntries.reduce((sum, [, w]) => sum + w, 0);
@@ -31,8 +38,8 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
   // Sort descending by weight so most important feature is at the top.
   normalizedEntries.sort((a, b) => b.weight - a.weight);
 
-  const isPreRace = unavailableFeatures.size > 0;
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
+
 
 
   return (

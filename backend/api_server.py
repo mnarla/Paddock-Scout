@@ -744,6 +744,22 @@ def get_upgrades():
     except Exception:
         pass
         
+    # Determine the latest round with practice validation data
+    fp2_files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*fp2.csv")))
+    latest_validation_race = "Previous Race"
+    if fp2_files:
+        latest_file = os.path.basename(fp2_files[-1])
+        parts = latest_file.replace(".csv", "").split("_")
+        rnd_raw = parts[2].replace("round", "").replace("fp2", "")
+        try:
+            rnd_num = int(rnd_raw)
+            for r_name, r_data in SCHEDULE_2026.items():
+                if r_data.get("round") == rnd_num:
+                    latest_validation_race = r_name.replace(" Grand Prix", " GP")
+                    break
+        except Exception:
+            pass
+
     upgrades = []
     categories = ["Aero", "Power Unit", "Suspension", "Cooling"]
     for team, info in live_tech.items():
@@ -764,6 +780,7 @@ def get_upgrades():
             pace_delta = -float(upg_score * 0.22 + pwr_boost * 0.25)
             
         category = "Power Unit" if pwr_boost > 0 and upg_score == 0 else "Aero"
+        as_of = info.get("As_Of", latest_validation_race)
         
         upgrades.append({
             "team": team_id,
@@ -771,10 +788,12 @@ def get_upgrades():
             "category": category,
             "validated": info.get("Upgrade_Validation", not is_defective),
             "paceDelta": round(pace_delta, 2),
-            "source": info.get("Sources", ["News Agent"])[0] if info.get("Sources") else "News Agent"
+            "source": info.get("Sources", ["News Agent"])[0] if info.get("Sources") else "News Agent",
+            "asOf": as_of,
         })
             
     return jsonify(upgrades)
+
 
 @app.route("/api/archive-progression", methods=["GET"])
 def get_archive_progression():
