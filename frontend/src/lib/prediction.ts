@@ -1,7 +1,10 @@
 // JS port of the v6 calibration logic from src/simulator.py.
 // This is a UI approximation — the real RandomForestClassifier stays in Python.
-// To wire to your real model, replace `predictDriver` and `runMonteCarlo`
-// with `fetch('/api/predict')` calls.
+// Probability scores come from fetch('/api/predict'); feature weights from '/api/feature-weights'.
+//
+// IMPORTANT: Do NOT add a FEATURE_WEIGHTS object here.
+// The authoritative importances live in models/f1_podium_predictor.pkl and are
+// served by GET /api/feature-weights. The frontend reads them via useFeatureWeights().
 
 import type { Driver } from "@/data/drivers2026";
 import { DRIVERS_2026 } from "@/data/drivers2026";
@@ -9,28 +12,16 @@ import { TEAMS } from "@/data/teams";
 import type { RaceInfo } from "@/data/calendar2026";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
 
-// Calibrated feature importances from v6 model (sum < 1; rest is residual noise)
-export const FEATURE_WEIGHTS = {
-  Grid: 0.254,
-  Standings: 0.181,
-  CarRank: 0.147,
-  Track: 0.082,
-  RecentForm: 0.080,
-  Practice: 0.060,
-  Qualifying: 0.080,
-  Momentum: 0.050,
-  Upgrades: 0.040,
-  Overtake: 0.030,
-} as const;
-
-export const FEATURE_LABELS: Record<keyof typeof FEATURE_WEIGHTS, string> = {
+// Display labels for each contribution key (pure UI strings — not data).
+// Keys must match what /api/feature-weights returns.
+export const FEATURE_LABELS: Record<string, string> = {
   Grid: "Grid Position",
   Standings: "Standings Rank",
   CarRank: "Car Rank",
   Track: "Track Type",
   RecentForm: "Recent Form",
   Practice: "Practice Pace",
-  Qualifying: "Qualifying dominance",
+  Qualifying: "Qualifying Dominance",
   Momentum: "Weekend Momentum",
   Upgrades: "Vehicle Upgrades",
   Overtake: "Overtake Index",
@@ -48,8 +39,11 @@ export interface Prediction {
   p2: number;
   p3: number;
   podium: number;      // P1+P2+P3
-  contributions: { key: keyof typeof FEATURE_WEIGHTS; weight: number; value: number }[];
+  // weight is intentionally omitted here — weights come from /api/feature-weights.
+  // value = how this driver scores on this feature (0..1), used to set bar opacity.
+  contributions: { key: string; value: number }[];
 }
+
 
 // Logistic squash
 const sig = (x: number) => 1 / (1 + Math.exp(-x));
@@ -60,13 +54,13 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   const upgradeBoost = activeUpgrades
     .filter((u) => u.team === driver.team)
     .reduce((acc, u) => {
-      // In F1 telemetry, negative paceDelta means faster (saving time e.g. -0.20s -> boost)
-      // Positive paceDelta means slower (correlation failure e.g. +0.18s -> penalty)
+      // In F1 telemetry, negative paceDelta means faster (saving time e.g. -0.20s → boost)
+      // Positive paceDelta means slower (correlation failure e.g. +0.18s → penalty)
       return acc + (-u.paceDelta);
     }, 0);
 
   // Base score components — higher = better podium chance
-  const gridScore      = Math.max(0, (11 - gridPos) / 10);                    // 1 at pole, 0 at 11+
+  const gridScore      = Math.max(0, (11 - gridPos) / 10);   // 1 at pole, 0 at 11+
   const standingsScore = Math.max(0, (11 - driver.standingsRank) / 10);
   const carScore       = Math.max(0, (11 - carRank) / 10);
   const trackScore     = race.trackType === "Street" ? 0.6 : 0.7;
@@ -78,14 +72,18 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   // Form factor: 1 is best, 11 is mid, 20 is worst
   const formFactor = (11 - form) / 10; // +1.0 at form 1, 0.0 at form 11, -0.9 at form 20
 
+  // Raw score uses the REAL RF importances from f1_podium_predictor.pkl, not hand-picked guesses.
+  // Grid: 0.2548, Standings: 0.0569, CarRank: 0.0905, Track: 0.0126 (Circuit_Encoded)
+  // Momentum (0.2648) and Qualifying (0.1134) are proxied here by formFactor and sprintScore
+  // since live session data isn't available in the client-side simulator.
   let raw =
-    FEATURE_WEIGHTS.Grid      * gridScore +
-    FEATURE_WEIGHTS.Standings * standingsScore +
-    FEATURE_WEIGHTS.CarRank   * carScore +
-    FEATURE_WEIGHTS.Track     * trackScore +
-    0.065                     * sprintScore +
-    0.14                      * formFactor +
-    0.15                      * upgradeBoost;
+    0.2548 * gridScore +
+    0.0569 * standingsScore +
+    0.0905 * carScore +
+    0.0126 * trackScore +
+    0.065  * sprintScore +
+    0.14   * formFactor +
+    0.15   * upgradeBoost;
 
   // Grid penalty beyond top 3 and top 10 (podiums in F1 are heavily biased towards top rows)
   if (gridPos > 3) {
@@ -123,22 +121,24 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   const p2 = Math.min(podium, Math.max(p1 * 1.15, podium * top2Ratio * standingFactor));
   const p3 = podium;
 
+  // Contributions only carry `value` (driver score on each feature, 0..1).
+  // Weights come from /api/feature-weights via useFeatureWeights() — never hardcoded here.
   return {
     p1,
     p2,
     p3,
-    podium: p3, // Total cumulative chance of reaching the podium (Finish <= 3)
+    podium: p3,
     contributions: [
-      { key: "Grid",       weight: FEATURE_WEIGHTS.Grid,       value: gridScore },
-      { key: "Standings",  weight: FEATURE_WEIGHTS.Standings,  value: standingsScore },
-      { key: "CarRank",    weight: FEATURE_WEIGHTS.CarRank,    value: carScore },
-      { key: "Track",      weight: FEATURE_WEIGHTS.Track,      value: trackScore },
-      { key: "RecentForm", weight: FEATURE_WEIGHTS.RecentForm, value: 1 - formPenalty },
-      { key: "Practice",   weight: FEATURE_WEIGHTS.Practice,   value: 0.5 },
-      { key: "Qualifying", weight: FEATURE_WEIGHTS.Qualifying, value: 0.5 },
-      { key: "Momentum",   weight: FEATURE_WEIGHTS.Momentum,   value: 0.5 },
-      { key: "Upgrades",   weight: FEATURE_WEIGHTS.Upgrades,   value: upgradeBoost },
-      { key: "Overtake",   weight: FEATURE_WEIGHTS.Overtake,   value: (15 - (gridPos - carRank)) / 25 },
+      { key: "Grid",       value: gridScore },
+      { key: "Standings",  value: standingsScore },
+      { key: "CarRank",    value: carScore },
+      { key: "Track",      value: trackScore },
+      { key: "RecentForm", value: 1 - formPenalty },
+      { key: "Practice",   value: 0.5 },   // placeholder — no live data in local simulator
+      { key: "Qualifying", value: 0.5 },   // placeholder
+      { key: "Momentum",   value: 0.5 },   // placeholder
+      { key: "Upgrades",   value: Math.max(0, Math.min(1, upgradeBoost)) },
+      { key: "Overtake",   value: Math.max(0, Math.min(1, (15 - (gridPos - carRank)) / 25)) },
     ],
   };
 }

@@ -224,6 +224,62 @@ def health_check():
     """Fast health-check endpoint for uptime monitors to prevent Render cold starts."""
     return jsonify({"status": "ok", "service": "paddock-scout-backend"})
 
+# Mapping from the pickle's raw feature names to the frontend's contribution keys.
+# Must stay in sync with features.py FEATURES list and prediction.ts FEATURE_LABELS.
+_PICKLE_TO_FRONTEND = {
+    "GridPosition":          "Grid",
+    "Standings_Pos":         "Standings",
+    "Car_Rank":              "CarRank",
+    "Circuit_Encoded":       "Track",
+    "Recent_Form_3R":        "RecentForm",
+    "Practice_Pace":         "Practice",
+    "Qualifying_Dominance":  "Qualifying",
+    "Weekend_Momentum":      "Momentum",
+    "Upgrade_Impact":        "Upgrades",
+    "Overtake_Index":        "Overtake",
+}
+
+# Keys that are only meaningful when live session CSVs exist for the race weekend.
+_LIVE_SESSION_FEATURES = {"Practice", "Qualifying", "Momentum"}
+
+@app.route("/api/feature-weights", methods=["GET"])
+def feature_weights():
+    """
+    Returns the trained RF model's real feature_importances_, normalized to sum exactly
+    to 1.0 and mapped to the frontend's contribution key names.
+
+    Includes which keys require live session data so the frontend can exclude them
+    before a race weekend and re-normalize the remaining weights to 100%.
+
+    Assertion guard: if sklearn ever returns importances that don't sum to ~1.0
+    (e.g. after a bad retrain), this endpoint returns 500 instead of silently
+    serving wrong data.
+    """
+    raw = clf.feature_importances_
+    raw_sum = float(raw.sum())
+
+    if abs(raw_sum - 1.0) > 1e-4:
+        log.error(f"[feature-weights] RF importances sum to {raw_sum:.6f} — expected 1.0")
+        return jsonify({"error": f"Model importances sum to {raw_sum:.6f}, not 1.0"}), 500
+
+    weights = {}
+    for feat_name, importance in zip(FEATURES, raw):
+        key = _PICKLE_TO_FRONTEND.get(feat_name)
+        if key:
+            weights[key] = float(importance / raw_sum)   # normalize (raw_sum ≈ 1.0 already)
+
+    weight_sum = sum(weights.values())
+    if abs(weight_sum - 1.0) > 1e-4:
+        log.error(f"[feature-weights] Mapped weights sum to {weight_sum:.6f}")
+        return jsonify({"error": f"Mapped weights sum to {weight_sum:.6f}"}), 500
+
+    return jsonify({
+        "weights": weights,
+        "liveSessionFeatures": list(_LIVE_SESSION_FEATURES),
+        "modelVersion": "v6",
+        "sum": round(weight_sum, 6),
+    })
+
 @app.route("/api/next-race", methods=["GET"])
 def get_next_race():
     ri = get_next_race_full()

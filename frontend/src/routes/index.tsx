@@ -6,12 +6,14 @@ import { DRIVERS_2026, driverById, type Driver } from "@/data/drivers2026";
 import { predictDriver } from "@/lib/prediction";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
 import { API_BASE_URL } from "@/lib/config";
+import { useFeatureWeights } from "@/lib/useFeatureWeights";
 
 import { LiveBanner } from "@/components/paddock/LiveBanner";
 import { WhatIfPanel } from "@/components/paddock/WhatIfPanel";
 import { SelectedDriverCard } from "@/components/paddock/SelectedDriverCard";
 import { FeatureContribution } from "@/components/paddock/FeatureContribution";
 import { UpgradesRail } from "@/components/paddock/UpgradesRail";
+
 
 
 export const Route = createFileRoute("/")({
@@ -50,6 +52,10 @@ function PaddockScoutLive() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
   const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
+
+  // Fetch real RF feature importances from the model — used by FeatureContribution.
+  const featureWeights = useFeatureWeights();
+
 
   // Stable serialized key for upgrades — prevents object-reference churn from triggering
   // prediction re-fetches on every render when the upgrades array contents haven't changed.
@@ -227,7 +233,7 @@ function PaddockScoutLive() {
               prediction={prediction}
               baseline={baseline}
             />
-            <FeatureContribution prediction={prediction} />
+            <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
           </div>
 
           <UpgradesRail upgrades={upgrades} />
@@ -240,7 +246,7 @@ function PaddockScoutLive() {
             Paddock Scout · 2026 Season · Model v6 (RandomForest, calibrated)
           </span>
           <span className="tabular">
-            {drivers.length} drivers · Grid α 25.4% · Sprint 2.5×
+            {drivers.length} drivers · Grid α {featureWeights.isLoading ? "—" : `${((featureWeights.weights["Grid"] ?? 0) * 100).toFixed(1)}%`} · Sprint 2.5×
           </span>
         </footer>
       </main>

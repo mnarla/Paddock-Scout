@@ -1,15 +1,51 @@
 import { FEATURE_LABELS, type Prediction } from "@/lib/prediction";
+import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
 
 interface Props {
   prediction: Prediction;
+  featureWeights: FeatureWeightsData;
 }
 
-export function FeatureContribution({ prediction }: Props) {
-  const maxWeight = Math.max(
-    ...prediction.contributions.map((c) => c.weight),
-    0.001
+export function FeatureContribution({ prediction, featureWeights }: Props) {
+  const { weights, liveSessionFeatures, isLoading } = featureWeights;
+
+  // Build a map of driver values from the local prediction (for bar opacity).
+  const valueMap: Record<string, number> = {};
+  for (const c of prediction.contributions) {
+    valueMap[c.key] = c.value;
+  }
+
+  // Also capture which keys the API returned with weight === 0 (truly unavailable session data).
+  // A feature is "unavailable" when:
+  //   1. It's classified as a live-session feature (Practice, Qualifying, Momentum), AND
+  //   2. The API returned weight = 0 for it, OR the weights haven't loaded yet.
+  const unavailableKeys = new Set<string>();
+  if (!isLoading && Object.keys(weights).length > 0) {
+    for (const key of liveSessionFeatures) {
+      if ((weights[key] ?? 0) === 0) {
+        unavailableKeys.add(key);
+      }
+    }
+  }
+
+  // Collect available entries from the API weights (exclude unavailable live-session features).
+  const availableEntries = Object.entries(weights).filter(
+    ([key]) => !unavailableKeys.has(key)
   );
-  const totalWeight = prediction.contributions.reduce((acc, c) => acc + c.weight, 0);
+
+  // Re-normalize so the displayed rows always sum to exactly 1.0 (100%).
+  const availableTotal = availableEntries.reduce((sum, [, w]) => sum + w, 0);
+  const normalizedEntries = availableEntries.map(([key, w]) => ({
+    key,
+    weight: availableTotal > 0 ? w / availableTotal : 0,
+    value: Math.min(1, Math.max(0, valueMap[key] ?? 0.5)),
+  }));
+
+  // Sort descending by weight so most important feature is at the top.
+  normalizedEntries.sort((a, b) => b.weight - a.weight);
+
+  const isPreRace = unavailableKeys.size > 0;
+  const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
   return (
     <section className="rounded-lg border border-hairline bg-card">
@@ -19,38 +55,55 @@ export function FeatureContribution({ prediction }: Props) {
             How the AI decided
           </p>
           <p className="mt-0.5 text-[11px] text-muted-foreground/70">
-            Calibrated v6 — Grid dictatorship dismantled
+            {isPreRace
+              ? "Pre-race form weighting — live session data unavailable"
+              : "Calibrated v6 — Grid dictatorship dismantled"}
           </p>
         </div>
         <span className="tabular text-[11px] font-bold text-muted-foreground">
-          Σ {(totalWeight * 100).toFixed(1)}%
+          {isLoading ? "—" : "Σ 100.0%"}
         </span>
       </div>
 
+      {isPreRace && (
+        <div className="mx-4 mt-3 rounded border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-[11px] text-amber-400">
+          Live session data unavailable — showing pre-race form weighting only.
+          Weights will update automatically once practice or qualifying data is ingested.
+        </div>
+      )}
+
       <div className="space-y-2.5 px-4 py-4">
-        {prediction.contributions.map((c) => {
-          // Bar width = feature importance (fixed weight) — always visible regardless of driver
-          const barPct = (c.weight / maxWeight) * 100;
-          // Opacity = how well THIS driver scores on this feature (0..1 clamped)
-          const driverScore = Math.min(1, Math.max(0, c.value));
-          return (
-            <div key={c.key} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
-              <span className="text-[11px] font-medium text-muted-foreground">
-                {FEATURE_LABELS[c.key]}
-              </span>
-              <div className="relative h-2 overflow-hidden rounded-sm bg-secondary">
-                <div
-                  key={`${c.key}-${barPct.toFixed(1)}`}
-                  className="bar-fill h-full bg-gradient-to-r from-f1-red/80 to-f1-red"
-                  style={{ width: `${barPct}%`, opacity: 0.3 + 0.7 * driverScore }}
-                />
-              </div>
-              <span className="tabular w-10 text-right text-[11px] font-bold text-foreground">
-                {(c.weight * 100).toFixed(1)}%
-              </span>
+        {isLoading ? (
+          // Skeleton rows while weights are fetching
+          Array.from({ length: 7 }).map((_, i) => (
+            <div key={i} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
+              <div className="h-2.5 w-20 animate-pulse rounded bg-secondary" />
+              <div className="h-2 animate-pulse rounded-sm bg-secondary" />
+              <div className="h-2.5 w-10 animate-pulse rounded bg-secondary" />
             </div>
-          );
-        })}
+          ))
+        ) : (
+          normalizedEntries.map((entry) => {
+            const barPct = (entry.weight / maxWeight) * 100;
+            return (
+              <div key={entry.key} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
+                <span className="text-[11px] font-medium text-muted-foreground">
+                  {FEATURE_LABELS[entry.key] ?? entry.key}
+                </span>
+                <div className="relative h-2 overflow-hidden rounded-sm bg-secondary">
+                  <div
+                    key={`${entry.key}-${barPct.toFixed(1)}`}
+                    className="bar-fill h-full bg-gradient-to-r from-f1-red/80 to-f1-red"
+                    style={{ width: `${barPct}%`, opacity: 0.3 + 0.7 * entry.value }}
+                  />
+                </div>
+                <span className="tabular w-10 text-right text-[11px] font-bold text-foreground">
+                  {(entry.weight * 100).toFixed(1)}%
+                </span>
+              </div>
+            );
+          })
+        )}
       </div>
     </section>
   );
