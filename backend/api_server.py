@@ -806,18 +806,23 @@ def get_upgrades():
     # Determine the latest round with practice validation data
     fp2_files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*fp2.csv")))
     latest_validation_race = "Previous Race"
-    if fp2_files:
-        latest_file = os.path.basename(fp2_files[-1])
-        parts = latest_file.replace(".csv", "").split("_")
-        rnd_raw = parts[2].replace("round", "").replace("fp2", "")
+    for fp2_file in reversed(fp2_files):
         try:
+            df = pd.read_csv(fp2_file)
+            if df.empty or "DriverId" not in df.columns or df["DriverId"].dropna().empty:
+                continue
+            latest_file = os.path.basename(fp2_file)
+            parts = latest_file.replace(".csv", "").split("_")
+            rnd_raw = parts[2].replace("round", "").replace("fp2", "")
             rnd_num = int(rnd_raw)
             for r_name, r_data in SCHEDULE_2026.items():
                 if r_data.get("round") == rnd_num:
                     latest_validation_race = r_name.replace(" Grand Prix", " GP")
                     break
+            if latest_validation_race != "Previous Race":
+                break
         except Exception:
-            pass
+            continue
 
     upgrades = []
     # 1. Iterate over all grid teams

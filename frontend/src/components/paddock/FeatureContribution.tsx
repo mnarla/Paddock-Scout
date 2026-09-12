@@ -15,15 +15,15 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
     valueMap[c.key] = c.value;
   }
 
-  // Pre-race detection: true if any live session feature is unavailable
-  const isPreRace = unavailableFeatures.size > 0;
+  // Check which session tiers are active
+  const hasPractice = !unavailableFeatures.has("Practice");
+  const hasQualifying = !unavailableFeatures.has("Qualifying");
+  const isPreWeekend = !hasPractice && !hasQualifying;
+  const isPracticeOnly = hasPractice && !hasQualifying;
 
-  // Collect available entries from the API weights.
-  // In pre-race mode, unconditionally exclude any key in unavailableFeatures or liveSessionFeatures
-  // (Practice, Qualifying, Momentum) so they never leak into the pre-race breakdown.
+  // Exclude any feature that is marked unavailable by the backend API
   const availableEntries = Object.entries(weights).filter(([key]) => {
     if (unavailableFeatures.has(key)) return false;
-    if (isPreRace && liveSessionFeatures.has(key)) return false;
     return true;
   });
 
@@ -40,7 +40,11 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
 
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
-
+  const subheader = isPreWeekend
+    ? "Pre-race form weighting — live session data unavailable"
+    : isPracticeOnly
+    ? "Friday practice pace active — qualifying pending"
+    : "Calibrated v6 — Grid dictatorship dismantled";
 
   return (
     <section className="rounded-lg border border-hairline bg-card">
@@ -50,9 +54,7 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
             How the AI decided
           </p>
           <p className="mt-0.5 text-[11px] text-muted-foreground/70">
-            {isPreRace
-              ? "Pre-race form weighting — live session data unavailable"
-              : "Calibrated v6 — Grid dictatorship dismantled"}
+            {subheader}
           </p>
         </div>
         <span className="tabular text-[11px] font-bold text-muted-foreground">
@@ -60,10 +62,16 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         </span>
       </div>
 
-      {isPreRace && (
+      {isPreWeekend && (
         <div className="mx-4 mt-3 rounded border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-[11px] text-amber-400">
           Live session data unavailable — showing pre-race form weighting only.
           Weights will update automatically once practice or qualifying data is ingested.
+        </div>
+      )}
+
+      {isPracticeOnly && (
+        <div className="mx-4 mt-3 rounded border border-blue-500/30 bg-blue-500/10 px-3 py-2 text-[11px] text-blue-400">
+          Friday practice pace active — qualifying dominance and weekend momentum will update automatically after Saturday sessions.
         </div>
       )}
 
