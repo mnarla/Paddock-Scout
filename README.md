@@ -2,12 +2,11 @@
 
 **Paddock Scout** is a real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Using advanced predictive models and live web intelligence agents, it tracks team performance on the fly, scrapes top motorsport news outlets for aerodynamic upgrades, calculates qualifying and practice pace, and predicts win, top-2, and podium finish probabilities for any driver on the 2026 grid!
 
-I designed this project to explore how machine learning, simulation modeling, and automated web agents can be brought together into a clean, premium, and highly responsive web application. I'm hoping to continue building and expanding on these concepts!
 
 ---
 
 > [!NOTE]
-> This project is currently a work in progress! I am still actively refining the model and making sure everything works smoothly across all race weekend scenarios. Before a race weekend begins, the model automatically relies on pre-race form weighting (rolling championship standings, team car rank, track suitability, and recent form) until live practice and qualifying sessions are ingested. Additionally, because the backend is hosted on Render's free tier, the web service spins down after 15 minutes of inactivity and may take ~30–50 seconds to wake up on the first request.
+> Before a race weekend begins, the model automatically relies on pre-race form weighting (rolling championship standings, team car rank, track suitability, and recent form) until live practice and qualifying sessions are ingested. Additionally, because the backend is hosted on Render's free tier, the web service spins down after 15 minutes of inactivity and may take ~30–50 seconds to wake up on the first request.
 
 ---
 
