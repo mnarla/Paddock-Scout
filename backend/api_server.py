@@ -159,12 +159,51 @@ RACE_METADATA = {
     "Abu Dhabi Grand Prix": {"short": "ABU", "country": "UAE", "flag": "🇦🇪"}
 }
 
-def build_2026_context():
-    files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*.csv")))
-    if not files:
+# ── Context cache ─────────────────────────────────────────────────────────────
+# build_2026_context() reads 14+ CSV files from disk and runs several pandas
+# aggregations. On Render's throttled CPU this takes 100–400 ms per call.
+# We cache the result in memory and invalidate only when a file on disk
+# changes (checked via max mtime — O(n) stat() calls, not reads).
+#
+# Thread safety: GIL protects the dict assignment; the worst case is two
+# threads rebuilding simultaneously on a cold start (harmless, both produce
+# the same result and one will be discarded).
+_CTX_CACHE: dict = {"df": None, "mtime": 0.0, "q_mtime": 0.0}
+
+def _csv_max_mtime(files: list) -> float:
+    """Return the maximum modification time across a list of file paths."""
+    return max((os.path.getmtime(f) for f in files), default=0.0)
+
+def build_2026_context(force: bool = False):
+    """
+    Build (or return cached) driver context DataFrame for the 2026 season.
+
+    The cache is invalidated automatically whenever any results CSV or the
+    current race's qualifying CSV changes on disk. Pass force=True to bypass
+    the cache (e.g. immediately after ingesting new data).
+    """
+    all_files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*.csv")))
+    if not all_files:
         return pd.DataFrame()
+
+    ri = get_next_race_full()
+    q_file = os.path.join(DATA_DIR, f"results_{ri.date.year}_round{ri.round_num:02d}q.csv")
+
+    current_mtime = _csv_max_mtime(all_files)
+    current_q_mtime = os.path.getmtime(q_file) if os.path.exists(q_file) else 0.0
+
+    if (
+        not force
+        and _CTX_CACHE["df"] is not None
+        and _CTX_CACHE["mtime"] == current_mtime
+        and _CTX_CACHE["q_mtime"] == current_q_mtime
+    ):
+        log.debug("[ctx-cache] HIT — returning cached context")
+        return _CTX_CACHE["df"].copy()
+
+    log.info("[ctx-cache] MISS — rebuilding 2026 context from disk")
     frames = []
-    for f in files:
+    for f in all_files:
         basename = os.path.basename(f)
         if basename.endswith("q.csv") or "fp" in basename:
             continue
@@ -177,12 +216,14 @@ def build_2026_context():
             rnd_num = int(rnd_raw)
         df["Round"] = rnd_num
         frames.append(df)
+
     if not frames:
         return pd.DataFrame()
+
     all_r = pd.concat(frames, ignore_index=True)
     all_r["Position"] = pd.to_numeric(all_r["Position"], errors="coerce")
     all_r["Points"] = pd.to_numeric(all_r["Points"], errors="coerce").fillna(0)
-    
+
     ss = all_r.groupby("DriverId").agg(
         SeasonPoints=("Points", "sum"),
         AvgFinish=("Position", "mean"),
@@ -190,34 +231,93 @@ def build_2026_context():
         TeamName=("TeamName", "last"),
         TeamColor=("TeamColor", "last")
     ).reset_index()
-    
+
     last3 = (all_r.sort_values(["DriverId", "Round"]).groupby("DriverId")["Position"]
              .apply(lambda s: s.tail(3).mean()).reset_index()
              .rename(columns={"Position": "Recent_Form_3R"}))
     ss = ss.merge(last3, on="DriverId", how="left")
-    
+
     trank = all_r.groupby("TeamName")["Points"].sum().rank(ascending=False, method="min")
     ss["Car_Rank"] = ss["TeamName"].map(trank).fillna(trank.max())
     ss["TeamColor"] = ss["TeamColor"].apply(normalise_color)
-    
+
     # Only populate QualifyingPos if Qualifying has actually taken place
     # FOR THE CURRENT/UPCOMING RACE. If between races (not race weekend),
     # default QualifyingPos to NaN so driver defaults to their Championship Standings rank.
-    ri = get_next_race_full()
-    next_q_file = os.path.join(DATA_DIR, f"results_{ri.date.year}_round{ri.round_num:02d}q.csv")
-    if os.path.exists(next_q_file):
-        qdf = pd.read_csv(next_q_file)
+    if os.path.exists(q_file):
+        qdf = pd.read_csv(q_file)
         qdf["Position"] = pd.to_numeric(qdf["Position"], errors="coerce")
         ss["QualifyingPos"] = ss["DriverId"].map(qdf.set_index("DriverId")["Position"].dropna().astype(int))
     else:
         ss["QualifyingPos"] = np.nan
-    return ss
+
+    # Store in cache
+    _CTX_CACHE["df"] = ss
+    _CTX_CACHE["mtime"] = current_mtime
+    _CTX_CACHE["q_mtime"] = current_q_mtime
+    log.info(f"[ctx-cache] Rebuilt. {len(ss)} drivers, mtime={current_mtime:.0f}")
+    return ss.copy()
+
+
+# ── Session data cache (practice / qualifying / sprint) ───────────────────────
+# compute_practice_pace and compute_qualifying_dominance each read multiple CSV
+# files from disk on every call. We cache them keyed by (year, round_num) and
+# invalidate only when the relevant session files change.
+_SESSION_CACHE: dict = {}
+
+def _get_session_data(year: int, round_num: int):
+    """
+    Return (pp, qd, sf, momentum_series) for the given race, served from cache
+    when the underlying session CSV files haven't changed since the last build.
+    """
+    from features import compute_weekend_momentum
+
+    # Collect the session file paths for this round
+    def _mtime_or_zero(path):
+        return os.path.getmtime(path) if os.path.exists(path) else 0.0
+
+    fp_files = sorted(glob.glob(os.path.join(DATA_DIR, f"results_{year}_round{round_num:02d}fp*.csv")))
+    qd_file  = os.path.join(DATA_DIR, f"results_{year}_round{round_num:02d}q.csv")
+    sp_file  = os.path.join(DATA_DIR, f"results_{year}_round{round_num:02d}s.csv")
+
+    current_mtime = max(
+        [_mtime_or_zero(f) for f in fp_files] +
+        [_mtime_or_zero(qd_file), _mtime_or_zero(sp_file)]
+    )
+
+    cache_key = (year, round_num)
+    cached = _SESSION_CACHE.get(cache_key)
+    if cached is not None and cached["mtime"] == current_mtime:
+        log.debug(f"[session-cache] HIT — round {round_num}")
+        return cached["pp"], cached["qd"], cached["sf"], cached["momentum"]
+
+    log.info(f"[session-cache] MISS — rebuilding session data for round {round_num}")
+    ri_info = get_next_race_full()  # for is_sprint flag; same round context
+    pp = compute_practice_pace(DATA_DIR, year, round_num)
+    qd = compute_qualifying_dominance(DATA_DIR, year, round_num)
+
+    if os.path.exists(sp_file):
+        sdf = pd.read_csv(sp_file)
+        sdf["Position"] = pd.to_numeric(sdf["Position"], errors="coerce")
+        sf = sdf.set_index("DriverId")["Position"].dropna()
+    else:
+        sf = pd.Series(dtype=float)
+
+    momentum = compute_weekend_momentum(pp, qd, sf, ri_info.is_sprint)
+
+    _SESSION_CACHE[cache_key] = {
+        "pp": pp, "qd": qd, "sf": sf, "momentum": momentum,
+        "mtime": current_mtime,
+    }
+    return pp, qd, sf, momentum
+
 
 assets = load_assets()
 clf = assets["model"]
 circuit_enc = assets["circuit_enc"]
 grid_scaler = assets.get("grid_scaler")
 FEATURES = assets["features"]
+
 
 @app.route("/api/health", methods=["GET"])
 def health_check():
@@ -405,24 +505,14 @@ def predict():
 
     overtake_idx = float(np.clip(grid_pos - car_rank, -10, 15))
     s_rank = standings_rank(ctx, row["FullName"])
-    
+
     ri = get_next_race_full()
-    pp = compute_practice_pace(DATA_DIR, ri.date.year, ri.round_num)
-    qd = compute_qualifying_dominance(DATA_DIR, ri.date.year, ri.round_num)
-    
+    # Session data (practice pace, qualifying dominance, sprint, momentum) is
+    # cached by round + file mtime — avoids re-reading CSVs on every request.
+    pp, qd, sf, momentum_series = _get_session_data(ri.date.year, ri.round_num)
+
     pp_val = float(pp.get(driver_id, 11.0))
     qd_val = float(qd.get(driver_id, 0.02))
-    
-    sp_path = os.path.join(DATA_DIR, f"results_{ri.date.year}_round{ri.round_num:02d}s.csv")
-    if os.path.exists(sp_path):
-        sdf = pd.read_csv(sp_path)
-        sdf["Position"] = pd.to_numeric(sdf["Position"], errors="coerce")
-        sf = sdf.set_index("DriverId")["Position"].dropna()
-    else:
-        sf = pd.Series(dtype=float)
-        
-    from features import compute_weekend_momentum
-    momentum_series = compute_weekend_momentum(pp, qd, sf, ri.is_sprint)
     wm_val = float(momentum_series.get(driver_id, 11.0))
 
     feature_dict = {
@@ -526,32 +616,38 @@ def predict():
     if not has_momentum:
         mapped_contribs["Momentum"] = 0.0
 
-    # Normalize to a total sum of ~0.70, redistributing across features that have data
+    # Normalize contributions so they sum to exactly 1.0 (= 100%).
+    # Previously this was scaled to 0.70 under the assumption that 30% of race
+    # outcomes are "random". That is now represented by the UI caption in
+    # FeatureContribution.tsx rather than corrupting the numbers shown to users.
     total_delta = sum(mapped_contribs.values())
     if total_delta > 0:
-        scale = 0.70 / total_delta
+        scale = 1.0 / total_delta
         for k in mapped_contribs:
             mapped_contribs[k] *= scale
     else:
-        # All-fallback when model produces zero deltas for everything
+        # All-fallback when model produces zero deltas for everything.
+        # Use the real RF feature_importances_ values (not hand-picked guesses).
+        # Practice/Qualifying/Momentum default to 0 since no session data is
+        # available in this fallback path; the frontend filters them out.
         mapped_contribs = {
-            "Grid": 0.254,
-            "Standings": 0.181,
-            "CarRank": 0.147,
-            "Track": 0.082,
-            "RecentForm": 0.08,
-            "Practice": 0.0,
-            "Qualifying": 0.0,
-            "Momentum": 0.0,
-            "Upgrades": 0.04,
-            "Overtake": 0.03
+            "Grid":       0.2548,
+            "Momentum":   0.2648,
+            "Qualifying": 0.1134,
+            "Overtake":   0.1009,
+            "RecentForm": 0.0952,
+            "CarRank":    0.0905,
+            "Standings":  0.0569,
+            "Track":      0.0126,
+            "Upgrades":   0.0109,
+            "Practice":   0.0,
         }
-        # Renormalize fallback to 0.70 too
+        # Renormalize to 1.0 (Practice is 0 so excludes itself)
         fb_total = sum(mapped_contribs.values())
         if fb_total > 0:
             for k in mapped_contribs:
-                mapped_contribs[k] = mapped_contribs[k] / fb_total * 0.70
-        
+                mapped_contribs[k] = mapped_contribs[k] / fb_total
+
     frontend_contribs = []
     for k, w in mapped_contribs.items():
         if w > 0:  # Only send keys with actual contribution

@@ -6,9 +6,10 @@ interface Props {
   driver: Driver;
   prediction: Prediction;
   baseline: Prediction;
+  isPredicting?: boolean;
 }
 
-export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
+export function SelectedDriverCard({ driver, prediction, baseline, isPredicting = false }: Props) {
   const team = TEAMS[driver.team];
 
   return (
@@ -55,6 +56,7 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
           value={prediction.p1}
           baseline={baseline.p1}
           accent="var(--color-f1-red)"
+          isPredicting={isPredicting}
         />
         <ProbCell
           label="TOP 2"
@@ -62,6 +64,7 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
           value={prediction.p2}
           baseline={baseline.p2}
           accent="#c0c0c8"
+          isPredicting={isPredicting}
         />
         <ProbCell
           label="PODIUM"
@@ -70,6 +73,7 @@ export function SelectedDriverCard({ driver, prediction, baseline }: Props) {
           baseline={baseline.p3}
           accent="#cd7f32"
           last
+          isPredicting={isPredicting}
         />
       </div>
 
@@ -88,6 +92,7 @@ function ProbCell({
   baseline,
   accent,
   last,
+  isPredicting,
 }: {
   label: string;
   sublabel?: string;
@@ -95,6 +100,7 @@ function ProbCell({
   baseline: number;
   accent: string;
   last?: boolean;
+  isPredicting?: boolean;
 }) {
   const delta = Math.round((value - baseline) * 100);
   const deltaTone =
@@ -122,7 +128,8 @@ function ProbCell({
           {delta}
         </span>
       </div>
-      <div className="mt-1 flex items-baseline gap-1">
+      {/* Dim numbers while the server prediction is in flight */}
+      <div className={`mt-1 flex items-baseline gap-1 transition-opacity duration-300 ${isPredicting ? "opacity-50 animate-pulse" : "opacity-100"}`}>
         <span
           key={value}
           className="tabular text-4xl font-black leading-none tracking-tight sm:text-5xl"

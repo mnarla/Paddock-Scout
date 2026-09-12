@@ -48,6 +48,11 @@ function isPostQualifyingWeekend(raceDateStr?: string): boolean {
   return diffHours <= 28 && diffHours >= -6;
 }
 
+// Module-level prediction cache — persists across driver changes, resets on hard refresh.
+// Key: `${driverId}|${gridPos}|${form}|${raceName}`
+const predCache = new Map<string, any>();
+
+
 function PaddockScoutLive() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
@@ -112,7 +117,15 @@ function PaddockScoutLive() {
     setForm(driver.recentForm);
   }, [driver]);
 
-  const [baseline, setBaseline] = useState<any>(() => 
+  // ── Client-side prediction cache ────────────────────────────────────────────
+  // Caches server predictions keyed by driverId+gridPos+form+raceName.
+  // Prevents identical round-trips when the user switches to a driver they've
+  // already inspected, or when the what-if sliders return to their default pos.
+  // Cache is a module-level Map so it persists across driver changes but resets
+  // on hard refresh (acceptable — stale after a model redeploy anyway).
+  const [isPredicting, setIsPredicting] = useState(false);
+
+  const [baseline, setBaseline] = useState<any>(() =>
     predictDriver({
       driver,
       gridPos: driver.qualifyingPos,
@@ -122,24 +135,39 @@ function PaddockScoutLive() {
     })
   );
 
-  const [prediction, setPrediction] = useState<any>(() => 
+  const [prediction, setPrediction] = useState<any>(() =>
     predictDriver({ driver, gridPos, form, race, upgrades })
   );
 
-  // Update BASELINE when driver/race/upgrades change (independent of what-if sliders).
-  // Uses upgradesKey (stable string) so a new array object from a re-render doesn't re-fire.
+  // Fetch BASELINE when driver/race/upgrades change.
+  // Also updates prediction when sliders are still at default (avoids duplicate request).
   useEffect(() => {
-    // Optimistic local prediction first
-    setBaseline(predictDriver({
+    const localBase = predictDriver({
       driver,
       gridPos: driver.qualifyingPos,
       form: driver.recentForm,
       race,
       upgrades,
-    }));
+    });
+    setBaseline(localBase);
 
-    // Then refine with server model
+    // If sliders haven't moved, mirror baseline into prediction immediately.
+    if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
+      setPrediction(localBase);
+    }
+
+    const cacheKey = `${driver.id}|${driver.qualifyingPos}|${driver.recentForm}|${race.name}`;
+    if (predCache.has(cacheKey)) {
+      const cached = predCache.get(cacheKey)!;
+      setBaseline(cached);
+      if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
+        setPrediction(cached);
+      }
+      return;
+    }
+
     let cancelled = false;
+    setIsPredicting(true);
     fetch(`${API_BASE_URL}/api/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -152,21 +180,42 @@ function PaddockScoutLive() {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (!cancelled && data && data.podium !== undefined) setBaseline(data);
+        if (!cancelled && data && data.podium !== undefined) {
+          predCache.set(cacheKey, data);
+          setBaseline(data);
+          // If sliders still at default, promote to prediction too.
+          if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
+            setPrediction(data);
+          }
+        }
       })
-      .catch((err) => console.error("Error fetching baseline prediction:", err));
+      .catch((err) => console.error("Error fetching baseline prediction:", err))
+      .finally(() => { if (!cancelled) setIsPredicting(false); });
 
     return () => { cancelled = true; };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver.id, driver.qualifyingPos, driver.recentForm, race.name, upgradesKey]);
 
-  // Update WHAT-IF prediction when sliders or driver change.
-  // Never touches baseline — keeps the two states fully independent.
+  // Fetch WHAT-IF prediction when sliders move away from default.
+  // Skips the network call when sliders are at default (baseline already covers it).
   useEffect(() => {
+    const isAtDefault = gridPos === driver.qualifyingPos && form === driver.recentForm;
     setPrediction(predictDriver({ driver, gridPos, form, race, upgrades }));
+
+    if (isAtDefault) {
+      // Sliders are at default — no extra fetch needed; baseline effect handles it.
+      return;
+    }
+
+    const cacheKey = `${driver.id}|${gridPos}|${form}|${race.name}`;
+    if (predCache.has(cacheKey)) {
+      setPrediction(predCache.get(cacheKey)!);
+      return;
+    }
 
     let cancelled = false;
     const handler = setTimeout(() => {
+      setIsPredicting(true);
       fetch(`${API_BASE_URL}/api/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -179,16 +228,18 @@ function PaddockScoutLive() {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (!cancelled && data && data.podium !== undefined) setPrediction(data);
+          if (!cancelled && data && data.podium !== undefined) {
+            predCache.set(cacheKey, data);
+            setPrediction(data);
+          }
         })
-        .catch((err) => console.error("Error fetching current prediction:", err));
+        .catch((err) => console.error("Error fetching current prediction:", err))
+        .finally(() => { if (!cancelled) setIsPredicting(false); });
     }, 200);
 
     return () => { cancelled = true; clearTimeout(handler); };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver.id, gridPos, form, race.name, upgradesKey]);
-
-
 
   const onDriverChange = (id: string) => {
     setDriverId(id);
@@ -232,6 +283,7 @@ function PaddockScoutLive() {
               driver={driver}
               prediction={prediction}
               baseline={baseline}
+              isPredicting={isPredicting}
             />
             <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
           </div>

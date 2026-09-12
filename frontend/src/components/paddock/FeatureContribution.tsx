@@ -105,6 +105,15 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
           })
         )}
       </div>
+
+      {/* Race-day uncertainty note — kept separate from the weights so the numbers stay honest */}
+      {!isLoading && (
+        <p className="border-t border-hairline px-4 pb-3 pt-2.5 text-[10px] text-muted-foreground/60">
+          * Weights reflect relative model influence. Residual uncertainty accounts for
+          race-day chaos, safety cars, weather, and mechanical reliability.
+        </p>
+      )}
     </section>
   );
 }
+
