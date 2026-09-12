@@ -6,28 +6,68 @@ interface Props {
   race: RaceInfo;
 }
 
-function useCountdown(targetIso: string) {
+interface WeekendSession {
+  name: string;
+  shortName: string;
+  time: number;
+}
+
+function getWeekendSessions(raceDateIso: string, isSprint: boolean): WeekendSession[] {
+  // Base date is Sunday race day at 14:00 local
+  const sunday = new Date(raceDateIso + "T14:00:00");
+  const sundayMs = sunday.getTime();
+  const DAY_MS = 86_400_000;
+  const HOUR_MS = 3_600_000;
+
+  if (isSprint) {
+    return [
+      { name: "Practice 1", shortName: "FP1", time: sundayMs - 2 * DAY_MS - 1.5 * HOUR_MS }, // Fri 12:30
+      { name: "Sprint Qualifying", shortName: "Sprint Shootout", time: sundayMs - 2 * DAY_MS + 2.5 * HOUR_MS }, // Fri 16:30
+      { name: "Sprint Race", shortName: "Sprint", time: sundayMs - 1 * DAY_MS - 2 * HOUR_MS }, // Sat 12:00
+      { name: "Grand Prix Qualifying", shortName: "Qualifying", time: sundayMs - 1 * DAY_MS + 2 * HOUR_MS }, // Sat 16:00
+      { name: "Grand Prix Race", shortName: "Grand Prix", time: sundayMs }, // Sun 14:00
+    ];
+  }
+
+  return [
+    { name: "Practice 1", shortName: "FP1", time: sundayMs - 2 * DAY_MS - 1.5 * HOUR_MS }, // Fri 12:30
+    { name: "Practice 2", shortName: "FP2", time: sundayMs - 2 * DAY_MS + 2 * HOUR_MS }, // Fri 16:00
+    { name: "Practice 3", shortName: "FP3", time: sundayMs - 1 * DAY_MS - 1.5 * HOUR_MS }, // Sat 12:30
+    { name: "Qualifying", shortName: "Qualifying", time: sundayMs - 1 * DAY_MS + 2 * HOUR_MS }, // Sat 16:00
+    { name: "Grand Prix Race", shortName: "Grand Prix", time: sundayMs }, // Sun 14:00
+  ];
+}
+
+function useCountdown(raceDateIso: string, isSprint: boolean = false) {
   const [now, setNow] = useState(() => Date.now());
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(id);
   }, []);
-  // Parse target date string in local timezone (e.g. 14:00 local race time)
-  const targetDate = new Date(targetIso + "T14:00:00");
-  let target = targetDate.getTime() - 2 * 86400_000; // FP1 (2 days before)
-  if (target < now) {
-    target = targetDate.getTime(); // Count down to the race itself if FP1 has passed
-  }
-  const diff = Math.max(0, target - now);
+
+  const sessions = getWeekendSessions(raceDateIso, isSprint);
+  // Find the first upcoming session
+  const nextSession = sessions.find((s) => s.time > now) ?? sessions[sessions.length - 1];
+
+  const diff = Math.max(0, nextSession.time - now);
   const d = Math.floor(diff / 86400_000);
   const h = Math.floor((diff / 3600_000) % 24);
   const m = Math.floor((diff / 60_000) % 60);
   const s = Math.floor((diff / 1000) % 60);
-  return { d, h, m, s };
+
+  return {
+    sessionName: nextSession.shortName,
+    fullName: nextSession.name,
+    isComplete: nextSession.time <= now,
+    d,
+    h,
+    m,
+    s,
+  };
 }
 
 export function LiveBanner({ race }: Props) {
-  const c = useCountdown(race.date);
+  const c = useCountdown(race.date, !!race.isSprint);
   return (
     <header className="sticky top-0 z-30 border-b border-hairline bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:px-6 sm:py-4 relative">
@@ -65,11 +105,11 @@ export function LiveBanner({ race }: Props) {
           </div>
         </div>
 
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1.5 md:flex">
           <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
-            Next session
+            Next: <strong className="text-foreground font-bold">{c.sessionName}</strong>
           </span>
-          <span className="tabular ml-2 text-sm font-bold" suppressHydrationWarning>
+          <span className="tabular ml-1.5 text-sm font-bold" suppressHydrationWarning>
             {String(c.d).padStart(2, "0")}d {String(c.h).padStart(2, "0")}:
             {String(c.m).padStart(2, "0")}:{String(c.s).padStart(2, "0")}
           </span>
