@@ -52,7 +52,7 @@ export function predictDriver({ driver, gridPos, form, race, upgrades }: Predict
   const carRank = TEAMS[driver.team].carRank;
   const activeUpgrades = upgrades ?? UPGRADES;
   const upgradeBoost = activeUpgrades
-    .filter((u) => u.team === driver.team)
+    .filter((u) => u.team === driver.team && u.confirmed !== false)
     .reduce((acc, u) => {
       // In F1 telemetry, negative paceDelta means faster (saving time e.g. -0.20s → boost)
       // Positive paceDelta means slower (correlation failure e.g. +0.18s → penalty)
