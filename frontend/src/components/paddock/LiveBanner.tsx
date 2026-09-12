@@ -69,7 +69,7 @@ export function LiveBanner({ race }: Props) {
           <span className="text-[10px] uppercase tracking-wider text-muted-foreground">
             Next session
           </span>
-          <span className="tabular ml-2 text-sm font-bold">
+          <span className="tabular ml-2 text-sm font-bold" suppressHydrationWarning>
             {String(c.d).padStart(2, "0")}d {String(c.h).padStart(2, "0")}:
             {String(c.m).padStart(2, "0")}:{String(c.s).padStart(2, "0")}
           </span>
