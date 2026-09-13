@@ -2,7 +2,7 @@ import { FEATURE_LABELS, type Prediction } from "@/lib/prediction";
 import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
 
 interface Props {
-  prediction: Prediction;
+  prediction?: Prediction | null;
   featureWeights: FeatureWeightsData;
 }
 
@@ -51,9 +51,10 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
       : (isSprint ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions." : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.")
   );
 
-  // Exclude any feature that is marked unavailable by the backend API
-  const availableEntries = Object.entries(weights).filter(([key]) => {
+  // Exclude any feature that is marked unavailable or has zero weight (only show what is actually used)
+  const availableEntries = Object.entries(weights).filter(([key, w]) => {
     if (unavailableFeatures.has(key)) return false;
+    if (w <= 0.0005) return false;
     return true;
   });
 

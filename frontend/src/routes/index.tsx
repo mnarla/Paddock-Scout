@@ -3,7 +3,6 @@ import { useMemo, useState, useEffect } from "react";
 
 import { NEXT_RACE, type RaceInfo } from "@/data/calendar2026";
 import { DRIVERS_2026, driverById, type Driver } from "@/data/drivers2026";
-import { predictDriver } from "@/lib/prediction";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
 import { API_BASE_URL } from "@/lib/config";
 import { useFeatureWeights } from "@/lib/useFeatureWeights";
@@ -125,49 +124,32 @@ function PaddockScoutLive() {
   // on hard refresh (acceptable — stale after a model redeploy anyway).
   const [isPredicting, setIsPredicting] = useState(false);
 
-  const [baseline, setBaseline] = useState<any>(() =>
-    predictDriver({
-      driver,
-      gridPos: driver.qualifyingPos,
-      form: driver.recentForm,
-      race,
-      upgrades,
-    })
-  );
-
-  const [prediction, setPrediction] = useState<any>(() =>
-    predictDriver({ driver, gridPos, form, race, upgrades })
-  );
+  const [baseline, setBaseline] = useState<any>(null);
+  const [prediction, setPrediction] = useState<any>(null);
 
   // Fetch BASELINE when driver/race/upgrades change.
   // Also updates prediction when sliders are still at default (avoids duplicate request).
   useEffect(() => {
-    const localBase = predictDriver({
-      driver,
-      gridPos: driver.qualifyingPos,
-      form: driver.recentForm,
-      race,
-      upgrades,
-    });
-    setBaseline(localBase);
+    const cacheKey = `${driver.id}|${driver.qualifyingPos}|${Number(driver.recentForm).toFixed(2)}|${race.name}`;
+    const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
-    // If sliders haven't moved, mirror baseline into prediction immediately.
-    if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
-      setPrediction(localBase);
-    }
-
-    const cacheKey = `${driver.id}|${driver.qualifyingPos}|${driver.recentForm}|${race.name}`;
     if (predCache.has(cacheKey)) {
       const cached = predCache.get(cacheKey)!;
       setBaseline(cached);
-      if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
+      if (isAtDefault || prediction === null) {
         setPrediction(cached);
       }
+      setIsPredicting(false);
       return;
     }
 
     let cancelled = false;
     setIsPredicting(true);
+    setBaseline(null);
+    if (isAtDefault) {
+      setPrediction(null);
+    }
+
     fetch(`${API_BASE_URL}/api/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -183,39 +165,44 @@ function PaddockScoutLive() {
         if (!cancelled && data && data.podium !== undefined) {
           predCache.set(cacheKey, data);
           setBaseline(data);
-          // If sliders still at default, promote to prediction too.
-          if (gridPos === driver.qualifyingPos && form === driver.recentForm) {
-            setPrediction(data);
-          }
+          // If sliders still at default or prediction is unpopulated, promote to prediction too.
+          setPrediction(data);
         }
       })
       .catch((err) => console.error("Error fetching baseline prediction:", err))
-      .finally(() => { if (!cancelled) setIsPredicting(false); });
+      .finally(() => {
+        if (!cancelled) setIsPredicting(false);
+      });
 
-    return () => { cancelled = true; };
+    return () => {
+      cancelled = true;
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver.id, driver.qualifyingPos, driver.recentForm, race.name, upgradesKey]);
 
   // Fetch WHAT-IF prediction when sliders move away from default.
   // Skips the network call when sliders are at default (baseline already covers it).
   useEffect(() => {
-    const isAtDefault = gridPos === driver.qualifyingPos && form === driver.recentForm;
-    setPrediction(predictDriver({ driver, gridPos, form, race, upgrades }));
+    const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
     if (isAtDefault) {
-      // Sliders are at default — no extra fetch needed; baseline effect handles it.
+      // Sliders are at default — synchronize prediction with baseline without extra fetch
+      if (baseline) {
+        setPrediction(baseline);
+      }
       return;
     }
 
-    const cacheKey = `${driver.id}|${gridPos}|${form}|${race.name}`;
+    const cacheKey = `${driver.id}|${gridPos}|${Number(form).toFixed(2)}|${race.name}`;
     if (predCache.has(cacheKey)) {
       setPrediction(predCache.get(cacheKey)!);
+      setIsPredicting(false);
       return;
     }
 
     let cancelled = false;
+    setIsPredicting(true);
     const handler = setTimeout(() => {
-      setIsPredicting(true);
       fetch(`${API_BASE_URL}/api/predict`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -233,13 +220,18 @@ function PaddockScoutLive() {
             setPrediction(data);
           }
         })
-        .catch((err) => console.error("Error fetching current prediction:", err))
-        .finally(() => { if (!cancelled) setIsPredicting(false); });
+        .catch((err) => console.error("Error fetching what-if prediction:", err))
+        .finally(() => {
+          if (!cancelled) setIsPredicting(false);
+        });
     }, 200);
 
-    return () => { cancelled = true; clearTimeout(handler); };
+    return () => {
+      cancelled = true;
+      clearTimeout(handler);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [driver.id, gridPos, form, race.name, upgradesKey]);
+  }, [driver.id, gridPos, form, race.name, driver.qualifyingPos, driver.recentForm, baseline]);
 
   const onDriverChange = (id: string) => {
     setDriverId(id);
@@ -247,12 +239,26 @@ function PaddockScoutLive() {
     if (d) {
       setGridPos(d.qualifyingPos);
       setForm(d.recentForm);
+      const cacheKey = `${d.id}|${d.qualifyingPos}|${Number(d.recentForm).toFixed(2)}|${race.name}`;
+      if (predCache.has(cacheKey)) {
+        const cached = predCache.get(cacheKey)!;
+        setBaseline(cached);
+        setPrediction(cached);
+        setIsPredicting(false);
+      } else {
+        setBaseline(null);
+        setPrediction(null);
+        setIsPredicting(true);
+      }
     }
   };
 
   const onReset = () => {
     setGridPos(driver.qualifyingPos);
     setForm(driver.recentForm);
+    if (baseline) {
+      setPrediction(baseline);
+    }
   };
 
   return (

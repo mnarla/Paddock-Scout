@@ -22,18 +22,6 @@ import numpy as np
 import pandas as pd
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# DISPLAY LABELS
-# ─────────────────────────────────────────────────────────────────────────────
-FEATURE_LABELS: dict = {
-    "Recent_Form_3R":  "Weekend Pace (70% Sprint / 30% Season)",
-    "GridPosition":    "Grid Position",
-    "Car_Rank":        "Car Performance Rank (1 = Best)",
-    "Circuit_Encoded": "Circuit Character",
-    "Upgrade_Impact":  "Miami Upgrade Package (capped 5%)",
-    "Overtake_Index":  "Recovery Potential (Grid vs Car Quality)",
-    "Standings_Pos":   "Championship Standing (1 = Leader)",
-}
 
 
 # ─────────────────────────────────────────────────────────────────────────────

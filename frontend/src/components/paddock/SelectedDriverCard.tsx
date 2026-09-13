@@ -4,8 +4,8 @@ import type { Prediction } from "@/lib/prediction";
 
 interface Props {
   driver: Driver;
-  prediction: Prediction;
-  baseline: Prediction;
+  prediction?: Prediction | null;
+  baseline?: Prediction | null;
   isPredicting?: boolean;
 }
 
@@ -53,24 +53,24 @@ export function SelectedDriverCard({ driver, prediction, baseline, isPredicting 
         <ProbCell
           label="WIN (P1)"
           sublabel="1st Place"
-          value={prediction.p1}
-          baseline={baseline.p1}
+          value={prediction?.p1}
+          baseline={baseline?.p1}
           accent="var(--color-f1-red)"
           isPredicting={isPredicting}
         />
         <ProbCell
           label="TOP 2"
           sublabel="1st or 2nd"
-          value={prediction.p2}
-          baseline={baseline.p2}
+          value={prediction?.p2}
+          baseline={baseline?.p2}
           accent="#c0c0c8"
           isPredicting={isPredicting}
         />
         <ProbCell
           label="PODIUM"
           sublabel="Top 3 Finish"
-          value={prediction.p3}
-          baseline={baseline.p3}
+          value={prediction?.p3}
+          baseline={baseline?.p3}
           accent="#cd7f32"
           last
           isPredicting={isPredicting}
@@ -96,20 +96,27 @@ function ProbCell({
 }: {
   label: string;
   sublabel?: string;
-  value: number;
-  baseline: number;
+  value?: number;
+  baseline?: number;
   accent: string;
   last?: boolean;
   isPredicting?: boolean;
 }) {
-  const delta = Math.round((value - baseline) * 100);
+  const isLoading = isPredicting || value == null || baseline == null;
+  const numValue = value != null ? value * 100 : 0;
+  const delta = (baseline != null && value != null)
+    ? Number(((value - baseline) * 100).toFixed(1))
+    : 0;
+
+  const showDelta = !isLoading && Math.abs(delta) >= 0.1;
   const deltaTone =
     delta > 0 ? "text-f1-green" : delta < 0 ? "text-f1-red" : "text-muted-foreground";
+
   return (
     <div
       className={`relative px-5 py-5 ${last ? "" : "border-r border-hairline"}`}
     >
-      <div className="flex items-baseline justify-between">
+      <div className="flex items-baseline justify-between min-h-[28px]">
         <div>
           <span
             className="text-[11px] font-black tracking-[0.2em] block"
@@ -123,25 +130,37 @@ function ProbCell({
             </span>
           )}
         </div>
-        <span className={`tabular text-[11px] font-bold ${deltaTone}`}>
-          {delta > 0 ? "+" : ""}
-          {delta}
-        </span>
+        {showDelta ? (
+          <span className={`tabular text-[11px] font-bold ${deltaTone}`}>
+            {delta > 0 ? `+${delta.toFixed(1)}%` : `${delta.toFixed(1)}%`}
+          </span>
+        ) : null}
       </div>
-      {/* Dim numbers while the server prediction is in flight */}
-      <div className={`mt-1 flex items-baseline gap-1 transition-opacity duration-300 ${isPredicting ? "opacity-50 animate-pulse" : "opacity-100"}`}>
-        <span
-          key={value}
-          className="tabular text-4xl font-black leading-none tracking-tight sm:text-5xl"
-        >
-          {Math.round(value * 100)}
-        </span>
-        <span className="text-base font-bold text-muted-foreground">%</span>
-      </div>
+
+      {isLoading ? (
+        <div className="mt-2 flex items-baseline gap-1 animate-pulse">
+          <div className="h-9 w-20 sm:h-11 sm:w-24 rounded bg-secondary/80" />
+          <span className="text-base font-bold text-muted-foreground/40">%</span>
+        </div>
+      ) : (
+        <div className="mt-1 flex items-baseline gap-1 transition-opacity duration-300">
+          <span
+            key={numValue}
+            className="tabular text-3xl font-black leading-none tracking-tight sm:text-4xl lg:text-5xl"
+          >
+            {numValue.toFixed(1)}
+          </span>
+          <span className="text-base font-bold text-muted-foreground">%</span>
+        </div>
+      )}
+
       <div className="mt-3 h-1 overflow-hidden rounded-full bg-secondary">
         <div
-          className="bar-fill h-full"
-          style={{ width: `${Math.round(value * 100)}%`, background: accent }}
+          className="bar-fill h-full transition-all duration-500"
+          style={{
+            width: isLoading ? "0%" : `${Math.min(100, Math.max(0, numValue))}%`,
+            background: accent,
+          }}
         />
       </div>
     </div>

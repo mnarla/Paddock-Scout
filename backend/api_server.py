@@ -436,11 +436,11 @@ def feature_weights():
     has_momentum   = has_practice or has_qualifying or has_sprint
 
     unavailable = []
-    if not has_practice:
+    if not has_practice or weights.get("Practice", 0.0) <= 0.0001:
         unavailable.append("Practice")
-    if not has_qualifying:
+    if not has_qualifying or weights.get("Qualifying", 0.0) <= 0.0001:
         unavailable.append("Qualifying")
-    if not has_momentum:
+    if not has_momentum or weights.get("Momentum", 0.0) <= 0.0001:
         unavailable.append("Momentum")
 
     yr = ri.date.year
@@ -565,10 +565,10 @@ def get_drivers():
             continue
         info = DRIVER_INFO[did]
         
-        # Recent form defaults to recent_form_3R or weekend momentum if available
-        form_val = float(momentum_series.get(did, row["Recent_Form_3R"]))
+        # Recent form from 3-race rolling history
+        form_val = float(row.get("Recent_Form_3R", 11.0))
         if pd.isna(form_val):
-            form_val = float(row["Recent_Form_3R"])
+            form_val = 11.0
             
         standings_rank = idx + 1
         qual_pos = row["QualifyingPos"]
@@ -656,16 +656,6 @@ def predict():
     
     X = np.array([[feature_dict.get(f, 0.0) for f in FEATURES]])
     raw_prob = float(clf.predict_proba(X)[0][1])
-    
-    # Smooth momentum influence (if fresh session data exists)
-    if not momentum_series.empty:
-        raw_prob = min(1.0, max(0.0, raw_prob + (11.0 - wm_val) / 11.0 * 0.10))
-        
-    # Apply form penalty / bonus smoothly:
-    # manual_form: 1.0 is winning form, 11.0 is mid, 20.0 is backmarker
-    # Slumping drivers (form > 10) are penalized; on-fire drivers (form < 5) get a boost
-    form_factor = (11.0 - manual_form) / 10.0  # +1.0 for form 1, 0.0 for form 11, -0.9 for form 20
-    raw_prob = np.clip(raw_prob * (1.0 + 0.35 * form_factor), 0.01, 0.95)
 
     # Grid steepness factor: starting deep naturally curtails podium chance
     if grid_pos > 10:
