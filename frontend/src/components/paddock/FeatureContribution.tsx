@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { FEATURE_LABELS, type Prediction } from "@/lib/prediction";
 import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
 
@@ -14,60 +15,90 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
     subheader: apiSubheader,
     statusMessage: apiStatusMessage,
     isSprint,
-    isLoading
+    isLoading: isWeightsLoading,
   } = featureWeights;
 
-  // Build a map of driver values from the local prediction (for bar opacity).
-  const valueMap: Record<string, number> = {};
-  for (const c of (prediction?.contributions || [])) {
-    valueMap[c.key] = c.value;
-  }
+  // Build a map of driver values from the local prediction.
+  const valueMap: Record<string, number> = useMemo(() => {
+    const map: Record<string, number> = {};
+    for (const c of prediction?.contributions || []) {
+      map[c.key] = c.value ?? 1.0;
+    }
+    return map;
+  }, [prediction?.contributions]);
 
   // Check which session tiers are active
   const hasPractice = !unavailableFeatures.has("Practice");
   const hasQualifying = !unavailableFeatures.has("Qualifying");
 
-  const stage = sessionStage ?? (
-    !hasPractice && !hasQualifying
+  const stage =
+    sessionStage ??
+    (!hasPractice && !hasQualifying
       ? "pre_weekend"
       : hasPractice && !hasQualifying
       ? "friday_practice"
-      : "fully_ingested"
-  );
+      : "fully_ingested");
 
-  const subheader = apiSubheader ?? (
-    stage === "pre_weekend"
-      ? (isSprint ? "Pre-race form weighting — awaiting FP1 & Sprint Qualifying" : "Pre-race form weighting — awaiting FP1 & FP2")
+  const subheader =
+    apiSubheader ??
+    (stage === "pre_weekend"
+      ? isSprint
+        ? "Pre-race form weighting — awaiting FP1 & Sprint Qualifying"
+        : "Pre-race form weighting — awaiting FP1 & FP2"
       : stage === "friday_practice"
-      ? (isSprint ? "Friday session pace active — awaiting Sprint & qualifying" : "Friday practice pace active — awaiting FP3 & qualifying")
-      : "Pre-race session data fully ingested"
-  );
+      ? isSprint
+        ? "Friday session pace active — awaiting Sprint & qualifying"
+        : "Friday practice pace active — awaiting FP3 & qualifying"
+      : "Pre-race session data fully ingested");
 
-  const statusMessage = apiStatusMessage ?? (
-    stage === "pre_weekend"
-      ? (isSprint ? "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday FP1, Sprint Qualifying, and Saturday Sprint data." : "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday practice (FP1 & FP2) and Saturday qualifying data.")
+  const statusMessage =
+    apiStatusMessage ??
+    (stage === "pre_weekend"
+      ? isSprint
+        ? "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday FP1, Sprint Qualifying, and Saturday Sprint data."
+        : "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday practice (FP1 & FP2) and Saturday qualifying data."
       : stage === "friday_practice"
-      ? (isSprint ? "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited." : "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited.")
-      : (isSprint ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions." : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.")
-  );
+      ? isSprint
+        ? "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited."
+        : "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited."
+      : isSprint
+      ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions."
+      : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.");
 
-  // Exclude any feature that is marked unavailable or has zero weight (only show what is actually used)
-  const availableEntries = Object.entries(weights).filter(([key, w]) => {
-    if (unavailableFeatures.has(key)) return false;
-    if (w <= 0.0005) return false;
-    return true;
-  });
+  // If driver-specific contributions exist on the prediction object, use them!
+  // Otherwise fall back to the model's global baseline weights.
+  const rawEntries: { key: string; weight: number; value: number }[] = useMemo(() => {
+    if (prediction?.contributions && prediction.contributions.length > 0) {
+      return prediction.contributions
+        .filter((c) => (c.weight ?? 0) > 0.0005 && !unavailableFeatures.has(c.key))
+        .map((c) => ({
+          key: c.key,
+          weight: c.weight ?? 0,
+          value: c.value ?? 1.0,
+        }));
+    }
 
-  // Re-normalize so the displayed rows always sum to exactly 1.0 (100%).
-  const availableTotal = availableEntries.reduce((sum, [, w]) => sum + w, 0);
-  const normalizedEntries = availableEntries.map(([key, w]) => ({
-    key,
-    weight: availableTotal > 0 ? w / availableTotal : 0,
-    value: Math.min(1, Math.max(0, valueMap[key] ?? 0.5)),
-  }));
+    return Object.entries(weights)
+      .filter(([key, w]) => !unavailableFeatures.has(key) && w > 0.0005)
+      .map(([key, w]) => ({
+        key,
+        weight: w,
+        value: valueMap[key] ?? 0.5,
+      }));
+  }, [prediction?.contributions, weights, unavailableFeatures, valueMap]);
 
-  // Sort descending by weight so most important feature is at the top.
-  normalizedEntries.sort((a, b) => b.weight - a.weight);
+  // Re-normalize so the displayed rows always sum to exactly 1.0 (100.0%).
+  const availableTotal = rawEntries.reduce((sum, e) => sum + e.weight, 0);
+  const normalizedEntries = useMemo(() => {
+    const list = rawEntries.map((e) => ({
+      key: e.key,
+      weight: availableTotal > 0 ? e.weight / availableTotal : 0,
+      value: Math.min(1, Math.max(0, e.value)),
+    }));
+    // Sort descending by weight so the most influential feature for this driver is at the top.
+    list.sort((a, b) => b.weight - a.weight);
+    return list;
+  }, [rawEntries, availableTotal]);
 
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
@@ -78,12 +109,10 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
           <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
             How the AI decided
           </p>
-          <p className="mt-0.5 text-[11px] text-muted-foreground/70">
-            {subheader}
-          </p>
+          <p className="mt-0.5 text-[11px] text-muted-foreground/70">{subheader}</p>
         </div>
         <span className="tabular text-[11px] font-bold text-muted-foreground">
-          {isLoading ? "—" : "Σ 100.0%"}
+          {isWeightsLoading ? "—" : "Σ 100.0%"}
         </span>
       </div>
 
@@ -109,7 +138,7 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
       )}
 
       <div className="space-y-2.5 px-4 py-4">
-        {isLoading ? (
+        {isWeightsLoading ? (
           // Skeleton rows while weights are fetching
           Array.from({ length: 7 }).map((_, i) => (
             <div key={i} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
@@ -128,9 +157,8 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
                 </span>
                 <div className="relative h-2 overflow-hidden rounded-sm bg-secondary">
                   <div
-                    key={`${entry.key}-${barPct.toFixed(1)}`}
-                    className="bar-fill h-full bg-gradient-to-r from-f1-red/80 to-f1-red"
-                    style={{ width: `${barPct}%`, opacity: 0.3 + 0.7 * entry.value }}
+                    className="h-full bg-gradient-to-r from-f1-red/80 to-f1-red transition-all duration-500 ease-out"
+                    style={{ width: `${barPct}%` }}
                   />
                 </div>
                 <span className="tabular w-10 text-right text-[11px] font-bold text-foreground">
@@ -142,14 +170,12 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         )}
       </div>
 
-      {/* Race-day uncertainty note — kept separate from the weights so the numbers stay honest */}
-      {!isLoading && (
+      {/* Race-day uncertainty note */}
+      {!isWeightsLoading && (
         <p className="border-t border-hairline px-4 pb-3 pt-2.5 text-[10px] text-muted-foreground/60">
-          * Weights reflect relative model influence. Residual uncertainty accounts for
-          race-day chaos, safety cars, weather, and mechanical reliability.
+          * Feature influences reflect the model&apos;s decision breakdown for this driver. Residual uncertainty accounts for race-day chaos, safety cars, weather, and mechanical reliability.
         </p>
       )}
     </section>
   );
 }
-

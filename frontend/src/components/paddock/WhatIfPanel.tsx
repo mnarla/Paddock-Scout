@@ -3,7 +3,7 @@ import { DRIVERS_2026, type Driver } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
 
 interface Props {
-  driver: Driver;
+  driver: Driver | null;
   gridPos: number;
   form: number;
   onDriverChange: (id: string) => void;
@@ -25,7 +25,7 @@ export function WhatIfPanel({
   drivers,
   isPostQuali = false,
 }: Props) {
-  const team = TEAMS[driver.team];
+  const team = driver ? TEAMS[driver.team] : null;
   const activeDrivers = drivers ?? DRIVERS_2026;
 
   const sortedDrivers = useMemo(() => {
@@ -41,8 +41,8 @@ export function WhatIfPanel({
 
   // Subtle effect: snap grid back into bounds if driver changes
   useEffect(() => {
-    if (gridPos < 1 || gridPos > activeDrivers.length) onReset();
-  }, [gridPos, activeDrivers.length, onReset]);
+    if (driver && (gridPos < 1 || gridPos > activeDrivers.length)) onReset();
+  }, [driver, gridPos, activeDrivers.length, onReset]);
 
   return (
     <aside className="rounded-lg border border-hairline bg-card">
@@ -63,39 +63,48 @@ export function WhatIfPanel({
           </label>
           <div className="relative">
             <div
-              className="absolute left-0 top-0 h-full w-1 rounded-l"
-              style={{ background: team.color }}
+              className="absolute left-0 top-0 h-full w-1 rounded-l transition-colors"
+              style={{ background: team?.color ?? "var(--color-hairline)" }}
             />
             <select
-              value={driver.id}
+              value={driver?.id ?? ""}
               onChange={(e) => onDriverChange(e.target.value)}
               className="tabular w-full appearance-none rounded border border-hairline bg-secondary py-2 pl-4 pr-8 text-sm font-semibold text-foreground outline-none focus:border-f1-red"
             >
+              <option value="" disabled>
+                Select a driver...
+              </option>
               {sortedDrivers.map((d) => (
                 <option key={d.id} value={d.id}>
-                  #{d.number}  {d.first} {d.last} · {TEAMS[d.team].short}
+                  #{d.number} {d.first} {d.last} · {TEAMS[d.team].short}
                 </option>
               ))}
             </select>
           </div>
-          <div className="mt-2 flex items-center justify-between text-[11px] text-muted-foreground">
-            <span>
-              Champ. P
-              <span className="tabular text-foreground">{driver.standingsRank}</span>
-            </span>
-            <span>
-              Form{" "}
-              <span className="tabular text-foreground">
-                {driver.recentForm.toFixed(1)}
+          {driver ? (
+            <div className="mt-2 flex items-center justify-between text-[11px] text-muted-foreground">
+              <span>
+                Champ. P
+                <span className="tabular text-foreground">{driver.standingsRank}</span>
               </span>
-            </span>
-            <span>
-              {isPostQuali ? "Q " : "Grid "}
-              <span className="tabular text-foreground">
-                P{driver.qualifyingPos}
+              <span>
+                Form{" "}
+                <span className="tabular text-foreground">
+                  {driver.recentForm.toFixed(1)}
+                </span>
               </span>
-            </span>
-          </div>
+              <span>
+                {isPostQuali ? "Q " : "Grid "}
+                <span className="tabular text-foreground">
+                  P{driver.qualifyingPos}
+                </span>
+              </span>
+            </div>
+          ) : (
+            <div className="mt-2 text-[11px] text-muted-foreground/60 italic">
+              Choose a driver to unlock live telemetry & sliders
+            </div>
+          )}
         </div>
 
         {/* Grid slider */}
@@ -107,6 +116,7 @@ export function WhatIfPanel({
           step={1}
           format={(v) => `P${v}`}
           onChange={onGridChange}
+          disabled={!driver}
         />
 
         {/* Form slider */}
@@ -118,11 +128,13 @@ export function WhatIfPanel({
           step={0.1}
           format={(v) => v.toFixed(1)}
           onChange={onFormChange}
+          disabled={!driver}
         />
 
         <button
           onClick={onReset}
-          className="w-full rounded border border-hairline bg-secondary px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition hover:border-f1-red hover:text-foreground"
+          disabled={!driver}
+          className="w-full rounded border border-hairline bg-secondary px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition hover:border-f1-red hover:text-foreground disabled:opacity-40 disabled:pointer-events-none"
         >
           {isPostQuali ? "Reset to Qualifying" : "Reset to Default Grid"}
         </button>
@@ -139,6 +151,7 @@ function SliderRow({
   step,
   format,
   onChange,
+  disabled = false,
 }: {
   label: string;
   value: number;
@@ -147,10 +160,11 @@ function SliderRow({
   step: number;
   format: (v: number) => string;
   onChange: (v: number) => void;
+  disabled?: boolean;
 }) {
   const pct = ((value - min) / (max - min)) * 100;
   return (
-    <div>
+    <div className={disabled ? "opacity-40 pointer-events-none transition-opacity" : "transition-opacity"}>
       <div className="mb-1.5 flex items-baseline justify-between">
         <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
           {label}
@@ -170,6 +184,7 @@ function SliderRow({
           max={max}
           step={step}
           value={value}
+          disabled={disabled}
           onChange={(e) => onChange(Number(e.target.value))}
           className="absolute inset-0 h-full w-full cursor-pointer appearance-none bg-transparent
             [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4

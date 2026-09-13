@@ -151,8 +151,9 @@ cython_debug/
 # VS Code
 .vscode/
 
-# FastF1 cache
+# FastF1 cache & session downloads
 fastf1_cache/
+data/results_*fp3.csv
 
 # Graphify output
 graphify-out/

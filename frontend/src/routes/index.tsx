@@ -10,6 +10,7 @@ import { useFeatureWeights } from "@/lib/useFeatureWeights";
 import { LiveBanner } from "@/components/paddock/LiveBanner";
 import { WhatIfPanel } from "@/components/paddock/WhatIfPanel";
 import { SelectedDriverCard } from "@/components/paddock/SelectedDriverCard";
+import { DriverEmptyState } from "@/components/paddock/DriverEmptyState";
 import { FeatureContribution } from "@/components/paddock/FeatureContribution";
 import { UpgradesRail } from "@/components/paddock/UpgradesRail";
 
@@ -102,19 +103,22 @@ function PaddockScoutLive() {
     });
   }, [drivers, isPostQuali]);
 
-  const [driverId, setDriverId] = useState<string>("hamilton");
-  
+  const [driverId, setDriverId] = useState<string | null>(null);
+
   const driver = useMemo(() => {
-    return activeDrivers.find((x) => x.id === driverId) || activeDrivers[0] || DRIVERS_2026[0];
+    if (!driverId) return null;
+    return activeDrivers.find((x) => x.id === driverId) ?? null;
   }, [activeDrivers, driverId]);
 
-  const [gridPos, setGridPos] = useState(driver.qualifyingPos);
-  const [form, setForm] = useState(driver.recentForm);
+  const [gridPos, setGridPos] = useState<number>(1);
+  const [form, setForm] = useState<number>(10);
 
   useEffect(() => {
-    setGridPos(driver.qualifyingPos);
-    setForm(driver.recentForm);
-  }, [driver.id, driver.qualifyingPos, driver.recentForm]);
+    if (driver) {
+      setGridPos(driver.qualifyingPos);
+      setForm(driver.recentForm);
+    }
+  }, [driver?.id, driver?.qualifyingPos, driver?.recentForm]);
 
   // ── Client-side prediction cache ────────────────────────────────────────────
   // Caches server predictions keyed by driverId+gridPos+form+raceName.
@@ -130,6 +134,13 @@ function PaddockScoutLive() {
   // Fetch BASELINE when driver/race/upgrades change.
   // Also updates prediction when sliders are still at default (avoids duplicate request).
   useEffect(() => {
+    if (!driver) {
+      setBaseline(null);
+      setPrediction(null);
+      setIsPredicting(false);
+      return;
+    }
+
     const cacheKey = `${driver.id}|${driver.qualifyingPos}|${Number(driver.recentForm).toFixed(2)}|${race.name}`;
     const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
@@ -178,11 +189,13 @@ function PaddockScoutLive() {
       cancelled = true;
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [driver.id, driver.qualifyingPos, driver.recentForm, race.name, upgradesKey]);
+  }, [driver?.id, driver?.qualifyingPos, driver?.recentForm, race.name, upgradesKey]);
 
   // Fetch WHAT-IF prediction when sliders move away from default.
   // Skips the network call when sliders are at default (baseline already covers it).
   useEffect(() => {
+    if (!driver) return;
+
     const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
     if (isAtDefault) {
@@ -231,11 +244,11 @@ function PaddockScoutLive() {
       clearTimeout(handler);
     };
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [driver.id, gridPos, form, race.name, driver.qualifyingPos, driver.recentForm, baseline]);
+  }, [driver?.id, gridPos, form, race.name, driver?.qualifyingPos, driver?.recentForm, baseline]);
 
   const onDriverChange = (id: string) => {
     setDriverId(id);
-    const d = activeDrivers.find((x) => x.id === id) || DRIVERS_2026.find((x) => x.id === id);
+    const d = activeDrivers.find((x) => x.id === id);
     if (d) {
       setGridPos(d.qualifyingPos);
       setForm(d.recentForm);
@@ -254,6 +267,7 @@ function PaddockScoutLive() {
   };
 
   const onReset = () => {
+    if (!driver) return;
     setGridPos(driver.qualifyingPos);
     setForm(driver.recentForm);
     if (baseline) {
@@ -263,7 +277,7 @@ function PaddockScoutLive() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <LiveBanner race={race} />
+      <LiveBanner race={race} onHome={() => setDriverId(null)} />
 
       <main className="mx-auto max-w-[1600px] px-4 py-5 sm:px-6 sm:py-6">
         <div className="mb-4 rounded-md border border-hairline/60 bg-secondary/15 px-4 py-2.5 text-xs text-muted-foreground">
@@ -285,13 +299,24 @@ function PaddockScoutLive() {
           />
 
           <div className="space-y-4">
-            <SelectedDriverCard
-              driver={driver}
-              prediction={prediction}
-              baseline={baseline}
-              isPredicting={isPredicting}
-            />
-            <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
+            {driver ? (
+              <>
+                <SelectedDriverCard
+                  driver={driver}
+                  prediction={prediction}
+                  baseline={baseline}
+                  isPredicting={isPredicting}
+                  onHome={() => setDriverId(null)}
+                />
+                <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
+              </>
+            ) : (
+              <DriverEmptyState
+                drivers={activeDrivers}
+                onSelectDriver={onDriverChange}
+                featureWeights={featureWeights}
+              />
+            )}
           </div>
 
           <UpgradesRail upgrades={upgrades} />

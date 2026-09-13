@@ -723,7 +723,8 @@ def predict():
     has_sprint      = not sf.empty and ri.is_sprint
     has_momentum    = has_practice or has_qualifying or has_sprint
 
-    if not has_practice:
+    practice_idx = FEATURES.index("Practice_Pace") if "Practice_Pace" in FEATURES else -1
+    if not has_practice or (practice_idx >= 0 and clf.feature_importances_[practice_idx] <= 0.0001):
         mapped_contribs["Practice"] = 0.0
     if not has_qualifying:
         mapped_contribs["Qualifying"] = 0.0

@@ -7,9 +7,10 @@ interface Props {
   prediction?: Prediction | null;
   baseline?: Prediction | null;
   isPredicting?: boolean;
+  onHome?: () => void;
 }
 
-export function SelectedDriverCard({ driver, prediction, baseline, isPredicting = false }: Props) {
+export function SelectedDriverCard({ driver, prediction, baseline, isPredicting = false, onHome }: Props) {
   const team = TEAMS[driver.team];
 
   return (
@@ -44,6 +45,16 @@ export function SelectedDriverCard({ driver, prediction, baseline, isPredicting 
             {team.name}
           </p>
         </div>
+        {onHome && (
+          <button
+            type="button"
+            onClick={onHome}
+            className="flex shrink-0 items-center gap-1.5 rounded border border-hairline bg-secondary/40 px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition hover:border-f1-red hover:text-foreground"
+            title="Return to driver selection"
+          >
+            <span>←</span> Home
+          </button>
+        )}
       </div>
 
       <div className="border-t border-hairline" />

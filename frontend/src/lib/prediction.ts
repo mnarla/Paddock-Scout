@@ -21,7 +21,7 @@ export interface Prediction {
   p2: number;
   p3: number;
   podium: number; // P1+P2+P3
-  // weight is served by /api/feature-weights.
-  // value = driver score on this feature (0..1), used for bar opacity/visuals.
-  contributions: { key: string; value: number }[];
+  // weight = driver-specific relative importance of this feature in the model's decision
+  // value = driver score on this feature (0..1), used for bar opacity/visuals
+  contributions: { key: string; weight?: number; value: number }[];
 }

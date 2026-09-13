@@ -4,6 +4,7 @@ import type { RaceInfo } from "@/data/calendar2026";
 
 interface Props {
   race: RaceInfo;
+  onHome?: () => void;
 }
 
 interface WeekendSession {
@@ -66,15 +67,19 @@ function useCountdown(raceDateIso: string, isSprint: boolean = false) {
   };
 }
 
-export function LiveBanner({ race }: Props) {
+export function LiveBanner({ race, onHome }: Props) {
   const c = useCountdown(race.date, !!race.isSprint);
   return (
     <header className="sticky top-0 z-30 border-b border-hairline bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:px-6 sm:py-4 relative">
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
-          <span className="text-base font-black tracking-[0.25em] text-f1-red uppercase">
+          <Link
+            to="/"
+            onClick={onHome}
+            className="text-base font-black tracking-[0.25em] text-f1-red uppercase transition-opacity hover:opacity-80"
+          >
             Paddock Scout
-          </span>
+          </Link>
         </div>
         <div className="flex shrink-0 items-center gap-2">
           <span className="live-pulse inline-block h-2.5 w-2.5 rounded-full bg-f1-red shadow-[0_0_10px_var(--color-f1-red)]" />
@@ -115,12 +120,21 @@ export function LiveBanner({ race }: Props) {
           </span>
         </div>
 
-        <Link
-          to="/archive"
-          className="ml-2 rounded-sm border border-hairline px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-f1-red hover:text-foreground"
-        >
-          Archive
-        </Link>
+        <div className="ml-auto flex shrink-0 items-center gap-2">
+          <Link
+            to="/"
+            onClick={onHome}
+            className="rounded-sm border border-hairline px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-f1-red hover:text-foreground"
+          >
+            Home
+          </Link>
+          <Link
+            to="/archive"
+            className="rounded-sm border border-hairline px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-f1-red hover:text-foreground"
+          >
+            Archive
+          </Link>
+        </div>
       </div>
     </header>
   );

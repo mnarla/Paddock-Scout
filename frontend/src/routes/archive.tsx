@@ -192,7 +192,7 @@ function ArchivePage() {
               to="/"
               className="rounded-sm border border-hairline px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-f1-red hover:text-foreground"
             >
-              ← Live
+              ← Home
             </Link>
           </div>
         </div>
