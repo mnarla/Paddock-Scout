@@ -1,0 +1,1388 @@
+{
+  "metadata": {
+    "season": 2026,
+    "round": 14,
+    "eventName": "Spanish Grand Prix",
+    "sessionStage": "fully_ingested",
+    "statusMessage": "Pre-race session data is fully ingested (FP1\u2013FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.",
+    "globalFeatureWeights": {
+      "CarRank": 0.09054423893299714,
+      "Grid": 0.25484343957409805,
+      "Momentum": 0.26476415597586683,
+      "Overtake": 0.10085297657427941,
+      "Practice": 0.0,
+      "Qualifying": 0.11339056226511177,
+      "RecentForm": 0.09516772140648537,
+      "Standings": 0.056938318780072106,
+      "Track": 0.0126239973219555,
+      "Upgrades": 0.010874589169133815
+    }
+  },
+  "predictions": [
+    {
+      "driverId": "norris",
+      "driverNumber": 4,
+      "abbr": "NOR",
+      "fullName": "Lando Norris",
+      "teamName": "mclaren",
+      "standingsRank": 4,
+      "seasonPoints": 171,
+      "recentForm": 2.67,
+      "gridPos": 1,
+      "winProb": 0.3992,
+      "top2Prob": 0.5643,
+      "podiumProb": 0.9463,
+      "rawP1": 0.3991574987014116,
+      "rawP2": 0.5643261188537199,
+      "rawP3": 0.9462785529559327,
+      "rawPodium": 0.9462785529559327,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.6838522809317055
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.034176174852499
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.10364571685004222
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.0038211941280725053
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.16946861585665327
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.0003598972650966608
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.004676120115930894
+        }
+      ]
+    },
+    {
+      "driverId": "antonelli",
+      "driverNumber": 12,
+      "abbr": "ANT",
+      "fullName": "Kimi Antonelli",
+      "teamName": "mercedes",
+      "standingsRank": 1,
+      "seasonPoints": 268,
+      "recentForm": 2.33,
+      "gridPos": 2,
+      "winProb": 0.2919,
+      "top2Prob": 0.5928,
+      "podiumProb": 0.912,
+      "rawP1": 0.29185163739255127,
+      "rawP2": 0.5928236384536197,
+      "rawP3": 0.9120363668517226,
+      "rawPodium": 0.9120363668517226,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.6077426776591083
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.009805129108616955
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.11756476391172228
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.050815060471142696
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.1649147799883541
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.005654416721465138
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.04350317213959062
+        }
+      ]
+    },
+    {
+      "driverId": "max_verstappen",
+      "driverNumber": 1,
+      "abbr": "VER",
+      "fullName": "Max Verstappen",
+      "teamName": "red_bull",
+      "standingsRank": 6,
+      "seasonPoints": 125,
+      "recentForm": 10.33,
+      "gridPos": 3,
+      "winProb": 0.069,
+      "top2Prob": 0.1941,
+      "podiumProb": 0.7909,
+      "rawP1": 0.06901964289508632,
+      "rawP2": 0.19411774564243028,
+      "rawP3": 0.7908500748395308,
+      "rawPodium": 0.7908500748395308,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.8269011444801525
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.048902489698430404
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.05115827547034602
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.03353880241813292
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.02059508405297568
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.005365333224788855
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.011773034205980899
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.0017658364491926933
+        }
+      ]
+    },
+    {
+      "driverId": "hamilton",
+      "driverNumber": 44,
+      "abbr": "HAM",
+      "fullName": "Lewis Hamilton",
+      "teamName": "ferrari",
+      "standingsRank": 3,
+      "seasonPoints": 192,
+      "recentForm": 5.67,
+      "gridPos": 4,
+      "winProb": 0.0406,
+      "top2Prob": 0.1489,
+      "podiumProb": 0.8274,
+      "rawP1": 0.04061680100458938,
+      "rawP2": 0.14892827035016107,
+      "rawP3": 0.827379279723117,
+      "rawPodium": 0.827379279723117,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.4100093238919624
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.11912779162898278
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.12812276188024635
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.049363416601903014
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.1099404086478475
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.013592394719179553
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.006577678891589332
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.16326622373828903
+        }
+      ]
+    },
+    {
+      "driverId": "leclerc",
+      "driverNumber": 16,
+      "abbr": "LEC",
+      "fullName": "Charles Leclerc",
+      "teamName": "ferrari",
+      "standingsRank": 5,
+      "seasonPoints": 155,
+      "recentForm": 9.67,
+      "gridPos": 5,
+      "winProb": 0.0252,
+      "top2Prob": 0.0924,
+      "podiumProb": 0.6602,
+      "rawP1": 0.02520904989194258,
+      "rawP2": 0.09243318293712278,
+      "rawP3": 0.6602370209794485,
+      "rawPodium": 0.6602370209794485,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.3589987999438731
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.030527594774344784
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.20353576460100098
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.04263536729120837
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.01752422429552726
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.01731640228716873
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.007759907190843505
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 3.4928617946193454e-16
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.3217019396160329
+        }
+      ]
+    },
+    {
+      "driverId": "russell",
+      "driverNumber": 63,
+      "abbr": "RUS",
+      "fullName": "George Russell",
+      "teamName": "mercedes",
+      "standingsRank": 2,
+      "seasonPoints": 201,
+      "recentForm": 2.0,
+      "gridPos": 6,
+      "winProb": 0.0318,
+      "top2Prob": 0.1164,
+      "podiumProb": 0.5822,
+      "rawP1": 0.03175655921551934,
+      "rawP2": 0.11644071712357093,
+      "rawP3": 0.5822035856178547,
+      "rawPodium": 0.5822035856178547,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.05796650072512366
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.06995400285380182
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.07759566692620294
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.08387353481357901
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.05406692935431063
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.050317583480373816
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.28980203570535124
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.31642374614125685
+        }
+      ]
+    },
+    {
+      "driverId": "piastri",
+      "driverNumber": 81,
+      "abbr": "PIA",
+      "fullName": "Oscar Piastri",
+      "teamName": "mclaren",
+      "standingsRank": 7,
+      "seasonPoints": 114,
+      "recentForm": 5.33,
+      "gridPos": 7,
+      "winProb": 0.005,
+      "top2Prob": 0.0135,
+      "podiumProb": 0.372,
+      "rawP1": 0.005,
+      "rawP2": 0.013525957626238365,
+      "rawP3": 0.37196383472155503,
+      "rawPodium": 0.37196383472155503,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.017006850935086616
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.025926373951653623
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.1152766194254442
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.14702190188312572
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.1515781443880437
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.08413599236673584
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.2625464404361415
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 1.0039372674003486e-16
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.19650767661376864
+        }
+      ]
+    },
+    {
+      "driverId": "hadjar",
+      "driverNumber": 6,
+      "abbr": "HAD",
+      "fullName": "Isack Hadjar",
+      "teamName": "red_bull",
+      "standingsRank": 8,
+      "seasonPoints": 68,
+      "recentForm": 7.0,
+      "gridPos": 8,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.1389,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.13894695400961926,
+      "rawPodium": 0.13894695400961926,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.01920748527695091
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.014532050742921899
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.0652634216582371
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.06203954593060015
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.14340475249076404
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.06414061258829595
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.4455026514766628
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.1859094798355673
+        }
+      ]
+    },
+    {
+      "driverId": "lawson",
+      "driverNumber": 30,
+      "abbr": "LAW",
+      "fullName": "Liam Lawson",
+      "teamName": "red_bull",
+      "standingsRank": 10,
+      "seasonPoints": 49,
+      "recentForm": 10.67,
+      "gridPos": 8,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.2029,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.20285985937189005,
+      "rawPodium": 0.20285985937189005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.02401521177403144
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.007142115223293272
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.05738404220413265
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.029236014004002324
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.0037275845641460336
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.18262032068188028
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.3827528277135676
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.31312188383494644
+        }
+      ]
+    },
+    {
+      "driverId": "colapinto",
+      "driverNumber": 43,
+      "abbr": "COL",
+      "fullName": "Franco Colapinto",
+      "teamName": "alpine",
+      "standingsRank": 12,
+      "seasonPoints": 21,
+      "recentForm": 11.67,
+      "gridPos": 9,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0197,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.01965947860038,
+      "rawPodium": 0.01965947860038,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.013725582220781726
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.0032843068735072594
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.0010959539145378688
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.016192395813982907
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.00023196417789777524
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.1493900547788342
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6807935943386961
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.13528614788176205
+        }
+      ]
+    },
+    {
+      "driverId": "arvid_lindblad",
+      "driverNumber": 41,
+      "abbr": "LIN",
+      "fullName": "Arvid Lindblad",
+      "teamName": "rb",
+      "standingsRank": 11,
+      "seasonPoints": 27,
+      "recentForm": 10.0,
+      "gridPos": 10,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0197,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.019741963538134236,
+      "rawPodium": 0.019741963538134236,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.008437997935642415
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.008073684186019087
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.013127292213820276
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.13529380359888074
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6196388158651538
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.2154284062004837
+        }
+      ]
+    },
+    {
+      "driverId": "hulkenberg",
+      "driverNumber": 27,
+      "abbr": "HUL",
+      "fullName": "Nico H\u00fclkenberg",
+      "teamName": "audi",
+      "standingsRank": 15,
+      "seasonPoints": 6,
+      "recentForm": 14.0,
+      "gridPos": 11,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0098,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.009801656345559137,
+      "rawPodium": 0.009801656345559137,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.00554988990305483
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.003428071075698776
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.0029700264547063804
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.01946354585157333
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.027943611093115547
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.15394233409623323
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.7259192403492156
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.0014336709747279788
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.059349610201674334
+        }
+      ]
+    },
+    {
+      "driverId": "bortoleto",
+      "driverNumber": 5,
+      "abbr": "BOR",
+      "fullName": "Gabriel Bortoleto",
+      "teamName": "audi",
+      "standingsRank": 14,
+      "seasonPoints": 10,
+      "recentForm": 11.0,
+      "gridPos": 12,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0374,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.03742551747363962,
+      "rawPodium": 0.03742551747363962,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.0006619338126104248
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.019345568690736697
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.009685127078038829
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.07702427950866626
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.010437744577585546
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.11394311416098128
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6669821793195089
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.010430807805582882
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.09148924504628927
+        }
+      ]
+    },
+    {
+      "driverId": "bearman",
+      "driverNumber": 87,
+      "abbr": "BEA",
+      "fullName": "Oliver Bearman",
+      "teamName": "haas",
+      "standingsRank": 13,
+      "seasonPoints": 19,
+      "recentForm": 17.0,
+      "gridPos": 13,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0199,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.01987632746507135,
+      "rawPodium": 0.01987632746507135,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.01825177333611341
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.03434616445255018
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.00840696301343362
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.02773676836515114
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.006378232206078025
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.12151665395191266
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6761591174342229
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.008700888318159967
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.09850343892237816
+        }
+      ]
+    },
+    {
+      "driverId": "ocon",
+      "driverNumber": 31,
+      "abbr": "OCO",
+      "fullName": "Esteban Ocon",
+      "teamName": "haas",
+      "standingsRank": 18,
+      "seasonPoints": 3,
+      "recentForm": 16.33,
+      "gridPos": 13,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.015,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.01496398977838794,
+      "rawPodium": 0.01496398977838794,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.023189168263179176
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.04939757299520808
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.008714676426546072
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.030143951330918396
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.010822218858952046
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.12425514385670196
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6626033003360904
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.006776422065327611
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08409754586707623
+        }
+      ]
+    },
+    {
+      "driverId": "gasly",
+      "driverNumber": 10,
+      "abbr": "GAS",
+      "fullName": "Pierre Gasly",
+      "teamName": "alpine",
+      "standingsRank": 9,
+      "seasonPoints": 49,
+      "recentForm": 8.33,
+      "gridPos": 14,
+      "winProb": 0.005,
+      "top2Prob": 0.0057,
+      "podiumProb": 0.0201,
+      "rawP1": 0.005,
+      "rawP2": 0.00575,
+      "rawP3": 0.020072906936285398,
+      "rawPodium": 0.020072906936285398,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.013313501616593896
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.006163949913562392
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.010464458579995799
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.012184982239103416
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.01919023746950917
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.14672206827680448
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6096298697167337
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.010458162924630348
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.17187276926306666
+        }
+      ]
+    },
+    {
+      "driverId": "albon",
+      "driverNumber": 23,
+      "abbr": "ALB",
+      "fullName": "Alex Albon",
+      "teamName": "williams",
+      "standingsRank": 17,
+      "seasonPoints": 5,
+      "recentForm": 16.67,
+      "gridPos": 16,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.0017455577118522957
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.04304936607356663
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.0053130484314677035
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.01188510665137815
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.008780277122175198
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.130374828949114
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.7105614398607393
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.0017455577118522957
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08654481748785442
+        }
+      ]
+    },
+    {
+      "driverId": "sainz",
+      "driverNumber": 55,
+      "abbr": "SAI",
+      "fullName": "Carlos Sainz",
+      "teamName": "williams",
+      "standingsRank": 16,
+      "seasonPoints": 6,
+      "recentForm": 16.33,
+      "gridPos": 17,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.004997527262912518
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.039840851692185604
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.008597901108770744
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.008639448534641377
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.005234333893202168
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.12834067093430665
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.713769226631722
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.004997527262912518
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08558251267934647
+        }
+      ]
+    },
+    {
+      "driverId": "alonso",
+      "driverNumber": 14,
+      "abbr": "ALO",
+      "fullName": "Fernando Alonso",
+      "teamName": "aston_martin",
+      "standingsRank": 19,
+      "seasonPoints": 3,
+      "recentForm": 16.0,
+      "gridPos": 18,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.005532273418313266
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.01707958397808725
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.009304530271064326
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.005790533969316342
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.005361947012409511
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.13105671155113155
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.7308745337553983
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.005532273418313266
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08946761262596611
+        }
+      ]
+    },
+    {
+      "driverId": "perez",
+      "driverNumber": 11,
+      "abbr": "PER",
+      "fullName": "Sergio Perez",
+      "teamName": "cadillac",
+      "standingsRank": 21,
+      "seasonPoints": 0,
+      "recentForm": 18.0,
+      "gridPos": 19,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.005366185333724167
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.04242631745508433
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.008951634682722732
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.005608622199681641
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.005212636202046741
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.12741929095030916
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.71052654192447
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.005366185333724167
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08912258591823703
+        }
+      ]
+    },
+    {
+      "driverId": "bottas",
+      "driverNumber": 77,
+      "abbr": "BOT",
+      "fullName": "Valtteri Bottas",
+      "teamName": "cadillac",
+      "standingsRank": 22,
+      "seasonPoints": 0,
+      "recentForm": 18.67,
+      "gridPos": 20,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.0053336995068473565
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.040680272918512284
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.008925845747597435
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.0055765891956702125
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.005222372348617845
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.12769979309935084
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.7118961700823303
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.0053336995068473565
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08933155759422631
+        }
+      ]
+    },
+    {
+      "driverId": "stroll",
+      "driverNumber": 18,
+      "abbr": "STR",
+      "fullName": "Lance Stroll",
+      "teamName": "aston_martin",
+      "standingsRank": 23,
+      "seasonPoints": 0,
+      "recentForm": 19.0,
+      "gridPos": 23,
+      "winProb": 0.005,
+      "top2Prob": 0.005,
+      "podiumProb": 0.005,
+      "rawP1": 0.005,
+      "rawP2": 0.005,
+      "rawP3": 0.005,
+      "rawPodium": 0.005,
+      "contributions": [
+        {
+          "key": "Grid",
+          "value": 1.0,
+          "weight": 0.010526520138240463
+        },
+        {
+          "key": "Standings",
+          "value": 1.0,
+          "weight": 0.04743552942771371
+        },
+        {
+          "key": "CarRank",
+          "value": 1.0,
+          "weight": 0.007090557178204814
+        },
+        {
+          "key": "Track",
+          "value": 1.0,
+          "weight": 0.007706839268842243
+        },
+        {
+          "key": "RecentForm",
+          "value": 1.0,
+          "weight": 0.020589315319191
+        },
+        {
+          "key": "Qualifying",
+          "value": 1.0,
+          "weight": 0.1326615405473075
+        },
+        {
+          "key": "Momentum",
+          "value": 1.0,
+          "weight": 0.6788871553991245
+        },
+        {
+          "key": "Upgrades",
+          "value": 1.0,
+          "weight": 0.010526520138240463
+        },
+        {
+          "key": "Overtake",
+          "value": 1.0,
+          "weight": 0.08457602258313524
+        }
+      ]
+    }
+  ]
+}
