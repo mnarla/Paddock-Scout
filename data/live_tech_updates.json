@@ -19,23 +19,23 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "ADUO 2 Power Unit Upgrade",
-        "Category": "Power Unit",
+        "Component": "Stable Aerodynamic Package",
+        "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced its second ADUO power unit upgrade at the Italian GP to address a power deficit, though a gap to Mercedes remains.",
-        "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Baseline"
         ],
-        "URL": "https://www.the-race.com/formula-1/ferrari-f1-engine-upgrade-italian-gp-early-verdict/",
-        "As_Of": "Italian GP",
+        "URL": "",
+        "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Italian GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Mercedes": {
         "Component": "Stable Aerodynamic Package",
@@ -57,23 +57,23 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "H-Wing (Rotating Rear Wing)",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren is re-introducing its rotating H-wing concept for the Azerbaijan Grand Prix after parking it for the Spanish GP.",
-        "Pace_Delta": -0.06,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.06,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "motorsport.com"
+            "Baseline"
         ],
-        "URL": "https://www.motorsport.com/f1/news/mclaren-drops-upside-down-h-wing-concept-for-f1-spanish-gp/10854102/",
-        "As_Of": "Azerbaijan Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Azerbaijan Grand Prix"
+        "URL": "",
+        "As_Of": "Azerbaijan GP",
+        "Is_Current_Weekend": false,
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -95,23 +95,23 @@
         "Badge": "Standard Baseline"
     },
     "Alpine": {
-        "Component": "Folding Rear Wing",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Alpine brought back a folding rear wing design for the Italian GP, which contributed to Pierre Gasly's pole position.",
-        "Pace_Delta": -0.08,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "motorsport.com"
+            "Baseline"
         ],
-        "URL": "https://www.motorsport.com/f1/news/f1-alpine-brought-back-collapsing-reverse-opening-rear-wing-for-gaslys-monza-pole/10852905/",
-        "As_Of": "Italian GP",
+        "URL": "",
+        "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Italian GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Williams": {
         "Component": "Stable Aerodynamic Package",
