@@ -13,8 +13,11 @@
 ## What It Does (Features)
 
 *   **Machine Learning Pipeline**: Trains a regularized `RandomForestClassifier` on historical F1 data from 2023–2026. The model uses "v6" features (like rolling championship standings, practice pace, and team car ranks) to avoid memorizing driver names, and applies a massive **×100 training weight** to the 2026 era so the model prioritizes current ground-effect aerodynamics and team hierarchies.
-*   **Live Web Intelligence Agent**: Automatically searches top technical motorsport outlets (*The Race*, *F1Technical.net*, *Motorsport.com*) using a DuckDuckGo search agent to extract live updates about MGU-K power clipping, sidepod packages, and wing upgrades.
-*   **Intelligent Upgrade Validation & Honest Tracking**: Cross-references reported news with real-time FP2 results. If a news outlet reports a "major upgrade" but the team is slower than P15 in practice, the upgrade is flagged as unvalidated and its performance boost is discounted. Confirmed, source-cited upgrades display with real pace deltas, while teams awaiting technical reports are shown with transparent `— PENDING` status (no fabricated components).
+*   **Live Technical Upgrade Intelligence Agent**: Automatically monitors motorsport feeds (*The Race*, *Autosport*, *Motorsport.com*, *Formula 1*) with a strict **3-week rolling window** to capture current race packages and recently introduced active specs. Powered by Google News RSS discovery and batched Gemini extraction, eliminating stale multi-month or obsolete historical articles.
+*   **Dynamic Pace Evaluation & Failure Awareness**: Unlike static lookup tables, lap time deltas are evaluated dynamically from engineer/team quotes and reported aerodynamic scope. The agent detects **bouncing, porpoising, or balance rupture** (`DEFECTIVE` with lap time penalties) and tracks Friday-night wing removals (`REVERTED`). Upgrades display clean 3-tier statuses:
+    *   🟢 **NEW THIS WEEKEND**: Fresh package introduced for the active Grand Prix.
+    *   🔵 **ACTIVE SPEC**: Verified package running from the past 1–2 races.
+    *   ⚪ **STANDARD BASELINE**: Teams without upgrades in the last 3 weeks cleanly reflect standard baseline car spec (`±0.00s`), with zero ancient links.
 *   **Dynamic Session-Aware Feature Breakdown**: Automatically senses which live weekend sessions have concluded. The model cleanly adapts its weighting and status messaging through each phase of the weekend (pre-weekend form weighting $\rightarrow$ Friday practice pace active $\rightarrow$ Saturday fully ingested live grid & momentum), with tailored support for Sprint weekend schedules.
 *   **Chronological Session Countdown**: A live header clock that tracks the upcoming weekend session in chronological order (`FP1` $\rightarrow$ `FP2` $\rightarrow$ `FP3` / `Sprint` $\rightarrow$ `Qualifying` $\rightarrow$ `Grand Prix`), stepping forward automatically as track action concludes.
 *   **Overtake Index & Recovery Dynamics**: Evaluates midfield and front-runner recovery potential when fast cars start out of position due to penalties or qualifying mishaps by contrasting starting grid position with the car's rolling performance rank (`GridPosition - Car_Rank`).
@@ -58,7 +61,7 @@ python backend/benchmark.py --season 2026
 *   Python 3.10 to 3.12+ installed on your computer.
 *   Node.js (v18 or later) installed on your computer — this is required to run the React frontend.
 *   An active internet connection (to fetch FastF1 schedule and run the live web search agent).
-*   *Note: Zero API keys are needed! Both FastF1 and DuckDuckGo search operate entirely token-free.*
+*   A `GEMINI_API_KEY` (in `.env`) for the automated technical upgrade intelligence pipeline. FastF1 telemetry ingestion remains completely token-free.
 
 ### 1. Clone this Repository
 
@@ -117,6 +120,15 @@ Run the training pipeline to fit the Random Forest model, serialize the persiste
 ```bash
 python backend/train_model.py
 ```
+
+### 5b. Run the Live Technical News Agent (Optional / On-Demand)
+
+To manually scrape the latest technical upgrades across the grid within the last 3 weeks:
+
+```bash
+python backend/news_agent.py
+```
+*(Note: When the API server is running, it automatically checks freshness every 6 hours on race weeks and exposes `POST /api/refresh-upgrades` for automated cron triggers).*
 
 ### 6. Start the Application
 
