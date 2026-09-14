@@ -95,19 +95,59 @@ UPGRADE_TEAMS = {"McLaren", "Ferrari"}
 
 TEAM_NAME_TO_ID = {
     "Mercedes": "mercedes",
+    "Mercedes-AMG Petronas F1 Team": "mercedes",
     "Ferrari": "ferrari",
+    "Scuderia Ferrari": "ferrari",
+    "Red Bull": "red_bull",
     "Red Bull Racing": "red_bull",
     "McLaren": "mclaren",
+    "McLaren F1 Team": "mclaren",
     "Alpine": "alpine",
+    "Alpine F1 Team": "alpine",
+    "RB": "rb",
+    "RB F1 Team": "rb",
     "Racing Bulls": "rb",
+    "VCARB": "rb",
     "Williams": "williams",
+    "Williams Racing": "williams",
+    "Haas": "haas",
     "Haas F1 Team": "haas",
     "Aston Martin": "aston_martin",
+    "Aston Martin Aramco F1 Team": "aston_martin",
     "Audi": "audi",
+    "Audi F1 Team": "audi",
     "Kick Sauber": "audi",
     "Sauber": "audi",
-    "Cadillac": "cadillac"
+    "Cadillac": "cadillac",
+    "Cadillac F1 Team": "cadillac",
 }
+
+DRIVER_DEFAULT_TEAM = {
+    "antonelli": "mercedes",
+    "russell": "mercedes",
+    "hamilton": "ferrari",
+    "leclerc": "ferrari",
+    "norris": "mclaren",
+    "piastri": "mclaren",
+    "max_verstappen": "red_bull",
+    "lawson": "red_bull",
+    "hadjar": "red_bull",
+    "arvid_lindblad": "rb",
+    "tsunoda": "rb",
+    "gasly": "alpine",
+    "colapinto": "alpine",
+    "bearman": "haas",
+    "ocon": "haas",
+    "bortoleto": "audi",
+    "hulkenberg": "audi",
+    "sainz": "williams",
+    "albon": "williams",
+    "alonso": "aston_martin",
+    "stroll": "aston_martin",
+    "perez": "cadillac",
+    "bottas": "cadillac",
+}
+
 
 # Sourced, confirmed technical upgrades from motorsport outlets (The Race, F1Technical, Motorsport.com, Autosport).
 # Any team without a verified technical report is explicitly marked confirmed=False with no fake pace delta.
@@ -582,7 +622,7 @@ def get_drivers():
             "abbr": info["abbr"],
             "first": info["first"],
             "last": info["last"],
-            "team": TEAM_NAME_TO_ID.get(row["TeamName"], "audi"),
+            "team": TEAM_NAME_TO_ID.get(row["TeamName"]) or DRIVER_DEFAULT_TEAM.get(did, "mercedes"),
             "standingsRank": standings_rank,
             "seasonPoints": int(row["SeasonPoints"]),
             "recentForm": round(form_val, 2),
@@ -966,7 +1006,7 @@ def get_archive_progression():
             
             driver_abbr[did] = row["Abbreviation"]
             driver_last[did] = row["LastName"]
-            driver_team[did] = TEAM_NAME_TO_ID.get(row["TeamName"], "sauber")
+            driver_team[did] = TEAM_NAME_TO_ID.get(row["TeamName"]) or DRIVER_DEFAULT_TEAM.get(did, "audi")
             
             current_totals[did] = current_totals.get(did, 0.0) + points_won
             

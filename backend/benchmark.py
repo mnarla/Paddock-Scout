@@ -66,7 +66,7 @@ for gp_name, info in SCHEDULE_2026.items():
         "is_sprint": gp_name in SPRINT_RACES_2026
     }
 
-def run_season_benchmark(season: int = 2026):
+def run_season_benchmark(season: int = 2026, verbose: bool = True):
     if not os.path.exists(MODEL_PATH):
         raise FileNotFoundError(f"Model file not found at {MODEL_PATH}")
 
@@ -256,10 +256,26 @@ def run_season_benchmark(season: int = 2026):
         top10_hits = len(set(pred_top10).intersection(set(actual_top10)))
         grid_top10_hits = len(set([d["driverId"] for d in grid_sorted[:10]]).intersection(set(actual_top10)))
 
+        # Standings baseline (top drivers in championship prior to this round)
+        if not ss.empty:
+            ss_sorted = ss.sort_values("SeasonPoints", ascending=False)
+            standings_top3 = ss_sorted.iloc[:3]["DriverId"].tolist()
+            standings_top10 = ss_sorted.iloc[:10]["DriverId"].tolist()
+            standings_winner = standings_top3[0] if standings_top3 else None
+        else:
+            standings_top3 = grid_top3
+            standings_top10 = [d["driverId"] for d in grid_sorted[:10]]
+            standings_winner = pole_sitter
+
+        standings_podium_hits = len(set(standings_top3).intersection(set(actual_podium)))
+        standings_top10_hits = len(set(standings_top10).intersection(set(actual_top10)))
+        standings_winner_hit = (actual_winner == standings_winner)
+
         # Brier score
         finish_map = race_df.set_index("DriverId")["Position"].to_dict()
         model_briers = []
         grid_briers = []
+        standings_briers = []
         for d in drivers_list:
             did = d["driverId"]
             finish_pos = finish_map.get(did, np.nan)
@@ -267,9 +283,12 @@ def run_season_benchmark(season: int = 2026):
             model_briers.append((d["podiumProb"] - y_podium) ** 2)
             grid_p = 0.70 if d["gridPos"] <= 3 else 0.05
             grid_briers.append((grid_p - y_podium) ** 2)
+            standings_p = 0.70 if did in standings_top3 else 0.05
+            standings_briers.append((standings_p - y_podium) ** 2)
 
         m_brier = float(np.mean(model_briers))
         g_brier = float(np.mean(grid_briers))
+        s_brier = float(np.mean(standings_briers))
 
         round_results.append({
             "round": rnd,
@@ -278,77 +297,36 @@ def run_season_benchmark(season: int = 2026):
             "pred_winner": pred_winner_name,
             "winner_hit": winner_hit,
             "pole_winner_hit": pole_winner_hit,
+            "standings_winner_hit": standings_winner_hit,
             "actual_podium": actual_podium_names,
             "podium_hits": podium_hits,
             "grid_podium_hits": grid_podium_hits,
+            "standings_podium_hits": standings_podium_hits,
             "top10_hits": top10_hits,
             "grid_top10_hits": grid_top10_hits,
+            "standings_top10_hits": standings_top10_hits,
             "model_brier": m_brier,
             "grid_brier": g_brier,
+            "standings_brier": s_brier,
         })
 
-    # Print Report Table
-    print("=" * 95)
-    print(f"🏁 {season} SEASON WALK-FORWARD ACCURACY BENCHMARK ({len(round_results)} Grand Prix Evaluated)")
-    print("=" * 95)
-    print(f"{'Rnd':<4} {'Grand Prix':<24} {'Pred Winner':<20} {'Actual Winner':<20} {'P1 Hit':<7} {'Podium':<8} {'Top10':<7}")
-    print("-" * 95)
+    total_winner_hits = sum(1 for r in round_results if r["winner_hit"])
+    total_pole_winner_hits = sum(1 for r in round_results if r["pole_winner_hit"])
+    total_standings_winner_hits = sum(1 for r in round_results if r["standings_winner_hit"])
 
-    total_winner_hits = 0
-    total_pole_winner_hits = 0
-    total_podium_hits = 0
-    total_grid_podium_hits = 0
-    total_top10_hits = 0
-    total_grid_top10_hits = 0
-    model_briers = []
-    grid_briers = []
+    total_podium_hits = sum(r["podium_hits"] for r in round_results)
+    total_grid_podium_hits = sum(r["grid_podium_hits"] for r in round_results)
+    total_standings_podium_hits = sum(r["standings_podium_hits"] for r in round_results)
 
-    for r in round_results:
-        hit_sym = "✅ HIT" if r["winner_hit"] else "❌ MISS"
-        if r["winner_hit"]:
-            total_winner_hits += 1
-        if r["pole_winner_hit"]:
-            total_pole_winner_hits += 1
+    total_top10_hits = sum(r["top10_hits"] for r in round_results)
+    total_grid_top10_hits = sum(r["grid_top10_hits"] for r in round_results)
+    total_standings_top10_hits = sum(r["standings_top10_hits"] for r in round_results)
 
-        total_podium_hits += r["podium_hits"]
-        total_grid_podium_hits += r["grid_podium_hits"]
-        total_top10_hits += r["top10_hits"]
-        total_grid_top10_hits += r["grid_top10_hits"]
-        model_briers.append(r["model_brier"])
-        grid_briers.append(r["grid_brier"])
+    model_briers = [r["model_brier"] for r in round_results]
+    grid_briers = [r["grid_brier"] for r in round_results]
+    standings_briers = [r["standings_brier"] for r in round_results]
 
-        p_hit = r["podium_hits"]
-        t_hit = r["top10_hits"]
-        print(f"{r['round']:<4} {r['name']:<24} {r['pred_winner']:<20} {r['actual_winner']:<20} {hit_sym:<7} {p_hit}/3 ({p_hit/3*100:>3.0f}%) {t_hit}/10 ({t_hit*10}%)")
-
-    n_rounds = len(round_results)
-    if n_rounds == 0:
-        print("No completed race results found.")
-        return
-
-    print("=" * 95)
-    print(f"📊 AGGREGATE {season} PERFORMANCE METRICS:")
-    print("=" * 95)
-    print(f"1. RACE WINNER ACCURACY (P1):")
-    print(f"   - Model Winner Pick:      {total_winner_hits} / {n_rounds} ({total_winner_hits / n_rounds * 100:.1f}%)")
-    print(f"   - Pole Sitter Benchmark:  {total_pole_winner_hits} / {n_rounds} ({total_pole_winner_hits / n_rounds * 100:.1f}%)")
-
-    print(f"\n2. PODIUM ACCURACY (Top-3):")
-    print(f"   - Model Top-3 Hit Rate:   {total_podium_hits} / {n_rounds * 3} ({total_podium_hits / (n_rounds * 3) * 100:.1f}%)")
-    print(f"   - Starting Grid Baseline: {total_grid_podium_hits} / {n_rounds * 3} ({total_grid_podium_hits / (n_rounds * 3) * 100:.1f}%)")
-    podium_alpha = total_podium_hits - total_grid_podium_hits
-    if podium_alpha > 0:
-        print(f"   - Beat the Grid?          🏆 YES (+{podium_alpha} more correct podium finishers than Qualifying Grid)")
-    elif podium_alpha == 0:
-        print(f"   - Beat the Grid?          ⚖️ TIED with Qualifying Grid")
-    else:
-        print(f"   - Beat the Grid?          🔻 Grid was higher (+{abs(podium_alpha)} podium hits)")
-
-    print(f"\n3. POINTS FINISHERS ACCURACY (Top-10):")
-    print(f"   - Model Top-10 Hit Rate:  {total_top10_hits} / {n_rounds * 10} ({total_top10_hits / (n_rounds * 10) * 100:.1f}%)")
-    print(f"   - Starting Grid Baseline: {total_grid_top10_hits} / {n_rounds * 10} ({total_grid_top10_hits / (n_rounds * 10) * 100:.1f}%)")
-
-    # 5. Compute Attrition / DNF rate across evaluated season
+    # Attrition
     total_starters = 0
     total_dnfs = 0
     for rfile in race_files:
@@ -359,15 +337,96 @@ def run_season_benchmark(season: int = 2026):
             dnf_mask = rdf['Status'].str.contains('Retired|Accident|Collision|Engine|Brakes|Spun|Gearbox|Power|Hydraulics|Damage|Out', case=False, na=False) | (rdf['ClassifiedPosition'].astype(str).str.upper().isin(['R', 'D', 'W', 'NC']))
             total_dnfs += int(dnf_mask.sum())
 
-    print(f"\n4. PROBABILISTIC CALIBRATION (Brier Score):")
-    print(f"   - Model Average Brier:    {np.mean(model_briers):.4f}")
-    print(f"   - Grid Baseline Brier:    {np.mean(grid_briers):.4f}")
+    n_rounds = len(round_results)
 
-    print(f"\n5. EMPIRICAL ATTRITION & DNF RATE:")
-    print(f"   - Total Entries:          {total_starters} driver entries across {n_rounds} races")
-    print(f"   - Total Retirements:      {total_dnfs} classified DNFs ({total_dnfs / total_starters * 100:.1f}%)")
-    print(f"   - Average per Grand Prix: {total_dnfs / n_rounds:.2f} cars / race")
-    print("=" * 95)
+    metrics_summary = {
+        "season": season,
+        "n_rounds": n_rounds,
+        "total_starters": total_starters,
+        "total_dnfs": total_dnfs,
+        "dnf_pct": (total_dnfs / total_starters * 100) if total_starters > 0 else 0.0,
+        "avg_dnfs_per_race": (total_dnfs / n_rounds) if n_rounds > 0 else 0.0,
+        # Winner
+        "winner_hits": total_winner_hits,
+        "winner_pct": (total_winner_hits / n_rounds * 100) if n_rounds > 0 else 0.0,
+        "pole_hits": total_pole_winner_hits,
+        "pole_pct": (total_pole_winner_hits / n_rounds * 100) if n_rounds > 0 else 0.0,
+        "standings_winner_hits": total_standings_winner_hits,
+        "standings_winner_pct": (total_standings_winner_hits / n_rounds * 100) if n_rounds > 0 else 0.0,
+        # Podium
+        "podium_hits": total_podium_hits,
+        "total_podium_slots": n_rounds * 3,
+        "podium_pct": (total_podium_hits / (n_rounds * 3) * 100) if n_rounds > 0 else 0.0,
+        "grid_podium_hits": total_grid_podium_hits,
+        "grid_podium_pct": (total_grid_podium_hits / (n_rounds * 3) * 100) if n_rounds > 0 else 0.0,
+        "standings_podium_hits": total_standings_podium_hits,
+        "standings_podium_pct": (total_standings_podium_hits / (n_rounds * 3) * 100) if n_rounds > 0 else 0.0,
+        "podium_alpha_pct": ((total_podium_hits - total_grid_podium_hits) / (n_rounds * 3) * 100) if n_rounds > 0 else 0.0,
+        # Top 10
+        "top10_hits": total_top10_hits,
+        "total_top10_slots": n_rounds * 10,
+        "top10_pct": (total_top10_hits / (n_rounds * 10) * 100) if n_rounds > 0 else 0.0,
+        "grid_top10_hits": total_grid_top10_hits,
+        "grid_top10_pct": (total_grid_top10_hits / (n_rounds * 10) * 100) if n_rounds > 0 else 0.0,
+        "standings_top10_hits": total_standings_top10_hits,
+        "standings_top10_pct": (total_standings_top10_hits / (n_rounds * 10) * 100) if n_rounds > 0 else 0.0,
+        "top10_alpha_pct": ((total_top10_hits - total_grid_top10_hits) / (n_rounds * 10) * 100) if n_rounds > 0 else 0.0,
+        # Brier
+        "model_brier": float(np.mean(model_briers)) if model_briers else 0.0,
+        "grid_brier": float(np.mean(grid_briers)) if grid_briers else 0.0,
+        "standings_brier": float(np.mean(standings_briers)) if standings_briers else 0.0,
+        "round_results": round_results,
+    }
+
+    if verbose:
+        print("=" * 95)
+        print(f"🏁 {season} SEASON WALK-FORWARD ACCURACY BENCHMARK ({n_rounds} Grand Prix Evaluated)")
+        print("=" * 95)
+        print(f"{'Rnd':<4} {'Grand Prix':<24} {'Pred Winner':<20} {'Actual Winner':<20} {'P1 Hit':<7} {'Podium':<8} {'Top10':<7}")
+        print("-" * 95)
+        for r in round_results:
+            hit_sym = "✅ HIT" if r["winner_hit"] else "❌ MISS"
+            p_hit = r["podium_hits"]
+            t_hit = r["top10_hits"]
+            print(f"{r['round']:<4} {r['name']:<24} {r['pred_winner']:<20} {r['actual_winner']:<20} {hit_sym:<7} {p_hit}/3 ({p_hit/3*100:>3.0f}%) {t_hit}/10 ({t_hit*10}%)")
+
+        print("=" * 95)
+        print(f"📊 AGGREGATE {season} PERFORMANCE METRICS:")
+        print("=" * 95)
+        print(f"1. RACE WINNER ACCURACY (P1):")
+        print(f"   - Model Winner Pick:      {total_winner_hits} / {n_rounds} ({metrics_summary['winner_pct']:.1f}%)")
+        print(f"   - Pole Sitter Benchmark:  {total_pole_winner_hits} / {n_rounds} ({metrics_summary['pole_pct']:.1f}%)")
+        print(f"   - Standings Leader Pick:  {total_standings_winner_hits} / {n_rounds} ({metrics_summary['standings_winner_pct']:.1f}%)")
+
+        print(f"\n2. PODIUM ACCURACY (Top-3):")
+        print(f"   - Model Top-3 Hit Rate:   {total_podium_hits} / {n_rounds * 3} ({metrics_summary['podium_pct']:.1f}%)")
+        print(f"   - Starting Grid Baseline: {total_grid_podium_hits} / {n_rounds * 3} ({metrics_summary['grid_podium_pct']:.1f}%)")
+        print(f"   - Standings Top-3 Baseline:{total_standings_podium_hits} / {n_rounds * 3} ({metrics_summary['standings_podium_pct']:.1f}%)")
+        podium_alpha = total_podium_hits - total_grid_podium_hits
+        if podium_alpha > 0:
+            print(f"   - Beat the Grid?          🏆 YES (+{podium_alpha} more correct podium finishers than Qualifying Grid)")
+        elif podium_alpha == 0:
+            print(f"   - Beat the Grid?          ⚖️ TIED with Qualifying Grid")
+        else:
+            print(f"   - Beat the Grid?          🔻 Grid was higher (+{abs(podium_alpha)} podium hits)")
+
+        print(f"\n3. POINTS FINISHERS ACCURACY (Top-10):")
+        print(f"   - Model Top-10 Hit Rate:  {total_top10_hits} / {n_rounds * 10} ({metrics_summary['top10_pct']:.1f}%)")
+        print(f"   - Starting Grid Baseline: {total_grid_top10_hits} / {n_rounds * 10} ({metrics_summary['grid_top10_pct']:.1f}%)")
+        print(f"   - Standings Top-10 Base:  {total_standings_top10_hits} / {n_rounds * 10} ({metrics_summary['standings_top10_pct']:.1f}%)")
+
+        print(f"\n4. PROBABILISTIC CALIBRATION (Brier Score):")
+        print(f"   - Model Average Brier:    {metrics_summary['model_brier']:.4f}")
+        print(f"   - Grid Baseline Brier:    {metrics_summary['grid_brier']:.4f}")
+        print(f"   - Standings Baseline Brier:{metrics_summary['standings_brier']:.4f}")
+
+        print(f"\n5. EMPIRICAL ATTRITION & DNF RATE:")
+        print(f"   - Total Entries:          {total_starters} driver entries across {n_rounds} races")
+        print(f"   - Total Retirements:      {total_dnfs} classified DNFs ({metrics_summary['dnf_pct']:.1f}%)")
+        print(f"   - Average per Grand Prix: {metrics_summary['avg_dnfs_per_race']:.2f} cars / race")
+        print("=" * 95)
+
+    return metrics_summary
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Paddock Scout Accuracy Benchmark")
