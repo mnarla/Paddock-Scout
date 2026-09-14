@@ -51,15 +51,15 @@
 
   --color-team-mercedes: #00d7b6;
   --color-team-ferrari: #ed1131;
-  --color-team-redbull: #4781d7;
+  --color-team-redbull: #3671c6;
   --color-team-mclaren: #f47600;
   --color-team-alpine: #00a1e8;
-  --color-team-racingbulls: #6c98ff;
-  --color-team-williams: #1868db;
-  --color-team-haas: #9c9fa2;
+  --color-team-racingbulls: #6692ff;
+  --color-team-williams: #00a0dd;
+  --color-team-haas: #b6babd;
   --color-team-aston: #229971;
   --color-team-audi: #f50537;
-  --color-team-cadillac: #909090;
+  --color-team-cadillac: #a0a0a0;
 }
 
 :root {
@@ -115,13 +115,23 @@
 }
 
 @keyframes live-blink {
-  0%, 60% { opacity: 1; }
-  70%, 100% { opacity: 0.35; }
+  0%,
+  60% {
+    opacity: 1;
+  }
+  70%,
+  100% {
+    opacity: 0.35;
+  }
 }
 
 @keyframes bar-sweep {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @utility live-pulse {
@@ -132,3 +142,26 @@
   transform-origin: left;
   animation: bar-sweep 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+.telemetry-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.telemetry-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.telemetry-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.telemetry-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+
+.telemetry-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+

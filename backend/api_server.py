@@ -1062,6 +1062,8 @@ def get_archive_progression():
     })
 
 def run_data_loader_loop():
+    if os.environ.get("RENDER") or os.environ.get("DISABLE_IN_APP_INGEST"):
+        return
     time.sleep(5)  # Wait for server to boot fully
     while True:
         # ── Step 1: Pull latest FastF1 session data ──────────────────────────

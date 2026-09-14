@@ -13,8 +13,7 @@ import { SelectedDriverCard } from "@/components/paddock/SelectedDriverCard";
 import { DriverEmptyState } from "@/components/paddock/DriverEmptyState";
 import { FeatureContribution } from "@/components/paddock/FeatureContribution";
 import { UpgradesRail } from "@/components/paddock/UpgradesRail";
-
-
+import { ModelTrackRecordCard } from "@/components/paddock/ModelTrackRecordCard";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,8 +27,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Paddock Scout · Live Prediction" },
       {
         property: "og:description",
-        content:
-          "F1 2026 podium probability dashboard with validated technical upgrades.",
+        content: "F1 2026 podium probability dashboard with validated technical upgrades.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -52,7 +50,6 @@ function isPostQualifyingWeekend(raceDateStr?: string): boolean {
 // Key: `${driverId}|${gridPos}|${form}|${raceName}`
 const predCache = new Map<string, any>();
 
-
 function PaddockScoutLive() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
@@ -60,7 +57,6 @@ function PaddockScoutLive() {
 
   // Fetch real RF feature importances from the model — used by FeatureContribution.
   const featureWeights = useFeatureWeights();
-
 
   // Stable serialized key for upgrades — prevents object-reference churn from triggering
   // prediction re-fetches on every render when the upgrades array contents haven't changed.
@@ -142,7 +138,8 @@ function PaddockScoutLive() {
     }
 
     const cacheKey = `${driver.id}|${driver.qualifyingPos}|${Number(driver.recentForm).toFixed(2)}|${race.name}`;
-    const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
+    const isAtDefault =
+      gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
     if (predCache.has(cacheKey)) {
       const cached = predCache.get(cacheKey)!;
@@ -188,7 +185,7 @@ function PaddockScoutLive() {
     return () => {
       cancelled = true;
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver?.id, driver?.qualifyingPos, driver?.recentForm, race.name, upgradesKey]);
 
   // Fetch WHAT-IF prediction when sliders move away from default.
@@ -196,7 +193,8 @@ function PaddockScoutLive() {
   useEffect(() => {
     if (!driver) return;
 
-    const isAtDefault = gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
+    const isAtDefault =
+      gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
 
     if (isAtDefault) {
       // Sliders are at default — synchronize prediction with baseline without extra fetch
@@ -243,7 +241,7 @@ function PaddockScoutLive() {
       cancelled = true;
       clearTimeout(handler);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver?.id, gridPos, form, race.name, driver?.qualifyingPos, driver?.recentForm, baseline]);
 
   const onDriverChange = (id: string) => {
@@ -281,24 +279,30 @@ function PaddockScoutLive() {
 
       <main className="mx-auto max-w-[1600px] px-4 py-5 sm:px-6 sm:py-6">
         <div className="mb-4 rounded-md border border-hairline/60 bg-secondary/15 px-4 py-2.5 text-xs text-muted-foreground">
-          <strong>Disclaimer:</strong> Predictions are based on season form when qualifying or practice data for the next race are not yet available.
+          <strong>Disclaimer:</strong> Predictions are based on season form when qualifying or
+          practice data for the next race are not yet available.
         </div>
 
-        {/* Top 3-column grid */}
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[280px_minmax(0,1fr)_280px]">
-          <WhatIfPanel
-            driver={driver}
-            gridPos={gridPos}
-            form={form}
-            onDriverChange={onDriverChange}
-            onGridChange={setGridPos}
-            onFormChange={setForm}
-            onReset={onReset}
-            drivers={activeDrivers}
-            isPostQuali={isPostQuali}
-          />
+        {/* Main 3-column layout */}
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[290px_minmax(0,1fr)_290px] items-stretch">
+          {/* Left Column: What-If Scenario Cockpit & Model Credentials */}
+          <div className="flex flex-col space-y-4">
+            <WhatIfPanel
+              driver={driver}
+              gridPos={gridPos}
+              form={form}
+              onDriverChange={onDriverChange}
+              onGridChange={setGridPos}
+              onFormChange={setForm}
+              onReset={onReset}
+              drivers={activeDrivers}
+              isPostQuali={isPostQuali}
+            />
+            <ModelTrackRecordCard />
+          </div>
 
-          <div className="space-y-4">
+          {/* Main Stage: Selected Driver Telemetry or Entry List Grid */}
+          <div className="min-w-0 space-y-4">
             {driver ? (
               <>
                 <SelectedDriverCard
@@ -319,17 +323,22 @@ function PaddockScoutLive() {
             )}
           </div>
 
-          <UpgradesRail upgrades={upgrades} />
+          {/* Right Rail: Stretched Technical Upgrades ending where main cards end */}
+          <div className="relative min-h-[520px] lg:h-full lg:min-h-0">
+            <div className="h-full lg:absolute lg:inset-0">
+              <UpgradesRail upgrades={upgrades} />
+            </div>
+          </div>
         </div>
 
-
-
         <footer className="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-hairline pt-4 text-[10px] uppercase tracking-wider text-muted-foreground">
-          <span>
-            Paddock Scout · 2026 Season · Model v6 (RandomForest, calibrated)
-          </span>
+          <span>Paddock Scout · 2026 Season · Model v6 (RandomForest, calibrated)</span>
           <span className="tabular">
-            {drivers.length} drivers · Grid α {featureWeights.isLoading ? "—" : `${((featureWeights.weights["Grid"] ?? 0) * 100).toFixed(1)}%`} · Sprint 2.5×
+            {drivers.length} drivers · Grid α{" "}
+            {featureWeights.isLoading
+              ? "—"
+              : `${((featureWeights.weights["Grid"] ?? 0) * 100).toFixed(1)}%`}{" "}
+            · Sprint 2.5×
           </span>
         </footer>
       </main>

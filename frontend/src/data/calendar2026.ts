@@ -33,6 +33,6 @@ export const CALENDAR_2026: RaceInfo[] = [
   { round: 22, name: "Abu Dhabi Grand Prix",   short: "Yas Marina", country: "UAE",           flag: "🇦🇪", trackType: "Permanent", date: "2026-12-06", isSprint: false },
 ];
 
-// Pin the "next race" to Mexico City for demo. In production: pick by Date.now().
+// Default upcoming race fallback: Round 15 Azerbaijan Grand Prix (Baku)
 export const NEXT_RACE: RaceInfo =
-  CALENDAR_2026.find((r) => r.round === 18) ?? CALENDAR_2026[0];
+  CALENDAR_2026.find((r) => r.round === 15) ?? CALENDAR_2026[0];

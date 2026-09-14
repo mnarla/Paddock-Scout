@@ -17,8 +17,9 @@ Provides:
   SCHEDULE_2026         → full ordered dict of all races
 """
 
+import os
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, Any, FrozenSet, Optional, Tuple
 
 
@@ -170,7 +171,12 @@ def _is_cancelled(name: str) -> bool:
 
 
 def _is_past(info: Dict[str, Any], now: datetime) -> bool:
-    """Return True if the race date + 1 day grace period is in the past."""
+    """Return True if the race is completed (results CSV exists or race date + 1 day in UTC is past)."""
+    rnd = info.get("round")
+    if rnd:
+        csv_path = os.path.join(os.path.dirname(__file__), "..", "data", f"results_2026_round{rnd:02d}.csv")
+        if os.path.exists(csv_path):
+            return True
     return info["date"] + timedelta(days=1) <= now
 
 
@@ -184,15 +190,15 @@ def get_next_race_full(now: Optional[datetime] = None) -> RaceInfo:
     """
     Return a RaceInfo for the next upcoming (non-cancelled) race.
 
-    Status is determined dynamically from the current system date:
-    - Races whose date + 1 day is in the past are considered Completed.
+    Status is determined dynamically from UTC system date and completed results:
+    - Races with completed result CSVs or whose date + 1 day in UTC is past are Completed.
     - Only non-cancelled, non-completed races are candidates.
 
-    Uses the current system time by default. Pass `now` explicitly for testing.
+    Uses UTC time by default. Pass `now` explicitly for testing.
     Falls back to the last race in the schedule if all races are in the past.
     """
     if now is None:
-        now = datetime.now()
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
 
     candidates = [
         (name, info)
@@ -239,7 +245,7 @@ def get_past_races(now: Optional[datetime] = None) -> list:
     Parameters
     ----------
     now : datetime, optional
-        Current time. Defaults to datetime.now().
+        Current time. Defaults to UTC datetime.
 
     Returns
     -------
@@ -247,7 +253,7 @@ def get_past_races(now: Optional[datetime] = None) -> list:
         May be empty at the start of the season.
     """
     if now is None:
-        now = datetime.now()
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
 
     past = []
     for name, info in SCHEDULE_2026.items():
