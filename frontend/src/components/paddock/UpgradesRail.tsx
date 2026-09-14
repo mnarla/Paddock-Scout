@@ -99,6 +99,21 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                   >
                     {u.component}
                   </p>
+                  
+                  {u.badge && (
+                    <p className="mt-1.5 text-[10px] font-medium text-muted-foreground/80 flex items-center gap-1">
+                      {u.status === "NEW_THIS_WEEKEND" ? (
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                      ) : u.status === "ACTIVE_SPEC" ? (
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-cyan-500/60" />
+                      ) : u.status === "DEFECTIVE" ? (
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-destructive animate-pulse" />
+                      ) : u.status === "REVERTED" ? (
+                        <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-500" />
+                      ) : null}
+                      <span className={u.status === "DEFECTIVE" ? "text-destructive font-semibold" : ""}>{u.badge}</span>
+                    </p>
+                  )}
 
                   {/* Pace Delta & Status Row */}
                   <div className="mt-2.5 flex items-center justify-between gap-2 border-t border-hairline/50 pt-2">
@@ -127,11 +142,31 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                     </div>
 
                     <div>
-                      {!isConfirmed ? (
+                      {u.status === "DEFECTIVE" ? (
+                        <span className="inline-flex items-center gap-1 rounded bg-destructive/10 px-1.5 py-0.5 text-[9px] font-bold text-destructive border border-destructive/20">
+                          <AlertTriangle className="h-2.5 w-2.5" /> DEFECTIVE
+                        </span>
+                      ) : u.status === "REVERTED" ? (
+                        <span className="inline-flex items-center gap-1 rounded bg-amber-500/10 px-1.5 py-0.5 text-[9px] font-bold text-amber-500 border border-amber-500/20">
+                          <Clock className="h-2.5 w-2.5" /> REVERTED
+                        </span>
+                      ) : u.status === "NEW_THIS_WEEKEND" ? (
+                        <span className="inline-flex items-center gap-1 rounded bg-emerald-500/10 px-1.5 py-0.5 text-[9px] font-bold text-emerald-500 border border-emerald-500/20">
+                          <CheckCircle className="h-2.5 w-2.5" /> NEW
+                        </span>
+                      ) : u.status === "ACTIVE_SPEC" ? (
+                        <span className="inline-flex items-center gap-1 rounded bg-cyan-500/10 px-1.5 py-0.5 text-[9px] font-bold text-cyan-500 border border-cyan-500/20">
+                          <ShieldCheck className="h-2.5 w-2.5" /> ACTIVE
+                        </span>
+                      ) : u.status === "STABLE_SPEC" ? (
+                        <span className="inline-flex items-center gap-1 rounded bg-secondary px-1.5 py-0.5 text-[9px] font-bold text-muted-foreground border border-hairline">
+                          <ShieldCheck className="h-2.5 w-2.5" /> STABLE
+                        </span>
+                      ) : !isConfirmed || u.status === "PENDING" ? (
                         <span className="inline-flex items-center gap-1 rounded bg-secondary px-1.5 py-0.5 text-[9px] font-bold text-muted-foreground border border-hairline">
                           <Clock className="h-2.5 w-2.5" /> PENDING
                         </span>
-                      ) : u.validated ? (
+                      ) : u.validated || u.status === "VALID" ? (
                         <span className="inline-flex items-center gap-1 rounded bg-f1-green/10 px-1.5 py-0.5 text-[9px] font-bold text-f1-green border border-f1-green/20">
                           <CheckCircle className="h-2.5 w-2.5" /> VALID
                         </span>
@@ -145,7 +180,18 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
 
                   {/* Attribution & Date */}
                   <div className="mt-1.5 flex items-center justify-between text-[9px] text-muted-foreground/70">
-                    <span className="truncate max-w-[140px]">src · {u.source}</span>
+                    {u.url ? (
+                      <a
+                        href={u.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="truncate max-w-[140px] underline-offset-2 hover:underline hover:text-muted-foreground transition-colors"
+                      >
+                        src · {u.source}
+                      </a>
+                    ) : (
+                      <span className="truncate max-w-[140px]">src · {u.source}</span>
+                    )}
                     {u.asOf && isConfirmed && (
                       <span className="shrink-0 font-mono">as of {u.asOf}</span>
                     )}

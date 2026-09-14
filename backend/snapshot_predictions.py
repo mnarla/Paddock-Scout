@@ -12,35 +12,13 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(__file__))
 
 from calendar_manager import get_next_race_full
-from utils import safe_encode, standings_rank, get_neutral_values
+from utils import safe_encode, standings_rank, get_neutral_values, DRIVER_NAMES
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 import pickle
 
 DATA_DIR = "data"
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "f1_podium_predictor.pkl")
 
-DRIVER_NAMES = {
-    "norris": "Lando Norris",
-    "antonelli": "Andrea Kimi Antonelli",
-    "max_verstappen": "Max Verstappen",
-    "hamilton": "Lewis Hamilton",
-    "leclerc": "Charles Leclerc",
-    "russell": "George Russell",
-    "piastri": "Oscar Piastri",
-    "lawson": "Liam Lawson",
-    "colapinto": "Franco Colapinto",
-    "arvid_lindblad": "Arvid Lindblad",
-    "hulkenberg": "Nico Hülkenberg",
-    "bortoleto": "Gabriel Bortoleto",
-    "ocon": "Esteban Ocon",
-    "gasly": "Pierre Gasly",
-    "tsunoda": "Yuki Tsunoda",
-    "albon": "Alexander Albon",
-    "sainz": "Carlos Sainz",
-    "alonso": "Fernando Alonso",
-    "perez": "Sergio Pérez",
-    "bottas": "Valtteri Bottas",
-}
 
 def generate_snapshot():
     if not os.path.exists(MODEL_PATH):

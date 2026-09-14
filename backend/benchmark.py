@@ -27,37 +27,12 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(__file__))
 
 from calendar_manager import SCHEDULE_2026, SPRINT_RACES_2026
-from utils import safe_encode, standings_rank
+from utils import safe_encode, standings_rank, DRIVER_NAMES
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 
 DATA_DIR = "data"
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "models", "f1_podium_predictor.pkl")
 
-DRIVER_NAMES = {
-    "norris": "Lando Norris",
-    "antonelli": "Andrea Kimi Antonelli",
-    "max_verstappen": "Max Verstappen",
-    "hamilton": "Lewis Hamilton",
-    "leclerc": "Charles Leclerc",
-    "russell": "George Russell",
-    "piastri": "Oscar Piastri",
-    "lawson": "Liam Lawson",
-    "colapinto": "Franco Colapinto",
-    "arvid_lindblad": "Arvid Lindblad",
-    "hulkenberg": "Nico Hülkenberg",
-    "bortoleto": "Gabriel Bortoleto",
-    "ocon": "Esteban Ocon",
-    "gasly": "Pierre Gasly",
-    "tsunoda": "Yuki Tsunoda",
-    "albon": "Alexander Albon",
-    "sainz": "Carlos Sainz",
-    "alonso": "Fernando Alonso",
-    "perez": "Sergio Pérez",
-    "bottas": "Valtteri Bottas",
-    "bearman": "Oliver Bearman",
-    "stroll": "Lance Stroll",
-    "hadjar": "Isack Hadjar",
-}
 
 ROUNDS_MAP_2026 = {}
 for gp_name, info in SCHEDULE_2026.items():

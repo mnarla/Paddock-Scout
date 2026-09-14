@@ -15,7 +15,7 @@ import pickle
 
 sys.path.insert(0, os.path.dirname(__file__))
 from calendar_manager import get_next_race_full, get_past_races, SCHEDULE_2026, get_sprint_races
-from utils import safe_encode, standings_rank, normalise_color, track_type, get_neutral_values
+from utils import safe_encode, standings_rank, normalise_color, get_neutral_values
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 from data_loader import load_event
@@ -149,58 +149,10 @@ DRIVER_DEFAULT_TEAM = {
 }
 
 
-# Sourced, confirmed technical upgrades from motorsport outlets (The Race, F1Technical, Motorsport.com, Autosport).
-# Any team without a verified technical report is explicitly marked confirmed=False with no fake pace delta.
-VERIFIED_UPGRADES = {
-    "Ferrari": {
-        "component": "Floor v3 — Vortex Reset",
-        "category": "Aero",
-        "validated": True,
-        "paceDelta": -0.18,
-        "source": "F1Technical",
-        "confirmed": True,
-    },
-    "Mercedes": {
-        "component": "Rear Wing — Mexico Spec",
-        "category": "Aero",
-        "validated": True,
-        "paceDelta": -0.12,
-        "source": "Motorsport.com",
-        "confirmed": True,
-    },
-    "McLaren": {
-        "component": "MGU-K Mapping Update",
-        "category": "Power Unit",
-        "validated": False,
-        "paceDelta": 0.04,
-        "source": "The Race",
-        "confirmed": True,
-    },
-    "Red Bull Racing": {
-        "component": "Front Suspension Geometry",
-        "category": "Suspension",
-        "validated": True,
-        "paceDelta": -0.09,
-        "source": "F1Technical",
-        "confirmed": True,
-    },
-    "Williams": {
-        "component": "Sidepod Inlet — Hot Climate",
-        "category": "Cooling",
-        "validated": True,
-        "paceDelta": -0.06,
-        "source": "Autosport",
-        "confirmed": True,
-    },
-    "Alpine": {
-        "component": "Beam Wing Revision",
-        "category": "Aero",
-        "validated": False,
-        "paceDelta": 0.02,
-        "source": "Motorsport.com",
-        "confirmed": True,
-    },
-}
+# VERIFIED_UPGRADES is intentionally empty.
+# All upgrade data is now sourced from live_tech_updates.json, which is populated
+# by the RSS + Gemini pipeline in news_agent.py. See build_live_tech_updates().
+VERIFIED_UPGRADES: dict = {}
 
 
 DRIVER_INFO = {
@@ -877,12 +829,21 @@ def get_archive(round_num):
 @app.route("/api/upgrades", methods=["GET"])
 def get_upgrades():
     live_tech = {}
-    try:
-        if os.path.exists("live_tech_updates.json"):
-            with open("live_tech_updates.json", "r") as f:
-                live_tech = json.load(f)
-    except Exception:
-        pass
+    # Try data/live_tech_updates.json first, then root-level fallback
+    for candidate_path in [
+        os.path.join(DATA_DIR, "live_tech_updates.json"),
+        "live_tech_updates.json",
+    ]:
+        try:
+            if os.path.exists(candidate_path):
+                with open(candidate_path, "r") as f:
+                    live_tech = json.load(f)
+                # Auto-refresh if stale (older than 6 hours on race week / weekends)
+                if time.time() - os.path.getmtime(candidate_path) > 21600:
+                    threading.Thread(target=build_live_tech_updates, daemon=True).start()
+                break
+        except Exception:
+            pass
         
     # Determine the latest round with practice validation data
     fp2_files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*fp2.csv")))
@@ -906,58 +867,79 @@ def get_upgrades():
             continue
 
     upgrades = []
-    # 1. Iterate over all grid teams
-    for team, team_id in TEAM_NAME_TO_ID.items():
-        if team in ("Kick Sauber", "Sauber"):  # prevent duplicates for Audi/Sauber
-            continue
+    seen_team_ids: set = set()
 
-        # Check if team has a confirmed, verified upgrade report
-        if team in VERIFIED_UPGRADES:
-            v = VERIFIED_UPGRADES[team]
+    # Canonical 11-team list — avoids duplicates from TEAM_NAME_TO_ID aliases
+    _CANONICAL_TEAMS = [
+        "Red Bull Racing", "Ferrari", "Mercedes", "McLaren", "Aston Martin",
+        "Alpine", "Williams", "Racing Bulls", "Haas F1 Team", "Audi", "Cadillac",
+    ]
+
+    for team in _CANONICAL_TEAMS:
+        team_id = TEAM_NAME_TO_ID.get(team)
+        if not team_id or team_id in seen_team_ids:
+            continue
+        seen_team_ids.add(team_id)
+
+        info = live_tech.get(team, {})
+        component  = info.get("Component", "")
+        certainty  = info.get("Certainty", "pending")
+        is_pending = certainty == "pending" or not component or component == "No confirmed upgrade data yet"
+
+        if not is_pending:
+            # New pipeline schema
+            validation_str = info.get("Upgrade_Validation", "UNVERIFIED")
+            validated      = (validation_str == "VALID")
+            pace_delta     = float(info.get("Pace_Delta", 0.0))
+            sources        = info.get("Sources") or []
+            source_name    = sources[0] if sources else "News Feed"
+            as_of          = info.get("As_Of") or latest_validation_race
+            url            = info.get("URL", "")
+            category       = info.get("Category", "Aero")
+
             upgrades.append({
-                "team": team_id,
-                "component": v["component"],
-                "category": v["category"],
-                "validated": v["validated"],
-                "paceDelta": v["paceDelta"],
-                "source": v["source"],
-                "asOf": latest_validation_race,
-                "confirmed": True,
-            })
-        elif team in live_tech and "Component" in live_tech[team] and live_tech[team].get("Component") != "Technical Upgrade":
-            # Live web scrape found a specific, real component title!
-            info = live_tech[team]
-            is_defective = info.get("Is_Defective", False)
-            upg_score = float(info.get("Upgrade_Score", 0.0))
-            pwr_boost = float(info.get("Power_Boost", 0.0))
-            pace_delta = float(info["Pace_Delta"]) if "Pace_Delta" in info else (-float(upg_score * 0.22 + pwr_boost * 0.25))
-            category = "Power Unit" if pwr_boost > 0 and upg_score == 0 else "Aero"
-            upgrades.append({
-                "team": team_id,
-                "component": info["Component"],
-                "category": category,
-                "validated": info.get("Upgrade_Validation", not is_defective),
-                "paceDelta": round(pace_delta, 2),
-                "source": info.get("Sources", ["News Agent"])[0] if info.get("Sources") else "News Agent",
-                "asOf": info.get("As_Of", latest_validation_race),
-                "confirmed": True,
+                "team":       team_id,
+                "component":  component,
+                "category":   category,
+                "validated":  validated,
+                "paceDelta":  round(pace_delta, 3),
+                "source":     source_name,
+                "url":        url,
+                "asOf":       as_of,
+                "confirmed":  True,
+                "status":     info.get("Status", validation_str),
+                "isCurrentWeekend": info.get("Is_Current_Weekend", False),
+                "badge":      info.get("Badge", ""),
             })
         else:
-            # Honest placeholder: no confirmed upgrade data reported yet
+            # Honest PENDING placeholder
             upgrades.append({
-                "team": team_id,
-                "component": "No confirmed upgrade data yet",
-                "category": "Aero",
-                "validated": False,
-                "paceDelta": 0.0,
-                "source": "Awaiting reports",
-                "asOf": latest_validation_race,
-                "confirmed": False,
+                "team":       team_id,
+                "component":  "No confirmed upgrade data yet",
+                "category":   "Aero",
+                "validated":  False,
+                "paceDelta":  0.0,
+                "source":     "Awaiting reports",
+                "url":        "",
+                "asOf":       latest_validation_race,
+                "confirmed":  False,
+                "status":     "PENDING",
+                "isCurrentWeekend": False,
+                "badge":      "Awaiting reports",
             })
 
-    # Sort so confirmed upgrades are always at the top
+    # Sort: confirmed first, then alphabetical by team id
     upgrades.sort(key=lambda u: (not u["confirmed"], u["team"]))
     return jsonify(upgrades)
+
+
+@app.route("/api/refresh-upgrades", methods=["POST"])
+def trigger_refresh_upgrades():
+    try:
+        threading.Thread(target=build_live_tech_updates, daemon=True).start()
+        return jsonify({"status": "started", "message": "News agent background scrape initiated"})
+    except Exception as exc:
+        return jsonify({"status": "error", "message": str(exc)}), 500
 
 
 @app.route("/api/archive-progression", methods=["GET"])
