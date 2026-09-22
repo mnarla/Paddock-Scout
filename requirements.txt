@@ -6,3 +6,6 @@ matplotlib
 duckduckgo-search
 flask
 flask-cors
+requests
+lxml
+googlenewsdecoder

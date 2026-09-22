@@ -19,23 +19,23 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
+        "Component": "ADUO 2 Power Unit",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Ferrari introduced its second and final power unit upgrade of the 2026 season under the ADUO mechanism, providing a minor performance step.",
+        "Pace_Delta": -0.05,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.05,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
+        "URL": "https://www.motorsport.com/f1/news/ferraris-aduo-2-upgrade-is-no-game-changer-for-haas-either/10853480/",
+        "As_Of": "Italian GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Italian GP)"
     },
     "Mercedes": {
         "Component": "Stable Aerodynamic Package",
@@ -57,23 +57,23 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Rotating H-wing Rear Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "McLaren returns its rotating H-wing concept to competition for the Azerbaijan GP after parking it for the Spanish GP.",
+        "Pace_Delta": -0.06,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.06,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Autosport"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "URL": "https://www.autosport.com/f1/news/mclaren-drops-upside-down-h-wing-concept-for-f1-spanish-gp/10854141/",
+        "As_Of": "Azerbaijan Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Azerbaijan Grand Prix"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -95,61 +95,61 @@
         "Badge": "Standard Baseline"
     },
     "Alpine": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Folding Rear Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Alpine reintroduced its folding rear wing at the Italian GP, contributing to Pierre Gasly's surprise pole position.",
+        "Pace_Delta": -0.08,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.08,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
+        "URL": "https://www.motorsport.com/f1/news/f1-alpine-brought-back-collapsing-reverse-opening-rear-wing-for-gaslys-monza-pole/10852905/",
+        "As_Of": "Italian GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Italian GP)"
     },
     "Williams": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Major FW48 Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Williams is introducing a major, long-awaited upgrade package for the FW48 in Baku to address significant pace and weight issues.",
+        "Pace_Delta": -0.2,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.2,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "formula1.com"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "URL": "https://www.formula1.com/en/latest/article/why-the-fw48-upgrade-package-in-baku-is-so-crucial-for-williams.2vxRlXS2yDBqT7O5VMCn3s",
+        "As_Of": "Azerbaijan Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Azerbaijan Grand Prix"
     },
     "Racing Bulls": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
+        "Component": "ADUO 2 Power Unit",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Haas fitted the Ferrari ADUO 2 engine upgrade to Ollie Bearman's car at the Italian GP to gain power at the high-speed circuit.",
+        "Pace_Delta": -0.05,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.05,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
+        "URL": "https://www.the-race.com/formula-1/haas-unusual-f1-engine-upgrade-split-italian-gp-ferrari-aduo/",
+        "As_Of": "Italian GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Italian GP)"
     },
     "Haas F1 Team": {
         "Component": "Stable Aerodynamic Package",
