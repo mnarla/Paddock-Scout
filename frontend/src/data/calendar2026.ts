@@ -33,6 +33,22 @@ export const CALENDAR_2026: RaceInfo[] = [
   { round: 22, name: "Abu Dhabi Grand Prix",   short: "Yas Marina", country: "UAE",           flag: "🇦🇪", trackType: "Permanent", date: "2026-12-06", isSprint: false },
 ];
 
-// Default upcoming race fallback: Round 15 Azerbaijan Grand Prix (Baku)
-export const NEXT_RACE: RaceInfo =
-  CALENDAR_2026.find((r) => r.round === 15) ?? CALENDAR_2026[0];
+// Dynamically resolve the next upcoming race based on the current date.
+// A race is considered "active / upcoming" until midnight the day after race day,
+// so the Sunday race entry stays live throughout race day itself.
+function resolveNextRace(): RaceInfo {
+  const now = new Date();
+  // Allow the full race day + one day grace before rolling to the next round
+  const upcoming = CALENDAR_2026.find((r) => {
+    const raceDay = new Date(r.date);
+    // Race expires at end of day Monday (race day + 1)
+    const expiry = new Date(raceDay);
+    expiry.setDate(expiry.getDate() + 1);
+    expiry.setHours(23, 59, 59, 999);
+    return expiry >= now;
+  });
+  // If the season is over, show the final round
+  return upcoming ?? CALENDAR_2026[CALENDAR_2026.length - 1];
+}
+
+export const NEXT_RACE: RaceInfo = resolveNextRace();

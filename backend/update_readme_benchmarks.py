@@ -5,9 +5,13 @@ Runs the walk-forward evaluation across completed rounds and updates the
 benchmark table and metrics in README.md between the START_BENCHMARKS and
 END_BENCHMARKS boundary markers.
 
+Also exports a benchmarks.json file consumed by the frontend ModelTrackRecordCard
+so those metrics update automatically after every Grand Prix without manual edits.
+
 Called automatically by .github/workflows/auto_ingest.yml after Sunday race ingestion.
 """
 
+import json
 import os
 import sys
 import re
@@ -17,9 +21,10 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from benchmark import run_season_benchmark
 
-README_PATH = os.path.join(os.path.dirname(__file__), "..", "README.md")
+README_PATH       = os.path.join(os.path.dirname(__file__), "..", "README.md")
+BENCHMARKS_JSON   = os.path.join(os.path.dirname(__file__), "..", "frontend", "src", "data", "benchmarks.json")
 START_MARKER = "<!-- START_BENCHMARKS -->"
-END_MARKER = "<!-- END_BENCHMARKS -->"
+END_MARKER   = "<!-- END_BENCHMARKS -->"
 
 def generate_markdown_content(m: dict) -> str:
     n_rounds = m["n_rounds"]
@@ -56,6 +61,27 @@ def generate_markdown_content(m: dict) -> str:
     )
     return content
 
+def export_benchmarks_json(m: dict) -> None:
+    """Write a compact benchmarks.json consumed by the frontend ModelTrackRecordCard."""
+    n_rounds = m["n_rounds"]
+    payload = {
+        "nRounds":          n_rounds,
+        "podiumHits":       m["podium_hits"],
+        "totalPodiumSlots": m["total_podium_slots"],
+        "podiumPct":        round(m["podium_pct"], 1),
+        "top10Pct":         round(m["top10_pct"], 1),
+        "top10Hits":        m["top10_hits"],
+        "totalTop10Slots":  m["total_top10_slots"],
+        "modelBrier":       round(m["model_brier"], 4),
+        "winnerPct":        round(m["winner_pct"], 1),
+        "winnerHits":       m["winner_hits"],
+        "podiumAlphaPct":   round(m["podium_alpha_pct"], 1),
+    }
+    os.makedirs(os.path.dirname(BENCHMARKS_JSON), exist_ok=True)
+    with open(BENCHMARKS_JSON, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=2)
+    print(f"✅ Exported benchmarks.json ({n_rounds} Grand Prix evaluated)")
+
 def update_readme():
     if not os.path.exists(README_PATH):
         print(f"Error: README not found at {README_PATH}")
@@ -83,12 +109,13 @@ def update_readme():
 
     if updated_readme == readme_content:
         print("✅ README.md is already up to date. No changes needed.")
-        return
+    else:
+        with open(README_PATH, "w", encoding="utf-8") as f:
+            f.write(updated_readme)
+        print(f"✅ Successfully updated README.md benchmarks for {metrics['n_rounds']} Grand Prix!")
 
-    with open(README_PATH, "w", encoding="utf-8") as f:
-        f.write(updated_readme)
-
-    print(f"✅ Successfully updated README.md benchmarks for {metrics['n_rounds']} Grand Prix!")
+    # Always (re)export the JSON so the frontend stays in sync even if README didn't change
+    export_benchmarks_json(metrics)
 
 if __name__ == "__main__":
     update_readme()

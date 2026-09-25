@@ -1,0 +1,13 @@
+{
+  "nRounds": 14,
+  "podiumHits": 28,
+  "totalPodiumSlots": 42,
+  "podiumPct": 66.7,
+  "top10Pct": 72.1,
+  "top10Hits": 101,
+  "totalTop10Slots": 140,
+  "modelBrier": 0.0812,
+  "winnerPct": 64.3,
+  "winnerHits": 9,
+  "podiumAlphaPct": 4.8
+}
