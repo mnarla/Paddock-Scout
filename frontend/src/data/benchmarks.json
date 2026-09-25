@@ -6,7 +6,7 @@
   "top10Pct": 72.1,
   "top10Hits": 101,
   "totalTop10Slots": 140,
-  "modelBrier": 0.0812,
+  "modelBrier": 0.0809,
   "winnerPct": 64.3,
   "winnerHits": 9,
   "podiumAlphaPct": 4.8

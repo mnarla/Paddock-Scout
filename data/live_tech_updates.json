@@ -1,18 +1,18 @@
 {
     "Red Bull Racing": {
-        "Component": "Floor v2",
+        "Component": "Final major upgrade package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A new floor featuring subtle geometry changes, representing the team's final major upgrade package of the 2026 season.",
-        "Pace_Delta": -0.08,
+        "Summary": "Red Bull brought its final major upgrade package of the 2026 season to Baku before shifting focus to 2027.",
+        "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://www.motorsport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZEVUZTJlODBxRGc1SGxTSXJhRjFLb1JxR2JuWkdlMGhKRzhkYnBUeGlzUmJCZmZpY1d0RmZQb2lMMkRwYV9hazlIQ3ZLUW5PSHYxVDlleTNvVHJqcXYtcmNyeE4waUszeWNXWVJpV2N1alhiMXR6X21xN2hCWGw4Yk1XRmdVN19LTXZaZ3lGNlp0blI0SW1qV0drdlhRSlpYemtzQ2lmMFFXbkRsQkNpQ3ZNdFJRZWN6cWl6bWJCRGR3MTFtdkZydg?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
@@ -57,10 +57,10 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Bodywork package (sidepods, intakes, engine cover, airbox)",
+        "Component": "Revised sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A major bodywork overhaul featuring unique radiator intakes designed to improve straight-line efficiency at the Baku circuit.",
+        "Summary": "McLaren introduced significantly revised sidepods as part of a major bodywork package for the Azerbaijan GP.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
@@ -69,30 +69,30 @@
         "Sources": [
             "The Race"
         ],
-        "URL": "https://www.the-race.com/formula-1/mclaren-brutal-f1-body-package-change-azerbaijan-gp/",
+        "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbVFENjRpMW5mRWNOVHhqOU1NSTA4eGtyQzUyeWFVSVFBSWM4X0taOE9xQ3RhejJZbnVvTlBJT2FDbl9YajB1RzNvd0ltSHBoNG40VnZ5SjBlWW1kT2k3bGkxS3dsRGVSVmZuV3dLSU9KcU4wU1lfbWxZRy1jaDdOVGluN3FMdWFBdlRqNkU1ZW0?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
         "Badge": "New for Azerbaijan Grand Prix"
     },
     "Aston Martin": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
+        "Component": "Honda Power Unit components",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Summary": "Alonso and Stroll received grid penalties for changes to Honda power unit components at the Azerbaijan GP.",
         "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.0,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "URL": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPTkR1OUpUZWJmNDRjMElOZ29OS09BNWg1RkF6SzlZejQ2Z1FPTmpWNGY2Rm5nWTcyVHlOdGEyQW1OaHZOSFNDcXhlWTFVRVV2X2JxMXlpU0pUUmpSSFJ5Nzg0bEZaOXhKSk9fVTl1YXRKVzhBMEk1Zmd4cXkxN0xZQWpLY0VGclBpMUpPeEFOTXl0eGh3bzBGelROZmxRYUVtNUhWV3VEOWVmX3k0UDZ1SWY0S254cGFlb0V1WTc5YjAzY2xRUFM1OGZFN29WbWFaNTZvSXlJSTJFdW8?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Azerbaijan Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Azerbaijan Grand Prix"
     },
     "Alpine": {
         "Component": "Stable Aerodynamic Package",
@@ -114,19 +114,19 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec chassis and aero package",
+        "Component": "B-spec car upgrade package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A comprehensive 'B-spec' update featuring a significantly lighter chassis and revised aerodynamic surfaces to address weight and performance deficits.",
-        "Pace_Delta": -0.25,
+        "Summary": "Williams introduced a major 'B-spec' car upgrade in Baku, which showed immediate performance gains in qualifying.",
+        "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.25,
+        "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://cn.motorsport.com/f1/news/will-the-big-swing-williams-f1-car-upgrade-be-a-hit-or-a-miss/10858406/",
+        "URL": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYzRwMURhVWVjdXMwemxXeUFJNlUyMUlITHRCUFYxaXNLTVpldXhpQldFRmFIUlpCZmVlUzNfTzM5WUpYcXNiNjZYWjRhNVVmNUE5VC0wVEFGSFg4cnJPaW1kQ1ZKcVNBbkJtVGlLSmRvVE5yWDlxWFZOZmp6U055bUc3VFlZMU9nWDFURjBMVDdYSHNUVTVzUg?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
@@ -152,23 +152,23 @@
         "Badge": "Standard Baseline"
     },
     "Haas F1 Team": {
-        "Component": "Ferrari ADUO 2 Power Unit",
-        "Category": "Power Unit",
+        "Component": "Stable Aerodynamic Package",
+        "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari's second ADUO engine upgrade provided a minor performance step, though described as smaller than the team's own chassis updates.",
-        "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Baseline"
         ],
-        "URL": "https://www.motorsport.com/f1/news/ferraris-aduo-2-upgrade-is-no-game-changer-for-haas-either/10853480/",
-        "As_Of": "Monza",
+        "URL": "",
+        "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Monza)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Audi": {
         "Component": "Stable Aerodynamic Package",

@@ -38,16 +38,16 @@ Paddock Scout is evaluated using **walk-forward validation** across all 14 compl
 
 | Metric | Paddock Scout | Starting Grid Baseline | Season Standings Baseline | Model Alpha ($\\Delta$) |
 | :--- | :---: | :---: | :---: | :---: |
-| **Podium Hit Rate (Top-3)** | **66.7%** (28 / 42) | 61.9% (26 / 42) | 52.4% (22 / 42) | **+4.8%** 🏆 |
+| **Podium Hit Rate (Top-3)** | **66.7%** (28 / 42) | 61.9% (26 / 42) | 54.8% (23 / 42) | **+4.8%** 🏆 |
 | **Points Finishers (Top-10)** | **72.1%** (101 / 140) | 76.4% (107 / 140) | 71.4% (100 / 140) | **-4.3%** |
 | **Race Winner Accuracy (P1)** | **64.3%** (9 / 14) | 64.3% (9 / 14) | 57.1% (8 / 14) | **Tied (0.0%)** |
-| **Brier Score (Podium)** *(lower = better)* | **0.0812** | 0.0829 | 0.1006 | **-0.0017** 🎯 |
+| **Brier Score (Podium)** *(lower = better)* | **0.0809** | 0.0829 | 0.0964 | **-0.0019** 🎯 |
 
 ### Key Analytical Takeaways
 * **Generating Podium "Alpha" (+4.8%)**: In modern Formula 1, starting grid position is notoriously hard to beat due to aerodynamic wake ("dirty air"). By blending multi-session practice pace (`FP1`–`FP3`) with qualifying gap dominance and car ranking, Paddock Scout generated positive predictive alpha over the starting grid, correctly identifying **2 podium finishers** who started outside the top 3.
 * **Points Finishers Trade-Off (-4.3%)**: The model slightly underperforms the raw grid on Top-10 retention (72.1% vs 76.4%). This reflects an architectural trade-off: the model actively rewards high race-pace recovery drives for front-running cars qualifying out of position rather than passively trusting a mid-pack starting slot—an area targeted for future feature regularization.
-* **Championship Standings vs. Live Form (+14.3%)**: Simply picking the top drivers from the championship standings yielded a 52.4% podium rate. The model improved on this by +14.3%, accurately capturing shifting intra-season momentum and circuit suitability.
-* **Probabilistic Calibration**: Achieved a Brier score of **0.0812** (outperforming the raw grid baseline of `0.0829`), confirming that the model's output probabilities reliably mirror true race frequencies rather than overconfident binary classifications.
+* **Championship Standings vs. Live Form (+11.9%)**: Simply picking the top drivers from the championship standings yielded a 54.8% podium rate. The model improved on this by +11.9%, accurately capturing shifting intra-season momentum and circuit suitability.
+* **Probabilistic Calibration**: Achieved a Brier score of **0.0809** (outperforming the raw grid baseline of `0.0829`), confirming that the model's output probabilities reliably mirror true race frequencies rather than overconfident binary classifications.
 * **Accounting for the 21.4% Attrition Ceiling**: In this 2026 dataset, **21.4% of race starts ended in retirement or mechanical failure (66 DNFs across 308 driver entries, averaging 4.7 per race)**. Uncontrollable stochastic events—such as Lewis Hamilton's Lap 6 terminal retirement in Spain after qualifying P4—create a natural variance ceiling for any pre-race model.
 
 You can reproduce these benchmark numbers anytime by running:

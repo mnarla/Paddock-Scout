@@ -1,0 +1,23 @@
+DriverNumber,BroadcastName,Abbreviation,DriverId,TeamName,TeamColor,TeamId,FirstName,LastName,FullName,HeadshotUrl,CountryCode,Position,ClassifiedPosition,GridPosition,Q1,Q2,Q3,Time,Status,Points,Laps,Year,Round,EventName,SessionType,Session_Weight
+63,,RUS,russell,Mercedes,,mercedes,George,Russell,George Russell,,,1.0,,,0 days 00:01:43.615000,0 days 00:01:43.462000,0 days 00:01:42.526000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+16,,LEC,leclerc,Ferrari,,ferrari,Charles,Leclerc,Charles Leclerc,,,2.0,,,0 days 00:01:44.360000,0 days 00:01:43.780000,0 days 00:01:43.363000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+81,,PIA,piastri,McLaren,,mclaren,Oscar,Piastri,Oscar Piastri,,,3.0,,,0 days 00:01:45.014000,0 days 00:01:43.814000,0 days 00:01:43.364000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+6,,HAD,hadjar,Red Bull,,red_bull,Isack,Hadjar,Isack Hadjar,,,4.0,,,0 days 00:01:44.161000,0 days 00:01:43.880000,0 days 00:01:43.500000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+1,,NOR,norris,McLaren,,mclaren,Lando,Norris,Lando Norris,,,5.0,,,0 days 00:01:44.571000,0 days 00:01:44.020000,0 days 00:01:43.672000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+44,,HAM,hamilton,Ferrari,,ferrari,Lewis,Hamilton,Lewis Hamilton,,,6.0,,,0 days 00:01:44.260000,0 days 00:01:44.037000,0 days 00:01:43.858000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+10,,GAS,gasly,Alpine F1 Team,,alpine,Pierre,Gasly,Pierre Gasly,,,7.0,,,0 days 00:01:44.489000,0 days 00:01:44.106000,0 days 00:01:44.047000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+3,,VER,max_verstappen,Red Bull,,red_bull,Max,Verstappen,Max Verstappen,,,8.0,,,0 days 00:01:44.041000,0 days 00:01:43.706000,0 days 00:01:44.081000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+55,,SAI,sainz,Williams,,williams,Carlos,Sainz,Carlos Sainz,,,9.0,,,0 days 00:01:45.104000,0 days 00:01:44.629000,0 days 00:01:44.566000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+43,,COL,colapinto,Alpine F1 Team,,alpine,Franco,Colapinto,Franco Colapinto,,,10.0,,,0 days 00:01:45.106000,0 days 00:01:44.683000,0 days 00:01:44.963000,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+87,,BEA,bearman,Haas F1 Team,,haas,Oliver,Bearman,Oliver Bearman,,,11.0,,,0 days 00:01:45.228000,0 days 00:01:44.775000,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+30,,LAW,lawson,RB F1 Team,,rb,Liam,Lawson,Liam Lawson,,,12.0,,,0 days 00:01:45.535000,0 days 00:01:44.860000,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+23,,ALB,albon,Williams,,williams,Alexander,Albon,Alexander Albon,,,13.0,,,0 days 00:01:45.031000,0 days 00:01:45.001000,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+31,,OCO,ocon,Haas F1 Team,,haas,Esteban,Ocon,Esteban Ocon,,,14.0,,,0 days 00:01:45.039000,0 days 00:01:45.016000,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+41,,LIN,arvid_lindblad,RB F1 Team,,rb,Arvid,Lindblad,Arvid Lindblad,,,15.0,,,0 days 00:01:45.381000,0 days 00:01:45.106000,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+12,,ANT,antonelli,Mercedes,,mercedes,Andrea Kimi,Antonelli,Andrea Kimi Antonelli,,,16.0,,,0 days 00:01:45.504000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+5,,BOR,bortoleto,Audi,,audi,Gabriel,Bortoleto,Gabriel Bortoleto,,,17.0,,,0 days 00:01:45.799000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+27,,HUL,hulkenberg,Audi,,audi,Nico,Hülkenberg,Nico Hülkenberg,,,18.0,,,0 days 00:01:45.920000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+14,,ALO,alonso,Aston Martin,,aston_martin,Fernando,Alonso,Fernando Alonso,,,19.0,,,0 days 00:01:46.593000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+11,,PER,perez,Cadillac F1 Team,,cadillac,Sergio,Pérez,Sergio Pérez,,,20.0,,,0 days 00:01:46.658000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+18,,STR,stroll,Aston Martin,,aston_martin,Lance,Stroll,Lance Stroll,,,21.0,,,0 days 00:01:47.337000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
+77,,BOT,bottas,Cadillac F1 Team,,cadillac,Valtteri,Bottas,Valtteri Bottas,,,22.0,,,0 days 00:01:48.290000,,,,,,,2026,15,Azerbaijan Grand Prix,Qualifying,1.0
