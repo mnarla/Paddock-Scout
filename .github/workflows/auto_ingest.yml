@@ -2,32 +2,15 @@ name: Auto F1 Calendar Ingestion
 
 on:
   schedule:
-    # Friday evening:
-    # - 21:00 UTC Friday (European evening / US afternoon)
-    # - 03:00 UTC Saturday (8 PM PST / 11 PM EST Friday evening)
-    - cron: '0 21 * * 5'
-    - cron: '0 3 * * 6'
-
-    # Saturday evening:
-    # - 21:00 UTC Saturday (European evening / US afternoon)
-    # - 03:00 UTC Sunday (8 PM PST / 11 PM EST Saturday evening)
-    - cron: '0 21 * * 6'
-    - cron: '0 3 * * 0'
-
-    # Sunday evening & catch-up:
-    # - 21:00 UTC Sunday (European evening / US afternoon)
-    # - 03:00 UTC Monday (8 PM PST / 11 PM EST Sunday evening)
-    # - 14:00 UTC Monday (Safety catch-up)
-    - cron: '0 21 * * 0'
-    - cron: '0 3 * * 1'
-    - cron: '0 14 * * 1'
+    # Runs every 3 hours at minute 23 on Friday, Saturday, Sunday, and Monday UTC
+    - cron: '23 */3 * * 5,6,0,1'
 
   workflow_dispatch:
     inputs:
       day:
         description: 'Session day to ingest (friday, saturday, sunday, auto, all)'
         required: true
-        default: 'auto'
+        default: 'all'
         type: choice
         options:
           - auto
@@ -63,32 +46,12 @@ jobs:
         # Saturday: FP3, Qualifying, and Sprint (if sprint weekend)
         # Sunday: Grand Prix Race results
         run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            TARGET_DAY="${{ inputs.day }}"
-          else
-            case "${{ github.event.schedule }}" in
-              "0 21 * * 5"|"0 3 * * 6")
-                TARGET_DAY="friday"
-                ;;
-              "0 21 * * 6"|"0 3 * * 0")
-                TARGET_DAY="saturday"
-                ;;
-              "0 21 * * 0"|"0 3 * * 1"|"0 14 * * 1")
-                TARGET_DAY="sunday"
-                ;;
-              *)
-                TARGET_DAY="auto"
-                ;;
-            esac
-          fi
-
+          TARGET_DAY="${{ inputs.day || 'all' }}"
           echo "Ingesting active weekend for target day: $TARGET_DAY"
           PYTHONPATH=backend python3 backend/data_loader.py --current --day "$TARGET_DAY"
 
-          # On Sunday / Monday runs, also check for any completed past races
-          if [ "$TARGET_DAY" = "sunday" ] || [ "$TARGET_DAY" = "all" ] || [ "$TARGET_DAY" = "auto" ]; then
-            PYTHONPATH=backend python3 backend/data_loader.py --past-missing
-          fi
+          # Always check for any completed past races that might have been missed
+          PYTHONPATH=backend python3 backend/data_loader.py --past-missing
 
       - name: Update README benchmark metrics
         # Recalculate 2026 walk-forward accuracy benchmarks whenever new race results arrive
