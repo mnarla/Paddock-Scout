@@ -1,13 +1,13 @@
 {
-  "nRounds": 14,
-  "podiumHits": 28,
-  "totalPodiumSlots": 42,
-  "podiumPct": 66.7,
-  "top10Pct": 72.1,
-  "top10Hits": 101,
-  "totalTop10Slots": 140,
-  "modelBrier": 0.0809,
-  "winnerPct": 64.3,
-  "winnerHits": 9,
-  "podiumAlphaPct": 4.8
+  "nRounds": 15,
+  "podiumHits": 29,
+  "totalPodiumSlots": 45,
+  "podiumPct": 64.4,
+  "top10Pct": 72.0,
+  "top10Hits": 108,
+  "totalTop10Slots": 150,
+  "modelBrier": 0.0833,
+  "winnerPct": 66.7,
+  "winnerHits": 10,
+  "podiumAlphaPct": 4.4
 }

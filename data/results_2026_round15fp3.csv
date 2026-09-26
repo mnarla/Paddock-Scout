@@ -1,0 +1,23 @@
+DriverNumber,BroadcastName,Abbreviation,DriverId,TeamName,TeamColor,TeamId,FirstName,LastName,FullName,HeadshotUrl,CountryCode,Position,ClassifiedPosition,GridPosition,Q1,Q2,Q3,Time,Status,Points,Laps,Year,Round,EventName,SessionType,Session_Weight
+63,,RUS,russell,Mercedes,,mercedes,George,Russell,George Russell,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+3,,VER,max_verstappen,Red Bull,,red_bull,Max,Verstappen,Max Verstappen,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+6,,HAD,hadjar,Red Bull,,red_bull,Isack,Hadjar,Isack Hadjar,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+16,,LEC,leclerc,Ferrari,,ferrari,Charles,Leclerc,Charles Leclerc,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+12,,ANT,antonelli,Mercedes,,mercedes,Andrea Kimi,Antonelli,Andrea Kimi Antonelli,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+44,,HAM,hamilton,Ferrari,,ferrari,Lewis,Hamilton,Lewis Hamilton,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+41,,LIN,arvid_lindblad,RB F1 Team,,rb,Arvid,Lindblad,Arvid Lindblad,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+31,,OCO,ocon,Haas F1 Team,,haas,Esteban,Ocon,Esteban Ocon,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+87,,BEA,bearman,Haas F1 Team,,haas,Oliver,Bearman,Oliver Bearman,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+55,,SAI,sainz,Williams,,williams,Carlos,Sainz,Carlos Sainz,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+27,,HUL,hulkenberg,Audi,,audi,Nico,Hülkenberg,Nico Hülkenberg,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+30,,LAW,lawson,RB F1 Team,,rb,Liam,Lawson,Liam Lawson,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+5,,BOR,bortoleto,Audi,,audi,Gabriel,Bortoleto,Gabriel Bortoleto,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+81,,PIA,piastri,McLaren,,mclaren,Oscar,Piastri,Oscar Piastri,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+11,,PER,perez,Cadillac F1 Team,,cadillac,Sergio,Pérez,Sergio Pérez,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+77,,BOT,bottas,Cadillac F1 Team,,cadillac,Valtteri,Bottas,Valtteri Bottas,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+43,,COL,colapinto,Alpine F1 Team,,alpine,Franco,Colapinto,Franco Colapinto,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+10,,GAS,gasly,Alpine F1 Team,,alpine,Pierre,Gasly,Pierre Gasly,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+1,,NOR,norris,McLaren,,mclaren,Lando,Norris,Lando Norris,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+23,,ALB,albon,Williams,,williams,Alexander,Albon,Alexander Albon,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+14,,ALO,alonso,Aston Martin,,aston_martin,Fernando,Alonso,Fernando Alonso,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
+18,,STR,stroll,Aston Martin,,aston_martin,Lance,Stroll,Lance Stroll,,,,,,,,,,,,,2026,15,Azerbaijan Grand Prix,FP3,1.0
