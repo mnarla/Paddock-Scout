@@ -1,16 +1,16 @@
 {
     "Red Bull Racing": {
-        "Component": "Final major aero upgrade package",
+        "Component": "New floor",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced their final major upgrade package of the 2026 season in Baku before shifting development focus to 2027.",
+        "Summary": "Red Bull brought a new floor design as part of their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Autosport"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
         "As_Of": "Azerbaijan Grand Prix",
@@ -57,19 +57,19 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Revised sidepods and bodywork package",
+        "Component": "Revised sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a significant bodywork and sidepod revision in Baku to improve aerodynamic efficiency.",
+        "Summary": "McLaren introduced a significant bodywork package featuring revised sidepods to improve aerodynamic efficiency in Baku.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbVFENjRpMW5mRWNOVHhqOU1NSTA4eGtyQzUyeWFVSVFBSWM4X0taOE9xQ3RhejJZbnVvTlBJT2FDbl9YajB1RzNvd0ltSHBoNG40VnZ5SjBlWW1kT2k3bGkxS3dsRGVSVmZuV3dLSU9KcU4wU1lfbWxZRy1jaDdOVGluN3FMdWFBdlRqNkU1ZW0?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOS1lUXlMMjZfZEwwXzFpSWg4UWxFMkE0S05GQXVsR1pDTHM4N191VnNnZ1M3X01JaDZRM09NZHIzOFY3dmVFUTQ1WjBBUloyUlZRX2Vzc203cU9wVWtyUGtNdkJGaktGZ3FsbXk5dFRDTks4el9JM21YdHJ4MUVrUkYtMmZfY2M5WHhMM2FFRWxtVDYwRUZqeXFwYV9SWGhp?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
@@ -114,13 +114,13 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec car upgrade package",
+        "Component": "B-spec car upgrade",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams brought a major 'B-spec' upgrade to Baku, resulting in a significant performance step that allowed for a Q3 appearance.",
-        "Pace_Delta": -0.25,
+        "Summary": "Williams introduced a comprehensive 'B-spec' car upgrade package aimed at a significant performance step forward.",
+        "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.25,
+        "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
