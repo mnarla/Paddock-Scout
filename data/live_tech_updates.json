@@ -3,7 +3,7 @@
         "Component": "Floor v3",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle changes in Baku as part of their final major upgrade package of the 2026 season.",
+        "Summary": "Red Bull introduced a new floor with subtle changes in Baku, marking their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
@@ -12,7 +12,7 @@
         "Sources": [
             "Autosport"
         ],
-        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -57,23 +57,23 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Revised Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "McLaren brought a significant bodywork package change featuring revised sidepods to the Azerbaijan Grand Prix.",
+        "Pace_Delta": -0.2,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.2,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Autosport"
         ],
-        "URL": "",
-        "As_Of": "Singapore GP",
+        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Azerbaijan GP)"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -114,23 +114,23 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "B-spec Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Williams introduced a major 'B-spec' upgrade package in Baku described as an almost completely new car.",
+        "Pace_Delta": -0.2,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.2,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Singapore GP",
+        "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbTVMZzVUNmNwenRTZU9sTm55OHpDR0ZRaHd0QlozdVphU2kxcXNPbUVMMVpuTEFRM3ZacG95Ny1kMjlsYjctM3JzdU8tdFM3aWc5ODlObGl4U3lzQXdTbk1UZ0F0QW0tTV9jQzk4dnJNbjUyUGNsZlhwZW1WME80TldYRHZqMFg4NXJKMjRGdGo?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Azerbaijan GP)"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
@@ -174,7 +174,7 @@
         "Component": "Front Wing Assembly",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Audi brought a comprehensive front wing update to Baku featuring a new mainplane and revised endplate vanes to improve airflow consistency.",
+        "Summary": "Audi introduced a comprehensive front wing package in Baku featuring a new mainplane and revised vane geometry for improved airflow consistency.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
