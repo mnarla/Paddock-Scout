@@ -3,7 +3,7 @@
         "Component": "Floor v3",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle changes in Baku, which the team confirmed as their final major upgrade of the season.",
+        "Summary": "Red Bull introduced a new floor with subtle changes in Baku as their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
@@ -13,10 +13,10 @@
             "Motorsport.com"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "As_Of": "Singapore Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Singapore Grand Prix"
     },
     "Ferrari": {
         "Component": "Stable Aerodynamic Package",
@@ -60,7 +60,7 @@
         "Component": "Revised Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren brought significantly revised sidepods to the Azerbaijan Grand Prix as part of a major bodywork package update.",
+        "Summary": "McLaren introduced significantly revised sidepods in Baku as part of a major aerodynamic update package.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
@@ -70,10 +70,10 @@
             "Motorsport.com"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "As_Of": "Singapore Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Singapore Grand Prix"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -114,10 +114,10 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec Upgrade Package",
+        "Component": "B-spec Chassis Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams introduced a major 'B-spec' car update in Baku, described as a 'big step' by drivers and team management.",
+        "Summary": "Williams brought a major 'B-spec' car upgrade to Baku, described by the team as a significant step forward.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
@@ -126,11 +126,11 @@
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://www.autosport.com/f1/news/will-the-big-swing-williams-f1-car-upgrade-be-a-hit-or-a-miss/10858412/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "As_Of": "Singapore Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Singapore Grand Prix"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
@@ -174,7 +174,7 @@
         "Component": "Front Wing Assembly",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Audi introduced a comprehensive front wing package in Baku featuring a new mainplane and optimized vane geometry for improved airflow consistency.",
+        "Summary": "Audi introduced a comprehensive front wing package in Baku featuring a new mainplane and refined vane geometry to improve airflow consistency.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
@@ -184,10 +184,10 @@
             "The Race"
         ],
         "URL": "https://www.the-race.com/formula-1/gary-anderson-audi-baku-f1-upgrade/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "As_Of": "Singapore Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Singapore Grand Prix"
     },
     "Cadillac": {
         "Component": "Stable Aerodynamic Package",
