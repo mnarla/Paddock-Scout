@@ -1,16 +1,16 @@
 {
     "Red Bull Racing": {
-        "Component": "Floor v3 \u2014 Geometry Optimization",
+        "Component": "Floor v3",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle geometry changes in Baku as their final major upgrade package of the 2026 season.",
+        "Summary": "Red Bull introduced a new floor with subtle geometry changes in Baku, marking their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "autosport.com"
+            "Motorsport.com"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
         "As_Of": "Azerbaijan GP",
@@ -60,16 +60,16 @@
         "Component": "Revised Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren brought a major bodywork package featuring significantly revised sidepods to the Azerbaijan Grand Prix.",
+        "Summary": "McLaren brought a significant bodywork package featuring revised sidepods to the Azerbaijan Grand Prix to improve aerodynamic efficiency.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "autosport.com"
+            "The Race"
         ],
-        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "URL": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbVFENjRpMW5mRWNOVHhqOU1NSTA4eGtyQzUyeWFVSVFBSWM4X0taOE9xQ3RhejJZbnVvTlBJT2FDbl9YajB1RzNvd0ltSHBoNG40VnZ5SjBlWW1kT2k3bGkxS3dsRGVSVmZuV3dLSU9KcU4wU1lfbWxZRy1jaDdOVGluN3FMdWFBdlRqNkU1ZW0?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -114,19 +114,19 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec Car Upgrade",
+        "Component": "B-Spec Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams introduced a comprehensive 'B-spec' car upgrade in Baku, described by the team as a 'big step' forward.",
-        "Pace_Delta": -0.2,
+        "Summary": "Williams introduced a comprehensive 'B-spec' car update in Baku, described as an almost completely new vehicle to improve performance.",
+        "Pace_Delta": -0.25,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.2,
+        "Upgrade_Score": 0.25,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "autosport.com"
+            "Motorsport.com"
         ],
-        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPSDFEYVQtRU1kTHBQRS12Y0czUTlpQkhsTDQ3Tms2SUlGRmlESGdoSDVBUV9uUjd1cEdZUzlPdW81NVZZNGlHRzM2aGxrTEl6Q3dzNTJwRE9SRzJSNlQ2S0NaUHgzNE5sNDZ4TFZlandsWG5oanlNSGJSUElZWWtmX1ppclc3N09PRnZyNVJCM3VJc0Z3elA1bWViTVVrLXFISm5aTmpOM0dHVHJiTThBRmVFQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -174,7 +174,7 @@
         "Component": "Front Wing Assembly",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Audi introduced a comprehensive front wing package in Baku featuring a new mainplane and optimized vane geometry for improved airflow consistency.",
+        "Summary": "Audi introduced a comprehensive front wing package in Baku featuring a new mainplane and optimized vane details to improve airflow consistency.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
