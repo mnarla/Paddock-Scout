@@ -1,16 +1,16 @@
 {
     "Red Bull Racing": {
-        "Component": "Floor v3 \u2014 Geometry Revision",
+        "Component": "Floor v2026 \u2014 Geometry Revision",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle geometry changes in Baku to extract more local load, marking their final major upgrade of the 2026 season.",
+        "Summary": "Red Bull introduced a new floor with subtle geometry changes in Baku to extract more local load.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "motorsport.com"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
         "As_Of": "Azerbaijan GP",
@@ -57,17 +57,17 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Revised Sidepods",
+        "Component": "Sidepod Revision",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren brought significantly revised sidepods to the Azerbaijan Grand Prix as part of a major bodywork package update.",
-        "Pace_Delta": -0.2,
+        "Summary": "McLaren brought significantly revised sidepods to the Azerbaijan Grand Prix as part of a major body package change.",
+        "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.2,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "motorsport.com"
         ],
         "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
         "As_Of": "Azerbaijan GP",
@@ -114,7 +114,7 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec Chassis Upgrade",
+        "Component": "B-spec Chassis Package",
         "Category": "Aero",
         "Certainty": "confirmed",
         "Summary": "Williams introduced a major 'B-spec' car upgrade in Baku, described as a 'big step' forward by the team.",
@@ -124,9 +124,9 @@
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "motorsport.com"
         ],
-        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-vupgrades-in-2026/10858535/",
+        "URL": "https://www.autosport.com/f1/news/will-the-big-swing-williams-f1-car-upgrade-be-a-hit-or-a-miss/10858412/",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
