@@ -135,10 +135,8 @@ def _is_session_results_populated(results: pd.DataFrame, is_practice: bool = Fal
     """Check whether session results DataFrame contains completed session data."""
     if results is None or results.empty:
         return False
-    if is_practice:
-        return len(results) >= 10
-    has_pos = "Position" in results.columns and results["Position"].dropna().count() > 0
-    has_time = "Time" in results.columns and results["Time"].dropna().count() > 0
+    has_pos = "Position" in results.columns and results["Position"].dropna().count() >= 10
+    has_time = "Time" in results.columns and results["Time"].dropna().count() >= 10
     return bool(has_pos or has_time)
 
 
@@ -179,8 +177,28 @@ def _save_session(
 
     try:
         session = fastf1.get_session(year, event_name, ff1_key)
-        session.load(telemetry=False, laps=False, weather=False, messages=False)
+        try:
+            session.load(telemetry=False, laps=is_practice, weather=False, messages=False)
+        except Exception:
+            session.load(telemetry=False, laps=False, weather=False, messages=False)
+
         results = session.results
+        if results is None or results.empty:
+            log.warning(f"  No completed timings/positions yet: {year} {event_name} [{ff1_key}] — skipping save")
+            return False
+
+        results = results.copy()
+
+        # If positions are missing from Ergast, extract them directly from FastF1 lap times
+        if is_practice and ("Position" not in results.columns or results["Position"].dropna().count() < 10):
+            if hasattr(session, "laps") and session.laps is not None and not session.laps.empty:
+                fastest = session.laps.groupby("Driver")["LapTime"].min().dropna().sort_values()
+                if not fastest.empty:
+                    drv_to_pos = {drv: idx + 1 for idx, drv in enumerate(fastest.index)}
+                    drv_to_time = {drv: str(val) for drv, val in fastest.items()}
+                    results["Position"] = results["Abbreviation"].map(drv_to_pos)
+                    results["Time"] = results["Abbreviation"].map(drv_to_time)
+
         if not _is_session_results_populated(results, is_practice=is_practice):
             log.warning(f"  No completed timings/positions yet: {year} {event_name} [{ff1_key}] — skipping save")
             return False

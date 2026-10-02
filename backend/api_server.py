@@ -190,6 +190,7 @@ RACE_METADATA = {
     "Dutch Grand Prix": {"short": "NED", "country": "Netherlands", "flag": "🇳🇱"},
     "Italian Grand Prix": {"short": "ITA", "country": "Italy", "flag": "🇮🇹"},
     "Azerbaijan Grand Prix": {"short": "AZE", "country": "Azerbaijan", "flag": "🇦🇿"},
+    "Bahrain Grand Prix": {"short": "BHR", "country": "Bahrain", "flag": "🇧🇭"},
     "Singapore Grand Prix": {"short": "SIN", "country": "Singapore", "flag": "🇸🇬"},
     "United States Grand Prix": {"short": "USA", "country": "USA", "flag": "🇺🇸"},
     "Mexico City Grand Prix": {"short": "MEX", "country": "Mexico", "flag": "🇲🇽"},
@@ -494,12 +495,13 @@ def get_next_race():
     return jsonify({
         "round": ri.round_num,
         "name": ri.name,
-        "short": meta["short"],
-        "country": meta["country"],
-        "flag": meta["flag"],
+        "short": ri.short if getattr(ri, "short", None) else meta["short"],
+        "country": ri.country if getattr(ri, "country", None) else meta["country"],
+        "flag": ri.flag if getattr(ri, "flag", None) else meta["flag"],
         "trackType": "Street" if ri.track_type == "Street" else "Permanent",
         "date": ri.date.strftime("%Y-%m-%d"),
-        "isSprint": ri.is_sprint
+        "isSprint": ri.is_sprint,
+        "sessions": getattr(ri, "sessions", [])
     })
 
 @app.route("/api/calendar", methods=["GET"])
@@ -511,12 +513,13 @@ def get_calendar():
         res.append({
             "round": info["round"],
             "name": name,
-            "short": meta["short"],
-            "country": meta["country"],
-            "flag": meta["flag"],
+            "short": info.get("short") or meta["short"],
+            "country": info.get("country") or meta["country"],
+            "flag": info.get("flag") or meta["flag"],
             "trackType": "Street" if info["track_type"] == "Street" else "Permanent",
             "date": info["date"].strftime("%Y-%m-%d"),
-            "isSprint": name in sprint_races
+            "isSprint": name in sprint_races,
+            "sessions": info.get("sessions", [])
         })
     return jsonify(res)
 

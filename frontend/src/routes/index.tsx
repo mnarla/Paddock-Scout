@@ -16,6 +16,13 @@ import { UpgradesRail } from "@/components/paddock/UpgradesRail";
 import { ModelTrackRecordCard } from "@/components/paddock/ModelTrackRecordCard";
 
 export const Route = createFileRoute("/")({
+  loader: async () => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/api/next-race`);
+      if (res.ok) return (await res.json()) as RaceInfo;
+    } catch {}
+    return null;
+  },
   head: () => ({
     meta: [
       { title: "Paddock Scout · Live Prediction" },
@@ -51,8 +58,9 @@ function isPostQualifyingWeekend(raceDateStr?: string): boolean {
 const predCache = new Map<string, any>();
 
 function PaddockScoutLive() {
+  const initialRace = Route.useLoaderData();
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
-  const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
+  const [race, setRace] = useState<RaceInfo>(initialRace ?? NEXT_RACE);
   const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
 
   // Fetch real RF feature importances from the model — used by FeatureContribution.

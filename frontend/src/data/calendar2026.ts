@@ -1,3 +1,11 @@
+import { API_BASE_URL } from "@/lib/config";
+
+export interface WeekendSession {
+  name: string;
+  shortName: string;
+  utcTime: string;
+}
+
 export interface RaceInfo {
   round: number;
   name: string;
@@ -5,50 +13,38 @@ export interface RaceInfo {
   country: string;
   flag: string;
   trackType: "Permanent" | "Street";
-  date: string; // ISO
+  date: string; // ISO YYYY-MM-DD
   isSprint: boolean;
+  sessions?: WeekendSession[];
 }
 
-// From src/calendar_manager.py SCHEDULE_2026 + SPRINT_RACES_2026
-export const CALENDAR_2026: RaceInfo[] = [
-  { round: 1,  name: "Australian Grand Prix",  short: "Melbourne",  country: "Australia",     flag: "🇦🇺", trackType: "Permanent", date: "2026-03-08", isSprint: false },
-  { round: 2,  name: "Chinese Grand Prix",     short: "Shanghai",   country: "China",         flag: "🇨🇳", trackType: "Permanent", date: "2026-03-22", isSprint: true  },
-  { round: 3,  name: "Japanese Grand Prix",    short: "Suzuka",     country: "Japan",         flag: "🇯🇵", trackType: "Permanent", date: "2026-04-12", isSprint: false },
-  { round: 4,  name: "Miami Grand Prix",       short: "Miami",      country: "USA",           flag: "🇺🇸", trackType: "Street",    date: "2026-05-03", isSprint: true  },
-  { round: 5,  name: "Canadian Grand Prix",    short: "Montréal",   country: "Canada",        flag: "🇨🇦", trackType: "Street",    date: "2026-06-14", isSprint: false },
-  { round: 6,  name: "Monaco Grand Prix",      short: "Monaco",     country: "Monaco",        flag: "🇲🇨", trackType: "Street",    date: "2026-06-28", isSprint: false },
-  { round: 7,  name: "British Grand Prix",     short: "Silverstone",country: "UK",            flag: "🇬🇧", trackType: "Permanent", date: "2026-07-05", isSprint: false },
-  { round: 8,  name: "Austrian Grand Prix",    short: "Spielberg",  country: "Austria",       flag: "🇦🇹", trackType: "Permanent", date: "2026-07-19", isSprint: true  },
-  { round: 9,  name: "Hungarian Grand Prix",   short: "Budapest",   country: "Hungary",       flag: "🇭🇺", trackType: "Permanent", date: "2026-08-02", isSprint: false },
-  { round: 10, name: "Belgian Grand Prix",     short: "Spa",        country: "Belgium",       flag: "🇧🇪", trackType: "Permanent", date: "2026-08-23", isSprint: false },
-  { round: 13, name: "Italian Grand Prix",     short: "Monza",      country: "Italy",         flag: "🇮🇹", trackType: "Permanent", date: "2026-09-06", isSprint: false },
-  { round: 14, name: "Spanish Grand Prix",     short: "Barcelona",  country: "Spain",         flag: "🇪🇸", trackType: "Permanent", date: "2026-09-13", isSprint: false },
-  { round: 15, name: "Azerbaijan Grand Prix",  short: "Baku",       country: "Azerbaijan",    flag: "🇦🇿", trackType: "Street",    date: "2026-09-26", isSprint: false },
-  { round: 16, name: "Singapore Grand Prix",   short: "Marina Bay", country: "Singapore",     flag: "🇸🇬", trackType: "Street",    date: "2026-10-11", isSprint: false },
-  { round: 17, name: "United States Grand Prix",short:"Austin",     country: "USA",           flag: "🇺🇸", trackType: "Permanent", date: "2026-10-25", isSprint: true  },
-  { round: 18, name: "Mexico City Grand Prix", short: "Mexico City",country: "Mexico",        flag: "🇲🇽", trackType: "Permanent", date: "2026-11-01", isSprint: false },
-  { round: 19, name: "São Paulo Grand Prix",   short: "Interlagos", country: "Brazil",        flag: "🇧🇷", trackType: "Permanent", date: "2026-11-08", isSprint: true  },
-  { round: 20, name: "Las Vegas Grand Prix",   short: "Las Vegas",  country: "USA",           flag: "🇺🇸", trackType: "Street",    date: "2026-11-21", isSprint: false },
-  { round: 21, name: "Qatar Grand Prix",       short: "Lusail",     country: "Qatar",         flag: "🇶🇦", trackType: "Permanent", date: "2026-11-29", isSprint: true  },
-  { round: 22, name: "Abu Dhabi Grand Prix",   short: "Yas Marina", country: "UAE",           flag: "🇦🇪", trackType: "Permanent", date: "2026-12-06", isSprint: false },
-];
-
-// Dynamically resolve the next upcoming race based on the current date.
-// A race is considered "active / upcoming" until midnight the day after race day,
-// so the Sunday race entry stays live throughout race day itself.
-function resolveNextRace(): RaceInfo {
-  const now = new Date();
-  // Allow the full race day + one day grace before rolling to the next round
-  const upcoming = CALENDAR_2026.find((r) => {
-    const raceDay = new Date(r.date);
-    // Race expires at end of day Monday (race day + 1)
-    const expiry = new Date(raceDay);
-    expiry.setDate(expiry.getDate() + 1);
-    expiry.setHours(23, 59, 59, 999);
-    return expiry >= now;
-  });
-  // If the season is over, show the final round
-  return upcoming ?? CALENDAR_2026[CALENDAR_2026.length - 1];
+export async function fetchCalendar(): Promise<RaceInfo[]> {
+  const res = await fetch(`${API_BASE_URL}/api/calendar`);
+  if (!res.ok) throw new Error("Failed to fetch calendar");
+  return res.json();
 }
 
-export const NEXT_RACE: RaceInfo = resolveNextRace();
+export async function fetchNextRace(): Promise<RaceInfo> {
+  const res = await fetch(`${API_BASE_URL}/api/next-race`);
+  if (!res.ok) throw new Error("Failed to fetch next race");
+  return res.json();
+}
+
+// Initial fallback used before the /api/next-race endpoint returns
+export const NEXT_RACE: RaceInfo = {
+  round: 16,
+  name: "Bahrain Grand Prix",
+  short: "Sakhir",
+  country: "Bahrain",
+  flag: "🇧🇭",
+  trackType: "Permanent",
+  date: "2026-10-04",
+  isSprint: false,
+  sessions: [
+    { name: "Practice 1", shortName: "FP1", utcTime: "2026-10-02T04:30:00Z" },
+    { name: "Practice 2", shortName: "FP2", utcTime: "2026-10-02T08:00:00Z" },
+    { name: "Practice 3", shortName: "FP3", utcTime: "2026-10-03T04:30:00Z" },
+    { name: "Qualifying", shortName: "Qualifying", utcTime: "2026-10-03T08:00:00Z" },
+    { name: "Race", shortName: "Grand Prix", utcTime: "2026-10-04T07:00:00Z" },
+  ],
+};
