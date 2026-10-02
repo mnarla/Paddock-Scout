@@ -40,9 +40,6 @@ CACHE_DIR = "fastf1_cache"
 DATA_DIR  = "data"
 SEASONS   = [2023, 2024, 2025, 2026]
 
-# FastF1 session identifiers for each slot
-sessions_to_fetch = ['FP1', 'FP2', 'FP3', 'Q', 'S', 'R']
-
 SPRINT_RACES = get_sprint_races()
 
 
@@ -73,25 +70,6 @@ def _csv_path(year: int, rnd: int, suffix: str) -> str:
     """Build the canonical CSV path for a session."""
     return os.path.join(DATA_DIR, f"results_{year}_round{rnd:02d}{suffix}.csv")
 
-
-def _is_session_results_populated(results: pd.DataFrame) -> bool:
-    """Check whether session results DataFrame contains non-null positions or lap times."""
-    if results is None or results.empty:
-        return False
-    has_pos = "Position" in results.columns and results["Position"].dropna().count() > 0
-    has_time = "Time" in results.columns and results["Time"].dropna().count() > 0
-    return bool(has_pos or has_time)
-
-
-def _is_csv_populated(path: str) -> bool:
-    """Check whether a CSV on disk has non-null positions or times."""
-    if not os.path.exists(path):
-        return False
-    try:
-        df = pd.read_csv(path)
-        return _is_session_results_populated(df)
-    except Exception:
-        return False
 
 
 def get_sessions_for_day(day: str, is_sprint: bool) -> List[str]:

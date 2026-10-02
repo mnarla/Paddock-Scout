@@ -582,12 +582,9 @@ def build_live_tech_updates() -> Dict[str, dict]:
 
     # ── 7. Write JSON ──────────────────────────────────────────────────────────
     out_data_path = os.path.join(DATA_DIR, "live_tech_updates.json")
-    out_root_path = os.path.join(os.path.dirname(__file__), "..", "live_tech_updates.json")
-
-    for path in [out_data_path, out_root_path]:
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, "w") as f:
-            json.dump(updates, f, indent=4)
+    os.makedirs(os.path.dirname(out_data_path), exist_ok=True)
+    with open(out_data_path, "w") as f:
+        json.dump(updates, f, indent=4)
 
     confirmed_count = sum(1 for v in updates.values() if v["Certainty"] != "pending")
     log.info(f"[pipeline] ✅ Done. {confirmed_count}/{len(TEAMS)} teams have upgrade data.")

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/icon.png" alt="Paddock Scout Icon" width="96" height="96" />
+  <img src="assets/icon.png" alt="Paddock Scout Icon" width="96" height="96" />
 </p>
 
 <h1 align="center">Paddock Scout</h1>

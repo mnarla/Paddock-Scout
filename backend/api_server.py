@@ -81,7 +81,7 @@ with app.app_context():
     # Automatically refresh live technical news in the background if older than 24h or missing
     def _refresh_news():
         try:
-            update_path = "live_tech_updates.json"
+            update_path = os.path.join(DATA_DIR, "live_tech_updates.json")
             needs_update = not os.path.exists(update_path) or (time.time() - os.path.getmtime(update_path) > 86400)
             if needs_update:
                 log.info("[news-agent] Automatically scraping fresh F1 technical updates...")
@@ -147,12 +147,6 @@ DRIVER_DEFAULT_TEAM = {
     "perez": "cadillac",
     "bottas": "cadillac",
 }
-
-
-# VERIFIED_UPGRADES is intentionally empty.
-# All upgrade data is now sourced from live_tech_updates.json, which is populated
-# by the RSS + Gemini pipeline in news_agent.py. See build_live_tech_updates().
-VERIFIED_UPGRADES: dict = {}
 
 
 DRIVER_INFO = {
@@ -607,13 +601,9 @@ def predict():
     # Teams without confirmed news receive 0.0 (no artificial advantage/penalty).
     upgrade = 0.0
     try:
-        if team_name in VERIFIED_UPGRADES:
-            v_info = VERIFIED_UPGRADES[team_name]
-            # Negative paceDelta means faster -> positive upgrade boost
-            # Positive paceDelta means slower -> negative penalty
-            upgrade = -float(v_info["paceDelta"])
-        elif os.path.exists("live_tech_updates.json"):
-            with open("live_tech_updates.json", "r") as f:
+        upgrade_file = os.path.join(DATA_DIR, "live_tech_updates.json")
+        if os.path.exists(upgrade_file):
+            with open(upgrade_file, "r") as f:
                 tech_data = json.load(f)
                 if team_name in tech_data and "Component" in tech_data[team_name]:
                     t_info = tech_data[team_name]
@@ -829,21 +819,17 @@ def get_archive(round_num):
 @app.route("/api/upgrades", methods=["GET"])
 def get_upgrades():
     live_tech = {}
-    # Try data/live_tech_updates.json first, then root-level fallback
-    for candidate_path in [
-        os.path.join(DATA_DIR, "live_tech_updates.json"),
-        "live_tech_updates.json",
-    ]:
-        try:
-            if os.path.exists(candidate_path):
-                with open(candidate_path, "r") as f:
-                    live_tech = json.load(f)
-                # Auto-refresh if stale (older than 6 hours on race week / weekends)
-                if time.time() - os.path.getmtime(candidate_path) > 21600:
-                    threading.Thread(target=build_live_tech_updates, daemon=True).start()
-                break
-        except Exception:
-            pass
+    # Load live technical upgrade data
+    candidate_path = os.path.join(DATA_DIR, "live_tech_updates.json")
+    try:
+        if os.path.exists(candidate_path):
+            with open(candidate_path, "r") as f:
+                live_tech = json.load(f)
+            # Auto-refresh if stale (older than 6 hours on race week / weekends)
+            if time.time() - os.path.getmtime(candidate_path) > 21600:
+                threading.Thread(target=build_live_tech_updates, daemon=True).start()
+    except Exception:
+        pass
         
     # Determine the latest round with practice validation data
     fp2_files = sorted(glob.glob(os.path.join(DATA_DIR, "results_2026_round*fp2.csv")))
@@ -1043,33 +1029,6 @@ def get_archive_progression():
         "podiums": podiums
     })
 
-def run_data_loader_loop():
-    if os.environ.get("RENDER") or os.environ.get("DISABLE_IN_APP_INGEST"):
-        return
-    time.sleep(5)  # Wait for server to boot fully
-    while True:
-        # ── Step 1: Pull latest FastF1 session data ──────────────────────────
-        try:
-            log.info(" Automated background FastF1 sync starting...")
-            loader_path = os.path.join(os.path.dirname(__file__), "data_loader.py")
-            subprocess.run([sys.executable, loader_path, "--current"], check=True)
-            log.info(" Automated background FastF1 sync completed.")
-        except Exception as e:
-            log.error(f"Error in automated background data loader: {e}")
-
-        # ── Step 2: Scrape latest upgrade news ───────────────────────────────
-        try:
-            log.info(" Automated background news agent starting...")
-            news_path = os.path.join(os.path.dirname(__file__), "news_agent.py")
-            subprocess.run([sys.executable, news_path], check=True)
-            log.info(" Automated background news agent completed.")
-        except Exception as e:
-            log.error(f"Error in automated background news agent: {e}")
-
-        time.sleep(10800)  # Repeat every 3 hours
-
 if __name__ == "__main__":
-    if os.environ.get("WERKZEUG_RUN_MAIN") == "true" or not app.debug:
-        threading.Thread(target=run_data_loader_loop, daemon=True).start()
     port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=port, debug=True)

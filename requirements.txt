@@ -3,7 +3,6 @@ scikit-learn
 pandas
 numpy
 matplotlib
-duckduckgo-search
 flask
 flask-cors
 requests
