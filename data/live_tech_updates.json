@@ -1,18 +1,18 @@
 {
     "Red Bull Racing": {
-        "Component": "New floor",
+        "Component": "Floor",
         "Category": "Aero",
         "Certainty": "confirmed",
         "Summary": "Red Bull introduced a new floor in Baku as part of their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 0.0,
+        "FP2_Best_Pos": 2.0,
         "Upgrade_Score": 0.15,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Autosport"
         ],
-        "URL": "https://www.motorsport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
+        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -38,14 +38,14 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and sidepods",
+        "Component": "Floor and Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade package in Bahrain, which the team reports is working as expected despite some initial balance issues.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade package for the Bahrain GP, estimated to be worth 0.3s per lap, with initial feedback indicating it is working as expected despite some balance fine-tuning required.",
         "Pace_Delta": -0.3,
-        "FP2_Best_Pos": 0.0,
+        "FP2_Best_Pos": 7.0,
         "Upgrade_Score": 0.3,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
             "The Race"
@@ -57,42 +57,42 @@
         "Badge": "New for Bahrain Grand Prix"
     },
     "McLaren": {
-        "Component": "Bodywork package (sidepods, engine cover, airbox)",
+        "Component": "Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a comprehensive bodywork overhaul in Baku to improve efficiency, which the team confirmed delivered the expected performance improvements.",
-        "Pace_Delta": -0.2,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.2,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "McLaren brought significantly revised sidepods to Baku, though the performance impact has been questioned following disappointing results.",
+        "Pace_Delta": -0.15,
+        "FP2_Best_Pos": 3.0,
+        "Upgrade_Score": 0.15,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "Motorsport.com"
         ],
-        "URL": "https://www.formula1.com/en/latest/article/the-encouraging-signs-hidden-within-mclarens-baku-upgrade.2MeiTiEWq6Dvt2GkRG4UJh",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
         "Badge": "Running spec (from Azerbaijan GP)"
     },
     "Aston Martin": {
-        "Component": "Turbocharger upgrade (ADUO 2)",
-        "Category": "Power Unit",
+        "Component": "Stable Aerodynamic Package",
+        "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Honda secretly introduced a turbocharger upgrade during the Spanish GP to improve power unit performance.",
-        "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Baseline"
         ],
-        "URL": "https://www.the-race.com/formula-1/honda-secretly-introduced-aduo-2-f1-upgrade/",
-        "As_Of": "Spanish GP",
+        "URL": "",
+        "As_Of": "Bahrain GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Spanish GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Alpine": {
         "Component": "Stable Aerodynamic Package",
@@ -114,19 +114,19 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Weight-saving chassis and aero package",
+        "Component": "B-spec car (Weight-saving package)",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams introduced a major weight-reduction program and new chassis in Baku, resulting in their best qualifying performance of the season.",
+        "Summary": "Williams introduced a 'B-spec' car featuring a major weight-saving upgrade package in Baku, which showed signs of delivering performance improvements.",
         "Pace_Delta": -0.2,
-        "FP2_Best_Pos": 0.0,
+        "FP2_Best_Pos": 17.0,
         "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "The Race"
         ],
-        "URL": "https://www.motorsport.com/f1/news/williams-upgrade-delivering-baku-overachievement/10859048/",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -171,23 +171,23 @@
         "Badge": "Standard Baseline"
     },
     "Audi": {
-        "Component": "Comprehensive aero package (wings, floor, engine cover)",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Audi brought 14 new components to Baku, including revised wings and floor, which the team confirmed were delivering data as expected.",
-        "Pace_Delta": -0.25,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.25,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "Baseline"
         ],
-        "URL": "https://www.formula1.com/en/latest/article/the-package-is-delivering-as-expected-audi-reflect-on-new-upgrade-package-after-practice-in-azerbaijan.5U8qcauiyASv8Je72XQF3c",
-        "As_Of": "Azerbaijan GP",
+        "URL": "",
+        "As_Of": "Bahrain GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Cadillac": {
         "Component": "Stable Aerodynamic Package",
