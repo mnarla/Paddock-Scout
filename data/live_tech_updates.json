@@ -41,7 +41,7 @@
         "Component": "Floor and sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade package for the Bahrain GP, which drivers report is working as expected in high-speed corners.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade package in Malaysia, which drivers report feeling in high-speed corners despite initial single-lap balance issues.",
         "Pace_Delta": -0.3,
         "FP2_Best_Pos": 7.0,
         "Upgrade_Score": 0.3,
@@ -60,7 +60,7 @@
         "Component": "Revised sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced significantly revised sidepods in Baku, but the upgrade faced scrutiny after disappointing performance and handling questions.",
+        "Summary": "McLaren introduced significantly revised sidepods in Baku, but the upgrade faced criticism and disappointment regarding its on-track performance correlation.",
         "Pace_Delta": 0.1,
         "FP2_Best_Pos": 3.0,
         "Upgrade_Score": -0.1,
@@ -69,7 +69,7 @@
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZXdVRXNCdkRwMndKTy13MFlkME0xWnVZYXlYWVM0NHNMNnBIcEhZWUlwLW9TajY5cm9zZHNSZk1HdEhhTnp6YXR0X0RIMEhfVkk1VkxJYmhmQUw5X3VLV1RsTUlpUElyTTRyZUlfcDNEd29yMVR5WWV3MDJTUm9FUVoxQ0tZMHZkWXE0UXRkV2VqQmFXcHFMenFzajRiQ0RHNUx4WEhKZGdDRnAybkRzb2NFOFdydDR3UGZCcUt3?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOS1lUXlMMjZfZEwwXzFpSWg4UWxFMkE0S05GQXVsR1pDTHM4N191VnNnZ1M3X01JaDZRM09NZHIzOFY3dmVFUTQ1WjBBUloyUlZRX2Vzc203cU9wVWtyUGtNdkJGaktGZ3FsbXk5dFRDTks4el9JM21YdHJ4MUVrUkYtMmZfY2M5WHhMM2FFRWxtVDYwRUZqeXFwYV9SWGhp?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "DEFECTIVE",
@@ -117,16 +117,16 @@
         "Component": "B-spec car package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams brought a significant 'B-spec' car upgrade to Baku, which the team described as a step in the right direction.",
+        "Summary": "Williams brought a significant weight-saving 'B-spec' upgrade to Baku, which delivered a notable performance step forward.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 17.0,
         "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "The Race"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdkJYazhScXFwMGVYQmpnMnIzSjZGMUZvUmstaFRKYjNsRFBxLUpMeWxMaE94YklpOUZ2eWVZeWRJRHdLV1ZsaVBHdnhVR3YyWkVpUWo2NEhJcjVFZUlkU1JGMklpOGMxZlpXODU3dkxNSnRBV05fWEZPOHhPR2NCZE9nN1FWeUxKaWVHTDRkMnRUblpCeHZxdG9jbU9TSlYxV013eW9FT2tDNzJDUHZ3T3l1clk3MXdlSzFDaHg2d2FVQ3FTZzFEMW45Z0hxRW00R1FSVnBMVW5QMkI0djBneVBIbW9zc0RjVHMtZm5Raw?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
