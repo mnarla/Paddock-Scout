@@ -38,19 +38,19 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and Sidepods",
+        "Component": "Floor and sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade for Bahrain, but the team reported a performance loss rather than the expected gain.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade package that failed to deliver expected performance, resulting in a net loss of pace.",
         "Pace_Delta": 0.2,
         "FP2_Best_Pos": 7.0,
         "Upgrade_Score": -0.2,
         "Upgrade_Validation": "DEFECTIVE",
         "Is_Defective": true,
         "Sources": [
-            "RaceFans"
+            "Autosport"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeS0xd3I5aU9FeWZiLXpfUlBER3RyVG9qQ2xabnFoVWhhZEppelQ2ajV5SHU5UWh2bHhEa0w4Y0JHa0podWV5cFBZR1ZBeTMwZFlsd3kyTkFianU3OWVXVW92TGF6dmM4cHBKRTVBaDlva2k3czRDeG9pdnVkd09WN1RTaC1FSks1MTAtOFc0N0RGVXRZMW1ETkUtaTRpTjducm9COVliajc2ajE5?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://www.autosport.com/f1/news/mercedes-introduces-new-floor-sidepods-for-f1-bahrain-gp/10860785/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
         "As_Of": "Bahrain Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "DEFECTIVE",
