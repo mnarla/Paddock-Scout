@@ -1,22 +1,22 @@
 {
     "Red Bull Racing": {
-        "Component": "Floor",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle changes in Baku, marking their final major upgrade package of the 2026 season.",
-        "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 2.0,
-        "Upgrade_Score": 0.15,
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
         "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Autosport"
+            "Baseline"
         ],
-        "URL": "https://www.autosport.com/f1/news/red-bull-wont-deliver-any-more-major-f1-car-upgrades-in-2026/10858535/",
-        "As_Of": "Azerbaijan GP",
+        "URL": "",
+        "As_Of": "Bahrain GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Ferrari": {
         "Component": "Stable Aerodynamic Package",
@@ -38,42 +38,42 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and sidepods",
+        "Component": "Floor and Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade package in Malaysia, which drivers report feeling in high-speed corners despite initial single-lap balance issues.",
-        "Pace_Delta": -0.3,
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade for Bahrain, but the team reported a performance loss rather than the expected gain.",
+        "Pace_Delta": 0.2,
         "FP2_Best_Pos": 7.0,
-        "Upgrade_Score": 0.3,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "The Race"
-        ],
-        "URL": "https://www.the-race.com/formula-1/winners-losers-from-f1-practice-day-in-malaysia/",
-        "As_Of": "Bahrain Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Bahrain Grand Prix"
-    },
-    "McLaren": {
-        "Component": "Revised sidepods",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren introduced significantly revised sidepods in Baku, but the upgrade faced criticism and disappointment regarding its on-track performance correlation.",
-        "Pace_Delta": 0.1,
-        "FP2_Best_Pos": 3.0,
-        "Upgrade_Score": -0.1,
+        "Upgrade_Score": -0.2,
         "Upgrade_Validation": "DEFECTIVE",
         "Is_Defective": true,
         "Sources": [
-            "Motorsport.com"
+            "RaceFans"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOS1lUXlMMjZfZEwwXzFpSWg4UWxFMkE0S05GQXVsR1pDTHM4N191VnNnZ1M3X01JaDZRM09NZHIzOFY3dmVFUTQ1WjBBUloyUlZRX2Vzc203cU9wVWtyUGtNdkJGaktGZ3FsbXk5dFRDTks4el9JM21YdHJ4MUVrUkYtMmZfY2M5WHhMM2FFRWxtVDYwRUZqeXFwYV9SWGhp?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
+        "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeS0xd3I5aU9FeWZiLXpfUlBER3RyVG9qQ2xabnFoVWhhZEppelQ2ajV5SHU5UWh2bHhEa0w4Y0JHa0podWV5cFBZR1ZBeTMwZFlsd3kyTkFianU3OWVXVW92TGF6dmM4cHBKRTVBaDlva2k3czRDeG9pdnVkd09WN1RTaC1FSks1MTAtOFc0N0RGVXRZMW1ETkUtaTRpTjducm9COVliajc2ajE5?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Bahrain Grand Prix",
+        "Is_Current_Weekend": true,
         "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.10s penalty)"
+        "Badge": "Defective (+0.20s penalty)"
+    },
+    "McLaren": {
+        "Component": "Stable Aerodynamic Package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
+        "Is_Defective": false,
+        "Sources": [
+            "Baseline"
+        ],
+        "URL": "",
+        "As_Of": "Bahrain GP",
+        "Is_Current_Weekend": false,
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -114,23 +114,23 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec car package",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams brought a significant weight-saving 'B-spec' upgrade to Baku, which delivered a notable performance step forward.",
-        "Pace_Delta": -0.2,
-        "FP2_Best_Pos": 17.0,
-        "Upgrade_Score": 0.2,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Baseline"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Azerbaijan GP",
+        "URL": "",
+        "As_Of": "Bahrain GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
