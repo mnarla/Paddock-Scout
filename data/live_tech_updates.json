@@ -3,7 +3,7 @@
         "Component": "Floor",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor in Baku as part of their final major upgrade package of the 2026 season.",
+        "Summary": "Red Bull introduced a new floor with subtle changes in Baku, marking their final major upgrade package of the 2026 season.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 2.0,
         "Upgrade_Score": 0.15,
@@ -38,10 +38,10 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and Sidepods",
+        "Component": "Floor and sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade package for the Bahrain GP, estimated to be worth 0.3s per lap, with initial feedback indicating it is working as expected despite some balance fine-tuning required.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade package for the Bahrain GP, which drivers report is working as expected in high-speed corners.",
         "Pace_Delta": -0.3,
         "FP2_Best_Pos": 7.0,
         "Upgrade_Score": 0.3,
@@ -57,23 +57,23 @@
         "Badge": "New for Bahrain Grand Prix"
     },
     "McLaren": {
-        "Component": "Sidepods",
+        "Component": "Revised sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren brought significantly revised sidepods to Baku, though the performance impact has been questioned following disappointing results.",
-        "Pace_Delta": -0.15,
+        "Summary": "McLaren introduced significantly revised sidepods in Baku, but the upgrade faced scrutiny after disappointing performance and handling questions.",
+        "Pace_Delta": 0.1,
         "FP2_Best_Pos": 3.0,
-        "Upgrade_Score": 0.15,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.1,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZXdVRXNCdkRwMndKTy13MFlkME0xWnVZYXlYWVM0NHNMNnBIcEhZWUlwLW9TajY5cm9zZHNSZk1HdEhhTnp6YXR0X0RIMEhfVkk1VkxJYmhmQUw5X3VLV1RsTUlpUElyTTRyZUlfcDNEd29yMVR5WWV3MDJTUm9FUVoxQ0tZMHZkWXE0UXRkV2VqQmFXcHFMenFzajRiQ0RHNUx4WEhKZGdDRnAybkRzb2NFOFdydDR3UGZCcUt3?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.10s penalty)"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -114,19 +114,19 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "B-spec car (Weight-saving package)",
+        "Component": "B-spec car package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams introduced a 'B-spec' car featuring a major weight-saving upgrade package in Baku, which showed signs of delivering performance improvements.",
+        "Summary": "Williams brought a significant 'B-spec' car upgrade to Baku, which the team described as a step in the right direction.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 17.0,
         "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Formula 1"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQdkJYazhScXFwMGVYQmpnMnIzSjZGMUZvUmstaFRKYjNsRFBxLUpMeWxMaE94YklpOUZ2eWVZeWRJRHdLV1ZsaVBHdnhVR3YyWkVpUWo2NEhJcjVFZUlkU1JGMklpOGMxZlpXODU3dkxNSnRBV05fWEZPOHhPR2NCZE9nN1FWeUxKaWVHTDRkMnRUblpCeHZxdG9jbU9TSlYxV013eW9FT2tDNzJDUHZ3T3l1clk3MXdlSzFDaHg2d2FVQ3FTZzFEMW45Z0hxRW00R1FSVnBMVW5QMkI0djBneVBIbW9zc0RjVHMtZm5Raw?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Azerbaijan GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
