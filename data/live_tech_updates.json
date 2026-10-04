@@ -38,23 +38,23 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Floor and Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
+        "Summary": "Mercedes introduced a major floor and sidepod overhaul for Bahrain, but the team reported a performance loss instead of the expected gain.",
+        "Pace_Delta": 0.2,
+        "FP2_Best_Pos": 7.0,
+        "Upgrade_Score": -0.2,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "Baseline"
+            "RaceFans"
         ],
-        "URL": "",
-        "As_Of": "Bahrain GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeS0xd3I5aU9FeWZiLXpfUlBER3RyVG9qQ2xabnFoVWhhZEppelQ2ajV5SHU5UWh2bHhEa0w4Y0JHa0podWV5cFBZR1ZBeTMwZFlsd3kyTkFianU3OWVXVW92TGF6dmM4cHBKRTVBaDlva2k3czRDeG9pdnVkd09WN1RTaC1FSks1MTAtOFc0N0RGVXRZMW1ETkUtaTRpTjducm9COVliajc2ajE5?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Bahrain Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.20s penalty)"
     },
     "McLaren": {
         "Component": "Stable Aerodynamic Package",
