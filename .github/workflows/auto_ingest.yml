@@ -2,18 +2,23 @@ name: Auto F1 Calendar Ingestion
 
 on:
   schedule:
-    # Runs every 3 hours at minute 23 on Friday, Saturday, Sunday, and Monday UTC
-    - cron: '23 */3 * * 5,6,0,1'
+    # Thursday evening (18:00 - 23:00 UTC) hourly for early technical upgrade documents & media news
+    - cron: '23 18-23 * * 4'
+    # Friday, Saturday, Sunday every hour (UTC) for active race weekend track sessions
+    - cron: '23 * * * 5,6,0'
+    # Monday early morning (00:00 - 06:00 UTC) hourly for final race classifications & late stewards
+    - cron: '23 0-6 * * 1'
 
   workflow_dispatch:
     inputs:
       day:
-        description: 'Session day to ingest (friday, saturday, sunday, auto, all)'
+        description: 'Session day to ingest (thursday, friday, saturday, sunday, auto, all)'
         required: true
-        default: 'all'
+        default: 'auto'
         type: choice
         options:
           - auto
+          - thursday
           - friday
           - saturday
           - sunday
@@ -41,12 +46,26 @@ jobs:
         run: |
           pip install pandas fastf1 scikit-learn numpy requests lxml googlenewsdecoder
 
+      - name: Check if today's sessions are already complete
+        id: session_check
+        run: |
+          # If manual workflow_dispatch with a specific day is requested (other than auto), do not skip
+          if [ -n "${{ github.event.inputs.day }}" ] && [ "${{ github.event.inputs.day }}" != "auto" ]; then
+            echo "Manual dispatch targeting day '${{ github.event.inputs.day }}' — skipping completion check."
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "reason=Manual dispatch" >> "$GITHUB_OUTPUT"
+          else
+            PYTHONPATH=backend python3 backend/data_loader.py --check-day-complete
+          fi
+
       - name: Ingest race weekend sessions & past missing races
-        # Friday: FP1, FP2
+        if: steps.session_check.outputs.skip != 'true'
+        # Thursday: No track sessions (media/upgrade news only)
+        # Friday: FP1, FP2 (or SQ if sprint weekend)
         # Saturday: FP3, Qualifying, and Sprint (if sprint weekend)
         # Sunday: Grand Prix Race results
         run: |
-          TARGET_DAY="${{ inputs.day || 'all' }}"
+          TARGET_DAY="${{ inputs.day || 'auto' }}"
           echo "Ingesting active weekend for target day: $TARGET_DAY"
           PYTHONPATH=backend python3 backend/data_loader.py --current --day "$TARGET_DAY"
 
@@ -54,11 +73,13 @@ jobs:
           PYTHONPATH=backend python3 backend/data_loader.py --past-missing
 
       - name: Update README benchmark metrics
+        if: steps.session_check.outputs.skip != 'true'
         # Recalculate 2026 walk-forward accuracy benchmarks whenever new race results arrive
         run: |
           PYTHONPATH=backend python3 backend/update_readme_benchmarks.py
 
       - name: Run news agent technical scraper
+        if: steps.session_check.outputs.skip != 'true'
         # Scrapes technical upgrade news for the upcoming race weekend
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -66,6 +87,7 @@ jobs:
           PYTHONPATH=backend python3 backend/news_agent.py
 
       - name: Commit & push new data
+        if: steps.session_check.outputs.skip != 'true'
         run: |
           git config --global user.name  "Paddock Scout Bot"
           git config --global user.email "actions@github.com"

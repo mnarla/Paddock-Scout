@@ -25,7 +25,8 @@ import argparse
 import logging
 import os
 import sys
-from typing import List, Optional
+from datetime import datetime, timezone
+from typing import List, Optional, Tuple
 
 import fastf1
 import pandas as pd
@@ -75,13 +76,16 @@ def _csv_path(year: int, rnd: int, suffix: str) -> str:
 def get_sessions_for_day(day: str, is_sprint: bool) -> List[str]:
     """
     Determine which FastF1 sessions should be fetched for a given day:
+      - 'thursday': No track sessions (media / technical upgrade news only)
       - 'friday':   FP1 and FP2 (or FP1 and SQ if sprint weekend)
       - 'saturday': FP3 and Q (or Sprint and Q if sprint weekend)
       - 'sunday':   Grand Prix Race (R)
       - 'all':      All weekend sessions
     """
     day = day.lower().strip()
-    if day == "friday":
+    if day == "thursday":
+        return []
+    elif day == "friday":
         return ["FP1", "SQ", "FP2"] if is_sprint else ["FP1", "FP2"]
     elif day == "saturday":
         return ["S", "Q"] if is_sprint else ["FP3", "Q"]
@@ -90,12 +94,13 @@ def get_sessions_for_day(day: str, is_sprint: bool) -> List[str]:
     elif day == "all":
         return ["FP1", "FP2", "FP3", "Q", "S", "R"]
     else:
-        raise ValueError(f"Unknown day '{day}'. Allowed: 'friday', 'saturday', 'sunday', 'all', 'auto'.")
+        raise ValueError(f"Unknown day '{day}'. Allowed: 'thursday', 'friday', 'saturday', 'sunday', 'all', 'auto'.")
 
 
 def resolve_auto_day(now: Optional[object] = None) -> str:
     """
     Auto-detect session day based on current weekday:
+      - Thursday (weekday 3): 'thursday' (FIA Car Display / tech news)
       - Friday (weekday 4): 'friday'
       - Saturday (weekday 5): 'saturday'
       - Sunday (weekday 6) or Monday (weekday 0): 'sunday'
@@ -105,7 +110,9 @@ def resolve_auto_day(now: Optional[object] = None) -> str:
         from datetime import datetime
         now = datetime.now()
     wd = now.weekday()
-    if wd == 4:
+    if wd == 3:
+        return "thursday"
+    elif wd == 4:
         return "friday"
     elif wd == 5:
         return "saturday"
@@ -286,6 +293,10 @@ def load_current_weekend(day: str = "all", force: bool = False) -> None:
     target_day = resolve_auto_day() if day == "auto" else day
     sessions = get_sessions_for_day(target_day, ri.is_sprint)
 
+    if not sessions:
+        log.info(f"Target day '{target_day}': No track sessions scheduled. News and upgrade ingestion only.")
+        return
+
     log.info(f"Current weekend: {ri.name} (Round {ri.round_num}, {ri.date:%Y-%m-%d}) | Target day: {target_day} | Sessions: {sessions}")
     load_event(
         year       = ri.date.year,
@@ -323,15 +334,80 @@ def ingest_past_missing(force: bool = False) -> None:
             log.info(f"Rd {race.round_num:02d} {race.name}: already present, skipping.")
 
 
+def is_day_complete(now: Optional[datetime] = None) -> Tuple[bool, str]:
+    """
+    Check if today's required session data has already been ingested.
+    Returns (True, reason) if today is complete and further actions should be skipped.
+    Returns (False, reason) if sessions are still expected today or if it is Thursday news day.
+    """
+    if now is None:
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
+
+    wd = now.weekday()
+    # Tuesday (1) & Wednesday (2): Midweek, no race actions
+    if wd in (1, 2):
+        return True, f"Midweek ({now.strftime('%A')}) — no race weekend sessions scheduled."
+
+    # Thursday (3): Technical upgrade discovery window! Always run news agent
+    if wd == 3:
+        return False, "Thursday evening technical upgrade discovery window — proceeding."
+
+    ri = get_next_race_full(now=now)
+    yr = ri.date.year
+    rnd = ri.round_num
+
+    # Check days away from Sunday race
+    days_to_race = (ri.date - now).days
+    if days_to_race > 4:
+        # Active race is in a future week; check if any past race is missing
+        past = get_past_races(now=now)
+        for p in past:
+            csv = _csv_path(p.date.year, p.round_num, "")
+            if not os.path.exists(csv):
+                return False, f"Past completed race Rd {p.round_num} ({p.name}) is missing results CSV."
+        return True, f"Next race Rd {rnd} ({ri.name}) is {days_to_race} days away; past races are complete."
+
+    # Friday (4)
+    if wd == 4:
+        fp1_file = _csv_path(yr, rnd, "fp1")
+        fp2_file = _csv_path(yr, rnd, "fp2")
+        sq_file  = _csv_path(yr, rnd, "sq")
+        if ri.is_sprint:
+            if os.path.exists(fp1_file) and (os.path.exists(sq_file) or os.path.exists(fp2_file)):
+                return True, f"Friday practice and sprint qualifying for Round {rnd} ({ri.name}) are already ingested."
+        else:
+            if os.path.exists(fp1_file) and os.path.exists(fp2_file):
+                return True, f"Friday FP1 and FP2 for Round {rnd} ({ri.name}) are already ingested."
+        return False, f"Friday session data for Round {rnd} ({ri.name}) is still awaited."
+
+    # Saturday (5)
+    elif wd == 5:
+        q_file = _csv_path(yr, rnd, "q")
+        if os.path.exists(q_file):
+            return True, f"Saturday Qualifying for Round {rnd} ({ri.name}) is already ingested."
+        return False, f"Saturday session data for Round {rnd} ({ri.name}) is still awaited."
+
+    # Sunday (6) or Monday (0)
+    elif wd in (6, 0):
+        r_file = _csv_path(yr, rnd, "")
+        if os.path.exists(r_file):
+            return True, f"Grand Prix race results for Round {rnd} ({ri.name}) are already ingested."
+        return False, f"Grand Prix race results for Round {rnd} ({ri.name}) are still awaited."
+
+    return False, "Awaiting session data."
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 def main() -> None:
     setup_environment()
     parser = argparse.ArgumentParser(description="F1 Live Data Loader")
     parser.add_argument("--current", action="store_true",
                         help="Only load the current race weekend (fast)")
-    parser.add_argument("--day", choices=["friday", "saturday", "sunday", "auto", "all"],
+    parser.add_argument("--day", choices=["thursday", "friday", "saturday", "sunday", "auto", "all"],
                         default="all",
-                        help="Which day's sessions to load: friday (FP1, FP2), saturday (FP3, Q, Sprint), sunday (Race), auto, or all")
+                        help="Which day's sessions to load: thursday (news only), friday (FP1, FP2), saturday (FP3, Q, Sprint), sunday (Race), auto, or all")
+    parser.add_argument("--thursday", action="store_const", dest="day", const="thursday",
+                        help="Shortcut for --day thursday (news only)")
     parser.add_argument("--friday", action="store_const", dest="day", const="friday",
                         help="Shortcut for --day friday (FP1, FP2)")
     parser.add_argument("--saturday", action="store_const", dest="day", const="saturday",
@@ -342,7 +418,20 @@ def main() -> None:
                         help="Ingest any completed race that is missing its CSV (used by CI)")
     parser.add_argument("--force", action="store_true",
                         help="Re-download even if CSV already exists")
+    parser.add_argument("--check-day-complete", action="store_true",
+                        help="Check if today's sessions are already complete and set skip output")
     args = parser.parse_args()
+
+    if args.check_day_complete:
+        complete, reason = is_day_complete()
+        msg = f"{'SKIP' if complete else 'PROCEED'}: {reason}"
+        log.info(f"[check-day-complete] {msg}")
+        print(msg)
+        if "GITHUB_OUTPUT" in os.environ:
+            with open(os.environ["GITHUB_OUTPUT"], "a") as gh_out:
+                gh_out.write(f"skip={'true' if complete else 'false'}\n")
+                gh_out.write(f"reason={reason}\n")
+        sys.exit(0)
 
     if args.current:
         load_current_weekend(day=args.day, force=args.force)
