@@ -1,6 +1,7 @@
-import { useEffect, useMemo } from "react";
-import { DRIVERS_2026, type Driver } from "@/data/drivers2026";
+import { useEffect } from "react";
+import { type Driver } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
+import { RotateCcw, Minus, Plus, Sliders } from "lucide-react";
 
 interface Props {
   driver: Driver | null;
@@ -18,7 +19,6 @@ export function WhatIfPanel({
   driver,
   gridPos,
   form,
-  onDriverChange,
   onGridChange,
   onFormChange,
   onReset,
@@ -26,173 +26,168 @@ export function WhatIfPanel({
   isPostQuali = false,
 }: Props) {
   const team = driver ? TEAMS[driver.team] : null;
-  const activeDrivers = drivers ?? DRIVERS_2026;
+  const maxGrid = drivers?.length ?? 22;
 
-  const sortedDrivers = useMemo(() => {
-    return [...activeDrivers].sort((a, b) => {
-      const nameA = TEAMS[a.team]?.name || "";
-      const nameB = TEAMS[b.team]?.name || "";
-      if (nameA !== nameB) {
-        return nameA.localeCompare(nameB);
-      }
-      return a.last.localeCompare(b.last);
-    });
-  }, [activeDrivers]);
+  const isModified =
+    driver &&
+    (gridPos !== driver.qualifyingPos || Math.abs(form - driver.recentForm) > 0.05);
 
-  // Subtle effect: snap grid back into bounds if driver changes
+  // Snap grid back into bounds if driver changes
   useEffect(() => {
-    if (driver && (gridPos < 1 || gridPos > activeDrivers.length)) onReset();
-  }, [driver, gridPos, activeDrivers.length, onReset]);
+    if (driver && (gridPos < 1 || gridPos > maxGrid)) onReset();
+  }, [driver, gridPos, maxGrid, onReset]);
 
   return (
-    <aside className="rounded-lg border border-hairline bg-card">
-      <div className="border-b border-hairline px-4 py-3">
-        <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-          What-If Scenario
-        </p>
-        <p className="mt-0.5 text-[11px] text-muted-foreground/70">
-          Override grid & form to forecast podium probability.
-        </p>
-      </div>
-
-      <div className="space-y-5 px-4 py-4">
-        {/* Driver select */}
-        <div>
-          <label className="mb-1.5 block text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-            Driver
-          </label>
-          <div className="relative">
-            <div
-              className="absolute left-0 top-0 h-full w-1 rounded-l transition-colors"
-              style={{ background: team?.color ?? "var(--color-hairline)" }}
-            />
-            <select
-              value={driver?.id ?? ""}
-              onChange={(e) => onDriverChange(e.target.value)}
-              className="tabular w-full appearance-none rounded border border-hairline bg-secondary py-2 pl-4 pr-8 text-sm font-semibold text-foreground outline-none focus:border-f1-red"
-            >
-              <option value="" disabled>
-                Select a driver...
-              </option>
-              {sortedDrivers.map((d) => (
-                <option key={d.id} value={d.id}>
-                  #{d.number} {d.first} {d.last} · {TEAMS[d.team].short}
-                </option>
-              ))}
-            </select>
-          </div>
-          {driver ? (
-            <div className="mt-2 flex items-center justify-between text-[11px] text-muted-foreground">
-              <span>
-                Champ. P
-                <span className="tabular text-foreground">{driver.standingsRank}</span>
-              </span>
-              <span>
-                Form{" "}
-                <span className="tabular text-foreground">
-                  {driver.recentForm.toFixed(1)}
-                </span>
-              </span>
-              <span>
-                {isPostQuali ? "Q " : "Grid "}
-                <span className="tabular text-foreground">
-                  P{driver.qualifyingPos}
-                </span>
-              </span>
-            </div>
+    <div className="space-y-3 pt-1">
+      {/* Telemetry Status Bar */}
+      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06]">
+        <div className="flex items-center gap-2">
+          <Sliders className="w-3.5 h-3.5 text-rose-400" />
+          <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-300">
+            Telemetry Overrides
+          </span>
+        </div>
+        <div className="flex items-center gap-2">
+          {isModified ? (
+            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-amber-500/15 border border-amber-500/30 text-amber-400">
+              <span className="w-1 h-1 rounded-full bg-amber-400 animate-pulse" />
+              SIMULATED
+            </span>
           ) : (
-            <div className="mt-2 text-[11px] text-muted-foreground/60 italic">
-              Choose a driver to unlock live telemetry & sliders
-            </div>
+            <span className="text-[9px] font-mono text-slate-500 uppercase">
+              BASELINE REALITY
+            </span>
           )}
         </div>
+      </div>
 
-        {/* Grid slider */}
-        <SliderRow
-          label="Grid Position"
-          value={gridPos}
-          min={1}
-          max={activeDrivers.length}
-          step={1}
-          format={(v) => `P${v}`}
-          onChange={onGridChange}
-          disabled={!driver}
-        />
+      {/* Grid Position Slider Row */}
+      <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.05] space-y-2">
+        <div className="flex items-baseline justify-between">
+          <div>
+            <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400">
+              Starting Grid Slot
+            </div>
+            <div className="text-[9px] text-slate-500">
+              {isPostQuali ? "Official Qualifying Result" : "Projected Grid Rank"}
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              disabled={!driver || gridPos <= 1}
+              onClick={() => onGridChange(Math.max(1, gridPos - 1))}
+              className="w-5 h-5 flex items-center justify-center rounded bg-white/[0.05] hover:bg-white/[0.1] text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer text-xs"
+              aria-label="Decrease grid position"
+            >
+              <Minus className="w-3 h-3" />
+            </button>
+            <span className="font-mono text-base font-black text-white tabular w-9 text-center bg-white/[0.04] py-0.5 rounded border border-white/[0.08]">
+              P{gridPos}
+            </span>
+            <button
+              type="button"
+              disabled={!driver || gridPos >= maxGrid}
+              onClick={() => onGridChange(Math.min(maxGrid, gridPos + 1))}
+              className="w-5 h-5 flex items-center justify-center rounded bg-white/[0.05] hover:bg-white/[0.1] text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer text-xs"
+              aria-label="Increase grid position"
+            >
+              <Plus className="w-3 h-3" />
+            </button>
+          </div>
+        </div>
 
-        {/* Form slider */}
-        <SliderRow
-          label="Recent Form (Avg Finish)"
-          value={form}
-          min={1}
-          max={activeDrivers.length}
-          step={0.1}
-          format={(v) => v.toFixed(1)}
-          onChange={onFormChange}
-          disabled={!driver}
-        />
+        {/* Custom Telemetry Slider */}
+        <div className="relative pt-1 pb-1">
+          <input
+            type="range"
+            min={1}
+            max={maxGrid}
+            step={1}
+            value={gridPos}
+            disabled={!driver}
+            onChange={(e) => onGridChange(Number(e.target.value))}
+            className="w-full h-1.5 rounded-lg appearance-none cursor-pointer bg-slate-800 accent-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500/50"
+          />
+          <div className="flex justify-between text-[8px] font-mono text-slate-500 mt-1 px-0.5">
+            <span>P1 (Pole)</span>
+            <span>P5</span>
+            <span>P10</span>
+            <span>P15</span>
+            <span>P{maxGrid}</span>
+          </div>
+        </div>
+      </div>
 
+      {/* Recent Form Slider Row */}
+      <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.05] space-y-2">
+        <div className="flex items-baseline justify-between">
+          <div>
+            <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400">
+              Recent Form Metric
+            </div>
+            <div className="text-[9px] text-slate-500">
+              Rolling 3-Race Weighted Finish (Lower = Faster)
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              disabled={!driver || form <= 1}
+              onClick={() => onFormChange(Math.max(1, Number((form - 0.5).toFixed(1))))}
+              className="w-5 h-5 flex items-center justify-center rounded bg-white/[0.05] hover:bg-white/[0.1] text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer text-xs"
+              aria-label="Improve form"
+            >
+              <Minus className="w-3 h-3" />
+            </button>
+            <span className="font-mono text-base font-black text-emerald-400 tabular w-12 text-center bg-white/[0.04] py-0.5 rounded border border-white/[0.08]">
+              {form.toFixed(1)}
+            </span>
+            <button
+              type="button"
+              disabled={!driver || form >= maxGrid}
+              onClick={() => onFormChange(Math.min(maxGrid, Number((form + 0.5).toFixed(1))))}
+              className="w-5 h-5 flex items-center justify-center rounded bg-white/[0.05] hover:bg-white/[0.1] text-slate-300 disabled:opacity-30 disabled:pointer-events-none transition cursor-pointer text-xs"
+              aria-label="Worsen form"
+            >
+              <Plus className="w-3 h-3" />
+            </button>
+          </div>
+        </div>
+
+        {/* Custom Telemetry Slider */}
+        <div className="relative pt-1 pb-1">
+          <input
+            type="range"
+            min={1}
+            max={maxGrid}
+            step={0.1}
+            value={form}
+            disabled={!driver}
+            onChange={(e) => onFormChange(Number(e.target.value))}
+            className="w-full h-1.5 rounded-lg appearance-none cursor-pointer bg-slate-800 accent-emerald-400 focus:outline-none focus:ring-1 focus:ring-emerald-500/50"
+          />
+          <div className="flex justify-between text-[8px] font-mono text-slate-500 mt-1 px-0.5">
+            <span className="text-emerald-400">1.0 (Dominant)</span>
+            <span>5.0</span>
+            <span>10.0</span>
+            <span>15.0</span>
+            <span>{maxGrid}.0 (Back)</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Reset Action */}
+      {isModified && (
         <button
+          type="button"
           onClick={onReset}
-          disabled={!driver}
-          className="w-full rounded border border-hairline bg-secondary px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition hover:border-f1-red hover:text-foreground disabled:opacity-40 disabled:pointer-events-none"
+          className="w-full py-1.5 px-3 rounded-lg border border-white/[0.1] bg-white/[0.03] hover:bg-white/[0.07] text-[10px] font-mono font-bold text-slate-300 hover:text-white uppercase tracking-wider flex items-center justify-center gap-1.5 transition cursor-pointer"
         >
-          {isPostQuali ? "Reset to Qualifying" : "Reset to Default Grid"}
+          <RotateCcw className="w-3 h-3 text-rose-400" />
+          <span>Reset Overrides to Baseline (P{driver?.qualifyingPos} · {driver?.recentForm.toFixed(1)})</span>
         </button>
-      </div>
-    </aside>
-  );
-}
-
-function SliderRow({
-  label,
-  value,
-  min,
-  max,
-  step,
-  format,
-  onChange,
-  disabled = false,
-}: {
-  label: string;
-  value: number;
-  min: number;
-  max: number;
-  step: number;
-  format: (v: number) => string;
-  onChange: (v: number) => void;
-  disabled?: boolean;
-}) {
-  const pct = ((value - min) / (max - min)) * 100;
-  return (
-    <div className={disabled ? "opacity-40 pointer-events-none transition-opacity" : "transition-opacity"}>
-      <div className="mb-1.5 flex items-baseline justify-between">
-        <label className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
-          {label}
-        </label>
-        <span className="tabular text-sm font-bold text-foreground">
-          {format(value)}
-        </span>
-      </div>
-      <div className="relative h-1.5 rounded-full bg-secondary">
-        <div
-          className="absolute left-0 top-0 h-full rounded-full bg-f1-red"
-          style={{ width: `${pct}%` }}
-        />
-        <input
-          type="range"
-          min={min}
-          max={max}
-          step={step}
-          value={value}
-          disabled={disabled}
-          onChange={(e) => onChange(Number(e.target.value))}
-          className="absolute inset-0 h-full w-full cursor-pointer appearance-none bg-transparent
-            [&::-webkit-slider-thumb]:h-4 [&::-webkit-slider-thumb]:w-4
-            [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full
-            [&::-webkit-slider-thumb]:border-2 [&::-webkit-slider-thumb]:border-f1-red
-            [&::-webkit-slider-thumb]:bg-background"
-        />
-      </div>
+      )}
     </div>
   );
 }

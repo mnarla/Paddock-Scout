@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { FEATURE_LABELS, type Prediction } from "@/lib/prediction";
 import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
+import { Clock, Gauge, CheckCircle2, Info } from "lucide-react";
 
 interface Props {
   prediction?: Prediction | null;
@@ -103,65 +104,67 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
   return (
-    <section className="rounded-lg border border-hairline bg-card">
-      <div className="flex items-baseline justify-between border-b border-hairline px-4 py-3">
+    <div className="space-y-3 pt-1">
+      {/* Telemetry Stage Status Bar */}
+      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06]">
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-muted-foreground">
-            How the AI decided
-          </p>
-          <p className="mt-0.5 text-[11px] text-muted-foreground/70">{subheader}</p>
+          <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-300">
+            Model Feature Weights
+          </div>
+          <div className="text-[9px] text-slate-500 font-sans">{subheader}</div>
         </div>
-        <span className="tabular text-[11px] font-bold text-muted-foreground">
-          {isWeightsLoading ? "—" : "Σ 100.0%"}
+        <span className="font-mono text-[10px] font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20">
+          {isWeightsLoading ? "..." : "Σ 100.0%"}
         </span>
       </div>
 
+      {/* Session Stage Status Banner with SVG Icons */}
       {stage === "pre_weekend" && (
-        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-amber-500/30 bg-amber-500/10 px-3 py-2 text-[11px] text-amber-400">
-          <span className="shrink-0 text-xs">⏳</span>
-          <span>{statusMessage}</span>
+        <div className="flex items-start gap-2.5 rounded-lg border border-amber-500/25 bg-amber-500/10 px-3 py-2 text-[10px] text-amber-300/90 font-mono">
+          <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
+          <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
       {stage === "friday_practice" && (
-        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-sky-500/30 bg-sky-500/10 px-3 py-2 text-[11px] text-sky-400">
-          <span className="shrink-0 text-xs">🏎️</span>
-          <span>{statusMessage}</span>
+        <div className="flex items-start gap-2.5 rounded-lg border border-sky-500/25 bg-sky-500/10 px-3 py-2 text-[10px] text-sky-300/90 font-mono">
+          <Gauge className="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5" />
+          <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
       {stage === "fully_ingested" && (
-        <div className="mx-4 mt-3 flex items-start gap-2 rounded border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-[11px] text-emerald-400">
-          <span className="shrink-0 text-xs">✅</span>
-          <span>{statusMessage}</span>
+        <div className="flex items-start gap-2.5 rounded-lg border border-emerald-500/25 bg-emerald-500/10 px-3 py-2 text-[10px] text-emerald-300/90 font-mono">
+          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+          <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
-      <div className="space-y-2.5 px-4 py-4">
+      {/* Feature Progress Bars */}
+      <div className="space-y-2 p-3 rounded-lg bg-white/[0.02] border border-white/[0.05]">
         {isWeightsLoading ? (
-          // Skeleton rows while weights are fetching
-          Array.from({ length: 7 }).map((_, i) => (
-            <div key={i} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
-              <div className="h-2.5 w-20 animate-pulse rounded bg-secondary" />
-              <div className="h-2 animate-pulse rounded-sm bg-secondary" />
-              <div className="h-2.5 w-10 animate-pulse rounded bg-secondary" />
+          Array.from({ length: 6 }).map((_, i) => (
+            <div key={i} className="grid grid-cols-[120px_1fr_45px] items-center gap-3">
+              <div className="h-2 w-20 animate-pulse rounded bg-white/[0.05]" />
+              <div className="h-1.5 animate-pulse rounded bg-white/[0.05]" />
+              <div className="h-2 w-8 animate-pulse rounded bg-white/[0.05]" />
             </div>
           ))
         ) : (
           normalizedEntries.map((entry) => {
             const barPct = (entry.weight / maxWeight) * 100;
             return (
-              <div key={entry.key} className="grid grid-cols-[110px_1fr_auto] items-center gap-3">
-                <span className="text-[11px] font-medium text-muted-foreground">
+              <div key={entry.key} className="grid grid-cols-[115px_1fr_45px] items-center gap-2.5">
+                <span className="text-[10px] font-mono text-slate-300 truncate">
                   {FEATURE_LABELS[entry.key] ?? entry.key}
                 </span>
-                <div className="relative h-2 overflow-hidden rounded-sm bg-secondary">
+                <div className="relative h-1.5 overflow-hidden rounded-full bg-slate-800">
                   <div
-                    className="h-full bg-gradient-to-r from-f1-red/80 to-f1-red transition-all duration-500 ease-out"
+                    className="h-full rounded-full bg-gradient-to-r from-rose-500/80 to-rose-400 transition-all duration-300 ease-out"
                     style={{ width: `${barPct}%` }}
                   />
                 </div>
-                <span className="tabular w-10 text-right text-[11px] font-bold text-foreground">
+                <span className="font-mono text-right text-[10px] font-bold text-white tabular">
                   {(entry.weight * 100).toFixed(1)}%
                 </span>
               </div>
@@ -170,12 +173,15 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         )}
       </div>
 
-      {/* Race-day uncertainty note */}
+      {/* Uncertainty Note */}
       {!isWeightsLoading && (
-        <p className="border-t border-hairline px-4 pb-3 pt-2.5 text-[10px] text-muted-foreground/60">
-          * Feature influences reflect the model&apos;s decision breakdown for this driver. Residual uncertainty accounts for race-day chaos, safety cars, weather, and mechanical reliability.
-        </p>
+        <div className="flex items-start gap-1.5 px-1 text-[9px] font-mono text-slate-500">
+          <Info className="w-3 h-3 text-slate-500 shrink-0 mt-0.5" />
+          <span>
+            Feature influences reflect the model&apos;s decision breakdown for this driver. Residual uncertainty accounts for race-day chaos, safety cars, weather, and mechanical reliability.
+          </span>
+        </div>
       )}
-    </section>
+    </div>
   );
 }
