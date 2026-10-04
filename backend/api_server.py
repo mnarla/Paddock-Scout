@@ -122,6 +122,20 @@ TEAM_NAME_TO_ID = {
     "Cadillac F1 Team": "cadillac",
 }
 
+CANONICAL_TECH_TEAMS = {
+    "red_bull": "Red Bull Racing",
+    "ferrari": "Ferrari",
+    "mercedes": "Mercedes",
+    "mclaren": "McLaren",
+    "aston_martin": "Aston Martin",
+    "alpine": "Alpine",
+    "williams": "Williams",
+    "rb": "Racing Bulls",
+    "haas": "Haas F1 Team",
+    "audi": "Audi",
+    "cadillac": "Cadillac",
+}
+
 DRIVER_DEFAULT_TEAM = {
     "antonelli": "mercedes",
     "russell": "mercedes",
@@ -532,22 +546,6 @@ def get_drivers():
     drivers = []
     ctx_sorted = ctx.sort_values("SeasonPoints", ascending=False).reset_index(drop=True)
     
-    # Timing and practice pacing for next weekend
-    ri = get_next_race_full()
-    pp = compute_practice_pace(DATA_DIR, ri.date.year, ri.round_num)
-    qd = compute_qualifying_dominance(DATA_DIR, ri.date.year, ri.round_num)
-    
-    sp_path = os.path.join(DATA_DIR, f"results_{ri.date.year}_round{ri.round_num:02d}s.csv")
-    if os.path.exists(sp_path):
-        sdf = pd.read_csv(sp_path)
-        sdf["Position"] = pd.to_numeric(sdf["Position"], errors="coerce")
-        sf = sdf.set_index("DriverId")["Position"].dropna()
-    else:
-        sf = pd.Series(dtype=float)
-        
-    from features import compute_weekend_momentum
-    momentum_series = compute_weekend_momentum(pp, qd, sf, ri.is_sprint)
-    
     for idx, row in ctx_sorted.iterrows():
         did = row["DriverId"]
         if did not in DRIVER_INFO:
@@ -608,8 +606,10 @@ def predict():
         if os.path.exists(upgrade_file):
             with open(upgrade_file, "r") as f:
                 tech_data = json.load(f)
-                if team_name in tech_data and "Component" in tech_data[team_name]:
-                    t_info = tech_data[team_name]
+                t_id = TEAM_NAME_TO_ID.get(team_name, team_name.lower())
+                canonical_team = CANONICAL_TECH_TEAMS.get(t_id, team_name)
+                if canonical_team in tech_data and "Component" in tech_data[canonical_team]:
+                    t_info = tech_data[canonical_team]
                     upgrade = float(t_info.get("Upgrade_Score", 0.0))
     except Exception:
         upgrade = 0.0
@@ -873,15 +873,27 @@ def get_upgrades():
         info = live_tech.get(team, {})
         component  = info.get("Component", "")
         certainty  = info.get("Certainty", "pending")
-        is_pending = certainty == "pending" or not component or component == "No confirmed upgrade data yet"
+        status     = info.get("Status", "")
+        sources    = info.get("Sources") or []
+        source_name = sources[0] if sources else "News Feed"
 
-        if not is_pending:
-            # New pipeline schema
+        # A confirmed technical upgrade must have an actual reported component,
+        # confirmed certainty, and not be a baseline or pending placeholder.
+        is_real_upgrade = (
+            certainty == "confirmed"
+            and bool(component)
+            and component != "No confirmed upgrade data yet"
+            and component != "Stable Aerodynamic Package"
+            and status != "STABLE_SPEC"
+            and status != "PENDING"
+            and source_name != "Baseline"
+            and source_name != "Awaiting reports"
+        )
+
+        if is_real_upgrade:
             validation_str = info.get("Upgrade_Validation", "UNVERIFIED")
             validated      = (validation_str == "VALID")
             pace_delta     = float(info.get("Pace_Delta", 0.0))
-            sources        = info.get("Sources") or []
-            source_name    = sources[0] if sources else "News Feed"
             as_of          = info.get("As_Of") or latest_validation_race
             url            = info.get("URL", "")
             category       = info.get("Category", "Aero")
@@ -900,25 +912,9 @@ def get_upgrades():
                 "isCurrentWeekend": info.get("Is_Current_Weekend", False),
                 "badge":      info.get("Badge", ""),
             })
-        else:
-            # Honest PENDING placeholder
-            upgrades.append({
-                "team":       team_id,
-                "component":  "No confirmed upgrade data yet",
-                "category":   "Aero",
-                "validated":  False,
-                "paceDelta":  0.0,
-                "source":     "Awaiting reports",
-                "url":        "",
-                "asOf":       latest_validation_race,
-                "confirmed":  False,
-                "status":     "PENDING",
-                "isCurrentWeekend": False,
-                "badge":      "Awaiting reports",
-            })
 
-    # Sort: confirmed first, then alphabetical by team id
-    upgrades.sort(key=lambda u: (not u["confirmed"], u["team"]))
+    # Sort: alphabetical by team id
+    upgrades.sort(key=lambda u: u["team"])
     return jsonify(upgrades)
 
 

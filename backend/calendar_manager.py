@@ -179,12 +179,25 @@ def _is_cancelled(name: str) -> bool:
 
 
 def _is_past(info: Dict[str, Any], now: datetime) -> bool:
-    """Return True if the race is completed (results CSV exists or race date + 1 day in UTC is past)."""
+    """Return True if the race is completed (results CSV exists, race session + 3.5h is past, or race date + 1 day in UTC is past)."""
     rnd = info.get("round")
     if rnd:
         csv_path = os.path.join(os.path.dirname(__file__), "..", "data", f"results_2026_round{rnd:02d}.csv")
         if os.path.exists(csv_path):
             return True
+
+    # If session timings are available, check if the Grand Prix race has concluded on track (+3.5 hours)
+    for session in info.get("sessions", []):
+        if session.get("shortName") in ("Grand Prix", "Race") or "Race" in session.get("name", ""):
+            utc_str = session.get("utcTime")
+            if utc_str:
+                try:
+                    race_time = datetime.fromisoformat(utc_str.replace("Z", "+00:00")).astimezone(timezone.utc).replace(tzinfo=None)
+                    if race_time + timedelta(hours=3, minutes=30) <= now:
+                        return True
+                except Exception:
+                    pass
+
     return info["date"] + timedelta(days=1) <= now
 
 
