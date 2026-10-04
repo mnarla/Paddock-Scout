@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { type Driver } from "@/data/drivers2026";
+import { TEAMS } from "@/data/teams";
 import { RotateCcw, Minus, Plus, Sliders, Info } from "lucide-react";
 
 interface Props {
