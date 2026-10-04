@@ -165,3 +165,40 @@
   background: rgba(255, 255, 255, 0.35);
 }
 
+@keyframes raceAroundTrack {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.track-racer {
+  offset-rotate: auto;
+  will-change: offset-distance;
+}
+
+.track-racer-red {
+  animation: raceAroundTrack 14s linear infinite;
+  animation-delay: 0s;
+}
+
+.track-racer-coral {
+  animation: raceAroundTrack 18s linear infinite;
+  animation-delay: -6s;
+}
+
+.track-racer-cyan {
+  animation: raceAroundTrack 22s linear infinite;
+  animation-delay: -12s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track-racer,
+  .track-racer-red,
+  .track-racer-coral,
+  .track-racer-cyan {
+    animation: none !important;
+  }
+}

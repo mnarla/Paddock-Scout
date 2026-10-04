@@ -13,6 +13,7 @@ import {
 
 import { TEAMS } from "@/data/teams";
 import { API_BASE_URL } from "@/lib/config";
+import { ModelTrackRecordCard } from "@/components/paddock/ModelTrackRecordCard";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface ArchiveRound {
@@ -68,32 +69,20 @@ function SkeletonBlock({ className }: { className?: string }) {
 
 function ArchiveSkeleton() {
   return (
-    <main className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 space-y-4">
-      {/* Chart skeleton */}
-      <section className="rounded-md border border-hairline bg-card p-4 sm:p-5">
-        <div className="mb-4 flex items-baseline justify-between">
-          <div className="space-y-1.5">
-            <SkeletonBlock className="h-3 w-32" />
-            <SkeletonBlock className="h-2.5 w-48" />
-          </div>
-          <SkeletonBlock className="h-2.5 w-20" />
-        </div>
-        <SkeletonBlock className="h-[420px] w-full" />
-      </section>
-
-      {/* Podiums skeleton */}
-      <section className="rounded-md border border-hairline bg-card p-4 sm:p-5">
-        <div className="mb-3 space-y-1.5">
-          <SkeletonBlock className="h-3 w-28" />
-          <SkeletonBlock className="h-2.5 w-56" />
-        </div>
-        <div className="space-y-2">
+    <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-6 sm:p-8 space-y-6 shadow-[0_20px_60px_rgba(0,0,0,0.85)]">
+      <div className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5">
+        <SkeletonBlock className="h-4 w-40 mb-3" />
+        <SkeletonBlock className="h-[360px] w-full" />
+      </div>
+      <div className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5">
+        <SkeletonBlock className="h-4 w-32 mb-4" />
+        <div className="space-y-2.5">
           {Array.from({ length: 8 }).map((_, i) => (
-            <SkeletonBlock key={i} className="h-8 w-full" />
+            <SkeletonBlock key={i} className="h-9 w-full" />
           ))}
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
   );
 }
 
@@ -172,65 +161,54 @@ function ArchivePage() {
       : [];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-30 border-b border-hairline bg-background/85 backdrop-blur-md">
-        <div className="mx-auto flex max-w-[1600px] items-center gap-4 px-4 py-3 sm:px-6 sm:py-4 relative">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block">
-            <span className="text-base font-black tracking-[0.25em] text-f1-red uppercase">
-              Paddock Scout
-            </span>
-          </div>
-          <span className="tabular text-[11px] font-bold tracking-[0.2em] text-f1-red">
-            ARCHIVE
-          </span>
-          <div className="hidden h-6 w-px bg-hairline sm:block" />
-          <h1 className="text-sm font-bold tracking-tight sm:text-base">
-            2026 SEASON · CHAMPIONSHIP PROGRESSION
-          </h1>
-          <div className="ml-auto">
-            <Link
-              to="/"
-              className="rounded-sm border border-hairline px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-muted-foreground transition-colors hover:border-f1-red hover:text-foreground"
-            >
-              ← Home
-            </Link>
-          </div>
+    <div className="min-h-screen bg-[#07090e] text-slate-100 relative selection:bg-rose-500/30 pt-20 pb-12 px-4 sm:px-6">
+      <header className="fixed top-5 left-0 right-0 z-50 flex justify-center px-4 pointer-events-auto">
+        <div className="flex items-center gap-3 px-4 py-1.5 rounded-full bg-[#101422]/85 backdrop-blur-xl border border-slate-700/50 shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
+          <span className="text-xs font-black tracking-widest text-rose-500 uppercase">ARCHIVE</span>
+          <span className="text-xs font-semibold text-slate-300">2026 Championship Progression</span>
+          <Link
+            to="/"
+            className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:text-white transition"
+          >
+            ← Home
+          </Link>
         </div>
       </header>
 
-      {/* Error state */}
-      {loadError && (
-        <main className="mx-auto max-w-[1600px] px-4 py-16 sm:px-6 text-center">
-          <p className="text-sm text-muted-foreground">
+      <main className="w-full max-w-6xl mx-auto space-y-6">
+        {/* Error state */}
+        {loadError && (
+          <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-8 text-center text-slate-400">
             Could not load archive data. Please try again later.
-          </p>
-        </main>
-      )}
+          </div>
+        )}
 
-      {/* Skeleton while loading */}
-      {!loadError && isLoading && <ArchiveSkeleton />}
+        {/* Skeleton while loading */}
+        {!loadError && isLoading && <ArchiveSkeleton />}
 
-      {/* Full content once loaded */}
-      {!loadError && !isLoading && (
-        <main className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6">
-          {/* Championship Progression Chart */}
-          <section className="rounded-md border border-hairline bg-card p-4 sm:p-5">
-            <div className="mb-4 flex items-baseline justify-between">
-              <div>
-                <h2 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                  Cumulative Points
-                </h2>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  Rounds 1–{rounds!.length} · top {drivers!.length} drivers ·
-                  team-coloured lines
-                </p>
+        {/* Full content once loaded */}
+        {!loadError && !isLoading && (
+          <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-6 sm:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.85)] space-y-6">
+            {/* Walk-Forward Model Track Record Benchmark */}
+            <ModelTrackRecordCard />
+
+            {/* Championship Progression Chart */}
+            <section className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5">
+              <div className="mb-4 flex items-baseline justify-between">
+                <div>
+                  <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+                    Cumulative Points
+                  </h2>
+                  <p className="mt-1 text-xs text-slate-500">
+                    Rounds 1–{rounds!.length} · top {drivers!.length} drivers · team colors
+                  </p>
+                </div>
+                <span className="tabular text-xs font-mono uppercase tracking-wider text-slate-400">
+                  {rounds!.length} rounds archived
+                </span>
               </div>
-              <span className="tabular text-[10px] uppercase tracking-wider text-muted-foreground">
-                {rounds!.length} rounds archived
-              </span>
-            </div>
 
-            <div className="h-[420px] w-full">
+              <div className="h-[380px] w-full">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart
                   data={chartData}
@@ -631,8 +609,9 @@ function ArchivePage() {
               )}
             </section>
           )}
-        </main>
+        </div>
       )}
+      </main>
     </div>
   );
 }

@@ -2,50 +2,24 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState, useEffect } from "react";
 
 import { NEXT_RACE, type RaceInfo } from "@/data/calendar2026";
-import { DRIVERS_2026, driverById, type Driver } from "@/data/drivers2026";
+import { DRIVERS_2026, type Driver } from "@/data/drivers2026";
+import { TEAMS } from "@/data/teams";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
 import { API_BASE_URL } from "@/lib/config";
 import { useFeatureWeights } from "@/lib/useFeatureWeights";
 
-import { LiveBanner } from "@/components/paddock/LiveBanner";
-import { WhatIfPanel } from "@/components/paddock/WhatIfPanel";
-import { SelectedDriverCard } from "@/components/paddock/SelectedDriverCard";
-import { DriverEmptyState } from "@/components/paddock/DriverEmptyState";
-import { FeatureContribution } from "@/components/paddock/FeatureContribution";
+import { AmbientRaceTrack } from "@/components/paddock/AmbientRaceTrack";
+import { PillNav, type NavTab } from "@/components/paddock/PillNav";
+import { CockpitDashboard } from "@/components/paddock/CockpitDashboard";
 import { UpgradesRail } from "@/components/paddock/UpgradesRail";
-import { ModelTrackRecordCard } from "@/components/paddock/ModelTrackRecordCard";
 
 export const Route = createFileRoute("/")({
-  loader: async () => {
-    try {
-      const res = await fetch(`${API_BASE_URL}/api/next-race`);
-      if (res.ok) return (await res.json()) as RaceInfo;
-    } catch {}
-    return null;
-  },
   head: () => ({
-    meta: [
-      { title: "Paddock Scout · Live Prediction" },
-      {
-        name: "description",
-        content:
-          "Live F1 podium predictions for the 2026 season. What-if scoring, calibrated feature contributions, and technical upgrades.",
-      },
-      { property: "og:title", content: "Paddock Scout · Live Prediction" },
-      {
-        property: "og:description",
-        content: "F1 2026 podium probability dashboard with validated technical upgrades.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
+    meta: [{ title: "Paddock Scout · Formula 1 Predictions" }],
   }),
-  component: PaddockScoutLive,
+  component: PaddockScoutCockpit,
 });
 
-// Helper to determine if the upcoming Grand Prix has official Qualifying results ready.
-// Qualifying takes place Saturday afternoon (~24-28 hours before Sunday race start).
-// If the Grand Prix is more than 28 hours away (or outside race weekend), qualifying has not occurred yet.
 function isPostQualifyingWeekend(raceDateStr?: string): boolean {
   if (!raceDateStr) return false;
   const raceTimestamp = new Date(`${raceDateStr}T14:00:00Z`).getTime();
@@ -53,66 +27,62 @@ function isPostQualifyingWeekend(raceDateStr?: string): boolean {
   return diffHours <= 28 && diffHours >= -6;
 }
 
-// Module-level prediction cache — persists across driver changes, resets on hard refresh.
-// Key: `${driverId}|${gridPos}|${form}|${raceName}`
 const predCache = new Map<string, any>();
 
-function PaddockScoutLive() {
-  const initialRace = Route.useLoaderData();
+function PaddockScoutCockpit() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
-  const [race, setRace] = useState<RaceInfo>(initialRace ?? NEXT_RACE);
+  const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
   const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
+  const [calendar, setCalendar] = useState<RaceInfo[]>([]);
 
-  // Fetch real RF feature importances from the model — used by FeatureContribution.
   const featureWeights = useFeatureWeights();
-
-  // Stable serialized key for upgrades — prevents object-reference churn from triggering
-  // prediction re-fetches on every render when the upgrades array contents haven't changed.
-  const upgradesKey = useMemo(() => JSON.stringify(upgrades), [upgrades]);
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/api/drivers`)
       .then((res) => res.json())
       .then((data) => {
-        if (data && data.length > 0) setDrivers(data);
+        if (data?.length) {
+          setDrivers(data);
+        }
       })
-      .catch((err) => console.error("Error fetching drivers:", err));
+      .catch(() => {});
 
     fetch(`${API_BASE_URL}/api/next-race`)
       .then((res) => res.json())
-      .then((data) => {
-        if (data) setRace(data);
-      })
-      .catch((err) => console.error("Error fetching next-race:", err));
+      .then((data) => { if (data) setRace(data); })
+      .catch(() => {});
 
     fetch(`${API_BASE_URL}/api/upgrades`)
       .then((res) => res.json())
-      .then((data) => {
-        if (data) setUpgrades(data);
-      })
-      .catch((err) => console.error("Error fetching upgrades:", err));
+      .then((data) => { if (data) setUpgrades(data); })
+      .catch(() => {});
+
+    fetch(`${API_BASE_URL}/api/calendar`)
+      .then((res) => res.json())
+      .then((data) => { if (data?.length) setCalendar(data); })
+      .catch(() => {});
   }, []);
 
   const isPostQuali = useMemo(() => isPostQualifyingWeekend(race?.date), [race?.date]);
 
-  // When outside race weekend or before Qualifying, default starting grid to championship standings rank
-  const activeDrivers = useMemo(() => {
-    return drivers.map((d, idx) => {
-      const standingsRank = d.standingsRank || idx + 1;
-      return {
+  const activeDrivers = useMemo(
+    () =>
+      drivers.map((d, idx) => ({
         ...d,
-        standingsRank,
-        qualifyingPos: isPostQuali && d.qualifyingPos ? d.qualifyingPos : standingsRank,
-      };
-    });
-  }, [drivers, isPostQuali]);
+        standingsRank: d.standingsRank || idx + 1,
+        qualifyingPos:
+          isPostQuali && d.qualifyingPos ? d.qualifyingPos : d.standingsRank || idx + 1,
+      })),
+    [drivers, isPostQuali]
+  );
 
   const [driverId, setDriverId] = useState<string | null>(null);
+  const [navTab, setNavTab] = useState<NavTab>("home");
 
-  const driver = useMemo(() => {
-    if (!driverId) return null;
-    return activeDrivers.find((x) => x.id === driverId) ?? null;
-  }, [activeDrivers, driverId]);
+  const driver = useMemo(
+    () => (driverId ? activeDrivers.find((x) => x.id === driverId) ?? null : null),
+    [activeDrivers, driverId]
+  );
 
   const [gridPos, setGridPos] = useState<number>(1);
   const [form, setForm] = useState<number>(10);
@@ -124,91 +94,16 @@ function PaddockScoutLive() {
     }
   }, [driver?.id, driver?.qualifyingPos, driver?.recentForm]);
 
-  // ── Client-side prediction cache ────────────────────────────────────────────
-  // Caches server predictions keyed by driverId+gridPos+form+raceName.
-  // Prevents identical round-trips when the user switches to a driver they've
-  // already inspected, or when the what-if sliders return to their default pos.
-  // Cache is a module-level Map so it persists across driver changes but resets
-  // on hard refresh (acceptable — stale after a model redeploy anyway).
   const [isPredicting, setIsPredicting] = useState(false);
-
   const [baseline, setBaseline] = useState<any>(null);
   const [prediction, setPrediction] = useState<any>(null);
 
-  // Fetch BASELINE when driver/race/upgrades change.
-  // Also updates prediction when sliders are still at default (avoids duplicate request).
-  useEffect(() => {
-    if (!driver) {
-      setBaseline(null);
-      setPrediction(null);
-      setIsPredicting(false);
-      return;
-    }
-
-    const cacheKey = `${driver.id}|${driver.qualifyingPos}|${Number(driver.recentForm).toFixed(2)}|${race.name}`;
-    const isAtDefault =
-      gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
-
-    if (predCache.has(cacheKey)) {
-      const cached = predCache.get(cacheKey)!;
-      setBaseline(cached);
-      if (isAtDefault || prediction === null) {
-        setPrediction(cached);
-      }
-      setIsPredicting(false);
-      return;
-    }
-
-    let cancelled = false;
-    setIsPredicting(true);
-    setBaseline(null);
-    if (isAtDefault) {
-      setPrediction(null);
-    }
-
-    fetch(`${API_BASE_URL}/api/predict`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        driverId: driver.id,
-        gridPos: driver.qualifyingPos,
-        form: driver.recentForm,
-        grandPrix: race.name,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (!cancelled && data && data.podium !== undefined) {
-          predCache.set(cacheKey, data);
-          setBaseline(data);
-          // If sliders still at default or prediction is unpopulated, promote to prediction too.
-          setPrediction(data);
-        }
-      })
-      .catch((err) => console.error("Error fetching baseline prediction:", err))
-      .finally(() => {
-        if (!cancelled) setIsPredicting(false);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [driver?.id, driver?.qualifyingPos, driver?.recentForm, race.name, upgradesKey]);
-
-  // Fetch WHAT-IF prediction when sliders move away from default.
-  // Skips the network call when sliders are at default (baseline already covers it).
   useEffect(() => {
     if (!driver) return;
-
     const isAtDefault =
       gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
-
-    if (isAtDefault) {
-      // Sliders are at default — synchronize prediction with baseline without extra fetch
-      if (baseline) {
-        setPrediction(baseline);
-      }
+    if (isAtDefault && baseline) {
+      setPrediction(baseline);
       return;
     }
 
@@ -234,12 +129,12 @@ function PaddockScoutLive() {
       })
         .then((res) => res.json())
         .then((data) => {
-          if (!cancelled && data && data.podium !== undefined) {
+          if (!cancelled && data?.podium !== undefined) {
             predCache.set(cacheKey, data);
             setPrediction(data);
           }
         })
-        .catch((err) => console.error("Error fetching what-if prediction:", err))
+        .catch(() => {})
         .finally(() => {
           if (!cancelled) setIsPredicting(false);
         });
@@ -249,11 +144,16 @@ function PaddockScoutLive() {
       cancelled = true;
       clearTimeout(handler);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [driver?.id, gridPos, form, race.name, driver?.qualifyingPos, driver?.recentForm, baseline]);
 
-  const onDriverChange = (id: string) => {
+  const onDriverChange = (id: string | null) => {
     setDriverId(id);
+    if (!id) {
+      setBaseline(null);
+      setPrediction(null);
+      setIsPredicting(false);
+      return;
+    }
     const d = activeDrivers.find((x) => x.id === id);
     if (d) {
       setGridPos(d.qualifyingPos);
@@ -276,79 +176,231 @@ function PaddockScoutLive() {
     if (!driver) return;
     setGridPos(driver.qualifyingPos);
     setForm(driver.recentForm);
-    if (baseline) {
-      setPrediction(baseline);
-    }
+    if (baseline) setPrediction(baseline);
   };
 
+  const onNavSelect = (tab: NavTab) => {
+    setNavTab(tab);
+  };
+
+  // Full calendar sorted by round number
+  const fullCalendar = useMemo(() => {
+    if (calendar.length > 0) {
+      return [...calendar].sort((a, b) => a.round - b.round);
+    }
+    return [race];
+  }, [calendar, race]);
+
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <LiveBanner race={race} onHome={() => setDriverId(null)} />
+    <div className="min-h-screen bg-[#07090e] text-slate-100 relative selection:bg-rose-500/30 overflow-x-hidden flex flex-col justify-center items-center py-20 px-4 sm:px-6">
+      <PillNav activeTab={navTab} onSelectTab={onNavSelect} race={race} calendar={fullCalendar} />
 
-      <main className="mx-auto max-w-[1600px] px-4 py-5 sm:px-6 sm:py-6">
-        <div className="mb-4 rounded-md border border-hairline/60 bg-secondary/15 px-4 py-2.5 text-xs text-muted-foreground">
-          <strong>Disclaimer:</strong> Predictions are based on season form when qualifying or
-          practice data for the next race are not yet available.
-        </div>
+      <main className="w-full max-w-5xl relative z-10 flex items-center justify-center my-auto py-8">
+        <AmbientRaceTrack />
 
-        {/* Main 3-column layout */}
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[290px_minmax(0,1fr)_290px] items-stretch">
-          {/* Left Column: What-If Scenario Cockpit & Model Credentials */}
-          <div className="flex flex-col space-y-4">
-            <WhatIfPanel
-              driver={driver}
-              gridPos={gridPos}
-              form={form}
-              onDriverChange={onDriverChange}
-              onGridChange={setGridPos}
-              onFormChange={setForm}
-              onReset={onReset}
-              drivers={activeDrivers}
-              isPostQuali={isPostQuali}
-            />
-            <ModelTrackRecordCard />
+        {navTab === "home" && (
+          <CockpitDashboard
+            race={race}
+            calendar={fullCalendar}
+            drivers={activeDrivers}
+            selectedDriver={driver}
+            onSelectDriver={onDriverChange}
+            prediction={prediction}
+            baseline={baseline}
+            isPredicting={isPredicting}
+            featureWeights={featureWeights}
+            gridPos={gridPos}
+            form={form}
+            onGridChange={setGridPos}
+            onFormChange={setForm}
+            onReset={onReset}
+            isPostQuali={isPostQuali}
+          />
+        )}
+
+        {navTab === "schedule" && (
+          <div className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl bg-[#090b10]/95 backdrop-blur-2xl border border-white/[0.08] p-4 sm:p-5 shadow-[0_24px_64px_rgba(0,0,0,0.9),inset_0_1px_0_0_rgba(255,255,255,0.06)]">
+            <div className="mb-4 flex items-center justify-between border-b border-white/[0.08] pb-3">
+              <div>
+                <h1 className="text-base sm:text-lg font-black tracking-wider uppercase text-white font-sans">
+                  2026 FIA Formula 1 Calendar
+                </h1>
+                <p className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
+                  {fullCalendar.length} Championship Rounds · Next: Round {race.round} ({race.short.toUpperCase()})
+                </p>
+              </div>
+              <div className="text-[10px] font-mono font-bold text-rose-400 uppercase flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/25 px-2.5 py-1 rounded-md">
+                <span className="h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse" />
+                <span>Next: {race.name}</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+              {/* Full Calendar List */}
+              <div className="lg:col-span-7 flex flex-col">
+                <div className="space-y-2 max-h-[390px] overflow-y-auto pr-1">
+                  {fullCalendar.map((r) => {
+                    const isNext = r.round === race.round;
+                    const isCompleted = r.round < race.round;
+                    return (
+                      <div
+                        key={r.round}
+                        className={`rounded-lg border p-2.5 transition-all ${
+                          isNext
+                            ? "border-rose-500/70 bg-rose-500/10 shadow-[0_0_16px_rgba(239,68,68,0.15)] ring-1 ring-rose-500/40"
+                            : isCompleted
+                            ? "border-slate-800/80 bg-[#0e121e]/70 opacity-75 hover:opacity-100"
+                            : "border-slate-700/60 bg-[#121625]/90 hover:border-slate-500/80"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <span className="text-xl">{r.flag}</span>
+                            <div>
+                              <div className="flex items-center gap-1.5">
+                                <span className="tabular text-[9px] font-bold text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">
+                                  RD{String(r.round).padStart(2, "0")}
+                                </span>
+                                {isNext ? (
+                                  <span className="text-[9px] font-extrabold text-rose-400 uppercase tracking-wider bg-rose-500/20 px-1.5 py-0.5 rounded">
+                                    Next Race
+                                  </span>
+                                ) : isCompleted ? (
+                                  <span className="text-[9px] font-bold text-slate-400 uppercase tracking-wider bg-slate-800/80 px-1 py-0.5 rounded">
+                                    Completed
+                                  </span>
+                                ) : (
+                                  <span className="text-[9px] font-bold text-sky-400 uppercase tracking-wider bg-sky-500/10 px-1 py-0.5 rounded">
+                                    Upcoming
+                                  </span>
+                                )}
+                                {r.isSprint && (
+                                  <span className="text-[9px] font-bold text-amber-400 bg-amber-400/10 px-1.5 py-0.5 rounded uppercase tracking-wider">
+                                    Sprint
+                                  </span>
+                                )}
+                              </div>
+                              <div className="text-xs font-extrabold text-white uppercase tracking-wide">
+                                {r.name}
+                              </div>
+                              <div className="text-[10px] font-medium text-slate-400 uppercase">
+                                {r.short} · {r.trackType} Circuit
+                              </div>
+                            </div>
+                          </div>
+                          <div className="text-right shrink-0">
+                            <div className="text-[10px] font-bold text-slate-300 uppercase font-mono">
+                              {new Date(r.date).toLocaleDateString("en-GB", {
+                                day: "numeric",
+                                month: "short",
+                              })}
+                            </div>
+                          </div>
+                        </div>
+
+                        {isNext && r.sessions && r.sessions.length > 0 && (
+                          <div className="mt-2 pt-2 border-t border-rose-500/20 flex flex-wrap gap-1.5">
+                            {r.sessions.map((s) => (
+                              <span
+                                key={s.shortName}
+                                className="text-[9px] font-semibold text-slate-200 bg-slate-800/90 border border-slate-700/60 px-1.5 py-0.5 rounded"
+                              >
+                                {s.shortName}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Right: Next Grand Prix Details */}
+              <div className="lg:col-span-5 flex flex-col gap-3">
+                <div className="rounded-xl border border-rose-500/50 bg-rose-500/10 p-4 shadow-lg">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-[9px] font-extrabold uppercase tracking-widest text-rose-400">
+                      Upcoming Event
+                    </span>
+                    <span className="text-[10px] font-mono font-bold text-slate-400">
+                      Round {race.round}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-3xl">{race.flag}</span>
+                    <div>
+                      <h2 className="text-base font-black uppercase text-white tracking-wide leading-tight">
+                        {race.name}
+                      </h2>
+                      <p className="text-[11px] text-slate-400 font-medium uppercase mt-0.5">
+                        {race.short} · {race.trackType} Track
+                      </p>
+                    </div>
+                  </div>
+                  <div className="text-xs font-mono font-semibold text-slate-300 border-t border-rose-500/20 pt-2.5 flex items-center justify-between">
+                    <span>Race Date</span>
+                    <span className="text-rose-400">
+                      {new Date(race.date).toLocaleDateString("en-GB", {
+                        weekday: "short",
+                        day: "numeric",
+                        month: "long",
+                        year: "numeric",
+                      })}
+                    </span>
+                  </div>
+                  {race.isSprint && (
+                    <div className="mt-2 text-[10px] font-bold text-amber-400 bg-amber-400/15 border border-amber-400/30 px-2 py-1 rounded text-center uppercase tracking-wider">
+                      Sprint Weekend Format
+                    </div>
+                  )}
+                </div>
+
+                <div className="rounded-xl border border-slate-700/60 bg-[#0a0d14]/90 p-3.5 text-xs text-slate-400 space-y-2">
+                  <div className="text-[10px] font-bold uppercase tracking-wider text-slate-300">
+                    Grand Prix Intel
+                  </div>
+                  <div className="flex justify-between text-[11px]">
+                    <span className="text-slate-500">Track Type:</span>
+                    <span className="font-semibold text-slate-200">{race.trackType}</span>
+                  </div>
+                  <div className="flex justify-between text-[11px]">
+                    <span className="text-slate-500">Weekend Sessions:</span>
+                    <span className="font-semibold text-slate-200">{race.sessions?.length ?? 5} Sessions</span>
+                  </div>
+                  <div className="flex justify-between text-[11px]">
+                    <span className="text-slate-500">Season Progress:</span>
+                    <span className="font-semibold text-slate-200 font-mono">
+                      {race.round} / {fullCalendar.length} ({Math.round((race.round / fullCalendar.length) * 100)}%)
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        )}
 
-          {/* Main Stage: Selected Driver Telemetry or Entry List Grid */}
-          <div className="min-w-0 space-y-4">
-            {driver ? (
-              <>
-                <SelectedDriverCard
-                  driver={driver}
-                  prediction={prediction}
-                  baseline={baseline}
-                  isPredicting={isPredicting}
-                  onHome={() => setDriverId(null)}
-                />
-                <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
-              </>
-            ) : (
-              <DriverEmptyState
-                drivers={activeDrivers}
-                onSelectDriver={onDriverChange}
-                featureWeights={featureWeights}
-              />
-            )}
-          </div>
+        {navTab === "upgrades" && (
+          <div className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl bg-[#090b10]/95 backdrop-blur-2xl border border-white/[0.08] p-4 sm:p-5 shadow-[0_24px_64px_rgba(0,0,0,0.9),inset_0_1px_0_0_rgba(255,255,255,0.06)]">
+            <div className="mb-4 flex items-center justify-between border-b border-white/[0.08] pb-3">
+              <div>
+                <h1 className="text-base sm:text-lg font-black tracking-wider uppercase text-white font-sans">
+                  Technical Upgrades &amp; Aero Specifications
+                </h1>
+                <p className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
+                  FIA Aerodynamic Packages · Round {race.round}: {race.short.toUpperCase()} ({race.name})
+                </p>
+              </div>
+              <div className="text-[10px] font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-1 rounded-md">
+                Confirmed Specs Only
+              </div>
+            </div>
 
-          {/* Right Rail: Stretched Technical Upgrades ending where main cards end */}
-          <div className="relative min-h-[520px] lg:h-full lg:min-h-0">
-            <div className="h-full lg:absolute lg:inset-0">
+            <div className="max-h-[420px] overflow-hidden flex flex-col w-full">
               <UpgradesRail upgrades={upgrades} />
             </div>
           </div>
-        </div>
-
-        <footer className="mt-6 flex flex-wrap items-center justify-between gap-2 border-t border-hairline pt-4 text-[10px] uppercase tracking-wider text-muted-foreground">
-          <span>Paddock Scout · 2026 Season · Model v6 (RandomForest, calibrated)</span>
-          <span className="tabular">
-            {drivers.length} drivers · Grid α{" "}
-            {featureWeights.isLoading
-              ? "—"
-              : `${((featureWeights.weights["Grid"] ?? 0) * 100).toFixed(1)}%`}{" "}
-            · Sprint 2.5×
-          </span>
-        </footer>
+        )}
       </main>
     </div>
   );
