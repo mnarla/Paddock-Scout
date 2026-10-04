@@ -60,7 +60,7 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
                 <span className="text-[9px] font-mono font-bold uppercase tracking-wider">02 · What-If Simulator</span>
               </div>
               <p className="text-[11px] text-slate-300 leading-snug">
-                Simulate grid penalties, qualifying shocks, or recovery drives by adjusting starting grid slot and rolling 3-race form.
+                Simulate grid penalties or recovery drives. Between race weekends (pre-qualifying), initial starting slots and baseline factors default to current championship standings.
               </p>
             </div>
           </div>

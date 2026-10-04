@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { type Driver } from "@/data/drivers2026";
-import { TEAMS } from "@/data/teams";
-import { RotateCcw, Minus, Plus, Sliders } from "lucide-react";
+import { RotateCcw, Minus, Plus, Sliders, Info } from "lucide-react";
 
 interface Props {
   driver: Driver | null;
@@ -175,6 +174,14 @@ export function WhatIfPanel({
             <span>{maxGrid}.0 (Back)</span>
           </div>
         </div>
+      </div>
+
+      {/* Pre-Weekend / Standings Note */}
+      <div className="flex items-start gap-2 p-2.5 rounded-lg bg-sky-500/[0.05] border border-sky-500/15 text-[10px] text-slate-400 font-sans leading-relaxed">
+        <Info className="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5" />
+        <span>
+          <strong className="text-slate-200 font-semibold">Pre-Weekend Telemetry:</strong> When outside active track sessions (prior to Saturday qualifying), starting grid slots and baseline factors default to current World Championship standings and 3-race rolling form.
+        </span>
       </div>
 
       {/* Reset Action */}
