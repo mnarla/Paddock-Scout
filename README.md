@@ -5,7 +5,7 @@
 <h1 align="center">Paddock Scout</h1>
 
 <p align="center">
-  A real-time, machine-learning-powered Formula 1 race simulation and podium prediction dashboard. Tracks team performance, scrapes aerodynamic upgrades, calculates qualifying and practice pace, and predicts win, top-2, and podium finish probabilities for the 2026 grid.
+  A real-time, machine-learning-powered Formula 1 podium prediction dashboard. Tracks team performance, scrapes aerodynamic upgrades, calculates qualifying and practice pace, and predicts win, top-2, and podium finish probabilities for the 2026 grid.
 </p>
 
 
