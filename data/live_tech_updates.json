@@ -38,32 +38,32 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Floor and Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Summary": "Mercedes opted to run a mix of old and new car specifications in Singapore due to ongoing correlation doubts regarding their latest major upgrade package.",
         "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.0,
+        "Upgrade_Validation": "REVERTED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Singapore GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdjBZN3pENktqaGF0bXBwT2NHLTRsY2FOM0pFUTNhbHdHRnRiLVduUHJxdzg5Yk40UnByZFB6MnBMTmlaNVhNRTZfMkdWMVhhdEVsMUUzR1F3aDlFc0hRUGpZWGJMTnJ4ZW4yR0Q2WGRJSzN2dEdSak1nSXVkcFZMWHNidlRWSDFjbnpfcHVIeFhVUzRXWU5lN0g1dTlwZw?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Singapore Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "REVERTED",
+        "Badge": "Reverted to pre-Singapore Grand Prix spec"
     },
     "McLaren": {
-        "Component": "Power unit fuel system fix",
+        "Component": "Power Unit Fuel System",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced power unit fixes specifically targeting Lando Norris's fuel system reliability issues.",
-        "Pace_Delta": -0.02,
+        "Summary": "McLaren introduced power unit fixes specifically targeting Lando Norris's fuel system reliability and performance issues.",
+        "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.02,
+        "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
