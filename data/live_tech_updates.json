@@ -38,32 +38,32 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and Sidepods",
+        "Component": "Floor and sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes opted to run a mix of old and new car specifications in Singapore due to ongoing correlation doubts regarding their latest major upgrade package.",
-        "Pace_Delta": 0.0,
+        "Summary": "A major aerodynamic upgrade package failed to deliver expected gains, resulting in a performance penalty due to correlation issues.",
+        "Pace_Delta": 0.2,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.0,
-        "Upgrade_Validation": "REVERTED",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.2,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "The Race"
+            "RaceFans"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdjBZN3pENktqaGF0bXBwT2NHLTRsY2FOM0pFUTNhbHdHRnRiLVduUHJxdzg5Yk40UnByZFB6MnBMTmlaNVhNRTZfMkdWMVhhdEVsMUUzR1F3aDlFc0hRUGpZWGJMTnJ4ZW4yR0Q2WGRJSzN2dEdSak1nSXVkcFZMWHNidlRWSDFjbnpfcHVIeFhVUzRXWU5lN0g1dTlwZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "REVERTED",
-        "Badge": "Reverted to pre-Singapore Grand Prix spec"
+        "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeS0xd3I5aU9FeWZiLXpfUlBER3RyVG9qQ2xabnFoVWhhZEppelQ2ajV5SHU5UWh2bHhEa0w4Y0JHa0podWV5cFBZR1ZBeTMwZFlsd3kyTkFianU3OWVXVW92TGF6dmM4cHBKRTVBaDlva2k3czRDeG9pdnVkd09WN1RTaC1FSks1MTAtOFc0N0RGVXRZMW1ETkUtaTRpTjducm9COVliajc2ajE5?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Bahrain GP",
+        "Is_Current_Weekend": false,
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.20s penalty)"
     },
     "McLaren": {
-        "Component": "Power Unit Fuel System",
+        "Component": "Fuel system",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced power unit fixes specifically targeting Lando Norris's fuel system reliability and performance issues.",
-        "Pace_Delta": -0.05,
+        "Summary": "McLaren implemented fixes to the fuel system to resolve reliability issues experienced by Lando Norris.",
+        "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
+        "Upgrade_Score": 0.02,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
