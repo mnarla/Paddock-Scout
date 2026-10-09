@@ -38,29 +38,29 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and sidepod upgrade package",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes is running a mix of old and new specifications due to the new upgrade package causing handling instability and failing to meet performance targets.",
-        "Pace_Delta": 0.2,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.2,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
+        "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Baseline"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdjBZN3pENktqaGF0bXBwT2NHLTRsY2FOM0pFUTNhbHdHRnRiLVduUHJxdzg5Yk40UnByZFB6MnBMTmlaNVhNRTZfMkdWMVhhdEVsMUUzR1F3aDlFc0hRUGpZWGJMTnJ4ZW4yR0Q2WGRJSzN2dEdSak1nSXVkcFZMWHNidlRWSDFjbnpfcHVIeFhVUzRXWU5lN0g1dTlwZw?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.20s penalty)"
+        "URL": "",
+        "As_Of": "Singapore GP",
+        "Is_Current_Weekend": false,
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Fuel system power unit fix",
+        "Component": "Power unit fuel system fix",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a fix for a fuel system issue to improve power unit reliability and performance.",
+        "Summary": "McLaren introduced power unit fixes specifically targeting Lando Norris's fuel system reliability issues.",
         "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.02,
