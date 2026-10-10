@@ -38,10 +38,10 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and sidepods",
+        "Component": "Floor and Sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A major aerodynamic upgrade package failed to deliver expected gains, resulting in a performance penalty due to correlation issues.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade that failed to deliver expected gains, resulting in a net performance loss and handling instability.",
         "Pace_Delta": 0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.2,
@@ -57,7 +57,7 @@
         "Badge": "Defective (+0.20s penalty)"
     },
     "McLaren": {
-        "Component": "Fuel system",
+        "Component": "Power Unit Fuel System",
         "Category": "Power Unit",
         "Certainty": "confirmed",
         "Summary": "McLaren implemented fixes to the fuel system to resolve reliability issues experienced by Lando Norris.",
