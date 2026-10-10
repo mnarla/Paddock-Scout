@@ -57,10 +57,10 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Fuel system fix",
+        "Component": "Power unit fuel system fix",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren implemented power unit fixes specifically targeting Lando Norris's fuel system issues to improve reliability and performance.",
+        "Summary": "McLaren implemented fixes to the power unit fuel system to resolve reliability issues experienced by Lando Norris.",
         "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.02,
