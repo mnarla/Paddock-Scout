@@ -38,29 +38,29 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and Sidepods",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade that failed to deliver expected gains, resulting in a net performance loss and handling instability.",
-        "Pace_Delta": 0.2,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.2,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
+        "Is_Defective": false,
         "Sources": [
-            "RaceFans"
+            "Baseline"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPeS0xd3I5aU9FeWZiLXpfUlBER3RyVG9qQ2xabnFoVWhhZEppelQ2ajV5SHU5UWh2bHhEa0w4Y0JHa0podWV5cFBZR1ZBeTMwZFlsd3kyTkFianU3OWVXVW92TGF6dmM4cHBKRTVBaDlva2k3czRDeG9pdnVkd09WN1RTaC1FSks1MTAtOFc0N0RGVXRZMW1ETkUtaTRpTjducm9COVliajc2ajE5?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Bahrain GP",
+        "URL": "",
+        "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.20s penalty)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Power Unit Fuel System",
+        "Component": "Fuel system fix",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren implemented fixes to the fuel system to resolve reliability issues experienced by Lando Norris.",
+        "Summary": "McLaren implemented power unit adjustments to resolve Lando Norris's recurring fuel system reliability issues.",
         "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.02,
