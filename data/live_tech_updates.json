@@ -57,10 +57,10 @@
         "Badge": "Standard Baseline"
     },
     "McLaren": {
-        "Component": "Power unit fuel system fix",
+        "Component": "Fuel system fix",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren implemented fixes to the power unit fuel system to resolve reliability issues experienced by Lando Norris.",
+        "Summary": "McLaren implemented power unit fixes specifically targeting Lando Norris's fuel system reliability issues for the Singapore GP.",
         "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.02,
