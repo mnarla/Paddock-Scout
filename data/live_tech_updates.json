@@ -1,22 +1,22 @@
 {
     "Red Bull Racing": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Final major aero package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Red Bull confirmed their final major aerodynamic upgrade of the 2026 season for Verstappen and Hadjar.",
+        "Pace_Delta": -0.2,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.2,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Singapore GP",
+        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZEVUZTJlODBxRGc1SGxTSXJhRjFLb1JxR2JuWkdlMGhKRzhkYnBUeGlzUmJCZmZpY1d0RmZQb2lMMkRwYV9hazlIQ3ZLUW5PSHYxVDlleTNvVHJqcXYtcmNyeE4waUszeWNXWVJpV2N1alhiMXR6X21xN2hCWGw4Yk1XRmdVN19LTXZaZ3lGNlp0blI0SW1qV0drdlhRSlpYemtzQ2lmMFFXbkRsQkNpQ3ZNdFJRZWN6cWl6bWJCRGR3MTFtdkZydg?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "2026 season",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from 2026 season)"
     },
     "Ferrari": {
         "Component": "Stable Aerodynamic Package",
@@ -41,7 +41,7 @@
         "Component": "Floor and sidepods",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major floor and sidepod upgrade that suffered from correlation issues and handling instability, leading to poor performance.",
+        "Summary": "Mercedes introduced a major floor and sidepod upgrade that resulted in handling instability and performance issues at the Singapore GP.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,
@@ -51,8 +51,8 @@
             "Motorsport.com"
         ],
         "URL": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPTGtCWkFDdE5XUXI1MUZMUkR1azlQNkRVQXpzbmdoaGJ5c0E0ZlVqQV9ORmhNZUszekR3dHk5ZHU2eHRndVhNR2dqTkRXTGtOYzRJdHpfSFAtNk0waFd5cktyTzFvbGtzOEY5Uk5WaUlNbGNYQzdUbUZYSThXcERPTDRyVlA4eTYzZmUyc0NlbGY2akl6VWNEemQwM1hhWkNZM1N1SDVHaFJYWmMx?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore Grand Prix",
-        "Is_Current_Weekend": true,
+        "As_Of": "Bahrain GP",
+        "Is_Current_Weekend": false,
         "Status": "DEFECTIVE",
         "Badge": "Defective (+0.15s penalty)"
     },
@@ -60,7 +60,7 @@
         "Component": "Fuel system",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren implemented fixes to the fuel system to address reliability issues experienced by Lando Norris.",
+        "Summary": "McLaren implemented fixes to the fuel system to resolve reliability issues experienced by Lando Norris.",
         "Pace_Delta": -0.02,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.02,
@@ -114,23 +114,23 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Weight-saving package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "Williams introduced a significant weight-saving upgrade in Baku that improved performance and allowed for Q3 contention.",
+        "Pace_Delta": -0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.15,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Singapore GP",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Baku GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Baku GP)"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
