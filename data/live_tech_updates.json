@@ -38,29 +38,29 @@
         "Badge": "Standard Baseline"
     },
     "Mercedes": {
-        "Component": "Floor and Sidepods",
+        "Component": "Aero Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a revised floor and sidepod package in Bahrain, but struggled to unlock performance due to track conditions.",
-        "Pace_Delta": -0.2,
+        "Summary": "The latest aerodynamic upgrade package has shown handling inconsistencies and performance correlation issues, leading to mixed results.",
+        "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.2,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "Autosport"
+            "The Race"
         ],
-        "URL": "https://www.autosport.com/f1/news/the-mechanisms-at-play-behind-mercedes-difficult-bahrain-gp-weekend/10862473/",
-        "As_Of": "Bahrain GP",
+        "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSkZLTUhxT2tJTVBrbkhjLWl3QVVzZHkwOVFmSjg0TVV0XzhHV0R2ZEJPQVdTVU5yd2h0ZUtnaHlqX196cGRJc1d6SkIyVE12bmUtZzZOdTdTNW94U0hiT0VHTi12MkU0ak1yYWlORHc4Q0V4NWVKS2ZXQkFvTEpBYXVWNmExcTlpUURZT250NUd4TWlkdkE?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Bahrain GP)"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
     },
     "McLaren": {
         "Component": "Fuel System Fixes",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "McLaren implemented peripheral changes to the fuel system to resolve top-speed deficits and reliability issues.",
+        "Summary": "Peripheral changes to the fuel system were implemented to resolve top-speed deficits and injection issues identified in Baku.",
         "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.05,
@@ -69,7 +69,7 @@
         "Sources": [
             "Autosport"
         ],
-        "URL": "https://www.autosport.com/f1/news/mclaren-targets-lando-norris-costly-fuel-system-issue-with-singapore-f1-power-unit-fixes/10863087/",
+        "URL": "https://www.autosport.com/f1/news/mclaren-targets-lando-norris-costly-fuel-system-issue-with-singapore-f1-power-unit-fixes/10863087/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
         "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -114,10 +114,10 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Weight-saving Upgrade Package",
+        "Component": "Weight-saving Upgrade",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Williams introduced a significant weight-saving package in Baku that successfully improved car performance and helped reach Q3.",
+        "Summary": "A major weight-reduction package was introduced in Baku, resulting in improved performance and Q3 appearances.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
@@ -126,7 +126,7 @@
         "Sources": [
             "The Race"
         ],
-        "URL": "https://www.racefans.net/2026/10/10/featured-comment-f1s-latest-technical-glitch-shows-its-power-unit-rules-are-too-intrusive/",
+        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Baku GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -171,23 +171,23 @@
         "Badge": "Standard Baseline"
     },
     "Audi": {
-        "Component": "Stable Aerodynamic Package",
+        "Component": "Performance Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "The team introduced a significant upgrade package in Baku that met performance expectations.",
+        "Pace_Delta": -0.1,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.1,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Formula 1"
         ],
-        "URL": "",
-        "As_Of": "United States GP",
+        "URL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU3ZrMk9NbThDXzZSa1BtZE1FSFB6N0JFNENEdDFiVTdCYmpKeXlKdHY3V0hnZ0FhT3UzblRfRzVIZnNjNkY5cG9mS0szWUhtUEFObE5xdTNkTzZRS2R2UXAyRXl1WjFWUEpuNDI2dWJYdWRsTEtmWjVINkZySEFvQ3JRQXJBbkJpMnhFZ2hmNmhmcHRkbko0SEhRekNZWUpGUFJnSjlsMnpSZzFvQUE?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Baku GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Baku GP)"
     },
     "Cadillac": {
         "Component": "Stable Aerodynamic Package",
