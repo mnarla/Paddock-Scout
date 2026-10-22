@@ -19,6 +19,25 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
+        "Component": "Major upgrade package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "Ferrari is introducing a significant aerodynamic upgrade package at the United States GP aimed at improving performance.",
+        "Pace_Delta": -0.2,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.2,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Motorsport.com"
+        ],
+        "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdlhhV3l6RWw5dUs3WFAzR18zNXVmem95d3ZWU2ZBeTV3cUpXWTBTZ21aOS1zN2FtclByWWN2b0ljZEV5RHRGU01iV1JwZVFEd1pUdHZDUXlTc283OERRX0VVRTFVUGN1RlVwdW05WDUwN2g2Y09XdmJld3pKdVlBejF5ZG5fbzJUUTE2cElJMFB3OWZCMTBzLVh2TlJQTGtMNlphTXByaFhKSUVIcHNtcjFiZExPdTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "United States Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for United States Grand Prix"
+    },
+    "Mercedes": {
         "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
@@ -37,43 +56,24 @@
         "Status": "STABLE_SPEC",
         "Badge": "Standard Baseline"
     },
-    "Mercedes": {
-        "Component": "Aero Upgrade Package",
+    "McLaren": {
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The latest aerodynamic upgrade package has shown handling inconsistencies and performance correlation issues, leading to mixed results.",
-        "Pace_Delta": 0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.15,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
-        "Sources": [
-            "The Race"
-        ],
-        "URL": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQSkZLTUhxT2tJTVBrbkhjLWl3QVVzZHkwOVFmSjg0TVV0XzhHV0R2ZEJPQVdTVU5yd2h0ZUtnaHlqX196cGRJc1d6SkIyVE12bmUtZzZOdTdTNW94U0hiT0VHTi12MkU0ak1yYWlORHc4Q0V4NWVKS2ZXQkFvTEpBYXVWNmExcTlpUURZT250NUd4TWlkdkE?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore GP",
-        "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.15s penalty)"
-    },
-    "McLaren": {
-        "Component": "Fuel System Fixes",
-        "Category": "Power Unit",
-        "Certainty": "confirmed",
-        "Summary": "Peripheral changes to the fuel system were implemented to resolve top-speed deficits and injection issues identified in Baku.",
-        "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Autosport"
+            "Baseline"
         ],
-        "URL": "https://www.autosport.com/f1/news/mclaren-targets-lando-norris-costly-fuel-system-issue-with-singapore-f1-power-unit-fixes/10863087/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-        "As_Of": "Singapore GP",
+        "URL": "",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Singapore GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
@@ -114,23 +114,23 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Weight-saving Upgrade",
+        "Component": "Aero upgrade package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A major weight-reduction package was introduced in Baku, resulting in improved performance and Q3 appearances.",
-        "Pace_Delta": -0.15,
+        "Summary": "Carlos Sainz confirmed the recent Williams upgrade is a step forward, though further development is required.",
+        "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
+        "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Formula 1"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPTjlYaVBBX2xFNXFraFNDYVU2MWgzaWRPNDBWZkNyb0pJcElkcGhnUWRlTjdkTy1KNTFkNGFKdDI1S0pMeVJtbk56em9DN3Jtcno5cVpSMFA0TExlT0w0RjZlR19vZ0pWYjNsWXBUbkpydnNqd3EyMUlON2N0YXVsQldyY3dIZ3VsNEdCZkpvcWI4TVVOQ0EyTkx4ZWcySFU4?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Baku GP",
+        "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmVnQlFvTS1PSENBNktqVXNFLXJrTGtOQUwtOThibjMycl9uVXlhVm53b3ZXSVhMMFJLa3djUnRVV19CWFF2LUZIQzFGVDVkdU1FVVN3LWtWbVlZb0xRLWdiLXF6Q2FTQkZuYi1HVUphVzd0al9MTk55djdGYUl3blBtbThlNE5QZ1VoMjBMSWMza0dObXc1c3hNMnN4S1BiV1JpTXhGSHFCTUxBY1B3TEdUTWZBbzg?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Baku GP)"
+        "Badge": "Running spec (from Singapore GP)"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
@@ -171,23 +171,23 @@
         "Badge": "Standard Baseline"
     },
     "Audi": {
-        "Component": "Performance Upgrade Package",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The team introduced a significant upgrade package in Baku that met performance expectations.",
-        "Pace_Delta": -0.1,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.1,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "Baseline"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNU3ZrMk9NbThDXzZSa1BtZE1FSFB6N0JFNENEdDFiVTdCYmpKeXlKdHY3V0hnZ0FhT3UzblRfRzVIZnNjNkY5cG9mS0szWUhtUEFObE5xdTNkTzZRS2R2UXAyRXl1WjFWUEpuNDI2dWJYdWRsTEtmWjVINkZySEFvQ3JRQXJBbkJpMnhFZ2hmNmhmcHRkbko0SEhRekNZWUpGUFJnSjlsMnpSZzFvQUE?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Baku GP",
+        "URL": "",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Baku GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Cadillac": {
         "Component": "Stable Aerodynamic Package",
