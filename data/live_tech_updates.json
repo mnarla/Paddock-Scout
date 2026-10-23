@@ -19,10 +19,10 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "Major upgrade package",
+        "Component": "Major Aerodynamic Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari is introducing a significant aerodynamic upgrade package at the United States GP aimed at improving performance.",
+        "Summary": "Ferrari is introducing a significant aerodynamic update package at COTA aimed at improving overall car performance.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
@@ -114,23 +114,23 @@
         "Badge": "Standard Baseline"
     },
     "Williams": {
-        "Component": "Aero upgrade package",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Carlos Sainz confirmed the recent Williams upgrade is a step forward, though further development is required.",
-        "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
         "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "Baseline"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmVnQlFvTS1PSENBNktqVXNFLXJrTGtOQUwtOThibjMycl9uVXlhVm53b3ZXSVhMMFJLa3djUnRVV19CWFF2LUZIQzFGVDVkdU1FVVN3LWtWbVlZb0xRLWdiLXF6Q2FTQkZuYi1HVUphVzd0al9MTk55djdGYUl3blBtbThlNE5QZ1VoMjBMSWMza0dObXc1c3hNMnN4S1BiV1JpTXhGSHFCTUxBY1B3TEdUTWZBbzg?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore GP",
+        "URL": "",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Singapore GP)"
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
     },
     "Racing Bulls": {
         "Component": "Stable Aerodynamic Package",
