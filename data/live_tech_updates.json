@@ -19,10 +19,10 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "Major Aerodynamic Upgrade Package",
+        "Component": "Major Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari is introducing a significant aerodynamic update package at COTA aimed at improving performance and addressing balance issues.",
+        "Summary": "Ferrari is introducing a significant aerodynamic upgrade package at the United States GP aimed at improving overall car performance.",
         "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.2,
@@ -32,10 +32,10 @@
             "Motorsport.com"
         ],
         "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdlhhV3l6RWw5dUs3WFAzR18zNXVmem95d3ZWU2ZBeTV3cUpXWTBTZ21aOS1zN2FtclByWWN2b0ljZEV5RHRGU01iV1JwZVFEd1pUdHZDUXlTc283OERRX0VVRTFVUGN1RlVwdW05WDUwN2g2Y09XdmJld3pKdVlBejF5ZG5fbzJUUTE2cElJMFB3OWZCMTBzLVh2TlJQTGtMNlphTXByaFhKSUVIcHNtcjFiZExPdTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "United States Grand Prix",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for United States Grand Prix"
+        "Badge": "New for United States GP"
     },
     "Mercedes": {
         "Component": "Stable Aerodynamic Package",
