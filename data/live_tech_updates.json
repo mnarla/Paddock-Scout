@@ -19,61 +19,61 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "Major Upgrade Package",
+        "Component": "Major Aerodynamic Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari is introducing a significant aerodynamic upgrade package at the United States GP aimed at improving overall car performance.",
-        "Pace_Delta": -0.2,
+        "Summary": "Ferrari introduced a significant aerodynamic update, but drivers reported disappointing performance and handling issues during the weekend.",
+        "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.2,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
+        "Sources": [
+            "Motorsport.com"
+        ],
+        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV3Uya1E5ek42RUthSlBhWDFrQjBQRmh4YUk5ZWp3UWtvZ3RkQ0ZVUEhVQmF5NEdkWDZoYmExZ0Q0MU1sd2xTYjdaSVRCaEZpNXFESlB3SlVIQnh3WjlsM2xkZXdTd1RmLVMyV2xRWWktLWhUSDhXb2VqWlVHbm9PTU45Um1BZTEtaU9XNUpjWUZObks5M20tVWszRHJhcTktUVFHeW5Gd0djV2IyUlR4ekJtM0JKX0pnUnV6VkF6dU1fb2tHcGRsNA?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "United States Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
+    },
+    "Mercedes": {
+        "Component": "Aero Upgrade Package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "The upgrade package introduced in Singapore caused handling instability and made the car significantly harder to drive.",
+        "Pace_Delta": 0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
+        "Sources": [
+            "Motorsport.com"
+        ],
+        "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2N5Z2c0ekdNV1ZtUW04UzlacG9BOVVLOVp3cUVxTTE4bHM0Y2l3SmdJUXlXOS1hVU5lUnVrLXlFWDVjSGQ0c1BkNjA2MmYxTzF5NVNxNm4teFBnaE1pM25oSkI3VmxycnBKbkFKS0p6ZHNob2JsOUJONWd2Wm1SV05odldqR25qb204WE5kWHZhMUxJWWdyeUtfemlfWTg1V0ZBMXFVV21DV0JYVVNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Singapore GP",
+        "Is_Current_Weekend": false,
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
+    },
+    "McLaren": {
+        "Component": "Power Unit Fuel System Fixes",
+        "Category": "Power Unit",
+        "Certainty": "confirmed",
+        "Summary": "McLaren implemented specific power unit fixes to address Lando Norris's fuel system reliability issues.",
+        "Pace_Delta": -0.02,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.02,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdlhhV3l6RWw5dUs3WFAzR18zNXVmem95d3ZWU2ZBeTV3cUpXWTBTZ21aOS1zN2FtclByWWN2b0ljZEV5RHRGU01iV1JwZVFEd1pUdHZDUXlTc283OERRX0VVRTFVUGN1RlVwdW05WDUwN2g2Y09XdmJld3pKdVlBejF5ZG5fbzJUUTE2cElJMFB3OWZCMTBzLVh2TlJQTGtMNlphTXByaFhKSUVIcHNtcjFiZExPdTQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "United States GP",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for United States GP"
-    },
-    "Mercedes": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
-        ],
-        "URL": "",
-        "As_Of": "United States GP",
+        "URL": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX0xQaDdEQUpmN0I3anNiU0J6VWRFc0pjUFNhSWVEQXgzcTF6R2dzVngzaUlWYjJoVVVueDZHa051MHQ3YXhNXzB3MzZtX1lhazNtUkhORDlhWXRNZEdYYnhFY184cEJYRk5YQTUtU3hodndGQlJFaEhZODZjbGZLS09hRlVkSEIwRjlQWWtMeHZ0XzRabS1hVG9EOHl5RV9WYXQtbHhWZzVXc2NTMTN0ZGNqQ2g2RzA3d0NCa1Rfcl9kSzBm?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
-    },
-    "McLaren": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
-        ],
-        "URL": "",
-        "As_Of": "United States GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Singapore GP)"
     },
     "Aston Martin": {
         "Component": "Stable Aerodynamic Package",
