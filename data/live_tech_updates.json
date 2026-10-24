@@ -19,13 +19,13 @@
         "Badge": "Standard Baseline"
     },
     "Ferrari": {
-        "Component": "United States GP Upgrade Package",
+        "Component": "Aero upgrade package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced a minor update package estimated to provide less than a tenth of a second in lap time, though drivers expressed disappointment with its performance.",
-        "Pace_Delta": -0.08,
+        "Summary": "Ferrari introduced a new aero package for the US GP, but drivers reported disappointing performance and the gain was estimated at less than a tenth.",
+        "Pace_Delta": -0.09,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
+        "Upgrade_Score": 0.09,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
@@ -38,10 +38,10 @@
         "Badge": "New for United States Grand Prix"
     },
     "Mercedes": {
-        "Component": "United States GP Upgrade Package",
+        "Component": "Aero upgrade package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The latest Mercedes upgrade package resulted in handling instability and made the car harder to drive, leading to a negative impact on performance.",
+        "Summary": "Mercedes' recent upgrade package caused handling instability and made the car harder to drive, leading to a performance penalty.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,
@@ -51,8 +51,8 @@
             "Motorsport.com"
         ],
         "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2N5Z2c0ekdNV1ZtUW04UzlacG9BOVVLOVp3cUVxTTE4bHM0Y2l3SmdJUXlXOS1hVU5lUnVrLXlFWDVjSGQ0c1BkNjA2MmYxTzF5NVNxNm4teFBnaE1pM25oSkI3VmxycnBKbkFKS0p6ZHNob2JsOUJONWd2Wm1SV05odldqR25qb204WE5kWHZhMUxJWWdyeUtfemlfWTg1V0ZBMXFVV21DV0JYVVNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "United States Grand Prix",
-        "Is_Current_Weekend": true,
+        "As_Of": "Singapore GP",
+        "Is_Current_Weekend": false,
         "Status": "DEFECTIVE",
         "Badge": "Defective (+0.15s penalty)"
     },
