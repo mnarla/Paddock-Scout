@@ -1,28 +1,28 @@
 {
     "Red Bull Racing": {
-        "Component": "Power Unit upgrade",
-        "Category": "Power Unit",
-        "Certainty": "confirmed",
-        "Summary": "The second Honda power unit upgrade resulted in driveability issues that effectively negated performance gains, reverting the car's behavior to Spec 1 levels.",
-        "Pace_Delta": 0.1,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.1,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
-        "Sources": [
-            "Motorsport.com"
-        ],
-        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV1RJTU9PQTdiRjZNZU9fOEFFa3Q2U050LVp4eGRFOXoxd1FRZFlvSVMwbWpER2k4c2ZMcmFJMWxmZFpCajIwVjdGMEFER0pPWEpjWHJ5YXB3QjhTdmhNSVozMVV0cHVpdEhuMWxMMnFqOENkbXpESHRLV0xzT0VqT01YWk1ZdDRWNFFBd2lVRmRCck11dkhVT2FicHh1Z3NmaDUyN3JvXzBjWllkZTBFZVdVQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore GP",
-        "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.10s penalty)"
-    },
-    "Ferrari": {
-        "Component": "Aero upgrade package",
+        "Component": "Stable Aerodynamic Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced a minor aero update package estimated to provide a performance gain of less than a tenth of a second.",
+        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": 1.0,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "VALID",
+        "Is_Defective": false,
+        "Sources": [
+            "Baseline"
+        ],
+        "URL": "",
+        "As_Of": "United States GP",
+        "Is_Current_Weekend": false,
+        "Status": "STABLE_SPEC",
+        "Badge": "Standard Baseline"
+    },
+    "Ferrari": {
+        "Component": "United States GP Upgrade Package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "Ferrari introduced a minor aero update package at COTA, but drivers reported disappointing performance and handling issues.",
         "Pace_Delta": -0.09,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.09,
@@ -38,10 +38,10 @@
         "Badge": "New for United States Grand Prix"
     },
     "Mercedes": {
-        "Component": "Major aero upgrade package",
+        "Component": "Singapore GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The major upgrade package introduced in Singapore caused handling instability and made the car harder to drive, leading to performance regression.",
+        "Summary": "The major upgrade package introduced in Singapore caused handling instability and made the car harder to drive, leading to partial reversions.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,
@@ -50,7 +50,7 @@
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2N5Z2c0ekdNV1ZtUW04UzlacG9BOVVLOVp3cUVxTTE4bHM0Y2l3SmdJUXlXOS1hVU5lUnVrLXlFWDVjSGQ0c1BkNjA2MmYxTzF5NVNxNm4teFBnaE1pM25oSkI3VmxycnBKbkFKS0p6ZHNob2JsOUJONWd2Wm1SV05odldqR25qb204WE5kWHZhMUxJWWdyeUtfemlfWTg1V0ZBMXFVV21DV0JYVVNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://www.autosport.com/f1/news/mercedes-explains-why-its-upgrade-made-its-f1-car-harder-to-drive/10866035/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
         "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
         "Status": "DEFECTIVE",
@@ -133,23 +133,23 @@
         "Badge": "Standard Baseline"
     },
     "Racing Bulls": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
+        "Component": "Honda ADUO Power Unit Upgrade",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
+        "Summary": "The Honda ADUO power unit upgrade resulted in driveability issues that effectively negated performance gains, reverting the car's feel to Spec 1 levels.",
+        "Pace_Delta": 0.05,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.05,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "Baseline"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "United States GP",
+        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV1RJTU9PQTdiRjZNZU9fOEFFa3Q2U050LVp4eGRFOXoxd1FRZFlvSVMwbWpER2k4c2ZMcmFJMWxmZFpCajIwVjdGMEFER0pPWEpjWHJ5YXB3QjhTdmhNSVozMVV0cHVpdEhuMWxMMnFqOENkbXpESHRLV0xzT0VqT01YWk1ZdDRWNFFBd2lVRmRCck11dkhVT2FicHh1Z3NmaDUyN3JvXzBjWllkZTBFZVdVQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Unknown",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.05s penalty)"
     },
     "Haas F1 Team": {
         "Component": "Stable Aerodynamic Package",
