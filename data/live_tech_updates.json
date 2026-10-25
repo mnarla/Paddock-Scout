@@ -1,47 +1,47 @@
 {
     "Red Bull Racing": {
-        "Component": "Power Unit Upgrade (ADUO)",
+        "Component": "ADUO Power Unit Upgrade",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "The Honda ADUO power unit upgrade suffered from driveability issues, effectively negating performance gains and forcing a return to previous spec characteristics.",
-        "Pace_Delta": 0.0,
+        "Summary": "The ADUO power unit upgrade suffered from driveability issues that effectively negated performance gains, reverting driveability to Spec 1 levels.",
+        "Pace_Delta": 0.1,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.0,
-        "Upgrade_Validation": "REVERTED",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.1,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
             "Motorsport.com"
         ],
         "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV1RJTU9PQTdiRjZNZU9fOEFFa3Q2U050LVp4eGRFOXoxd1FRZFlvSVMwbWpER2k4c2ZMcmFJMWxmZFpCajIwVjdGMEFER0pPWEpjWHJ5YXB3QjhTdmhNSVozMVV0cHVpdEhuMWxMMnFqOENkbXpESHRLV0xzT0VqT01YWk1ZdDRWNFFBd2lVRmRCck11dkhVT2FicHh1Z3NmaDUyN3JvXzBjWllkZTBFZVdVQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
-        "Status": "REVERTED",
-        "Badge": "Reverted to pre-Singapore GP spec"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.10s penalty)"
     },
     "Ferrari": {
         "Component": "United States GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced a minor aero update package estimated to provide less than a tenth of a second in lap time improvement.",
-        "Pace_Delta": -0.1,
+        "Summary": "Ferrari introduced a minor update package at COTA, but drivers reported disappointing performance and handling characteristics.",
+        "Pace_Delta": 0.1,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.1,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.1,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
             "Motorsport.com"
         ],
         "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM2wwVlJFUmxUUk4wNTBRV3pndFczbFk2VnA0Q3BLNThnT2JPRG5VTkdWVHd2bU5NckMtdUVPTGE5Qzd1SnplX0xOMmN5VGJhNkZSMm5menJwN1pwMjc4LVR4bjl2UXNaZ0ZaZW5Sa3NlVUZOVjRsUDJ3UWdsODZoTmNrdFh0dmhDNGZZUU1hY09HQmhEeW5kU0o5SFVDUS1jODdyXw?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "United States Grand Prix",
         "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for United States Grand Prix"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.10s penalty)"
     },
     "Mercedes": {
-        "Component": "Major Upgrade Package",
+        "Component": "Singapore GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The major upgrade package introduced in Singapore caused handling instability and increased difficulty for drivers, leading to partial reversions.",
+        "Summary": "The major upgrade package introduced in Singapore caused handling instability and balance issues, leading the team to experiment with mixed specifications.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,
