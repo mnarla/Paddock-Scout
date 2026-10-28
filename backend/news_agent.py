@@ -116,7 +116,8 @@ def _parse_rss(url: str, timeout: int = 8) -> List[Dict[str, str]]:
             snippet = re.sub(r"<[^>]+>", " ", snippet).strip()
             if title and link:
                 items.append({"title": title, "link": link,
-                              "snippet": snippet, "pubdate": pubdate})
+                              "snippet": snippet, "pubdate": pubdate,
+                              "source": (item.findtext("source") or "").strip()})
         return items
     except Exception as exc:
         log.debug(f"RSS fetch failed for {url}: {exc}")
@@ -549,7 +550,7 @@ def build_live_tech_updates() -> Dict[str, dict]:
                 "Certainty":          upg.get("certainty", "confirmed"),
                 "Summary":            upg.get("summary", ""),
                 "Pace_Delta":         upg.get("Pace_Delta", 0.0),
-                "FP2_Best_Pos":       upg.get("FP2_Best_Pos", 1.0),
+                "FP2_Best_Pos":       upg.get("FP2_Best_Pos"),
                 "Upgrade_Score":      upg.get("Upgrade_Score", 0.0),
                 "Upgrade_Validation": val_str,
                 "Is_Defective":       val_str == "DEFECTIVE",
@@ -563,21 +564,21 @@ def build_live_tech_updates() -> Dict[str, dict]:
         else:
             # Strictly within the last 3 weeks — no stale historical articles from months/years ago
             updates[team] = {
-                "Component":          "Stable Aerodynamic Package",
+                "Component":          "No confirmed upgrade data yet",
                 "Category":           "Aero",
-                "Certainty":          "confirmed",
-                "Summary":            "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
+                "Certainty":          "pending",
+                "Summary":            "No recent upgrade report found. This does not confirm an unchanged specification.",
                 "Pace_Delta":         0.0,
-                "FP2_Best_Pos":       1.0,
+                "FP2_Best_Pos":       None,
                 "Upgrade_Score":      0.0,
-                "Upgrade_Validation": "VALID",
+                "Upgrade_Validation": "UNVERIFIED",
                 "Is_Defective":       False,
-                "Sources":            ["Baseline"],
+                "Sources":            ["Awaiting reports"],
                 "URL":                "",
                 "As_Of":              current_gp,
                 "Is_Current_Weekend": False,
-                "Status":             "STABLE_SPEC",
-                "Badge":              "Standard Baseline"
+                "Status":             "PENDING",
+                "Badge":              "No update found"
             }
 
     # ── 7. Write JSON ──────────────────────────────────────────────────────────

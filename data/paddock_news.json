@@ -1,0 +1,636 @@
+{
+  "updatedAt": "2026-10-28T23:39:06.780429+00:00",
+  "newsUpdatedAt": "2026-10-28T23:39:06.780429+00:00",
+  "race": "Mexico City Grand Prix",
+  "teams": [
+    {
+      "name": "Red Bull Racing",
+      "stories": [
+        {
+          "title": "The first step in a major Verstappen F1 change",
+          "url": "https://www.the-race.com/formula-1/how-first-step-in-verstappens-big-f1-2027-transition-really-went/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-28T10:17:21+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "The unusual Aston Martin, Honda and Red Bull Powertrains rumours put into perspective",
+          "url": "https://www.autosport.com/f1/news/why-aston-martin-and-red-bull-were-asked-about-an-unlikely-f1-engine-partnership/10869017/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-28T09:41:41+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-28T09:39:24+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T06:44:47+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
+          "url": "https://www.autosport.com/f1/news/f1-united-states-gp-leclerc-beats-verstappen-to-top-fp1/10867509/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-23T18:40:35+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Leclerc puts upgraded Ferrari on top ahead of Verstappen in first practice",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQTFMZE9VUTBfVEZKc1B4NWs5WW1jWW94aW1ZRjlIajRXaUV2R3ExTXY5Smc0R0kyTm5qOEY1aHd0Zm1Ha21QSGJVOWlKaFFsdjltQ1NaWC1zbk1IWE1vWGMtemo3VUVxbzJjeDBVOEVjSTVhZ2I5UFpuS01wUnQ0VUhyUWs2RzNuTXFYck9CTFo1Y1BIQmgyZWd2VVhERE9zaU90UUo5WEFhLWxMQ2kyVA?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-10-23T18:36:51+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Front Wing",
+            "Front Corner"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Ferrari",
+      "stories": [
+        {
+          "title": "What went into Ferrari's upgrade package in the US?",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T09:32:27+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "The mistakes that cost Lewis Hamilton a podium at F1’s US GP",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGJBMjdROTFoT25WcVp1S3htN1JtUFdRSGs3VS1NcGt4ZkdzZ1U4SmxHYkppV013NTlqYW1zZ243TlpJWVh5U0RYTVdTekFiR3lybDVOc21GYzM3RF9GZUp1bkVxLWpPYm9POGpLNzVOcVVtZC1kN1FXZkN0a01aZVpvUGx3MGN4UW5Oc0JmMHphT3NrUENYYWhTRGRVZTFLYTI3ODFMU3JNYmFWVlI0ems3VWRZU3dwM290dWlxYw?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-27T15:01:07+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "The role Friday practice played in Hamilton failing to achieve a podium at the US GP",
+          "url": "https://www.autosport.com/f1/news/the-role-friday-practice-played-in-hamilton-failing-to-achieve-podium-at-us-gp/10868872/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-27T15:00:02+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "What the US GP really exposed about where Ferrari is lacking",
+          "url": "https://www.the-race.com/formula-1/what-the-us-gp-really-exposed-about-where-ferrari-is-lacking/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-27T08:26:35+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "The reasons behind Ferrari's US GP upgrades",
+          "url": "https://www.autosport.com/f1/news/the-reasons-behind-ferraris-us-gp-upgrades/10867545/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-23T20:05:02+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
+          "url": "https://www.autosport.com/f1/news/f1-united-states-gp-leclerc-beats-verstappen-to-top-fp1/10867509/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-23T18:40:35+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Floor Body",
+            "Floor Board"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Mercedes",
+      "stories": [
+        {
+          "title": "PALMER: Was the US GP Antonelli’s most dominant win yet?",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRlluUHd5RDRKNnFWUXFDelR5bmUwT0QxeTlmZklPRWJhck9xeFdRVzV0QXlMd0FKSGVqUXVnZ3ZIbjdnaE9aNDdsLWIwc3lVQjg1LVlBS21zeWFXNjEydU5uSzJIbVJYNHVNLWlKaURidUlJSzFLYnowVm9UVUFuLTdpaE1INFotNlRFdXI5TXN4UWpveVFYTW9pVU1Tdml4LVdTV2wwUlljcE5tcG1VSWIyNTl0WGpIdU04ZTBWWHhpNTVhdG9N?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T14:38:28+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Antonelli’s coronation, Mexico’s optional turn one and more Mexican GP talking points",
+          "url": "https://www.racefans.net/2026/10/28/antonellis-coronation-mexicos-optional-turn-one-and-more-mexican-gp-talking-points/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-28T07:15:40+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Mercedes has a Russell-sized problem and it is sharing responsibility",
+          "url": "https://www.autosport.com/f1/news/mercedes-has-a-russell-sized-problem-and-it-is-sharing-responsibility/10868909/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-27T16:57:28+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "George Russell confused by lack of pace at F1 US GP despite upgraded W17",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN0hEM0p3dkNTYnk1U3V1XzFCSmJYY292YXd5ZXVZdmRtMTRqWU9kMzFLTHBxdXZYM0hqajJsdjVsOUFZVk5XSnVucDYtX0NJLXpnN0haMFY4UnhNdEU5Yjd6T1NRbzlXMjRya01sVkV4YXVEUE5CS2R3Yk1jdTlNYkNRcW5tMWZCVUczOUV6WmZackVCR1ZCYlhuMXkteS1pUEpyUzBXQzUyNWQ1Tk5qWExn?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-25T23:42:51+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Antonelli pole shows Mercedes is 'finally seeing the results' of car upgrades",
+          "url": "https://www.autosport.com/f1/news/antonelli-pole-shows-mercedes-is-seeing-results-of-car-upgrades/10868072/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-25T00:13:34+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Kimi Antonelli explains ‘steps forward’ with Mercedes’ upgrades during Free Practice at United States Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOc3BPWXYwMmNhbW1HZnFZWmhCNGs2c0p2b1N3Zk1IMk5raDBwY3JaR184aDgtU3JiMkxZVy1JT2Qyc2IyaWV6bjBGX2hyTVduUGJDZHlXMUptck5HSHZBd1lQREVaTFNTVlJGamFDcFhYT0lrZE1oYmt0UF8yLUxfdEU1V2RiU1hzbmh5eVN6T3IwYjNRYWtLQTdXMHFqa3VPLUtiS1JZSkJzR0NXd3VkSzBHa0pldHZraGV2MTZxMWdCeVhxZmp1T2V1ZXI1UFlGMnhYU292VTRWUEhMUmc3aU51Nl94Zw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-23T23:25:00+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "McLaren",
+      "stories": [
+        {
+          "title": "Social Media: McLaren reveals Mexican GP livery tweak for tobacco sponsor",
+          "url": "https://www.racefans.net/2026/10/28/social-media-mclaren-reveals-mexican-gp-livery-tweak-for-tobacco-sponsor/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-28T12:06:36+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Norris's new team gets F2 entry for its first year",
+          "url": "https://www.the-race.com/junior/lando-norris-new-team-f2-2027-entry-ln4-fusion/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-28T10:56:11+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Lando Norris' LN4 Fusion granted entry to F2 for 2027",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUNsZU9IaDJvV0tjbXo0c21sQnJoUWRkb0pGd0RwVHNYaHFoTTFqMVZVUjNETm9aMmg1ZmY2WFdRRF9QOGhDdlA0RDlaZWwxVHpGSUhUd1BZMmRXNnJpX0pZQ3F5NnJ6ZkdvMUx6aFlST3pQWU5mMllMeHk3VTFsSGQ2NXhNZTY4MjdHTk9jejhZZFk4RzRYZC04Z0lUT0U3dTZTbg?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-28T10:29:15+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "McLaren's aims for its final F1 2026 upgrades amid decline in form",
+          "url": "https://www.autosport.com/f1/news/mclarens-aims-for-final-f1-2026-upgrades/10867609/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-23T23:04:52+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "\"We're just a step behind\"",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUldVMHVIM3BQWC1Dd1NXTkdLLUVVZXJfU2JRRU5DS1A0UWRabUk0U3Vzd3QyM2lVWGpwbE43bHZBNS1ZbmV6QjNremhHNzBBSTBJVEJHNDlOQTVSeDBsYXp2bVVYa2tXN1Z6ZHZJeHpYLXZCcTRUeDdWWU5JWV9aNVBiVW5MaEF2SGU2aA?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-23T23:00:28+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Norris promises to make \"better decisions\" following fresh talks over Singapore GP clash",
+          "url": "https://www.autosport.com/f1/news/norris-promises-to-make-better-decisions-following-fresh-talks-over-singapore-gp-clash/10866627/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-21T07:17:51+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Front Corner",
+            "Rear Corner",
+            "Diffuser"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Aston Martin",
+      "stories": [
+        {
+          "title": "The unusual Aston Martin, Honda and Red Bull Powertrains rumours put into perspective",
+          "url": "https://www.autosport.com/f1/news/why-aston-martin-and-red-bull-were-asked-about-an-unlikely-f1-engine-partnership/10869017/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-28T09:41:41+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-28T09:39:24+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Is Alonso's harsh F1 driver claim justified?",
+          "url": "https://www.the-race.com/formula-1/is-alonsos-brutal-f1-driver-claim-justified/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-27T10:51:12+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Alonso criticises quality of F1 backmarkers after Albon clash at United States GP",
+          "url": "https://www.autosport.com/f1/news/alonso-criticises-f1-backmarkers-after-albon-clash/10868469/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-26T06:14:23+00:00",
+          "kind": "Team news"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Alpine",
+      "stories": [
+        {
+          "title": "'Don't regret going for the move' – Bearman and Gasly reflect on US GP collision",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjNDb2loMnQwbGNXMTBMRFpNY0lTRk1weDljbDRJeVd4c2NxMng2b3VuSy1mS3lsVE1ia0JQdkRLT0xXN1BLcVBab2dUVzNGUjlhUk5ieGp4bFkzYVNhYkJvNUJQMUk2SzdGRVQ5N1lWS3FmZHFBRGJvZnM0UlgwYXpGQ0tNQWc5aXB3S25DY2YtRW50WlUySGNGZkVjR2gxT1FiYTUydGNDQmQ2VmZia1AwaGZrM3dSZXhwMXNvckJVaXBWd18wSGNIY25UMlV2Z2VpUlBvVDE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-27T12:34:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
+          "url": "https://www.racefans.net/2026/10/25/bearman-disagrees-with-penalty-for-gasly-collision-i-dont-regret-going-for-it/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-25T22:50:12+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto reveals damage from contact with Lindblad forced his DNF in Austin",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcWltZHA0WE1Wem9lakJhLWVCbkJldVFQb0lMS3hjM19aZ252cm9ZR0REQnJHdlo0Z0ZrU2FJeFFxRFJNWnBXZy1OSkxUZXluRTdJV215RjQwbGoyNU9ySjBHU3dHQ2JOeDFCWlNOVHpvWExoWlUzZU1ldFExbFpuUEtpVlRRZWF3ejZubll6R0paaFZWcTB1TDQtYWhxLVV6eXNQd3hnTEE1ZW13SUFRajFGOUozOVB1ZG1SMGthbF8tLVhXVmRCd3RR?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-25T21:54:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Belgian firm to take over Renault/Alpine engine facility in Viry",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMjRUZGFrZ2paRm5fTjNvblhMMFFxTk5XN2ZIZHhlQjBpRmZhRUd5Yk9IVmVrV0VCVExkRGpYRTI2RTJVTFdpRVhITGdINXptaGdFYlZkQmpWdXhGUEl1b3hOWUdJeTZYdVRHSV9xU25heHVxb25jcnNidEs0MEVMNi1DRlpLdDA1cjV1SWUyTS1jcTFrcXhj?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-23T09:37:58+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Floor Corner",
+            "Rear Wing"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Williams",
+      "stories": [
+        {
+          "title": "‘Not ideal’ – Alex Albon reflects on ‘unfortunate’ collision with Oscar Piastri that put him out of Canadian Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnJzRUpkX2Jnb0RKX1g3czRNX1NfNllXdWc3TndCSUpqRjM4Q3l6cGRoZlV0d1JKeDRoa0QyZGpJQm1Qa2JMYkUxbW1lOUtWbHlMNGpPMWJYU0VVbmp0Yk1VWTN1QUNzUzJMaW1MRUtZZVRFSFlmMlFHV0RvWGlhdXdDMFFJOHA3WlJZV1NtYXZxUlh3MmpSaExyS1Z5YU9JTmwyR1VvLTF6ZENiRmpWYUZTUG1WY2t4aWxPUmNsbW40cWhNRENMbFNjOEFLU1psUnNBeXM1QkhxSF9sQzVWdWlSM21iQ1dSRzhuUVBtNzlkZEJxbVgzM3htVEk?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-27T16:49:21+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Alonso criticises quality of F1 backmarkers after Albon clash at United States GP",
+          "url": "https://www.autosport.com/f1/news/alonso-criticises-f1-backmarkers-after-albon-clash/10868469/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-26T06:14:23+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Alonso says F1 has ‘very low quality drivers’ at back of grid after Albon collision",
+          "url": "https://www.racefans.net/2026/10/25/alonso-says-f1-has-very-low-quality-drivers-at-back-of-grid-after-albon-collision/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-25T23:18:24+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Sainz says Williams upgrade is a step forward, but work remains",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNmVnQlFvTS1PSENBNktqVXNFLXJrTGtOQUwtOThibjMycl9uVXlhVm53b3ZXSVhMMFJLa3djUnRVV19CWFF2LUZIQzFGVDVkdU1FVVN3LWtWbVlZb0xRLWdiLXF6Q2FTQkZuYi1HVUphVzd0al9MTk55djdGYUl3blBtbThlNE5QZ1VoMjBMSWMza0dObXc1c3hNMnN4S1BiV1JpTXhGSHFCTUxBY1B3TEdUTWZBbzg?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-08T07:00:00+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Racing Bulls",
+      "stories": [
+        {
+          "title": "‘We’re in a good place’ – Lawson excited for what’s to come after more points in Austin",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWHRYc3pOdVRncVBJSm9TaEhhZ1BGa3RkZmhzSlgwRnlLc2xBQTRmckVNSzZjYTdqMlFTSzFCYmxSZ29DbmVCbm1FYlh3OHROaGJUc29LQmxtc0QtVGhYbURkY2RDNURUQThBN0xXV2VfVHFlb25sSzBzdk5DNmVTUF93YVVmQVBtdlkzZGVidjl0TS1VN2hEM1l3TmFST3pKUXRZNXBwVXpYZGo0SjE1VHE1ajljdjVKbkhOWjAwd2gzQm9iQUtGRFJGTmFJakdXeVFMVklJTzU2bUlnMEJtYg?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-27T10:34:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "‘We executed really well today’ – Lawson smiling after points finish in Texas",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOHgtNUFHd05zQXNqd05KbUxOWDhLZWtGel9MYXg0NDF6YlBFRGJOekM3TDJzTkRmWmdVY0hXRi1jSVh3VjhlbFNhLUs1ZWViSkx5eVg5Mzc5X2RVcW41azlMc3ZKMDE0OG9xcGxBUEpOel9td2pmU00yTUs0VVlTTnZrTmY5Nnh6SC02Y04tNDdoM1VCWGpET0RkQVViTHU5a0daZzRvVGdlMDhaelgyZExDLTBObGp2S1pTaDN5dXpoNlFET1E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-25T22:52:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto reveals damage from contact with Lindblad forced his DNF in Austin",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcWltZHA0WE1Wem9lakJhLWVCbkJldVFQb0lMS3hjM19aZ252cm9ZR0REQnJHdlo0Z0ZrU2FJeFFxRFJNWnBXZy1OSkxUZXluRTdJV215RjQwbGoyNU9ySjBHU3dHQ2JOeDFCWlNOVHpvWExoWlUzZU1ldFExbFpuUEtpVlRRZWF3ejZubll6R0paaFZWcTB1TDQtYWhxLVV6eXNQd3hnTEE1ZW13SUFRajFGOUozOVB1ZG1SMGthbF8tLVhXVmRCd3RR?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-25T21:54:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "‘You tell me!’ – Liam Lawson assesses odds of keeping his Racing Bulls seat after mighty Singapore showing",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNZjZlTUZlS0t3bUNxdGJPdjdSblQ2ek1rTFRZU3V5X2NQR3JKUlRmbVRaRDRINThPZTlBQW53X2QzS0lSLU1yX1F5dndHRG1nenNNYzZIdzVOcHZmelVLdnQ2aDFOZ0JWSDBQZjQ1M09YOWlLekotUTJya25oNU50SlF0QzB3QWFuZFV6UlotSE1rMWV1b0JxdWxrU3BHQ3ZDQWFUMjRNejBRTnYxcldMejRCNExQSjZqUGcxdkNMQjk3czdSY0g4VV9sQjVHNWVxaXZQbjhlaDd4OTB1aE9QWlRrRXhQUGJvQ0ZkY29RMEZUTEE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-12T07:00:00+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Front Wing",
+            "Rear Wing",
+            "Floor Body",
+            "Coke/Engine Cover"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Haas F1 Team",
+      "stories": [
+        {
+          "title": "'Don't regret going for the move' – Bearman and Gasly reflect on US GP collision",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjNDb2loMnQwbGNXMTBMRFpNY0lTRk1weDljbDRJeVd4c2NxMng2b3VuSy1mS3lsVE1ia0JQdkRLT0xXN1BLcVBab2dUVzNGUjlhUk5ieGp4bFkzYVNhYkJvNUJQMUk2SzdGRVQ5N1lWS3FmZHFBRGJvZnM0UlgwYXpGQ0tNQWc5aXB3S25DY2YtRW50WlUySGNGZkVjR2gxT1FiYTUydGNDQmQ2VmZia1AwaGZrM3dSZXhwMXNvckJVaXBWd18wSGNIY25UMlV2Z2VpUlBvVDE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-27T12:34:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
+          "url": "https://www.racefans.net/2026/10/25/bearman-disagrees-with-penalty-for-gasly-collision-i-dont-regret-going-for-it/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-25T22:50:12+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-24T21:56:00+00:00",
+          "kind": "Team news"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Audi",
+      "stories": [
+        {
+          "title": "Stats: Russell scored as many points as Hulkenberg in last three rounds",
+          "url": "https://www.racefans.net/2026/10/27/stats-russell-scored-as-many-points-as-hulkenberg-in-last-three-rounds/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-27T10:20:37+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'More than a bad start' cost Audi after another P11 finish",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRXlabG5ydzlIQWFLYmRzbmJORjJPb0lKQXJESTBiQ2JTSUlKNUFuSDhndGFCX3NaRXJ5OVUxNnVPNzJDOXRZS1VOZ19XLUZ4UW9wVFo2ZW42TVFPdnNqcDNYLWsyX0psMUExZlg4UklEY2xkR2RnUlR3Yi1keENDcjdLSTNyOGJDT08yXzJRY1JZbVNMQlZXMWF2NXNQbExwbTdNN0xtQVZxamJKYnhNVjdOb1B5dnV2ckVjMFI2aTdJMTIwYVBFeXJzX2R0blh0YnlMai1NcTlJcUlCSkttM2ZB?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-27T09:08:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Hulkenberg reveals his Audi went into ‘anti-stall’ off the line in Austin",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOTdLdkFNaTVlUzFWRWswZnk4dV83V200ZkZQdm5TV3BUWDFIVDh2UWRJT0x6TmtKc2VKVlhETUVfTmtYOW0ya01ZSUd0YnE0aTFoOFBWOTBHcXdSY3o0NG5YUUh0c1BWTnQ0bHlRbVBMWFRsczg4VmxfNW00ZjhtMjBKaFJzQXBfZGllN1EwSjFJbVJGZklFTnFkMmUwa1dtdkswRlBiRDhCSElZS1o5VUtnS2NiMUd0bTBNQVRpM042b1k?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-25T22:55:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-20T07:00:00+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "“They build the best engines” – Audi F1 drivers reveal biggest limitation and how to address it",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSWZlbmpkbGNZTXBPZkNzbzJxakFtMUE3T3NROWEya0dVenF6WFRfeTdJbmEzQy0zRV90YVFRb3JnNkRMdE9TNUtDT2lpVlVGOGZGY240ay1Da2VCcVB1dDA4cEdjaUhhcVoxMkdOTlRXamVWRlFPSzdUODJabE8zN0xnbGRLLV9kWENIQ2M0V3ZQUzNVbnNHMGxMQ2c0S0trTUljN2dydU96QWdpaDA1c01NeFJnUEthY21UeWliQVdUaUlNS2ZBZ01wRkpxcV9z?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-08T07:00:00+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Front Corner",
+            "Front Floor",
+            "Mirror stay"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    },
+    {
+      "name": "Cadillac",
+      "stories": [
+        {
+          "title": "New contract to keep Perez racing for Cadillac until at least 2029",
+          "url": "https://www.racefans.net/2026/10/28/new-contract-to-keep-perez-racing-for-cadillac-until-at-least-2029/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-28T15:12:35+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "ANALYSIS: What does the future hold for Bottas at Cadillac after Perez contract extension?",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSTEtM3lzZzcydXBWbjc0ZWE5VlpiZDVONDVtYVFUNlNBTWY0aEplYUU4YUMzMHRYOTgyaW50emh3aVVla0JpZTl6UnYxSUZyVjN6ck1NcW5xeGF3YnlOMXQxRXB1WDVQbTVUTWcydTRNdGU0MEZrYzJvZ2F2cko5U0t5eE1RQ2E3T0tyOWU5Z2xOSGc1djEwQWdEZVhoVGRqYmVqNXQxTE9qSDdBQWVheVV1blpHVW12ZnJuT3dOUDM?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T15:06:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "ANALYSIS: What is going on with Bottas and Cadillac?",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPd3l1NXYydDFJOW9sS2NjSC1TTDVFTGV3amJOS2tWQk1CaTdNZ056TVNSSFY2WHF6by1XODFFZF9rX2dnRnNyMkNCb0p2c0p2dGxoUUZCTWU2UWR1Uk1OdkZXMmdHVUQ0elVsZ2lkYVB4dENuMkJhMWQwdWYtR1ppdGlMd3FrSDdtQ3YxVzNQbkhRdm1NR0VBZlVLeU9XR3NKLXZYNlJPTUxLZWJqTk5oRWhkd0VDXzQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T15:06:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "When Cadillac will open its F1 engine factory",
+          "url": "https://www.autosport.com/f1/news/when-cadillac-will-open-f1-engine-factory/10867020/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-22T16:00:02+00:00",
+          "kind": "Technical report"
+        }
+      ],
+      "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Floor Fences",
+            "Cooling Louvres"
+          ],
+          "event": "United States Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "23 October 2026"
+        }
+      ]
+    }
+  ],
+  "fiaDocuments": [
+    {
+      "event": "Mexico City Grand Prix",
+      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/Mexico%20City%20Grand%20Prix",
+      "teams": {},
+      "status": "not_published"
+    },
+    {
+      "event": "United States Grand Prix",
+      "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
+      "publishedAt": "23 October 2026",
+      "teams": {
+        "McLaren": {
+          "hasChanges": true,
+          "components": [
+            "Front Corner",
+            "Rear Corner",
+            "Diffuser"
+          ]
+        },
+        "Mercedes": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Red Bull Racing": {
+          "hasChanges": true,
+          "components": [
+            "Front Wing",
+            "Front Corner"
+          ]
+        },
+        "Ferrari": {
+          "hasChanges": true,
+          "components": [
+            "Floor Body",
+            "Floor Board"
+          ]
+        },
+        "Williams": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Racing Bulls": {
+          "hasChanges": true,
+          "components": [
+            "Front Wing",
+            "Rear Wing",
+            "Floor Body",
+            "Coke/Engine Cover"
+          ]
+        },
+        "Aston Martin": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Haas F1 Team": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Audi": {
+          "hasChanges": true,
+          "components": [
+            "Front Corner",
+            "Front Floor",
+            "Mirror stay"
+          ]
+        },
+        "Alpine": {
+          "hasChanges": true,
+          "components": [
+            "Floor Corner",
+            "Rear Wing"
+          ]
+        },
+        "Cadillac": {
+          "hasChanges": true,
+          "components": [
+            "Floor Fences",
+            "Cooling Louvres"
+          ]
+        }
+      },
+      "status": "available"
+    }
+  ],
+  "errors": []
+}

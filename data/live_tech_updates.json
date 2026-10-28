@@ -1,211 +1,211 @@
 {
     "Red Bull Racing": {
-        "Component": "Floor",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a new floor with subtle aerodynamic changes as part of their final major upgrade package of the season.",
-        "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 2.0,
-        "Upgrade_Score": 0.15,
-        "Upgrade_Validation": "VALID",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
-        ],
-        "URL": "https://www.motorsport.com/f1/news/red-bull-confirms-final-major-f1-upgrade-of-2026-for-max-verstappen-and-isack-hadjar/10858533/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
-    },
-    "Ferrari": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
+            "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Bahrain GP",
+        "As_Of": "Mexico City GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
-    "Mercedes": {
-        "Component": "Floor and sidepods",
+    "Ferrari": {
+        "Component": "Aero package (floor, sidepods, bodywork)",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a major aerodynamic upgrade package that resulted in a performance loss of 0.3s to 0.5s instead of the predicted gain.",
-        "Pace_Delta": 0.4,
-        "FP2_Best_Pos": 7.0,
-        "Upgrade_Score": -0.4,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
-        "Sources": [
-            "The Race"
-        ],
-        "URL": "https://www.the-race.com/formula-1/gone-backwards-mercedess-upgrade-letdown-explained/",
-        "As_Of": "Bahrain Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.40s penalty)"
-    },
-    "McLaren": {
-        "Component": "Bodywork package (sidepods, intakes, engine cover)",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren introduced a comprehensive bodywork overhaul in Baku to improve efficiency, though the team struggled with the track's specific characteristics.",
-        "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 3.0,
-        "Upgrade_Score": 0.15,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "The Race"
-        ],
-        "URL": "https://www.the-race.com/formula-1/mclaren-brutal-f1-body-package-change-azerbaijan-gp/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
-    },
-    "Aston Martin": {
-        "Component": "Honda Turbocharger (ADUO 2)",
-        "Category": "Power Unit",
-        "Certainty": "confirmed",
-        "Summary": "Honda introduced an upgraded turbocharger as part of their second ADUO allowance to improve power unit performance.",
+        "Summary": "Ferrari introduced a significant aero package at the US GP, though drivers played down the performance gain as less than a tenth of a second.",
         "Pace_Delta": -0.05,
-        "FP2_Best_Pos": 15.0,
+        "FP2_Best_Pos": 0,
         "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "The Race"
         ],
-        "URL": "https://www.the-race.com/formula-1/honda-secretly-introduced-aduo-2-f1-upgrade/",
-        "As_Of": "Spanish GP",
+        "URL": "https://www.the-race.com/formula-1/ferrari-f1-2026-us-gp-biggest-upgrade-revealed/",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Spanish GP)"
+        "Badge": "Running spec (from United States GP)"
     },
-    "Alpine": {
-        "Component": "Stable Aerodynamic Package",
+    "Mercedes": {
+        "Component": "Aero package (floor and sidepods)",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
-        ],
-        "URL": "",
-        "As_Of": "Bahrain GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
-    },
-    "Williams": {
-        "Component": "New chassis and weight-saving package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Williams introduced a significantly lighter chassis and aerodynamic refinements that resulted in their best qualifying performance of the season.",
-        "Pace_Delta": -0.2,
-        "FP2_Best_Pos": 17.0,
-        "Upgrade_Score": 0.2,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
-        "Sources": [
-            "Motorsport.com"
-        ],
-        "URL": "https://www.motorsport.com/f1/news/williams-upgrade-delivering-baku-overachievement/10859048/",
-        "As_Of": "Azerbaijan GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
-    },
-    "Racing Bulls": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
-        ],
-        "URL": "",
-        "As_Of": "Bahrain GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
-    },
-    "Haas F1 Team": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
-        "Is_Defective": false,
-        "Sources": [
-            "Baseline"
-        ],
-        "URL": "",
-        "As_Of": "Bahrain GP",
-        "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
-    },
-    "Audi": {
-        "Component": "Front wing assembly",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Audi introduced a comprehensive front wing update to improve airflow consistency and outwash around the front tyres.",
-        "Pace_Delta": -0.08,
-        "FP2_Best_Pos": 12.0,
-        "Upgrade_Score": 0.08,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Summary": "The upgrade package introduced in Malaysia caused handling instability and a narrow balance window, leading the team to revert to older specs for some sessions.",
+        "Pace_Delta": 0.15,
+        "FP2_Best_Pos": 0,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
             "The Race"
         ],
-        "URL": "https://www.the-race.com/formula-1/gary-anderson-audi-baku-f1-upgrade/",
-        "As_Of": "Azerbaijan GP",
+        "URL": "https://www.the-race.com/formula-1/big-weakness-with-new-mercedes-upgrade-has-been-exposed/",
+        "As_Of": "Malaysia GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Azerbaijan GP)"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
     },
-    "Cadillac": {
-        "Component": "Stable Aerodynamic Package",
-        "Category": "Aero",
+    "McLaren": {
+        "Component": "Fuel system fixes",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "No new aerodynamic upgrades reported in the last 3 weeks; running standard baseline car spec.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 1.0,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "VALID",
+        "Summary": "McLaren implemented peripheral changes to the Mercedes power unit to resolve a persistent fuel injection and top-speed issue.",
+        "Pace_Delta": -0.02,
+        "FP2_Best_Pos": 0,
+        "Upgrade_Score": 0.02,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Baseline"
+            "Autosport"
+        ],
+        "URL": "https://www.autosport.com/f1/news/mclaren-targets-lando-norris-costly-fuel-system-issue-with-singapore-f1-power-unit-fixes/10863087/",
+        "As_Of": "Singapore GP",
+        "Is_Current_Weekend": false,
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Singapore GP)"
+    },
+    "Aston Martin": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Bahrain GP",
+        "As_Of": "Mexico City GP",
         "Is_Current_Weekend": false,
-        "Status": "STABLE_SPEC",
-        "Badge": "Standard Baseline"
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "Alpine": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Mexico City GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "Williams": {
+        "Component": "Aero upgrade package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "Carlos Sainz described the latest Williams upgrade as a step forward, though noted the team still faces challenges to score points.",
+        "Pace_Delta": -0.04,
+        "FP2_Best_Pos": 0,
+        "Upgrade_Score": 0.04,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Formula 1"
+        ],
+        "URL": "https://www.formula1.com/en/video/sainz-says-williams-upgrade-is-a-step-forward-but-work-remains.1878479645519933584",
+        "As_Of": "Singapore GP",
+        "Is_Current_Weekend": false,
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Singapore GP)"
+    },
+    "Racing Bulls": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Mexico City GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "Haas F1 Team": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Mexico City GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "Audi": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Mexico City GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "Cadillac": {
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Mexico City GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
     }
 }

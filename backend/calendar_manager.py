@@ -56,6 +56,7 @@ COUNTRY_FLAGS: Dict[str, str] = {
     "Italy": "🇮🇹",
     "Azerbaijan": "🇦🇿",
     "Bahrain": "🇧🇭",
+    "Malaysia": "🇲🇾",
     "Singapore": "🇸🇬",
     "Mexico": "🇲🇽",
     "Brazil": "🇧🇷",
@@ -105,10 +106,16 @@ def fetch_season_schedule(year: int = 2026) -> Dict[str, Dict[str, Any]]:
             location = str(row["Location"])
             round_num = int(row["RoundNumber"])
             date = row["EventDate"].to_pydatetime()
+            if year == 2026 and date.month == 4 and name in {"Bahrain Grand Prix", "Saudi Arabian Grand Prix"}:
+                continue
             is_sprint = "sprint" in str(row.get("EventFormat", "")).lower()
             track_type = "Street" if name in STREET_CIRCUITS else "Permanent"
             flag = COUNTRY_FLAGS.get(country, "🏁")
-            short = SHORT_NAMES.get(name, location)
+            short = location or SHORT_NAMES.get(name, name)
+            # The October event retains the Bahrain title but moved to Malaysia.
+            # Source: formula1.com/en/racing/2026/bahrain (2–4 October).
+            if year == 2026 and name == "Bahrain Grand Prix" and date.month == 10:
+                country, location, short, flag = "Malaysia", "Kuala Lumpur", "Sepang", "🇲🇾"
 
             sessions = []
             for i in range(1, 6):
@@ -151,6 +158,16 @@ def fetch_season_schedule(year: int = 2026) -> Dict[str, Dict[str, Any]]:
 # ── Dynamically loaded schedule & sprint list ─────────────────────────────────
 SCHEDULE_2026: Dict[str, Dict[str, Any]] = fetch_season_schedule(2026)
 
+# Historical changes are separate from the numbered championship rounds.
+CALENDAR_CHANGES = [
+    {"name": "Bahrain Grand Prix", "date": "2026-04-12", "status": "Cancelled",
+     "note": "The April event did not take place. A later Bahrain-titled event ran in Malaysia on 4 October.",
+     "source": "https://www.formula1.com/en/latest/article/bahrain-and-saudi-arabian-grands-prix-will-not-take-place-in-april.1hnqllVG85RSt8pbFc5Ivx.1hnqllVG85RSt8pbFc5Ivx"},
+    {"name": "Saudi Arabian Grand Prix", "date": "2026-04-19", "status": "Cancelled",
+     "note": "The April event did not take place. No replacement was scheduled in April.",
+     "source": "https://www.formula1.com/en/latest/article/bahrain-and-saudi-arabian-grands-prix-will-not-take-place-in-april.1hnqllVG85RSt8pbFc5Ivx.1hnqllVG85RSt8pbFc5Ivx"},
+]
+
 SPRINT_RACES_2026: FrozenSet[str] = frozenset(
     name for name, info in SCHEDULE_2026.items() if info.get("is_sprint")
 )
@@ -170,6 +187,7 @@ class RaceInfo:
     country:     str = "Unknown"
     flag:        str = "🏁"
     sessions:    List[Dict[str, Any]] = field(default_factory=list)
+    location:    str = ""
 
 
 # ── Dynamic Status Helper ─────────────────────────────────────────────────────
@@ -251,6 +269,7 @@ def get_next_race_full(now: Optional[datetime] = None) -> RaceInfo:
         country    = info.get("country", "Unknown"),
         flag       = info.get("flag", "🏁"),
         sessions   = info.get("sessions", []),
+        location   = info.get("location", ""),
     )
 
 

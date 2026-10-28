@@ -19,6 +19,7 @@ from utils import safe_encode, standings_rank, normalise_color, get_neutral_valu
 from archive_loader import load_race_results, load_qualifying, load_sprint, load_practice_results, podium_from_results
 from features import compute_practice_pace, compute_qualifying_dominance, compute_weekend_momentum
 from data_loader import load_event
+from paddock_intelligence import paddock_feed, eligible_upgrade_score
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), '..', 'models', 'f1_podium_predictor.pkl')
 
@@ -511,6 +512,7 @@ def get_next_race():
         "name": ri.name,
         "short": ri.short if getattr(ri, "short", None) else meta["short"],
         "country": ri.country if getattr(ri, "country", None) else meta["country"],
+        "location": ri.location,
         "flag": ri.flag if getattr(ri, "flag", None) else meta["flag"],
         "trackType": "Street" if ri.track_type == "Street" else "Permanent",
         "date": ri.date.strftime("%Y-%m-%d"),
@@ -529,6 +531,8 @@ def get_calendar():
             "name": name,
             "short": info.get("short") or meta["short"],
             "country": info.get("country") or meta["country"],
+            "location": info.get("location", ""),
+            "status": info.get("status", "Scheduled"),
             "flag": info.get("flag") or meta["flag"],
             "trackType": "Street" if info["track_type"] == "Street" else "Permanent",
             "date": info["date"].strftime("%Y-%m-%d"),
@@ -536,6 +540,20 @@ def get_calendar():
             "sessions": info.get("sessions", [])
         })
     return jsonify(res)
+
+
+@app.route("/api/calendar-changes", methods=["GET"])
+def get_calendar_changes():
+    from calendar_manager import CALENDAR_CHANGES
+    return jsonify(CALENDAR_CHANGES)
+
+
+@app.route("/api/paddock", methods=["GET"])
+def get_paddock():
+    feed = paddock_feed()
+    for team in feed.get("teams", []):
+        team["id"] = TEAM_NAME_TO_ID.get(team["name"])
+    return jsonify(feed)
 
 @app.route("/api/drivers", methods=["GET"])
 def get_drivers():
@@ -557,8 +575,9 @@ def get_drivers():
         if pd.isna(form_val):
             form_val = 11.0
             
-        standings_rank = idx + 1
+        standings_rank = len(drivers) + 1
         qual_pos = row["QualifyingPos"]
+        has_qualifying = not pd.isna(qual_pos)
         if pd.isna(qual_pos):
             # Not a race weekend / no Quali yet — default starting grid to championship standings rank
             qual_pos = float(standings_rank)
@@ -573,7 +592,9 @@ def get_drivers():
             "standingsRank": standings_rank,
             "seasonPoints": int(row["SeasonPoints"]),
             "recentForm": round(form_val, 2),
-            "qualifyingPos": int(qual_pos)
+            "qualifyingPos": int(qual_pos),
+            "gridSource": "qualifying" if has_qualifying else "assumed",
+            "gridRound": get_next_race_full().round_num,
         })
     return jsonify(drivers)
 
@@ -610,7 +631,7 @@ def predict():
                 canonical_team = CANONICAL_TECH_TEAMS.get(t_id, team_name)
                 if canonical_team in tech_data and "Component" in tech_data[canonical_team]:
                     t_info = tech_data[canonical_team]
-                    upgrade = float(t_info.get("Upgrade_Score", 0.0))
+                    upgrade = eligible_upgrade_score(t_info)
     except Exception:
         upgrade = 0.0
 
