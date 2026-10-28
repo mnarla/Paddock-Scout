@@ -44,7 +44,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas fastf1 scikit-learn numpy requests lxml googlenewsdecoder
+          pip install pandas fastf1 scikit-learn numpy requests lxml googlenewsdecoder 'pypdf>=6.0,<7'
 
       - name: Check if today's sessions are already complete
         id: session_check
@@ -86,8 +86,12 @@ jobs:
         run: |
           PYTHONPATH=backend python3 backend/news_agent.py
 
+      - name: Refresh team news and official FIA declarations
+        # News still changes after all of today's track sessions are ingested.
+        run: |
+          PYTHONPATH=backend python3 backend/paddock_intelligence.py
+
       - name: Commit & push new data
-        if: steps.session_check.outputs.skip != 'true'
         run: |
           git config --global user.name  "Paddock Scout Bot"
           git config --global user.email "actions@github.com"
