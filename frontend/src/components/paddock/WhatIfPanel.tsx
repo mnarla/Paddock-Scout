@@ -29,8 +29,7 @@ export function WhatIfPanel({
   const maxGrid = drivers?.length ?? 22;
 
   const isModified =
-    driver &&
-    (gridPos !== driver.qualifyingPos || Math.abs(form - driver.recentForm) > 0.05);
+    driver && (gridPos !== driver.qualifyingPos || Math.abs(form - driver.recentForm) > 0.05);
 
   // Snap grid back into bounds if driver changes
   useEffect(() => {
@@ -38,9 +37,9 @@ export function WhatIfPanel({
   }, [driver, gridPos, maxGrid, onReset]);
 
   return (
-    <div className="space-y-3 pt-1">
+    <div className="control-panel">
       {/* Telemetry Status Bar */}
-      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06]">
+      <div className="control-panel__status">
         <div className="flex items-center gap-2">
           <Sliders className="w-3.5 h-3.5 text-rose-400" />
           <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-300">
@@ -49,27 +48,33 @@ export function WhatIfPanel({
         </div>
         <div className="flex items-center gap-2">
           {isModified ? (
-            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[9px] font-mono font-bold bg-amber-500/15 border border-amber-500/30 text-amber-400">
-              <span className="w-1 h-1 rounded-full bg-amber-400 animate-pulse" />
+            <span className="control-panel__simulated">
+              <span />
               SIMULATED
             </span>
           ) : (
-            <span className="text-[9px] font-mono text-slate-500 uppercase">
-              BASELINE REALITY
+            <span className="text-[9px] font-mono text-slate-400 uppercase">
+              {isPostQuali ? "RECORDED QUALIFYING" : "ASSUMED GRID"}
             </span>
           )}
         </div>
       </div>
 
       {/* Grid Position Slider Row */}
-      <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.05] space-y-2">
+      <div className="control-panel__row">
         <div className="flex items-baseline justify-between">
           <div>
             <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400">
-              Starting Grid Slot
+              {gridPos !== driver?.qualifyingPos
+                ? "Scenario grid"
+                : isPostQuali
+                  ? "Recorded grid"
+                  : "Assumed grid"}
             </div>
             <div className="text-[9px] text-slate-500">
-              {isPostQuali ? "Official Qualifying Result" : "Projected Grid Rank"}
+              {isPostQuali
+                ? "Based on this weekend’s qualifying; penalties may change the starting grid."
+                : "Based on championship position. Adjust to explore a scenario."}
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -107,6 +112,7 @@ export function WhatIfPanel({
             value={gridPos}
             disabled={!driver}
             onChange={(e) => onGridChange(Number(e.target.value))}
+            aria-label="Scenario starting grid position"
             className="w-full h-1.5 rounded-lg appearance-none cursor-pointer bg-slate-800 accent-rose-500 focus:outline-none focus:ring-1 focus:ring-rose-500/50"
           />
           <div className="flex justify-between text-[8px] font-mono text-slate-500 mt-1 px-0.5">
@@ -120,7 +126,7 @@ export function WhatIfPanel({
       </div>
 
       {/* Recent Form Slider Row */}
-      <div className="p-3 rounded-lg bg-white/[0.02] border border-white/[0.05] space-y-2">
+      <div className="control-panel__row">
         <div className="flex items-baseline justify-between">
           <div>
             <div className="text-[10px] font-mono font-semibold uppercase tracking-wider text-slate-400">
@@ -178,22 +184,22 @@ export function WhatIfPanel({
       </div>
 
       {/* Pre-Weekend / Standings Note */}
-      <div className="flex items-start gap-2 p-2.5 rounded-lg bg-sky-500/[0.05] border border-sky-500/15 text-[10px] text-slate-400 font-sans leading-relaxed">
-        <Info className="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5" />
+      <div className="control-panel__note">
+        <Info className="w-3.5 h-3.5 shrink-0 mt-0.5" />
         <span>
-          <strong className="text-slate-200 font-semibold">Pre-Weekend Telemetry:</strong> When outside active track sessions (prior to Saturday qualifying), starting grid slots and baseline factors default to current World Championship standings and 3-race rolling form.
+          {isPostQuali
+            ? "Qualifying data is available for this race. The default uses the recorded qualifying position; moving the slider creates a scenario. Grid penalties may still apply."
+            : "Qualifying has not been ingested for this race. This is a what-if forecast using championship position as an assumed grid, plus recent race form. It will switch automatically when qualifying data arrives."}
         </span>
       </div>
 
       {/* Reset Action */}
       {isModified && (
-        <button
-          type="button"
-          onClick={onReset}
-          className="w-full py-1.5 px-3 rounded-lg border border-white/[0.1] bg-white/[0.03] hover:bg-white/[0.07] text-[10px] font-mono font-bold text-slate-300 hover:text-white uppercase tracking-wider flex items-center justify-center gap-1.5 transition cursor-pointer"
-        >
+        <button type="button" onClick={onReset} className="control-panel__reset">
           <RotateCcw className="w-3 h-3 text-rose-400" />
-          <span>Reset Overrides to Baseline (P{driver?.qualifyingPos} · {driver?.recentForm.toFixed(1)})</span>
+          <span>
+            Reset Overrides to Baseline (P{driver?.qualifyingPos} · {driver?.recentForm.toFixed(1)})
+          </span>
         </button>
       )}
     </div>

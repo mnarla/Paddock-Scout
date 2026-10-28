@@ -11,18 +11,16 @@ export interface CountdownState {
   s: number;
 }
 
-export function useSessionCountdown(
-  race?: RaceInfo,
-  calendar?: RaceInfo[]
-): CountdownState | null {
-  const [now, setNow] = useState(() => Date.now());
+export function useSessionCountdown(race?: RaceInfo, calendar?: RaceInfo[]): CountdownState | null {
+  const [now, setNow] = useState<number | null>(null);
 
   useEffect(() => {
+    setNow(Date.now());
     const id = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(id);
   }, []);
 
-  if (!race && (!calendar || calendar.length === 0)) return null;
+  if (now === null || (!race && (!calendar || calendar.length === 0))) return null;
 
   interface SessionEntry {
     prefix?: string;

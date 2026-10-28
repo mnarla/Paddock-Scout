@@ -37,8 +37,8 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
     (!hasPractice && !hasQualifying
       ? "pre_weekend"
       : hasPractice && !hasQualifying
-      ? "friday_practice"
-      : "fully_ingested");
+        ? "friday_practice"
+        : "fully_ingested");
 
   const subheader =
     apiSubheader ??
@@ -47,10 +47,10 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         ? "Pre-race form weighting — awaiting FP1 & Sprint Qualifying"
         : "Pre-race form weighting — awaiting FP1 & FP2"
       : stage === "friday_practice"
-      ? isSprint
-        ? "Friday session pace active — awaiting Sprint & qualifying"
-        : "Friday practice pace active — awaiting FP3 & qualifying"
-      : "Pre-race session data fully ingested");
+        ? isSprint
+          ? "Friday session pace active — awaiting Sprint & qualifying"
+          : "Friday practice pace active — awaiting FP3 & qualifying"
+        : "Pre-race session data fully ingested");
 
   const statusMessage =
     apiStatusMessage ??
@@ -59,12 +59,12 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         ? "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday FP1, Sprint Qualifying, and Saturday Sprint data."
         : "Live session data unavailable — showing pre-race form weighting only. Awaiting Friday practice (FP1 & FP2) and Saturday qualifying data."
       : stage === "friday_practice"
-      ? isSprint
-        ? "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited."
-        : "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited."
-      : isSprint
-      ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions."
-      : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.");
+        ? isSprint
+          ? "Friday session data active (FP1 & Sprint Qualifying) — Saturday Sprint and Grand Prix qualifying data are currently being awaited."
+          : "Friday Practice 1 & 2 data active — Saturday practice (FP3) and qualifying data are currently being awaited."
+        : isSprint
+          ? "Pre-race session data is fully ingested (FP1, Sprint & Qualifying). Live sprint results and starting grid are actively driving predictions."
+          : "Pre-race session data is fully ingested (FP1–FP3 & Qualifying). Live grid positions and weekend momentum are actively driving predictions.");
 
   // If driver-specific contributions exist on the prediction object, use them!
   // Otherwise fall back to the model's global baseline weights.
@@ -104,73 +104,71 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
   const maxWeight = Math.max(...normalizedEntries.map((e) => e.weight), 0.001);
 
   return (
-    <div className="space-y-3 pt-1">
+    <div className="feature-panel">
       {/* Telemetry Stage Status Bar */}
-      <div className="flex items-center justify-between px-3 py-2 rounded-lg bg-white/[0.03] border border-white/[0.06]">
+      <div className="feature-panel__header">
         <div>
           <div className="text-[10px] font-mono font-bold uppercase tracking-wider text-slate-300">
             Model Feature Weights
           </div>
           <div className="text-[9px] text-slate-500 font-sans">{subheader}</div>
         </div>
-        <span className="font-mono text-[10px] font-bold text-rose-400 bg-rose-500/10 px-2 py-0.5 rounded border border-rose-500/20">
+        <span className="feature-panel__total font-mono">
           {isWeightsLoading ? "..." : "Σ 100.0%"}
         </span>
       </div>
 
       {/* Session Stage Status Banner with SVG Icons */}
       {stage === "pre_weekend" && (
-        <div className="flex items-start gap-2.5 rounded-lg border border-amber-500/25 bg-amber-500/10 px-3 py-2 text-[10px] text-amber-300/90 font-mono">
+        <div className="feature-panel__status feature-panel__status--waiting">
           <Clock className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" />
           <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
       {stage === "friday_practice" && (
-        <div className="flex items-start gap-2.5 rounded-lg border border-sky-500/25 bg-sky-500/10 px-3 py-2 text-[10px] text-sky-300/90 font-mono">
+        <div className="feature-panel__status">
           <Gauge className="w-3.5 h-3.5 text-sky-400 shrink-0 mt-0.5" />
           <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
       {stage === "fully_ingested" && (
-        <div className="flex items-start gap-2.5 rounded-lg border border-emerald-500/25 bg-emerald-500/10 px-3 py-2 text-[10px] text-emerald-300/90 font-mono">
+        <div className="feature-panel__status feature-panel__status--ready">
           <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
           <span className="leading-snug">{statusMessage}</span>
         </div>
       )}
 
       {/* Feature Progress Bars */}
-      <div className="space-y-2 p-3 rounded-lg bg-white/[0.02] border border-white/[0.05]">
-        {isWeightsLoading ? (
-          Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="grid grid-cols-[120px_1fr_45px] items-center gap-3">
-              <div className="h-2 w-20 animate-pulse rounded bg-white/[0.05]" />
-              <div className="h-1.5 animate-pulse rounded bg-white/[0.05]" />
-              <div className="h-2 w-8 animate-pulse rounded bg-white/[0.05]" />
-            </div>
-          ))
-        ) : (
-          normalizedEntries.map((entry) => {
-            const barPct = (entry.weight / maxWeight) * 100;
-            return (
-              <div key={entry.key} className="grid grid-cols-[115px_1fr_45px] items-center gap-2.5">
-                <span className="text-[10px] font-mono text-slate-300 truncate">
-                  {FEATURE_LABELS[entry.key] ?? entry.key}
-                </span>
-                <div className="relative h-1.5 overflow-hidden rounded-full bg-slate-800">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-rose-500/80 to-rose-400 transition-all duration-300 ease-out"
-                    style={{ width: `${barPct}%` }}
-                  />
-                </div>
-                <span className="font-mono text-right text-[10px] font-bold text-white tabular">
-                  {(entry.weight * 100).toFixed(1)}%
-                </span>
+      <div className="feature-panel__rows">
+        {isWeightsLoading
+          ? Array.from({ length: 6 }).map((_, i) => (
+              <div key={i} className="grid grid-cols-[120px_1fr_45px] items-center gap-3">
+                <div className="h-2 w-20 animate-pulse rounded bg-white/[0.05]" />
+                <div className="h-1.5 animate-pulse rounded bg-white/[0.05]" />
+                <div className="h-2 w-8 animate-pulse rounded bg-white/[0.05]" />
               </div>
-            );
-          })
-        )}
+            ))
+          : normalizedEntries.map((entry) => {
+              const barPct = (entry.weight / maxWeight) * 100;
+              return (
+                <div
+                  key={entry.key}
+                  className="grid grid-cols-[115px_1fr_45px] items-center gap-2.5"
+                >
+                  <span className="text-[10px] font-mono text-slate-300 truncate">
+                    {FEATURE_LABELS[entry.key] ?? entry.key}
+                  </span>
+                  <div className="feature-meter">
+                    <div className="feature-meter__fill" style={{ width: `${barPct}%` }} />
+                  </div>
+                  <span className="font-mono text-right text-[10px] font-bold text-white tabular">
+                    {(entry.weight * 100).toFixed(1)}%
+                  </span>
+                </div>
+              );
+            })}
       </div>
 
       {/* Uncertainty Note */}
@@ -178,7 +176,9 @@ export function FeatureContribution({ prediction, featureWeights }: Props) {
         <div className="flex items-start gap-1.5 px-1 text-[9px] font-mono text-slate-500">
           <Info className="w-3 h-3 text-slate-500 shrink-0 mt-0.5" />
           <span>
-            Feature influences reflect the model&apos;s decision breakdown for this driver. Residual uncertainty accounts for race-day chaos, safety cars, weather, and mechanical reliability.
+            Feature influences reflect the model&apos;s decision breakdown for this driver. Residual
+            uncertainty accounts for race-day chaos, safety cars, weather, and mechanical
+            reliability.
           </span>
         </div>
       )}

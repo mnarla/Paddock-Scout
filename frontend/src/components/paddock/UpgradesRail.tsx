@@ -1,7 +1,14 @@
 import { useMemo } from "react";
 import { UPGRADES, type Upgrade } from "@/data/upgrades";
 import { TEAMS } from "@/data/teams";
-import { Wrench, CheckCircle, AlertTriangle, ArrowDownRight, ArrowUpRight, ShieldCheck } from "lucide-react";
+import {
+  Wrench,
+  CheckCircle,
+  AlertTriangle,
+  ArrowDownRight,
+  ArrowUpRight,
+  ShieldCheck,
+} from "lucide-react";
 
 export function isConfirmedUpgrade(u: Upgrade): boolean {
   return (
@@ -53,16 +60,15 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
             {confirmedUpgrades.length} CONFIRMED
           </span>
         </div>
-        <p className="mt-1 text-[10px] font-mono text-slate-400">
-          {validationHeader}
-        </p>
+        <p className="mt-1 text-[10px] font-mono text-slate-400">{validationHeader}</p>
       </div>
 
       {/* Upgrades Scrollable Feed */}
       <div className="flex-1 min-h-0 overflow-y-auto divide-y divide-white/[0.04] telemetry-scrollbar">
         {confirmedUpgrades.length === 0 ? (
           <div className="p-8 text-center text-xs font-mono text-slate-500">
-            No confirmed technical upgrades reported for this round. All constructors currently running baseline specifications.
+            No confirmed technical upgrades reported for this round. All constructors currently
+            running baseline specifications.
           </div>
         ) : (
           <ul className="divide-y divide-white/[0.04]">
@@ -71,10 +77,7 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
               const teamColor = team?.color ?? "#888888";
 
               return (
-                <li
-                  key={i}
-                  className="relative px-4 py-3 transition-colors hover:bg-white/[0.03]"
-                >
+                <li key={i} className="relative px-4 py-3 transition-colors hover:bg-white/[0.03]">
                   {/* Team accent line */}
                   <div
                     className="absolute bottom-0 left-0 top-0 w-1"
@@ -109,7 +112,9 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                         ) : u.status === "DEFECTIVE" ? (
                           <span className="inline-block w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
                         ) : null}
-                        <span className={u.status === "DEFECTIVE" ? "text-rose-400 font-semibold" : ""}>
+                        <span
+                          className={u.status === "DEFECTIVE" ? "text-rose-400 font-semibold" : ""}
+                        >
                           {u.badge}
                         </span>
                       </p>
@@ -125,8 +130,7 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                           </span>
                         ) : u.paceDelta > 0 ? (
                           <span className="tabular inline-flex items-center gap-0.5 text-xs font-bold text-rose-400">
-                            <ArrowUpRight className="h-3 w-3" />
-                            +{u.paceDelta.toFixed(2)}s/lap
+                            <ArrowUpRight className="h-3 w-3" />+{u.paceDelta.toFixed(2)}s/lap
                           </span>
                         ) : (
                           <span className="tabular text-xs font-semibold text-slate-400">
@@ -174,9 +178,7 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
                       ) : (
                         <span className="truncate max-w-[180px]">src · {u.source}</span>
                       )}
-                      {u.asOf && (
-                        <span className="shrink-0 text-slate-400">as of {u.asOf}</span>
-                      )}
+                      {u.asOf && <span className="shrink-0 text-slate-400">as of {u.asOf}</span>}
                     </div>
                   </div>
                 </li>
@@ -192,7 +194,9 @@ export function UpgradesRail({ upgrades }: { upgrades?: Upgrade[] }) {
           <ShieldCheck className="h-3 w-3 text-emerald-400" />
           <span>FIA Aero Tech Ingest</span>
         </span>
-        <span className="text-[9px] uppercase tracking-wider text-slate-500">Confirmed Specifications</span>
+        <span className="text-[9px] uppercase tracking-wider text-slate-500">
+          Confirmed Specifications
+        </span>
       </div>
     </div>
   );

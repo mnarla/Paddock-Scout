@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState, type CSSProperties, type KeyboardEvent } from "react";
 import { Link } from "@tanstack/react-router";
+import { Activity, ArrowUpRight, RotateCcw, Sliders } from "lucide-react";
 import type { RaceInfo } from "@/data/calendar2026";
 import type { Driver } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
+import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
+import type { Prediction } from "@/lib/prediction";
+import { useSessionCountdown } from "@/lib/useCountdown";
 import { WhatIfPanel } from "./WhatIfPanel";
 import { FeatureContribution } from "./FeatureContribution";
-import { CockpitGuide } from "./CockpitGuide";
-import type { FeatureWeightsData } from "@/lib/useFeatureWeights";
-import { useSessionCountdown } from "@/lib/useCountdown";
-import { Sliders, Activity, ArrowUpRight, Trophy } from "lucide-react";
 
 interface CockpitDashboardProps {
   race: RaceInfo;
@@ -16,8 +16,7 @@ interface CockpitDashboardProps {
   drivers: Driver[];
   selectedDriver: Driver | null;
   onSelectDriver: (driverId: string | null) => void;
-  prediction: any;
-  baseline: any;
+  prediction: Prediction | null;
   isPredicting: boolean;
   featureWeights: FeatureWeightsData;
   gridPos: number;
@@ -44,308 +43,222 @@ export function CockpitDashboard({
   onReset,
   isPostQuali,
 }: CockpitDashboardProps) {
-  const [activeRightTab, setActiveRightTab] = useState<"simulator" | "weights">("simulator");
-  const currentDriver = selectedDriver;
-  const currentTeam = currentDriver ? TEAMS[currentDriver.team] : null;
+  const [activePanel, setActivePanel] = useState<"simulator" | "weights">("simulator");
   const countdown = useSessionCountdown(race, calendar);
-
+  const team = selectedDriver ? TEAMS[selectedDriver.team] : null;
+  const teamColor = team?.color ?? "#e10600";
   const winPct = prediction?.p1 !== undefined ? prediction.p1 * 100 : null;
   const top2Pct = prediction?.p2 !== undefined ? prediction.p2 * 100 : null;
   const podiumPct = prediction?.p3 !== undefined ? prediction.p3 * 100 : null;
 
+  const selectFromKeyboard = (event: KeyboardEvent<HTMLTableRowElement>, id: string) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      onSelectDriver(id);
+    }
+  };
+
   return (
-    <div className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl bg-[#090b10]/95 backdrop-blur-2xl border border-white/[0.08] p-4 sm:p-5 shadow-[0_24px_64px_rgba(0,0,0,0.9),inset_0_1px_0_0_rgba(255,255,255,0.06)]">
-      {/* ── CHASSIS HEADER ── */}
-      <div className="mb-4 flex flex-col sm:flex-row sm:items-center justify-between border-b border-white/[0.08] pb-3 gap-2.5">
-        <div className="flex items-center gap-3">
-          <span className="text-2xl sm:text-3xl drop-shadow-md select-none shrink-0">
-            {race.flag}
+    <section className="timing-console" style={{ "--team-accent": teamColor } as CSSProperties}>
+      <div className="console-header">
+        <div className="console-event">
+          <span className="console-event__round tabular">
+            R{String(race.round).padStart(2, "0")}
           </span>
           <div>
-            <div className="flex items-center gap-2 flex-wrap">
-              <h1 className="text-base sm:text-lg font-black tracking-wider uppercase text-white font-sans">
-                {race.name}
-              </h1>
-              <span className="font-mono text-[9px] font-bold px-1.5 py-0.5 rounded bg-white/[0.07] text-slate-300 border border-white/[0.08] tracking-widest uppercase">
-                R{race.round} // 2026
-              </span>
-            </div>
-            <p className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
-              FIA Formula 1 World Championship · {race.circuit}
+            <h1>{race.name}</h1>
+            <p>
+              {race.country} · {race.trackType} circuit
             </p>
           </div>
         </div>
-
-        <div className="flex items-center gap-2.5 sm:gap-3 self-end sm:self-auto">
-          {countdown && !countdown.isComplete && (
-            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-rose-500/10 border border-rose-500/30 font-mono text-[10px] text-rose-300 shadow-[0_0_12px_rgba(244,63,94,0.12)]">
-              <span className="h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse shrink-0" />
-              <span className="text-slate-400 font-sans font-bold uppercase truncate max-w-[80px] sm:max-w-none">
-                {countdown.prefix ? `${countdown.prefix} ` : ""}{countdown.sessionName}:
-              </span>
-              <span className="text-rose-400 font-bold tabular shrink-0">
-                {countdown.d > 0 ? `${countdown.d}d ` : ""}
-                {String(countdown.h).padStart(2, "0")}h {String(countdown.m).padStart(2, "0")}m {String(countdown.s).padStart(2, "0")}s
-              </span>
-            </div>
-          )}
-          <div className="flex items-center gap-1.5 px-2 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400">
-              Live Model v6.0
-            </span>
-          </div>
+        <div className="console-header__status">
+          <span>
+            <i className="status-beacon" /> Model online
+          </span>
+          <strong className="tabular">V6.0</strong>
         </div>
       </div>
 
-      {/* ── MAIN CHASSIS GRID ── */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
-        {/* ── LEFT: BROADCAST TIMING TOWER ── */}
-        <div className="lg:col-span-5 flex flex-col rounded-xl border border-white/[0.08] bg-black/40 overflow-hidden shadow-lg">
-          <div className="px-3 py-2 bg-white/[0.03] border-b border-white/[0.08] flex items-center justify-between">
-            <div className="flex items-center gap-1.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-slate-200">
-                Timing Tower Standings
-              </span>
+      <div className="console-grid">
+        <aside className="race-control-spine" aria-label="Race control information">
+          <div className="spine-code">{race.short}</div>
+          <dl>
+            <div>
+              <dt>Round</dt>
+              <dd>
+                {race.round}/{calendar?.length || 24}
+              </dd>
             </div>
-            {selectedDriver ? (
-              <button
-                type="button"
-                onClick={() => onSelectDriver(null)}
-                className="text-[9px] font-mono font-bold text-rose-400 hover:text-rose-300 uppercase tracking-wider transition cursor-pointer"
-              >
-                Reset [×]
-              </button>
-            ) : (
-              <span className="text-[9px] font-mono font-medium text-slate-500 uppercase">
-                {drivers.length} Drivers
-              </span>
-            )}
-          </div>
+            <div>
+              <dt>Format</dt>
+              <dd>{race.isSprint ? "Sprint" : "Grand Prix"}</dd>
+            </div>
+            <div>
+              <dt>Track</dt>
+              <dd>{race.trackType}</dd>
+            </div>
+            <div>
+              <dt>Model</dt>
+              <dd>Live</dd>
+            </div>
+          </dl>
+          {countdown && !countdown.isComplete && (
+            <div className="spine-session">
+              <span>Next session</span>
+              <strong>{countdown.sessionName}</strong>
+              <em className="tabular">
+                {countdown.d > 0 ? `${countdown.d}D ` : ""}
+                {String(countdown.h).padStart(2, "0")}:{String(countdown.m).padStart(2, "0")}
+              </em>
+            </div>
+          )}
+          <svg
+            className="spine-track"
+            viewBox="0 0 160 92"
+            role="img"
+            aria-label="Abstract circuit telemetry line"
+          >
+            <path d="M18 58C13 35 31 17 52 24c18 6 14 28 33 29 20 1 20-27 42-24 20 3 25 31 9 43-16 12-32-6-48-3-19 4-31 19-49 10-10-5-17-12-21-21Z" />
+            <circle cx="18" cy="58" r="3" />
+          </svg>
+        </aside>
 
-          {/* Scrollable Leaderboard */}
-          <div className="max-h-[385px] overflow-y-auto telemetry-scrollbar divide-y divide-white/[0.04]">
-            <table className="w-full text-left text-xs font-medium border-collapse">
-              <thead className="sticky top-0 z-10 bg-[#0e1118] border-b border-white/[0.08] shadow-sm">
-                <tr className="text-[9px] font-mono font-bold tracking-wider text-slate-400 uppercase">
-                  <th className="py-1.5 px-2 w-10 text-center">Pos</th>
-                  <th className="py-1.5 px-2">Driver</th>
-                  <th className="py-1.5 px-1.5 text-center">Team</th>
-                  <th className="py-1.5 px-2 text-center w-12">Form</th>
-                  <th className="py-1.5 px-2.5 text-right pr-3 w-12">Pts</th>
+        <section className="timing-tower" aria-label="Driver standings">
+          <div className="section-strip">
+            <h2>Championship order</h2>
+            <span className="tabular">{drivers.length} cars</span>
+          </div>
+          <div className="timing-tower__scroll telemetry-scrollbar">
+            <table>
+              <thead>
+                <tr>
+                  <th>Pos</th>
+                  <th>Driver</th>
+                  <th>Team</th>
+                  <th>Form</th>
+                  <th>Pts</th>
                 </tr>
               </thead>
               <tbody>
-                {drivers.map((d) => {
-                  const team = TEAMS[d.team];
-                  const isSelected = currentDriver?.id === d.id;
+                {drivers.map((driver) => {
+                  const driverTeam = TEAMS[driver.team];
+                  const selected = selectedDriver?.id === driver.id;
                   return (
                     <tr
-                      key={d.id}
-                      onClick={() => onSelectDriver(d.id)}
-                      className={`cursor-pointer transition-colors duration-150 border-b border-white/[0.03] ${
-                        isSelected
-                          ? "bg-white/[0.08] border-l-[3px] border-l-rose-500 text-white"
-                          : "hover:bg-white/[0.04] text-slate-300"
-                      }`}
+                      key={driver.id}
+                      tabIndex={0}
+                      role="button"
+                      aria-pressed={selected}
+                      onClick={() => onSelectDriver(driver.id)}
+                      onKeyDown={(event) => selectFromKeyboard(event, driver.id)}
+                      className={selected ? "is-selected" : ""}
+                      style={{ "--driver-team": driverTeam?.color ?? "#777" } as CSSProperties}
                     >
-                      <td className={`py-1.5 px-2 text-center font-mono font-bold text-[11px] ${isSelected ? "text-rose-400" : "text-slate-500"}`}>
-                        P{d.standingsRank}
+                      <td className="tabular">P{driver.standingsRank}</td>
+                      <td>
+                        <strong>{driver.abbr}</strong>
+                        <span>{driver.last}</span>
                       </td>
-                      <td className="py-1.5 px-2">
-                        <div className="flex items-center gap-2">
-                          <div
-                            className="w-1 h-4 rounded-full shrink-0"
-                            style={{ backgroundColor: team?.color ?? "#888" }}
-                          />
-                          <div className="truncate flex items-baseline gap-1.5">
-                            <span className="font-mono font-black text-xs text-white tracking-wider">
-                              {d.abbr}
-                            </span>
-                            <span className="text-[11px] text-slate-400 font-sans truncate hidden sm:inline">
-                              {d.last}
-                            </span>
-                          </div>
-                        </div>
-                      </td>
-                      <td
-                        className="py-1.5 px-1.5 text-center text-[10px] font-mono font-bold uppercase tracking-wider"
-                        style={{ color: team?.color ?? "#888" }}
-                      >
-                        {team?.short ?? d.team}
-                      </td>
-                      <td className="py-1.5 px-2 text-center font-mono font-bold text-emerald-400 text-[11px]">
-                        {d.recentForm?.toFixed(1) ?? "–"}
-                      </td>
-                      <td className="py-1.5 px-2.5 text-right font-mono font-black pr-3 text-white text-[11px]">
-                        {d.seasonPoints ?? "–"}
-                      </td>
+                      <td>{driverTeam?.short ?? driver.team}</td>
+                      <td className="tabular">{driver.recentForm?.toFixed(1) ?? "–"}</td>
+                      <td className="tabular">{driver.seasonPoints ?? "–"}</td>
                     </tr>
                   );
                 })}
               </tbody>
             </table>
           </div>
+          <p className="timing-tower__hint">Select a driver to run the race model</p>
+        </section>
 
-          <div className="px-3 py-1.5 bg-black/50 border-t border-white/[0.06] text-[9px] font-mono text-slate-500 text-center">
-            Select any driver to feed cockpit telemetry
-          </div>
-        </div>
-
-        {/* ── RIGHT: TELEMETRY PROBABILITY HUD & SIMULATOR ── */}
-        <div className="lg:col-span-7 flex flex-col gap-3">
-          {currentDriver ? (
+        <section className="prediction-stage" aria-live="polite">
+          {selectedDriver ? (
             <>
-              {/* Driver Identity Card & F1 Probability Gauges */}
-              <div className="rounded-xl border border-white/[0.08] bg-white/[0.02] p-3.5 shadow-md">
-                {/* Driver Identity Bar */}
-                <div className="flex items-center justify-between border-b border-white/[0.06] pb-2.5 mb-3">
-                  <div className="flex items-center gap-3">
-                    <div
-                      className="w-1.5 h-8 rounded-full shrink-0"
-                      style={{ backgroundColor: currentTeam?.color ?? "#ff1801" }}
-                    />
-                    <div>
-                      <div className="text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400">
-                        {currentTeam?.name} · CAR #{currentDriver.number}
-                      </div>
-                      <h2 className="text-base sm:text-lg font-black text-white uppercase tracking-tight leading-tight">
-                        {currentDriver.first} {currentDriver.last}
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-[9px] font-mono font-bold uppercase tracking-widest text-slate-400">
-                      Standings
-                    </div>
-                    <div className="text-base font-black font-mono text-white">
-                      P{currentDriver.standingsRank}
-                      <span className="text-[10px] text-slate-500 ml-1 font-normal font-sans">
-                        ({currentDriver.seasonPoints} pts)
-                      </span>
-                    </div>
-                  </div>
+              <div className="driver-identity">
+                <div>
+                  <span>
+                    {team?.name} · Car {selectedDriver.number}
+                  </span>
+                  <h2>
+                    {selectedDriver.first} <strong>{selectedDriver.last}</strong>
+                  </h2>
                 </div>
-
-                {/* ── F1 PROBABILITY PROGRESSION METERS ── */}
-                <div className="grid grid-cols-3 gap-2.5">
-                  {/* Gauge 1: P1 Win */}
-                  <div className="rounded-lg border border-rose-500/30 bg-rose-500/[0.06] p-2.5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-[9px] font-mono uppercase font-bold tracking-wider text-rose-300">
-                        P1 Win
-                      </span>
-                      <Trophy className="w-3 h-3 text-rose-400/80" />
-                    </div>
-                    <div className="font-mono text-xl sm:text-2xl font-black text-rose-400 tracking-tight my-0.5">
-                      {isPredicting ? (
-                        <span className="text-xs font-normal text-slate-400 animate-pulse">Calc...</span>
-                      ) : winPct !== null ? (
-                        `${winPct.toFixed(1)}%`
-                      ) : (
-                        "--"
-                      )}
-                    </div>
-                    {/* Telemetry Precision Progress Bar */}
-                    <div className="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden mt-1">
-                      <div
-                        className="bg-gradient-to-r from-rose-600 to-rose-400 h-full rounded-full transition-all duration-500 ease-out"
-                        style={{ width: `${Math.min(100, Math.max(0, winPct ?? 0))}%` }}
-                      />
-                    </div>
+                <button type="button" onClick={() => onSelectDriver(null)}>
+                  Clear driver
+                </button>
+              </div>
+              <div className={`hero-probability ${isPredicting ? "is-calculating" : ""}`}>
+                <div className="hero-probability__label">Podium probability</div>
+                <div className="hero-probability__value tabular">
+                  {isPredicting ? (
+                    <span>RUNNING MODEL</span>
+                  ) : podiumPct !== null ? (
+                    <>
+                      {podiumPct.toFixed(1)}
+                      <sup>%</sup>
+                    </>
+                  ) : (
+                    <>—</>
+                  )}
+                </div>
+                <div className="prediction-sweep" aria-hidden="true" />
+                <div className="probability-support">
+                  <div>
+                    <span>Win / P1</span>
+                    <strong className="tabular">
+                      {winPct !== null ? `${winPct.toFixed(1)}%` : "—"}
+                    </strong>
                   </div>
-
-                  {/* Gauge 2: Top 2 */}
-                  <div className="rounded-lg border border-sky-500/25 bg-sky-500/[0.04] p-2.5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-[9px] font-mono uppercase font-bold tracking-wider text-sky-300">
-                        Top 2
-                      </span>
-                      <span className="text-[9px] font-mono text-sky-400/80">P1-P2</span>
-                    </div>
-                    <div className="font-mono text-xl sm:text-2xl font-black text-slate-100 tracking-tight my-0.5">
-                      {isPredicting ? (
-                        <span className="text-xs font-normal text-slate-400 animate-pulse">Calc...</span>
-                      ) : top2Pct !== null ? (
-                        `${top2Pct.toFixed(1)}%`
-                      ) : (
-                        "--"
-                      )}
-                    </div>
-                    {/* Telemetry Precision Progress Bar */}
-                    <div className="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden mt-1">
-                      <div
-                        className="bg-gradient-to-r from-sky-600 to-sky-400 h-full rounded-full transition-all duration-500 ease-out"
-                        style={{ width: `${Math.min(100, Math.max(0, top2Pct ?? 0))}%` }}
-                      />
-                    </div>
+                  <div>
+                    <span>Top two</span>
+                    <strong className="tabular">
+                      {top2Pct !== null ? `${top2Pct.toFixed(1)}%` : "—"}
+                    </strong>
                   </div>
-
-                  {/* Gauge 3: Podium */}
-                  <div className="rounded-lg border border-amber-500/30 bg-amber-500/[0.06] p-2.5 flex flex-col justify-between">
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-[9px] font-mono uppercase font-bold tracking-wider text-amber-300">
-                        Podium
-                      </span>
-                      <span className="text-[9px] font-mono text-amber-400/80">Top 3</span>
-                    </div>
-                    <div className="font-mono text-xl sm:text-2xl font-black text-amber-400 tracking-tight my-0.5">
-                      {isPredicting ? (
-                        <span className="text-xs font-normal text-slate-400 animate-pulse">Calc...</span>
-                      ) : podiumPct !== null ? (
-                        `${podiumPct.toFixed(1)}%`
-                      ) : (
-                        "--"
-                      )}
-                    </div>
-                    {/* Telemetry Precision Progress Bar */}
-                    <div className="w-full bg-slate-900 rounded-full h-1.5 overflow-hidden mt-1">
-                      <div
-                        className="bg-gradient-to-r from-amber-600 to-amber-400 h-full rounded-full transition-all duration-500 ease-out"
-                        style={{ width: `${Math.min(100, Math.max(0, podiumPct ?? 0))}%` }}
-                      />
-                    </div>
+                  <div>
+                    <span>
+                      {gridPos !== selectedDriver.qualifyingPos
+                        ? "Scenario grid"
+                        : isPostQuali
+                          ? "Recorded grid"
+                          : "Assumed grid"}
+                    </span>
+                    <strong className="tabular">P{gridPos}</strong>
+                  </div>
+                  <div>
+                    <span>Form index</span>
+                    <strong className="tabular">{form.toFixed(1)}</strong>
                   </div>
                 </div>
               </div>
-
-              {/* Segmented Sub-tab Toggle */}
-              <div className="flex items-center gap-1.5 bg-black/40 p-1 rounded-lg border border-white/[0.06]">
+              <div className="panel-switcher" role="tablist" aria-label="Prediction details">
                 <button
                   type="button"
-                  onClick={() => setActiveRightTab("simulator")}
-                  className={`flex-1 py-1.5 px-3 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
-                    activeRightTab === "simulator"
-                      ? "bg-white/[0.09] text-white shadow-sm border border-white/[0.1]"
-                      : "text-slate-400 hover:text-slate-200"
-                  }`}
+                  role="tab"
+                  aria-selected={activePanel === "simulator"}
+                  onClick={() => setActivePanel("simulator")}
+                  className={activePanel === "simulator" ? "is-active" : ""}
                 >
-                  <Sliders className="w-3 h-3 text-rose-400" />
-                  <span>Scenario Simulator</span>
+                  <Sliders aria-hidden="true" /> Scenario controls
                 </button>
                 <button
                   type="button"
-                  onClick={() => setActiveRightTab("weights")}
-                  className={`flex-1 py-1.5 px-3 rounded-md text-[10px] font-mono font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all cursor-pointer ${
-                    activeRightTab === "weights"
-                      ? "bg-white/[0.09] text-white shadow-sm border border-white/[0.1]"
-                      : "text-slate-400 hover:text-slate-200"
-                  }`}
+                  role="tab"
+                  aria-selected={activePanel === "weights"}
+                  onClick={() => setActivePanel("weights")}
+                  className={activePanel === "weights" ? "is-active" : ""}
                 >
-                  <Activity className="w-3 h-3 text-emerald-400" />
-                  <span>AI Feature Breakdown</span>
+                  <Activity aria-hidden="true" /> Model influence
                 </button>
               </div>
-
-              {/* Active Tab Panel */}
-              <div className="max-h-[260px] overflow-y-auto telemetry-scrollbar pr-1">
-                {activeRightTab === "simulator" ? (
+              <div className="prediction-detail telemetry-scrollbar">
+                {activePanel === "simulator" ? (
                   <WhatIfPanel
-                    driver={currentDriver}
+                    driver={selectedDriver}
                     gridPos={gridPos}
                     form={form}
-                    onDriverChange={(id) => onSelectDriver(id)}
+                    onDriverChange={onSelectDriver}
                     onGridChange={onGridChange}
                     onFormChange={onFormChange}
                     onReset={onReset}
@@ -353,35 +266,50 @@ export function CockpitDashboard({
                     isPostQuali={isPostQuali}
                   />
                 ) : (
-                  <FeatureContribution
-                    prediction={prediction}
-                    featureWeights={featureWeights}
-                  />
+                  <FeatureContribution prediction={prediction} featureWeights={featureWeights} />
                 )}
               </div>
             </>
           ) : (
-            <CockpitGuide drivers={drivers} onSelectDriver={onSelectDriver} />
+            <div className="driver-empty-state">
+              <span className="driver-empty-state__line" aria-hidden="true" />
+              <p>Prediction channel idle</p>
+              <h2>
+                Select a driver.
+                <br />
+                Run the race.
+              </h2>
+              <p className="driver-empty-state__copy">
+                Choose any driver from the championship order to calculate win, top-two, and podium
+                probabilities against the current race-weekend context.
+              </p>
+              <div className="quick-select">
+                {drivers.slice(0, 4).map((driver) => (
+                  <button key={driver.id} type="button" onClick={() => onSelectDriver(driver.id)}>
+                    <span style={{ background: TEAMS[driver.team]?.color }} />
+                    {driver.abbr}
+                    <small>P{driver.standingsRank}</small>
+                  </button>
+                ))}
+              </div>
+            </div>
           )}
-        </div>
+        </section>
       </div>
 
-      {/* ── CHASSIS FOOTER ── */}
-      <div className="mt-3 pt-2.5 border-t border-white/[0.06] flex flex-col sm:flex-row items-center justify-between gap-1 text-[10px] font-mono text-slate-500">
-        <span>
-          <strong className="text-slate-400">NOTE:</strong> Calibrated against 2026 ground-effect regulations & historical telemetry.
-        </span>
-        <Link
-          to="/archive"
-          className="text-slate-400 hover:text-white flex items-center gap-1.5 transition-colors group cursor-pointer"
-        >
-          <span>Model v6 · Calibrated Random Forest</span>
-          <span className="text-emerald-400 font-bold bg-emerald-500/10 border border-emerald-500/30 px-1.5 py-0.5 rounded text-[9px] group-hover:border-emerald-500/50 flex items-center gap-0.5">
-            Track Record
-            <ArrowUpRight className="w-2.5 h-2.5" />
-          </span>
-        </Link>
-      </div>
-    </div>
+      <footer className="console-footer">
+        <span>Model outputs are informational forecasts, not betting advice.</span>
+        <div>
+          {selectedDriver && (
+            <button type="button" onClick={onReset}>
+              <RotateCcw aria-hidden="true" /> Reset scenario
+            </button>
+          )}
+          <Link to="/archive">
+            View model archive <ArrowUpRight aria-hidden="true" />
+          </Link>
+        </div>
+      </footer>
+    </section>
   );
 }

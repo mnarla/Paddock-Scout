@@ -11,7 +11,7 @@ import {
   Legend,
 } from "recharts";
 
-import { TEAMS } from "@/data/teams";
+import { TEAMS, type TeamId } from "@/data/teams";
 import { API_BASE_URL } from "@/lib/config";
 import { ModelTrackRecordCard } from "@/components/paddock/ModelTrackRecordCard";
 
@@ -38,6 +38,17 @@ interface ArchivePodium {
   p3: string;
 }
 
+interface SessionRow {
+  [key: string]: string | number | null | undefined;
+}
+
+interface ArchiveSessionData {
+  [key: string]: SessionRow[] | undefined;
+  race_results: SessionRow[];
+  qualifying: SessionRow[];
+  sprint: SessionRow[];
+}
+
 // ─── Route ───────────────────────────────────────────────────────────────────
 export const Route = createFileRoute("/archive")({
   head: () => ({
@@ -60,16 +71,12 @@ export const Route = createFileRoute("/archive")({
 
 // ─── Skeleton ─────────────────────────────────────────────────────────────────
 function SkeletonBlock({ className }: { className?: string }) {
-  return (
-    <div
-      className={`animate-pulse rounded bg-secondary/40 ${className ?? ""}`}
-    />
-  );
+  return <div className={`animate-pulse rounded bg-secondary/40 ${className ?? ""}`} />;
 }
 
 function ArchiveSkeleton() {
   return (
-    <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-6 sm:p-8 space-y-6 shadow-[0_20px_60px_rgba(0,0,0,0.85)]">
+    <div className="archive-shell archive-skeleton">
       <div className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5">
         <SkeletonBlock className="h-4 w-40 mb-3" />
         <SkeletonBlock className="h-[360px] w-full" />
@@ -93,10 +100,11 @@ function ArchivePage() {
   const [drivers, setDrivers] = useState<ArchiveDriver[] | null>(null);
   const [podiums, setPodiums] = useState<ArchivePodium[] | null>(null);
   const [loadError, setLoadError] = useState(false);
+  const [isCompactChart, setIsCompactChart] = useState(false);
 
   // Detailed round view
   const [selectedRound, setSelectedRound] = useState<number | null>(null);
-  const [sessionData, setSessionData] = useState<any>(null);
+  const [sessionData, setSessionData] = useState<ArchiveSessionData | null>(null);
   const [isFetchingData, setIsFetchingData] = useState(false);
   const [activeTab, setActiveTab] = useState("Race");
 
@@ -116,6 +124,14 @@ function ArchivePage() {
         console.error("Error fetching archive progression:", err);
         setLoadError(true);
       });
+  }, []);
+
+  useEffect(() => {
+    const query = window.matchMedia("(max-width: 640px)");
+    const updateChartDensity = () => setIsCompactChart(query.matches);
+    updateChartDensity();
+    query.addEventListener("change", updateChartDensity);
+    return () => query.removeEventListener("change", updateChartDensity);
   }, []);
 
   // Fetch detailed session data for selected round
@@ -146,41 +162,43 @@ function ArchivePage() {
   const isLoading = rounds === null || drivers === null || podiums === null;
 
   // Reshape into the row-per-round structure Recharts expects
-  const chartData =
-    !isLoading
-      ? rounds!.map((r, idx) => {
-          const row: Record<string, number | string> = {
-            label: `RD${String(r.round).padStart(2, "0")} ${r.short}`,
-          };
-          for (const d of drivers!) {
-            row[d.abbr] =
-              d.cumulative[idx] !== undefined ? d.cumulative[idx] : 0;
-          }
-          return row;
-        })
-      : [];
+  const chartData = !isLoading
+    ? rounds!.map((r, idx) => {
+        const row: Record<string, number | string> = {
+          label: `RD${String(r.round).padStart(2, "0")} ${r.short}`,
+        };
+        for (const d of drivers!) {
+          row[d.abbr] = d.cumulative[idx] !== undefined ? d.cumulative[idx] : 0;
+        }
+        return row;
+      })
+    : [];
 
   return (
-    <div className="min-h-screen bg-[#07090e] text-slate-100 relative selection:bg-rose-500/30 pt-20 pb-12 px-4 sm:px-6">
-      <header className="fixed top-5 left-0 right-0 z-50 flex justify-center px-4 pointer-events-auto">
-        <div className="flex items-center gap-3 px-4 py-1.5 rounded-full bg-[#101422]/85 backdrop-blur-xl border border-slate-700/50 shadow-[0_8px_32px_rgba(0,0,0,0.6)]">
-          <span className="text-xs font-black tracking-widest text-rose-500 uppercase">ARCHIVE</span>
-          <span className="text-xs font-semibold text-slate-300">2026 Championship Progression</span>
-          <Link
-            to="/"
-            className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-800 text-slate-300 hover:text-white transition"
-          >
-            ← Home
+    <div className="archive-page">
+      <header className="archive-masthead">
+        <div className="archive-masthead__inner">
+          <Link to="/" className="brand-lockup">
+            <span className="brand-mark">PS</span>
+            <span>
+              <strong>Paddock Scout</strong>
+              <small>Formula One Intelligence</small>
+            </span>
+          </Link>
+          <div className="archive-masthead__title">
+            <strong>Season Archive</strong>
+            <span>2026 Championship Progression</span>
+          </div>
+          <Link to="/" className="archive-home">
+            Prediction
           </Link>
         </div>
       </header>
 
-      <main className="w-full max-w-6xl mx-auto space-y-6">
+      <main className="archive-main">
         {/* Error state */}
         {loadError && (
-          <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-8 text-center text-slate-400">
-            Could not load archive data. Please try again later.
-          </div>
+          <div className="archive-error">Could not load archive data. Please try again later.</div>
         )}
 
         {/* Skeleton while loading */}
@@ -188,19 +206,21 @@ function ArchivePage() {
 
         {/* Full content once loaded */}
         {!loadError && !isLoading && (
-          <div className="w-full max-w-6xl mx-auto rounded-3xl bg-[#0d101a]/95 backdrop-blur-2xl border border-slate-700/60 p-6 sm:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.85)] space-y-6">
+          <div className="archive-shell">
             {/* Walk-Forward Model Track Record Benchmark */}
             <ModelTrackRecordCard />
 
             {/* Championship Progression Chart */}
-            <section className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5">
+            <section className="archive-panel archive-chart-panel">
               <div className="mb-4 flex items-baseline justify-between">
                 <div>
                   <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
                     Cumulative Points
                   </h2>
                   <p className="mt-1 text-xs text-slate-500">
-                    Rounds 1–{rounds!.length} · top {drivers!.length} drivers · team colors
+                    Rounds 1–{rounds!.length} · top{" "}
+                    {isCompactChart ? Math.min(4, drivers!.length) : drivers!.length} drivers · team
+                    colors
                   </p>
                 </div>
                 <span className="tabular text-xs font-mono uppercase tracking-wider text-slate-400">
@@ -209,323 +229,287 @@ function ArchivePage() {
               </div>
 
               <div className="h-[380px] w-full">
-              <ResponsiveContainer width="100%" height="100%">
-                <LineChart
-                  data={chartData}
-                  margin={{ top: 10, right: 20, bottom: 10, left: 0 }}
-                  onClick={(state) => {
-                    if (state && state.activeTooltipIndex !== undefined) {
-                      const roundObj = rounds![state.activeTooltipIndex];
-                      if (roundObj) setSelectedRound(roundObj.round);
-                    }
-                  }}
-                >
-                  <CartesianGrid
-                    stroke="hsl(var(--border))"
-                    strokeDasharray="3 3"
-                    vertical={false}
-                  />
-                  <XAxis
-                    dataKey="label"
-                    tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
-                    axisLine={{ stroke: "hsl(var(--border))" }}
-                    tickLine={false}
-                  />
-                  <YAxis
-                    tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
-                    axisLine={{ stroke: "hsl(var(--border))" }}
-                    tickLine={false}
-                    width={40}
-                  />
-                  <Tooltip
-                    contentStyle={{
-                      background: "hsl(var(--card))",
-                      border: "1px solid hsl(var(--border))",
-                      borderRadius: 6,
-                      fontSize: 12,
-                    }}
-                    labelStyle={{ color: "hsl(var(--muted-foreground))" }}
-                  />
-                  <Legend
-                    wrapperStyle={{ fontSize: 11, paddingTop: 8 }}
-                    iconType="plainline"
-                  />
-                  {drivers!.map((d) => (
-                    <Line
-                      key={d.id}
-                      type="monotone"
-                      dataKey={d.abbr}
-                      stroke={
-                        (TEAMS as any)[d.team]?.color ||
-                        "#ffffff"
+                <ResponsiveContainer width="100%" height="100%">
+                  <LineChart
+                    data={chartData}
+                    margin={{ top: 10, right: 20, bottom: 10, left: 0 }}
+                    onClick={(state) => {
+                      if (state && state.activeTooltipIndex !== undefined) {
+                        const roundObj = rounds![state.activeTooltipIndex];
+                        if (roundObj) setSelectedRound(roundObj.round);
                       }
-                      strokeWidth={2}
-                      dot={{
-                        r: 3,
-                        strokeWidth: 0,
-                        fill:
-                          (TEAMS as any)[d.team]?.color ||
-                          "#ffffff",
-                      }}
-                      activeDot={{ r: 5 }}
+                    }}
+                  >
+                    <CartesianGrid
+                      stroke="hsl(var(--border))"
+                      strokeDasharray="3 3"
+                      vertical={false}
                     />
-                  ))}
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          </section>
-
-          {/* Podiums table */}
-          <section className="mt-4 rounded-md border border-hairline bg-card p-4 sm:p-5">
-            <div className="mb-2">
-              <h2 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                Podiums by Round
-              </h2>
-              <p className="text-[11px] text-muted-foreground/60">
-                Click on a round below to view its full session telemetry
-                details.
-              </p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                    <th className="px-2 py-2 text-left font-semibold">
-                      Round
-                    </th>
-                    <th className="px-2 py-2 text-left font-semibold">P1</th>
-                    <th className="px-2 py-2 text-left font-semibold">P2</th>
-                    <th className="px-2 py-2 text-left font-semibold">P3</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {podiums!.map((row) => {
-                    const meta = rounds!.find((r) => r.round === row.round);
-                    if (!meta) return null;
-                    const isSel = selectedRound === row.round;
-                    return (
-                      <tr
-                        key={row.round}
-                        onClick={() =>
-                          setSelectedRound(isSel ? null : row.round)
-                        }
-                        className={`border-b border-hairline/60 last:border-0 cursor-pointer transition ${
-                          isSel
-                            ? "bg-f1-red/[0.08]"
-                            : "hover:bg-secondary/40"
-                        }`}
-                      >
-                        <td className="tabular px-2 py-2 text-muted-foreground">
-                          <span className="mr-2">{meta.flag}</span>
-                          RD{String(row.round).padStart(2, "0")} · {meta.short}
-                        </td>
-                        <td className="tabular px-2 py-2 font-bold text-f1-red">
-                          {row.p1}
-                        </td>
-                        <td className="tabular px-2 py-2 font-semibold">
-                          {row.p2}
-                        </td>
-                        <td className="tabular px-2 py-2 font-semibold text-muted-foreground">
-                          {row.p3}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Session telemetry panel */}
-          {selectedRound !== null && (
-            <section
-              id="session-data-section"
-              className="mt-4 rounded-md border border-hairline bg-card p-4 sm:p-5"
-            >
-              <div className="mb-4 flex items-center justify-between border-b border-hairline pb-3">
-                <div>
-                  <h2 className="text-sm font-bold text-foreground uppercase tracking-tight">
-                    📁{" "}
-                    {rounds!
-                      .find((r) => r.round === selectedRound)
-                      ?.name.toUpperCase()}{" "}
-                    · SESSION TELEMETRY
-                  </h2>
-                  <p className="text-[11px] text-muted-foreground">
-                    Round {selectedRound} · Actual Recorded Data
-                  </p>
-                </div>
-                <button
-                  onClick={() => setSelectedRound(null)}
-                  className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground border border-hairline rounded px-2.5 py-1"
-                >
-                  Close [X]
-                </button>
-              </div>
-
-              {isFetchingData ? (
-                <div className="py-12 text-center text-xs text-muted-foreground">
-                  Loading session data...
-                </div>
-              ) : sessionData ? (
-                <div className="space-y-4">
-                  <div className="flex flex-wrap gap-1.5 border-b border-hairline/65 pb-2">
-                    {[
-                      "Race",
-                      "Qualifying",
-                      ...(sessionData.fp1?.length > 0 ? ["FP1"] : []),
-                      ...(sessionData.fp2?.length > 0 ? ["FP2"] : []),
-                      ...(sessionData.fp3?.length > 0 ? ["FP3"] : []),
-                      ...(sessionData.sprint?.length > 0 ? ["Sprint"] : []),
-                    ].map((tab) => (
-                      <button
-                        key={tab}
-                        onClick={() => setActiveTab(tab)}
-                        className={`rounded px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider transition ${
-                          activeTab === tab
-                            ? "bg-f1-red text-white"
-                            : "text-muted-foreground hover:bg-secondary/40"
-                        }`}
-                      >
-                        {tab === "Race"
-                          ? "🏁 Race Results"
-                          : tab === "Qualifying"
-                          ? "⏱️ Qualifying Grid"
-                          : tab.startsWith("FP")
-                          ? `🔧 ${tab}`
-                          : "⚡ Sprint Results"}
-                      </button>
+                    <XAxis
+                      dataKey="label"
+                      tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
+                      axisLine={{ stroke: "hsl(var(--border))" }}
+                      tickLine={false}
+                    />
+                    <YAxis
+                      tick={{ fill: "hsl(var(--muted-foreground))", fontSize: 11 }}
+                      axisLine={{ stroke: "hsl(var(--border))" }}
+                      tickLine={false}
+                      width={40}
+                    />
+                    <Tooltip
+                      contentStyle={{
+                        background: "hsl(var(--card))",
+                        border: "1px solid hsl(var(--border))",
+                        borderRadius: 6,
+                        fontSize: 12,
+                      }}
+                      labelStyle={{ color: "hsl(var(--muted-foreground))" }}
+                    />
+                    <Legend wrapperStyle={{ fontSize: 11, paddingTop: 8 }} iconType="plainline" />
+                    {drivers!.slice(0, isCompactChart ? 4 : drivers!.length).map((d) => (
+                      <Line
+                        key={d.id}
+                        type="monotone"
+                        dataKey={d.abbr}
+                        stroke={TEAMS[d.team as TeamId]?.color || "#ffffff"}
+                        strokeWidth={2}
+                        dot={{
+                          r: 3,
+                          strokeWidth: 0,
+                          fill: TEAMS[d.team as TeamId]?.color || "#ffffff",
+                        }}
+                        activeDot={{ r: 5 }}
+                      />
                     ))}
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+            </section>
+
+            {/* Podiums table */}
+            <section className="archive-panel archive-podiums">
+              <div className="mb-2">
+                <h2 className="text-[11px] font-bold uppercase tracking-[0.2em] text-muted-foreground">
+                  Podiums by Round
+                </h2>
+                <p className="text-[11px] text-muted-foreground/60">
+                  Click on a round below to view its full session telemetry details.
+                </p>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
+                      <th className="px-2 py-2 text-left font-semibold">Round</th>
+                      <th className="px-2 py-2 text-left font-semibold">P1</th>
+                      <th className="px-2 py-2 text-left font-semibold">P2</th>
+                      <th className="px-2 py-2 text-left font-semibold">P3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {podiums!.map((row) => {
+                      const meta = rounds!.find((r) => r.round === row.round);
+                      if (!meta) return null;
+                      const isSel = selectedRound === row.round;
+                      return (
+                        <tr
+                          key={row.round}
+                          onClick={() => setSelectedRound(isSel ? null : row.round)}
+                          className={`border-b border-hairline/60 last:border-0 cursor-pointer transition ${
+                            isSel ? "bg-f1-red/[0.08]" : "hover:bg-secondary/40"
+                          }`}
+                        >
+                          <td className="tabular px-2 py-2 text-muted-foreground">
+                            <span className="mr-2">{meta.flag}</span>
+                            RD{String(row.round).padStart(2, "0")} · {meta.short}
+                          </td>
+                          <td className="tabular px-2 py-2 font-bold text-f1-red">{row.p1}</td>
+                          <td className="tabular px-2 py-2 font-semibold">{row.p2}</td>
+                          <td className="tabular px-2 py-2 font-semibold text-muted-foreground">
+                            {row.p3}
+                          </td>
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            {/* Session telemetry panel */}
+            {selectedRound !== null && (
+              <section id="session-data-section" className="archive-panel archive-session">
+                <div className="mb-4 flex items-center justify-between border-b border-hairline pb-3">
+                  <div>
+                    <h2 className="text-sm font-bold text-foreground uppercase tracking-tight">
+                      📁 {rounds!.find((r) => r.round === selectedRound)?.name.toUpperCase()} ·
+                      SESSION TELEMETRY
+                    </h2>
+                    <p className="text-[11px] text-muted-foreground">
+                      Round {selectedRound} · Actual Recorded Data
+                    </p>
                   </div>
+                  <button
+                    onClick={() => setSelectedRound(null)}
+                    className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground hover:text-foreground border border-hairline rounded px-2.5 py-1"
+                  >
+                    Close [X]
+                  </button>
+                </div>
 
-                  {activeTab === "Race" && (
-                    <div className="overflow-x-auto">
-                      {sessionData.race_results.length === 0 ? (
-                        <p className="py-4 text-center text-xs text-muted-foreground">
-                          No race data available for this round.
-                        </p>
-                      ) : (
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                              <th className="px-2 py-2 text-left w-12">Pos</th>
-                              <th className="px-2 py-2 text-left">Driver</th>
-                              <th className="px-2 py-2 text-left">Team</th>
-                              <th className="px-2 py-2 text-center">Grid</th>
-                              <th className="px-2 py-2 text-center">Gain</th>
-                              <th className="px-2 py-2 text-center">Laps</th>
-                              <th className="px-2 py-2 text-left">Status</th>
-                              <th className="px-2 py-2 text-right">Points</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sessionData.race_results.map((row: any) => (
-                              <tr
-                                key={row.DriverId}
-                                className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
-                              >
-                                <td className="tabular px-2 py-2 font-bold">
-                                  {row.Medal || row.Position}
-                                </td>
-                                <td className="px-2 py-2 font-semibold">
-                                  {row.FullName}
-                                </td>
-                                <td className="px-2 py-2 text-xs text-muted-foreground">
-                                  {row.TeamName}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center">
-                                  {row.GridPosition}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center text-xs font-semibold">
-                                  {row["Positions Gained"] || "–"}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center">
-                                  {row.Laps}
-                                </td>
-                                <td className="px-2 py-2 text-xs text-muted-foreground">
-                                  {row.Status}
-                                </td>
-                                <td className="tabular px-2 py-2 text-right font-bold text-f1-red">
-                                  {row.Points}
-                                </td>
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      )}
+                {isFetchingData ? (
+                  <div className="py-12 text-center text-xs text-muted-foreground">
+                    Loading session data...
+                  </div>
+                ) : sessionData ? (
+                  <div className="space-y-4">
+                    <div className="flex flex-wrap gap-1.5 border-b border-hairline/65 pb-2">
+                      {[
+                        "Race",
+                        "Qualifying",
+                        ...((sessionData.fp1?.length ?? 0) > 0 ? ["FP1"] : []),
+                        ...((sessionData.fp2?.length ?? 0) > 0 ? ["FP2"] : []),
+                        ...((sessionData.fp3?.length ?? 0) > 0 ? ["FP3"] : []),
+                        ...(sessionData.sprint?.length > 0 ? ["Sprint"] : []),
+                      ].map((tab) => (
+                        <button
+                          key={tab}
+                          onClick={() => setActiveTab(tab)}
+                          className={`rounded px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider transition ${
+                            activeTab === tab
+                              ? "bg-f1-red text-white"
+                              : "text-muted-foreground hover:bg-secondary/40"
+                          }`}
+                        >
+                          {tab === "Race"
+                            ? "🏁 Race Results"
+                            : tab === "Qualifying"
+                              ? "⏱️ Qualifying Grid"
+                              : tab.startsWith("FP")
+                                ? `🔧 ${tab}`
+                                : "⚡ Sprint Results"}
+                        </button>
+                      ))}
                     </div>
-                  )}
 
-                  {activeTab === "Qualifying" && (
-                    <div className="overflow-x-auto">
-                      {sessionData.qualifying.length === 0 ? (
-                        <p className="py-4 text-center text-xs text-muted-foreground">
-                          No qualifying data available for this round.
-                        </p>
-                      ) : (
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                              <th className="px-2 py-2 text-left w-12">
-                                Grid
-                              </th>
-                              <th className="px-2 py-2 text-left">Driver</th>
-                              <th className="px-2 py-2 text-left">Team</th>
-                              <th className="px-2 py-2 text-center">Q1</th>
-                              <th className="px-2 py-2 text-center">Q2</th>
-                              <th className="px-2 py-2 text-center">Q3</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sessionData.qualifying.map((row: any) => (
-                              <tr
-                                key={row.DriverId}
-                                className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
-                              >
-                                <td className="tabular px-2 py-2 font-bold">
-                                  P{row.Position}
-                                </td>
-                                <td className="px-2 py-2 font-semibold">
-                                  {row.FullName}
-                                </td>
-                                <td className="px-2 py-2 text-xs text-muted-foreground">
-                                  {row.TeamName}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center text-xs">
-                                  {row.Q1 || "–"}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center text-xs">
-                                  {row.Q2 || "–"}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center text-xs">
-                                  {row.Q3 || "–"}
-                                </td>
+                    {activeTab === "Race" && (
+                      <div className="overflow-x-auto">
+                        {sessionData.race_results.length === 0 ? (
+                          <p className="py-4 text-center text-xs text-muted-foreground">
+                            No race data available for this round.
+                          </p>
+                        ) : (
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
+                                <th className="px-2 py-2 text-left w-12">Pos</th>
+                                <th className="px-2 py-2 text-left">Driver</th>
+                                <th className="px-2 py-2 text-left">Team</th>
+                                <th className="px-2 py-2 text-center">Grid</th>
+                                <th className="px-2 py-2 text-center">Gain</th>
+                                <th className="px-2 py-2 text-center">Laps</th>
+                                <th className="px-2 py-2 text-left">Status</th>
+                                <th className="px-2 py-2 text-right">Points</th>
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      )}
-                    </div>
-                  )}
+                            </thead>
+                            <tbody>
+                              {sessionData.race_results.map((row) => (
+                                <tr
+                                  key={row.DriverId}
+                                  className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
+                                >
+                                  <td className="tabular px-2 py-2 font-bold">
+                                    {row.Medal || row.Position}
+                                  </td>
+                                  <td className="px-2 py-2 font-semibold">{row.FullName}</td>
+                                  <td className="px-2 py-2 text-xs text-muted-foreground">
+                                    {row.TeamName}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center">
+                                    {row.GridPosition}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center text-xs font-semibold">
+                                    {row["Positions Gained"] || "–"}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center">{row.Laps}</td>
+                                  <td className="px-2 py-2 text-xs text-muted-foreground">
+                                    {row.Status}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-right font-bold text-f1-red">
+                                    {row.Points}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
+                      </div>
+                    )}
 
-                  {["FP1", "FP2", "FP3"].includes(activeTab) && (
-                    <div className="overflow-x-auto">
-                      {!sessionData[activeTab.toLowerCase()]?.length ? (
-                        <p className="py-4 text-center text-xs text-muted-foreground">
-                          No telemetry available for {activeTab}.
-                        </p>
-                      ) : (
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                              <th className="px-2 py-2 text-left w-12">Pos</th>
-                              <th className="px-2 py-2 text-left">Driver</th>
-                              <th className="px-2 py-2 text-left">Team</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sessionData[activeTab.toLowerCase()].map(
-                              (row: any) => (
+                    {activeTab === "Qualifying" && (
+                      <div className="overflow-x-auto">
+                        {sessionData.qualifying.length === 0 ? (
+                          <p className="py-4 text-center text-xs text-muted-foreground">
+                            No qualifying data available for this round.
+                          </p>
+                        ) : (
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
+                                <th className="px-2 py-2 text-left w-12">Grid</th>
+                                <th className="px-2 py-2 text-left">Driver</th>
+                                <th className="px-2 py-2 text-left">Team</th>
+                                <th className="px-2 py-2 text-center">Q1</th>
+                                <th className="px-2 py-2 text-center">Q2</th>
+                                <th className="px-2 py-2 text-center">Q3</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {sessionData.qualifying.map((row) => (
+                                <tr
+                                  key={row.DriverId}
+                                  className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
+                                >
+                                  <td className="tabular px-2 py-2 font-bold">P{row.Position}</td>
+                                  <td className="px-2 py-2 font-semibold">{row.FullName}</td>
+                                  <td className="px-2 py-2 text-xs text-muted-foreground">
+                                    {row.TeamName}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center text-xs">
+                                    {row.Q1 || "–"}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center text-xs">
+                                    {row.Q2 || "–"}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center text-xs">
+                                    {row.Q3 || "–"}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
+                      </div>
+                    )}
+
+                    {["FP1", "FP2", "FP3"].includes(activeTab) && (
+                      <div className="overflow-x-auto">
+                        {!sessionData[activeTab.toLowerCase()]?.length ? (
+                          <p className="py-4 text-center text-xs text-muted-foreground">
+                            No telemetry available for {activeTab}.
+                          </p>
+                        ) : (
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
+                                <th className="px-2 py-2 text-left w-12">Pos</th>
+                                <th className="px-2 py-2 text-left">Driver</th>
+                                <th className="px-2 py-2 text-left">Team</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {sessionData[activeTab.toLowerCase()]!.map((row) => (
                                 <tr
                                   key={row.FullName}
                                   className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
@@ -533,84 +517,77 @@ function ArchivePage() {
                                   <td className="tabular px-2 py-2 font-bold">
                                     {row.Position || "–"}
                                   </td>
-                                  <td className="px-2 py-2 font-semibold">
-                                    {row.FullName}
-                                  </td>
+                                  <td className="px-2 py-2 font-semibold">{row.FullName}</td>
                                   <td className="px-2 py-2 text-xs text-muted-foreground">
                                     {row.TeamName}
                                   </td>
                                 </tr>
-                              )
-                            )}
-                          </tbody>
-                        </table>
-                      )}
-                    </div>
-                  )}
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
+                      </div>
+                    )}
 
-                  {activeTab === "Sprint" && (
-                    <div className="overflow-x-auto">
-                      {sessionData.sprint.length === 0 ? (
-                        <p className="py-4 text-center text-xs text-muted-foreground">
-                          No sprint results available for this round.
-                        </p>
-                      ) : (
-                        <table className="w-full text-sm">
-                          <thead>
-                            <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
-                              <th className="px-2 py-2 text-left w-12">Pos</th>
-                              <th className="px-2 py-2 text-left">Driver</th>
-                              <th className="px-2 py-2 text-left">Team</th>
-                              <th className="px-2 py-2 text-center">Grid</th>
-                              <th className="px-2 py-2 text-center">Laps</th>
-                              <th className="px-2 py-2 text-left">Status</th>
-                              <th className="px-2 py-2 text-right">Points</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sessionData.sprint.map((row: any) => (
-                              <tr
-                                key={row.DriverId}
-                                className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
-                              >
-                                <td className="tabular px-2 py-2 font-bold">
-                                  {row.Medal || row.Position}
-                                </td>
-                                <td className="px-2 py-2 font-semibold">
-                                  {row.FullName}
-                                </td>
-                                <td className="px-2 py-2 text-xs text-muted-foreground">
-                                  {row.TeamName}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center">
-                                  {row.GridPosition}
-                                </td>
-                                <td className="tabular px-2 py-2 text-center">
-                                  {row.Laps}
-                                </td>
-                                <td className="px-2 py-2 text-xs text-muted-foreground">
-                                  {row.Status}
-                                </td>
-                                <td className="tabular px-2 py-2 text-right font-bold text-f1-red">
-                                  {row.Points}
-                                </td>
+                    {activeTab === "Sprint" && (
+                      <div className="overflow-x-auto">
+                        {sessionData.sprint.length === 0 ? (
+                          <p className="py-4 text-center text-xs text-muted-foreground">
+                            No sprint results available for this round.
+                          </p>
+                        ) : (
+                          <table className="w-full text-sm">
+                            <thead>
+                              <tr className="border-b border-hairline text-[10px] uppercase tracking-wider text-muted-foreground">
+                                <th className="px-2 py-2 text-left w-12">Pos</th>
+                                <th className="px-2 py-2 text-left">Driver</th>
+                                <th className="px-2 py-2 text-left">Team</th>
+                                <th className="px-2 py-2 text-center">Grid</th>
+                                <th className="px-2 py-2 text-center">Laps</th>
+                                <th className="px-2 py-2 text-left">Status</th>
+                                <th className="px-2 py-2 text-right">Points</th>
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      )}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <div className="py-6 text-center text-xs text-muted-foreground">
-                  No data found for this round.
-                </div>
-              )}
-            </section>
-          )}
-        </div>
-      )}
+                            </thead>
+                            <tbody>
+                              {sessionData.sprint.map((row) => (
+                                <tr
+                                  key={row.DriverId}
+                                  className="border-b border-hairline/60 last:border-0 hover:bg-secondary/20"
+                                >
+                                  <td className="tabular px-2 py-2 font-bold">
+                                    {row.Medal || row.Position}
+                                  </td>
+                                  <td className="px-2 py-2 font-semibold">{row.FullName}</td>
+                                  <td className="px-2 py-2 text-xs text-muted-foreground">
+                                    {row.TeamName}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center">
+                                    {row.GridPosition}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-center">{row.Laps}</td>
+                                  <td className="px-2 py-2 text-xs text-muted-foreground">
+                                    {row.Status}
+                                  </td>
+                                  <td className="tabular px-2 py-2 text-right font-bold text-f1-red">
+                                    {row.Points}
+                                  </td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="py-6 text-center text-xs text-muted-foreground">
+                    No data found for this round.
+                  </div>
+                )}
+              </section>
+            )}
+          </div>
+        )}
       </main>
     </div>
   );

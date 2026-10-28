@@ -2,14 +2,7 @@ import { Award, Compass, CheckCircle2, ArrowUpRight } from "lucide-react";
 import benchmarks from "@/data/benchmarks.json";
 
 export function ModelTrackRecordCard() {
-  const {
-    podiumHits,
-    totalPodiumSlots,
-    podiumPct,
-    top10Pct,
-    modelBrier,
-    nRounds,
-  } = benchmarks;
+  const { podiumHits, totalPodiumSlots, podiumPct, top10Pct, modelBrier, nRounds } = benchmarks;
 
   const avgPerRace = nRounds > 0 ? Math.round((podiumHits / nRounds) * 10) / 10 : 0;
   const avgLabel = Number.isInteger(avgPerRace)
@@ -17,7 +10,7 @@ export function ModelTrackRecordCard() {
     : `~${avgPerRace}/3 podium spots`;
 
   return (
-    <section className="rounded-2xl border border-slate-700/60 bg-[#0a0d14]/90 p-5 shadow-lg">
+    <section className="border border-slate-700/60 bg-[#0a0d0b] p-5">
       {/* Header Strip */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-800/80 pb-3 mb-4">
         <div>
@@ -25,13 +18,14 @@ export function ModelTrackRecordCard() {
             <span className="text-xs font-black uppercase tracking-wider text-white">
               Model Track Record &amp; Validation
             </span>
-            <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2 py-0.5 rounded-full">
-              <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <span className="inline-flex items-center gap-1 text-[10px] font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2 py-0.5">
+              <span className="h-1.5 w-1.5 bg-emerald-400 animate-pulse" />
               2026 Walk-Forward Validated
             </span>
           </div>
           <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
-            Calibrated Random Forest ensemble evaluated strictly on completed 2026 Grand Prix rounds ({nRounds} rounds run to date).
+            Calibrated Random Forest ensemble evaluated strictly on completed 2026 Grand Prix rounds
+            ({nRounds} rounds run to date).
           </p>
         </div>
 
@@ -39,7 +33,7 @@ export function ModelTrackRecordCard() {
           href="https://github.com/mnarla/Paddock-Scout"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 self-start sm:self-auto rounded-lg border border-slate-700/60 bg-slate-800/70 hover:bg-slate-700 px-3 py-1.5 text-[11px] font-bold text-slate-200 hover:text-white transition shadow-sm"
+          className="inline-flex items-center gap-2 self-start sm:self-auto border border-slate-700/60 bg-slate-800/70 hover:bg-slate-700 px-3 py-1.5 text-[11px] font-bold text-slate-200 hover:text-white transition"
         >
           <svg
             className="h-3.5 w-3.5 fill-current text-white"
@@ -60,7 +54,7 @@ export function ModelTrackRecordCard() {
       {/* 3 Telemetry Benchmark Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {/* Podium accuracy */}
-        <div className="rounded-xl border border-amber-500/30 bg-amber-500/10 p-3.5">
+        <div className="border border-slate-700/60 border-t-amber-400 bg-[#111412] p-3.5">
           <div className="flex items-center justify-between text-[10px] uppercase font-bold tracking-wider text-amber-400 mb-1">
             <span className="flex items-center gap-1.5">
               <Award className="h-3.5 w-3.5" />
@@ -75,7 +69,7 @@ export function ModelTrackRecordCard() {
         </div>
 
         {/* Top-10 Accuracy */}
-        <div className="rounded-xl border border-sky-500/30 bg-sky-500/10 p-3.5">
+        <div className="border border-slate-700/60 border-t-sky-400 bg-[#111412] p-3.5">
           <div className="flex items-center justify-between text-[10px] uppercase font-bold tracking-wider text-sky-400 mb-1">
             <span className="flex items-center gap-1.5">
               <CheckCircle2 className="h-3.5 w-3.5" />
@@ -83,25 +77,23 @@ export function ModelTrackRecordCard() {
             </span>
             <span className="font-mono text-xs">{top10Pct}%</span>
           </div>
-          <div className="tabular text-2xl font-black font-mono text-white">
-            {top10Pct}%
-          </div>
+          <div className="tabular text-2xl font-black font-mono text-white">{top10Pct}%</div>
           <p className="text-[10px] text-sky-300/80 mt-1">Points finishes correctly captured</p>
         </div>
 
         {/* Brier Score */}
-        <div className="rounded-xl border border-purple-500/30 bg-purple-500/10 p-3.5">
-          <div className="flex items-center justify-between text-[10px] uppercase font-bold tracking-wider text-purple-400 mb-1">
+        <div className="border border-slate-700/60 border-t-rose-500 bg-[#111412] p-3.5">
+          <div className="flex items-center justify-between text-[10px] uppercase font-bold tracking-wider text-rose-400 mb-1">
             <span className="flex items-center gap-1.5">
               <Compass className="h-3.5 w-3.5" />
               <span>Brier Score</span>
             </span>
             <span className="font-mono text-xs">Calibrated</span>
           </div>
-          <div className="tabular text-2xl font-black font-mono text-white">
-            {modelBrier}
-          </div>
-          <p className="text-[10px] text-purple-300/80 mt-1">Multi-class probability error (lower is better)</p>
+          <div className="tabular text-2xl font-black font-mono text-white">{modelBrier}</div>
+          <p className="text-[10px] text-slate-400 mt-1">
+            Multi-class probability error (lower is better)
+          </p>
         </div>
       </div>
     </section>

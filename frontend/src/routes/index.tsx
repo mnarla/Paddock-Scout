@@ -4,14 +4,13 @@ import { useMemo, useState, useEffect } from "react";
 import { NEXT_RACE, type RaceInfo } from "@/data/calendar2026";
 import { DRIVERS_2026, type Driver } from "@/data/drivers2026";
 import { TEAMS } from "@/data/teams";
-import { UPGRADES, type Upgrade } from "@/data/upgrades";
 import { API_BASE_URL } from "@/lib/config";
+import type { Prediction } from "@/lib/prediction";
 import { useFeatureWeights } from "@/lib/useFeatureWeights";
 
-import { AmbientRaceTrack } from "@/components/paddock/AmbientRaceTrack";
 import { PillNav, type NavTab } from "@/components/paddock/PillNav";
 import { CockpitDashboard } from "@/components/paddock/CockpitDashboard";
-import { UpgradesRail } from "@/components/paddock/UpgradesRail";
+import { PaddockFeed } from "@/components/paddock/PaddockFeed";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -20,50 +19,53 @@ export const Route = createFileRoute("/")({
   component: PaddockScoutCockpit,
 });
 
-function isPostQualifyingWeekend(raceDateStr?: string): boolean {
-  if (!raceDateStr) return false;
-  const raceTimestamp = new Date(`${raceDateStr}T14:00:00Z`).getTime();
-  const diffHours = (raceTimestamp - Date.now()) / (1000 * 60 * 60);
-  return diffHours <= 28 && diffHours >= -6;
-}
-
-const predCache = new Map<string, any>();
+const predCache = new Map<string, Prediction>();
 
 function PaddockScoutCockpit() {
   const [drivers, setDrivers] = useState<Driver[]>(DRIVERS_2026);
   const [race, setRace] = useState<RaceInfo>(NEXT_RACE);
-  const [upgrades, setUpgrades] = useState<Upgrade[]>(UPGRADES);
   const [calendar, setCalendar] = useState<RaceInfo[]>([]);
+  const [calendarChanges, setCalendarChanges] = useState<
+    { name: string; date: string; status: string; note: string; source: string }[]
+  >([]);
 
   const featureWeights = useFeatureWeights();
 
   useEffect(() => {
-    fetch(`${API_BASE_URL}/api/drivers`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data?.length) {
-          setDrivers(data);
-        }
-      })
-      .catch(() => {});
+    const refreshDrivers = () =>
+      fetch(`${API_BASE_URL}/api/drivers`)
+        .then((res) => res.json())
+        .then((data) => {
+          if (data?.length) {
+            setDrivers(data);
+          }
+        })
+        .catch(() => {});
+    void refreshDrivers();
+    const refreshTimer = window.setInterval(refreshDrivers, 60_000);
 
     fetch(`${API_BASE_URL}/api/next-race`)
       .then((res) => res.json())
-      .then((data) => { if (data) setRace(data); })
+      .then((data) => {
+        if (data) setRace(data);
+      })
       .catch(() => {});
 
-    fetch(`${API_BASE_URL}/api/upgrades`)
+    fetch(`${API_BASE_URL}/api/calendar-changes`)
       .then((res) => res.json())
-      .then((data) => { if (data) setUpgrades(data); })
+      .then((data) => {
+        if (Array.isArray(data)) setCalendarChanges(data);
+      })
       .catch(() => {});
 
     fetch(`${API_BASE_URL}/api/calendar`)
       .then((res) => res.json())
-      .then((data) => { if (data?.length) setCalendar(data); })
+      .then((data) => {
+        if (data?.length) setCalendar(data);
+      })
       .catch(() => {});
+    return () => window.clearInterval(refreshTimer);
   }, []);
-
-  const isPostQuali = useMemo(() => isPostQualifyingWeekend(race?.date), [race?.date]);
 
   const activeDrivers = useMemo(
     () =>
@@ -71,43 +73,40 @@ function PaddockScoutCockpit() {
         ...d,
         standingsRank: d.standingsRank || idx + 1,
         qualifyingPos:
-          isPostQuali && d.qualifyingPos ? d.qualifyingPos : d.standingsRank || idx + 1,
+          d.gridSource === "qualifying" && d.gridRound === race.round
+            ? d.qualifyingPos
+            : Math.min(drivers.length, d.standingsRank || idx + 1),
       })),
-    [drivers, isPostQuali]
+    [drivers, race.round],
   );
 
   const [driverId, setDriverId] = useState<string | null>(null);
   const [navTab, setNavTab] = useState<NavTab>("home");
 
   const driver = useMemo(
-    () => (driverId ? activeDrivers.find((x) => x.id === driverId) ?? null : null),
-    [activeDrivers, driverId]
+    () => (driverId ? (activeDrivers.find((x) => x.id === driverId) ?? null) : null),
+    [activeDrivers, driverId],
   );
 
   const [gridPos, setGridPos] = useState<number>(1);
   const [form, setForm] = useState<number>(10);
+  const isPostQuali = driver?.gridSource === "qualifying" && driver.gridRound === race.round;
+  const defaultGrid = driver?.qualifyingPos;
+  const defaultForm = driver?.recentForm;
 
   useEffect(() => {
-    if (driver) {
-      setGridPos(driver.qualifyingPos);
-      setForm(driver.recentForm);
+    if (defaultGrid !== undefined && defaultForm !== undefined) {
+      setGridPos(defaultGrid);
+      setForm(defaultForm);
     }
-  }, [driver?.id, driver?.qualifyingPos, driver?.recentForm]);
+  }, [driverId, defaultGrid, defaultForm]);
 
   const [isPredicting, setIsPredicting] = useState(false);
-  const [baseline, setBaseline] = useState<any>(null);
-  const [prediction, setPrediction] = useState<any>(null);
+  const [prediction, setPrediction] = useState<Prediction | null>(null);
 
   useEffect(() => {
     if (!driver) return;
-    const isAtDefault =
-      gridPos === driver.qualifyingPos && Math.abs(form - driver.recentForm) < 0.05;
-    if (isAtDefault && baseline) {
-      setPrediction(baseline);
-      return;
-    }
-
-    const cacheKey = `${driver.id}|${gridPos}|${Number(form).toFixed(2)}|${race.name}`;
+    const cacheKey = `${driver.id}|${gridPos}|${Number(form).toFixed(2)}|${race.name}|${driver.gridSource}`;
     if (predCache.has(cacheKey)) {
       setPrediction(predCache.get(cacheKey)!);
       setIsPredicting(false);
@@ -128,7 +127,7 @@ function PaddockScoutCockpit() {
         }),
       })
         .then((res) => res.json())
-        .then((data) => {
+        .then((data: Prediction) => {
           if (!cancelled && data?.podium !== undefined) {
             predCache.set(cacheKey, data);
             setPrediction(data);
@@ -144,12 +143,11 @@ function PaddockScoutCockpit() {
       cancelled = true;
       clearTimeout(handler);
     };
-  }, [driver?.id, gridPos, form, race.name, driver?.qualifyingPos, driver?.recentForm, baseline]);
+  }, [driver, gridPos, form, race.name]);
 
   const onDriverChange = (id: string | null) => {
     setDriverId(id);
     if (!id) {
-      setBaseline(null);
       setPrediction(null);
       setIsPredicting(false);
       return;
@@ -158,14 +156,12 @@ function PaddockScoutCockpit() {
     if (d) {
       setGridPos(d.qualifyingPos);
       setForm(d.recentForm);
-      const cacheKey = `${d.id}|${d.qualifyingPos}|${Number(d.recentForm).toFixed(2)}|${race.name}`;
+      const cacheKey = `${d.id}|${d.qualifyingPos}|${Number(d.recentForm).toFixed(2)}|${race.name}|${d.gridSource}`;
       if (predCache.has(cacheKey)) {
         const cached = predCache.get(cacheKey)!;
-        setBaseline(cached);
         setPrediction(cached);
         setIsPredicting(false);
       } else {
-        setBaseline(null);
         setPrediction(null);
         setIsPredicting(true);
       }
@@ -176,7 +172,6 @@ function PaddockScoutCockpit() {
     if (!driver) return;
     setGridPos(driver.qualifyingPos);
     setForm(driver.recentForm);
-    if (baseline) setPrediction(baseline);
   };
 
   const onNavSelect = (tab: NavTab) => {
@@ -192,12 +187,10 @@ function PaddockScoutCockpit() {
   }, [calendar, race]);
 
   return (
-    <div className="min-h-screen bg-[#07090e] text-slate-100 relative selection:bg-rose-500/30 overflow-x-hidden flex flex-col justify-center items-center py-20 px-4 sm:px-6">
+    <div className="race-page">
       <PillNav activeTab={navTab} onSelectTab={onNavSelect} race={race} calendar={fullCalendar} />
 
-      <main className="w-full max-w-5xl relative z-10 flex items-center justify-center my-auto py-8">
-        <AmbientRaceTrack />
-
+      <main>
         {navTab === "home" && (
           <CockpitDashboard
             race={race}
@@ -206,7 +199,6 @@ function PaddockScoutCockpit() {
             selectedDriver={driver}
             onSelectDriver={onDriverChange}
             prediction={prediction}
-            baseline={baseline}
             isPredicting={isPredicting}
             featureWeights={featureWeights}
             gridPos={gridPos}
@@ -219,38 +211,33 @@ function PaddockScoutCockpit() {
         )}
 
         {navTab === "schedule" && (
-          <div className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl bg-[#090b10]/95 backdrop-blur-2xl border border-white/[0.08] p-4 sm:p-5 shadow-[0_24px_64px_rgba(0,0,0,0.9),inset_0_1px_0_0_rgba(255,255,255,0.06)]">
-            <div className="mb-4 flex items-center justify-between border-b border-white/[0.08] pb-3">
+          <div className="timing-console section-page calendar-page">
+            <div className="section-page__header">
               <div>
-                <h1 className="text-base sm:text-lg font-black tracking-wider uppercase text-white font-sans">
-                  2026 FIA Formula 1 Calendar
-                </h1>
-                <p className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
-                  {fullCalendar.length} Championship Rounds · Next: Round {race.round} ({race.short.toUpperCase()})
+                <h1 className="section-page__title">2026 FIA Formula 1 Calendar</h1>
+                <p className="section-page__meta">
+                  {fullCalendar.length} Championship Rounds · Next: Round {race.round} (
+                  {race.short.toUpperCase()})
                 </p>
               </div>
-              <div className="text-[10px] font-mono font-bold text-rose-400 uppercase flex items-center gap-1.5 bg-rose-500/10 border border-rose-500/25 px-2.5 py-1 rounded-md">
+              <div className="section-status section-status--live">
                 <span className="h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse" />
                 <span>Next: {race.name}</span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
+            <div className="calendar-layout">
               {/* Full Calendar List */}
-              <div className="lg:col-span-7 flex flex-col">
-                <div className="space-y-2 max-h-[390px] overflow-y-auto pr-1">
+              <div className="calendar-column">
+                <div className="calendar-list telemetry-scrollbar">
                   {fullCalendar.map((r) => {
                     const isNext = r.round === race.round;
                     const isCompleted = r.round < race.round;
                     return (
                       <div
                         key={r.round}
-                        className={`rounded-lg border p-2.5 transition-all ${
-                          isNext
-                            ? "border-rose-500/70 bg-rose-500/10 shadow-[0_0_16px_rgba(239,68,68,0.15)] ring-1 ring-rose-500/40"
-                            : isCompleted
-                            ? "border-slate-800/80 bg-[#0e121e]/70 opacity-75 hover:opacity-100"
-                            : "border-slate-700/60 bg-[#121625]/90 hover:border-slate-500/80"
+                        className={`calendar-row ${
+                          isNext ? "is-next" : isCompleted ? "is-complete" : "is-upcoming"
                         }`}
                       >
                         <div className="flex items-center justify-between">
@@ -284,13 +271,14 @@ function PaddockScoutCockpit() {
                                 {r.name}
                               </div>
                               <div className="text-[10px] font-medium text-slate-400 uppercase">
-                                {r.short} · {r.trackType} Circuit
+                                {r.short} · {r.country} · {r.trackType} Circuit
                               </div>
                             </div>
                           </div>
                           <div className="text-right shrink-0">
                             <div className="text-[10px] font-bold text-slate-300 uppercase font-mono">
-                              {new Date(r.date).toLocaleDateString("en-GB", {
+                              {new Date(`${r.date}T12:00:00Z`).toLocaleDateString("en-GB", {
+                                timeZone: "UTC",
                                 day: "numeric",
                                 month: "short",
                               })}
@@ -317,8 +305,8 @@ function PaddockScoutCockpit() {
               </div>
 
               {/* Right: Next Grand Prix Details */}
-              <div className="lg:col-span-5 flex flex-col gap-3">
-                <div className="rounded-xl border border-rose-500/50 bg-rose-500/10 p-4 shadow-lg">
+              <div className="calendar-sidebar">
+                <div className="calendar-feature">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-[9px] font-extrabold uppercase tracking-widest text-rose-400">
                       Upcoming Event
@@ -334,14 +322,15 @@ function PaddockScoutCockpit() {
                         {race.name}
                       </h2>
                       <p className="text-[11px] text-slate-400 font-medium uppercase mt-0.5">
-                        {race.short} · {race.trackType} Track
+                        {race.short} · {race.country} · {race.trackType} Track
                       </p>
                     </div>
                   </div>
                   <div className="text-xs font-mono font-semibold text-slate-300 border-t border-rose-500/20 pt-2.5 flex items-center justify-between">
                     <span>Race Date</span>
                     <span className="text-rose-400">
-                      {new Date(race.date).toLocaleDateString("en-GB", {
+                      {new Date(`${race.date}T12:00:00Z`).toLocaleDateString("en-GB", {
+                        timeZone: "UTC",
                         weekday: "short",
                         day: "numeric",
                         month: "long",
@@ -356,7 +345,7 @@ function PaddockScoutCockpit() {
                   )}
                 </div>
 
-                <div className="rounded-xl border border-slate-700/60 bg-[#0a0d14]/90 p-3.5 text-xs text-slate-400 space-y-2">
+                <div className="calendar-intel">
                   <div className="text-[10px] font-bold uppercase tracking-wider text-slate-300">
                     Grand Prix Intel
                   </div>
@@ -366,14 +355,32 @@ function PaddockScoutCockpit() {
                   </div>
                   <div className="flex justify-between text-[11px]">
                     <span className="text-slate-500">Weekend Sessions:</span>
-                    <span className="font-semibold text-slate-200">{race.sessions?.length ?? 5} Sessions</span>
+                    <span className="font-semibold text-slate-200">
+                      {race.sessions?.length ?? 5} Sessions
+                    </span>
                   </div>
                   <div className="flex justify-between text-[11px]">
                     <span className="text-slate-500">Season Progress:</span>
                     <span className="font-semibold text-slate-200 font-mono">
-                      {race.round} / {fullCalendar.length} ({Math.round((race.round / fullCalendar.length) * 100)}%)
+                      {race.round} / {fullCalendar.length} (
+                      {Math.round((race.round / fullCalendar.length) * 100)}%)
                     </span>
                   </div>
+                </div>
+                <div className="calendar-intel calendar-changes">
+                  <h2>Calendar changes</h2>
+                  {calendarChanges.map((change) => (
+                    <div key={`${change.name}-${change.date}`}>
+                      <strong>
+                        {change.name} · {change.date}
+                      </strong>
+                      <span className="calendar-change-status">{change.status} — April date</span>
+                      <p>{change.note}</p>
+                      <a href={change.source} target="_blank" rel="noopener noreferrer">
+                        F1 announcement ↗
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -381,24 +388,19 @@ function PaddockScoutCockpit() {
         )}
 
         {navTab === "upgrades" && (
-          <div className="relative z-10 w-full max-w-5xl mx-auto rounded-2xl bg-[#090b10]/95 backdrop-blur-2xl border border-white/[0.08] p-4 sm:p-5 shadow-[0_24px_64px_rgba(0,0,0,0.9),inset_0_1px_0_0_rgba(255,255,255,0.06)]">
-            <div className="mb-4 flex items-center justify-between border-b border-white/[0.08] pb-3">
+          <div className="timing-console section-page technical-page">
+            <div className="section-page__header">
               <div>
-                <h1 className="text-base sm:text-lg font-black tracking-wider uppercase text-white font-sans">
-                  Technical Upgrades &amp; Aero Specifications
-                </h1>
-                <p className="text-[10px] font-mono tracking-wider text-slate-400 uppercase mt-0.5">
-                  FIA Aerodynamic Packages · Round {race.round}: {race.short.toUpperCase()} ({race.name})
+                <h1 className="section-page__title">The Paddock</h1>
+                <p className="section-page__meta">
+                  Team news &amp; declared car changes · Round {race.round}:{" "}
+                  {race.short.toUpperCase()}
                 </p>
               </div>
-              <div className="text-[10px] font-mono font-bold text-emerald-400 uppercase bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-1 rounded-md">
-                Confirmed Specs Only
-              </div>
+              <div className="section-status">FIA declarations + reported performance</div>
             </div>
 
-            <div className="max-h-[420px] overflow-hidden flex flex-col w-full">
-              <UpgradesRail upgrades={upgrades} />
-            </div>
+            <PaddockFeed />
           </div>
         )}
       </main>

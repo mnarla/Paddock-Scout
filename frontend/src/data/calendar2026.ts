@@ -11,6 +11,8 @@ export interface RaceInfo {
   name: string;
   short: string;
   country: string;
+  location?: string;
+  status?: string;
   flag: string;
   trackType: "Permanent" | "Street";
   date: string; // ISO YYYY-MM-DD
@@ -32,19 +34,19 @@ export async function fetchNextRace(): Promise<RaceInfo> {
 
 // Initial fallback used before the /api/next-race endpoint returns
 export const NEXT_RACE: RaceInfo = {
-  round: 16,
-  name: "Bahrain Grand Prix",
-  short: "Sakhir",
-  country: "Bahrain",
-  flag: "🇧🇭",
+  round: 19,
+  name: "Mexico City Grand Prix",
+  short: "Mexico City",
+  country: "Mexico",
+  flag: "🇲🇽",
   trackType: "Permanent",
-  date: "2026-10-04",
+  date: "2026-11-01",
   isSprint: false,
   sessions: [
-    { name: "Practice 1", shortName: "FP1", utcTime: "2026-10-02T04:30:00Z" },
-    { name: "Practice 2", shortName: "FP2", utcTime: "2026-10-02T08:00:00Z" },
-    { name: "Practice 3", shortName: "FP3", utcTime: "2026-10-03T04:30:00Z" },
-    { name: "Qualifying", shortName: "Qualifying", utcTime: "2026-10-03T08:00:00Z" },
-    { name: "Race", shortName: "Grand Prix", utcTime: "2026-10-04T07:00:00Z" },
+    { name: "Practice 1", shortName: "FP1", utcTime: "2026-10-30T18:30:00Z" },
+    { name: "Practice 2", shortName: "FP2", utcTime: "2026-10-30T22:00:00Z" },
+    { name: "Practice 3", shortName: "FP3", utcTime: "2026-10-31T17:30:00Z" },
+    { name: "Qualifying", shortName: "Qualifying", utcTime: "2026-10-31T21:00:00Z" },
+    { name: "Race", shortName: "Grand Prix", utcTime: "2026-11-01T20:00:00Z" },
   ],
 };
