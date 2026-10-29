@@ -10,17 +10,20 @@ interface Props {
   onHome?: () => void;
 }
 
-export function SelectedDriverCard({ driver, prediction, baseline, isPredicting = false, onHome }: Props) {
+export function SelectedDriverCard({
+  driver,
+  prediction,
+  baseline,
+  isPredicting = false,
+  onHome,
+}: Props) {
   const team = TEAMS[driver.team];
 
   return (
     <section className="overflow-hidden rounded-lg border border-hairline bg-card">
       {/* Driver header strip */}
       <div className="relative flex items-center gap-4 px-5 py-4">
-        <div
-          className="absolute left-0 top-0 h-full w-1.5"
-          style={{ background: team.color }}
-        />
+        <div className="absolute left-0 top-0 h-full w-1.5" style={{ background: team.color }} />
         <div
           className="tabular grid h-14 w-14 shrink-0 place-items-center rounded text-2xl font-black text-foreground"
           style={{
@@ -89,8 +92,13 @@ export function SelectedDriverCard({ driver, prediction, baseline, isPredicting 
       </div>
 
       <div className="border-t border-hairline bg-secondary/20 px-4 py-2 text-[10px] text-muted-foreground flex items-center justify-between">
-        <span>* Probabilities represent cumulative milestone thresholds (Win, Top 2, and any Podium step).</span>
-        <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground/80">Cumulative Milestones</span>
+        <span>
+          * Probabilities represent cumulative milestone thresholds (Win, Top 2, and any Podium
+          step).
+        </span>
+        <span className="font-mono text-[9px] uppercase tracking-wider text-muted-foreground/80">
+          Cumulative Milestones
+        </span>
       </div>
     </section>
   );
@@ -115,24 +123,18 @@ function ProbCell({
 }) {
   const isLoading = isPredicting || value == null || baseline == null;
   const numValue = value != null ? value * 100 : 0;
-  const delta = (baseline != null && value != null)
-    ? Number(((value - baseline) * 100).toFixed(1))
-    : 0;
+  const delta =
+    baseline != null && value != null ? Number(((value - baseline) * 100).toFixed(1)) : 0;
 
   const showDelta = !isLoading && Math.abs(delta) >= 0.1;
   const deltaTone =
     delta > 0 ? "text-f1-green" : delta < 0 ? "text-f1-red" : "text-muted-foreground";
 
   return (
-    <div
-      className={`relative px-5 py-5 ${last ? "" : "border-r border-hairline"}`}
-    >
+    <div className={`relative px-5 py-5 ${last ? "" : "border-r border-hairline"}`}>
       <div className="flex items-baseline justify-between min-h-[28px]">
         <div>
-          <span
-            className="text-[11px] font-black tracking-[0.2em] block"
-            style={{ color: accent }}
-          >
+          <span className="text-[11px] font-black tracking-[0.2em] block" style={{ color: accent }}>
             {label}
           </span>
           {sublabel && (

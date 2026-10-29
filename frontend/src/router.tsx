@@ -8,4 +8,3 @@ export const getRouter = () => {
     defaultPreloadStaleTime: 0,
   });
 };
-

@@ -43,41 +43,47 @@ export function useFeatureWeights(): FeatureWeightsData {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         return res.json();
       })
-      .then((data: {
-        weights: Record<string, number>;
-        liveSessionFeatures?: string[];
-        unavailableFeatures?: string[];
-        isSprint?: boolean;
-        sessionStage?: "pre_weekend" | "friday_practice" | "fully_ingested";
-        subheader?: string;
-        statusMessage?: string;
-        sessionsIngested?: Record<string, boolean>;
-      }) => {
-        if (cancelled) return;
+      .then(
+        (data: {
+          weights: Record<string, number>;
+          liveSessionFeatures?: string[];
+          unavailableFeatures?: string[];
+          isSprint?: boolean;
+          sessionStage?: "pre_weekend" | "friday_practice" | "fully_ingested";
+          subheader?: string;
+          statusMessage?: string;
+          sessionsIngested?: Record<string, boolean>;
+        }) => {
+          if (cancelled) return;
 
-        const weights = data.weights ?? {};
-        const weightSum = Object.values(weights).reduce((a, b) => a + b, 0);
+          const weights = data.weights ?? {};
+          const weightSum = Object.values(weights).reduce((a, b) => a + b, 0);
 
-        // Client-side sanity check — mirrors the server-side assertion.
-        if (Object.keys(weights).length > 0 && Math.abs(weightSum - 1.0) > 1e-3) {
-          console.warn(
-            `[useFeatureWeights] Server returned weights summing to ${weightSum.toFixed(4)}, expected 1.0`
-          );
-        }
+          // Client-side sanity check — mirrors the server-side assertion.
+          if (Object.keys(weights).length > 0 && Math.abs(weightSum - 1.0) > 1e-3) {
+            console.warn(
+              `[useFeatureWeights] Server returned weights summing to ${weightSum.toFixed(4)}, expected 1.0`,
+            );
+          }
 
-        setState({
-          weights,
-          liveSessionFeatures: new Set(data.liveSessionFeatures ?? ["Practice", "Qualifying", "Momentum"]),
-          unavailableFeatures: new Set(data.unavailableFeatures ?? ["Practice", "Qualifying", "Momentum"]),
-          isSprint: data.isSprint,
-          sessionStage: data.sessionStage,
-          subheader: data.subheader,
-          statusMessage: data.statusMessage,
-          sessionsIngested: data.sessionsIngested,
-          isLoading: false,
-          error: false,
-        });
-      })
+          setState({
+            weights,
+            liveSessionFeatures: new Set(
+              data.liveSessionFeatures ?? ["Practice", "Qualifying", "Momentum"],
+            ),
+            unavailableFeatures: new Set(
+              data.unavailableFeatures ?? ["Practice", "Qualifying", "Momentum"],
+            ),
+            isSprint: data.isSprint,
+            sessionStage: data.sessionStage,
+            subheader: data.subheader,
+            statusMessage: data.statusMessage,
+            sessionsIngested: data.sessionsIngested,
+            isLoading: false,
+            error: false,
+          });
+        },
+      )
       .catch((err) => {
         if (cancelled) return;
         console.error("[useFeatureWeights] Failed to fetch feature weights:", err);

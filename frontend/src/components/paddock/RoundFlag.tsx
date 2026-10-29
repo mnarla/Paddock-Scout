@@ -22,7 +22,10 @@ export function RoundFlag({ code, size = 22 }: RoundFlagProps) {
       {(c === "PAPAYA" || c === "MCLAREN") && (
         <svg viewBox="0 0 30 30" className="w-full h-full">
           <circle cx="15" cy="15" r="15" fill="#f47600" />
-          <path d="M 9,15 C 9,10 18,7 22,12 C 18,12 14,15 14,18 C 14,21 18,21 21,19 C 18,23 9,21 9,15 Z" fill="#111111" />
+          <path
+            d="M 9,15 C 9,10 18,7 22,12 C 18,12 14,15 14,18 C 14,21 18,21 21,19 C 18,23 9,21 9,15 Z"
+            fill="#111111"
+          />
         </svg>
       )}
 
@@ -80,7 +83,9 @@ export function RoundFlag({ code, size = 22 }: RoundFlagProps) {
         </svg>
       )}
 
-      {!["NL", "PAPAYA", "MCLAREN", "IT", "ES", "UK", "US", "USA", "UR", "MC", "AU"].includes(c) && (
+      {!["NL", "PAPAYA", "MCLAREN", "IT", "ES", "UK", "US", "USA", "UR", "MC", "AU"].includes(
+        c,
+      ) && (
         <div className="w-full h-full bg-slate-200 flex items-center justify-center text-[9px] font-black text-slate-700">
           {c.slice(0, 2)}
         </div>
