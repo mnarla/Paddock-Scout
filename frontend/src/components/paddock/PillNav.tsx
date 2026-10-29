@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import type { RaceInfo } from "@/data/calendar2026";
 import { useSessionCountdown } from "@/lib/useCountdown";
+import { F1CarSide } from "./F1Car";
 
 export type NavTab = "home" | "schedule" | "upgrades";
 
@@ -19,11 +21,18 @@ const TABS: { id: NavTab; label: string }[] = [
 
 export function PillNav({ activeTab, onSelectTab, race, calendar }: PillNavProps) {
   const countdown = useSessionCountdown(race, calendar);
+  const [turboBoost, setTurboBoost] = useState(false);
+
+  const handleBrandClick = () => {
+    onSelectTab("home");
+    setTurboBoost(true);
+    setTimeout(() => setTurboBoost(false), 4600);
+  };
 
   return (
     <header className="race-masthead">
       <div className="race-masthead__inner">
-        <button className="brand-lockup" type="button" onClick={() => onSelectTab("home")}>
+        <button className="brand-lockup" type="button" onClick={handleBrandClick} title="Paddock Scout (Click to launch speed run!)">
           <img
             src="/icon.png"
             alt="Paddock Scout Logo"
@@ -63,6 +72,13 @@ export function PillNav({ activeTab, onSelectTab, race, calendar }: PillNavProps
           ))}
           <Link to="/archive">Archive</Link>
         </nav>
+      </div>
+
+      {/* Pit straight animated car riding the red masthead line */}
+      <div className={`masthead-pit-straight ${turboBoost ? "is-turbo" : ""}`} aria-hidden="true">
+        <div className="masthead-racer">
+          <F1CarSide width={36} height={13} color="#ffffff" withSparks withSmoke={turboBoost} />
+        </div>
       </div>
     </header>
   );
