@@ -9,6 +9,7 @@ import type { Prediction } from "@/lib/prediction";
 import { useSessionCountdown } from "@/lib/useCountdown";
 import { WhatIfPanel } from "./WhatIfPanel";
 import { FeatureContribution } from "./FeatureContribution";
+import { CircuitMap } from "./CircuitMap";
 
 interface CockpitDashboardProps {
   race: RaceInfo;
@@ -113,15 +114,7 @@ export function CockpitDashboard({
               </em>
             </div>
           )}
-          <svg
-            className="spine-track"
-            viewBox="0 0 160 92"
-            role="img"
-            aria-label="Abstract circuit telemetry line"
-          >
-            <path d="M18 58C13 35 31 17 52 24c18 6 14 28 33 29 20 1 20-27 42-24 20 3 25 31 9 43-16 12-32-6-48-3-19 4-31 19-49 10-10-5-17-12-21-21Z" />
-            <circle cx="18" cy="58" r="3" />
-          </svg>
+          <CircuitMap race={race} />
         </aside>
 
         <section className="timing-tower" aria-label="Driver standings">

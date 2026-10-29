@@ -6,7 +6,7 @@ Paddock Scout uses a broadcast timing-graphics system crossed with a pit-wall en
 
 ## Differentiation Anchor
 
-The persistent red race-control spine combines the circuit code, round, format, track type, live model state, and an authored circuit telemetry line. It is the product's recognizable signature across prediction, calendar, technical, and archive surfaces.
+The persistent red race-control spine combines the circuit code, round, format, track type, live model state, and the upcoming venue's circuit outline. It is the product's recognizable signature across prediction, calendar, technical, and archive surfaces.
 
 ## Typography
 
@@ -61,3 +61,4 @@ Do not distribute several decorative accent colors at equal visual weight. Do no
 - The Paddock separates FIA-declared component changes from dated technical reporting and team news. An FIA declaration records a change and its intended purpose, not a verified performance gain.
 - Every news item and declaration links to its source. Show refresh times, unavailable documents, and saved-data states explicitly.
 - Keep cancelled dates in calendar change history rather than adding them to numbered championship rounds. Event names and physical venues are separate facts.
+- Circuit outlines are bundled locally and selected by physical venue before event title. Use an explicit unavailable state for unknown venues; never substitute a decorative or guessed map.

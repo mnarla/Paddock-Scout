@@ -439,14 +439,30 @@
   width: 100%;
   padding: 10px;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
-  fill: none;
-  stroke: white;
-  stroke-width: 3;
-  opacity: 0.8;
+  color: white;
 }
-.spine-track circle {
-  fill: white;
-  stroke: none;
+.spine-track svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.spine-track figcaption {
+  padding: 4px 2px 2px;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+.spine-track__unavailable {
+  padding: 18px 0;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .timing-tower {

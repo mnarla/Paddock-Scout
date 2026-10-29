@@ -41,15 +41,22 @@ function PaddockScoutCockpit() {
           }
         })
         .catch(() => {});
+    const refreshRace = () =>
+      fetch(`${API_BASE_URL}/api/next-race`)
+        .then((res) => {
+          if (!res.ok) throw new Error("Next race unavailable");
+          return res.json();
+        })
+        .then((data) => {
+          if (data?.name && data?.date && data?.round) setRace(data);
+        })
+        .catch(() => {});
     void refreshDrivers();
-    const refreshTimer = window.setInterval(refreshDrivers, 60_000);
-
-    fetch(`${API_BASE_URL}/api/next-race`)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data) setRace(data);
-      })
-      .catch(() => {});
+    void refreshRace();
+    const refreshTimer = window.setInterval(() => {
+      void refreshDrivers();
+      void refreshRace();
+    }, 60_000);
 
     fetch(`${API_BASE_URL}/api/calendar-changes`)
       .then((res) => res.json())
