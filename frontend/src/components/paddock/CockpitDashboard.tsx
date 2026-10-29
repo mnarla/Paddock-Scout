@@ -10,6 +10,8 @@ import { useSessionCountdown } from "@/lib/useCountdown";
 import { WhatIfPanel } from "./WhatIfPanel";
 import { FeatureContribution } from "./FeatureContribution";
 import { CircuitMap } from "./CircuitMap";
+import { TowerFooterWidget } from "./TowerFooterWidget";
+import { F1CarSide } from "./F1Car";
 
 interface CockpitDashboardProps {
   race: RaceInfo;
@@ -45,6 +47,7 @@ export function CockpitDashboard({
   isPostQuali,
 }: CockpitDashboardProps) {
   const [activePanel, setActivePanel] = useState<"simulator" | "weights">("simulator");
+  const [hotLapActive, setHotLapActive] = useState(false);
   const countdown = useSessionCountdown(race, calendar);
   const team = selectedDriver ? TEAMS[selectedDriver.team] : null;
   const teamColor = team?.color ?? "#e10600";
@@ -162,7 +165,7 @@ export function CockpitDashboard({
               </tbody>
             </table>
           </div>
-          <p className="timing-tower__hint">Select a driver to run the race model</p>
+          <TowerFooterWidget drivers={drivers} />
         </section>
 
         <section className="prediction-stage" aria-live="polite">
@@ -195,7 +198,19 @@ export function CockpitDashboard({
                     <>—</>
                   )}
                 </div>
-                <div className="prediction-sweep" aria-hidden="true" />
+                <div className="prediction-sweep" aria-hidden="true">
+                  {isPredicting && (
+                    <div className="sweep-car-wrapper">
+                      <F1CarSide
+                        width={46}
+                        height={17}
+                        color={team?.color || "var(--team-accent, #e10600)"}
+                        withSmoke
+                        withSparks
+                      />
+                    </div>
+                  )}
+                </div>
                 <div className="probability-support">
                   <div>
                     <span>Win / P1</span>
@@ -245,7 +260,7 @@ export function CockpitDashboard({
                   <Activity aria-hidden="true" /> Model influence
                 </button>
               </div>
-              <div className="prediction-detail telemetry-scrollbar">
+              <div className="prediction-detail">
                 {activePanel === "simulator" ? (
                   <WhatIfPanel
                     driver={selectedDriver}
@@ -290,8 +305,24 @@ export function CockpitDashboard({
         </section>
       </div>
 
-      <footer className="console-footer">
-        <span>Model outputs are informational forecasts, not betting advice.</span>
+      <footer className={`console-footer ${hotLapActive ? "is-hot-lap-running" : ""}`}>
+        <div className="console-footer__info">
+          <span>Model outputs are informational forecasts, not betting advice.</span>
+          <button
+            type="button"
+            className="hotlap-easter-egg"
+            onClick={() => {
+              if (hotLapActive) return;
+              setHotLapActive(true);
+              setTimeout(() => setHotLapActive(false), 3200);
+            }}
+            title="Click for an F1 Hot Lap!"
+            aria-label="Click for an F1 Hot Lap"
+          >
+            <F1CarSide width={34} height={12} color="#55e69c" withSparks={hotLapActive} withSmoke={hotLapActive} />
+            <span className="hotlap-badge">{hotLapActive ? "BOX BOX!" : "HOT LAP"}</span>
+          </button>
+        </div>
         <div>
           {selectedDriver && (
             <button type="button" onClick={onReset}>
@@ -302,6 +333,15 @@ export function CockpitDashboard({
             View model archive <ArrowUpRight aria-hidden="true" />
           </Link>
         </div>
+
+        {/* Hot Lap perimeter circuit racer */}
+        {hotLapActive && (
+          <div className="hotlap-track-perimeter" aria-hidden="true">
+            <div className="hotlap-car-bullet">
+              <F1CarSide width={40} height={14} color="#55e69c" withSparks withSmoke />
+            </div>
+          </div>
+        )}
       </footer>
     </section>
   );

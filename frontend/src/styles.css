@@ -171,6 +171,84 @@
   background: var(--f1-red);
 }
 
+/* Pit Straight Header Car */
+.masthead-pit-straight {
+  position: absolute;
+  inset: auto 0 -2px;
+  height: 2px;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 52;
+}
+
+.masthead-racer {
+  position: absolute;
+  bottom: 0px;
+  left: -80px;
+  animation: pit-straight-lap 26s cubic-bezier(0.25, 0.85, 0.25, 1) infinite;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.5));
+}
+
+.masthead-pit-straight.is-turbo .masthead-racer {
+  animation: pit-straight-turbo 4.5s cubic-bezier(0.2, 0.85, 0.25, 1) forwards !important;
+}
+
+@keyframes pit-straight-lap {
+  0% {
+    left: -80px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    left: -80px;
+    opacity: 1;
+    visibility: visible;
+  }
+  24% {
+    left: calc(100vw + 60px);
+    opacity: 1;
+    visibility: visible;
+  }
+  24.01% {
+    left: calc(100vw + 60px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  24.02%, 100% {
+    left: -80px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes pit-straight-turbo {
+  0% {
+    left: -80px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  1% {
+    left: -80px;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.15);
+  }
+  99% {
+    left: calc(100vw + 60px);
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% {
+    left: calc(100vw + 60px);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .race-masthead__inner {
   width: min(100% - 32px, 1320px);
   height: 66px;
@@ -453,6 +531,25 @@
   line-height: 1.4;
   text-align: center;
 }
+
+/* Track GPS Car Beacon */
+.track-gps-beacon {
+  pointer-events: none;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.9));
+}
+.track-car-glow {
+  animation: car-beacon-pulse 1.8s ease-in-out infinite;
+}
+@keyframes car-beacon-pulse {
+  0%, 100% {
+    r: 5;
+    opacity: 0.2;
+  }
+  50% {
+    r: 9;
+    opacity: 0.55;
+  }
+}
 .spine-track__unavailable {
   padding: 18px 0;
   font-size: 11px;
@@ -475,6 +572,7 @@
   padding: 0 14px;
   border-bottom: 1px solid #343734;
   background: #151715;
+  flex-shrink: 0;
 }
 .section-strip h2 {
   font-family: var(--font-display);
@@ -490,7 +588,7 @@
   text-transform: uppercase;
 }
 .timing-tower__scroll {
-  max-height: 535px;
+  max-height: 480px;
   overflow-y: auto;
 }
 .timing-tower table {
@@ -553,19 +651,237 @@
   color: #7f827d;
 }
 .timing-tower__hint {
-  margin-top: auto;
-  padding: 10px 14px;
-  border-top: 1px solid #343734;
+  padding: 8px 12px;
+  border-top: 1px solid #262926;
   color: #797c77;
-  font-size: 9px;
+  font-size: 8.5px;
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
+  background: #0d0f0d;
+}
+
+/* Tower Footer Widget */
+.tower-footer {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-top: 1px solid #343734;
+  background: #0f1110;
+}
+
+.tower-footer__tabs {
+  display: flex;
+  height: 34px;
+  border-bottom: 1px solid #2b2e2b;
+  background: #141614;
+}
+
+.tower-footer__tabs button {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 8px;
+  color: #797c77;
+  font-family: var(--font-display);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.tower-footer__tabs button + button {
+  border-left: 1px solid #2b2e2b;
+}
+
+.tower-footer__tabs button:hover {
+  color: #c9ccc5;
+}
+
+.tower-footer__tabs button.is-active {
+  color: #f3f1e9;
+  background: #1a1d1a;
+  box-shadow: inset 0 -2px 0 var(--f1-red);
+}
+
+.tower-footer__panel {
+  max-height: 200px;
+  overflow-y: auto;
+  background: #0b0d0c;
+}
+
+/* WCC List */
+.wcc-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.wcc-header {
+  display: grid;
+  grid-template-columns: 28px 1fr 48px 44px;
+  align-items: center;
+  padding: 6px 10px;
+  color: #6d706b;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #222522;
+  background: #111311;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.wcc-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px 1fr 48px 44px;
+  align-items: center;
+  padding: 4.5px 10px;
+  font-size: 10.5px;
+  border-bottom: 1px solid #1c1f1c;
+  overflow: hidden;
+  transition: background 0.12s ease;
+}
+
+.wcc-row:hover {
+  background: #151815;
+}
+
+.wcc-row__bar {
+  position: absolute;
+  inset: 0 auto 0 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.wcc-row__rank {
+  color: #797c77;
+  font-size: 9.5px;
+}
+
+.wcc-row__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.wcc-badge {
+  width: 4px;
+  height: 11px;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.wcc-row__name strong {
+  color: #e5e2d8;
+  font-size: 10.5px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.wcc-row__gap {
+  color: #797c77;
+  font-size: 9.5px;
+  text-align: right;
+  padding-right: 4px;
+}
+
+.wcc-row__points {
+  color: #f3f1e9;
+  font-size: 10.5px;
+  text-align: right;
+}
+
+/* Model Intel */
+.model-intel {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.model-intel__status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8.5px;
+  color: #92958f;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.model-intel__badge {
+  margin-left: auto;
+  font-size: 7.5px;
+  font-weight: 700;
+  color: #55e69c;
+  background: rgba(85, 230, 156, 0.12);
+  border: 1px solid rgba(85, 230, 156, 0.28);
+  padding: 1px 4px;
+  border-radius: 2px;
+}
+
+.model-intel__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.model-intel__card {
+  padding: 6px 8px;
+  background: #141714;
+  border: 1px solid #282b28;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.model-intel__label {
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #7f827c;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.model-intel__value {
+  font-size: 13.5px;
+  line-height: 1.1;
+}
+
+.model-intel__sub {
+  font-size: 7.5px;
+  color: #8c8f89;
+  letter-spacing: 0.03em;
+}
+
+.model-intel__footnote {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 7px;
+  background: rgba(16, 18, 16, 0.8);
+  border: 1px solid #262926;
+  border-radius: 2px;
+  font-size: 8px;
+  color: #9ca099;
 }
 
 .prediction-stage {
   min-width: 0;
   background: #101211;
+  display: flex;
+  flex-direction: column;
 }
 .driver-identity {
   display: flex;
@@ -674,7 +990,51 @@
 }
 .is-calculating .prediction-sweep {
   display: block;
-  animation: model-sweep 1.1s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+  animation: model-sweep 2.4s cubic-bezier(0.25, 0.85, 0.3, 1) infinite;
+}
+
+.sweep-car-wrapper {
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  transform: translateY(-50%) skewX(16deg);
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--team-accent) 70%, transparent));
+}
+
+.f1-car__smoke-trail .smoke-puff {
+  animation: smoke-dissolve 0.7s ease-out infinite;
+}
+.smoke-1 { animation-delay: 0s; }
+.smoke-2 { animation-delay: 0.18s; }
+.smoke-3 { animation-delay: 0.36s; }
+
+@keyframes smoke-dissolve {
+  0% {
+    transform: translate(0, 0) scale(0.6);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-10px, -4px) scale(1.6);
+    opacity: 0;
+  }
+}
+
+.f1-car__sparks-trail .spark {
+  animation: spark-jump 0.35s ease-out infinite;
+}
+.spark-1 { animation-delay: 0s; }
+.spark-2 { animation-delay: 0.12s; }
+.spark-3 { animation-delay: 0.24s; }
+
+@keyframes spark-jump {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-14px, 4px) scale(0.2);
+    opacity: 0;
+  }
 }
 .probability-support {
   display: grid;
@@ -741,23 +1101,23 @@
   color: var(--team-accent);
 }
 .prediction-detail {
-  max-height: 272px;
-  overflow-y: auto;
-  padding: 12px 16px;
+  flex: 1;
+  overflow: visible;
+  padding: 16px 20px;
 }
 
 .control-panel,
 .feature-panel {
   display: grid;
-  gap: 10px;
+  gap: 12px;
 }
 .control-panel__status,
 .feature-panel__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 34px;
-  padding: 0 10px;
+  min-height: 38px;
+  padding: 0 14px;
   border-bottom: 1px solid #303330;
   background: #161816;
 }
@@ -778,8 +1138,8 @@
 }
 .control-panel__row {
   display: grid;
-  gap: 9px;
-  padding: 11px 10px;
+  gap: 12px;
+  padding: 16px 14px;
   border-bottom: 1px solid #292c29;
   background: #111311;
 }
@@ -790,12 +1150,12 @@
 .control-panel__note {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  padding: 8px 10px;
+  gap: 10px;
+  padding: 14px 14px;
   border: 1px solid #343734;
   color: #a7aaa4;
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.6;
 }
 .control-panel__note svg {
   color: var(--team-accent);
@@ -867,7 +1227,7 @@
 }
 
 .driver-empty-state {
-  min-height: 614px;
+  min-height: 740px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -951,11 +1311,102 @@
   font-size: 9px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  position: relative;
 }
 .console-footer > div {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.console-footer__info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.hotlap-easter-egg {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 7px 2px 5px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(85, 230, 156, 0.28);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.hotlap-easter-egg:hover {
+  background: rgba(85, 230, 156, 0.12);
+  border-color: rgba(85, 230, 156, 0.55);
+  transform: translateY(-1px);
+}
+.hotlap-badge {
+  font-family: var(--font-mono);
+  font-size: 8px;
+  font-weight: 700;
+  color: #55e69c;
+  letter-spacing: 0.1em;
+}
+
+/* Hot Lap Perimeter Circuit Racer */
+.timing-console {
+  position: relative;
+}
+.hotlap-track-perimeter {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.hotlap-car-bullet {
+  position: absolute;
+  animation: hot-lap-run 3.2s cubic-bezier(0.25, 0.9, 0.2, 1) forwards;
+  filter: drop-shadow(0 0 10px #55e69c);
+}
+@keyframes hot-lap-run {
+  0% {
+    bottom: 8px;
+    left: 450px;
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+  3% {
+    opacity: 1;
+  }
+  18% {
+    bottom: 8px;
+    left: calc(100% - 50px);
+    transform: rotate(0deg);
+  }
+  26% {
+    bottom: calc(100% - 30px);
+    left: calc(100% - 50px);
+    transform: rotate(-90deg);
+  }
+  50% {
+    bottom: calc(100% - 30px);
+    left: 10px;
+    transform: rotate(-180deg);
+  }
+  74% {
+    bottom: 8px;
+    left: 10px;
+    transform: rotate(-270deg);
+  }
+  96% {
+    bottom: 8px;
+    left: 450px;
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    bottom: 8px;
+    left: 450px;
+    transform: rotate(-360deg);
+    opacity: 0;
+  }
 }
 .console-footer button,
 .console-footer a {
@@ -1044,18 +1495,22 @@
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(330px, 0.6fr);
   gap: 0;
+  min-height: calc(100vh - 210px);
 }
 .calendar-column {
   min-width: 0;
   border-right: 1px solid #343734;
+  display: flex;
+  flex-direction: column;
 }
 .calendar-list {
-  max-height: 650px;
+  max-height: calc(100vh - 210px);
+  min-height: 780px;
   overflow-y: auto;
 }
 .calendar-row {
   position: relative;
-  padding: 12px 16px;
+  padding: 14px 18px;
   border-bottom: 1px solid #292c29;
   background: #0d0f0e;
   transition: background 150ms ease;
