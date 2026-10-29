@@ -34,7 +34,12 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
           Formula 1 Race Simulation & Podium Prediction Dashboard
         </p>
         <p className="mt-2 text-xs text-slate-300 leading-relaxed font-sans">
-          Welcome to Paddock Scout. Powered by a regularized machine learning model trained on historical telemetry with 2026 ground-effect aerodynamics weighting, this dashboard calculates live <strong className="text-white">Win (P1)</strong>, <strong className="text-white">Top 2</strong>, and <strong className="text-white">Podium</strong> finish probabilities using practice session pace, qualifying dominance, starting grid order, and confirmed technical upgrades.
+          Welcome to Paddock Scout. Powered by a regularized machine learning model trained on
+          historical telemetry with 2026 ground-effect aerodynamics weighting, this dashboard
+          calculates live <strong className="text-white">Win (P1)</strong>,{" "}
+          <strong className="text-white">Top 2</strong>, and{" "}
+          <strong className="text-white">Podium</strong> finish probabilities using practice session
+          pace, qualifying dominance, starting grid order, and confirmed technical upgrades.
         </p>
 
         {/* ── 3-STEP SYSTEM MANUAL ── */}
@@ -44,10 +49,13 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
             <div>
               <div className="flex items-center gap-1.5 text-rose-400 mb-1.5">
                 <Flag className="w-3.5 h-3.5" />
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">01 · Select Contender</span>
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">
+                  01 · Select Contender
+                </span>
               </div>
               <p className="text-[11px] text-slate-300 leading-snug">
-                Pick any driver from the Timing Tower or quick-start pills to calculate live P1 Win, Top 2, and Podium probabilities.
+                Pick any driver from the Timing Tower or quick-start pills to calculate live P1 Win,
+                Top 2, and Podium probabilities.
               </p>
             </div>
           </div>
@@ -57,10 +65,14 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
             <div>
               <div className="flex items-center gap-1.5 text-sky-400 mb-1.5">
                 <Sliders className="w-3.5 h-3.5" />
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">02 · What-If Simulator</span>
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">
+                  02 · What-If Simulator
+                </span>
               </div>
               <p className="text-[11px] text-slate-300 leading-snug">
-                Simulate grid penalties or recovery drives. Between race weekends (pre-qualifying), initial starting slots and baseline factors default to current championship standings.
+                Simulate grid penalties or recovery drives. Between race weekends (pre-qualifying),
+                initial starting slots and baseline factors default to current championship
+                standings.
               </p>
             </div>
           </div>
@@ -70,10 +82,13 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
             <div>
               <div className="flex items-center gap-1.5 text-emerald-400 mb-1.5">
                 <Activity className="w-3.5 h-3.5" />
-                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">03 · Feature Influence</span>
+                <span className="text-[9px] font-mono font-bold uppercase tracking-wider">
+                  03 · Feature Influence
+                </span>
               </div>
               <p className="text-[11px] text-slate-300 leading-snug">
-                Inspect real-time decision weights showing how starting grid slot, car performance rank, momentum, and session pace shape each outcome.
+                Inspect real-time decision weights showing how starting grid slot, car performance
+                rank, momentum, and session pace shape each outcome.
               </p>
             </div>
           </div>
@@ -107,9 +122,7 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
                 <span className="text-[11px] text-slate-400 group-hover:text-slate-200 transition-colors">
                   {d.last}
                 </span>
-                <span className="font-mono text-[9px] text-slate-500">
-                  P{d.standingsRank}
-                </span>
+                <span className="font-mono text-[9px] text-slate-500">P{d.standingsRank}</span>
                 <ArrowRight className="w-2.5 h-2.5 text-slate-500 group-hover:text-rose-400 transition-colors" />
               </button>
             );
@@ -118,7 +131,10 @@ export function CockpitGuide({ drivers, onSelectDriver }: CockpitGuideProps) {
 
         <div className="mt-3 text-[10px] font-mono text-slate-500 flex items-center gap-1.5">
           <span className="h-1.5 w-1.5 rounded-full bg-rose-500 animate-pulse" />
-          <span>Select any driver from the Timing Tower on the left or click a contender above to begin live predictions.</span>
+          <span>
+            Select any driver from the Timing Tower on the left or click a contender above to begin
+            live predictions.
+          </span>
         </div>
       </div>
     </div>

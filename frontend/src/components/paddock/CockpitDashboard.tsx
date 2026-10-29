@@ -200,13 +200,21 @@ export function CockpitDashboard({
                   <div>
                     <span>Win / P1</span>
                     <strong className="tabular">
-                      {isPredicting ? "RUNNING MODEL" : winPct !== null ? `${winPct.toFixed(1)}%` : "—"}
+                      {isPredicting
+                        ? "RUNNING MODEL"
+                        : winPct !== null
+                          ? `${winPct.toFixed(1)}%`
+                          : "—"}
                     </strong>
                   </div>
                   <div>
                     <span>Top two</span>
                     <strong className="tabular">
-                      {isPredicting ? "RUNNING MODEL" : top2Pct !== null ? `${top2Pct.toFixed(1)}%` : "—"}
+                      {isPredicting
+                        ? "RUNNING MODEL"
+                        : top2Pct !== null
+                          ? `${top2Pct.toFixed(1)}%`
+                          : "—"}
                     </strong>
                   </div>
                   <div>

@@ -78,13 +78,7 @@ export function AmbientRaceTrack() {
         />
 
         {/* Layer 2: Clean, thin bright track line (2.5px) */}
-        <path
-          d={C}
-          fill="none"
-          stroke="url(#trackGrad)"
-          strokeWidth="2.5"
-          opacity="0.88"
-        />
+        <path d={C} fill="none" stroke="url(#trackGrad)" strokeWidth="2.5" opacity="0.88" />
 
         {/* Layer 3: Subtle apex dashed centerline */}
         <path
