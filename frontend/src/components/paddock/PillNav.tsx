@@ -24,9 +24,13 @@ export function PillNav({ activeTab, onSelectTab, race, calendar }: PillNavProps
     <header className="race-masthead">
       <div className="race-masthead__inner">
         <button className="brand-lockup" type="button" onClick={() => onSelectTab("home")}>
-          <span className="brand-mark" aria-hidden="true">
-            PS
-          </span>
+          <img
+            src="/icon.png"
+            alt="Paddock Scout Logo"
+            className="brand-mark"
+            width={32}
+            height={32}
+          />
           <span>
             <strong>Paddock Scout</strong>
             <small>Race intelligence</small>

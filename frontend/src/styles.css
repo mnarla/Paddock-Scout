@@ -168,7 +168,7 @@
   position: absolute;
   inset: auto 0 -2px;
   height: 2px;
-  background: linear-gradient(90deg, var(--f1-red) 0 18%, transparent 18%);
+  background: var(--f1-red);
 }
 
 .race-masthead__inner {
@@ -207,16 +207,11 @@
   text-transform: uppercase;
 }
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 28px;
-  background: var(--f1-red);
-  color: white;
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  transform: skewX(-10deg);
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 .session-clock {
@@ -706,6 +701,11 @@
   margin-top: 4px;
   color: #f3f1e9;
   font-size: 15px;
+}
+.is-calculating .probability-support strong {
+  color: var(--team-accent, var(--f1-red));
+  font-size: 10px;
+  letter-spacing: 0.1em;
 }
 
 .panel-switcher {
@@ -1380,7 +1380,7 @@
   position: absolute;
   inset: auto 0 -2px;
   height: 2px;
-  background: linear-gradient(90deg, var(--f1-red) 0 18%, transparent 18%);
+  background: var(--f1-red);
 }
 .archive-masthead__inner {
   width: min(100% - 32px, 1440px);
@@ -1557,7 +1557,8 @@
     padding: 76px 0 78px;
   }
   .brand-mark {
-    width: 31px;
+    width: 28px;
+    height: 28px;
   }
   .brand-lockup strong {
     font-size: 17px;

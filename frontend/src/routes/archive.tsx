@@ -179,7 +179,13 @@ function ArchivePage() {
       <header className="archive-masthead">
         <div className="archive-masthead__inner">
           <Link to="/" className="brand-lockup">
-            <span className="brand-mark">PS</span>
+            <img
+              src="/icon.png"
+              alt="Paddock Scout Logo"
+              className="brand-mark"
+              width={32}
+              height={32}
+            />
             <span>
               <strong>Paddock Scout</strong>
               <small>Formula One Intelligence</small>
