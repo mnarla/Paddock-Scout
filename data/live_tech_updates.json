@@ -19,10 +19,10 @@
         "Badge": "No update found"
     },
     "Ferrari": {
-        "Component": "US GP Aero Upgrade Package",
+        "Component": "US GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced a minor aero update in Austin that drivers reported as disappointing, failing to deliver the expected performance gains.",
+        "Summary": "Ferrari introduced an aero package in Austin that drivers reported as disappointing, failing to deliver the expected performance gains.",
         "Pace_Delta": -0.08,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.08,
@@ -41,7 +41,7 @@
         "Component": "Singapore GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The upgrade package introduced in Singapore caused handling instability and made the car significantly harder to drive, leading to correlation issues.",
+        "Summary": "The upgrade package introduced in Singapore resulted in handling instability and made the car significantly harder to drive.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,

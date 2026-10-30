@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-30T13:15:13.795124+00:00",
-  "newsUpdatedAt": "2026-10-30T13:15:13.795124+00:00",
+  "updatedAt": "2026-10-30T18:42:54.059011+00:00",
+  "newsUpdatedAt": "2026-10-30T18:42:54.059011+00:00",
   "race": "Mexico City Grand Prix",
   "teams": [
     {
@@ -29,7 +29,7 @@
         },
         {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T09:39:24+00:00",
           "kind": "Technical report"
@@ -42,14 +42,24 @@
           "kind": "Technical report"
         },
         {
-          "title": "Leclerc puts upgraded Ferrari on top ahead of Verstappen in first practice",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNQTFMZE9VUTBfVEZKc1B4NWs5WW1jWW94aW1ZRjlIajRXaUV2R3ExTXY5Smc0R0kyTm5qOEY1aHd0Zm1Ha21QSGJVOWlKaFFsdjltQ1NaWC1zbk1IWE1vWGMtemo3VUVxbzJjeDBVOEVjSTVhZ2I5UFpuS01wUnQ0VUhyUWs2RzNuTXFYck9CTFo1Y1BIQmgyZWd2VVhERE9zaU90UUo5WEFhLWxMQ2kyVA?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-10-23T18:36:51+00:00",
+          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-22T12:16:38+00:00",
           "kind": "Technical report"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Engine Cover",
+            "Sidepod"
+          ],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -66,24 +76,24 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "Lewis Hamilton on why he is “built differently” to stay in F1 for the “foreseeable future”",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMFBlZGlLdHhtemJzcmEyQURYZmstZ2RDbndkcEhVdHgtYkN4ajBNTm9DTXktRFFkNmtOV2FZbk1SMENIM1dFZE5uRWUtR2g0THNObk11NG9sQ0EtQklZUjRvbFRhcWc5WHE4VGlqQmVZREhTT0hobXdGNzBudEs2NktKQkpVN0dlV0VDSjZMcTFwUXVyQW0wQkNZaW90by1LWWlDOEtDdFgweFpTUXp6emdTUXBOWTE2akVwZHJScFRKUQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-30T16:32:13+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Hamilton on why he is “built differently” to stay in F1 for the “foreseeable future”",
+          "url": "https://www.autosport.com/f1/news/hamilton-on-why-he-is-built-differently-to-stay-in-f1-for-the-foreseeable-future/10869741/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-30T16:30:03+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'Built different' Hamilton claims he could still race in F1 in 2030",
           "url": "https://www.the-race.com/formula-1/hamilton-f1-career-plans-2030-retirement-ferrari/",
           "source": "www.the-race.com",
           "publishedAt": "2026-10-30T08:48:55+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "'Next five races are like test races' – Hamilton outlines Ferrari's objectives in Mexico and beyond",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1R1ZnZBNTBIdDhHdU16UFVVVjR1WVdFS3JJMFJBTldWX3MwaF9UbzJRa1VINmFCSldFZGZIRHJzY0FTVHZua2Uwdml1ZXJfOC04TGYzQXRLTE9sWDBrWndlTUxkdDhyTU5yVE5hNlNGODNhSzBESXNkSTNZczYySkJUcER4V2hVYlBpN0oxTVByOENSNUpVQjl0SVA4RmV5dTc1Rl9sYnhteDN1TzlqRnpULXZyMm5vRjhhVEU3VFpZTkg1bDQzOHZyS05obWlqNk80RzBvTXZhTlZWODZhVy1SS1NUMERlQzNwYmFsRzlQZw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-29T22:42:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "'We've got to be perfect' – Leclerc assesses Ferrari's chances of victory in Mexico City",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYWV2Y0U1c1JFUHhDTWkxU3hxWnQ0UjVMSFV0aXUyWExzYnBWZkZweFUzN3oySVh2MkplalpCQVl2aWU3Rl80dThhTnQ5cHRCOUhlY0pyYTc3QjhzSGk2dkFKZ29tVlBKcGRYMEcxREVrRHZlc3loXzA0eTBQYmZvMk9CcW9pY2JudjE5VGxiNWNVYXZyVTY5ZmR1TmFaNERURElycnc5V3M2VzZGZHo5QUt6MFQyZF94ZEs1VEFnei1zdy1DMjRrV0cyTFAzazBQaFFoVWFDcW9MNkZXVGlZbWZn?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-29T21:59:00+00:00",
           "kind": "Team news"
         },
         {
@@ -112,6 +122,16 @@
         {
           "hasChanges": true,
           "components": [
+            "Engine Cover",
+            "Cooling Louvres"
+          ],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
+        {
+          "hasChanges": true,
+          "components": [
             "Floor Body",
             "Floor Board"
           ],
@@ -125,24 +145,24 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Why “ignorance is a superpower” for Kimi Antonelli, according to Daniel Ricciardo",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQMWRmUVlaQkhwaWFXbkcxYkF1WkNPRkpzNFotV01TZlRMZ0ZpSlJ0Y1VGQUFDeXpKZGFQSE14M25LUkJzSGJNUU4wNk9iREp4VDlSWDVsM1ZCX0dmQVJDUjgtUnBsbDZWeENTd1AtVG1rQVZOQnlkZm5jX1k4Q0VOb0Z6c2VNV0xKdFVDaTlfcmtqajhGU210Yg?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-30T15:26:15+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why “ignorance is a superpower” for Antonelli in F1",
+          "url": "https://www.autosport.com/f1/news/why-ignorance-is-a-superpower-for-antonelli-in-f1/10869685/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-30T13:30:04+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘We keep ourselves to ourselves’ – Russell opens up on relationship with Antonelli this season",
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRVVtZFlNNDVYNkxXX2RZblI5bjNoTEZDQWFZMWdyRm1mUkRXYjNIa0RHVlNNN0hJTkYwb0N4WG9jQWl5S21BYjBqcGx5UUxqMUtubVljU2lPLVRXeS0tek9DeG9rMGprQWVTTUJ3bXdrdkViMmZvSDVTaEJNNldJb18wWnJYM0kxU1JrY3dRQVVTRVdlVkh6WVBNWEczekZRak5VTHNUQ1ZKeldhSUFRVGYzQVE2N0IxdlVJbmI2RUVROEFXamN0QWowaXUyTUxGNXZUN0dHRTF3WWg4dEY2NU5XRFlLWFZ0SVA2MQ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-29T20:58:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Russell believes tyre pressures and less “efficient” driving style hurt him in 2026",
-          "url": "https://www.racefans.net/2026/10/29/russell-believes-tyre-pressures-and-less-efficient-driving-style-hurt-him-in-2026/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-29T20:45:22+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli skips F1 Mexico GP media day due to illness",
-          "url": "https://www.autosport.com/f1/news/unwell-kimi-antonelli-skips-f1-mexico-gp-media-day/10869370/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-29T17:07:23+00:00",
           "kind": "Team news"
         },
         {
@@ -171,6 +191,13 @@
         {
           "hasChanges": false,
           "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
+        {
+          "hasChanges": false,
+          "components": [],
           "event": "United States Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "23 October 2026"
@@ -180,6 +207,13 @@
     {
       "name": "McLaren",
       "stories": [
+        {
+          "title": "Win tickets to see McLaren Racing Live at the O2",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOMEFMS2JkdE5aaGxUWmhiQmZ2dmtMOGxIVmRJdk12b2RlNnVUY0Rtc2lrSzczUFp2UFBackFObWhaX1U4ZmY4NlN4T25xSURaZkJHYVBHblFoRUxJcXRmTU5NWjk1Q0Frb3I3YW84WVMwMXBYbmtxR25JNDFwZjVGbU5zenRRdXBTUkJWend6ZlFqV3k2cUhocHNjWW8wUXdTdXZyYm8zREkwdkFhRjBCRVA2SDE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T15:49:00+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "‘Not much more I could have done’ about ‘horrible’ title defence – Norris",
           "url": "https://www.racefans.net/2026/10/30/not-much-more-i-could-have-done-about-horrible-title-defence-norris/",
@@ -192,13 +226,6 @@
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOcWJWcE1JRTIwdlBhb1FTNDNwaUcxXzRIN0NHYTdsazZONEpVVmREeTNYaldMNHV1WEdzOGhJV3JXdFJBMDdjQ015WUlDdHFUeVNNV29HU0NpOWplUnl4dnFnZS01aWxlUVI0S3RxX3RNNl9fbFYtUDYxakd3b0s4R0ZqYVVvNmZEQ3VMNFZHU3FZUG1ld21oSzB4NnVfdTJYN3d3OXFyRWMydXlWT1lJVGlWV1BpM3lqSDJNeXVaSU5IM0dpUDBoMnNJengyTTJfVU1GbmxINDBwRlpGNFo5M3lBdTNSUFU4SHk4bU1VeUVfT29VbkNjUG93?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-29T23:55:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "'Superpower' neutered",
-          "url": "https://www.the-race.com/formula-1/superpower-neutered-piastris-fresh-f1-struggles-explained/",
-          "source": "Piastri's fresh F1 struggles explained",
-          "publishedAt": "2026-10-29T07:16:47+00:00",
           "kind": "Team news"
         },
         {
@@ -217,6 +244,15 @@
         }
       ],
       "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Cooling Louvres"
+          ],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -256,13 +292,20 @@
         },
         {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T09:39:24+00:00",
           "kind": "Technical report"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -275,6 +318,13 @@
     {
       "name": "Alpine",
       "stories": [
+        {
+          "title": "Spotlight: Gasly received 13,000 death threats after Spanish GP, claims Ben Sulayem",
+          "url": "https://www.racefans.net/2026/10/30/sportlight-gasly-received-13000-death-threats-after-spanish-gp-claims-ben-sulayem/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-30T14:38:20+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Colapinto hoping Alpine’s race pace is ‘strong’ given grid penalty in Austin",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSTIzRlg1MEZmckFyaXVvdFYwWnJYTVFzdlRjVDlVZ3pKNHp0Zy1tUHBvM0hiUG9zVjJibTZsdlk5RFRTajZ4c2N3bEh4Vk9wMjVlOXlZZE5xRDNmekI4RWRDV1czYzZ4d2tvc3BfcGlHQlg1WFBnZ0hSVHAwbktwRl9VSUFwWXdzY2FXSlduVkhUdVJLNUhuYVZTem1mWlJyMEJ0NTFFM29nNkdJdmoyVzJ2MmluN2tGVGYxVi1LTWMwX3RvSUE?oc=5",
@@ -290,13 +340,6 @@
           "kind": "Team news"
         },
         {
-          "title": "Lindblad, Colapinto and Bortoleto penalised for US GP",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPS3VXSTJYdmxZenJWVUgzaUU4Nm5vRHFLTGpIV1lPVFJydm13bDRsaXJzclM0cUFTc3NlU21UbERzMEhxVl8ydTBFN0JvLU5uNjRDdV9UaTdUQ3BVQUlJRklXMEZ3RDh3eHVfdFV4Q01tWUdnc0RwYmVFLUNKbDQxRjdtRWhvMVBMZzRNVlk2TWg3N2lva0ZXX1VlaDk2WWx0OVpIbzlNS3JyeEotZ1ppNnRNRFlBY0NDcE5fdkNTWVlSN183ZXd0amZOY3F6dDlNcDViWFlONTVFMW9RdzQtc2Q1NTQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-23T19:08:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Belgian firm to take over Renault/Alpine engine facility in Viry",
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUGEwTXZBOFdhNmZEV252OFlMLTQ2WGtWelJqdjhPUEhkYjJ2M1BpS2NnQUpuY052dFJwa1RobzViYms5TERQT210azRDSU1QSll0MmVwX2oyRkwyQjB4ODhraHhHR01VdkxLMS10ekVoQ1NsQnRLUW5kLWtydlduUkpsU2lXMzhjbUoxamwzU2VTSjZocS1weg?oc=5",
           "source": "Motorsport.com",
@@ -305,6 +348,13 @@
         }
       ],
       "declarations": [
+        {
+          "hasChanges": null,
+          "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -343,6 +393,13 @@
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -388,6 +445,16 @@
         {
           "hasChanges": true,
           "components": [
+            "Coke/Engine Cover",
+            "Cooling Louvres"
+          ],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
+        {
+          "hasChanges": true,
+          "components": [
             "Front Wing",
             "Rear Wing",
             "Floor Body",
@@ -403,28 +470,35 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Midfield fight on a ‘knife’s edge’ as Audi target Haas",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSXM5eHpQRkhyLWxBcUJlVDVWS3RXRVpQMklLZHlrVDFOUzFmYi13RC13ZnlwaFM2QnlwdFFmQWR3NDN5SkEwOHhkYmRBdkNPckNlbVVISy1PdXE0RzZxTlNON3VSbmdOd2pfSzZ4eWswMGJYVUlQMXJwQTZTZC1DdTdQUE9oU3JTMzg0RlQ5T3NJMnV0TDQydEtGYlpHbWlOeW4zQ056SHlVeHRUdnNPc0Z5cHNZdXliV1BIaDN4OGNOcGgxLTNSaVFTdXFFT0FReU5GVTNjQVFjRTNWenVLUVp1cGM3UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T14:07:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'Clear I want to continue with Haas' – Bearman offers update on F1 future ahead of Mexico City GP",
+          "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQYjZzNWN1dm5NR19YTjBkeXlJNDhTTFhiQTZwMER5X2ZaMWpjZDZaSVJCUEFQN2cwbDRidzM2aU1LUVhxM1haZnN3WWRVVFJfX1Z2VWI4UU1zeGFBc3RHcnJXeDVtOGtWRFNWLVRaVEIyNVFYNmNZd1dJajRDa05EME1vVm00dXdDVWpDMktVb3ZWTDdUTG15ZXhjWEJoVHY4dkI1cE5nMV92VmQ1eGFPN0VlLXBqSFJzSll2dlJSNTJTVEt6eU1OWlBGQTU3aGJ6VHZKMEhsSmdfdHU1TlFzWWdMdHFqVER2anpmRUk3TQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T12:05:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-24T21:56:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Why it's now Oliver Bearman versus Rafael Camara for the next Ferrari vacancy",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQk9iRDMteHhiYWtfU1RWQnFTTzhGU0N5NHNaRm9mN1VVSzJCWm5EOEc2SU9rQU9jbzhvVjlualdkYmdKSUE0WlZ0bzFPRDlUYlFuU29jcUdjZWlCY2twTkpOb2tkTDBmczMzT0VQa1BHeEhocmRjWmdvUTFaaF9QLUh6YnpQcUc2SEFubFE5UE0zYWdscGZhOF9pdTVmWlBEUF94RjN2cEd0QQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-23T07:48:54+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Why it's now Bearman versus Camara for the next Ferrari vacancy",
-          "url": "https://www.autosport.com/f1/news/why-its-now-bearman-versus-camara-for-the-next-ferrari-vacancy/10867288/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-23T07:48:41+00:00",
-          "kind": "Team news"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -437,6 +511,13 @@
     {
       "name": "Audi",
       "stories": [
+        {
+          "title": "Midfield fight on a ‘knife’s edge’ as Audi target Haas",
+          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSXM5eHpQRkhyLWxBcUJlVDVWS3RXRVpQMklLZHlrVDFOUzFmYi13RC13ZnlwaFM2QnlwdFFmQWR3NDN5SkEwOHhkYmRBdkNPckNlbVVISy1PdXE0RzZxTlNON3VSbmdOd2pfSzZ4eWswMGJYVUlQMXJwQTZTZC1DdTdQUE9oU3JTMzg0RlQ5T3NJMnV0TDQydEtGYlpHbWlOeW4zQ056SHlVeHRUdnNPc0Z5cHNZdXliV1BIaDN4OGNOcGgxLTNSaVFTdXFFT0FReU5GVTNjQVFjRTNWenVLUVp1cGM3UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T14:07:00+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Sauber veteran Zehnder to leave Audi at end of 2026",
           "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV0hxcFFjWXVmMU5ZRlBMRG5PLTNpRGtjTXlPSHhvQm9oYWUtNWtkODNMYnBVZkJGSFduT2VpYm4zbFZ6bVRzMmlqMlFUTE0yVWs0NDktU0FhLTNnTmNUa2llTVVCeHJsRjBHZVR2ZzVad19xdXhCV196R1lldmRHeEl1Z1NsWElyZHZOanhrd0p1bEZFQzlBNS1SbnlfU0VXUnFWMDhjQ0plNURTWElSSUhaZGhsUERw?oc=5",
@@ -452,13 +533,6 @@
           "kind": "Team news"
         },
         {
-          "title": "F1 stalwart Zehnder set for Audi exit",
-          "url": "https://www.autosport.com/f1/news/f1-stalwart-zehnder-set-for-audi-exit/10869600/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-30T09:10:59+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
           "source": "Formula 1",
@@ -467,6 +541,15 @@
         }
       ],
       "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Rear Corner"
+          ],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -521,6 +604,13 @@
       ],
       "declarations": [
         {
+          "hasChanges": false,
+          "components": [],
+          "event": "Mexico City Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "30 October 2026"
+        },
+        {
           "hasChanges": true,
           "components": [
             "Floor Fences",
@@ -536,9 +626,68 @@
   "fiaDocuments": [
     {
       "event": "Mexico City Grand Prix",
-      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/Mexico%20City%20Grand%20Prix",
-      "teams": {},
-      "status": "not_published"
+      "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
+      "publishedAt": "30 October 2026",
+      "teams": {
+        "McLaren": {
+          "hasChanges": true,
+          "components": [
+            "Cooling Louvres"
+          ]
+        },
+        "Mercedes": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Red Bull Racing": {
+          "hasChanges": true,
+          "components": [
+            "Engine Cover",
+            "Sidepod"
+          ]
+        },
+        "Ferrari": {
+          "hasChanges": true,
+          "components": [
+            "Engine Cover",
+            "Cooling Louvres"
+          ]
+        },
+        "Williams": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Racing Bulls": {
+          "hasChanges": true,
+          "components": [
+            "Coke/Engine Cover",
+            "Cooling Louvres"
+          ]
+        },
+        "Aston Martin": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Haas F1 Team": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Audi": {
+          "hasChanges": true,
+          "components": [
+            "Rear Corner"
+          ]
+        },
+        "Alpine": {
+          "hasChanges": null,
+          "components": []
+        },
+        "Cadillac": {
+          "hasChanges": false,
+          "components": []
+        }
+      },
+      "status": "available"
     },
     {
       "event": "United States Grand Prix",
