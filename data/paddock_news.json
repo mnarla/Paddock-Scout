@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-10-30T06:04:54.375294+00:00",
-  "newsUpdatedAt": "2026-10-30T06:04:54.375294+00:00",
+  "updatedAt": "2026-10-30T13:15:13.795124+00:00",
+  "newsUpdatedAt": "2026-10-30T13:15:13.795124+00:00",
   "race": "Mexico City Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
-          "title": "‘I don’t care’ about the Drivers’ Championship – Verstappen",
-          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVnBQcjRkMklNVkJ3Qm00UmZyU3pKOU9penlJcXk5SUxsbTFaaWxjeXZfcll0aVNwNDlKTkRoQ1RBeGVGM29od24xckhsMDNnUXI1Wi10cE9raDNNd005YkRsMjBseG94RkExemZRaUpleHFBcnQ0Ukt4Z19lWHF5UE9Vdm5wa05IQ2NPdjNOZWZRcFNreU1kYTMzb1RHcG0tS0JtcGRpcWp2cmFjY05xZEtwNkdvVzVVeEJtLXR5VTJibWVIMUl6YWtiZVo5LTUxYTMwWGgyQmJ3UQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-29T23:25:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Verstappen reflects on ‘painful’ Monaco DNF",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVGpET2lTRHZuWmJDVExOOS1XYWUtbHE4djM1Z1U0eVpiNk1BeXJKaEE1RU45UjREZ2tPc3RFSk9VNFp1NC03RG9aamQxcGEtdktTZVVDX2NaUWhHNzZDenpRWDU5d2xyUURJT1Y5Y3JOOUtnOEV3OUk0NHBVbWl1OURiTTR1MWt2Z2EtTHhmOEptT3pGeWhtY0JVV2xFS3Fyc2o4bFJlXzlkRTlhUFdUaTVZVWVDdXgyZWhaS3FSTnZMOVU4V3RXQ2Zia29HUHFQcjBOcFFjRTFEX3JWXy1rdHpWaHQyUnpSeXhOOVlTMnJoZw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-29T20:52:21+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "The first step in a major Verstappen F1 change",
-          "url": "https://www.the-race.com/formula-1/how-first-step-in-verstappens-big-f1-2027-transition-really-went/",
+          "title": "The 'bummer' hurdle to a Verstappen-Ricciardo Le Mans reunion",
+          "url": "https://www.the-race.com/formula-1/the-bummer-hurdle-to-a-verstappen-ricciardo-le-mans-reunion/",
           "source": "www.the-race.com",
-          "publishedAt": "2026-10-28T10:17:21+00:00",
+          "publishedAt": "2026-10-30T11:15:07+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "‘Nothing could be done’ – Isack Hadjar identifies the ‘weakness’ Red Bull still suffer from",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPeGV5djgxN0oyMVN5c2MtMjcyYVhMbGYxMDEyS3B2U0JRZlZCZE9xNkd3UUltcWFrMUhuaXJqdVRzbDdEeW1EQTgxbXdRei13Y0thcEd2X1NjUHdicmlvX29PbkJCVDQ0VUZBb193eUptVHJZQUNYcXhYOWJoVF9SVWxFQmkxTUhLdVpzSXNadlBsVm1FNF9abEtUSkdBQlJuNkR3WkhJS2s2bmtrUWtQY1Z5ZmpWd1gwMU5IMUpXZmxIWnZLTTVjMHhGRjdwYl80aTAwNUcxX0EwMjZz?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T10:00:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Is history really repeating itself? What Horner’s Newey claim says about Aston Martin and Red Bull",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNOGZPYVREQVJydGxGcVRYUXZHdnpBTzdvazV4S0xuTVhnSTBFZG8xYTN0N2dLODVyVUtRM19JUC02NDllbjA5Q0dlYVNSRDRCRFlPNm9JdmhJLWhsV1lqWk9jcUJYWXNyak9lLTNfWHlJSlFXZUgwZEt4cDlwbHQ2YWM3Qzh3N1FIaXc1djQxcFFnQ2k3OGNiVmVKOVVxN2V1OGZua3I5d2dRQVRWMW1vUHJ4c3BvNUNFS3Bxd2c4b3JrMnpQbXZ5VXVUdnRzLTlERWh0NTk4MA?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-10-30T08:27:58+00:00",
           "kind": "Team news"
         },
         {
@@ -66,6 +66,13 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "'Built different' Hamilton claims he could still race in F1 in 2030",
+          "url": "https://www.the-race.com/formula-1/hamilton-f1-career-plans-2030-retirement-ferrari/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-30T08:48:55+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'Next five races are like test races' – Hamilton outlines Ferrari's objectives in Mexico and beyond",
           "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1R1ZnZBNTBIdDhHdU16UFVVVjR1WVdFS3JJMFJBTldWX3MwaF9UbzJRa1VINmFCSldFZGZIRHJzY0FTVHZua2Uwdml1ZXJfOC04TGYzQXRLTE9sWDBrWndlTUxkdDhyTU5yVE5hNlNGODNhSzBESXNkSTNZczYySkJUcER4V2hVYlBpN0oxTVByOENSNUpVQjl0SVA4RmV5dTc1Rl9sYnhteDN1TzlqRnpULXZyMm5vRjhhVEU3VFpZTkg1bDQzOHZyS05obWlqNk80RzBvTXZhTlZWODZhVy1SS1NUMERlQzNwYmFsRzlQZw?oc=5",
           "source": "Formula 1",
@@ -85,13 +92,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-10-29T08:01:09+00:00",
           "kind": "Technical report"
-        },
-        {
-          "title": "The mistakes that cost Lewis Hamilton a podium at F1’s US GP",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGJBMjdROTFoT25WcVp1S3htN1JtUFdRSGs3VS1NcGt4ZkdzZ1U4SmxHYkppV013NTlqYW1zZ243TlpJWVh5U0RYTVdTekFiR3lybDVOc21GYzM3RF9GZUp1bkVxLWpPYm9POGpLNzVOcVVtZC1kN1FXZkN0a01aZVpvUGx3MGN4UW5Oc0JmMHphT3NrUENYYWhTRGRVZTFLYTI3ODFMU3JNYmFWVlI0ems3VWRZU3dwM290dWlxYw?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-27T15:01:07+00:00",
-          "kind": "Team news"
         },
         {
           "title": "The reasons behind Ferrari's US GP upgrades",
@@ -181,6 +181,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "‘Not much more I could have done’ about ‘horrible’ title defence – Norris",
+          "url": "https://www.racefans.net/2026/10/30/not-much-more-i-could-have-done-about-horrible-title-defence-norris/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-30T07:16:35+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'A pretty good year' – Norris defends McLaren's 2026 development progress ahead of Mexico City Grand Prix",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOcWJWcE1JRTIwdlBhb1FTNDNwaUcxXzRIN0NHYTdsazZONEpVVmREeTNYaldMNHV1WEdzOGhJV3JXdFJBMDdjQ015WUlDdHFUeVNNV29HU0NpOWplUnl4dnFnZS01aWxlUVI0S3RxX3RNNl9fbFYtUDYxakd3b0s4R0ZqYVVvNmZEQ3VMNFZHU3FZUG1ld21oSzB4NnVfdTJYN3d3OXFyRWMydXlWT1lJVGlWV1BpM3lqSDJNeXVaSU5IM0dpUDBoMnNJengyTTJfVU1GbmxINDBwRlpGNFo5M3lBdTNSUFU4SHk4bU1VeUVfT29VbkNjUG93?oc=5",
           "source": "Formula 1",
@@ -192,13 +199,6 @@
           "url": "https://www.the-race.com/formula-1/superpower-neutered-piastris-fresh-f1-struggles-explained/",
           "source": "Piastri's fresh F1 struggles explained",
           "publishedAt": "2026-10-29T07:16:47+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Social Media: McLaren reveals Mexican GP livery tweak for tobacco sponsor",
-          "url": "https://www.racefans.net/2026/10/28/social-media-mclaren-reveals-mexican-gp-livery-tweak-for-tobacco-sponsor/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-28T12:06:36+00:00",
           "kind": "Team news"
         },
         {
@@ -234,24 +234,24 @@
       "name": "Aston Martin",
       "stories": [
         {
+          "title": "‘There’s no pay drivers now’: Alonso’s rivals reject his criticism of ‘one-third’ of the grid",
+          "url": "https://www.racefans.net/2026/10/30/theres-no-pay-drivers-now-alonsos-rivals-reject-his-criticism-of-one-third-of-the-grid/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-10-30T10:15:13+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Is history really repeating itself? What Horner’s Newey claim says about Aston Martin and Red Bull",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNOGZPYVREQVJydGxGcVRYUXZHdnpBTzdvazV4S0xuTVhnSTBFZG8xYTN0N2dLODVyVUtRM19JUC02NDllbjA5Q0dlYVNSRDRCRFlPNm9JdmhJLWhsV1lqWk9jcUJYWXNyak9lLTNfWHlJSlFXZUgwZEt4cDlwbHQ2YWM3Qzh3N1FIaXc1djQxcFFnQ2k3OGNiVmVKOVVxN2V1OGZua3I5d2dRQVRWMW1vUHJ4c3BvNUNFS3Bxd2c4b3JrMnpQbXZ5VXVUdnRzLTlERWh0NTk4MA?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-10-30T08:27:58+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Rivals reject Alonso's brutal 'low quality' F1 drivers claim",
           "url": "https://www.the-race.com/formula-1/rivals-reject-alonsos-brutal-low-quality-f1-drivers-claim/",
           "source": "www.the-race.com",
           "publishedAt": "2026-10-29T21:50:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Fernando Alonso doubles down on poor F1 driving standards: \"We all know who we're talking about\"",
-          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOc2loV3VkdmdXdlNKc1UyZzdDdGwtLWNOUGRFX3hCVlNHaVZqZFg0bFlFM0dUSlFXQWdZQVAyNDBWSkpPdkl5dHNqekFpVFdvaFAwQkF2RG5LczBIZWhfcF94NEZ6eFhhZ0phVWY4VEhpZks2T1hmZHRwcnRYdUdhd0JRX3gtQjBJWGNKckNDNmE5VDl3WHV5NVU4WHVXYW1ZZnNnclVmdFJhUzRocW5zYWZRbE8tRkNDUW85MDlvaFlRSU5RaFpGaGxQdzJGeVJZb1pYRWgzcXhiSFctdWEydGRRNkdrdEo5aHVOb2EzbmFDa1V6VGxNb2FSTHRlQ3FUT3FKclZvQ3EtbXJ0ZUVLUjFEVGFlR0VIWkNOMlFoY2xqYVBRdURLTFVJb3hOcjNIUUtlMlNITklzWjB6Zjd2UTNR?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-29T20:06:06+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Alonso doubles down on poor F1 driving standards – and says those targeted know who they are",
-          "url": "https://www.autosport.com/f1/news/fernando-alonso-doubles-down-on-poor-f1-driving-standards-we-all-know-who-were-talking-about/10869405/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-29T20:05:13+00:00",
           "kind": "Team news"
         },
         {
@@ -276,24 +276,24 @@
       "name": "Alpine",
       "stories": [
         {
-          "title": "'Don't regret going for the move' – Bearman and Gasly reflect on US GP collision",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjNDb2loMnQwbGNXMTBMRFpNY0lTRk1weDljbDRJeVd4c2NxMng2b3VuSy1mS3lsVE1ia0JQdkRLT0xXN1BLcVBab2dUVzNGUjlhUk5ieGp4bFkzYVNhYkJvNUJQMUk2SzdGRVQ5N1lWS3FmZHFBRGJvZnM0UlgwYXpGQ0tNQWc5aXB3S25DY2YtRW50WlUySGNGZkVjR2gxT1FiYTUydGNDQmQ2VmZia1AwaGZrM3dSZXhwMXNvckJVaXBWd18wSGNIY25UMlV2Z2VpUlBvVDE?oc=5",
+          "title": "Colapinto hoping Alpine’s race pace is ‘strong’ given grid penalty in Austin",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSTIzRlg1MEZmckFyaXVvdFYwWnJYTVFzdlRjVDlVZ3pKNHp0Zy1tUHBvM0hiUG9zVjJibTZsdlk5RFRTajZ4c2N3bEh4Vk9wMjVlOXlZZE5xRDNmekI4RWRDV1czYzZ4d2tvc3BfcGlHQlg1WFBnZ0hSVHAwbktwRl9VSUFwWXdzY2FXSlduVkhUdVJLNUhuYVZTem1mWlJyMEJ0NTFFM29nNkdJdmoyVzJ2MmluN2tGVGYxVi1LTWMwX3RvSUE?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-27T12:34:00+00:00",
+          "publishedAt": "2026-10-24T22:28:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQczY5VmtQdWdUTTdaR1BPa3d1QURpdFI5cUZ2aHFJMGszeVVuYXRjUDh0N3ZzZDJaWFBINk9nY2pFdHdSdHhYSFhEbV9LOFhPYW9pd3ZqTjlJZ2JYejN0dTc5dU4wdUd5V3FkeEI0anFYRmp5QTBEY19OTWd3czhJVGlKTjRVZ09mdXc3Smlrelk1VWVRZ2dxelBsMC1CNlV2aF9GTjZmRWZsT0NQbUdJZHpaYjM?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-10-25T22:50:12+00:00",
+          "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-24T21:56:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Colapinto reveals damage from contact with Lindblad forced his DNF in Austin",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcWltZHA0WE1Wem9lakJhLWVCbkJldVFQb0lMS3hjM19aZ252cm9ZR0REQnJHdlo0Z0ZrU2FJeFFxRFJNWnBXZy1OSkxUZXluRTdJV215RjQwbGoyNU9ySjBHU3dHQ2JOeDFCWlNOVHpvWExoWlUzZU1ldFExbFpuUEtpVlRRZWF3ejZubll6R0paaFZWcTB1TDQtYWhxLVV6eXNQd3hnTEE1ZW13SUFRajFGOUozOVB1ZG1SMGthbF8tLVhXVmRCd3RR?oc=5",
+          "title": "Lindblad, Colapinto and Bortoleto penalised for US GP",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPS3VXSTJYdmxZenJWVUgzaUU4Nm5vRHFLTGpIV1lPVFJydm13bDRsaXJzclM0cUFTc3NlU21UbERzMEhxVl8ydTBFN0JvLU5uNjRDdV9UaTdUQ3BVQUlJRklXMEZ3RDh3eHVfdFV4Q01tWUdnc0RwYmVFLUNKbDQxRjdtRWhvMVBMZzRNVlk2TWg3N2lva0ZXX1VlaDk2WWx0OVpIbzlNS3JyeEotZ1ppNnRNRFlBY0NDcE5fdkNTWVlSN183ZXd0amZOY3F6dDlNcDViWFlONTVFMW9RdzQtc2Q1NTQ?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-25T21:54:00+00:00",
+          "publishedAt": "2026-10-23T19:08:00+00:00",
           "kind": "Team news"
         },
         {
@@ -403,24 +403,24 @@
       "name": "Haas F1 Team",
       "stories": [
         {
-          "title": "'Don't regret going for the move' – Bearman and Gasly reflect on US GP collision",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNbjNDb2loMnQwbGNXMTBMRFpNY0lTRk1weDljbDRJeVd4c2NxMng2b3VuSy1mS3lsVE1ia0JQdkRLT0xXN1BLcVBab2dUVzNGUjlhUk5ieGp4bFkzYVNhYkJvNUJQMUk2SzdGRVQ5N1lWS3FmZHFBRGJvZnM0UlgwYXpGQ0tNQWc5aXB3S25DY2YtRW50WlUySGNGZkVjR2gxT1FiYTUydGNDQmQ2VmZia1AwaGZrM3dSZXhwMXNvckJVaXBWd18wSGNIY25UMlV2Z2VpUlBvVDE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-27T12:34:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQczY5VmtQdWdUTTdaR1BPa3d1QURpdFI5cUZ2aHFJMGszeVVuYXRjUDh0N3ZzZDJaWFBINk9nY2pFdHdSdHhYSFhEbV9LOFhPYW9pd3ZqTjlJZ2JYejN0dTc5dU4wdUd5V3FkeEI0anFYRmp5QTBEY19OTWd3czhJVGlKTjRVZ09mdXc3Smlrelk1VWVRZ2dxelBsMC1CNlV2aF9GTjZmRWZsT0NQbUdJZHpaYjM?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-10-25T22:50:12+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-24T21:56:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why it's now Oliver Bearman versus Rafael Camara for the next Ferrari vacancy",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQk9iRDMteHhiYWtfU1RWQnFTTzhGU0N5NHNaRm9mN1VVSzJCWm5EOEc2SU9rQU9jbzhvVjlualdkYmdKSUE0WlZ0bzFPRDlUYlFuU29jcUdjZWlCY2twTkpOb2tkTDBmczMzT0VQa1BHeEhocmRjWmdvUTFaaF9QLUh6YnpQcUc2SEFubFE5UE0zYWdscGZhOF9pdTVmWlBEUF94RjN2cEd0QQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-23T07:48:54+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Why it's now Bearman versus Camara for the next Ferrari vacancy",
+          "url": "https://www.autosport.com/f1/news/why-its-now-bearman-versus-camara-for-the-next-ferrari-vacancy/10867288/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-23T07:48:41+00:00",
           "kind": "Team news"
         }
       ],
@@ -438,24 +438,24 @@
       "name": "Audi",
       "stories": [
         {
-          "title": "Stats: Russell scored as many points as Hulkenberg in last three rounds",
-          "url": "https://www.racefans.net/2026/10/27/stats-russell-scored-as-many-points-as-hulkenberg-in-last-three-rounds/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-27T10:20:37+00:00",
+          "title": "Sauber veteran Zehnder to leave Audi at end of 2026",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPV0hxcFFjWXVmMU5ZRlBMRG5PLTNpRGtjTXlPSHhvQm9oYWUtNWtkODNMYnBVZkJGSFduT2VpYm4zbFZ6bVRzMmlqMlFUTE0yVWs0NDktU0FhLTNnTmNUa2llTVVCeHJsRjBHZVR2ZzVad19xdXhCV196R1lldmRHeEl1Z1NsWElyZHZOanhrd0p1bEZFQzlBNS1SbnlfU0VXUnFWMDhjQ0plNURTWElSSUhaZGhsUERw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T12:49:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "'More than a bad start' cost Audi after another P11 finish",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRXlabG5ydzlIQWFLYmRzbmJORjJPb0lKQXJESTBiQ2JTSUlKNUFuSDhndGFCX3NaRXJ5OVUxNnVPNzJDOXRZS1VOZ19XLUZ4UW9wVFo2ZW42TVFPdnNqcDNYLWsyX0psMUExZlg4UklEY2xkR2RnUlR3Yi1keENDcjdLSTNyOGJDT08yXzJRY1JZbVNMQlZXMWF2NXNQbExwbTdNN0xtQVZxamJKYnhNVjdOb1B5dnV2ckVjMFI2aTdJMTIwYVBFeXJzX2R0blh0YnlMai1NcTlJcUlCSkttM2ZB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-27T09:08:00+00:00",
+          "title": "Key Sauber-era figure to leave Audi F1 team",
+          "url": "https://www.the-race.com/formula-1/key-sauber-era-figure-to-leave-audi-f1-team/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-10-30T10:03:12+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Hulkenberg reveals his Audi went into ‘anti-stall’ off the line in Austin",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOTdLdkFNaTVlUzFWRWswZnk4dV83V200ZkZQdm5TV3BUWDFIVDh2UWRJT0x6TmtKc2VKVlhETUVfTmtYOW0ya01ZSUd0YnE0aTFoOFBWOTBHcXdSY3o0NG5YUUh0c1BWTnQ0bHlRbVBMWFRsczg4VmxfNW00ZjhtMjBKaFJzQXBfZGllN1EwSjFJbVJGZklFTnFkMmUwa1dtdkswRlBiRDhCSElZS1o5VUtnS2NiMUd0bTBNQVRpM042b1k?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-25T22:55:00+00:00",
+          "title": "F1 stalwart Zehnder set for Audi exit",
+          "url": "https://www.autosport.com/f1/news/f1-stalwart-zehnder-set-for-audi-exit/10869600/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-10-30T09:10:59+00:00",
           "kind": "Team news"
         },
         {
@@ -484,6 +484,13 @@
       "name": "Cadillac",
       "stories": [
         {
+          "title": "Why Sergio Perez means so much to Mexico as he celebrates his 300th Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcUZhaE9MZzRKRTg4bzZiZXp4UzFPMkdvQXpZanVDbUpyZ0RYekdNWmFYWEFwTTFwMndwRUd5TjB2Z3MxZzVxVklQS1V5ckl4QlcxWmJpaEVZV29LMmxDMFVFTlRORHU4SDh0TS1zZXRYMzlpZXZyenBwQ1NZa2J1NmQ4U0ltbVc4N2NFNFdaX19PYlFoZjBGcHIxdlFFRGJTSU5zNUtJc3NfR2MwdlVud2licnUzRTFDSzZ2QmRyM2tGdEI1czZpc1psc0xhM3V6TzJBUlctMjhvN09i?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T09:18:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Herta or Bottas for 2027 seat is “not an easy decision” for Cadillac, says Perez",
           "url": "https://www.racefans.net/2026/10/29/herta-or-bottas-for-2027-seat-is-not-an-easy-decision-for-cadillac-says-perez/",
           "source": "www.racefans.net",
@@ -495,13 +502,6 @@
           "url": "https://www.racefans.net/2026/10/29/perez-performs-cadillac-show-run-in-mexico-city-in-a-car-from-f1-the-movie/",
           "source": "www.racefans.net",
           "publishedAt": "2026-10-29T14:25:10+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Cadillac 'honoured' to have Perez as special 300th race celebration planned for Mexico GP",
-          "url": "https://www.autosport.com/f1/news/cadillac-honoured-to-have-perez-as-special-300th-race-celebration-planned-for-mexico-gp/10869139/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-29T13:00:03+00:00",
           "kind": "Team news"
         },
         {

@@ -22,7 +22,7 @@
         "Component": "US GP Aero Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced an aero package in Austin that failed to deliver expected performance gains, with drivers expressing disappointment in the results.",
+        "Summary": "Ferrari introduced a minor aero update in Austin that drivers reported as disappointing, failing to deliver the expected performance gains.",
         "Pace_Delta": -0.08,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.08,
@@ -41,10 +41,10 @@
         "Component": "Singapore GP Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes' major upgrade package introduced in Singapore caused handling instability and made the car significantly harder to drive, requiring further fine-tuning.",
-        "Pace_Delta": 0.12,
+        "Summary": "The upgrade package introduced in Singapore caused handling instability and made the car significantly harder to drive, leading to correlation issues.",
+        "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.12,
+        "Upgrade_Score": -0.15,
         "Upgrade_Validation": "DEFECTIVE",
         "Is_Defective": true,
         "Sources": [
@@ -54,7 +54,7 @@
         "As_Of": "Singapore GP",
         "Is_Current_Weekend": false,
         "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.12s penalty)"
+        "Badge": "Defective (+0.15s penalty)"
     },
     "McLaren": {
         "Component": "No confirmed upgrade data yet",
@@ -133,23 +133,23 @@
         "Badge": "No update found"
     },
     "Racing Bulls": {
-        "Component": "Honda Power Unit Upgrade",
-        "Category": "Power Unit",
-        "Certainty": "confirmed",
-        "Summary": "The Honda power unit upgrade introduced in Singapore suffered from driveability issues, effectively negating performance gains and forcing a return to Sakura for investigation.",
-        "Pace_Delta": 0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.15,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORmc5X3lnTHJYeTJqc3FNMUVhVFN6cnpnc0lGUjVSa0hPcVhoeEhmMDE4QW5Tc1RJeWx3NWpuZVFTV1dLc2oySW1Bd25wTkx5ZWJxYmJoQmlnLUxZcGtyRlRTcjdrQ0JVNEZ1U3NzNmVWZ01KZE5hd0czMzhKYU1GZlpaMUNQQnlnbDRtLTEycHNzanlFTWdOYU9aUzhXOHF1YjRnLVFGQ1l5cGdJeWt6eWppQzJvMGQ0V1JxVi1BTkI2OWxo?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Singapore GP",
+        "URL": "",
+        "As_Of": "Mexico City GP",
         "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.15s penalty)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Haas F1 Team": {
         "Component": "No confirmed upgrade data yet",
