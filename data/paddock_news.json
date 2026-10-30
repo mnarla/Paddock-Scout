@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-10-29T22:49:52.160496+00:00",
-  "newsUpdatedAt": "2026-10-29T22:49:52.160496+00:00",
+  "updatedAt": "2026-10-30T02:41:49.831643+00:00",
+  "newsUpdatedAt": "2026-10-30T02:41:49.831643+00:00",
   "race": "Mexico City Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "‘I don’t care’ about the Drivers’ Championship – Verstappen",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQVnBQcjRkMklNVkJ3Qm00UmZyU3pKOU9penlJcXk5SUxsbTFaaWxjeXZfcll0aVNwNDlKTkRoQ1RBeGVGM29od24xckhsMDNnUXI1Wi10cE9raDNNd005YkRsMjBseG94RkExemZRaUpleHFBcnQ0Ukt4Z19lWHF5UE9Vdm5wa05IQ2NPdjNOZWZRcFNreU1kYTMzb1RHcG0tS0JtcGRpcWp2cmFjY05xZEtwNkdvVzVVeEJtLXR5VTJibWVIMUl6YWtiZVo5LTUxYTMwWGgyQmJ3UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T23:25:00+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "The first step in a major Verstappen F1 change",
           "url": "https://www.the-race.com/formula-1/how-first-step-in-verstappens-big-f1-2027-transition-really-went/",
@@ -26,13 +33,6 @@
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T09:39:24+00:00",
           "kind": "Technical report"
-        },
-        {
-          "title": "Red Bull reveals when 'silly' problems affecting Max Verstappen and Isack Hadjar can be fixed",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNbzhieWh1Yy1LMHNRTVRCSnpWWC1hQUxRWWw1YlBFdzcxbHZWNEw4UnhQal9QUTFiS1RUSXNMVXhPbFBURmMyQWcxVDBIcmdOMEYyVEJPMzNlRFJ0R3ZyWFJDRGs2Y3I0TjBEUnNucjM3Zm9XY3VrYkdRNl9zWnNUbTlNakxmOThTQ1VqempKQm0wTTEtWVdubW9YNmk1Zkh6RUhDTlVMRWJvemY5VFNac3gtcGItSlBrZjEtTjVidE5fODlKYnBuSTdwVmlRMkFCMTM2TkhYSUxmS2VvTTNpUFNYYnZTR3pOX2tqaE9sT1drOVFKbTRRYVpkZkZfSEpCd2M0elBtdDByVHViUjhRXzgzVWRSWmFlTGxRMkd6M1c5emtMZFYtY0cxWnVqOGV4ZXc?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-27T14:41:36+00:00",
-          "kind": "Team news"
         },
         {
           "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
@@ -66,10 +66,24 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "'Next five races are like test races' – Hamilton outlines Ferrari's objectives in Mexico and beyond",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOd1R1ZnZBNTBIdDhHdU16UFVVVjR1WVdFS3JJMFJBTldWX3MwaF9UbzJRa1VINmFCSldFZGZIRHJzY0FTVHZua2Uwdml1ZXJfOC04TGYzQXRLTE9sWDBrWndlTUxkdDhyTU5yVE5hNlNGODNhSzBESXNkSTNZczYySkJUcER4V2hVYlBpN0oxTVByOENSNUpVQjl0SVA4RmV5dTc1Rl9sYnhteDN1TzlqRnpULXZyMm5vRjhhVEU3VFpZTkg1bDQzOHZyS05obWlqNk80RzBvTXZhTlZWODZhVy1SS1NUMERlQzNwYmFsRzlQZw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T22:42:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'We've got to be perfect' – Leclerc assesses Ferrari's chances of victory in Mexico City",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYWV2Y0U1c1JFUHhDTWkxU3hxWnQ0UjVMSFV0aXUyWExzYnBWZkZweFUzN3oySVh2MkplalpCQVl2aWU3Rl80dThhTnQ5cHRCOUhlY0pyYTc3QjhzSGk2dkFKZ29tVlBKcGRYMEcxREVrRHZlc3loXzA0eTBQYmZvMk9CcW9pY2JudjE5VGxiNWNVYXZyVTY5ZmR1TmFaNERURElycnc5V3M2VzZGZHo5QUt6MFQyZF94ZEs1VEFnei1zdy1DMjRrV0cyTFAzazBQaFFoVWFDcW9MNkZXVGlZbWZn?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T21:59:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "What went into Ferrari's upgrade package in the US?",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-28T09:36:37+00:00",
+          "publishedAt": "2026-10-29T08:01:09+00:00",
           "kind": "Technical report"
         },
         {
@@ -77,20 +91,6 @@
           "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPRGJBMjdROTFoT25WcVp1S3htN1JtUFdRSGs3VS1NcGt4ZkdzZ1U4SmxHYkppV013NTlqYW1zZ243TlpJWVh5U0RYTVdTekFiR3lybDVOc21GYzM3RF9GZUp1bkVxLWpPYm9POGpLNzVOcVVtZC1kN1FXZkN0a01aZVpvUGx3MGN4UW5Oc0JmMHphT3NrUENYYWhTRGRVZTFLYTI3ODFMU3JNYmFWVlI0ems3VWRZU3dwM290dWlxYw?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-27T15:01:07+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "The role Friday practice played in Hamilton failing to achieve a podium at the US GP",
-          "url": "https://www.autosport.com/f1/news/the-role-friday-practice-played-in-hamilton-failing-to-achieve-podium-at-us-gp/10868872/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-27T15:00:02+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "What the US GP really exposed about where Ferrari is lacking",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeGNEOE80VFFVU2Z4VlFHN1pKUXhtY05INnE1QmZYejM2Mko0SnQwUlRDOEZ5clg0djY1UzhvMzJPNTNYNjIzbWdPa195OUg5bDZRNC1tUEltdUEwWkRvTTZKNmNlZGhaQ01UUDhaQmxlSy1wd05ieWRVZld5enRyeGIwRkd0REpNOFh3N3MxMzNGRGk2VmZhMlFlTm0?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-10-27T08:29:31+00:00",
           "kind": "Team news"
         },
         {
@@ -125,6 +125,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "‘We keep ourselves to ourselves’ – Russell opens up on relationship with Antonelli this season",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPRVVtZFlNNDVYNkxXX2RZblI5bjNoTEZDQWFZMWdyRm1mUkRXYjNIa0RHVlNNN0hJTkYwb0N4WG9jQWl5S21BYjBqcGx5UUxqMUtubVljU2lPLVRXeS0tek9DeG9rMGprQWVTTUJ3bXdrdkViMmZvSDVTaEJNNldJb18wWnJYM0kxU1JrY3dRQVVTRVdlVkh6WVBNWEczekZRak5VTHNUQ1ZKeldhSUFRVGYzQVE2N0IxdlVJbmI2RUVROEFXamN0QWowaXUyTUxGNXZUN0dHRTF3WWg4dEY2NU5XRFlLWFZ0SVA2MQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T20:58:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Russell believes tyre pressures and less “efficient” driving style hurt him in 2026",
           "url": "https://www.racefans.net/2026/10/29/russell-believes-tyre-pressures-and-less-efficient-driving-style-hurt-him-in-2026/",
           "source": "www.racefans.net",
@@ -132,17 +139,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Antonelli skips F1 Mexico GP media day due to illness",
-          "url": "https://www.autosport.com/f1/news/unwell-kimi-antonelli-skips-f1-mexico-gp-media-day/10869370/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-29T17:07:23+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Spotlight: Antonelli to miss Thursday’s media day in Mexico due to “viral illness”",
-          "url": "https://www.racefans.net/2026/10/29/spotlight-antonelli-to-miss-thursdays-media-day-in-mexico-due-to-viral-illness/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-29T16:37:09+00:00",
+          "title": "Unwell Kimi Antonelli skips F1 Mexico GP media day",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWlZtUVRnTXRGQVBLQ3BDVGFjTGc3bnFOTnpESDFzMDlBOXpYUGE2LVlEV3JNTlBmb0hoWVFUVmpSNDRMamFYRFM0NzB2dExNeGZydU10d05TTzA3aXVOZnd2M2gyeVhjSlZGdUFwTUF4dUZyT3FnUm1TOXNfU3VWaGVtQWk3N0UzWk51cFpQU3BNUEVqZ0pjeGhB?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-29T17:08:16+00:00",
           "kind": "Team news"
         },
         {
@@ -181,6 +181,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "'A pretty good year' – Norris defends McLaren's 2026 development progress ahead of Mexico City Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOcWJWcE1JRTIwdlBhb1FTNDNwaUcxXzRIN0NHYTdsazZONEpVVmREeTNYaldMNHV1WEdzOGhJV3JXdFJBMDdjQ015WUlDdHFUeVNNV29HU0NpOWplUnl4dnFnZS01aWxlUVI0S3RxX3RNNl9fbFYtUDYxakd3b0s4R0ZqYVVvNmZEQ3VMNFZHU3FZUG1ld21oSzB4NnVfdTJYN3d3OXFyRWMydXlWT1lJVGlWV1BpM3lqSDJNeXVaSU5IM0dpUDBoMnNJengyTTJfVU1GbmxINDBwRlpGNFo5M3lBdTNSUFU4SHk4bU1VeUVfT29VbkNjUG93?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T23:55:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'Superpower' neutered",
           "url": "https://www.the-race.com/formula-1/superpower-neutered-piastris-fresh-f1-struggles-explained/",
           "source": "Piastri's fresh F1 struggles explained",
@@ -195,24 +202,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Norris's new team gets F2 entry for its first year",
-          "url": "https://www.the-race.com/junior/lando-norris-new-team-f2-2027-entry-ln4-fusion/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-10-28T10:56:11+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "McLaren's aims for its final F1 2026 upgrades amid decline in form",
           "url": "https://www.autosport.com/f1/news/mclarens-aims-for-final-f1-2026-upgrades/10867609/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-10-23T23:04:52+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "\"We're just a step behind\"",
-          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNTm5LOGlZd0tlVWJOVU1yek1KdllUbm1oajFqNk54WWFLVWRGLUU1MWQ2WW91MWp0NzZXRl9uUmN4QXhCeEozU2hPN0pTb21NWnpoSGo5TnhTN1pNcU9zdzVUTHgyVnA0eFhGSGhlUlc4WDBrTHVmRmhZWVdlQ0FXZzI2RnJjRzdIRkViMzhySXRXZEZNWFVIQTFzLWEyTHdtSUttSmxwLTVQalRNM1A0cmZFckFxdkxaRGZvTWhyeUpBMEo4YndSMFpnbnMwa2JWU0JxN1hsTE40XzhiZmhQd1pOaGJ3Q3lJWC1HNWJIY0kxWnk2Q05mc2JZNmY?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-23T23:00:28+00:00",
           "kind": "Technical report"
         },
         {
@@ -248,17 +241,17 @@
           "kind": "Team news"
         },
         {
+          "title": "Fernando Alonso doubles down on poor F1 driving standards: \"We all know who we're talking about\"",
+          "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOc2loV3VkdmdXdlNKc1UyZzdDdGwtLWNOUGRFX3hCVlNHaVZqZFg0bFlFM0dUSlFXQWdZQVAyNDBWSkpPdkl5dHNqekFpVFdvaFAwQkF2RG5LczBIZWhfcF94NEZ6eFhhZ0phVWY4VEhpZks2T1hmZHRwcnRYdUdhd0JRX3gtQjBJWGNKckNDNmE5VDl3WHV5NVU4WHVXYW1ZZnNnclVmdFJhUzRocW5zYWZRbE8tRkNDUW85MDlvaFlRSU5RaFpGaGxQdzJGeVJZb1pYRWgzcXhiSFctdWEydGRRNkdrdEo5aHVOb2EzbmFDa1V6VGxNb2FSTHRlQ3FUT3FKclZvQ3EtbXJ0ZUVLUjFEVGFlR0VIWkNOMlFoY2xqYVBRdURLTFVJb3hOcjNIUUtlMlNITklzWjB6Zjd2UTNR?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-29T20:06:06+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Alonso doubles down on poor F1 driving standards – and says those targeted know who they are",
           "url": "https://www.autosport.com/f1/news/fernando-alonso-doubles-down-on-poor-f1-driving-standards-we-all-know-who-were-talking-about/10869405/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-10-29T20:05:13+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Fernando Alonso doubles down on poor F1 driving standards: \"We all know who we're talking about\"",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNV2FBbzAwTUoxcWtUQ2szcWFIYi1RRUswTk1BQ3dVVDFQbVp3V1BpYlUyNGEwSE5WZlF5X2lwSy01azJxcTUzUUdYcmtwcHJNWXotMDNVR1M2WUdUZEludFozYzBHWnBHWUNITDFQOHFvc2FoeFZ1UGdnTFRQakhFc1FyMWJyckE0QTFwSFV2em9qNGUzZllyblgyRlRUX01uMXd5YjFGYTNzQ1lsSVQ0VVA2LUFzUDB6OU94eWFoOGlQMGlkNTlUS1hjVWpkaVp0d0E?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-29T20:03:04+00:00",
           "kind": "Team news"
         },
         {
@@ -290,13 +283,6 @@
           "kind": "Team news"
         },
         {
-          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQczY5VmtQdWdUTTdaR1BPa3d1QURpdFI5cUZ2aHFJMGszeVVuYXRjUDh0N3ZzZDJaWFBINk9nY2pFdHdSdHhYSFhEbV9LOFhPYW9pd3ZqTjlJZ2JYejN0dTc5dU4wdUd5V3FkeEI0anFYRmp5QTBEY19OTWd3czhJVGlKTjRVZ09mdXc3Smlrelk1VWVRZ2dxelBsMC1CNlV2aF9GTjZmRWZsT0NQbUdJZHpaYjM?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-10-25T22:50:12+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Colapinto hoping Alpine’s race pace is ‘strong’ given grid penalty in Austin",
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSTIzRlg1MEZmckFyaXVvdFYwWnJYTVFzdlRjVDlVZ3pKNHp0Zy1tUHBvM0hiUG9zVjJibTZsdlk5RFRTajZ4c2N3bEh4Vk9wMjVlOXlZZE5xRDNmekI4RWRDV1czYzZ4d2tvc3BfcGlHQlg1WFBnZ0hSVHAwbktwRl9VSUFwWXdzY2FXSlduVkhUdVJLNUhuYVZTem1mWlJyMEJ0NTFFM29nNkdJdmoyVzJ2MmluN2tGVGYxVi1LTWMwX3RvSUE?oc=5",
           "source": "Formula 1",
@@ -304,8 +290,15 @@
           "kind": "Team news"
         },
         {
+          "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-24T21:56:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Belgian firm to take over Renault/Alpine engine facility in Viry",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbFhhRi1DNUNRWjNGMnlOZERNcG9ETU83M3BTTm1YaU5xRjhVVFF0clVYb09pUE1aS00wSTl2NVBZaS1UV3lXbmhLMldlZl9zazhDNDJpV0phTWt1MkF0MmpsRjZjM2ZmZmtEbDZJQ1kyejZjWUtFejIxUnkzVDc5VTlzOFNzTzBGNHBmRzNKcng4MF9scWRtWGFn?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUGEwTXZBOFdhNmZEV252OFlMLTQ2WGtWelJqdjhPUEhkYjJ2M1BpS2NnQUpuY052dFJwa1RobzViYms5TERQT210azRDSU1QSll0MmVwX2oyRkwyQjB4ODhraHhHR01VdkxLMS10ekVoQ1NsQnRLUW5kLWtydlduUkpsU2lXMzhjbUoxamwzU2VTSjZocS1weg?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-23T09:37:58+00:00",
           "kind": "Technical report"
@@ -328,13 +321,6 @@
       "name": "Williams",
       "stories": [
         {
-          "title": "Sainz: Williams are 'so far away from where we would like to be'",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNanE3bFRuTXZsT05IUkJZN2RyY3Yza1NwRTlZaHJmY1RNY1NUWVlnZ0pxLTdPOERHSEpBZmxldTVzM1RyYjkxNEZrcmExN3dfUV9uN2hGeEN0QWJ6a0YtbHItTmFybUxJYUFlRUtjbl9SRENzVmtvSlh0LU52aWNHdFBzcTNlVU4zZWhwTzdhVWJDcUdlcllCYzROZ2luckItQ1p1S193azhpbmswa1VOS29Da1RmQQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-29T21:19:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Williams launches 'W50' expo to celebrate F1 milestone",
           "url": "https://www.the-race.com/extra/williams-launches-w50-expo-to-celebrate-50-years-in-f1/",
           "source": "www.the-race.com",
@@ -346,6 +332,13 @@
           "url": "https://www.racefans.net/2026/10/29/fans-pay-a-bit-less-attention-to-formula-1-as-calendar-gets-longer-sainz/",
           "source": "www.racefans.net",
           "publishedAt": "2026-10-29T07:15:07+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Sainz set for Rally1 outing in latest gen WRC car",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNc1hyUzNuUG8wMmtDZTc5TjlCOEFpTlhENEt4R3FpNU05R0tQbDZiV2Y3UzhWVDZEdVZqUnNYdzQtRlJUQ3RBcXFvcFVTREVDakxORHFoOXJTS3gxWF9tdW5lSHlJYXBqSDgtMXFaMVRmTXBlMkl1VzBYVDg1QmltdnFiaw?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-10-26T11:14:21+00:00",
           "kind": "Team news"
         }
       ],
@@ -363,6 +356,13 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Why Tsolov has complicated Racing Bulls’ 2027 plans",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNMTN4eFo3ZEpKUFJwa0RQQlU0Vmh3NnhqRDhjN3RudUpZVWZFWFNxQnFyLWdGODNDR05FYW1ldUt0SVE2RXp1aTliX3B5cjJiX3hnRTBSTTFyUExmQlBHalNiUE1CUVdMV0o4RTcwRjVmUFhDeFpTQ3ZNbGhGbnRVbHZob2lMVTBjRmtiQnVCSWVHbWduNnRqeUxnRFpSSGxQVFRWemdNVFpqaVF4ZGN5UmoteDRZWW54d2xoNEZIeU9rN0E2dHdPOG5Fb1dQeUg1a0s3WQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-30T00:27:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Racing Bulls",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS0tWbjhNR0wtNUFrRlVNTTh5b1FLWnRySzhEZEFaSnJFS1U2YVVweHVnUl83ckJwVE9CRm9HRFlTZm5SVXpYZm8tQlNLR3QwUEUzWnEwWHhyZGJ1V1RyekJCazUxQ2RCcXZIM0M0eFJfbk8xOFlIYzd4Vk9UakFpVw?oc=5",
           "source": "Formula 1",
@@ -374,13 +374,6 @@
           "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOWHRYc3pOdVRncVBJSm9TaEhhZ1BGa3RkZmhzSlgwRnlLc2xBQTRmckVNSzZjYTdqMlFTSzFCYmxSZ29DbmVCbm1FYlh3OHROaGJUc29LQmxtc0QtVGhYbURkY2RDNURUQThBN0xXV2VfVHFlb25sSzBzdk5DNmVTUF93YVVmQVBtdlkzZGVidjl0TS1VN2hEM1l3TmFST3pKUXRZNXBwVXpYZGo0SjE1VHE1ajljdjVKbkhOWjAwd2gzQm9iQUtGRFJGTmFJakdXeVFMVklJTzU2bUlnMEJtYg?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-27T10:34:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘We’ll learn from it’ – Lindblad reflects on his run to P12 in Austin",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV2RoMXJzbERVRnhtdG9KdUtBQURsQ0lkV1ZLQ3ZlOVExaUg5UmhpZTJmT3NtQVUzbXd1c053S3J6anppVDhzRnhKYnpXQTd0anVmUmpyV050c3BaaVJzd2VwRWVReUpWUkJwbVZ3STJiYklTbUI0dlFhVjFsaTAzVmdBblA0RG9OaC12eUJpX0QwNXF0bkl6YjdjU19SZHBpZ0d2cERhM0FOTEVyUWp0bU9oTEtUaVEwbWc?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-25T22:05:00+00:00",
           "kind": "Team news"
         },
         {
@@ -417,10 +410,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Bearman disagrees with penalty for Gasly collision: ‘I don’t regret going for it’",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQczY5VmtQdWdUTTdaR1BPa3d1QURpdFI5cUZ2aHFJMGszeVVuYXRjUDh0N3ZzZDJaWFBINk9nY2pFdHdSdHhYSFhEbV9LOFhPYW9pd3ZqTjlJZ2JYejN0dTc5dU4wdUd5V3FkeEI0anFYRmp5QTBEY19OTWd3czhJVGlKTjRVZ09mdXc3Smlrelk1VWVRZ2dxelBsMC1CNlV2aF9GTjZmRWZsT0NQbUdJZHpaYjM?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-10-25T22:50:12+00:00",
+          "title": "Fan Forum: Mercedes, Haas, Ferrari, Aston Martin, Alpine and Red Bull on the fan stage in Austin",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQcl95amlXcU5TZmRidWpWbEpEc3U1ZjB3RVhVQzJXbWxTYW5VbUtWck85N1hFeXJ0YnZGYkRjMGlwNkJWR0c5NXFfb2M4Y0MtaTNSZUxyYXI0U2tsamstLTNUSzZDMUpJaF8yaUtmeFYyRHpkYmVWMEg1NEMwbUlqUmZFcW5fQnRQRWxZcjR1LXhzeFZwdVk4OG1qWWQ2SWpSX0ptWmxjMVp2MEt4YVQwRkxzM20xYVZDdk05M2VlbVlDUDkxRVJHemIzWmpwelFwUExYazVvdjJaOUkxQ1E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-24T21:56:00+00:00",
           "kind": "Team news"
         },
         {
