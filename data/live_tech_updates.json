@@ -19,42 +19,42 @@
         "Badge": "No update found"
     },
     "Ferrari": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "Floor 'fingers' and sidepod inlet/undercut rework",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Certainty": "confirmed",
+        "Summary": "Ferrari introduced a minor floor and sidepod update in Austin intended to increase energy, though drivers reported the performance gain was less than a tenth.",
+        "Pace_Delta": -0.08,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.08,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "Formula 1"
         ],
-        "URL": "",
-        "As_Of": "Mexico City GP",
+        "URL": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from United States GP)"
     },
     "Mercedes": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "Comprehensive upgrade package",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Certainty": "confirmed",
+        "Summary": "Mercedes brought a major upgrade package to Austin that caused handling instability and made the car harder to drive, requiring further fine-tuning.",
+        "Pace_Delta": 0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "Awaiting reports"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Mexico City GP",
+        "URL": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV2N5Z2c0ekdNV1ZtUW04UzlacG9BOVVLOVp3cUVxTTE4bHM0Y2l3SmdJUXlXOS1hVU5lUnVrLXlFWDVjSGQ0c1BkNjA2MmYxTzF5NVNxNm4teFBnaE1pM25oSkI3VmxycnBKbkFKS0p6ZHNob2JsOUJONWd2Wm1SV05odldqR25qb204WE5kWHZhMUxJWWdyeUtfemlfWTg1V0ZBMXFVV21DV0JYVVNZ?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
     },
     "McLaren": {
         "Component": "No confirmed upgrade data yet",
