@@ -19,29 +19,29 @@
         "Badge": "No update found"
     },
     "Ferrari": {
-        "Component": "US GP Aero Package",
+        "Component": "US GP Aero Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Ferrari introduced an aero update in the US that provided a marginal performance gain of less than a tenth, which disappointed the drivers.",
-        "Pace_Delta": -0.08,
+        "Summary": "Ferrari introduced a major aero upgrade in Austin that failed to deliver expected performance, leading to driver dissatisfaction.",
+        "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM2wwVlJFUmxUUk4wNTBRV3pndFczbFk2VnA0Q3BLNThnT2JPRG5VTkdWVHd2bU5NckMtdUVPTGE5Qzd1SnplX0xOMmN5VGJhNkZSMm5menJwN1pwMjc4LVR4bjl2UXNaZ0ZaZW5Sa3NlVUZOVjRsUDJ3UWdsODZoTmNrdFh0dmhDNGZZUU1hY09HQmhEeW5kU0o5SFVDUS1jODdyXw?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV3Uya1E5ek42RUthSlBhWDFrQjBQRmh4YUk5ZWp3UWtvZ3RkQ0ZVUEhVQmF5NEdkWDZoYmExZ0Q0MU1sd2xTYjdaSVRCaEZpNXFESlB3SlVIQnh3WjlsM2xkZXdTd1RmLVMyV2xRWWktLWhUSDhXb2VqWlVHbm9PTU45Um1BZTEtaU9XNUpjWUZObks5M20tVWszRHJhcTktUVFHeW5Gd0djV2IyUlR4ekJtM0JKX0pnUnV6VkF6dU1fb2tHcGRsNA?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "United States GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from United States GP)"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
     },
     "Mercedes": {
-        "Component": "Aero Upgrade Package",
+        "Component": "Austin Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "The latest upgrade package introduced in Austin has made the car significantly harder to drive, leading to handling instability.",
+        "Summary": "The upgrade package introduced in Austin caused handling instability and made the car significantly harder to drive.",
         "Pace_Delta": 0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.15,
@@ -133,10 +133,10 @@
         "Badge": "No update found"
     },
     "Racing Bulls": {
-        "Component": "MGU-K Power Management",
+        "Component": "MGU-K Power Management Software",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "Liam Lawson was disqualified from qualifying due to a technical breach regarding MGU-K power delivery rates exceeding permitted regulations.",
+        "Summary": "A technical infringement regarding MGU-K power reduction rates during cool-down laps led to Liam Lawson's disqualification from qualifying.",
         "Pace_Delta": 0.1,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.1,
@@ -145,7 +145,7 @@
         "Sources": [
             "RaceFans"
         ],
-        "URL": "https://www.racefans.net/2026/10/31/lawson-at-risk-of-disqualification-from-qualifying-over-mgu-k-rules-breach/",
+        "URL": "https://www.racefans.net/2026/10/31/lawson-disqualified-from-qualifying-after-cool-down-lap-error-causes-mgu-k-rules-breach/",
         "As_Of": "Mexico City Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "DEFECTIVE",

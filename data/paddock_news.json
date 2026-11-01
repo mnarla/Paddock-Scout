@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-01T06:28:32.842275+00:00",
-  "newsUpdatedAt": "2026-11-01T06:28:32.842275+00:00",
+  "updatedAt": "2026-11-01T14:23:56.056948+00:00",
+  "newsUpdatedAt": "2026-11-01T14:23:56.056948+00:00",
   "race": "Mexico City Grand Prix",
   "teams": [
     {
@@ -42,10 +42,10 @@
           "kind": "Technical report"
         },
         {
-          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-22T07:00:00+00:00",
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-20T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -76,24 +76,24 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "The changes Hamilton thinks are behind his Mexico GP pole",
+          "url": "https://www.autosport.com/f1/news/the-changes-hamilton-thinks-are-behind-his-mexico-gp-pole/10870570/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-01T11:49:56+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "F1’s longest pole career spans as Hamilton returns to top",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRjFtTDVNVDAwMVpHNFh3UUhWcWVtTXVHTElZQWpEbVNEMzJPSmRVQlZSb3ZpN281dWYwWEtfbkhOV2JhVEFSTUpYc21DM2VlendIZVZZUXZyYmdvcmVrY3ZzM3ZXRUZ0NlpwMEYyYUFrQVd3cVRBSW12OXFuMGhEZ25uZW9WeFdIV3d3RnBuWlAyVFUtT1RYZms5cHRBcGFDanNiQ3dlLWZOTEJPYVJIUC1QN2kwU0p1ZllSRDVpWlZCZFAweTItekdHT0UyX3BYRXhKOVZmR1NreGtqUTJTV01n?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-01T10:45:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Vasseur on Hamilton’s ‘fantastic job’ in Mexico Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNX0tDelZiWnBVamtud2E2V2FBenUtdW5KRzQ3WGtic1pLcnozY0wtcl9jOGYzZVBVb1ZmLXh6b01GVFBMdkFRbFloMXVIQkx5aWhGY0xYTWpTeWxVWW01cWlYb1lEMWliQjl4SGVQV2lQbFVSMmtJSm55YzhpandxNTFxbjJHTzhCRnZBMEVLX1IwSWl5eXMzUUNaNWd5b0Vua2xaLTRhTzZoeEFIM0Nrb3NuYnJsMDVOa2xaUGdPb3BjWGVFQkNVVmFiUXp6bnRxZXZSZk5ObzItdzV1Q05Pa0dtSTAxNG9jQmhFMUt0c1cxcmM?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-01T02:08:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Leclerc 'angry with myself' after Mexico Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPVzFqckZ0TExOcnRPTFZTREY4NHJNb2lKNGpvM29Wamhhd05CYzY3UGRlQm5NdTI4SEhQbFRVTnNoaFZaeXlITHY2QmF3UlkzOWRlVGJWYy1JcnB2bU55Z2xmaXVJNUFxR3QybUt2TkcwUWtRdTBOV0RiZzZScGFNU0N0N29pLXFTLTUyTEowcHZoaVBCaGtXLUFjQV91cmZQZC16U2ZaZUdEcVVnTFZQQkNuT3MtMXdFZ1BEcTgtemt5RXBfbUZiVkpRVGxYWk1hSllMc0MxTm12UXVnU3VreUdvOHRfZ1Q5MkVVQW1pU3N6eVNkSklr?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-01T01:46:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘Wow!’ – Lewis Hamilton reacts to ‘special’ maiden pole with Ferrari at Mexico City Grand Prix",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORHJ4YlZTTWdjajFJWXgwY1I2TlNiVDNCNlNMdkY3bDV1eDh4Y1Z0WEhpNjRzbjN2SHpmRHRfWnMxaHFDSGtLWnJtdGVuMV81UXJjQlVkTmEyZWFreHhtaC1uN2JKaHZSakpkSXpnSHBpc1NYNnhhOWc1TVZ2TENYa0F1bnVzTWZjdDNLWkNjRkFTVlF3dmdBVkR0X0E3RU1ucEc0Z0NEVXJXT0NoYjRZVGg3VlVudG9zci1vMWswSTVCU0JlOUFOSE9pWEthd0g0dlIxc1NB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-31T23:34:00+00:00",
           "kind": "Team news"
         },
         {
@@ -145,6 +145,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Where Antonelli's 2026 will stand out among first-time F1 titles",
+          "url": "https://www.the-race.com/formula-1/where-antonellis-2026-will-stand-out-among-first-time-f1-titles/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-01T13:24:28+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘I didn’t do a good enough job’ – Antonelli admits feeling ‘more tense than usual’ in Mexico City Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOR1ltT3hTd0E4WktqVDlTRGNfUVhNQUY1T1pzdG9VUmtneTJuRnFHY2l1alZuYW9CLUpBRWF2SE81OU9VVkpJNGpNdTA4U2F2RUxoNEhBWW15TlRzYTFNQUdLdXVUdTdpckhUUnhTZ3JhLTE3b1NCOURRWVVfMDFxamVxVjZLU1owZTN1alJrUVJ0b1RpU2hFUmlMTXU2Z2NLdWFvNzRrVVVWSTVlTzVfdzB3RjRKeXAzTjJZZ0xMYUktcnEzbUhlUDE5Y1hPZ08wbnJ2WmxvT08yaGo1Ny1oTHlWQ1Z2ejcxT3U2WXFjWnlRQmxQcklzWDhyQQ?oc=5",
           "source": "Formula 1",
@@ -159,13 +166,6 @@
           "kind": "Team news"
         },
         {
-          "title": "Two ways Antonelli is unexpectedly struggling in Mexico",
-          "url": "https://www.the-race.com/formula-1/two-ways-antonelli-is-unexpectedly-struggling-in-mexico/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-01T00:23:22+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "George Russell confused by lack of pace at F1 US GP despite upgraded W17",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNN0hEM0p3dkNTYnk1U3V1XzFCSmJYY292YXd5ZXVZdmRtMTRqWU9kMzFLTHBxdXZYM0hqajJsdjVsOUFZVk5XSnVucDYtX0NJLXpnN0haMFY4UnhNdEU5Yjd6T1NRbzlXMjRya01sVkV4YXVEUE5CS2R3Yk1jdTlNYkNRcW5tMWZCVUczOUV6WmZackVCR1ZCYlhuMXkteS1pUEpyUzBXQzUyNWQ1Tk5qWExn?oc=5",
           "source": "Motorsport.com",
@@ -177,13 +177,6 @@
           "url": "https://www.autosport.com/f1/news/antonelli-pole-shows-mercedes-is-seeing-results-of-car-upgrades/10868072/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-10-25T00:13:34+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "'It's full on' – Wolff wary of growing Red Bull threat to Mercedes",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZk93b2RiRW44MU1CM21XNl8zUWlEWXZjLXJyZ3liSXM4UHpieU1NSFdLWGNiVW5pSUxjeFdfOE55MDA0SndQRThmYzlhSElpeHhmQndhZHh3bWFMZFhxWjBIU0VWWDU5enFTck1CODJ1c0U2bGdrd3pVTUZuMHRfeUZKTFVLcTAyT1BKVnlNek9DakFKUXRfMldMTDM4NDlmNmpEbGo1bVBNdUEtXzB4QkdUU09yV09UZ3YwQlh5MHM4SndHRUE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-12T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -208,6 +201,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "“Everyone’s kind of stuck in this speed limiter”: McLaren pair expect little passing in Mexico",
+          "url": "https://www.racefans.net/2026/11/01/everyones-kind-of-stuck-in-this-speed-limiter-mclaren-pair-expect-little-passing-in-mexico/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-01T07:15:59+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Norris admits McLaren are ‘too slow’ after Mexico Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVFFnX3dMMlZ5U0R3LVBQejFWT0laUmNKUG11UU9Ya1dnNUxQR3dnMDA4ZkllSHA3ZG5JMkRMVnJzNkNiVml2MnVnV2d4WVM5NDhza2xZM3Z2SVk3RHJtcWJ4bU80TzFDbG0tMHNlTGRyeTNoOGE1UnJRZmMyR05xSmtITTFQRGRzZGlKeENBYmJCeTFERUE3Q3lfa2ZCRmMxZm80VkJBeGtvenlhdmRUZC16Y20xTE4ySW96bUkwa3MwM25xRDh0WGZMWnUxa2V6bkxCUWtFc3QzUXZlVGc?oc=5",
           "source": "Formula 1",
@@ -219,13 +219,6 @@
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVU40aTBoOUx1TXJJa0l6TVZpN0RSOUJLOHQ5T1hmSXlfa0VZdWdZOV8zUWhYWVdIZHNwUEdfa0NXbTZUZFhtektPMGN0bFRsN3NhdG9sNjJfQkJzaTJzdDdfU0pQZmpfcXNQTUkyZ2ZZQjVkc0IybktEWEZ2UGpEMExpWkJ1bmNLRkMwLWtCNWN2R1N5OG9GMmJhSWZHbzcyZkY4ZDhlaTBnZ3NpN2xmODByamZqVGlVYm5hRm5DbHh4ekV6LXdmSzBiZGI5NjdSSXEyZmZqWmFLZG1VVENtVm1rOTRsaTFY?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-31T23:23:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Norris beats Antonelli by a thousandth of a second in final practice",
-          "url": "https://www.racefans.net/2026/10/31/norris-beats-antonelli-by-a-thousandth-of-a-second-in-final-practice/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-31T18:49:04+00:00",
           "kind": "Team news"
         },
         {
@@ -263,10 +256,10 @@
       "name": "Aston Martin",
       "stories": [
         {
-          "title": "Alonso reveals the cause of his breakdown in Q1 in Mexico",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOR2hNYU9wcnlKS3FRc3g2dTdzQUlBM2pRRjgxV0kxQlB4Z25wN01LOWloVUlXMjhrTEg4ZTRsNlFXTUhVV19aZE5DN19nc3pYdm84TFJlUHA0VktBbHRaUXZMSVREVWgtdnhLN3hUR21jbWZlX2pnX21nV1p3and6N1kzbzE5RUlrdFpfU1UteGlKVWlWQl9YOW1XV194eWxvMlJDR29WbWxybHNFT2JIWQ?oc=5",
+          "title": "'Frustration is beyond imagination' – Alonso reflects on missed opportunity for Aston Martin in Mexico City GP Qualifying",
+          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNLUVmaDNSN3hac1FDOVRfWW96cC14cFFzY1VIeFpmOWFHUWRMQjFjVzRvSmVQLW5CNE5mZC1ER2Y5ZnlZYXQ0TG0tMWZIandFTmJtSXZtVFVKNVZHWHhJQ3RRb0p6VFFXVXVjOUFHYndFSi04NXM4azRMckttZUlRdUhJN2VsV0VmNHBNLTAtUmIyUFFuSnh0d3poVXd5VDdROVBNSlhrQzJTMVNIdXRVWnZBWkRDbF9pZ0pqQXliUGlKVW9wdVBYSUtzY1VSWUJDS3pwY2dNakxLOXdZQTN3YVB4MndUa1RyazNtWlFka0V5TFlaOFhRN2loV2FCUTRJc2gtMWVITmt6bDFmaG1NWA?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-31T21:33:00+00:00",
+          "publishedAt": "2026-11-01T11:04:00+00:00",
           "kind": "Team news"
         },
         {
@@ -277,10 +270,10 @@
           "kind": "Team news"
         },
         {
-          "title": "‘We are a little bit closer than previous events’ – Alonso",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZXJqdG9lR2VpNkJaMzd5bWxoT2ZWOGtNNVJBem8wWkJSaFI4Sy1raFI5YUxKSWlvVmhOT3lQRTVwdHhLZEhsbHdsQ00ydjFzN2twSWh3QjZwU0RLa01QalhQeWRNYnkybFN3eUV1dGVNN0x4VW0zQ1AxLTdsdmVienlXZS1MQ1Mwc3lvc2pvSktYeWpZRWhkcjhEUWdSN2w3MmtwVnEyeEpDRjB1?oc=5",
+          "title": "Fan Forum: Mclaren, Cadillac, Racing Bulls, Williams and Aston Martin",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOckN3UUhFMDJEcmxPV2V2WUJQdWpqRmxacTN0QVlRWlhnbG9ETXkwVDNqbTlFT1lmaGdYbGk1NEN4T0FsN3F5Wkh0SEZiNEV6Y1k0NEQ0bG9XeHRsMkFkMFFoZk96LWUtUFh6c19uWkN0aVFFVlhyNjNYdzE3MEQtWVhDZ2dSSEU5dEI5UmhoeXk1LVBUSlVoMVZmTURldFVjbTdlZ0RhZFVGcjdNX3JEdDllczVOT0tpR2xBR3ZuMXpnRUhDT3F1eWVzRTQxblg3R2N6d2VFUWUxSkhIZThwMnduTXhwWm1rSW5PTg?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-31T01:19:00+00:00",
+          "publishedAt": "2026-10-30T20:39:00+00:00",
           "kind": "Team news"
         },
         {
@@ -312,6 +305,13 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "‘This experience has shaped me’ – Alpine's Pierre Gasly opens up on his work with Make-A-Wish",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVU81N09HU3dqbkVCZk43S294bjlmMWJGNV9fdHVXbTVmOE80aThIQ1kzOURkMDYxTWFOWml4dExydWhDeXR2aTV3ck1hUnF2cE9pWEw2UFZJMk5NaFVPeUhKdjdtTk5mQWNhaHVKaHQtV0QtVm1Zb19MVUMwbUtFdlNmRkhMWTdySmZGcTI0U1BOSllqbnJRUDhWZE5PU0FJUDE5cHU4azdJYjdTWkt5SE5kN19YVXpjN2t3elZVMlpHekhIM3NWcHJCaWFZR2dybGJGYVFn?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-01T11:36:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Fan Forum: Red Bull, Audi, Haas, Mercedes, Alpine and Ferrari's drivers on the fan stage in Mexico",
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaEVDLTZ6Zm0zRV9fMnMyNk15QXhkdy1VU1d6TGpfVlc5UWdTRFMzRHo4ZERQWk1RaDliSWk4eUxUYzlYbzJTN1VKNkR6LVZDVmlMZEw1THY2WWhwNHNVQ3Bab09iSlZpWnNvRlNSTm5fWjZYNk9ZSXFjeVc4Y2RWRkxrcWxNX2dfbjk3RkpHaVVVQXE1eGNtOHpsNmJieUdmMjhGQVNWSmJra3FadG9PRkpvUFN2RDB1c0JVbGFQbnN6a3gzeTJBS3dIOUxzY01nc3k0RE45bElzbGJoR244?oc=5",
           "source": "Formula 1",
@@ -323,13 +323,6 @@
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRGhmbTRpbGtJMDNGdjhoTkphOHNpaDlHdktNeG44SmRnblNITGRVWnJUenlLdk5VQmlQN0N4TDBaeGVPcXlXQy1mT1pHMjZ1U2tJMTlUTmZ0STVsRS0zTTREZmNiNS1UdlFzVnV2V0R3aHJYeEhUQ3RNeFVuQlZBT2ozN3BNeVFtWjFJSUdaekhrTWhNWDhSRXZlMzFQdFh1RmV6NzZaUEhsZ3lGNy1qbGY2NEVqdTdCc2VtQ2hHQkZaZnpOXzA4VVRYWFZZTTlIRm5r?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-31T00:44:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Mini reflects on ‘amazing day’ after making his FP1 debut for Alpine",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQRDJaUjMwQWMxTUdLMFlZbnpQY3o1MlpoZzItUGU0NzVVWUV3ZDhnb09idC1mRlBUX25BR1hnUFV6TVZYdUpLeFl4V0ZQRU1wVUJlMXRWcGNVNGdHcDFSeHRMNUg3ZXk0QXBXYWJzT0JUeHljbEpESERGcVpDblBBRDBKMnUwWXVCeXluaWFGOVB6QVlENXYwaVdhVnFVdmoxVE90QXhWb19OTV9ndmNqVTRPZmgzX3J0VnJHLQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-30T23:33:00+00:00",
           "kind": "Team news"
         },
         {
@@ -379,7 +372,7 @@
         },
         {
           "title": "Fan Forum: Mclaren, Cadillac, Racing Bulls, Williams and Aston Martin",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMHhPZTN6Z1RjUlB2S05ZSnN4YklkdkU3TzlrVXlpZWFWdV9DRzg0dFZFbGc5ZGdMc2NpWGNSSzNIMUpxRU1kSm9xU2VHMTZmX3cwUHpQaTBkX2k5T1NpeFFvYTBrRG5nR1RBTUw2aVZBMGpfRTN4a1pzdkRuMFlBQ1ZTakJ3WVgxSjlMV3NGSzIxbU5rbzFmbWdkX3htY1pydldaOFE3V0ZkMmtEX3VjOXVidnRqUHFQSy1r?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOckN3UUhFMDJEcmxPV2V2WUJQdWpqRmxacTN0QVlRWlhnbG9ETXkwVDNqbTlFT1lmaGdYbGk1NEN4T0FsN3F5Wkh0SEZiNEV6Y1k0NEQ0bG9XeHRsMkFkMFFoZk96LWUtUFh6c19uWkN0aVFFVlhyNjNYdzE3MEQtWVhDZ2dSSEU5dEI5UmhoeXk1LVBUSlVoMVZmTURldFVjbTdlZ0RhZFVGcjdNX3JEdDllczVOT0tpR2xBR3ZuMXpnRUhDT3F1eWVzRTQxblg3R2N6d2VFUWUxSkhIZThwMnduTXhwWm1rSW5PTg?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-30T20:39:00+00:00",
           "kind": "Team news"
@@ -407,9 +400,9 @@
       "stories": [
         {
           "title": "Liam Lawson disqualified from F1 qualifying in Mexico – here's why",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZGh0YlF4YU4yR05QbTlCVHRMWnVfUTR4eVl2djZJamNWdjNMcUhBektmX0Y4NzUxbUJUSnd0dDg0cEdERUVLYnJ2RnFrZ0tlaUpFRlRiZ3dCZm9fWDkyejNQNEdCVE1SM3dGeGZKRzNqSXpBQV91cDVsV1ZjNS13RTZsQTN1QWduNDRxcWMwcTVEbDQzMXRGZXFJV1ZCSldnNjA3WQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQWGVfOUIwMjNtd081UVRpNXl4NERSaEU2UDNVeTMxNDlmUXdNR2JUOHpzX1ZCSlRmMEtJd0tBMGlGNGNWVm1mWDJIZ3Exb01xREI4WkpOMmU2X1E3NFpCeW1CSHRnNFB3dnNZb01JbEhRTUVNTFJzYUY0bXhVWXNOckVBZ1ZkZE9wMFpvLTF2LU9PUkJfNlBDaEJaQWtrY2ozV1NxVFZmOWJCWGl3cVRkYnZvdWlBQkxvZmxBeW5qSlFrbWJMc1RuTWM5WVAxcThiZUQ3d0FVUFVVYkFIUHJNempENXgwbFpnSmltd0QyY01lT1JDNUZXWWh0SlFvZWxNV2o4Tmd6UkoySHhXSFhwNWtlUVdpdw?oc=5",
           "source": "Motorsport.com",
-          "publishedAt": "2026-11-01T05:03:45+00:00",
+          "publishedAt": "2026-11-01T05:12:57+00:00",
           "kind": "Team news"
         },
         {
@@ -456,24 +449,24 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "5 late-notice F1 debutants and how they fared as Ryo Hirakawa replaces Esteban Ocon in Mexico City",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSnhGV0hyUGM0TkhoQ3VNUERFeXBKZ1Y5ZThZdlJFd3JqckZrX2xVaF9sQ3Y3ZkFIQmVkZm9tckNvVndNLWpkM0pDcWlEUTliYi0tQlJ6UmJndDZYeFZFVThCeG82THphYkJrWERJWHdHcVZrM0t6c0VGNEl5T3dUbDBZMXd1aV9RenJUVnl4WDJ2UWM5MEVwRGlqeDNyWGl0V09TVTNpMzVTdUdWVndnZEVaYmFDSzdIVXdnRjhrdDM5SVlmS1NDcFpZVXd2Snd2X1hTTjlISHZrMERuLVQzZGVHVWE2RTg?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-01T10:27:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "How Ocon's replacement is really faring on his shock F1 debut",
+          "url": "https://www.the-race.com/formula-1/how-ocons-replacements-really-faring-on-his-shock-f1-debut/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-01T09:50:59+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Ocon denies physical altercation rumours in first statement since being dropped by Haas for Mexico GP",
           "url": "https://www.autosport.com/f1/news/ocon-denies-physical-altercation-rumours-in-first-statement-since-being-dropped-by-haas-for-mexico-/10870348/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-10-31T23:13:59+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "'Dream come true' – Hirakawa details late Haas call-up for Mexico City GP ahead of F1 debut",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNSnlaSmRGR2lFOTFUMG1lUzVkRV9acmVycmdJcW1Udk1vUlA4V05aeTJOVXFjejFyUmk3VnVTdjdPbHpSX09GSXVidnhOeW5scEpySTlKZmJQRkRwTXVLSUlOZlpWQ3kwNFFybTdMb1dqSXRRU1NNXzc1Tmc2V0lTNXBvSFE0eUNnWVFicWp4RkNnYkdnSkVRZ3lSbjV3ZkQtVlFwTmtyaFc1V2FRdXBFRHlpYXdTZktIT2tqRjZyZ0ZHcGhZeVUtTHBvcm9LODk4QnVBektLRnN1SEVMQUxxZXNOUTJsa3Vq?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-31T23:09:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ocon confirms “difference in viewpoints” led to shock exit from Haas",
-          "url": "https://www.racefans.net/2026/10/31/ocon-confirms-difference-in-viewpoints-led-to-shock-exit-from-haas/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-10-31T23:06:39+00:00",
           "kind": "Team news"
         }
       ],
@@ -498,6 +491,13 @@
       "name": "Audi",
       "stories": [
         {
+          "title": "Bortoleto thanks his mechanics after Audi troubles in Mexico City",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQbFN6Q1RLdEE3OXg1M2FGdDNSc2lqckNoNlB1Tm1Dd09FT1o3MjQ5bTVBZ2tRZ1QtaE9wOUtLd3dubVA3RzNFRUpGTlJFNGNxVVcwem1KYTIyOEdidjJ0bUpSVktxVGFpTnVRaUthRTdIMk1ubXhZaWE1MWcxZ3FaOTBlOU90RTVRR2RBT2RKTWFqQmttWWJrbTlPSGVtQm14eEJMOEo5bDNVVElqcUFuMmMtUEFZU05Nc1g4?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-31T22:33:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Fan Forum: Red Bull, Audi, Haas, Mercedes, Alpine and Ferrari's drivers on the fan stage in Mexico",
           "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaEVDLTZ6Zm0zRV9fMnMyNk15QXhkdy1VU1d6TGpfVlc5UWdTRFMzRHo4ZERQWk1RaDliSWk4eUxUYzlYbzJTN1VKNkR6LVZDVmlMZEw1THY2WWhwNHNVQ3Bab09iSlZpWnNvRlNSTm5fWjZYNk9ZSXFjeVc4Y2RWRkxrcWxNX2dfbjk3RkpHaVVVQXE1eGNtOHpsNmJieUdmMjhGQVNWSmJra3FadG9PRkpvUFN2RDB1c0JVbGFQbnN6a3gzeTJBS3dIOUxzY01nc3k0RE45bElzbGJoR244?oc=5",
           "source": "Formula 1",
@@ -512,11 +512,11 @@
           "kind": "Team news"
         },
         {
-          "title": "Midfield fight on a ‘knife’s edge’ as Audi target Haas",
-          "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNSXM5eHpQRkhyLWxBcUJlVDVWS3RXRVpQMklLZHlrVDFOUzFmYi13RC13ZnlwaFM2QnlwdFFmQWR3NDN5SkEwOHhkYmRBdkNPckNlbVVISy1PdXE0RzZxTlNON3VSbmdOd2pfSzZ4eWswMGJYVUlQMXJwQTZTZC1DdTdQUE9oU3JTMzg0RlQ5T3NJMnV0TDQydEtGYlpHbWlOeW4zQ056SHlVeHRUdnNPc0Z5cHNZdXliV1BIaDN4OGNOcGgxLTNSaVFTdXFFT0FReU5GVTNjQVFjRTNWenVLUVp1cGM3UQ?oc=5",
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-30T14:07:00+00:00",
-          "kind": "Team news"
+          "publishedAt": "2026-10-20T07:00:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -565,13 +565,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-10-30T20:50:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Cadillac reveals date for F1 engine factory debut, thanks drivers for being “patient”",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHpxYnJTTXVuZ0lhZmlyRFBfMElmZ0l6UXdzREhKZ19ic1BqYUdhZjVYd0hmcDdIemtRbWlTS0hESFNqOW9zWFBnLU5Bc1BwZjhONUUzenhXX2hTNjJST19ha05fUzRGRjhGSmNJWUt1R1YwSGx4QXNkSUJWLVBmWElia0F4RVdZQ09UcWtB?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-22T07:00:00+00:00",
-          "kind": "Technical report"
         }
       ],
       "declarations": [
