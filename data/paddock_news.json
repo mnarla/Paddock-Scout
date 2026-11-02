@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-02T02:39:14.808330+00:00",
-  "newsUpdatedAt": "2026-11-02T02:39:14.808330+00:00",
+  "updatedAt": "2026-11-02T06:29:18.859871+00:00",
+  "newsUpdatedAt": "2026-11-02T06:29:18.859871+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
@@ -14,17 +14,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Antonelli clinches title as Ferrari mess helps Verstappen win",
-          "url": "https://www.the-race.com/formula-1/antonelli-clinches-title-as-ferrari-mess-helps-verstappen-win/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-01T22:39:22+00:00",
+          "title": "‘Ferrari made it difficult for themselves, fighting each other’ – Verstappen on Mexico win",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORUJjWVNXU2FoUkM5ME1RUm5BUzdJaTI5dzlfQjJ6Skk4dTVVdzJJVEQ0ZGZ3SnNCNUZxNzRFVXFQNUh2MVRYZXBPUzlpVDBEZkpwLUNFaXFtUVdyZ2J1VXJ5V3ltd3VKYVNlVTBkcVh1NUhPT2NmX0tfTFhCeFpqY2FIS2J0ZGNEem5oNC1aOXBnMUN5bjdjNnBQU3RUZUtqbHFZdWlfcnlFQzZYY3hrdTVHZGk1YVdGWW1YaVgzcW9fUFp6VUd0bDFvRjRJNURGelZXMW1B?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T00:42:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "F1 Mexico GP: Antonelli becomes youngest world champion as Verstappen holds off Hamilton for victory",
-          "url": "https://www.autosport.com/f1/news/f1-mexico-gp-kimi-antonelli-clinches-world-title-as-max-verstappen-holds-off-lewis-hamilton-for-vic/10870724/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-01T22:38:22+00:00",
+          "title": "Max Verstappen on the opportunistic move that earned him ‘fantastic’ win at Mexico City Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPc0xwaEJjNUlZYXZ0VVZJdWxuYWM0NXRNTUFxVUNvSGJzYkk0VHc0d2pFdmZTRl96NkE0d1Rjc0VWM0F2M3FDejBkSWFXY1pWNUlRRUlIMkFOQi1kZEs0akNYSlNUNnVMazJKWkRVMEJSOWJPRFRPZE5JMmptQzVBQjNmT0gzaFQzZm9EYlFVS0lQRXcyT1F2SEdBZTZLSzFqSVgwUHdHNG83dWk4blY1SElYS0RPLTZnY195MEoydFdkOC1EMnFfcmNOWVNKZV9GbE9OZVVkVkk5Vlh1Nl85ZUN1eEk?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T00:30:00+00:00",
           "kind": "Team news"
         },
         {
@@ -35,10 +35,17 @@
           "kind": "Technical report"
         },
         {
-          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-20T07:00:00+00:00",
+          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOV9XNDNMRHBuZnkxTGpsd0Q3LTROdlRXMVhsUTlUcjAtUGhIbENNY3FPLVc2YW5XMWdlR1JTZjIzQU1Hd0lzeFg2WjJpem5salc4eDgtWF9WWFlUTEpYTWZKRnhmMWNjZ091TERWck9SRExvMzRDdnBXNEhQelBYZG50NEZ6dFJuemFKWmpRM3RmUGZRTmQ5NkhuUV9YWkdq?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-10-23T07:00:00+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-22T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -59,6 +66,13 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "'Serious talks’ – Hamilton on costly Leclerc battle",
+          "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPTi1LX3NtY0FwTENHZm9lMlBSTE1WUW1YMFo1Rm93VGtPNENocEFseXVQWmJXY2hvUFZqeHBXekYtMUNpWFJEUzdOT3d0M25fZERwWGdmMWRsNV9hTnc2T3ZDZ2x2dUNfTFFocmRpZGhobmlySm5kZW9qeE54ZFpZSGk3NFhlRTlXejlUODZLYWY5UHFXWktleWlLLWtuTXJ1NUN2WmhJVkJkUDhvT2JmaUVBeFZaZi1MTlF0WHFFaWlJRzNHYzk2VS10UXVaaUh4UjZNbmx6UlFZaWxudkI3V2NqSEk2S2dpZ2JhWGFUWl9KTFBoTnJR?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T02:19:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Leclerc concedes he 'deserved penalty' over Hamilton clash in Mexico City GP",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNzcyYmc4N1ZCV3ladVU3NXl6ZzAySVV2bjVDUVBoZU5BSUluNGZ5cEpsY0lONGNjRGpPMFJ2eGtiR1VGeHNQTmw0YkFwdjhXa0wzbGM0NWROQ2lZTGZzUS01dmpnb2pXNkNYNEs3SktlQ1ZPLUJvMEVzcGVUVk1XN2VpQldsVy1uMHNxT2VvVVRuRmdzR3ExSHcxNjFuY1diYUlUaVRPcHlVbFZDT3paVVdXMjRKMHFJdXhtUjZmN3dsQW56VVV4Z1lmcnMtaW1OUVVGT3pxNA?oc=5",
           "source": "Formula 1",
@@ -73,17 +87,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Why Leclerc didn’t give up Mexico GP lead after cutting Turn 5",
-          "url": "https://www.autosport.com/f1/news/why-leclerc-didnt-give-up-mexico-gp-lead-after-cutting-turn-5/10870807/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-02T00:06:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "What went into Ferrari's upgrade package in the US?",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-28T09:36:37+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOV9XNDNMRHBuZnkxTGpsd0Q3LTROdlRXMVhsUTlUcjAtUGhIbENNY3FPLVc2YW5XMWdlR1JTZjIzQU1Hd0lzeFg2WjJpem5salc4eDgtWF9WWFlUTEpYTWZKRnhmMWNjZ091TERWck9SRExvMzRDdnBXNEhQelBYZG50NEZ6dFJuemFKWmpRM3RmUGZRTmQ5NkhuUV9YWkdq?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-10-23T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -104,24 +118,24 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "'Unbelievable' – The F1 grid praise new champion Antonelli",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOdXg1RU1LVzZRUWhnWmlCeHpkTVpzeGVIVjhSLWhRVF9qVDBKbnBESGVtZS1BcTJsYXJtNWQ5ZWw0cmM2c3N4Q2s3YnFwcExNZGhwbFRQT2hKN2xyWUhEYjg4WGlXelVtM0ExcXUyRlRWQkQzMmVDT0QwZnFEZzB4RXpQSWJqbGZQcmFjQld6OHFvME1BTnVsTXB0bVQ3QnhEM1ptSEFlVVJsTUVxd3ZpS0VjSHNIVjhhakpoRWFjOTIzalhyOWktd2l3T0E1eUVHbThlRDU0cjJBX2hkR3NkdnF6WmhqaUU?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T03:01:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "‘People were doubters’ – Wolff on Antonelli’s title glory",
+          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNS0Y2WTltcGRiZEY4djN1WHRKR2p6Rnp2MERKdGFFQVFGOXpfd05XWnNGS1VJRlcwclk5UzU4eU03bmt0ckh3blNxT3NmTGhBdXdoZjg5RjBJQmFwUE13S0FkTF9Ja1ZmbEJIcGIwaHdEVWlqekp6X0JOWWNZdTFVTndzSUNKbnU3SzJGTmRvMFJEQnlEeDRnUGhWRjAwSVlhX2h5ZEhCODdIZUItMGFWZF85OEpGN2Rfb25COEEwa3dzS05RSUFodHBUU3VlemRHWUJ6TFhCZGZNZzU4NnY4MGdFNA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T02:39:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Mercedes explains 'distraught' Russell's post-race absence after fine",
           "url": "https://www.the-race.com/formula-1/mercedes-explains-distraught-russells-post-race-absence-after-fine/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-02T01:52:25+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli shares touching reaction to ‘incredible’ title win",
-          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPUTFjVWI2N0FjT3NLWEd3QndPXzE3YlRpZl90X1p2XzdkY3hzb3o5Ty1oT0VJTFpxVldobF90WTlwT09mRkxCZm9ySERRQ3d1MHhhTkJBVW9hNWpwSkJIYzBqX0hHX1ZlRkFObXR3YjBMQ2c0THF6V1hSQ2lFWGd0U0k5Y2JURjI0SUxUMmpBaUtPVFRxOUlFRHdDMGxKUVlKcl9DR09GQmttN1VQSm1QaHJ1aF9pZTdOT2F5YVNUVGNGbDlrTFBIUDlGYUVEMDNSOHJmdWFxYllYZUpVQVpEWm02Mi1YTFE0dmhwNE5DdlZxenFlbmMwQ0ZzbzRwdzZZdGY3cFJEYllsLWtCSGdGZnZabw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-01T23:28:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Social Media: Vettel congratulates Antonelli for breaking his record as youngest F1 champion",
-          "url": "https://www.racefans.net/2026/11/01/social-media-vettel-congratulates-antonelli-for-breaking-his-record-as-youngest-f1-champion/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T23:15:41+00:00",
           "kind": "Team news"
         },
         {
@@ -160,6 +174,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "Penalty drops Oscar Piastri out of F1 Mexico GP points",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQTWpBc2RyR0lJTXUxUGV4RkN3X19OaENlQ2J1cC1ET2d3YVAtVVJzV056OEpyQ3dpUG5QanE3b2FJWlliRkdWN0IzQkhvazM0dW1zOWc0S0VKRzNvOTFZWjhqYVZyNXB4ZEVJX3dsb2ctZ2ZvNzBkRjJuYWV3OUUzbWZSVTBfbzcxSWtiZGJlRG1hMklQMzFOeF9WaG83bjA?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-02T02:58:49+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Piastri out of F1 Mexico GP points after post-race penalty for Lindblad clash",
           "url": "https://www.autosport.com/f1/news/penalty-drops-oscar-piastri-out-of-f1-mexico-gp-points/10870864/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -171,13 +192,6 @@
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVzNZVFJLamVVSlNPRFk5WHVFVzhuSGxEenVaNEVUeVo1aFAwMmVDOWFsRlZPdGc3bndaQVpaWEhQTHdGV2d2QVhyM2NQWlVDUU9EeTZkT1pUMG1uZEpEcnFOYW1HdGc5enUxODJVOE5mUnREenRPSGdsaXg0TlpZZ2pYc0lBX2NuTGVFWFB5MDYxSjZoOVg4bHVVNFRKaHZRYjBCZXV4cTU2SHFNb0JWQ0xHRXFxOW9CS1Q3ZEVRTzVIcmNXclJvMFk2aUJOanlDTmIw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-02T00:35:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Piastri punished for Lindblad collision",
-          "url": "https://www.the-race.com/formula-1/piastri-punished-for-lindblad-collision/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-02T00:25:26+00:00",
           "kind": "Team news"
         }
       ],
@@ -211,10 +225,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Fan Forum: Mclaren, Cadillac, Racing Bulls, Williams and Aston Martin",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNMHhPZTN6Z1RjUlB2S05ZSnN4YklkdkU3TzlrVXlpZWFWdV9DRzg0dFZFbGc5ZGdMc2NpWGNSSzNIMUpxRU1kSm9xU2VHMTZmX3cwUHpQaTBkX2k5T1NpeFFvYTBrRG5nR1RBTUw2aVZBMGpfRTN4a1pzdkRuMFlBQ1ZTakJ3WVgxSjlMV3NGSzIxbU5rbzFmbWdkX3htY1pydldaOFE3V0ZkMmtEX3VjOXVidnRqUHFQSy1r?oc=5",
+          "title": "‘We are a little bit closer than previous events’ – Alonso",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZXJqdG9lR2VpNkJaMzd5bWxoT2ZWOGtNNVJBem8wWkJSaFI4Sy1raFI5YUxKSWlvVmhOT3lQRTVwdHhLZEhsbHdsQ00ydjFzN2twSWh3QjZwU0RLa01QalhQeWRNYnkybFN3eUV1dGVNN0x4VW0zQ1AxLTdsdmVienlXZS1MQ1Mwc3lvc2pvSktYeWpZRWhkcjhEUWdSN2w3MmtwVnEyeEpDRjB1?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-30T20:39:00+00:00",
+          "publishedAt": "2026-10-31T01:19:00+00:00",
           "kind": "Team news"
         },
         {
@@ -239,6 +253,13 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "Alpine drivers penalised post-race, Ryo Hirakawa scores on F1 debut at Mexico GP",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPeHdsSmZVSTZjdkFqLXI5Q2tIQ2Z0bDQzLXhKTnNDbXFJYkxjTm5LTmNPZ3FwblJUam9OdXdYSlJ1V19IQUlNNUQ2aHUyd1BMNXJwTE82R1V2c0c2RzRwaFpNTi1yUlRabjJvMzBmVEdocTFZNUFQTDBJdjFaQjZ0ZnVLOEUwUDl0WEdhcDlTWVZVT1lSZjd2eWR6NXI4RXlyMUNVLWRSRjY1Y2I5TXAzczRYS0FxX1J4QVMwcVNCOWdyRmZDdUxScjJWN1NMNlI2VEdyb1pyTWhLMGdwazVzT2M5eUxhanFNWXpIa0l6SlprSTZjRUthYy00aUFiRzd4T3BRU1QwcXQtdHRWemdpLVJBbldQSm1idjlmaXROdE1SRlZmZFNwU0NCZVF2SjlhMUE?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-02T02:18:56+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Gasly and Colapinto penalised post-race, Hirakawa scores on F1 debut at Mexico GP",
           "url": "https://www.autosport.com/f1/news/gasly-and-colapinto-penalised-post-race-hirakawa-scores-on-f1-debut-at-mexico-gp/10870863/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -250,13 +271,6 @@
           "url": "https://www.the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-02T02:09:22+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Alpine duo stripped of Mexico City GP points after penalties",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONk1OMnJ2cl9QeDBhVFNaN1dEWGwxZzZ4NWhHSlFkcUt3WUlRVGYxMXp3ZnBEMDNTRFg0eEgzdGZyc2szZGFWSUoxVVpJRDh1aVdSMG85MG5FVnVQZ2F3UkpyOGo5SFdBZjZISVFTVWR5WWtIZWp2aWtUZDhaMU8wakhLNXBRMmdkeTVGTWd5U2VISDhPMU1sMnY3MTNXWWlMcFRRZlZSdFdDTndSaXRCUGgwV3V1UC1XZnE2bWt3SWh2QzhKWW01aGs1ZnRYdkxHbk1mM3k4VGRKb3V5VXNsU1NMUFQ2YU8z?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-02T01:58:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -401,13 +415,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-10-31T01:23:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-20T07:00:00+00:00",
-          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -429,7 +436,7 @@
           "title": "2026 Mexico City Grand Prix: Race red flagged after Bottas crashes out",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFhjY3ZzbUM1cVJCMGhfTlBrbWl5elVmYjVVcGs2ZmdkLW1jc3YyNjdYZFpRb3hDSlBnRk9sSS1Hd1FMNkZlaS0taUc2V2VBYzNoenhvLWxPSWNjOXlUSUlrcTVNeHcxZzBSVjB3U25TR3Z1bnRMaXdSRHN2VXc5Qk5nSUVNSzlFc0Nsdi1CTmlPeVg1ZzJXc1JjXzl2eFJKQVM2VFllSVlVLTRCc0FNdm1IV2dqSHdpTWdOclRCZ2Y?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-01T22:43:57+00:00",
+          "publishedAt": "2026-11-01T22:44:18+00:00",
           "kind": "Team news"
         },
         {
