@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-01T22:57:08.811653+00:00",
-  "newsUpdatedAt": "2026-11-01T22:57:08.811653+00:00",
-  "race": "Mexico City Grand Prix",
+  "updatedAt": "2026-11-02T02:39:14.808330+00:00",
+  "newsUpdatedAt": "2026-11-02T02:39:14.808330+00:00",
+  "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "How Ferrari's loss became Verstappen's gain at F1's Mexico GP",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeE9qNzcxOUJFdGZUd0p3cktnakU2Nm9Dd3BJNEJWeWFjSkJYZWRyZFVXLVQ2VHBQb000VXlnVi1hYU5KU21IM3k0RDZ1eUYtUHJNRjk5blY2Z2UwVjB4U0twMEVkRkVGbW5hTGlWTDQ3RGpBUm4xUGQyczJnM29yaEhJeDFIRDByZzc5MEwxaGwwMmJVS3dZR3BhaXczOExXRUJmQQ?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-02T00:54:54+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Antonelli clinches title as Ferrari mess helps Verstappen win",
           "url": "https://www.the-race.com/formula-1/antonelli-clinches-title-as-ferrari-mess-helps-verstappen-win/",
@@ -21,13 +28,6 @@
           "kind": "Team news"
         },
         {
-          "title": "Verstappen capitalises on Ferrari feud to win in Mexico as Antonelli takes title",
-          "url": "https://www.racefans.net/2026/11/01/verstappen-capitalises-on-ferrari-feud-to-win-in-mexico-as-antonelli-takes-title/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T22:29:42+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
           "source": "Motorsport.com",
@@ -35,17 +35,10 @@
           "kind": "Technical report"
         },
         {
-          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
-          "url": "https://www.autosport.com/f1/news/f1-united-states-gp-leclerc-beats-verstappen-to-top-fp1/10867509/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-23T18:40:35+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-22T07:00:00+00:00",
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-20T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -59,16 +52,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Front Corner"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -76,24 +59,24 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "Hamilton says Leclerc cost Ferrari victory in Mexico and calls for “serious talks”",
-          "url": "https://www.racefans.net/2026/11/01/hamilton-says-leclerc-cost-ferrari-victory-in-mexico-and-calls-for-serious-talks/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T22:53:14+00:00",
+          "title": "Leclerc concedes he 'deserved penalty' over Hamilton clash in Mexico City GP",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNNzcyYmc4N1ZCV3ladVU3NXl6ZzAySVV2bjVDUVBoZU5BSUluNGZ5cEpsY0lONGNjRGpPMFJ2eGtiR1VGeHNQTmw0YkFwdjhXa0wzbGM0NWROQ2lZTGZzUS01dmpnb2pXNkNYNEs3SktlQ1ZPLUJvMEVzcGVUVk1XN2VpQldsVy1uMHNxT2VvVVRuRmdzR3ExSHcxNjFuY1diYUlUaVRPcHlVbFZDT3paVVdXMjRKMHFJdXhtUjZmN3dsQW56VVV4Z1lmcnMtaW1OUVVGT3pxNA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T01:18:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Antonelli clinches title as Ferrari mess helps Verstappen win",
-          "url": "https://www.the-race.com/formula-1/antonelli-clinches-title-as-ferrari-mess-helps-verstappen-win/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-01T22:39:22+00:00",
+          "title": "How Ferrari's loss became Verstappen's gain at F1's Mexico GP",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeE9qNzcxOUJFdGZUd0p3cktnakU2Nm9Dd3BJNEJWeWFjSkJYZWRyZFVXLVQ2VHBQb000VXlnVi1hYU5KU21IM3k0RDZ1eUYtUHJNRjk5blY2Z2UwVjB4U0twMEVkRkVGbW5hTGlWTDQ3RGpBUm4xUGQyczJnM29yaEhJeDFIRDByZzc5MEwxaGwwMmJVS3dZR3BhaXczOExXRUJmQQ?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-02T00:54:54+00:00",
           "kind": "Team news"
         },
         {
-          "title": "F1 Mexico GP: Antonelli becomes youngest world champion as Verstappen holds off Hamilton for victory",
-          "url": "https://www.autosport.com/f1/news/f1-mexico-gp-kimi-antonelli-clinches-world-title-as-max-verstappen-holds-off-lewis-hamilton-for-vic/10870724/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Why Leclerc didn’t give up Mexico GP lead after cutting Turn 5",
+          "url": "https://www.autosport.com/f1/news/why-leclerc-didnt-give-up-mexico-gp-lead-after-cutting-turn-5/10870807/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-01T22:38:22+00:00",
+          "publishedAt": "2026-11-02T00:06:00+00:00",
           "kind": "Team news"
         },
         {
@@ -101,20 +84,6 @@
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-10-28T09:36:37+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "The reasons behind Ferrari's US GP upgrades",
-          "url": "https://www.autosport.com/f1/news/the-reasons-behind-ferraris-us-gp-upgrades/10867545/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-23T20:05:02+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "F1 United States GP: Leclerc beats Verstappen to top FP1 in upgraded Ferrari",
-          "url": "https://www.autosport.com/f1/news/f1-united-states-gp-leclerc-beats-verstappen-to-top-fp1/10867509/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-10-23T18:40:35+00:00",
           "kind": "Technical report"
         }
       ],
@@ -128,16 +97,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Floor Body",
-            "Floor Board"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -145,24 +104,24 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "Antonelli clinches title as Ferrari mess helps Verstappen win",
-          "url": "https://www.the-race.com/formula-1/antonelli-clinches-title-as-ferrari-mess-helps-verstappen-win/",
+          "title": "Mercedes explains 'distraught' Russell's post-race absence after fine",
+          "url": "https://www.the-race.com/formula-1/mercedes-explains-distraught-russells-post-race-absence-after-fine/",
           "source": "www.the-race.com",
-          "publishedAt": "2026-11-01T22:39:22+00:00",
+          "publishedAt": "2026-11-02T01:52:25+00:00",
           "kind": "Team news"
         },
         {
-          "title": "F1 Mexico GP: Antonelli becomes youngest world champion as Verstappen holds off Hamilton for victory",
-          "url": "https://www.autosport.com/f1/news/f1-mexico-gp-kimi-antonelli-clinches-world-title-as-max-verstappen-holds-off-lewis-hamilton-for-vic/10870724/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-01T22:38:22+00:00",
+          "title": "Antonelli shares touching reaction to ‘incredible’ title win",
+          "url": "https://news.google.com/rss/articles/CBMikwJBVV95cUxPUTFjVWI2N0FjT3NLWEd3QndPXzE3YlRpZl90X1p2XzdkY3hzb3o5Ty1oT0VJTFpxVldobF90WTlwT09mRkxCZm9ySERRQ3d1MHhhTkJBVW9hNWpwSkJIYzBqX0hHX1ZlRkFObXR3YjBMQ2c0THF6V1hSQ2lFWGd0U0k5Y2JURjI0SUxUMmpBaUtPVFRxOUlFRHdDMGxKUVlKcl9DR09GQmttN1VQSm1QaHJ1aF9pZTdOT2F5YVNUVGNGbDlrTFBIUDlGYUVEMDNSOHJmdWFxYllYZUpVQVpEWm02Mi1YTFE0dmhwNE5DdlZxenFlbmMwQ0ZzbzRwdzZZdGY3cFJEYllsLWtCSGdGZnZabw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-01T23:28:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Verstappen capitalises on Ferrari feud to win in Mexico as Antonelli takes title",
-          "url": "https://www.racefans.net/2026/11/01/verstappen-capitalises-on-ferrari-feud-to-win-in-mexico-as-antonelli-takes-title/",
+          "title": "Social Media: Vettel congratulates Antonelli for breaking his record as youngest F1 champion",
+          "url": "https://www.racefans.net/2026/11/01/social-media-vettel-congratulates-antonelli-for-breaking-his-record-as-youngest-f1-champion/",
           "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T22:29:42+00:00",
+          "publishedAt": "2026-11-01T23:15:41+00:00",
           "kind": "Team news"
         },
         {
@@ -194,13 +153,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -208,32 +160,25 @@
       "name": "McLaren",
       "stories": [
         {
-          "title": "“Everyone’s stuck in this speed limiter”: McLaren pair expect few passes in Mexico",
-          "url": "https://www.racefans.net/2026/11/01/everyones-kind-of-stuck-in-this-speed-limiter-mclaren-pair-expect-little-passing-in-mexico/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T07:15:59+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Norris admits McLaren are ‘too slow’ after Mexico Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVFFnX3dMMlZ5U0R3LVBQejFWT0laUmNKUG11UU9Ya1dnNUxQR3dnMDA4ZkllSHA3ZG5JMkRMVnJzNkNiVml2MnVnV2d4WVM5NDhza2xZM3Z2SVk3RHJtcWJ4bU80TzFDbG0tMHNlTGRyeTNoOGE1UnJRZmMyR05xSmtITTFQRGRzZGlKeENBYmJCeTFERUE3Q3lfa2ZCRmMxZm80VkJBeGtvenlhdmRUZC16Y20xTE4ySW96bUkwa3MwM25xRDh0WGZMWnUxa2V6bkxCUWtFc3QzUXZlVGc?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-01T02:04:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "'Not sure what happened' – Piastri reflects on 'bizarre' Q2 exit in Mexico City GP Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQVU40aTBoOUx1TXJJa0l6TVZpN0RSOUJLOHQ5T1hmSXlfa0VZdWdZOV8zUWhYWVdIZHNwUEdfa0NXbTZUZFhtektPMGN0bFRsN3NhdG9sNjJfQkJzaTJzdDdfU0pQZmpfcXNQTUkyZ2ZZQjVkc0IybktEWEZ2UGpEMExpWkJ1bmNLRkMwLWtCNWN2R1N5OG9GMmJhSWZHbzcyZkY4ZDhlaTBnZ3NpN2xmODByamZqVGlVYm5hRm5DbHh4ekV6LXdmSzBiZGI5NjdSSXEyZmZqWmFLZG1VVENtVm1rOTRsaTFY?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-31T23:23:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "McLaren's aims for its final F1 2026 upgrades amid decline in form",
-          "url": "https://www.autosport.com/f1/news/mclarens-aims-for-final-f1-2026-upgrades/10867609/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Piastri out of F1 Mexico GP points after post-race penalty for Lindblad clash",
+          "url": "https://www.autosport.com/f1/news/penalty-drops-oscar-piastri-out-of-f1-mexico-gp-points/10870864/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-10-23T23:04:52+00:00",
-          "kind": "Technical report"
+          "publishedAt": "2026-11-02T02:19:42+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Piastri receives post-race penalty at Mexico City GP",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQVzNZVFJLamVVSlNPRFk5WHVFVzhuSGxEenVaNEVUeVo1aFAwMmVDOWFsRlZPdGc3bndaQVpaWEhQTHdGV2d2QVhyM2NQWlVDUU9EeTZkT1pUMG1uZEpEcnFOYW1HdGc5enUxODJVOE5mUnREenRPSGdsaXg0TlpZZ2pYc0lBX2NuTGVFWFB5MDYxSjZoOVg4bHVVNFRKaHZRYjBCZXV4cTU2SHFNb0JWQ0xHRXFxOW9CS1Q3ZEVRTzVIcmNXclJvMFk2aUJOanlDTmIw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-02T00:35:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Piastri punished for Lindblad collision",
+          "url": "https://www.the-race.com/formula-1/piastri-punished-for-lindblad-collision/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-02T00:25:26+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -245,17 +190,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Front Corner",
-            "Rear Corner",
-            "Diffuser"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -298,13 +232,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -312,24 +239,24 @@
       "name": "Alpine",
       "stories": [
         {
-          "title": "‘This experience has shaped me’ – Alpine's Pierre Gasly opens up on his work with Make-A-Wish",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVU81N09HU3dqbkVCZk43S294bjlmMWJGNV9fdHVXbTVmOE80aThIQ1kzOURkMDYxTWFOWml4dExydWhDeXR2aTV3ck1hUnF2cE9pWEw2UFZJMk5NaFVPeUhKdjdtTk5mQWNhaHVKaHQtV0QtVm1Zb19MVUMwbUtFdlNmRkhMWTdySmZGcTI0U1BOSllqbnJRUDhWZE5PU0FJUDE5cHU4azdJYjdTWkt5SE5kN19YVXpjN2t3elZVMlpHekhIM3NWcHJCaWFZR2dybGJGYVFn?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-01T11:36:00+00:00",
+          "title": "Gasly and Colapinto penalised post-race, Hirakawa scores on F1 debut at Mexico GP",
+          "url": "https://www.autosport.com/f1/news/gasly-and-colapinto-penalised-post-race-hirakawa-scores-on-f1-debut-at-mexico-gp/10870863/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-02T02:16:28+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Fan Forum: Red Bull, Audi, Haas, Mercedes, Alpine and Ferrari's drivers on the fan stage in Mexico",
-          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPaEVDLTZ6Zm0zRV9fMnMyNk15QXhkdy1VU1d6TGpfVlc5UWdTRFMzRHo4ZERQWk1RaDliSWk4eUxUYzlYbzJTN1VKNkR6LVZDVmlMZEw1THY2WWhwNHNVQ3Bab09iSlZpWnNvRlNSTm5fWjZYNk9ZSXFjeVc4Y2RWRkxrcWxNX2dfbjk3RkpHaVVVQXE1eGNtOHpsNmJieUdmMjhGQVNWSmJra3FadG9PRkpvUFN2RDB1c0JVbGFQbnN6a3gzeTJBS3dIOUxzY01nc3k0RE45bElzbGJoR244?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-31T22:08:00+00:00",
+          "title": "Double penalty costs Alpine all its Mexican GP points",
+          "url": "https://www.the-race.com/formula-1/double-penalty-costs-alpine-all-its-mexican-gp-points/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-02T02:09:22+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Nielsen on Alpine’s prospects: ‘We’re quietly confident but with work to do with Franco’",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRGhmbTRpbGtJMDNGdjhoTkphOHNpaDlHdktNeG44SmRnblNITGRVWnJUenlLdk5VQmlQN0N4TDBaeGVPcXlXQy1mT1pHMjZ1U2tJMTlUTmZ0STVsRS0zTTREZmNiNS1UdlFzVnV2V0R3aHJYeEhUQ3RNeFVuQlZBT2ozN3BNeVFtWjFJSUdaekhrTWhNWDhSRXZlMzFQdFh1RmV6NzZaUEhsZ3lGNy1qbGY2NEVqdTdCc2VtQ2hHQkZaZnpOXzA4VVRYWFZZTTlIRm5r?oc=5",
+          "title": "Alpine duo stripped of Mexico City GP points after penalties",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxONk1OMnJ2cl9QeDBhVFNaN1dEWGwxZzZ4NWhHSlFkcUt3WUlRVGYxMXp3ZnBEMDNTRFg0eEgzdGZyc2szZGFWSUoxVVpJRDh1aVdSMG85MG5FVnVQZ2F3UkpyOGo5SFdBZjZISVFTVWR5WWtIZWp2aWtUZDhaMU8wakhLNXBRMmdkeTVGTWd5U2VISDhPMU1sMnY3MTNXWWlMcFRRZlZSdFdDTndSaXRCUGgwV3V1UC1XZnE2bWt3SWh2QzhKWW01aGs1ZnRYdkxHbk1mM3k4VGRKb3V5VXNsU1NMUFQ2YU8z?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-10-31T00:44:00+00:00",
+          "publishedAt": "2026-11-02T01:58:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -340,16 +267,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Floor Corner",
-            "Rear Wing"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -385,13 +302,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -399,24 +309,24 @@
       "name": "Racing Bulls",
       "stories": [
         {
-          "title": "Featured Comment: Lawson’s disqualification highlights another flaw in F1’s 2026 rules",
-          "url": "https://www.racefans.net/2026/11/01/featured-comment-lawsons-disqualification-highlights-another-flaw-in-f1s-rules/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-01T14:48:26+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Liam Lawson disqualified from F1 qualifying in Mexico – here's why",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZGh0YlF4YU4yR05QbTlCVHRMWnVfUTR4eVl2djZJamNWdjNMcUhBektmX0Y4NzUxbUJUSnd0dDg0cEdERUVLYnJ2RnFrZ0tlaUpFRlRiZ3dCZm9fWDkyejNQNEdCVE1SM3dGeGZKRzNqSXpBQV91cDVsV1ZjNS13RTZsQTN1QWduNDRxcWMwcTVEbDQzMXRGZXFJV1ZCSldnNjA3WQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-01T05:12:57+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Lawson disqualified from F1 qualifying in Mexico – here's why",
-          "url": "https://www.autosport.com/f1/news/lawson-disqualified-from-f1-qualifying-in-mexico-heres-why/10870411/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Piastri out of F1 Mexico GP points after post-race penalty for Lindblad clash",
+          "url": "https://www.autosport.com/f1/news/penalty-drops-oscar-piastri-out-of-f1-mexico-gp-points/10870864/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-01T01:54:48+00:00",
+          "publishedAt": "2026-11-02T02:19:42+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Piastri punished for Lindblad collision",
+          "url": "https://www.the-race.com/formula-1/piastri-punished-for-lindblad-collision/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-02T00:25:26+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Piastri loses points finish after 10-second penalty for Lindblad collision",
+          "url": "https://www.racefans.net/2026/11/02/piastri-loses-points-finish-after-10-second-penalty-for-lindblad-collision/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-02T00:10:25+00:00",
           "kind": "Team news"
         }
       ],
@@ -430,18 +340,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Rear Wing",
-            "Floor Body",
-            "Coke/Engine Cover"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -477,13 +375,6 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
@@ -510,6 +401,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-10-31T01:23:00+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-20T07:00:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -521,23 +419,19 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Front Corner",
-            "Front Floor",
-            "Mirror stay"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     },
     {
       "name": "Cadillac",
       "stories": [
+        {
+          "title": "2026 Mexico City Grand Prix: Race red flagged after Bottas crashes out",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVFhjY3ZzbUM1cVJCMGhfTlBrbWl5elVmYjVVcGs2ZmdkLW1jc3YyNjdYZFpRb3hDSlBnRk9sSS1Hd1FMNkZlaS0taUc2V2VBYzNoenhvLWxPSWNjOXlUSUlrcTVNeHcxZzBSVjB3U25TR3Z1bnRMaXdSRHN2VXc5Qk5nSUVNSzlFc0Nsdi1CTmlPeVg1ZzJXc1JjXzl2eFJKQVM2VFllSVlVLTRCc0FNdm1IV2dqSHdpTWdOclRCZ2Y?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-01T22:43:57+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Bottas escapes injury in race-stopping crash",
           "url": "https://www.the-race.com/formula-1/bottas-taken-for-medical-checks-after-race-stopping-crash/",
@@ -546,18 +440,18 @@
           "kind": "Team news"
         },
         {
-          "title": "Bottas taken for medical checks after race-stopping crash",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOLXRBV3lCYktkSElBSkhjODQtUWppWHMtUGRnTDVwODJNSmRtU0lTbE0xX0FXVXBaRWNXN2p4clBRMjNBNGg5dGNSSkdrWWZtOXVFcXpodTlzdU5LVHJZbFRtM2k0VFNuOUJrd2Z0dXFlVVlQU1VHOFVpRmtQWGxPVFVWZTk1bGhnNFBGQmdFMkpaQW43UFN2eQ?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-01T21:33:20+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Mexican Grand Prix stopped after Bottas crashes out at turn one",
           "url": "https://www.racefans.net/2026/11/01/mexican-grand-prix-stopped-after-bottas-crashes-out-at-turn-one/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-01T21:14:13+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "Cadillac reveals date for F1 engine factory debut, thanks drivers for being “patient”",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHpxYnJTTXVuZ0lhZmlyRFBfMElmZ0l6UXdzREhKZ19ic1BqYUdhZjVYd0hmcDdIemtRbWlTS0hESFNqOW9zWFBnLU5Bc1BwZjhONUUzenhXX2hTNjJST19ha05fUzRGRjhGSmNJWUt1R1YwSGx4QXNkSUJWLVBmWElia0F4RVdZQ09UcWtB?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-10-22T07:00:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -567,21 +461,17 @@
           "event": "Mexico City Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "30 October 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Floor Fences",
-            "Cooling Louvres"
-          ],
-          "event": "United States Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "23 October 2026"
         }
       ]
     }
   ],
   "fiaDocuments": [
+    {
+      "event": "São Paulo Grand Prix",
+      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/S%C3%A3o%20Paulo%20Grand%20Prix",
+      "status": "unavailable",
+      "teams": {}
+    },
     {
       "event": "Mexico City Grand Prix",
       "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
@@ -646,84 +536,9 @@
         }
       },
       "status": "available"
-    },
-    {
-      "event": "United States Grand Prix",
-      "url": "https://www.fia.com/system/files/decision-document/2026_united_states_grand_prix_-_car_presentation_submissions.pdf",
-      "publishedAt": "23 October 2026",
-      "teams": {
-        "McLaren": {
-          "hasChanges": true,
-          "components": [
-            "Front Corner",
-            "Rear Corner",
-            "Diffuser"
-          ]
-        },
-        "Mercedes": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Red Bull Racing": {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Front Corner"
-          ]
-        },
-        "Ferrari": {
-          "hasChanges": true,
-          "components": [
-            "Floor Body",
-            "Floor Board"
-          ]
-        },
-        "Williams": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Racing Bulls": {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Rear Wing",
-            "Floor Body",
-            "Coke/Engine Cover"
-          ]
-        },
-        "Aston Martin": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Haas F1 Team": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Audi": {
-          "hasChanges": true,
-          "components": [
-            "Front Corner",
-            "Front Floor",
-            "Mirror stay"
-          ]
-        },
-        "Alpine": {
-          "hasChanges": true,
-          "components": [
-            "Floor Corner",
-            "Rear Wing"
-          ]
-        },
-        "Cadillac": {
-          "hasChanges": true,
-          "components": [
-            "Floor Fences",
-            "Cooling Louvres"
-          ]
-        }
-      },
-      "status": "available"
     }
   ],
-  "errors": []
+  "errors": [
+    "FIA documents could not be refreshed for São Paulo Grand Prix."
+  ]
 }
