@@ -57,23 +57,23 @@
         "Badge": "No update found"
     },
     "McLaren": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "2027-spec Front Wing",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Certainty": "confirmed",
+        "Summary": "McLaren introduced a new front wing concept featuring revised attachment points and flap geometry to serve as a development baseline for the 2027 season.",
+        "Pace_Delta": -0.06,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.06,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
-        "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "URL": "https://www.the-race.com/formula-1/mclaren-2027-f1-front-wing-breaks-cover-in-brazil/",
+        "As_Of": "S\u00e3o Paulo Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for S\u00e3o Paulo Grand Prix"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
