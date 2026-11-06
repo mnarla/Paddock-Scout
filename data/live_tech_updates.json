@@ -57,10 +57,10 @@
         "Badge": "No update found"
     },
     "McLaren": {
-        "Component": "2027-spec Front Wing",
+        "Component": "2027-concept Front Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a new front wing concept featuring revised attachment points and flap geometry to serve as a development baseline for the 2027 season.",
+        "Summary": "McLaren introduced a new front wing concept at Interlagos intended to serve as the development baseline for their 2027 challenger.",
         "Pace_Delta": -0.06,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.06,
