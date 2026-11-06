@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-05T23:42:27.032119+00:00",
-  "newsUpdatedAt": "2026-11-05T23:42:27.032119+00:00",
+  "updatedAt": "2026-11-06T07:05:53.951425+00:00",
+  "newsUpdatedAt": "2026-11-06T07:05:53.951425+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
@@ -392,7 +392,14 @@
           "title": "Rafael Camara",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-05T16:14:43+00:00",
+          "publishedAt": "2026-11-05T19:17:35+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Camara to make F1 debut for Haas in Sao Paulo",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNX0pHX0loOXMzcDlBWWRieEE3MXlQdnpUa3RaTk8tdk42YnpZOWlqZFMzRk5aYnpCOE1kOFlOX2ZDMGlsVlk0VDBIazh6UUltUGZvTTFiZU9QT25DRVIxSFkzRE4tcWFNYlFSUmFOQS0wRUlJdGVwVzJfUUw4OUt4REIwRUlZVng5TEZxeG9xcm1WMjA1VnUxdTVaYnV0U1k4eVRHYXNWQzFTcnRUWmhHQ2ZZZkJxNnBZdW91SldGSS1qbXFkTlpnNXVMQ2pyTjlsOWVKWEtjLVZyM2lnWFhLNzdPTzIxYlhnOXBJUjhwanU?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-05T16:58:56+00:00",
           "kind": "Team news"
         },
         {
@@ -400,13 +407,6 @@
           "url": "https://www.the-race.com/formula-1/f1-podcast-ocons-early-exit-and-camaras-early-debut/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-04T19:23:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ocon's F1 story is one of success, even if this is the end",
-          "url": "https://www.autosport.com/f1/news/ocons-f1-story-is-one-of-success/10871449/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-04T10:38:04+00:00",
           "kind": "Team news"
         }
       ],
@@ -487,13 +487,6 @@
           "source": "www.autosport.com",
           "publishedAt": "2026-11-04T14:34:40+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "When Cadillac will open its F1 engine factory",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdHpxYnJTTXVuZ0lhZmlyRFBfMElmZ0l6UXdzREhKZ19ic1BqYUdhZjVYd0hmcDdIemtRbWlTS0hESFNqOW9zWFBnLU5Bc1BwZjhONUUzenhXX2hTNjJST19ha05fUzRGRjhGSmNJWUt1R1YwSGx4QXNkSUJWLVBmWElia0F4RVdZQ09UcWtB?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-10-22T07:00:00+00:00",
-          "kind": "Technical report"
         }
       ],
       "declarations": [
