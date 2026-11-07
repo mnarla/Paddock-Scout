@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-06T20:58:39.041244+00:00",
-  "newsUpdatedAt": "2026-11-06T20:58:39.041244+00:00",
+  "updatedAt": "2026-11-07T01:00:32.023661+00:00",
+  "newsUpdatedAt": "2026-11-07T01:00:32.023661+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Red Bull ‘looking into quite a few changes’ for Verstappen",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcmRMeDJJYkJGOWc5Z1BuWjVzdk1LTS1DNHBPNEhPVGpqZlI0N2NudmJHaFE5WDlQZVFsM3k1d0ptMGpJTVM4VEoyUGFlZTNBYTBPNEhqQ3JvYnoyR0JTQkNFeUdfXy1ROW0wY0Yxa1dZQnNuVGVkNDFfTkhaZkRhZ3Q5YlJtTF9XTkZRcjZOWG9LSVliZGhaUnI3MEthdlhwTnFEcWhVUmJudldscndYTjNXcTJUcUtiVEsyZ1g1MlNibTFNams1eW1WdTNNUWxGbEFhRFg5NXhDTExrdEdHaEdhOEliYlRSWUtTLUhTUWRWWmxx?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T22:40:00+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Norris leads Antonelli and Verstappen in Sao Paulo FP1",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQU21oR3hTeEpkdEYwQ2Q0MkxqWml6OUU4empSN19TdmJicUpZS0tuOG94endidUU1dzI2LXJoZHh2VERoQVkyT1ZsSkhMWnV2WFMyeFk4VUR4ZE9HaXB2RjdTWkVjMEpiM01Td1NnNkVoUzJ2aXZ3X081TC1LVkQ1MkNJbUkzbXlkUnphMzJfSUdob29XT0Mtc3FqNEJZWUhady01OExqcEYyYWo4a0ljeUh1eGp1SkxUSzhSMmoyY29CSmhqSElwcnpKLVdtYy16TzhTaW9xNVdObmN0RWxjWTdR?oc=5",
@@ -18,13 +25,6 @@
           "url": "https://www.racefans.net/2026/11/06/verstappen-says-his-sudden-rise-to-second-in-the-championship-is-a-big-surprise/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-06T09:10:17+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "A 'big surprise to be second' in the standings – Verstappen",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOck5DN05hYXc5WUtQY0xsdzdJb1lDaGkxOVF2Wnh2VHBxdGdUY1lxSmxoUU9MTXdZQ1NYa1luSDQxb3dhVUUtNGc2ZW9wcnBjR2xrYU9uU2RfMGFfOENoejY2MWh3YzU3a05tOFN1R282SERJZzFWUFVVblN1b1prRkVwMjcyX1AwaHQ5TXlNQTRJZm5hajZiM05rTi1sNGNvZ0NpZGNKcnR6cFZ0Q3JBMjhDOUtxQ1JzVGtESnMzQ2Vtb3pienZjNFRaVVJQLS1VbjRhWkhuQ21fWEM1QXNYNDU0XzZ5WnR5QVFKQXFXZ0JWcFU?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-05T20:26:00+00:00",
           "kind": "Team news"
         },
         {
@@ -73,24 +73,24 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "What we learned about Ferrari’s key Hamilton/Leclerc meeting",
-          "url": "https://www.the-race.com/formula-1/what-we-learned-about-ferraris-hamilton-leclerc-meeting/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-06T19:42:15+00:00",
+          "title": "Ferrari have 'plenty to work on' in Brazil – Leclerc",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaW5ldXRlcExZQThOMC00QU5fTHl2aVZkWkFETUtRS05QV1ZfZlliSHZPanhPMTFVOHhhS0pCVkJVTDFLWFVCbDBOUUk0WUc0VGk0c1d2MEdIZDN0T3ZSUVhzY0hZbnN6TTlzYW9Gd1l4T2FaLXBsVng2ZUwzNEhyRGdrZ1d4dGlwRlZOWVotNW1uczI2a3RXOUhLLWpwak1GTEZFTGJXRDlnWFBXdFJxLUtKLXJ6ODY0UGdVTXVsd29yY2dvRDZLeUJQQW82bEpiOFpXeTE3OUY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T22:29:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Vasseur issues reminder to Hamilton and Leclerc in post-Mexico Ferrari talks",
-          "url": "https://www.autosport.com/f1/news/we-failed-so-we-had-to-react-fred-vasseur-on-ferrari-driver-talks-and-mexico-f1-fallout/10872249/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-06T18:46:02+00:00",
+          "title": "Ferrari’s racing guidelines “still the same” after Mexican GP talks – Vasseur",
+          "url": "https://www.racefans.net/2026/11/06/ferraris-racing-guidelines-still-the-same-after-mexican-gp-talks-vasseur/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-06T21:29:40+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Why Ferrari wants BoP 'deleted' for WEC's next regulation cycle",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdEhobEdaTlBDUWIwcENsWDdBV29zd0gyeTNMOHBaQ0I1Q2lSNjdtU0xaQ052cUtFR2ZKZTZBdEF5XzJnWHpOUWY4Y1dBTjY0Njk4dmROTmVELWZwbWdFWWdTNzBYRFRSUlBRMmtkUEUzelFwMGUxT0JqNDA5UlRLRTlUR3pLRmY4eFQtRXdRNGlrLU0xNkw1dk9aQ2t2UVVTSWl4M0hkdFpMVGxmU0E3aVQ0Zi1Lc1Nfa2pnOERTZEFBdTFP?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-06T17:31:11+00:00",
+          "title": "Camara reprimanded over “clearly dangerous” incident with Leclerc in practice",
+          "url": "https://www.racefans.net/2026/11/06/camara-reprimanded-over-clearly-dangerous-incident-with-leclerc-in-practice/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-06T21:17:13+00:00",
           "kind": "Team news"
         },
         {
@@ -132,24 +132,24 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "‘I’m trying to enjoy more’ – Antonelli explains his mindset in Sao Paulo as the new World Champion",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdER0UmVWamM4bWQ4a2F0TVRsaGEwb0t4cXh0a0pKSU1OTFN6SHQzZ2l6NFN0VUxBQ3Z2Y2Niam15eUhjUDNoNFlVb19yOXpSV0tWUnNJb00yNmE3S2doYmQxRmw2Zk5UN0NfYzFkZU1RWDZVSk96WEQ5MlBQSW5SUW5LeUo4cHptMFJyRUw3ZGl4c2RaaThGeTczelhmWkZFQzhWWmlJc1ZNWFU4T01xcEtUdWlBYWU5ZXY2dWFsdGNoU1hiSVd1bzB1aTJSRGxqTnpqY1lOSGdKN0tsV3ctbmRINjAzWnlvNkJlbmVDWi0?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T22:09:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Antonelli tops the times from Norris in Sao Paulo FP2",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTldjQ1JOYnRPTDNmTlFWb2FFTldBT3VYOU5neUR0OVJaMjMyeS14VExjdWlGV2tGLUxPeXhxV0NYQ3pJZUwtdHY1dW9BVEVEclIyYjg4WTJZQkt0SXpxWk52V3R4Z0ZTMnBFS19STnZvWEEwc1kzUWFJYkdra1U1YVhYQ25IdUhFaURaZkp5VXMzeXl1RmM4UGhjNzZpQ3FKdFNOSHRnZE9UcXhvazl4YTR6U3MydHVaRmpHczVSYWRPNXM1dDRFbEF3ZEVIRy1CWFdHLW41aG4?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T20:11:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "F1 Brazilian GP: Antonelli quickest in tricky FP2",
           "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-kimi-antonelli-fastest-in-tricky-fp2/10872299/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-06T20:07:29+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli comfortably on top in second practice",
-          "url": "https://www.racefans.net/2026/11/06/antonelli-comfortably-on-top-in-second-practice/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-06T20:04:55+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Norris narrowly leads Antonelli in first practice at Interlagos",
-          "url": "https://www.racefans.net/2026/11/06/norris-narrowly-leads-antonelli-in-first-practice-at-interlagos/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-06T16:45:25+00:00",
           "kind": "Team news"
         },
         {
@@ -195,6 +195,20 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "'We seemed to gain performance' – Norris offers update on McLaren's upgrades in Sao Paulo",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRFNDZTFOcENxaUY0QWVWcVZTc2I5Um16RTZEWHRtSUFxeHhZV24wUVdGV3FGM1lsRjc5b3otLV9RamwtQzYycFBXVHpRTy1xWDdrOVFHX0lXd2RobU0wX0l4UmhzbUJ0YU5kdnV2SkF0RHYydk9YRDdmMFQxaXBVRkhWZ1VpUkdtZmtwVEJlVWx6X1hmZWRGMDZfTG9aZmFSUGFKeVZwRk1XZ2VPdE9aRGhxYXlqTERVM0ZTVzZwWWVyM2dCU2xucUpoSWM5djBZYklwdEw2SlpBZml3bTRaallVS24?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T21:56:00+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Antonelli tops the times from Norris in Sao Paulo FP2",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTldjQ1JOYnRPTDNmTlFWb2FFTldBT3VYOU5neUR0OVJaMjMyeS14VExjdWlGV2tGLUxPeXhxV0NYQ3pJZUwtdHY1dW9BVEVEclIyYjg4WTJZQkt0SXpxWk52V3R4Z0ZTMnBFS19STnZvWEEwc1kzUWFJYkdra1U1YVhYQ25IdUhFaURaZkp5VXMzeXl1RmM4UGhjNzZpQ3FKdFNOSHRnZE9UcXhvazl4YTR6U3MydHVaRmpHczVSYWRPNXM1dDRFbEF3ZEVIRy1CWFdHLW41aG4?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T20:11:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "McLaren's updates for F1 Brazilian GP revealed with eye on 2027",
           "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdThCT2F4c1k0ZUw0VzhvbFFQWWQzdUYxaHQtaGUwSjRaZFd3azVIZUVvMFl0R1diYVRVZnFlZlVqU1llVWczTVlVbVRhRGxlVXllcDdqQ1ZnSlpYdVNYbGcxV0JLYmlJMDZReVE2dzNPb3YxR3NQUmtQbFR0VkN5STlva2FzTGZmQ2lWdXFiWWVqUVhaREo1dU82aF9HenBrNkdWcHRmTEZNUQ?oc=5",
           "source": "Autosport",
@@ -209,13 +223,6 @@
           "kind": "Team news"
         },
         {
-          "title": "F1 Brazilian GP: Norris fastest in opening practice from new champion Antonelli",
-          "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-norris-fastest-in-opening-practice-from-new-champion-antonelli/10872162/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-06T16:41:55+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "McLaren's 2027 F1 front wing breaks cover in Brazil",
           "url": "https://www.the-race.com/formula-1/mclaren-2027-f1-front-wing-breaks-cover-in-brazil/",
           "source": "www.the-race.com",
@@ -227,13 +234,6 @@
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNb3VyYnUtWGxHVUxKbnlRMVlXdWJqNnk1RkN6ZHViclRzQ2phQ3VUeHU4MXJTc21wdVNDZUUyNzBabDFUeXRZS1V2M2YwWHYybGJ0bmxRZ0JPLUo4dVdnMDBwUkhEYkFuZ21YZkpWRUtVWnRUSmlkcVJKTmp5V3BueDZ4bkxFWVNDSXZoTWx5TW1vWHJpbGNSR20xMEFWUDZiLTFxWlhRaFVxZXFIdVRnaUFUS0FBN0p5Q2lRbGlvV2VwUTNGZUljcmpMZEt6ZWFsRnNjbDBVVkhVUXJuT1RlV2J5VGVDV0MyN0VSZUpOY3c3cEh0ZDc3S3BB?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-05T22:24:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "McLaren to bring upgrades to Brazil GP with F1 2027 in mind",
-          "url": "https://www.autosport.com/f1/news/mclaren-to-bring-upgrades-to-brazil-gp-with-f1-2027-in-mind/10871328/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-03T16:48:36+00:00",
           "kind": "Technical report"
         }
       ],
@@ -321,24 +321,24 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "Lawson predicts it will be ‘very, very close between us and Alpine’ in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T22:04:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto insists Alpine ‘can improve a lot’ despite top 10 pace on Friday",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT3Vaa0VVcktvNmh0LWN0TDdyU2tGY094X3RiNi1GcWwyOV9IRnVNeXJSRUQ3am5YejAyWTVubWtRNGJ2U3FwUlBRM1pzYnBrNzExS0JjZVJ0SnJ4UnkwOWt0cU14dndQU2Q3QTF5ZGZZQ0NkQU5IalBfcEhKVzZDV1hqQVU1Z3lYcXlNRjBnMXljcVc2RFBiRVduemxtOFpWVTdNX2dZSDh3bUNtd0VwTVE2aUR4a2NkTXZPT2VJeUx0T0Zq?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T21:23:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Spotlight: Who won F1 and F2 in the same year? Colapinto knows his history",
           "url": "https://www.racefans.net/2026/11/06/spotlight-who-won-f1-and-f2-in-the-same-year-colapinto-knows-his-history/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-06T13:31:52+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Gasly with 'a lot to be excited for' ahead of Sao Paulo GP",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaTFFR0NUVlZCV09Gd2hLakdFMXpleXJrcjc1WlZKajduZW1QNFNkVjQ2aXFMMmFHZmZTa3lOTWFVUGRTb0FHQl9zWTZ4dm91R3lFODVyczAwU1VvMDBXQnYtRGpXb2ZoLXQ3eGJFdnNybC1zZDdyaXlUek5IajduTGFIekVXNzc3dTdUeVd5aEcwTXFKcFBKTl9pUXpzbDl2WVlhcV9VdlFBVFRINmNR?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-05T16:07:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Alpine drivers penalised post-race, Ryo Hirakawa scores on F1 debut at Mexico GP",
-          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPeHdsSmZVSTZjdkFqLXI5Q2tIQ2Z0bDQzLXhKTnNDbXFJYkxjTm5LTmNPZ3FwblJUam9OdXdYSlJ1V19IQUlNNUQ2aHUyd1BMNXJwTE82R1V2c0c2RzRwaFpNTi1yUlRabjJvMzBmVEdocTFZNUFQTDBJdjFaQjZ0ZnVLOEUwUDl0WEdhcDlTWVZVT1lSZjd2eWR6NXI4RXlyMUNVLWRSRjY1Y2I5TXAzczRYS0FxX1J4QVMwcVNCOWdyRmZDdUxScjJWN1NMNlI2VEdyb1pyTWhLMGdwazVzT2M5eUxhanFNWXpIa0l6SlprSTZjRUthYy00aUFiRzd4T3BRU1QwcXQtdHRWemdpLVJBbldQSm1idjlmaXROdE1SRlZmZFNwU0NCZVF2SjlhMUE?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-03T16:07:44+00:00",
           "kind": "Team news"
         },
         {
@@ -370,24 +370,24 @@
       "name": "Williams",
       "stories": [
         {
+          "title": "Sainz to continue ‘experimental work’ on Williams car this weekend in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQnUzeFhLazgxR0ZESTY2ZXpQeHRjSFRXdHhwNHZyTGZ6X3F3SW9OUTZ6eDVDUWt1bnhaYW5SdlBhUHc5VHh0aE94bk55bXBqbndZd0Z4N1FkN1RHWVVoQmlqXzloc2pTa3NmYlUwSGJ0X1ZXdVBFNU1zUER5eEdPWXZqZmdyVUtFd09kWU9XaC1NaVRldk4yQlplV25aRmg1Rmd0alljZDFld2JKaTB6cjRtdndYczNtTTlPQU9MN2RLSFByNWZr?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T21:44:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Harman expecting ‘tricky weekend’ at Sao Paulo for Williams",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQzVOTm1WTnlKWnY1My11MFI3Z3R5MGFpQ2RhREpJSnRTRHBUMkdhU2k5azFkbE15TEtKWGdmZGU1ZHVPUUdVdk5NRS1VVVpoVEs5bF9LWlhWaFlweDZQX2txazdKak9tcEk2NFhZVy0talpyaU93MXA0V2hlemRkck91YWNsWGNzX3ZENUtCYTBGdHRRZG5HTXVlTHFGYWZSTHdURnNTWVROV0h6NmF3Yw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T21:14:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Lewis Hamilton criticises Charles Leclerc: 'It was the same with Sebastian Vettel, the same with Carlos Sainz'",
-          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOX0NjRVo2ek1FZEZWMW1sVW5MNEpEYXY0V1BYWkc0R2ZoY20yV0JHNlRYNFBaaFBmR3lPbFVCN3ZkLVdDTEVVRlZyZ3hNQjg1WW5DU1k1d0dSS29YcHUxZHpCWUlPR1Vqbm1aMDZ4dm9WVnVGUHhMNHZpOUVaREZSdnZHZEhKY0hlUEVpbmUtWlNoVTVRY2Z0czFfdGVkZUlEZl9tVHBGUVhKNW1xbmlsYWZVNHhmd05BNkk5Z1BSYnVfcWFFX3ZMTy16RDdOTDRjdmRvakFzVXRELVhsT05XVmlieEc5OERkMWg3UVV3amM0NFJ1SDhxM3gtNllwTjhQVFJObGtTZ08yRHE3YUE4SzY2azZPV09GZnB5Smw0SFpVODh3WVViUXpJVQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObU9hcVVkeUh4RDNaX2ViQzJFOE5WRFduSk9pUC1fd3g5U09QYWNCQ3ZjMEVnajZvREpOY2t6VGUzbEp3YnVLdU5zaW9LOV9mMjhmaktxTGdxVGJIYjFZTFlSSVJBWTlSdlR3R0xrOEhEUzNXMWdZTk1oUWdxVWd3cm4wQnRPbFpOREhRMGlxczhvTjVUWVh0ZVFHbXhGQXM0VEdrbi1pd2JTSHducmVoWTFfQ015OFZodjBN?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-06T11:28:09+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Sainz: 'Points on merit not a fair possibility' for Williams",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOZlNKa0Jsam5OYktoYnkyYjVTOS02RXJHNWFZTzZuaE9IcURLRURFRXBhWUxyU2loNDU1N3FKUVhqQV9QV1BxMHpWbWVuVlhzUEMzYjhNNDMySkhWZjlQbVhZRnNtNVVOY3BpNUVKY2ZFamFzelhWZlIyMUJYcUhSNWp2em52dVl2U1FRQ01QLVd2SGF2emFkcENOeUMwYmYzdDFwVE9JOTcyMmU4NEd3ag?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-05T20:21:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Albon: Williams 'focusing on what's in our control'",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPY1B6SERkRmJGUS1CVUxjRWptNG1SOHVhOXI1MU5RY0h0aGllWVdLcWlRaGd0S0MxR1VJRHpReHY3U2ZlWmFyMkZlcVlBZE44OTI1M0EydWt5YktPLV9lYUVuVFRYOFVSbjNTdTdWaDh1a0c4aXFYM0EwUVdUdmsyemtzbkM4TjlFR1pObXU5cEpoT3M5emxldURETTJLZlpneHhN?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-05T20:16:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -412,24 +412,24 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Lawson predicts it will be ‘very, very close between us and Alpine’ in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T22:04:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Featured Comment: Keeping Lawson is the smart choice for Racing Bulls",
+          "url": "https://www.racefans.net/2026/11/06/featured-comment-keeping-lawson-is-the-smart-choice-for-racing-bulls/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-06T21:58:51+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Lawson unsure if Racing Bulls will keep him: “I don’t know what else they want me to do”",
           "url": "https://www.racefans.net/2026/11/06/lawson-unsure-if-racing-bulls-will-keep-him-i-dont-know-what-else-they-want-me-to-do/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-06T12:10:49+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Alan Permane handed Racing Bulls Team Principal renewal",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdmY1SlRWakJzLWdkT043WlB3bVgyblM3VW5YVmxHNVNVYVdJdFZlbmJoU056TklMNGs2S3VjWEdhMlFoei1pT2FnNEpPekh6MDJUNjBfejNtMHFmSUVxcTRaTlRhNElraE04RVZpZllGcnV4Z1JDVzNlM1FHbnlDUmpCdzJnZGFhRHNuQ1JBOWs0elU3bG1DLUhhV2VwU2FwQlJjcTY1RUZub21ITVlPQ2hkYmtlTzJFQUtHUWtrdERkTHFuWEJDX0p2QzBpczgzZFhJNVM3RFE4a28?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T10:36:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Racing Bulls boss gets new contract",
-          "url": "https://www.the-race.com/formula-1/whats-going-on-with-lawsons-blurry-f1-future/",
-          "source": "but where's Lawson's?",
-          "publishedAt": "2026-11-06T10:07:12+00:00",
           "kind": "Team news"
         }
       ],
@@ -457,17 +457,17 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Rafael Camara",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T18:27:07+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Camara looking to learn from Bearman on surprise F1 debut in Brazil",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWpJYWNVZmwtdDZ2Rlc0S3c0bUpQaU9GSnZ4ZkE4V3Z0NnVJSnpLaF9iLTF6TzBCN1JMVkpuR3Y2bkVqX3pOTHR3NlVoQ3Zic0xGUi1WQ2hEX3pPWElwUDlCQVU1dUptVEEtNDR5M19BeFRYRVctbm5GbVdBaDB3MkVOV09VX0c1aXZWSUdnTGZlZmxMMFpHcXV2UHg1a2ZocUt1WHhBbTNjaGxQU0F4SGU4V0ZsSnJRRGNSMktYTGIwSWk1UmVUMWIwNFpBQQ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T17:02:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Rafael Camara",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T15:25:41+00:00",
           "kind": "Team news"
         },
         {
@@ -499,13 +499,6 @@
       "name": "Audi",
       "stories": [
         {
-          "title": "Revolut Audi F1 Team We Start Because We Dare Poster",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNTlFkTUE0ZW1MT2pKSzlRR0JsaHkxQTdTX0JJUE83cTlPNjNLU2ZLTHh3RVhpVVJJTDJqUExNekpOc1loeUQwTENOSU51MzNjM0JuRkd6RHFUSUxBLTVwMEpnbE9EcDN0S3BtUXE4dDV1U3BrQlprdS16d2trOTMxQnM4enUyR0ZON29QTmN1bVNnd3RKRWhGa3ZPSllqcE1JR1pfbFlaQ2FIQ0hWTUgyNGx6aDBVVTZkSGlkQS1iQjhGdHVFLXRYbzR3LUUybWlJZXZCUHhyRUxWbWlhWXRkcjRXM05mTEdjZTdmdTI0dXM0eGhlS29YRg?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T14:49:24+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Audi swaps grey livery for “Piso Paulista” design in Brazil",
           "url": "https://www.racefans.net/2026/11/05/audi-swaps-grey-livery-for-piso-paulista-design-in-brazil/",
           "source": "www.racefans.net",
@@ -517,6 +510,13 @@
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMkF3MTRYMUVxU0FQc3FuUjZoVzl1cXExM0NDRUV5RzhodXVFeExoNllIdlZzMFI3T2JpdWRoalNIcmlPY1JtMVFRZFZGNTEwY3J4UzRpZndXdWxNYjZwLS1jSjBEbEJHeDFENWpXazN1TmhnQkYweWZ5bmF6UEU1Vy05YXhvNndhSXlCamo0UU1xNWNaaHFHMEZSMGlsZ1JwTWYwSGVTaVM3VjIySndFLXZRbjJBeVBOMW1QU25VUl9wOTR3cnlab05zY0pVTkZwbXBScjNSSEJiMHEyYU92SlZuWld1M0djX1FUag?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-04T12:59:28+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Revolut Audi F1 Team We Start Because We Dare Poster",
+          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQR3FwT1B1NnBob1JTQ2pRZU1CQjJZMm1aRi1jR3NHN2pka3hPbGkxYndrOV9HdElpbDdLWjBoRlVPQmM3WUYxX3NHdU9zVnlQbi0zQW5aM0JTQ29SWjJaMzN6bGNuNEk2UWU1UDBrZTI3aGZncktXUXVjc0RaVHdWcVBLTG5UbUNMeXFqWWpDWU9ZeU4tR2Y0dHliWXJ1aVRIVU5kM09iaDZQWlgwbUt5RUVwTVNld0lmdDNkemNJcWZOSjFoTTI5MDJXRGxDYzFWRWJkRE9sd0hkaHVESVVwYmRJZ21oeDhLdEZhVk9CVjBndmdRaDRMR0c4dzFOeFhXSTg5cXcxd2VNMXBLRFJXR08ydzdxLXBjWHEw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-04T10:37:03+00:00",
           "kind": "Team news"
         },
         {
@@ -557,17 +557,17 @@
           "kind": "Team news"
         },
         {
+          "title": "Colton Herta qualifies for F1 superlicence as Valtteri Bottas remains bullish on 2027 seat",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbUpFZHoyV1VESnpmeVViOGh3a1J5TjR2WVplc3ZoYnZ0bjZEcm9YcGhqd3gtRWZFN2hTZWRmMzJmc1pESG5MQ05wS3JaTE1pckhrUDhDNHZSZFFxQnZabVpMbmFKY0tqZlhsSk1rOVB6a2QxOTJkTG8zaFFjUElkbU1GNnNzeUg4ZUdxV2JFbWZWaEpBVWUyRHRlLTRBdGZlbHZmNndXLWROM3lFRG51dzhqSjFDdlJoSFE?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-06T16:53:04+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "What's really happening with Cadillac F1 buyout talks",
           "url": "https://www.the-race.com/business/cadillac-f1-buyout-talks-what-is-really-happening/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-06T14:51:48+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Herta’s latest practice run does not mean he’ll replace me in 2027 – Bottas",
-          "url": "https://www.racefans.net/2026/11/06/hertas-latest-practice-run-does-not-mean-hell-replace-me-in-2027-bottas/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-06T11:55:17+00:00",
           "kind": "Team news"
         }
       ],
