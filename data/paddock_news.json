@@ -1,51 +1,51 @@
 {
-  "updatedAt": "2026-11-07T14:17:15.872462+00:00",
-  "newsUpdatedAt": "2026-11-07T14:17:15.872462+00:00",
+  "updatedAt": "2026-11-07T18:56:52.015330+00:00",
+  "newsUpdatedAt": "2026-11-07T18:56:52.015330+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
-          "title": "Verstappen set to start from the back at F1's Brazilian GP",
-          "url": "https://www.the-race.com/formula-1/max-verstappen-set-to-start-from-the-back-at-f1s-brazilian-gp/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-07T13:52:03+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘I don’t care to connect, I’m here to win’: Verstappen on how he’s different to Senna",
-          "url": "https://www.racefans.net/2026/11/07/i-dont-care-to-connect-im-here-to-win-verstappen-on-the-difference-between-him-and-senna/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-07T13:36:21+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Red Bull ‘looking into quite a few changes’ for Verstappen",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcmRMeDJJYkJGOWc5Z1BuWjVzdk1LTS1DNHBPNEhPVGpqZlI0N2NudmJHaFE5WDlQZVFsM3k1d0ptMGpJTVM4VEoyUGFlZTNBYTBPNEhqQ3JvYnoyR0JTQkNFeUdfXy1ROW0wY0Yxa1dZQnNuVGVkNDFfTkhaZkRhZ3Q5YlJtTF9XTkZRcjZOWG9LSVliZGhaUnI3MEthdlhwTnFEcWhVUmJudldscndYTjNXcTJUcUtiVEsyZ1g1MlNibTFNams1eW1WdTNNUWxGbEFhRFg5NXhDTExrdEdHaEdhOEliYlRSWUtTLUhTUWRWWmxx?oc=5",
+          "title": "Verstappen beats Antonelli and Norris in Sao Paulo FP3",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2tMUUJoQ2ZqemU0amEyNGptYzliaTNLb1FBQm5Ca0ZyYzZVb2JuYzNKWVVqQi14NDJ5WXE5eHhvdUYySTNVZEVnNGJqaVJoN1ktdm4xQlA3UVF6MDQ1ckRJaFNISHlLOVZJcXo0UVNfS3haS3cwS1B1Nzlnb3U0c3ZsZ0pMUTJJbG1HN3JGRTB1dUJSYnd5c1pjQld2WWw3a2FSNExmWTNJaWF4amx6RFAxYk1hT1NIdGVjRDJ3b3B4akwwRnowM01tMnlhZUotQXYwTFZONWNRMlNl?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-06T22:40:00+00:00",
+          "publishedAt": "2026-11-07T15:46:00+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "F1 Brazilian GP: Verstappen edges out Antonelli to top FP3 as Hamilton hits mechanical trouble",
+          "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-verstappen-edges-out-antonelli-to-top-fp3-as-hamilton-hits-mechanical-trouble/10872582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-07T15:37:40+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
+          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-07T15:34:55+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Lewis Hamilton, Charles Leclerc and Max Verstappen hit with F1 grid penalties for Brazilian GP",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOMFUwV2VzRWRGMVpaaGhHMXl5RUtEZTdUSWpKQUFNbVRMOVZQeE0wdzhuVFRKeFpHVFRzRnc5RDJPTW5HVWQ3U3ZnQVVkaTVpam5xY1VTQUJFck5TSFUxcGRQMXB2eUp0aUx3TFVsbUVnQ01lanZoSHE4M2psRXlNOHdBTkE2RjN0TTEtZlBLZHFwS1RMU045bktHUFpIaWJwTENLUVVUTjA0alJlOXhXNnBsYnRUaURpS3dNWmJYSWxMM0xlcHJadGY5Wnlha0pmTjRz?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-07T15:31:27+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Verstappen to start at back of grid with power unit penalty in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSzNQeW9kOHlvSWV0MEZKYzgzeGMzMkR4a2NRNkFuWEJwXzhILVduSHNETXdJeGZuOFFwNmh1VzF3T0steEY2SjNSVjA2ODZCQjVXT05DZi1Ub2hIRUJMWngwd2xCMm9ILWhRbzktQ3N5QWVaQ1doM01KbjBfZGJGQXI3UGdVZjNCRFBrZWxFS1Y4M0RnMDIwYzBOZE42VFVtV21tLVhjMGk3Zw?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-07T14:19:54+00:00",
+          "kind": "Technical report"
         },
         {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
           "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T07:00:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Horner reveals Red Bull call to thank him for F1 engine project after maiden win",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-10-22T07:00:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-10-20T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -73,25 +73,32 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "Hamilton set for Brazil grid penalty after Ferrari's worst 2026 Friday",
-          "url": "https://www.the-race.com/formula-1/hamilton-set-for-brazil-grid-penalty-after-ferraris-worst-2026-friday/",
+          "title": "Lewis Hamilton set for new penalty, will start F1 Brazilian GP from back of grid",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWEpuWGFnd0NXY2tIRHZHQTV2LWp0Mm9KWkdKMm9qQldhbmxRQVJETjNFaUptSnV2REtMVmtDUFNBM242RV9sN1RzalkzU2hsY3h1QVd2b29yMkRob2c1MlZNVzJQcFhaLXA0LW1SOFRQbHdUc3pTRGxwOHpSalVGOFN0SG1aNW5kWTJjOVhnUlJxcGk4c3U1ZXlMcVFnX29vcG4wOVhtb1V2MTdkdE82UDJBcFd6UnEy?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-07T17:42:23+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Hamilton set for new penalty, will start F1 Brazilian GP from back of grid",
+          "url": "https://www.autosport.com/f1/news/hamilton-set-for-new-penalty-will-start-f1-brazilian-gp-from-back-of-grid/10872645/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-07T17:32:44+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Hamilton gets back-of-the-grid penalty for Brazilian GP",
+          "url": "https://www.the-race.com/formula-1/lewis-hamilton-gets-back-of-the-grid-penalty-for-brazilian-gp/",
           "source": "www.the-race.com",
-          "publishedAt": "2026-11-07T12:31:42+00:00",
+          "publishedAt": "2026-11-07T17:29:24+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Ferrari have 'plenty to work on' in Brazil – Leclerc",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQaW5ldXRlcExZQThOMC00QU5fTHl2aVZkWkFETUtRS05QV1ZfZlliSHZPanhPMTFVOHhhS0pCVkJVTDFLWFVCbDBOUUk0WUc0VGk0c1d2MEdIZDN0T3ZSUVhzY0hZbnN6TTlzYW9Gd1l4T2FaLXBsVng2ZUwzNEhyRGdrZ1d4dGlwRlZOWVotNW1uczI2a3RXOUhLLWpwak1GTEZFTGJXRDlnWFBXdFJxLUtKLXJ6ODY0UGdVTXVsd29yY2dvRDZLeUJQQW82bEpiOFpXeTE3OUY?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T22:29:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ferrari’s racing guidelines “still the same” after Mexican GP talks – Vasseur",
-          "url": "https://www.racefans.net/2026/11/06/ferraris-racing-guidelines-still-the-same-after-mexican-gp-talks-vasseur/",
+          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
+          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
           "source": "www.racefans.net",
-          "publishedAt": "2026-11-06T21:29:40+00:00",
-          "kind": "Team news"
+          "publishedAt": "2026-11-07T15:34:55+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -118,24 +125,31 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Verstappen beats Antonelli and Norris in Sao Paulo FP3",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2tMUUJoQ2ZqemU0amEyNGptYzliaTNLb1FBQm5Ca0ZyYzZVb2JuYzNKWVVqQi14NDJ5WXE5eHhvdUYySTNVZEVnNGJqaVJoN1ktdm4xQlA3UVF6MDQ1ckRJaFNISHlLOVZJcXo0UVNfS3haS3cwS1B1Nzlnb3U0c3ZsZ0pMUTJJbG1HN3JGRTB1dUJSYnd5c1pjQld2WWw3a2FSNExmWTNJaWF4amx6RFAxYk1hT1NIdGVjRDJ3b3B4akwwRnowM01tMnlhZUotQXYwTFZONWNRMlNl?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T15:46:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "F1 Brazilian GP: Verstappen edges out Antonelli to top FP3 as Hamilton hits mechanical trouble",
+          "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-verstappen-edges-out-antonelli-to-top-fp3-as-hamilton-hits-mechanical-trouble/10872582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-07T15:37:40+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
+          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-07T15:34:55+00:00",
+          "kind": "Technical report"
+        },
+        {
           "title": "PRACTICE DEBRIEF: Can Mercedes keep their rivals at bay in Sao Paulo?",
           "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdnVrcUdXYXZvNE9CdnhaOUxLRm9JaXJGZm5rRGJUaW9jU3FMZWdTRmNRUmk5bnNwZzU0cXFFS1NhUWtpZS1lR3dNV2VaS0dvNEl6WUl6VERZcE44WFhUWTNzejdDbEV1WVloTlp0YXk2bEx1ZmdEd2hVRldkUGV1ajBmT1hzWGhrVFpNMVhnS0ZfZng3TUJ0OUgxQWVYbGMzRTNZWmxvcnhRRGRxR1Rzb25hT2U3Q3M?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-07T08:54:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘I’m trying to enjoy more’ – Antonelli explains his mindset in Sao Paulo as the new World Champion",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNdER0UmVWamM4bWQ4a2F0TVRsaGEwb0t4cXh0a0pKSU1OTFN6SHQzZ2l6NFN0VUxBQ3Z2Y2Niam15eUhjUDNoNFlVb19yOXpSV0tWUnNJb00yNmE3S2doYmQxRmw2Zk5UN0NfYzFkZU1RWDZVSk96WEQ5MlBQSW5SUW5LeUo4cHptMFJyRUw3ZGl4c2RaaThGeTczelhmWkZFQzhWWmlJc1ZNWFU4T01xcEtUdWlBYWU5ZXY2dWFsdGNoU1hiSVd1bzB1aTJSRGxqTnpqY1lOSGdKN0tsV3ctbmRINjAzWnlvNkJlbmVDWi0?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T22:09:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli tops the times from Norris in Sao Paulo FP2",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTldjQ1JOYnRPTDNmTlFWb2FFTldBT3VYOU5neUR0OVJaMjMyeS14VExjdWlGV2tGLUxPeXhxV0NYQ3pJZUwtdHY1dW9BVEVEclIyYjg4WTJZQkt0SXpxWk52V3R4Z0ZTMnBFS19STnZvWEEwc1kzUWFJYkdra1U1YVhYQ25IdUhFaURaZkp5VXMzeXl1RmM4UGhjNzZpQ3FKdFNOSHRnZE9UcXhvazl4YTR6U3MydHVaRmpHczVSYWRPNXM1dDRFbEF3ZEVIRy1CWFdHLW41aG4?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T20:11:00+00:00",
+          "publishedAt": "2026-11-07T08:54:33+00:00",
           "kind": "Team news"
         },
         {
@@ -143,13 +157,6 @@
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZVhlY2JMYWhTSlBhZlFuYmQya3ZDSkxLT3ByZDFPV0FoQk5Gb01VVXo2eHhuV245T2xDcjhIanhCOUFZRkZWdHdSM1NmYVB4RlU1c0tueHZQcFVLUG9LRy1mT1ZmbmJ0Wll5OEZQdEVRbklZMDJJY1V2bnZFSnFSeGVoUXdveFJxNVRlRGliNUstZEtNd3ctQXd4MzFKTEZPUEJSOE44RTBaa3lOa3FoVkQ5U2xKcTl6QnFhbHRuZ1hjOUI3OXlZRUxYNEpzRU96QmJxNkh3?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-04T10:34:34+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Antonelli says doubters “added fuel to the fire” in his world championship pursuit",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNOFl5dGRQNmFxNnV0TER0OW9KNUVKX1RfUlg5OS1kbkRSUTJxTURGUW0taE5TQ2lPSm5MVzlkNzk2c2wzdVVnNG4xeE84ZGNVd2c5YnRmY3ozN25vYUN1Z0VRY2o4bWxLQU96Ukx4a2hSN18tcDBKYW0xRTUzTEttNl82eUVMdFdJS056aWRVTWlYbFhEX1BvSVJ2cmtWT21KTmtOWk1PcVN2M21SOWw1MFB4UFpyUUF5?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-03T07:15:05+00:00",
           "kind": "Technical report"
         },
         {
@@ -181,6 +188,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "Verstappen beats Antonelli and Norris in Sao Paulo FP3",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2tMUUJoQ2ZqemU0amEyNGptYzliaTNLb1FBQm5Ca0ZyYzZVb2JuYzNKWVVqQi14NDJ5WXE5eHhvdUYySTNVZEVnNGJqaVJoN1ktdm4xQlA3UVF6MDQ1ckRJaFNISHlLOVZJcXo0UVNfS3haS3cwS1B1Nzlnb3U0c3ZsZ0pMUTJJbG1HN3JGRTB1dUJSYnd5c1pjQld2WWw3a2FSNExmWTNJaWF4amx6RFAxYk1hT1NIdGVjRDJ3b3B4akwwRnowM01tMnlhZUotQXYwTFZONWNRMlNl?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T15:46:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Gary Anderson's verdict on McLaren's 2027-leaning upgrade",
           "url": "https://www.the-race.com/formula-1/gary-anderson-verdict-on-mclaren-2027-leaning-upgrade/",
           "source": "www.the-race.com",
@@ -209,17 +223,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Norris narrowly leads Antonelli in first practice at Interlagos",
-          "url": "https://www.racefans.net/2026/11/06/norris-narrowly-leads-antonelli-in-first-practice-at-interlagos/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-06T16:45:25+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "McLaren's 2027 F1 front wing breaks cover in Brazil",
-          "url": "https://www.the-race.com/formula-1/mclaren-2027-f1-front-wing-breaks-cover-in-brazil/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-06T12:59:21+00:00",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVFtZlRxOVhMMlFnOHV2NHduM3hXU0dnbGFQdkQ4Q2hrdUdOMVN6UUc1MUVqT3lLcEpVblpvZjVVVWNiX3hOaXItVk9yM3NaVXFpbUFiWXBZM0ljZ3BIV3dvckdkQ0tXaHhPU0I2YkRveDNzN0FWQ1IwV3VEb0ZlNk9mSmgwNXh0RVBGM3N3?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-06T12:59:36+00:00",
           "kind": "Technical report"
         }
       ],
@@ -443,6 +450,13 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Ayao Komatsu: Esteban Ocon axing ‘surprised everybody at Haas’",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSWpjalNEa005N1k4N0JlMjNQTk5nQlZqdkFFbGtSMGtWNzhYZGtKN1pJTVJ0Y1VtSHlvM3FIZ01TM1BRYTNIV25Jd1djSFlLcnVEa0U3bEZqRWpHcU9rMGZrNHQyWlpZZ0FhV1d1cWt6b2kxOVlWeERlaWZJcS1odWdMQzh3VUxPbnNYbUNuUjducWJRRlZ1LXZXMjN4MlZxRFdzRGxn?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-07T13:13:57+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Ocon axing ‘surprised everybody at Haas’",
           "url": "https://www.autosport.com/f1/news/ayao-komatsu-esteban-ocon-axing-surprised-everybody-at-haas/10872457/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -454,13 +468,6 @@
           "url": "https://www.racefans.net/2026/11/07/komatsu-was-protecting-haas-from-rhetoric-by-dropping-ocon-wolff/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-07T11:00:05+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Camara looking to learn from Bearman on surprise F1 debut in Brazil",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWpJYWNVZmwtdDZ2Rlc0S3c0bUpQaU9GSnZ4ZkE4V3Z0NnVJSnpLaF9iLTF6TzBCN1JMVkpuR3Y2bkVqX3pOTHR3NlVoQ3Zic0xGUi1WQ2hEX3pPWElwUDlCQVU1dUptVEEtNDR5M19BeFRYRVctbm5GbVdBaDB3MkVOV09VX0c1aXZWSUdnTGZlZmxMMFpHcXV2UHg1a2ZocUt1WHhBbTNjaGxQU0F4SGU4V0ZsSnJRRGNSMktYTGIwSWk1UmVUMWIwNFpBQQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T17:02:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -500,8 +507,8 @@
         },
         {
           "title": "Audi swaps grey livery for “Piso Paulista” design in Brazil",
-          "url": "https://www.racefans.net/2026/11/05/audi-swaps-grey-livery-for-piso-paulista-design-in-brazil/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRHZLTm5uZ3N3UlI4b0JOOFhMMEJkei1wUWVqSDZCeDFoVHpmaUVSUkhNcWJ6cmN4OFkzTWgzMlV0RkdjSHVrTjQ3NXdWNFZoMVJVUVJ0S0dGRmFEUWNoRTlpMzFSOUlMa3V2OHBYNnBjRjZDMmtENjYxaDV5eEZQYTg3bjkzeVNvVVo5YmY5djI2bUtfeGw2VkdB?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-05T08:46:55+00:00",
           "kind": "Team news"
         },
@@ -551,9 +558,9 @@
         },
         {
           "title": "What’s happening with Cadillac F1 buyout talks amid Fenway interest",
-          "url": "https://www.the-race.com/business/cadillac-f1-buyout-talks-what-is-really-happening/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-06T14:51:48+00:00",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR1o3WmdITGRROEtwQkx5SllPTmtPS2xGamxSSVFHV2FGTmk2YXZGUWRHTlJua0FNcnV1eUJ2aXRvemdQT2RPLVpZSWNWdGJzZ2xYUlZNRXZ4QTJzem00UHBYSEpLakt1QVNSZ1p6Z1VZSEFiLWs2QlpGMFhqOFFaWEVjbzMzQWliaEpDRw?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-06T14:54:36+00:00",
           "kind": "Team news"
         }
       ],
