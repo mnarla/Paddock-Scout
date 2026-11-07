@@ -1,18 +1,11 @@
 {
-  "updatedAt": "2026-11-07T01:00:32.023661+00:00",
-  "newsUpdatedAt": "2026-11-07T01:00:32.023661+00:00",
+  "updatedAt": "2026-11-07T07:22:40.252865+00:00",
+  "newsUpdatedAt": "2026-11-07T07:22:40.252865+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
-        {
-          "title": "Red Bull ‘looking into quite a few changes’ for Verstappen",
-          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNcmRMeDJJYkJGOWc5Z1BuWjVzdk1LTS1DNHBPNEhPVGpqZlI0N2NudmJHaFE5WDlQZVFsM3k1d0ptMGpJTVM4VEoyUGFlZTNBYTBPNEhqQ3JvYnoyR0JTQkNFeUdfXy1ROW0wY0Yxa1dZQnNuVGVkNDFfTkhaZkRhZ3Q5YlJtTF9XTkZRcjZOWG9LSVliZGhaUnI3MEthdlhwTnFEcWhVUmJudldscndYTjNXcTJUcUtiVEsyZ1g1MlNibTFNams1eW1WdTNNUWxGbEFhRFg5NXhDTExrdEdHaEdhOEliYlRSWUtTLUhTUWRWWmxx?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T22:40:00+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "Norris leads Antonelli and Verstappen in Sao Paulo FP1",
           "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQU21oR3hTeEpkdEYwQ2Q0MkxqWml6OUU4empSN19TdmJicUpZS0tuOG94endidUU1dzI2LXJoZHh2VERoQVkyT1ZsSkhMWnV2WFMyeFk4VUR4ZE9HaXB2RjdTWkVjMEpiM01Td1NnNkVoUzJ2aXZ3X081TC1LVkQ1MkNJbUkzbXlkUnphMzJfSUdob29XT0Mtc3FqNEJZWUhady01OExqcEYyYWo4a0ljeUh1eGp1SkxUSzhSMmoyY29CSmhqSElwcnpKLVdtYy16TzhTaW9xNVdObmN0RWxjWTdR?oc=5",
@@ -28,8 +21,15 @@
           "kind": "Team news"
         },
         {
+          "title": "A 'big surprise to be second' in the standings – Verstappen",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOck5DN05hYXc5WUtQY0xsdzdJb1lDaGkxOVF2Wnh2VHBxdGdUY1lxSmxoUU9MTXdZQ1NYa1luSDQxb3dhVUUtNGc2ZW9wcnBjR2xrYU9uU2RfMGFfOENoejY2MWh3YzU3a05tOFN1R282SERJZzFWUFVVblN1b1prRkVwMjcyX1AwaHQ5TXlNQTRJZm5hajZiM05rTi1sNGNvZ0NpZGNKcnR6cFZ0Q3JBMjhDOUtxQ1JzVGtESnMzQ2Vtb3pienZjNFRaVVJQLS1VbjRhWkhuQ21fWEM1QXNYNDU0XzZ5WnR5QVFKQXFXZ0JWcFU?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-05T20:26:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T07:00:00+00:00",
           "kind": "Technical report"
@@ -156,7 +156,7 @@
           "title": "How Mercedes got their front wing upgrade in the sweet spot",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZVhlY2JMYWhTSlBhZlFuYmQya3ZDSkxLT3ByZDFPV0FoQk5Gb01VVXo2eHhuV245T2xDcjhIanhCOUFZRkZWdHdSM1NmYVB4RlU1c0tueHZQcFVLUG9LRy1mT1ZmbmJ0Wll5OEZQdEVRbklZMDJJY1V2bnZFSnFSeGVoUXdveFJxNVRlRGliNUstZEtNd3ctQXd4MzFKTEZPUEJSOE44RTBaa3lOa3FoVkQ5U2xKcTl6QnFhbHRuZ1hjOUI3OXlZRUxYNEpzRU96QmJxNkh3?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-05T03:34:11+00:00",
+          "publishedAt": "2026-11-04T10:34:34+00:00",
           "kind": "Technical report"
         },
         {
@@ -294,7 +294,7 @@
         },
         {
           "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPUU9YdlExRGtpMFFOQ2tyMG1TSHkzTHc3OU1QMGVyOGFRNWJnZ19kYlYwb2k0V1FlaUxaX3d2MVhtSTlTb0tNdTFiUTE3WDdraTJzOGZVdmZUSmhUUmhzTlVrdkZzRU5tMGxDZkxreXdWTkE4dk95b1N2eXF5T3AxTkZRb3llUTFWWTFuMExYM3d1T0pNZVdaNUF5LV9OT0hZaDFEanFrWEFiZnVGRFVRc0NLbmViSXJmOEYzb1dGX0I3RlM5b0FUcFNJaGpHR2QtV25uTzN2Vl96XzJ5Z2JPeUgtU1dZRURlZGpjSTQtQ1ZnbHR1dy1RR2cydF9EWkNwa0VIejVZSmo0dEVkTVB5NHZsR3NoSnY0RnlZSjNaZGc2MVBwdkIwbkdCLThncFpCZmc?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-28T07:00:00+00:00",
           "kind": "Technical report"
@@ -343,7 +343,7 @@
         },
         {
           "title": "Belgian firm to take over Renault/Alpine engine facility in Viry",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOUGEwTXZBOFdhNmZEV252OFlMLTQ2WGtWelJqdjhPUEhkYjJ2M1BpS2NnQUpuY052dFJwa1RobzViYms5TERQT210azRDSU1QSll0MmVwX2oyRkwyQjB4ODhraHhHR01VdkxLMS10ekVoQ1NsQnRLUW5kLWtydlduUkpsU2lXMzhjbUoxamwzU2VTSjZocS1weg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbFhhRi1DNUNRWjNGMnlOZERNcG9ETU83M3BTTm1YaU5xRjhVVFF0clVYb09pUE1aS00wSTl2NVBZaS1UV3lXbmhLMldlZl9zazhDNDJpV0phTWt1MkF0MmpsRjZjM2ZmZmtEbDZJQ1kyejZjWUtFejIxUnkzVDc5VTlzOFNzTzBGNHBmRzNKcng4MF9scWRtWGFn?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-10-23T07:00:00+00:00",
           "kind": "Technical report"
@@ -385,7 +385,7 @@
         },
         {
           "title": "Lewis Hamilton criticises Charles Leclerc: 'It was the same with Sebastian Vettel, the same with Carlos Sainz'",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObU9hcVVkeUh4RDNaX2ViQzJFOE5WRFduSk9pUC1fd3g5U09QYWNCQ3ZjMEVnajZvREpOY2t6VGUzbEp3YnVLdU5zaW9LOV9mMjhmaktxTGdxVGJIYjFZTFlSSVJBWTlSdlR3R0xrOEhEUzNXMWdZTk1oUWdxVWd3cm4wQnRPbFpOREhRMGlxczhvTjVUWVh0ZVFHbXhGQXM0VEdrbi1pd2JTSHducmVoWTFfQ015OFZodjBN?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOX0NjRVo2ek1FZEZWMW1sVW5MNEpEYXY0V1BYWkc0R2ZoY20yV0JHNlRYNFBaaFBmR3lPbFVCN3ZkLVdDTEVVRlZyZ3hNQjg1WW5DU1k1d0dSS29YcHUxZHpCWUlPR1Vqbm1aMDZ4dm9WVnVGUHhMNHZpOUVaREZSdnZHZEhKY0hlUEVpbmUtWlNoVTVRY2Z0czFfdGVkZUlEZl9tVHBGUVhKNW1xbmlsYWZVNHhmd05BNkk5Z1BSYnVfcWFFX3ZMTy16RDdOTDRjdmRvakFzVXRELVhsT05XVmlieEc5OERkMWg3UVV3amM0NFJ1SDhxM3gtNllwTjhQVFJObGtTZ08yRHE3YUE4SzY2azZPV09GZnB5Smw0SFpVODh3WVViUXpJVQ?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-06T11:28:09+00:00",
           "kind": "Team news"
@@ -457,13 +457,6 @@
       "name": "Haas F1 Team",
       "stories": [
         {
-          "title": "Rafael Camara",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T18:27:07+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Camara looking to learn from Bearman on surprise F1 debut in Brazil",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWpJYWNVZmwtdDZ2Rlc0S3c0bUpQaU9GSnZ4ZkE4V3Z0NnVJSnpLaF9iLTF6TzBCN1JMVkpuR3Y2bkVqX3pOTHR3NlVoQ3Zic0xGUi1WQ2hEX3pPWElwUDlCQVU1dUptVEEtNDR5M19BeFRYRVctbm5GbVdBaDB3MkVOV09VX0c1aXZWSUdnTGZlZmxMMFpHcXV2UHg1a2ZocUt1WHhBbTNjaGxQU0F4SGU4V0ZsSnJRRGNSMktYTGIwSWk1UmVUMWIwNFpBQQ?oc=5",
           "source": "Formula 1",
@@ -475,6 +468,13 @@
           "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQdlE3ZEhwNmdJeGhHLXM4Z3FyZlByTzFDbG9RSVp0VTFETzNod25tOTRsMnRiZ25sZGM0SV9PaHFBcThrYXJxN3VhNGRVaVBqSXlNQ1Vyam8xeTVRUzlhT2IyempaY2FncDlQVC1HR2lxZlMycTY3TE81aUg2U0FtdENIQkxDcFVpeHhlS2hkSnJ3aEROYno5UVlNWGE1cUlFMFJPam4teTVnMHYtRGN3bk1OS1A0dXhvellVcXZaODFNc2hTX2s1NHpoWGJueW5MYmFPeEJnTUU3Q2h6RW1fZERrdjMzb1U?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T11:25:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Rafael Camara",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-05T16:28:13+00:00",
           "kind": "Team news"
         }
       ],
@@ -499,24 +499,24 @@
       "name": "Audi",
       "stories": [
         {
-          "title": "Audi swaps grey livery for “Piso Paulista” design in Brazil",
-          "url": "https://www.racefans.net/2026/11/05/audi-swaps-grey-livery-for-piso-paulista-design-in-brazil/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-05T08:46:55+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Audi F1 adidas VL Court Base Trainers",
-          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQMkF3MTRYMUVxU0FQc3FuUjZoVzl1cXExM0NDRUV5RzhodXVFeExoNllIdlZzMFI3T2JpdWRoalNIcmlPY1JtMVFRZFZGNTEwY3J4UzRpZndXdWxNYjZwLS1jSjBEbEJHeDFENWpXazN1TmhnQkYweWZ5bmF6UEU1Vy05YXhvNndhSXlCamo0UU1xNWNaaHFHMEZSMGlsZ1JwTWYwSGVTaVM3VjIySndFLXZRbjJBeVBOMW1QU25VUl9wOTR3cnlab05zY0pVTkZwbXBScjNSSEJiMHEyYU92SlZuWld1M0djX1FUag?oc=5",
+          "title": "McNish keen to focus on Bortoleto’s pace after issues with Hulkenberg’s car",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLTB6MFRoemM3dkYxejJMbm1KdVZYRHFyUHlGVWdzRlN5Q0RCV0FEVFNsaVhldWFwdEtPSmxWSXUxSTQwV2g5Y3VrWnJvazVWS0lGLWlDUnFIcmJKbHphUWZ3ZlZ0VkFYeUUtWXNLS2RmeUN6ZDItVDBOYTRzcW1IMldZMkY3ajRzaDZkc0Fwa0xHM1Z6QzRBdkowaFNLeTM2RlM3OUVUTTB2ZlRJUS1YNFdJaEVxUFRNeUg4dkM1dmxncFJkdWc?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-04T12:59:28+00:00",
+          "publishedAt": "2026-11-06T21:17:00+00:00",
           "kind": "Team news"
         },
         {
           "title": "Revolut Audi F1 Team We Start Because We Dare Poster",
-          "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxQR3FwT1B1NnBob1JTQ2pRZU1CQjJZMm1aRi1jR3NHN2pka3hPbGkxYndrOV9HdElpbDdLWjBoRlVPQmM3WUYxX3NHdU9zVnlQbi0zQW5aM0JTQ29SWjJaMzN6bGNuNEk2UWU1UDBrZTI3aGZncktXUXVjc0RaVHdWcVBLTG5UbUNMeXFqWWpDWU9ZeU4tR2Y0dHliWXJ1aVRIVU5kM09iaDZQWlgwbUt5RUVwTVNld0lmdDNkemNJcWZOSjFoTTI5MDJXRGxDYzFWRWJkRE9sd0hkaHVESVVwYmRJZ21oeDhLdEZhVk9CVjBndmdRaDRMR0c4dzFOeFhXSTg5cXcxd2VNMXBLRFJXR08ydzdxLXBjWHEw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPZ2lXd0ZhdWEyTGg5dVZaUURLOU9CTkhEc3NFMmc3b2t4WWRoNHhKWUdJSWZzZFRTNXdUUW5pSTYxYVl4RXBvZzJhV2tjNFloaXpjZkFtSERqM05qaTBmcEtWWGdYNXF2N25LYVFzdF9aeElDVHRoSE1kNG5sNTByZVpnQ2x3blVUblNzLWp3X0IwaUhSR3U2Uzl1dXBad3J6ek9vRk1sTDJHTWJiSTREV1FQU3BqeC1uUTVhLUJmLXNpdmloVXU1bUlpZVZyd215bWFXMGpZSDNfcThOUURfOFdZRkZoNnZrMlZvSDNSRV9Ua09WY0U0ajUzcEcwR3lydUFLcHhB?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-04T10:37:03+00:00",
+          "publishedAt": "2026-11-06T09:37:29+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Audi swaps grey livery for “Piso Paulista” design in Brazil",
+          "url": "https://www.racefans.net/2026/11/05/audi-swaps-grey-livery-for-piso-paulista-design-in-brazil/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-05T08:46:55+00:00",
           "kind": "Team news"
         },
         {
@@ -560,7 +560,7 @@
           "title": "Colton Herta qualifies for F1 superlicence as Valtteri Bottas remains bullish on 2027 seat",
           "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbUpFZHoyV1VESnpmeVViOGh3a1J5TjR2WVplc3ZoYnZ0bjZEcm9YcGhqd3gtRWZFN2hTZWRmMzJmc1pESG5MQ05wS3JaTE1pckhrUDhDNHZSZFFxQnZabVpMbmFKY0tqZlhsSk1rOVB6a2QxOTJkTG8zaFFjUElkbU1GNnNzeUg4ZUdxV2JFbWZWaEpBVWUyRHRlLTRBdGZlbHZmNndXLWROM3lFRG51dzhqSjFDdlJoSFE?oc=5",
           "source": "Motorsport.com",
-          "publishedAt": "2026-11-06T16:53:04+00:00",
+          "publishedAt": "2026-11-06T16:55:46+00:00",
           "kind": "Team news"
         },
         {
