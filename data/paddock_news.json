@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-07T22:52:58.563753+00:00",
-  "newsUpdatedAt": "2026-11-07T22:52:58.563753+00:00",
+  "updatedAt": "2026-11-08T02:35:32.804255+00:00",
+  "newsUpdatedAt": "2026-11-08T02:35:32.804255+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Hadjar not happy with F1’s wet weather tyres after rain hits qualifying",
+          "url": "https://www.racefans.net/2026/11/07/hadjar-not-happy-with-f1s-wet-weather-tyres-after-rain-hits-qualifying/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-07T23:21:05+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "‘Maybe it’s the best place to take it’ – Verstappen sets out goal from back of the grid in Sao Paulo",
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTWNxMHJhSENCbjlSWUQ0REhzWDdxT1pNdm50cndXZFBqMGZfTGstWmZOQ0VRak1TT19Xay1DNDBjR2NSRGRtRkZJSXdEV0dfek44YkxFbk9ncnB0MUx0T0l3bFdqUXBaNjN0Mi1HTE1fT2dEVjJlbElEcmFuTzBYeW5oTm1TNUlISTd4YWpfOVVTZnFCYzZSSHZXZGtZUmlJNkJmUmtncWxpeDhpUU9HYlJwV3cyRmRlVm5SZ09BNWpEbElDcEFxbGstRktiUmV1OEhsbkxpWEZzZ1QtSkdyckpDeUZhQ2JBOWgzelpWUkIxazA?oc=5",
@@ -18,13 +25,6 @@
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2tMUUJoQ2ZqemU0amEyNGptYzliaTNLb1FBQm5Ca0ZyYzZVb2JuYzNKWVVqQi14NDJ5WXE5eHhvdUYySTNVZEVnNGJqaVJoN1ktdm4xQlA3UVF6MDQ1ckRJaFNISHlLOVZJcXo0UVNfS3haS3cwS1B1Nzlnb3U0c3ZsZ0pMUTJJbG1HN3JGRTB1dUJSYnd5c1pjQld2WWw3a2FSNExmWTNJaWF4amx6RFAxYk1hT1NIdGVjRDJ3b3B4akwwRnowM01tMnlhZUotQXYwTFZONWNRMlNl?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T15:46:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "F1 Brazilian GP: Verstappen edges out Antonelli to top FP3 as Hamilton hits mechanical trouble",
-          "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-verstappen-edges-out-antonelli-to-top-fp3-as-hamilton-hits-mechanical-trouble/10872582/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-07T15:37:40+00:00",
           "kind": "Team news"
         },
         {
@@ -73,6 +73,20 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "'Of course there is tension'",
+          "url": "https://www.the-race.com/formula-1/of-course-there-is-tension-how-leclerc-sees-ferrari-mexico-fallout/",
+          "source": "how Leclerc sees Ferrari Mexico fallout",
+          "publishedAt": "2026-11-07T23:46:13+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'Using the Qualifying session as a test' – Hamilton reflects on grid penalties and power unit changes in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPV1VwaGg3TTR1bVJPN3VlLTBKZWtJeHlNYTlsU3ByVGpFSkJrVTZJYUFQOFAxYUw3eWQ2T2lISHBuZ0ZNbkZFMEYxcDJvU1lkR2l5dWhXYzlLN0Z3ZVVZZGVMOUp6QmNwWXhKUW8zcE5RbDFVdTR0ZFhHam1BTTVPUURjRkt2OUltUUpGX1NhalMtMjdCdHI4ekdkcUE5N3BFaGZfREpLWnNjMTR6cjFENGZjUXpaems0M2dFXzBMNDBsQXFLY2NrY3M4MW1rV0c4QXdlU3BVWjJBNWlFdmdkcmdoaXh3QVhYMHloaFNYMEpnemdpTXZ2ZzFuQnhtX1FUZ1ZZ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T23:01:00+00:00",
+          "kind": "Technical report"
+        },
+        {
           "title": "Hamilton insists Ferrari tensions with Leclerc are over: \"We've squashed it\"",
           "url": "https://www.autosport.com/f1/news/lewis-hamilton-insists-ferrari-tensions-with-charles-leclerc-are-over-weve-squashed-it/10872775/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -81,16 +95,9 @@
         },
         {
           "title": "Lewis Hamilton insists Ferrari tensions with Charles Leclerc are over: \"We've squashed it\"",
-          "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxOVkxlbkFiVTdnM0piTGVLRnJieGUxQXplLTBySzZoWHV5M3FIS05HSTlMa1JqTGlPM3VSZEp6LVdrWmlXYnAyU1AzWGNKMjNsaDYtQU9hVjlyb0NVcnJoWXFaTUF6Nlo1MEJWd2JYaTM2YnNGQUZiWEFUeXVXLUNtZUczU2dNWmh2MElxX09aYThvZmloVloxVF9JY1R1MmlVR0Mwc000NXFTZTd5ck5idERGUktmOUlvSkNsMGJkOU9vNzZGYmdma2NIVkNmTC1peU9OaHd2UkpaMG5ta0pYQWUwYlIwMHFyTUNxNzk2X2M0ekFMMHVkQU9lZ1Q5VS1JcGdDV2tuU1dKbXI0ZThYaXQ1OTVzTVM3YWJNdTY2dC1EQVhzNkhSeHJHNFktUUxzNUpWZGM4d2tDdw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPSW4wcEFZNzFCWS1JUjEwM0lxQjZmRHBtaUxQbWFONzAwMVN1X25Ecjl6UkxlaUs0RU9LM1g2WnhxME1EZGo3R0xJLVZ0ODBPNGx4a2hlTWNGSnVNQnZHQTNwbElXanBBRV9talFGWlo1ck5xbFRubTFnV2pydWxPVk5UZlJBZjQyT1lmVVNid3ZxcWR4Q2RmV1I3MVZVWXVfYjE5M3VnZnZqWjhFVG8tREhoSm5Xd3Z4WDZTOFFHam85R241Ny1EcGVR?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-07T21:45:25+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Lewis Hamilton set for new penalty, will start F1 Brazilian GP from back of grid",
-          "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNTWY4bGlzcmRJeTBPWERZLWlnT0ZYSWhPTVVaODRhb3hGSFpMajBlUXBNWWhjMVo1VnFTUmhObHI0NXI4YXFVaTRvUTlxT2d2d2ltZHlKU096UXFaYTJ2NzVmSEtKMnBzZnY3UFcyekh1TzhLUnczamIyb00yMm95aTVnRWEwakVwU3BIUzNtZ3l2VnZUM1lUbUw0bU4yZE9GRzhFOG9PNkdpcThfaTA4SXRESkRPdHA0ZFUzT2d4bC1zaHpqTUw1M1BnSzRTUmt6Z0JaMVVpOWdaZU5tY2IwVGUzSU9Bcjh2elBGd3lfSHZRUHVCUl9EeDNkZ21LWVhod1dEU1hUeEtOdTg5d08tTXNJWmltSXg4LTN3ME5XcXpPVTdVRHkyVA?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-07T17:42:23+00:00",
           "kind": "Team news"
         },
         {
@@ -125,24 +132,24 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Why Russell's 'pole' was lost either way",
+          "url": "https://www.the-race.com/formula-1/why-russells-pole-was-lost-either-way-and-it-hurt-like-hell/",
+          "source": "and it hurt like hell",
+          "publishedAt": "2026-11-08T00:02:58+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "‘This season’s just not meant to be’ – Russell rues ‘misjudgement’ that cost him Sao Paulo pole",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOHFEZHN6WE55clNhWnpjSnV1cnJ2RjYzVkQ1TVBQRTU1NldFWjdDQWcycEFWY0twTEZmYzF5SHUwOXd6V3NXdlBicXh4ZzdnVlBWZlN1TFQ3M1RoSHBiakF0a3VSWElEdUp5eUUxOGNnMS1KdnNIdmF3TEJuaTJlQjRoZ1ktbm94ZkZmRDBRZFpQTjBHRXJiRms1V0pEbVZfblBaekhWbkVzTDVEcl90MXVaYVFNbUEwTml4RVRZYjZCd2d6WGM4QWdSVm1yWDVCTWwySGo3aWhic2x1RW4wRDJCcXVzcW82OHc?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T23:15:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Why Russell was so angry in Brazilian GP qualifying despite already having a grid penalty",
           "url": "https://www.autosport.com/f1/news/why-russell-was-so-angry-in-brazilian-gp-qualifying-despite-already-having-a-grid-penalty/10872788/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-07T22:15:40+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Social Media: Wolff believes Russell’s aborted lap would have put him second",
-          "url": "https://www.racefans.net/2026/11/07/social-media-wolff-believes-russells-aborted-lap-would-have-put-him-second/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-07T21:57:07+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Russell fumes at Mercedes after pit wall error costs him shot at fastest time",
-          "url": "https://www.racefans.net/2026/11/07/russell-fumes-at-mercedes-after-pit-wall-error-costs-him-shot-at-fastest-time/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-07T21:39:09+00:00",
           "kind": "Team news"
         },
         {
@@ -188,6 +195,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "‘I couldn’t have done any more’ – Norris details how he excelled in wet Sao Paulo Qualifying",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWUk0cFJKeXVXRnY3R3lncjhEOVg0elFna2tqb3BXOUZLNDFZcmRQWHNtbmJjdndaU2k2Skg3eTVkUzhGMkpBQjJTb0dmTDdScFZxSDhOYkdPNWtqWFZhR0VSb0cxS25uRUVlQmktaFozbmQ0cFZ0aUlfUUd4bmpPT29iaU1JZ1hDdGItVXpuWnpzX3lROVp5QmFjeExJZnRqTzNFRURReWEyNW93NTg4NHBieDBFb0dvR1Y4a2RHU0hOQi1DUjJkbk5rbjhfbGJaRG1JLUtnZDVXV2ZSbFBaVFF4RXhEbUdt?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T22:28:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Norris on Brazilian GP pole as Russell rages at Mercedes over aborted lap",
           "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
           "source": "www.the-race.com",
@@ -199,13 +213,6 @@
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZ2dtYWwzSlFxdjdud1hzb0tYRXVrLUpCYTlaUlZJbGxpeUZNc2FxT18wZW4yeE0wWTF4Sm5zQUVGRGZic1REQ01MdExhYkFLR084YWlZZHEyc3lEZG84VWZ2anB4WUFhUTBsTFlpNm9yaGpTYXJUNk93R1dua1RBeVhMUEpyajVWWWxiXzljNXN4UUxwYklBV0dUSVJURjNzeGlXLVlWVURXV0Z5UEZ2WkxLQXk2WXpwWWhnUW1FTklvMk5SSWVzRkZzWlFBZ2RBQzlkVFZaT1V0aFN0ekNEMjdhZE4?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T20:37:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "F1 Brazilian GP: Norris splashes to pole from Russell",
-          "url": "https://www.autosport.com/f1/news/f1-brazilian-gp-lando-norris-takes-pole-in-soaking-wet-qualifying/10872710/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-07T20:33:59+00:00",
           "kind": "Team news"
         },
         {
@@ -405,6 +412,13 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Lawson concedes he 'didn't quite maximise' his Q3 effort despite looking forward to P3 start in Sao Paulo",
+          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNmh0ZEFpaTdSYWxhVldBYnpWYmg5STBvekl6VzZWWFQxOTlmWXVWSkdldWw5VDFYQ0ROUjVNVWRHZnFDSldDZ0dsdEhhdmE5ajFqU0NzUDNteWZXVksyaFNaTDcwNllnZW5JdzA1bFpGdjcwSGtWV0REaS04TzlHWHl6a084Q0h0VFlXb2ZSbU1UY1BRZWdWVTExbWtTQjY0ZlJJUjNvOGZFSmxvaUtfczF6MW93a1Z5MnVDdGNUdm5PRjhyQ3VvU0JzMFZXazh6ZnJQdzRTNllTazh0SnBsNldRVHg5QXVGWFJNRlJycTQxeENvT0RqTy10aDY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T22:42:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "“Everyone will be happy” with Racing Bulls’ decision on its 2027 driver line-up – Permane",
           "url": "https://www.racefans.net/2026/11/07/everyone-will-be-happy-with-racing-bulls-decision-on-its-2027-driver-line-up-permane/",
           "source": "www.racefans.net",
@@ -416,13 +430,6 @@
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUWk5T0ZTMnMxSmdWb1hqUktMMHh2c2UzeEFUVEpLQ0FmVkI2ZzA1ZjhKMThvZHhQNVlER3ZRVklxWEp6QWZiN0MxVkFRUDVEa1hTTGF5ejIwcWhDTmkzb3NjZVJVNzBpa0J5Z3BkR0xQUWFMMjM2d1RJWXZkU3JVUGwwbUM5M3NJREZwZ0FVd1VTYXR6enN0U2wwVXBpOTg1MFFiT3AyXzdMWnlxa1ZHSHdqRlpTb1JZYXJrak8wZFJHUndXMnM0dmhZamY3ajNGVTZ0YmVkYWFNT1ZFQkJRMENSemF4Q3Vfa1ZBSzFzczg5MDA?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T07:42:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Lawson predicts it will be ‘very, very close between us and Alpine’ in Brazil",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T22:04:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -450,13 +457,6 @@
       "name": "Haas F1 Team",
       "stories": [
         {
-          "title": "Ayao Komatsu: Esteban Ocon axing ‘surprised everybody at Haas’",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSWpjalNEa005N1k4N0JlMjNQTk5nQlZqdkFFbGtSMGtWNzhYZGtKN1pJTVJ0Y1VtSHlvM3FIZ01TM1BRYTNIV25Jd1djSFlLcnVEa0U3bEZqRWpHcU9rMGZrNHQyWlpZZ0FhV1d1cWt6b2kxOVlWeERlaWZJcS1odWdMQzh3VUxPbnNYbUNuUjducWJRRlZ1LXZXMjN4MlZxRFdzRGxn?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-07T13:13:57+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Ocon axing ‘surprised everybody at Haas’",
           "url": "https://www.autosport.com/f1/news/ayao-komatsu-esteban-ocon-axing-surprised-everybody-at-haas/10872457/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -468,6 +468,13 @@
           "url": "https://www.racefans.net/2026/11/07/komatsu-was-protecting-haas-from-rhetoric-by-dropping-ocon-wolff/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-07T11:00:05+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Camara looking to learn from Bearman on surprise F1 debut in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPOWpJYWNVZmwtdDZ2Rlc0S3c0bUpQaU9GSnZ4ZkE4V3Z0NnVJSnpLaF9iLTF6TzBCN1JMVkpuR3Y2bkVqX3pOTHR3NlVoQ3Zic0xGUi1WQ2hEX3pPWElwUDlCQVU1dUptVEEtNDR5M19BeFRYRVctbm5GbVdBaDB3MkVOV09VX0c1aXZWSUdnTGZlZmxMMFpHcXV2UHg1a2ZocUt1WHhBbTNjaGxQU0F4SGU4V0ZsSnJRRGNSMktYTGIwSWk1UmVUMWIwNFpBQQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T17:02:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -499,17 +506,17 @@
           "kind": "Team news"
         },
         {
-          "title": "McNish keen to focus on Bortoleto’s pace after issues with Hulkenberg’s car",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOLTB6MFRoemM3dkYxejJMbm1KdVZYRHFyUHlGVWdzRlN5Q0RCV0FEVFNsaVhldWFwdEtPSmxWSXUxSTQwV2g5Y3VrWnJvazVWS0lGLWlDUnFIcmJKbHphUWZ3ZlZ0VkFYeUUtWXNLS2RmeUN6ZDItVDBOYTRzcW1IMldZMkY3ajRzaDZkc0Fwa0xHM1Z6QzRBdkowaFNLeTM2RlM3OUVUTTB2ZlRJUS1YNFdJaEVxUFRNeUg4dkM1dmxncFJkdWc?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:17:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Revolut Audi F1 Team We Start Because We Dare Poster",
           "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPZ2lXd0ZhdWEyTGg5dVZaUURLOU9CTkhEc3NFMmc3b2t4WWRoNHhKWUdJSWZzZFRTNXdUUW5pSTYxYVl4RXBvZzJhV2tjNFloaXpjZkFtSERqM05qaTBmcEtWWGdYNXF2N25LYVFzdF9aeElDVHRoSE1kNG5sNTByZVpnQ2x3blVUblNzLWp3X0IwaUhSR3U2Uzl1dXBad3J6ek9vRk1sTDJHTWJiSTREV1FQU3BqeC1uUTVhLUJmLXNpdmloVXU1bUlpZVZyd215bWFXMGpZSDNfcThOUURfOFdZRkZoNnZrMlZvSDNSRV9Ua09WY0U0ajUzcEcwR3lydUFLcHhB?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T09:37:29+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Audi swaps grey livery for “Piso Paulista” design in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPRHZLTm5uZ3N3UlI4b0JOOFhMMEJkei1wUWVqSDZCeDFoVHpmaUVSUkhNcWJ6cmN4OFkzTWgzMlV0RkdjSHVrTjQ3NXdWNFZoMVJVUVJ0S0dGRmFEUWNoRTlpMzFSOUlMa3V2OHBYNnBjRjZDMmtENjYxaDV5eEZQYTg3bjkzeVNvVVo5YmY5djI2bUtfeGw2VkdB?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-05T08:46:55+00:00",
           "kind": "Team news"
         },
         {
