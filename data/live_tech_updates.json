@@ -19,51 +19,51 @@
         "Badge": "No update found"
     },
     "Ferrari": {
-        "Component": "Aero update package",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Ferrari introduced an aero update package that provided a marginal performance gain of less than a tenth.",
-        "Pace_Delta": -0.08,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNM2wwVlJFUmxUUk4wNTBRV3pndFczbFk2VnA0Q3BLNThnT2JPRG5VTkdWVHd2bU5NckMtdUVPTGE5Qzd1SnplX0xOMmN5VGJhNkZSMm5menJwN1pwMjc4LVR4bjl2UXNaZ0ZaZW5Sa3NlVUZOVjRsUDJ3UWdsODZoTmNrdFh0dmhDNGZZUU1hY09HQmhEeW5kU0o5SFVDUS1jODdyXw?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "United States GP",
+        "URL": "",
+        "As_Of": "S\u00e3o Paulo GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from United States GP)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Major upgrade package",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Mercedes brought a significant upgrade package that caused handling instability and required further fine-tuning.",
-        "Pace_Delta": 0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.15,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOF96dFRySTU3NlB5cm5OT0tMendiTUlEZWpmbFJ3TVI0LXJpY2dQVE9nV0JoeGdCbW1Uc2pLWlc1amJMNDZHaEJuWk9TMG43Z2t1dU1LYUhsOW1Gejh4REJpZC1xYjNlMnNqdDVCbzRCZEZQV3NrYVVJUW5lMTVackJLS1piMEkyY0Y5ZGlSeXh0R3pNREpTLWNrcUdvU0tyWnVPU3J5N0NJN0hySFo4SU5RS3U1bjdROVMwbQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "United States GP",
+        "URL": "",
+        "As_Of": "S\u00e3o Paulo GP",
         "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.15s penalty)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "McLaren": {
-        "Component": "2027-concept front wing",
+        "Component": "2027-spec Front Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a new front wing design in Brazil intended to test concepts for their 2027 challenger.",
-        "Pace_Delta": -0.05,
+        "Summary": "McLaren introduced a new front wing concept intended for their 2027 challenger to improve car predictability.",
+        "Pace_Delta": -0.06,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
+        "Upgrade_Score": 0.06,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [

@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-08T10:37:08.261730+00:00",
-  "newsUpdatedAt": "2026-11-08T10:37:08.261730+00:00",
+  "updatedAt": "2026-11-08T17:09:35.271300+00:00",
+  "newsUpdatedAt": "2026-11-08T17:09:35.271300+00:00",
   "race": "São Paulo Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Can Hamilton and Verstappen fight back for F1 Brazilian GP victory?",
+          "url": "https://www.autosport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872922/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-08T13:29:32+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Hadjar not happy with F1’s wet weather tyres after rain hits qualifying",
           "url": "https://www.racefans.net/2026/11/07/hadjar-not-happy-with-f1s-wet-weather-tyres-after-rain-hits-qualifying/",
@@ -18,13 +25,6 @@
           "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTWNxMHJhSENCbjlSWUQ0REhzWDdxT1pNdm50cndXZFBqMGZfTGstWmZOQ0VRak1TT19Xay1DNDBjR2NSRGRtRkZJSXdEV0dfek44YkxFbk9ncnB0MUx0T0l3bFdqUXBaNjN0Mi1HTE1fT2dEVjJlbElEcmFuTzBYeW5oTm1TNUlISTd4YWpfOVVTZnFCYzZSSHZXZGtZUmlJNkJmUmtncWxpeDhpUU9HYlJwV3cyRmRlVm5SZ09BNWpEbElDcEFxbGstRktiUmV1OEhsbkxpWEZzZ1QtSkdyckpDeUZhQ2JBOWgzelpWUkIxazA?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T21:26:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Verstappen beats Antonelli and Norris in Sao Paulo FP3",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOY2tMUUJoQ2ZqemU0amEyNGptYzliaTNLb1FBQm5Ca0ZyYzZVb2JuYzNKWVVqQi14NDJ5WXE5eHhvdUYySTNVZEVnNGJqaVJoN1ktdm4xQlA3UVF6MDQ1ckRJaFNISHlLOVZJcXo0UVNfS3haS3cwS1B1Nzlnb3U0c3ZsZ0pMUTJJbG1HN3JGRTB1dUJSYnd5c1pjQld2WWw3a2FSNExmWTNJaWF4amx6RFAxYk1hT1NIdGVjRDJ3b3B4akwwRnowM01tMnlhZUotQXYwTFZONWNRMlNl?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T15:46:00+00:00",
           "kind": "Team news"
         },
         {
@@ -42,9 +42,9 @@
           "kind": "Technical report"
         },
         {
-          "title": "Horner reveals Red Bull call to thank him for F1 engine project after maiden win",
+          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
-          "source": "Autosport",
+          "source": "Motorsport.com",
           "publishedAt": "2026-10-22T07:00:00+00:00",
           "kind": "Technical report"
         }
@@ -73,6 +73,13 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "Can Hamilton and Verstappen fight back for F1 Brazilian GP victory?",
+          "url": "https://www.autosport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872922/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-08T13:29:32+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Rivals pay tribute as Hamilton reaches 400 F1 starts",
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcVZpUDE2T2ZXWld6M3pqOTk3eUNJVTBva0lqcVpackNQVE5PZlNzTzlMNGZBN3M0aVprUFlVbHU3azNtWEpYS3V6MzRhLUJCREpEa3pJWU9iRnl1bTRLcl9RYUliTnhPY0RIcm42VWxzTFNObEpMWldkbnhWWFJRYUFmbWo4Sm14OVlrSUEwV2w4TFpoNjc5ZUJwMUtrX0M4S2RwZ3BOaUxHYXhxVTNQbHRlMWxZdjFEUmRKaGw1LUxTcDFjMUdVWmFISFhCckdXa3RqcVJRRnpvcTU5V3lkLW9nbXpJVG11VFBR?oc=5",
           "source": "Formula 1",
@@ -80,10 +87,10 @@
           "kind": "Team news"
         },
         {
-          "title": "'Of course there is tension'",
-          "url": "https://www.the-race.com/formula-1/of-course-there-is-tension-how-leclerc-sees-ferrari-mexico-fallout/",
-          "source": "how Leclerc sees Ferrari Mexico fallout",
-          "publishedAt": "2026-11-07T23:46:13+00:00",
+          "title": "Beyond the track: Hamilton's remarkable projects away from F1 as he marks 400 Grand Prix starts",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQUltampidjR3bEk1Vmo2ZklHMUJSRElRWjZmVVNNV0g3T215V0dJaGhZVkRQLXBwVU1tbWh3MVdtSkNVdjVmcWl0Qm95WldTak9jYldsejdJbVZqNnFMLW41eEJRX1hqNWpIanhmYzBzNE42TGJzZFU2UEVrT2R6VWhsSDBsZ2RoeG1xX094V1JTbU1tcE9JMEhNQ3F1MmZFNm1maFd5Z21QSHcyMXJyY0JOX2RpVlFEajg3UXNWWWZralhVUVloLUF2em5NNkFQRXBOVkpXcUNmVWp5SDNlN1ZXb3ZHWEtDOWdSTEdzLWk?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T09:10:00+00:00",
           "kind": "Team news"
         },
         {
@@ -92,13 +99,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-07T23:01:00+00:00",
           "kind": "Technical report"
-        },
-        {
-          "title": "Hamilton insists Ferrari tensions with Leclerc are over: \"We've squashed it\"",
-          "url": "https://www.autosport.com/f1/news/lewis-hamilton-insists-ferrari-tensions-with-charles-leclerc-are-over-weve-squashed-it/10872775/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-07T21:48:47+00:00",
-          "kind": "Team news"
         },
         {
           "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
@@ -174,10 +174,10 @@
           "kind": "Technical report"
         },
         {
-          "title": "Mercedes fined as Russell skips media duties after power unit frustration",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSVRXcVlzeHEwTWdmU0hrOWZmQkt3bld6YXpYbU00UEo4VkhkTUtIdFU0elJoNmwtRGNqU24zbU9BaUFRMy0xVWpJc2JSaDJVaUVvZDlKSlZQTURCbHlLT1FCMDlzNkdHYXhtNDBZUVZEbTcybWo1b1pVMG94NENJeXp2cmRxMkpOc255V2t2R1FwaGFSUnpHY2VrYWZqQVZ0Wll5TXJxSEZOSEpVMjRr?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-02T08:11:41+00:00",
+          "title": "Fuel if you think it's over? The fine lines that cost Russell pole position in Mexico",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ1hDelhMaVc0ckdQVkdIOG9CbkRIcmxPU0VUN1ZkNC1MMk1hTU05TmNUX2lpYVliaXowN0lyb0p6WC1wYmRtNkZYVTNUMnZ0U1FES292aTJpNk5CWGt1LWNWSDNnQ3pjWHV3aGtRQjVLcExaZGFvZl81TXZ5aXBEdzQ2WFMzVUZ6THZocnBWY0hSTjNhR2pUTXM1Rm9HMmhxdUI5YjNObFhnU0szSTF6QjczNHhpYkUxRGh2THVITEtlcXNsa0E?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-01T13:00:30+00:00",
           "kind": "Technical report"
         }
       ],
@@ -202,6 +202,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "ONBOARD: Norris’ 2026 Pirelli Pole Position Award lap at the Sao Paulo Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU2h2YURTbVRnS2EzYndYX211RVJXMDJYQkozNFdOd2hiT1pfVGtFQ1JpYWppNldWOXQ2ZU1fT3FXR2pULVBzRHdadk9XQ3BaRHFfUFN1VXkySmo3d2l1dUlSc3lIWmdiMWdQMGVoOTg0bVB6dU9nNUdPRDI4QWp5TmJoaE1qaWdRUm1hX0V5dHdZM2ItLVZhTTQ2ZkZ2cTV2LUVLNHEzVTlfX2RDT2F2UTdXOG1VaTd6QVg5c0RIOE9MSW5fUGNKUU4xbG5WQQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-07T22:42:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘I couldn’t have done any more’ – Norris details how he excelled in wet Sao Paulo Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWUk0cFJKeXVXRnY3R3lncjhEOVg0elFna2tqb3BXOUZLNDFZcmRQWHNtbmJjdndaU2k2Skg3eTVkUzhGMkpBQjJTb0dmTDdScFZxSDhOYkdPNWtqWFZhR0VSb0cxS25uRUVlQmktaFozbmQ0cFZ0aUlfUUd4bmpPT29iaU1JZ1hDdGItVXpuWnpzX3lROVp5QmFjeExJZnRqTzNFRURReWEyNW93NTg4NHBieDBFb0dvR1Y4a2RHU0hOQi1DUjJkbk5rbjhfbGJaRG1JLUtnZDVXV2ZSbFBaVFF4RXhEbUdt?oc=5",
           "source": "Formula 1",
@@ -213,13 +220,6 @@
           "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-07T20:48:57+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Norris clinches pole in rain-affected Sao Paolo Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQZ2dtYWwzSlFxdjdud1hzb0tYRXVrLUpCYTlaUlZJbGxpeUZNc2FxT18wZW4yeE0wWTF4Sm5zQUVGRGZic1REQ01MdExhYkFLR084YWlZZHEyc3lEZG84VWZ2anB4WUFhUTBsTFlpNm9yaGpTYXJUNk93R1dua1RBeVhMUEpyajVWWWxiXzljNXN4UUxwYklBV0dUSVJURjNzeGlXLVlWVURXV0Z5UEZ2WkxLQXk2WXpwWWhnUW1FTklvMk5SSWVzRkZzWlFBZ2RBQzlkVFZaT1V0aFN0ekNEMjdhZE4?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T20:37:00+00:00",
           "kind": "Team news"
         },
         {
@@ -467,7 +467,7 @@
           "title": "Rafael Camara",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-08T08:30:04+00:00",
+          "publishedAt": "2026-11-08T14:32:50+00:00",
           "kind": "Team news"
         },
         {
@@ -565,7 +565,7 @@
         },
         {
           "title": "Colton Herta qualifies for F1 superlicence as Valtteri Bottas remains bullish on 2027 seat",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbUpFZHoyV1VESnpmeVViOGh3a1J5TjR2WVplc3ZoYnZ0bjZEcm9YcGhqd3gtRWZFN2hTZWRmMzJmc1pESG5MQ05wS3JaTE1pckhrUDhDNHZSZFFxQnZabVpMbmFKY0tqZlhsSk1rOVB6a2QxOTJkTG8zaFFjUElkbU1GNnNzeUg4ZUdxV2JFbWZWaEpBVWUyRHRlLTRBdGZlbHZmNndXLWROM3lFRG51dzhqSjFDdlJoSFE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVHQ3QzY2NlJVOEMzZEJBbUNqcEEzTzJVbXVIQnkxTWpodUhFU202anlqNEN3aWx1b0VZajZZQVRsQWxoV3dtYXBmWUFKdGkteGlkVmh4Zk13R0RyRE1qX1ZLS0pMdzFUZ1V4M05UZnBBUjZNVC1kbGZnSkI2SG5ucE0yTUpiN0FKd2V2RWFJc05ZdTdTLXVLSkJuTmVHNUtyUDNUSjVqR0JTaDN5bzhXTUJRbmlteGdW?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-06T16:55:46+00:00",
           "kind": "Team news"
