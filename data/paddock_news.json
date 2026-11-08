@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-11-08T17:09:35.271300+00:00",
-  "newsUpdatedAt": "2026-11-08T17:09:35.271300+00:00",
-  "race": "São Paulo Grand Prix",
+  "updatedAt": "2026-11-08T21:16:34.915671+00:00",
+  "newsUpdatedAt": "2026-11-08T21:16:34.915671+00:00",
+  "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
+          "title": "Verstappen reflects on 'challenging' P21 to podium charge",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQblV0SjNUcGhRbFAxbjNISVpxMm1MNFpybkdlUUNQdkdrV29sbEhVQW1RNG80UWNyRWRGSGdUdjVxc3drdFRpd0ZHeXh6d1BqblFtelhmWjZnM1NRMExoUjJ4c2gxRUo4VDVRYk12ZEN4bnhCemdoWTVLS3BtbXlsOVZKU0R0ODh4SlZSRDd0RkFnbC01aWpjUzBjMUdMNmJBY3U3NlNzbWx4bUVzMENBV1VDeDRUZG9xM0VqNGU4VlNEYVRrdGVXUl8tWUd6RWxBRDB6elRHMktVNnIzcTFPbndJTUY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T20:41:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Verstappen says he “did 85% of the race with a f***ed car” after finishing second",
+          "url": "https://www.racefans.net/2026/11/08/verstappen-says-he-did-85-of-the-race-with-a-fed-car-after-finishing-second/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T19:43:50+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Can Hamilton and Verstappen fight back for F1 Brazilian GP victory?",
           "url": "https://www.autosport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872922/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-08T13:29:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Hadjar not happy with F1’s wet weather tyres after rain hits qualifying",
-          "url": "https://www.racefans.net/2026/11/07/hadjar-not-happy-with-f1s-wet-weather-tyres-after-rain-hits-qualifying/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-07T23:21:05+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘Maybe it’s the best place to take it’ – Verstappen sets out goal from back of the grid in Sao Paulo",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOTWNxMHJhSENCbjlSWUQ0REhzWDdxT1pNdm50cndXZFBqMGZfTGstWmZOQ0VRak1TT19Xay1DNDBjR2NSRGRtRkZJSXdEV0dfek44YkxFbk9ncnB0MUx0T0l3bFdqUXBaNjN0Mi1HTE1fT2dEVjJlbElEcmFuTzBYeW5oTm1TNUlISTd4YWpfOVVTZnFCYzZSSHZXZGtZUmlJNkJmUmtncWxpeDhpUU9HYlJwV3cyRmRlVm5SZ09BNWpEbElDcEFxbGstRktiUmV1OEhsbkxpWEZzZ1QtSkdyckpDeUZhQ2JBOWgzelpWUkIxazA?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T21:26:00+00:00",
           "kind": "Team news"
         },
         {
@@ -42,9 +42,9 @@
           "kind": "Technical report"
         },
         {
-          "title": "Red Bull called Christian Horner to thank him for F1 engine project after maiden win",
+          "title": "Horner reveals Red Bull call to thank him for F1 engine project after maiden win",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
-          "source": "Motorsport.com",
+          "source": "Autosport",
           "publishedAt": "2026-10-22T07:00:00+00:00",
           "kind": "Technical report"
         }
@@ -56,22 +56,19 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Engine Cover",
-            "Sidepod"
-          ],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
     {
       "name": "Ferrari",
       "stories": [
+        {
+          "title": "Hamilton “didn’t hear that it was raining more” before high-speed spin",
+          "url": "https://www.racefans.net/2026/11/08/hamilton-didnt-hear-that-it-was-raining-more-before-high-speed-spin/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T20:46:37+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Can Hamilton and Verstappen fight back for F1 Brazilian GP victory?",
           "url": "https://www.autosport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872922/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
@@ -80,17 +77,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Rivals pay tribute as Hamilton reaches 400 F1 starts",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcVZpUDE2T2ZXWld6M3pqOTk3eUNJVTBva0lqcVpackNQVE5PZlNzTzlMNGZBN3M0aVprUFlVbHU3azNtWEpYS3V6MzRhLUJCREpEa3pJWU9iRnl1bTRLcl9RYUliTnhPY0RIcm42VWxzTFNObEpMWldkbnhWWFJRYUFmbWo4Sm14OVlrSUEwV2w4TFpoNjc5ZUJwMUtrX0M4S2RwZ3BOaUxHYXhxVTNQbHRlMWxZdjFEUmRKaGw1LUxTcDFjMUdVWmFISFhCckdXa3RqcVJRRnpvcTU5V3lkLW9nbXpJVG11VFBR?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-08T09:10:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Beyond the track: Hamilton's remarkable projects away from F1 as he marks 400 Grand Prix starts",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQQUltampidjR3bEk1Vmo2ZklHMUJSRElRWjZmVVNNV0g3T215V0dJaGhZVkRQLXBwVU1tbWh3MVdtSkNVdjVmcWl0Qm95WldTak9jYldsejdJbVZqNnFMLW41eEJRX1hqNWpIanhmYzBzNE42TGJzZFU2UEVrT2R6VWhsSDBsZ2RoeG1xX094V1JTbU1tcE9JMEhNQ3F1MmZFNm1maFd5Z21QSHcyMXJyY0JOX2RpVlFEajg3UXNWWWZralhVUVloLUF2em5NNkFQRXBOVkpXcUNmVWp5SDNlN1ZXb3ZHWEtDOWdSTEdzLWk?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-08T09:10:00+00:00",
+          "title": "‘I’ll try to win, somehow’ – Can Lewis Hamilton and Max Verstappen fight back for F1 Brazilian GP victory?",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMTkySC02d1J0WWg2YnRrbkVfTXhleGhVWmxFeUVIbDV2UG9DTTkwenZhRWlWTGtPN0d1QWM0eWZjWlZEN3J3bUNVS0NNeFp1SG1NVmNjV1NOTVE5ZFp0dDJrS0Mybjc0T2lnOTdJckJ4am9fRlN3MWd5Q2dzZUZ2RmYzN182R291RmNENUMxLWxJYUk5RW1wcEVCTzNmVGZOS2ZxN1NNQjdra0JsV2ZHVG44a0RBY0tvVE9JQndCOUxHVFlCb1p4UU1ISWw2Q3lKcERLajZHS1VSZ0U?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-08T13:28:55+00:00",
           "kind": "Team news"
         },
         {
@@ -122,16 +112,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Engine Cover",
-            "Cooling Louvres"
-          ],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -139,24 +119,24 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "Why Russell's 'pole' was lost either way",
-          "url": "https://www.the-race.com/formula-1/why-russells-pole-was-lost-either-way-and-it-hurt-like-hell/",
-          "source": "and it hurt like hell",
-          "publishedAt": "2026-11-08T00:02:58+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘This season’s just not meant to be’ – Russell rues ‘misjudgement’ that cost him Sao Paulo pole",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOHFEZHN6WE55clNhWnpjSnV1cnJ2RjYzVkQ1TVBQRTU1NldFWjdDQWcycEFWY0twTEZmYzF5SHUwOXd6V3NXdlBicXh4ZzdnVlBWZlN1TFQ3M1RoSHBiakF0a3VSWElEdUp5eUUxOGNnMS1KdnNIdmF3TEJuaTJlQjRoZ1ktbm94ZkZmRDBRZFpQTjBHRXJiRms1V0pEbVZfblBaekhWbkVzTDVEcl90MXVaYVFNbUEwTml4RVRZYjZCd2d6WGM4QWdSVm1yWDVCTWwySGo3aWhic2x1RW4wRDJCcXVzcW82OHc?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T23:15:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Why Russell was so angry in Brazilian GP qualifying despite already having a grid penalty",
-          "url": "https://www.autosport.com/f1/news/why-russell-was-so-angry-in-brazilian-gp-qualifying-despite-already-having-a-grid-penalty/10872788/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Antonelli explains \"weird\" spin and car instability which cost F1 Brazilian GP win",
+          "url": "https://www.autosport.com/f1/news/antonelli-explains-weird-spin-and-car-instability-which-cost-f1-brazilian-gp-win/10873132/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-07T22:15:40+00:00",
+          "publishedAt": "2026-11-08T20:57:57+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Norris wins after Antonelli spins out of the lead at soggy Interlagos",
+          "url": "https://www.racefans.net/2026/11/08/norris-wins-after-antonelli-spins-out-of-the-lead-at-soggy-interlagos/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T18:55:30+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "F1 Brazilian GP: Norris wins in mixed conditions, Mercedes clinches constructors’ title",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc1RySnA4VElrTzVSNGh5WEp0emhzM3llUTgyYVNmemE3RGozQjR0YkNpN0sxVXBuYzlQVVhSdWw0V2dZT2szOVBTWjBEU3d4Yy04T2Ntbl9kUzNJQ1FFaDhHaGE2Tmdhb2JuNjE4dThndzJrZ3NlR1B1SkFDWUpnUUZ1UlNJSzIzemZGVWl0UnlDTkpzdmRZeWtKM1RmV2g1NGlhU0FhMVgzOHcwTUpkbkgtQkcwenZMNl90ZHJTVTZzMk1PNXBzRnR3OGpqTGM?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-08T18:54:20+00:00",
           "kind": "Team news"
         },
         {
@@ -188,13 +168,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -202,24 +175,24 @@
       "name": "McLaren",
       "stories": [
         {
-          "title": "ONBOARD: Norris’ 2026 Pirelli Pole Position Award lap at the Sao Paulo Grand Prix",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNU2h2YURTbVRnS2EzYndYX211RVJXMDJYQkozNFdOd2hiT1pfVGtFQ1JpYWppNldWOXQ2ZU1fT3FXR2pULVBzRHdadk9XQ3BaRHFfUFN1VXkySmo3d2l1dUlSc3lIWmdiMWdQMGVoOTg0bVB6dU9nNUdPRDI4QWp5TmJoaE1qaWdRUm1hX0V5dHdZM2ItLVZhTTQ2ZkZ2cTV2LUVLNHEzVTlfX2RDT2F2UTdXOG1VaTd6QVg5c0RIOE9MSW5fUGNKUU4xbG5WQQ?oc=5",
+          "title": "‘I just kept it cool’ – Lando Norris delighted to ‘give something back’ to McLaren with Sao Paulo win",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM2Nqd011MkE0ajhzVFhGNDF6QS1rVkZkdGhSTS1LNnNRelZFMUJTUzAxc21oNmtKSUp6VHN2NTNlLWlPODZySlE1UlkxSmFhc2MwRC1idmFVaDhIbFVxaU1QMDRwZGc1VGxsaTB5anZkMEFTd2Z5VmlQb3ZfdTZQRE1BM1JGY0F1T2JNX2xqaHNsTHg5Y2kwOU92WUh3SVVsNjVicEl3YlFMQW9kMktFb3RUY2JneFN6LXh5eEZvWldCZnZfQmhlOFZJTFZmVG42N1dTamw2QUVXU0h6cVhDaklpTHBzT3JPUkFj?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-07T22:42:00+00:00",
+          "publishedAt": "2026-11-08T19:51:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "‘I couldn’t have done any more’ – Norris details how he excelled in wet Sao Paulo Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPWUk0cFJKeXVXRnY3R3lncjhEOVg0elFna2tqb3BXOUZLNDFZcmRQWHNtbmJjdndaU2k2Skg3eTVkUzhGMkpBQjJTb0dmTDdScFZxSDhOYkdPNWtqWFZhR0VSb0cxS25uRUVlQmktaFozbmQ0cFZ0aUlfUUd4bmpPT29iaU1JZ1hDdGItVXpuWnpzX3lROVp5QmFjeExJZnRqTzNFRURReWEyNW93NTg4NHBieDBFb0dvR1Y4a2RHU0hOQi1DUjJkbk5rbjhfbGJaRG1JLUtnZDVXV2ZSbFBaVFF4RXhEbUdt?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T22:28:00+00:00",
+          "title": "Norris wins after Antonelli spins out of the lead at soggy Interlagos",
+          "url": "https://www.racefans.net/2026/11/08/norris-wins-after-antonelli-spins-out-of-the-lead-at-soggy-interlagos/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T18:55:30+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Norris on Brazil pole as Russell rages at Mercedes over aborted lap",
-          "url": "https://www.the-race.com/formula-1/norris-on-brazilian-gp-pole-as-russell-rages-at-mercedes-over-aborted-lap/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-07T20:48:57+00:00",
+          "title": "F1 Brazilian GP: Norris wins in mixed conditions, Mercedes clinches constructors’ title",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc1RySnA4VElrTzVSNGh5WEp0emhzM3llUTgyYVNmemE3RGozQjR0YkNpN0sxVXBuYzlQVVhSdWw0V2dZT2szOVBTWjBEU3d4Yy04T2Ntbl9kUzNJQ1FFaDhHaGE2Tmdhb2JuNjE4dThndzJrZ3NlR1B1SkFDWUpnUUZ1UlNJSzIzemZGVWl0UnlDTkpzdmRZeWtKM1RmV2g1NGlhU0FhMVgzOHcwTUpkbkgtQkcwenZMNl90ZHJTVTZzMk1PNXBzRnR3OGpqTGM?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-08T18:54:20+00:00",
           "kind": "Team news"
         },
         {
@@ -256,15 +229,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Cooling Louvres"
-          ],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -314,13 +278,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -363,19 +320,19 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": null,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
     {
       "name": "Williams",
       "stories": [
+        {
+          "title": "Mercedes wins the constructors’ title for the ninth time, tying with Williams",
+          "url": "https://www.racefans.net/2026/11/08/mercedes-wins-the-constructors-title-for-the-ninth-time-tying-with-williams/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T18:39:55+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Sainz to continue ‘experimental work’ on Williams car this weekend in Brazil",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQnUzeFhLazgxR0ZESTY2ZXpQeHRjSFRXdHhwNHZyTGZ6X3F3SW9OUTZ6eDVDUWt1bnhaYW5SdlBhUHc5VHh0aE94bk55bXBqbndZd0Z4N1FkN1RHWVVoQmlqXzloc2pTa3NmYlUwSGJ0X1ZXdVBFNU1zUER5eEdPWXZqZmdyVUtFd09kWU9XaC1NaVRldk4yQlplV25aRmg1Rmd0alljZDFld2JKaTB6cjRtdndYczNtTTlPQU9MN2RLSFByNWZr?oc=5",
@@ -389,13 +346,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-06T21:14:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Lewis Hamilton criticises Charles Leclerc: 'It was the same with Sebastian Vettel, the same with Carlos Sainz'",
-          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOX0NjRVo2ek1FZEZWMW1sVW5MNEpEYXY0V1BYWkc0R2ZoY20yV0JHNlRYNFBaaFBmR3lPbFVCN3ZkLVdDTEVVRlZyZ3hNQjg1WW5DU1k1d0dSS29YcHUxZHpCWUlPR1Vqbm1aMDZ4dm9WVnVGUHhMNHZpOUVaREZSdnZHZEhKY0hlUEVpbmUtWlNoVTVRY2Z0czFfdGVkZUlEZl9tVHBGUVhKNW1xbmlsYWZVNHhmd05BNkk5Z1BSYnVfcWFFX3ZMTy16RDdOTDRjdmRvakFzVXRELVhsT05XVmlieEc5OERkMWg3UVV3amM0NFJ1SDhxM3gtNllwTjhQVFJObGtTZ08yRHE3YUE4SzY2azZPV09GZnB5Smw0SFpVODh3WVViUXpJVQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-06T11:28:09+00:00",
-          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -405,13 +355,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -427,8 +370,8 @@
         },
         {
           "title": "“Everyone will be happy” with Racing Bulls’ decision on its 2027 driver line-up – Permane",
-          "url": "https://www.racefans.net/2026/11/07/everyone-will-be-happy-with-racing-bulls-decision-on-its-2027-driver-line-up-permane/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQ1Z3RFQxQk1Yc3ExOVVaY0RyYlU3QnkxMmdSYlg1NllYSFFzSUhobnZJU01hWXVYaDhwb000dWpaMnFJempWYl9SNll4b0psNWY5TFl6ZlFWc29xNTc1bHNLXzR4eENpdEZtZ19Fb1U2QlpfVjhsbDRsaG9YclVUd2xpSGdSZGduS3liWGxQamhGN0NEQVp3VzRKaGJ1LUozV2xXYWtCVkR0TjNrQ2VZRmNlQkZLUDdHRVRMOW9n?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-07T10:37:18+00:00",
           "kind": "Team news"
         },
@@ -447,16 +390,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Coke/Engine Cover",
-            "Cooling Louvres"
-          ],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -467,7 +400,7 @@
           "title": "Rafael Camara",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-08T14:32:50+00:00",
+          "publishedAt": "2026-11-08T20:35:28+00:00",
           "kind": "Team news"
         },
         {
@@ -479,8 +412,8 @@
         },
         {
           "title": "Komatsu was ‘protecting Haas from rhetoric’ by dropping Ocon – Wolff",
-          "url": "https://www.racefans.net/2026/11/07/komatsu-was-protecting-haas-from-rhetoric-by-dropping-ocon-wolff/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRk9PaGlNWGcxNktRSmhmYno2Ql8tZEFUVjJLN0NUeWNoY1JkRnR4UmpDcHAtamZZRGVqejI2dzRhdlVEd2JydzhNTUhmZms2VDQ1RUVYcFV1Tks0T0lRSDJkNm1pTXBhSGlHb2VTbDl4SXFrZldzNnZHdU51MFlsa19QQTNLSXY0cnBuQVQ1LWJpSjVjTkg4YTBLYjZfdS02ak5N?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-07T11:00:05+00:00",
           "kind": "Team news"
         }
@@ -492,13 +425,6 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
@@ -541,21 +467,19 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Rear Corner"
-          ],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     },
     {
       "name": "Cadillac",
       "stories": [
+        {
+          "title": "WEC Monza: #8 Toyota seals drivers’ title as Cadillac wins chaotic finale",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcXN5LXU5dGdaaV9qS1ZCcFB0UTJ2TkViLTBpbVN3dnNIM2NQbm5sMjZINm04TU9LUF9IZ19MbFVtdFlINkp0N1ZwbnZEMUlGY1lfczB0SDNhUDJoOE81TGNubnBsZ3JZNVVRS0k0T3NzNmdOV2oweEw4SHNaRWtzYjlrZG9lWG50TjVBMW5ZZDg5eWNZYUltOHdFLWJ6dlQ0UXlyQjBWZjlzWjhHSUFnSk0xZnk4Zw?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-08T19:18:27+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Herta qualifies for F1 superlicence as Bottas remains bullish on 2027 seat",
           "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
@@ -565,16 +489,9 @@
         },
         {
           "title": "Colton Herta qualifies for F1 superlicence as Valtteri Bottas remains bullish on 2027 seat",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVHQ3QzY2NlJVOEMzZEJBbUNqcEEzTzJVbXVIQnkxTWpodUhFU202anlqNEN3aWx1b0VZajZZQVRsQWxoV3dtYXBmWUFKdGkteGlkVmh4Zk13R0RyRE1qX1ZLS0pMdzFUZ1V4M05UZnBBUjZNVC1kbGZnSkI2SG5ucE0yTUpiN0FKd2V2RWFJc05ZdTdTLXVLSkJuTmVHNUtyUDNUSjVqR0JTaDN5bzhXTUJRbmlteGdW?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbUpFZHoyV1VESnpmeVViOGh3a1J5TjR2WVplc3ZoYnZ0bjZEcm9YcGhqd3gtRWZFN2hTZWRmMzJmc1pESG5MQ05wS3JaTE1pckhrUDhDNHZSZFFxQnZabVpMbmFKY0tqZlhsSk1rOVB6a2QxOTJkTG8zaFFjUElkbU1GNnNzeUg4ZUdxV2JFbWZWaEpBVWUyRHRlLTRBdGZlbHZmNndXLWROM3lFRG51dzhqSjFDdlJoSFE?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-06T16:55:46+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "What’s happening with Cadillac F1 buyout talks amid Fenway interest",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPR1o3WmdITGRROEtwQkx5SllPTmtPS2xGamxSSVFHV2FGTmk2YXZGUWRHTlJua0FNcnV1eUJ2aXRvemdQT2RPLVpZSWNWdGJzZ2xYUlZNRXZ4QTJzem00UHBYSEpLakt1QVNSZ1p6Z1VZSEFiLWs2QlpGMFhqOFFaWEVjbzMzQWliaEpDRw?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-06T14:54:36+00:00",
           "kind": "Team news"
         }
       ],
@@ -585,18 +502,17 @@
           "event": "São Paulo Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "06 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "Mexico City Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "30 October 2026"
         }
       ]
     }
   ],
   "fiaDocuments": [
+    {
+      "event": "Las Vegas Grand Prix",
+      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/Las%20Vegas%20Grand%20Prix",
+      "status": "unavailable",
+      "teams": {}
+    },
     {
       "event": "São Paulo Grand Prix",
       "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
@@ -653,72 +569,9 @@
         }
       },
       "status": "available"
-    },
-    {
-      "event": "Mexico City Grand Prix",
-      "url": "https://www.fia.com/system/files/decision-document/2026_mexico_city_grand_prix_-_car_presentation_submissions.pdf",
-      "publishedAt": "30 October 2026",
-      "teams": {
-        "McLaren": {
-          "hasChanges": true,
-          "components": [
-            "Cooling Louvres"
-          ]
-        },
-        "Mercedes": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Red Bull Racing": {
-          "hasChanges": true,
-          "components": [
-            "Engine Cover",
-            "Sidepod"
-          ]
-        },
-        "Ferrari": {
-          "hasChanges": true,
-          "components": [
-            "Engine Cover",
-            "Cooling Louvres"
-          ]
-        },
-        "Williams": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Racing Bulls": {
-          "hasChanges": true,
-          "components": [
-            "Coke/Engine Cover",
-            "Cooling Louvres"
-          ]
-        },
-        "Aston Martin": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Haas F1 Team": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Audi": {
-          "hasChanges": true,
-          "components": [
-            "Rear Corner"
-          ]
-        },
-        "Alpine": {
-          "hasChanges": null,
-          "components": []
-        },
-        "Cadillac": {
-          "hasChanges": false,
-          "components": []
-        }
-      },
-      "status": "available"
     }
   ],
-  "errors": []
+  "errors": [
+    "FIA documents could not be refreshed for Las Vegas Grand Prix."
+  ]
 }

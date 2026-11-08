@@ -13,7 +13,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -32,7 +32,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -51,29 +51,29 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
     },
     "McLaren": {
-        "Component": "2027-spec Front Wing",
+        "Component": "2027-spec front wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a new front wing concept intended for their 2027 challenger to improve car predictability.",
+        "Summary": "McLaren introduced a front wing concept intended for their 2027 challenger to improve car predictability.",
         "Pace_Delta": -0.06,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.06,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVFtZlRxOVhMMlFnOHV2NHduM3hXU0dnbGFQdkQ4Q2hrdUdOMVN6UUc1MUVqT3lLcEpVblpvZjVVVWNiX3hOaXItVk9yM3NaVXFpbUFiWXBZM0ljZ3BIV3dvckdkQ0tXaHhPU0I2YkRveDNzN0FWQ1IwV3VEb0ZlNk9mSmgwNXh0RVBGM3N3?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "S\u00e3o Paulo Grand Prix",
+        "URL": "https://www.autosport.com/f1/news/mclaren-to-bring-upgrades-to-brazil-gp-with-f1-2027-in-mind/10871328/",
+        "As_Of": "Las Vegas Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for S\u00e3o Paulo Grand Prix"
+        "Badge": "New for Las Vegas Grand Prix"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
@@ -89,7 +89,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -108,7 +108,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -127,7 +127,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -146,7 +146,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -165,7 +165,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -184,7 +184,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -203,7 +203,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "S\u00e3o Paulo GP",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"

@@ -1,0 +1,23 @@
+DriverNumber,BroadcastName,Abbreviation,DriverId,TeamName,TeamColor,TeamId,FirstName,LastName,FullName,HeadshotUrl,CountryCode,Position,ClassifiedPosition,GridPosition,Q1,Q2,Q3,Time,Status,Points,Laps,Year,Round,EventName,SessionType,Session_Weight
+1,,NOR,norris,McLaren,,mclaren,Lando,Norris,Lando Norris,,,1.0,1.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+63,,RUS,russell,Mercedes,,mercedes,George,Russell,George Russell,,,2.0,2.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+12,,ANT,antonelli,Mercedes,,mercedes,Andrea Kimi,Antonelli,Andrea Kimi Antonelli,,,3.0,3.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+16,,LEC,leclerc,Ferrari,,ferrari,Charles,Leclerc,Charles Leclerc,,,4.0,4.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+30,,LAW,lawson,RB F1 Team,,rb,Liam,Lawson,Liam Lawson,,,5.0,5.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+27,,HUL,hulkenberg,Audi,,audi,Nico,Hülkenberg,Nico Hülkenberg,,,6.0,6.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+6,,HAD,hadjar,Red Bull,,red_bull,Isack,Hadjar,Isack Hadjar,,,7.0,7.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+87,,BEA,bearman,Haas F1 Team,,haas,Oliver,Bearman,Oliver Bearman,,,8.0,8.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+14,,ALO,alonso,Aston Martin,,aston_martin,Fernando,Alonso,Fernando Alonso,,,9.0,9.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+23,,ALB,albon,Williams,,williams,Alexander,Albon,Alexander Albon,,,10.0,10.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+44,,HAM,hamilton,Ferrari,,ferrari,Lewis,Hamilton,Lewis Hamilton,,,11.0,11.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+81,,PIA,piastri,McLaren,,mclaren,Oscar,Piastri,Oscar Piastri,,,12.0,12.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+51,,nan,rafael_camara,Haas F1 Team,,haas,Rafael,Camara,Rafael Camara,,,13.0,13.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+41,,LIN,arvid_lindblad,RB F1 Team,,rb,Arvid,Lindblad,Arvid Lindblad,,,14.0,14.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+55,,SAI,sainz,Williams,,williams,Carlos,Sainz,Carlos Sainz,,,15.0,15.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+3,,VER,max_verstappen,Red Bull,,red_bull,Max,Verstappen,Max Verstappen,,,16.0,16.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+43,,COL,colapinto,Alpine F1 Team,,alpine,Franco,Colapinto,Franco Colapinto,,,17.0,17.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+10,,GAS,gasly,Alpine F1 Team,,alpine,Pierre,Gasly,Pierre Gasly,,,18.0,18.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+18,,STR,stroll,Aston Martin,,aston_martin,Lance,Stroll,Lance Stroll,,,19.0,19.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+77,,BOT,bottas,Cadillac F1 Team,,cadillac,Valtteri,Bottas,Valtteri Bottas,,,20.0,20.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+11,,PER,perez,Cadillac F1 Team,,cadillac,Sergio,Pérez,Sergio Pérez,,,21.0,21.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
+5,,BOR,bortoleto,Audi,,audi,Gabriel,Bortoleto,Gabriel Bortoleto,,,22.0,22.0,,,,,,,,,2026,20,São Paulo Grand Prix,Qualifying,1.0
