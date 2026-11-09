@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T21:16:34.915671+00:00",
-  "newsUpdatedAt": "2026-11-08T21:16:34.915671+00:00",
+  "updatedAt": "2026-11-09T01:01:58.584832+00:00",
+  "newsUpdatedAt": "2026-11-09T01:01:58.584832+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
@@ -29,16 +29,9 @@
         },
         {
           "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-07T15:34:55+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-28T07:00:00+00:00",
           "kind": "Technical report"
         },
         {
@@ -46,6 +39,13 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQdjFHeGdnNlAtczFXbXh4eEFKeE1oaXc0R3p5TEg3ejhVSHZWcHFwVTNZOHNLV090a3lJUTNlZFhvSy00MHJhU2JCZUhIMlNtTk01bEdQWERRZnBWWFd2bFk1dVU3bVpZWlY1aXVabEtNbm4yLXpJbEZGZTh6LW4zNUhVT3NLa1h6VDQ4RTZIcjlBZXlJeVZmVWNrZjlRS3ZfWFdKQi1kVWh4TDF0NUI4YkY2S0ltcWowODRkQzFuRHVBREZmUDN3?oc=5",
           "source": "Autosport",
           "publishedAt": "2026-10-22T07:00:00+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Why Red Bull and Audi’s floor stay trick is banned for 2027",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxORkZVbzIxeHZFaTZoMHFUMjZwR3htT2R0Smk1QlI4RExPZGVDYnFieE1hdThZZzJPTWRiWk9HN1pWOW5STzlBVVlNX3FWMjdPQ1F1RXE5SVNJYlVKN2FueGNmUTdnVkpIeFNlUGxVTUh6cmVJUlRzdk9ybTVQRjdKbE9IdnVfNjFSNHdxWWt5MUI3dHZNd0pGenkxZW54emtOdnNwMUtudGV2ZnJ4eklBamcyam9SX1UzWnJtTlF6azdpb0NfMDd1YVU3OUZkTmRKVW1NUlFkeDZibWhvOXRYSnRoMlFrekN3YnNaYnJSc3R0UQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-20T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -63,24 +63,24 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "Hamilton “didn’t hear that it was raining more” before high-speed spin",
-          "url": "https://www.racefans.net/2026/11/08/hamilton-didnt-hear-that-it-was-raining-more-before-high-speed-spin/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-08T20:46:37+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Can Hamilton and Verstappen fight back for F1 Brazilian GP victory?",
-          "url": "https://www.autosport.com/f1/news/ill-try-to-win-somehow-can-lewis-hamilton-and-max-verstappen-fight-back-for-f1-brazilian-gp-victory/10872922/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-08T13:29:32+00:00",
+          "publishedAt": "2026-11-08T21:59:31+00:00",
           "kind": "Team news"
         },
         {
-          "title": "‘I’ll try to win, somehow’ – Can Lewis Hamilton and Max Verstappen fight back for F1 Brazilian GP victory?",
-          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMTkySC02d1J0WWg2YnRrbkVfTXhleGhVWmxFeUVIbDV2UG9DTTkwenZhRWlWTGtPN0d1QWM0eWZjWlZEN3J3bUNVS0NNeFp1SG1NVmNjV1NOTVE5ZFp0dDJrS0Mybjc0T2lnOTdJckJ4am9fRlN3MWd5Q2dzZUZ2RmYzN182R291RmNENUMxLWxJYUk5RW1wcEVCTzNmVGZOS2ZxN1NNQjdra0JsV2ZHVG44a0RBY0tvVE9JQndCOUxHVFlCb1p4UU1ISWw2Q3lKcERLajZHS1VSZ0U?oc=5",
+          "title": "‘A complete disaster’ – Leclerc and Hamilton lament ‘horrendous’ Ferrari performance in Sao Paulo",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNjljZ1VHNi1VcjFRTGUxMFVvbW9BVnlHaG9OM2FLQllWNnZoeHFUNlBZNXJZUEJ5OXlmSWprT0dOVUpwQjE5ZU5YclltWGFBNUl1alR4Y3ZiOTNHMkd0S2hEbkp0TjZJcXNJeWN3UUFQY210T3MzaXFSTm1HQzRHYXV5bDBVNEQ2TzBqZHNFTG5ZWkVmSmlPWFAxWC1NRmdubjlHUVhxdDI4YXBBY2xVVVA1TTRORUVpT3RHeWFEeXhGRXc1NmRVT3RQRERncVRrVEo1eHJJdUJPZmdQa0trZUFJZlRCWTJUZkstdA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T21:58:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPWWdIN0ZrX1NWZHJYQmNJT19veC1EZ2pkNTFjYWRhakxJVnlGMFY5a3YtV2JrMzhHM0d2bTM3c3FpZjFKa044bGdxazdmZVBMRlZrRmd2TjN4dDVsQVJ4c01MQTZ4OG1iekJ1LTI0YnpYaTlNRF9YUE84Y0pWYl9Xd1hFWjMzR21KUGVCTW9qaGtINm9xTVpJUklBZ2czanVfa3U4S3l1dmdkMHRpWi1MclhxZXIwWnhTRlFuZm5BWFZsa0wwRXNZNFhQSzh2SGM0NHBLV2t5ZFFnY1FGdWlWdjAwZ1N6MXdLRnZIaWxrSlo2YkVHODNfbzlYXzVpdTJkOWRSaFNKZVQxQm5IZmtZUEFrUzAzUnhHcjFMWXdST3pRdk8tZkJhUWxKaXpQRFBJcnkwNHpiS2NKN2F3Y3FvLU9TRGl5TFVCVjNn?oc=5",
           "source": "Motorsport.com",
-          "publishedAt": "2026-11-08T13:28:55+00:00",
+          "publishedAt": "2026-11-08T21:54:53+00:00",
           "kind": "Team news"
         },
         {
@@ -92,8 +92,8 @@
         },
         {
           "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-07T15:34:55+00:00",
           "kind": "Technical report"
         },
@@ -119,30 +119,30 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "Antonelli explains \"weird\" spin and car instability which cost F1 Brazilian GP win",
-          "url": "https://www.autosport.com/f1/news/antonelli-explains-weird-spin-and-car-instability-which-cost-f1-brazilian-gp-win/10873132/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-08T20:57:57+00:00",
+          "title": "Mercedes trying to understand 'strange behaviour' amid driver spins",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOSC11LXNyNllOZDBWMVBvLVdfMjdOd1hZak42bGZFcjZIN29KOFFIazJDcVZSR0owTEdNcjFDaERZcDhUSlZEOXRfVnlpeDdBdV9GcW5vWTlDVmxyN1ltNjNyTWpXV1J5bFhFUVJkNkMzejR5Wk00SzRfRGJPUmF3UDZqQTN0Q0hpbXE1elpuSmNrZDVpREs0R3FWUktRVFFvOEtv?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-08T23:36:22+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Norris wins after Antonelli spins out of the lead at soggy Interlagos",
-          "url": "https://www.racefans.net/2026/11/08/norris-wins-after-antonelli-spins-out-of-the-lead-at-soggy-interlagos/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-08T18:55:30+00:00",
+          "title": "What Mercedes said about race-losing driver spins",
+          "url": "https://www.the-race.com/formula-1/mercedes-trying-to-understand-strange-behaviour-amid-driver-spins/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-08T23:32:25+00:00",
           "kind": "Team news"
         },
         {
-          "title": "F1 Brazilian GP: Norris wins in mixed conditions, Mercedes clinches constructors’ title",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc1RySnA4VElrTzVSNGh5WEp0emhzM3llUTgyYVNmemE3RGozQjR0YkNpN0sxVXBuYzlQVVhSdWw0V2dZT2szOVBTWjBEU3d4Yy04T2Ntbl9kUzNJQ1FFaDhHaGE2Tmdhb2JuNjE4dThndzJrZ3NlR1B1SkFDWUpnUUZ1UlNJSzIzemZGVWl0UnlDTkpzdmRZeWtKM1RmV2g1NGlhU0FhMVgzOHcwTUpkbkgtQkcwenZMNl90ZHJTVTZzMk1PNXBzRnR3OGpqTGM?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-08T18:54:20+00:00",
+          "title": "‘They helped me achieve this dream’ – Antonelli ‘grateful’ for Mercedes glory amid Brazil frustration",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeVJmMHhxSEpZdjFrSUIwdGo2QTU1VDZYR1ZSZU5NMHRZX1ZCTHZVekpWcE9GNlZLZmEtRnVCZi15ampId0ViQkNfZVBfb1kzTnhEbmhURlAtN1BGOXdoYm5xZWZtTXZJR3JPR1J1c0h2SDctUnVVRFpJWlhWVENoR3VzSFdEczJ1Z2V3X2hsWWJYZUNUd1p0N1NjcDlzbE0zb0R0cWVCMDJkVjEtY2xMYzMwTzlPZEdKNmVQal9aVnBZN0tYVlBwRmFKWXUxNUhTalpyTDBWeWY3OXo0ZzBfbEoyN21xcUdsMDRlRFEzX3d0RzA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T22:53:00+00:00",
           "kind": "Team news"
         },
         {
           "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://www.racefans.net/2026/11/07/verstappen-pips-antonelli-in-final-practice-as-hamilton-suffers-engine-trouble/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-07T15:34:55+00:00",
           "kind": "Technical report"
         },
@@ -175,6 +175,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "Social Media: No hand injury after breaking another champagne bottle, says Norris",
+          "url": "https://www.racefans.net/2026/11/08/social-media-norris-avoids-injury-after-breaking-another-champagne-bottle/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T22:20:59+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘I just kept it cool’ – Lando Norris delighted to ‘give something back’ to McLaren with Sao Paulo win",
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQM2Nqd011MkE0ajhzVFhGNDF6QS1rVkZkdGhSTS1LNnNRelZFMUJTUzAxc21oNmtKSUp6VHN2NTNlLWlPODZySlE1UlkxSmFhc2MwRC1idmFVaDhIbFVxaU1QMDRwZGc1VGxsaTB5anZkMEFTd2Z5VmlQb3ZfdTZQRE1BM1JGY0F1T2JNX2xqaHNsTHg5Y2kwOU92WUh3SVVsNjVicEl3YlFMQW9kMktFb3RUY2JneFN6LXh5eEZvWldCZnZfQmhlOFZJTFZmVG42N1dTamw2QUVXU0h6cVhDaklpTHBzT3JPUkFj?oc=5",
           "source": "Formula 1",
@@ -186,13 +193,6 @@
           "url": "https://www.racefans.net/2026/11/08/norris-wins-after-antonelli-spins-out-of-the-lead-at-soggy-interlagos/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-08T18:55:30+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "F1 Brazilian GP: Norris wins in mixed conditions, Mercedes clinches constructors’ title",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOc1RySnA4VElrTzVSNGh5WEp0emhzM3llUTgyYVNmemE3RGozQjR0YkNpN0sxVXBuYzlQVVhSdWw0V2dZT2szOVBTWjBEU3d4Yy04T2Ntbl9kUzNJQ1FFaDhHaGE2Tmdhb2JuNjE4dThndzJrZ3NlR1B1SkFDWUpnUUZ1UlNJSzIzemZGVWl0UnlDTkpzdmRZeWtKM1RmV2g1NGlhU0FhMVgzOHcwTUpkbkgtQkcwenZMNl90ZHJTVTZzMk1PNXBzRnR3OGpqTGM?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-08T18:54:20+00:00",
           "kind": "Team news"
         },
         {
@@ -236,6 +236,20 @@
       "name": "Aston Martin",
       "stories": [
         {
+          "title": "‘The car was phenomenal on the corners’ – Alonso reflects on his Sao Paulo GP",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOV2dQbnBIamJlamxmZ0xxMEJzUVg2TWlvU2pnaFQyRlNSWDRiUlhOUVpXZXRPWVNXbklrbExjeHBxMzZxZ251MUFlVF9RZDBrbEczc2xERHRQbHcwNWFfcDhuTXRBSFRLQXJPRGd2ejJuSmxoN0VNX2gxRk5tRXZ2N0RoQUFOTF94WVhjUWpfUnNFWV81b083c3Y3VXBBeFlFOVM0bkV1eDdRVHJkUHJ0bmhvaVdVRFFJWXNpb01UU21sYmw3SHc?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T19:14:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Stroll reveals what caused his DNF in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdjhHUERkSFc5U1dmS1dTUTl2amU4Y2tDWjFNNVpLdFpCS1NPd0x1a2hXTkVhUmF5dWdyQmVWZmk1NkdyZGlFVUxSalBrbUZQZ1dtemdkMkhPZFYxY0VTcjhocXFMZTdjRWwyQndXQ3FRc09mNXAzVlpIOUV4ZGt5YU9IQ2U2S0V6WHZkVndqTExVWXZ3RnNCLW91aVhqNm8?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T18:49:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'First Q3 of the season feels good' in Brazil – Alonso",
           "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPT193d0ViU0oxcVVlNC1yLV9fLTY2cVN1ZTFfMi00M1BHeEtSZEFLb2pJdXhPcFZaRGtIUEMwX1BTTlQ2eDdJRGh6Vm1JYmFqUVJTUURwU0lqOHFKYm9pTkY5Q0Iyd25UQlpjOElGckdXNWhGU09VT2JKQVRseVdQb3FVOFQzdWJsZWtlX0s0R1d0WURLWDlMOHdtOHpZNS1ZR2pRTUo4M211M25PSUc3MkdWZGVreXlQZGRVOUNrOFpHT2tjZ0E0Y0VBam5lWkFXMEhrUG1EU0tjLVJfMWRkRmRRY3hSTmFhcXZYQ2ZMMnNfWkNKVGFwb0xIUnNyN0dyRlVCdmN3?oc=5",
           "source": "Formula 1",
@@ -243,31 +257,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Why Aston Martin's Mexico City GP ended after five laps",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZmt2NDNQSFhabjNLQkF3cXBKbU4ybVZDSm5OR1lmZkRlSG1BUXRwcjFlenVJLTJrcW1YMnJGR2VnMnlSaEVsTnAzQUE3Y09ETWZPc3BPNGZveWM1MVV5NHlZTXRqU1hFQVBSUGl6VUduekFHT04wVzBXWnR3RDdSZVY1ZVB4ZjQ1cUhpTTg2YkZjTlEzU0NyWlVERzBITXNPYkhKWUhuZ0NfSjVpQWNtT0NrQ3ItN2NXeTN6TWJDdWI5YWtkb3pR?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-04T10:41:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Stroll confirms ‘issue with the engine’ forced his early retirement in Mexico City",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPdlM2VDRoaGZLNjdncmUtaFVTYWsyVGkxY1BUZjQ2ZVlwMDItYl9iWmhlSGdMU2U5ZlBnMHloMkFxVm5HYzlYUWJ3eWNhQXh6bUc1ME16VWZpRHp1Q3F2ZTJQcGZzVndqVHBLLURZbFZ3QlliTlJDbUhrSnlEaTcySkZzc0djSEJTVGZac0xDclFQalN4MkFOaEltN1VzeHV5TVhKekNFYnZpMVhfMTFqU2pDZjNXVFVWNTJ4cFlKUUtoWElfSkNFQlNoLVRUYWc?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-01T21:35:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "'Frustration is beyond imagination' – Alonso reflects on missed opportunity for Aston Martin in Mexico City GP Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxNLUVmaDNSN3hac1FDOVRfWW96cC14cFFzY1VIeFpmOWFHUWRMQjFjVzRvSmVQLW5CNE5mZC1ER2Y5ZnlZYXQ0TG0tMWZIandFTmJtSXZtVFVKNVZHWHhJQ3RRb0p6VFFXVXVjOUFHYndFSi04NXM4azRMckttZUlRdUhJN2VsV0VmNHBNLTAtUmIyUFFuSnh0d3poVXd5VDdROVBNSlhrQzJTMVNIdXRVWnZBWkRDbF9pZ0pqQXliUGlKVW9wdVBYSUtzY1VSWUJDS3pwY2dNakxLOXdZQTN3YVB4MndUa1RyazNtWlFka0V5TFlaOFhRN2loV2FCUTRJc2gtMWVITmt6bDFmaG1NWA?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-01T11:04:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Why Aston Martin and Red Bull were asked about an unlikely F1 engine partnership",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZ1lJVnpoTXJ2RHpWWDh6VmdIbVczLW1jWlEtV2U4UkxLNTFIZ1E0VjhjQzRhYUpXb2RSaW8tRk9EWFRnbzhjdmpUYWlsZkJHbkt3SU5DeTNZUnBPMVFrSkpVWVJSZHNIa2V5ZEtDclRVeFpmNkI4WmlfSnVubVY3Nk5xcXFGQ0tVNG5fam5uYmtYZUlyR3ppRl9wUmVRdTNnS3MxRmFyeFlCa2JfRnY5OGx5aG1qRVh4ZmF1aG1EY0tCQQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-10-28T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -341,10 +334,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Harman expecting ‘tricky weekend’ at Sao Paulo for Williams",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQzVOTm1WTnlKWnY1My11MFI3Z3R5MGFpQ2RhREpJSnRTRHBUMkdhU2k5azFkbE15TEtKWGdmZGU1ZHVPUUdVdk5NRS1VVVpoVEs5bF9LWlhWaFlweDZQX2txazdKak9tcEk2NFhZVy0talpyaU93MXA0V2hlemRkck91YWNsWGNzX3ZENUtCYTBGdHRRZG5HTXVlTHFGYWZSTHdURnNTWVROV0h6NmF3Yw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:14:00+00:00",
+          "title": "Lewis Hamilton criticises Charles Leclerc: 'It was the same with Sebastian Vettel, the same with Carlos Sainz'",
+          "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxOX0NjRVo2ek1FZEZWMW1sVW5MNEpEYXY0V1BYWkc0R2ZoY20yV0JHNlRYNFBaaFBmR3lPbFVCN3ZkLVdDTEVVRlZyZ3hNQjg1WW5DU1k1d0dSS29YcHUxZHpCWUlPR1Vqbm1aMDZ4dm9WVnVGUHhMNHZpOUVaREZSdnZHZEhKY0hlUEVpbmUtWlNoVTVRY2Z0czFfdGVkZUlEZl9tVHBGUVhKNW1xbmlsYWZVNHhmd05BNkk5Z1BSYnVfcWFFX3ZMTy16RDdOTDRjdmRvakFzVXRELVhsT05XVmlieEc5OERkMWg3UVV3amM0NFJ1SDhxM3gtNllwTjhQVFJObGtTZ08yRHE3YUE4SzY2azZPV09GZnB5Smw0SFpVODh3WVViUXpJVQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-06T11:28:09+00:00",
           "kind": "Team news"
         }
       ],
@@ -362,24 +355,24 @@
       "name": "Racing Bulls",
       "stories": [
         {
-          "title": "Lawson concedes he 'didn't quite maximise' his Q3 effort despite looking forward to P3 start in Sao Paulo",
-          "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQNmh0ZEFpaTdSYWxhVldBYnpWYmg5STBvekl6VzZWWFQxOTlmWXVWSkdldWw5VDFYQ0ROUjVNVWRHZnFDSldDZ0dsdEhhdmE5ajFqU0NzUDNteWZXVksyaFNaTDcwNllnZW5JdzA1bFpGdjcwSGtWV0REaS04TzlHWHl6a084Q0h0VFlXb2ZSbU1UY1BRZWdWVTExbWtTQjY0ZlJJUjNvOGZFSmxvaUtfczF6MW93a1Z5MnVDdGNUdm5PRjhyQ3VvU0JzMFZXazh6ZnJQdzRTNllTazh0SnBsNldRVHg5QXVGWFJNRlJycTQxeENvT0RqTy10aDY?oc=5",
+          "title": "How Lawson stated his case with a brilliant Brazilian weekend",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZDdGSm00a3VzOUJtVFNIZklnQnRNUXpyNjM5dWpBS2lzODVEVWgwX0E3dWRCeU1HZ1ZjVUNwM1FUV0lYTGZtd3ZoSVI2SlRCTVN5b2NIT2FRNVg4ODVvbjlYUi1CYkZNN0tLeXdERVZGcWVESzhJb1dWaEh1RFdSQ1FLMWpycHhDOXZWeTRlYjhaT0JRcmE1WFlHMVhKVVBveFg0Q1J1WkgzUGlBM0FXWDE0Q0hLdDVIdFhpUXFZSXVMcVg1clE?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-07T22:42:00+00:00",
+          "publishedAt": "2026-11-08T23:14:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "“Everyone will be happy” with Racing Bulls’ decision on its 2027 driver line-up – Permane",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQ1Z3RFQxQk1Yc3ExOVVaY0RyYlU3QnkxMmdSYlg1NllYSFFzSUhobnZJU01hWXVYaDhwb000dWpaMnFJempWYl9SNll4b0psNWY5TFl6ZlFWc29xNTc1bHNLXzR4eENpdEZtZ19Fb1U2QlpfVjhsbDRsaG9YclVUd2xpSGdSZGduS3liWGxQamhGN0NEQVp3VzRKaGJ1LUozV2xXYWtCVkR0TjNrQ2VZRmNlQkZLUDdHRVRMOW9n?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-07T10:37:18+00:00",
+          "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-08T21:59:31+00:00",
           "kind": "Team news"
         },
         {
-          "title": "'The right decision will be made' – Permane gives update on driver decision process at Racing Bulls",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOUWk5T0ZTMnMxSmdWb1hqUktMMHh2c2UzeEFUVEpLQ0FmVkI2ZzA1ZjhKMThvZHhQNVlER3ZRVklxWEp6QWZiN0MxVkFRUDVEa1hTTGF5ejIwcWhDTmkzb3NjZVJVNzBpa0J5Z3BkR0xQUWFMMjM2d1RJWXZkU3JVUGwwbUM5M3NJREZwZ0FVd1VTYXR6enN0U2wwVXBpOTg1MFFiT3AyXzdMWnlxa1ZHSHdqRlpTb1JZYXJrak8wZFJHUndXMnM0dmhZamY3ajNGVTZ0YmVkYWFNT1ZFQkJRMENSemF4Q3Vfa1ZBSzFzczg5MDA?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-07T07:42:00+00:00",
+          "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPWWdIN0ZrX1NWZHJYQmNJT19veC1EZ2pkNTFjYWRhakxJVnlGMFY5a3YtV2JrMzhHM0d2bTM3c3FpZjFKa044bGdxazdmZVBMRlZrRmd2TjN4dDVsQVJ4c01MQTZ4OG1iekJ1LTI0YnpYaTlNRF9YUE84Y0pWYl9Xd1hFWjMzR21KUGVCTW9qaGtINm9xTVpJUklBZ2czanVfa3U4S3l1dmdkMHRpWi1MclhxZXIwWnhTRlFuZm5BWFZsa0wwRXNZNFhQSzh2SGM0NHBLV2t5ZFFnY1FGdWlWdjAwZ1N6MXdLRnZIaWxrSlo2YkVHODNfbzlYXzVpdTJkOWRSaFNKZVQxQm5IZmtZUEFrUzAzUnhHcjFMWXdST3pRdk8tZkJhUWxKaXpQRFBJcnkwNHpiS2NKN2F3Y3FvLU9TRGl5TFVCVjNn?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-08T21:54:53+00:00",
           "kind": "Team news"
         }
       ],
@@ -397,24 +390,24 @@
       "name": "Haas F1 Team",
       "stories": [
         {
-          "title": "Rafael Camara",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-08T20:35:28+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ocon axing ‘surprised everybody at Haas’",
-          "url": "https://www.autosport.com/f1/news/ayao-komatsu-esteban-ocon-axing-surprised-everybody-at-haas/10872457/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-07T11:00:49+00:00",
+          "publishedAt": "2026-11-08T21:59:31+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Komatsu was ‘protecting Haas from rhetoric’ by dropping Ocon – Wolff",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRk9PaGlNWGcxNktRSmhmYno2Ql8tZEFUVjJLN0NUeWNoY1JkRnR4UmpDcHAtamZZRGVqejI2dzRhdlVEd2JydzhNTUhmZms2VDQ1RUVYcFV1Tks0T0lRSDJkNm1pTXBhSGlHb2VTbDl4SXFrZldzNnZHdU51MFlsa19QQTNLSXY0cnBuQVQ1LWJpSjVjTkg4YTBLYjZfdS02ak5N?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-07T11:00:05+00:00",
+          "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPWWdIN0ZrX1NWZHJYQmNJT19veC1EZ2pkNTFjYWRhakxJVnlGMFY5a3YtV2JrMzhHM0d2bTM3c3FpZjFKa044bGdxazdmZVBMRlZrRmd2TjN4dDVsQVJ4c01MQTZ4OG1iekJ1LTI0YnpYaTlNRF9YUE84Y0pWYl9Xd1hFWjMzR21KUGVCTW9qaGtINm9xTVpJUklBZ2czanVfa3U4S3l1dmdkMHRpWi1MclhxZXIwWnhTRlFuZm5BWFZsa0wwRXNZNFhQSzh2SGM0NHBLV2t5ZFFnY1FGdWlWdjAwZ1N6MXdLRnZIaWxrSlo2YkVHODNfbzlYXzVpdTJkOWRSaFNKZVQxQm5IZmtZUEFrUzAzUnhHcjFMWXdST3pRdk8tZkJhUWxKaXpQRFBJcnkwNHpiS2NKN2F3Y3FvLU9TRGl5TFVCVjNn?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-08T21:54:53+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Stewards ruled Hamilton “gained no advantage” by passing Bearman off-track",
+          "url": "https://www.racefans.net/2026/11/08/stewards-ruled-hamilton-gained-no-advantage-by-passing-bearman-off-track/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-08T21:50:30+00:00",
           "kind": "Team news"
         }
       ],
@@ -432,6 +425,13 @@
       "name": "Audi",
       "stories": [
         {
+          "title": "‘It was a good move’ – Hulkenberg smiling after pass on Lindblad on his way to points",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRWNXX2lpczY3blZnRUFqNUZETHFkS29VVVYxRlJ0ZDFySFgwVlJDRkhMM2lHNy1aYnVlTko0MUJHX2F1c0Y1aG1aOEx4dFNZamxGTjRXMFVWVEtRVnpyR1F4TFFjWWVTOUttbVFWUzlVdGZpamFCU1l2ZGlrWjlldnV5d3g3OE4yYm1FOU5BckJnTG5tT2RrT2UzeTlBdEJkTTBTVjRhQnVWaFNyQUZJeU9STEZQQ0xiVFdMM3VOWDdUZU9ieXhyVjREUkFlT0xY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T19:20:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'All to play for' in Sao Paulo after Qualifying – Hulkenberg",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVmgwX1g3ckVJbkJ4ekNxdHFaWGNxUS1OSGpQMXpFeDByLVhUbXJUOFpZZEc4N2dWUlJqM1h0V1FlZnc4SjFlb3RmZ2RLTXlPbWJRWEp5R1N0aGdFZHdtWUV3cWtEQnNwNjB0M2ZVX3MzeGNkeS1xSi1ZOXVQOFN4ZWkyeXFzaERtR3k3bXJGczVaYmp5YWRsWWtETGxET0w4ei1QQXFUNTVCNTFJN1g4U3BhWXhVeVVkM241ZmhNRXZWOUhKSjRGUlZYbHAtUDk0WFY4LUhhcTA?oc=5",
           "source": "Formula 1",
@@ -443,13 +443,6 @@
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdWtKZVJNZVVNaWxXNmtBMzU5RHc3SURlY0U5a3RwZEZHUDg5WU9PbDg4MzNHa2I4dmlpWUxmdnBOT0NVTy1qbDZEZ3Jrc3l3X0xWSzVnXzlzcFdJT1NPenZEbFg5clE3c1lDZTJ2Q0dVRzRxSVczTnhOdTBwNkdkMmM1VU5EVG5teVRIbG1qSm42TlA4aTZzY3RkN3FrcGhMMUVFREFPSVZJQzU0Vnc?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T20:12:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Revolut Audi F1 Team We Start Because We Dare Poster",
-          "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPZ2lXd0ZhdWEyTGg5dVZaUURLOU9CTkhEc3NFMmc3b2t4WWRoNHhKWUdJSWZzZFRTNXdUUW5pSTYxYVl4RXBvZzJhV2tjNFloaXpjZkFtSERqM05qaTBmcEtWWGdYNXF2N25LYVFzdF9aeElDVHRoSE1kNG5sNTByZVpnQ2x3blVUblNzLWp3X0IwaUhSR3U2Uzl1dXBad3J6ek9vRk1sTDJHTWJiSTREV1FQU3BqeC1uUTVhLUJmLXNpdmloVXU1bUlpZVZyd215bWFXMGpZSDNfcThOUURfOFdZRkZoNnZrMlZvSDNSRV9Ua09WY0U0ajUzcEcwR3lydUFLcHhB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T09:37:29+00:00",
           "kind": "Team news"
         },
         {
