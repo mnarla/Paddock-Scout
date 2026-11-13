@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T06:58:28.118509+00:00",
-  "newsUpdatedAt": "2026-11-13T06:58:28.118509+00:00",
+  "updatedAt": "2026-11-13T15:31:59.311389+00:00",
+  "newsUpdatedAt": "2026-11-13T15:31:59.311389+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
@@ -26,13 +26,6 @@
           "source": "www.racefans.net",
           "publishedAt": "2026-11-12T11:06:09+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-07T15:34:55+00:00",
-          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -49,24 +42,24 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "Spotlight: FIA pulls F1 reporter’s pass over column calling Leclerc a ‘sneaky b*****d’",
+          "url": "https://www.racefans.net/2026/11/13/spotlight-fia-pulls-f1-reporters-pass-over-column-calling-leclerc-a-sneaky-bd/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-13T09:33:53+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Ferrari's Leclerc-Hamilton problem is far from solved",
+          "url": "https://www.the-race.com/formula-1/ferrari-leclerc-hamilton-f1-problem-far-from-solved/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-13T07:52:40+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Hamilton loses 'most marketable athlete' status in 2026",
           "url": "https://www.the-race.com/extra/hamilton-loses-most-marketable-athlete-status-in-2026/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-11T15:33:14+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Social Media: Hamilton witnesses humanitarian relief effort in Gaza Strip",
-          "url": "https://www.racefans.net/2026/11/10/social-media-hamilton-witnesses-humanitarian-relief-effort-in-gaza-strip/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-10T21:38:25+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "“S***, I missed the pit lane”: Hamilton’s unheard radio from his Brazilian GP struggle",
-          "url": "https://www.racefans.net/2026/11/09/i-missed-the-pit-lane-hamiltons-unheard-radio-from-his-brazilian-gp-struggle/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-09T12:00:50+00:00",
           "kind": "Team news"
         },
         {
@@ -77,10 +70,10 @@
           "kind": "Technical report"
         },
         {
-          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-07T15:34:55+00:00",
+          "title": "Ferrari's last major 2026 F1 upgrade explained",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWkhiZHN2c2R1U1pZUlQzcFBhYzVUUUl5MUhBeXM0X0FVckhPQTQtbWRyRGtxU1haM2JVM01WYlJrQm1mOGVDYUx1UWg5UkpWZmw1Q0NYdDhmeGpnTVN0Nk1oZnhDQVBqZFF1TkZ2SXlmTXBRXzBCTEdPUEE3ZjNncG85U293NDg?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-10-24T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -98,24 +91,24 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "Tough love and F1 titles – A key life lesson behind Wolff's Mercedes success",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQXJ4bW1qZ0x3V2t5dDA3QVhhZGNCWnF2VjdPNi1VNXNLdjQzZ1Z1dGo2Z3JSelR1akZzbGYxOXlrdXVMWVJ0ZFlfczNzc182WDZEVU1RWXY5bGlkamxxdXJNWnRYWWYyN0lHeEZtM2M2V0lsTHI0eGwzYmJacldGNms4NmM3MlNJdUpnbVhYeVZKRkloclZLZDQ1ckhUX3FDMExUUklfTEJxN2RDUmo4U05RMUZYdjZp?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-12T14:27:58+00:00",
+          "title": "The Kimi Antonelli you don't know: Inside the Mercedes garage with F1's new world champion",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNazJlazRUb3lPdWxKLXJUeTFUejFOWEwtZVcxMkh0QURQbzFsY2hZWE4xYVlmM0l3dDdBVEhSZEc2eFJWV3ZHOEYtOGFCRHppdVJzV3JFWkFKVC1ZS3A4TWdDU1Q4cG91WHoxN09QN05WYTh2WGZXZDJxTmNvSUhNb3M4YW42Mk9pMW1qeEN5RllPZ0t5ZW1mZ1doZ2c3UFdmSm9ET3BZMnVzZ01aNW1RZEMyM1FrU0sxbEVHUk1oNUNtTnoz?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-13T10:05:51+00:00",
           "kind": "Team news"
         },
         {
-          "title": "‘Karting is where it all started for me’ – Russell launches new academy to develop young racers",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPbWE2WnRaOGVESFoxZUhqMDl5bFl2bERyLXg4dzcyWGFRWnlXb295V0hnSjBSaDZBRzM5aHJ2Ylg3RDVyQW5peUJrZnBVbmI1NzN0NFVETXhBNV9nSWtBbW1MNnhnRkZsMF9MWk9mWVZDYkRDTGRMNXBnclhIbG02eTZ0REtEaVBuZTZJZUVLck5tUlhrTHB2dzA2azZ4R3didDVpQThRaXg5NTNTaDFOV21JazVDYWlNNlFUYXZyVmg2UzVTdDdPeU4ydG9uTlVCQVBTTkdLSlhuNEY1Wmh2enQ0N3dycDFwUWNuRUt3?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-12T13:09:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Russell partners with BRDC to launch karting academy",
-          "url": "https://www.autosport.com/f1/news/russell-and-brdc-launch-karting-academy/10874110/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "title": "The Antonelli you don't know: Inside the Mercedes garage with F1's new world champion",
+          "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-inside-the-mercedes-garage-with-f1s-new-world-champion/10874265/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
-          "publishedAt": "2026-11-12T12:27:55+00:00",
+          "publishedAt": "2026-11-13T10:04:48+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Mercedes' incredible history of Formula 1 success",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTFVjV3VmVG9qc0lzdjNMZ1ZUREJJRWZjZU1JeEh1anFSTlROYTBtT1hSRlBSMThxNzJVT0tfelp3TzY5cVBaaGxiQ1RRZjlXMERDeDhfcnJ0dlRhWUZ0SEtzMXhEaTRiMVZFOWFyR3VpNEFnYXZiOWppN1VRNGhVdUhaazNMdFMwSENYOFpMak1weUY5V0lnaVdsZ1hUdEFuSWh2TjVTUnc4WVFiMDZoOFRweXRBS2dvc2g4?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T09:58:00+00:00",
           "kind": "Team news"
         },
         {
@@ -123,13 +116,6 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRmNPWGJZUS1DRjNOa0xBSGk2alRwT0EtZFJZSWpHMC0xU0tJQjZTTmdSU1VqbmtxRU1zdmFyQTR1bUxJc2ZCU3J5dHh1Mi1TQ0dWUXF1aUxLeUlXVUFvS3lHbVBfRDFEUllVaXl2NVFyVUplSTFjNW85d1hIY3JPWlVYczdYb21IY0lZTmN0NTlKNHc3TXZ5QTY2YUJNQ015V2M1M3drQzhoWG1BODdQcXdxU2JQX2JKRG9YamhxTVZZRUdJMGlSSkZtdw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Verstappen pips Antonelli in final practice as Hamilton suffers engine trouble",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYnF0Q0g1dVE1NVZOQW1yNmNLbV9Cdkhjai1GdGh5dXhwbDhTT1FFX3hjdVkwYTFXMXk0VTFuN0I1RTdudGwyNW1pQ3lCekRCM0NldndYSDlRWG9HQVhnaEtxa0txZ3BDSTdfdEkza29yWmVLa1hpbHd1enJiSW05anhrTS1RQjE4MF9JLWtBWUI0Q05QZGVmT3BqUzJ2UkQ5dDJtNUVZQ2I0aUlqNUZvQ01hbnhTUQ?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-07T15:34:55+00:00",
           "kind": "Technical report"
         }
       ],
@@ -257,10 +243,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Colapinto insists Alpine ‘can improve a lot’ despite top 10 pace on Friday",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT3Vaa0VVcktvNmh0LWN0TDdyU2tGY094X3RiNi1GcWwyOV9IRnVNeXJSRUQ3am5YejAyWTVubWtRNGJ2U3FwUlBRM1pzYnBrNzExS0JjZVJ0SnJ4UnkwOWt0cU14dndQU2Q3QTF5ZGZZQ0NkQU5IalBfcEhKVzZDV1hqQVU1Z3lYcXlNRjBnMXljcVc2RFBiRVduemxtOFpWVTdNX2dZSDh3bUNtd0VwTVE2aUR4a2NkTXZPT2VJeUx0T0Zq?oc=5",
+          "title": "‘He didn’t put a foot wrong’ – Nielsen assesses Mini’s FP1 run for Alpine in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaFFfblVPTVZ6SmMzZWZtUzVhd1BDT1NLOWVSSU1qbTJISVk0UUdRRWxYX2tCenhpRm4xQjIzQ2FyX1hIblEyUHUwbGdteUtXWGpSdEpaNnYxckpPS19FVVBfdFdJYXFDU1dqVlJwdmFtOVlOLWp4NEJWVEdBcjFoNC1IWmlyM0pUQ1ZubXBtUHhKaVdmbHJLc2FLX3NMbWR6VTI5S05YTlpOaVdXbWgweFNSQXhHR0pRcmNGTi1VcE53M3psa3E0VDg5bw?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:23:00+00:00",
+          "publishedAt": "2026-11-06T21:47:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -278,6 +264,13 @@
       "name": "Williams",
       "stories": [
         {
+          "title": "Toto Wolff's journey from Williams to nine F1 titles",
+          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDB6cjlmeWZkek9uM1JxSEZ4QXoyQjJpYjE2YzdKc1hJaVMxWHV2S1hibFJCNWFvLVF2MG9mdnVBNlFlOVRmTFZwZURzcW1abVVkNnl0NFU5S3RNTEl6Ql9UWXFfTTFNelFRLUpLX2FLazVtaERwVmJRcG5UQldtdjlRcWJxc3QzdVFleU1MTDRXeWFLTVlzY2xMZEJuR1J2dDJMMThud1BIU1dPTmFnWTFNQjFNYWNuNTBnOU5BNkhwanR4QldMeU5NUzlQVXlv?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T11:38:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘Not ideal’ – Alex Albon reflects on ‘unfortunate’ collision with Oscar Piastri that put him out of Canadian Grand Prix",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnJzRUpkX2Jnb0RKX1g3czRNX1NfNllXdWc3TndCSUpqRjM4Q3l6cGRoZlV0d1JKeDRoa0QyZGpJQm1Qa2JMYkUxbW1lOUtWbHlMNGpPMWJYU0VVbmp0Yk1VWTN1QUNzUzJMaW1MRUtZZVRFSFlmMlFHV0RvWGlhdXdDMFFJOHA3WlJZV1NtYXZxUlh3MmpSaExyS1Z5YU9JTmwyR1VvLTF6ZENiRmpWYUZTUG1WY2t4aWxPUmNsbW40cWhNRENMbFNjOEFLU1psUnNBeXM1QkhxSF9sQzVWdWlSM21iQ1dSRzhuUVBtNzlkZEJxbVgzM3htVEk?oc=5",
           "source": "Formula 1",
@@ -289,13 +282,6 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEVPQWx0cTVqX09abnJ0UWNvLUsyZjBLU0Y0WUpwZVV3Rm52Wk96eTg4dzNwbkZyMTBUb3NPSzN3ZGpBMXd2dXVDYTlPME1leU9VSjJTX3R1dXpsMW8yVzVRZzRBTHBBYnhYM0k5aVZhUzBqNkFwamV6Z3NrUW1sZzIzYkVNS0hkeW5adEhsT0pON2ZqdzJqd1AwaFJ5TDdKam43Smg5YTZ0VHBDS2FyVHJGQmpDbVlXOXBZQjAtVjhCaWtzYVZCNHViOA?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-08T20:10:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Mercedes wins the constructors’ title for the ninth time, tying with Williams",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZTFfaEJZYVpIcDhGMUtpbHZMUllpYzVuZlcyLXZjU2c5U2VEUlpjNFBma3o2RDBDV2puWUt6M3UzUTFfdHBMNmJCUDgxNUpNV2JhY2ExS2NlN1ZQNnhxc0pxOF9ObUV6S2JsREd5dXdzNGQtUjFCVWtmNmF5MlA2SFdkZWZrUk1UVU9aajEzVGFZYklEZV9oQ3RsVVhNbjdfZ0c1RnJQc004TDhvaW02XzZR?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-08T18:39:55+00:00",
           "kind": "Team news"
         }
       ],
@@ -432,6 +418,13 @@
       "name": "Cadillac",
       "stories": [
         {
+          "title": "Cadillac F1 Team Toys & Games",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQaWNaa2JoOENzN2VaRG5Uekd5TEMyS1l4NzdEZDl5VnFIeFJNZngteUN5N0xJcEdGOERKc1FjU2V5eVdhQlBrUWJ5UElRMDg3ek1wRGFVWWc4UV9TYmNaMUVqRzk1OEpuSW9qQms3cWEwb250QXhpalZvcTVra1ExdmFKYUg3aWRlbGpVUXhldXl6VGJ4VURzd2JHZjF3dnZpRnVkLXFBeU4?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T06:20:28+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "How Cadillac triumphed in the WEC Monza 6 Hours without the fastest car",
           "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSkdFVFRRTFM1QU85cVpwS1VTY0JKTURuWlJWRjdiOU5oU3Bac1o0Y3ktaWFFUlBYR2wteHhERHJIQWRwSVFqTUNzTnhBZTZJTmdBdEdxMjhITllsa1ZWZVNpWTNvZnpiUEhZZmtHWFJOSHZXYjg3SF85YmtUNmNKc3VJanRtaVlzNFFiLVViTzI5bkVnMHBJWDZQYkRadTBPdGQ0TWpqa3lJZ0k?oc=5",
           "source": "Autosport",
@@ -443,13 +436,6 @@
           "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcXN5LXU5dGdaaV9qS1ZCcFB0UTJ2TkViLTBpbVN3dnNIM2NQbm5sMjZINm04TU9LUF9IZ19MbFVtdFlINkp0N1ZwbnZEMUlGY1lfczB0SDNhUDJoOE81TGNubnBsZ3JZNVVRS0k0T3NzNmdOV2oweEw4SHNaRWtzYjlrZG9lWG50TjVBMW5ZZDg5eWNZYUltOHdFLWJ6dlQ0UXlyQjBWZjlzWjhHSUFnSk0xZnk4Zw?oc=5",
           "source": "Autosport",
           "publishedAt": "2026-11-08T19:18:27+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Bottas left frustrated as he’s unable to start the race at Interlagos",
-          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQkVsMm05VUVfNFVMbjI1ZDBtLWhCSDdGWTFPdHJ0dzYweGI2UVRwWTdUQTZsbkRoUHQtTlpVaGRpRUFUOTdJSHV5WWF0M0llNkRxeU5yY0tZV2Y5SXUtclZ1cDVuQTBSZ0s0aEJaakd1U3BaWlZscDZrUVJsSDFWT1EwY01ReHpYMC10SGJYYk5pUkZnVWpiUENkaUd6R3ZwWWMtREJxaFc1ZFRyWUx3Y0YzSVBOUy1oMm85blpaSQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-08T18:52:00+00:00",
           "kind": "Team news"
         }
       ],
