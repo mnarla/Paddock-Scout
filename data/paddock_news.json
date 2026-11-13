@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-13T15:31:59.311389+00:00",
-  "newsUpdatedAt": "2026-11-13T15:31:59.311389+00:00",
+  "updatedAt": "2026-11-13T22:02:27.957891+00:00",
+  "newsUpdatedAt": "2026-11-13T22:02:27.957891+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
+          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-13T15:35:32+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUmdSMWljZWczZTNETWxrd3FCTE9LZ2pYRkxDWkozNlNkYi1jM09odXhndEhzdzU1ZHVUaTJRLW9EVWxSTFhzQVEtOW5QcGdQc2JpMzljTXRxX3ZLeTlFMThHNFBnQW5NNFg1Z2hkUEdoRV9jT1NTcnQxWHVSTE9BT2dDdEZ5Nm4wa2JMSGNWUlowWmpyTVByeWtBWmNLMGdyVWNla1Yyb2drVGJQdDN1QmdKMm1qdlI2UG1MQm9DeG53T0RzdXdlcE81YlU5QQ?oc=5",
@@ -18,13 +25,6 @@
           "url": "https://www.the-race.com/formula-1/why-red-bull-avoided-an-unprecedented-driver-sacking/",
           "source": "www.the-race.com",
           "publishedAt": "2026-11-12T11:28:52+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Racing Bulls keep Lawson and Lindblad as Tsolov gets Red Bull reserve role",
-          "url": "https://www.racefans.net/2026/11/12/racing-bulls-keep-lawson-and-lindblad-as-tsolov-gets-red-bull-reserve-role/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-12T11:06:09+00:00",
           "kind": "Team news"
         }
       ],
@@ -91,6 +91,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Antonelli names his biggest threat for 2027 title defence",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSFdYWEZMZFVpZTJESTJ5aVQzQVhJaDItZ1pTMGZuNnp0UDRwMHNCR1lFVW5xclRRbnpoU213SXhVaXhJNEVJR2N3czBzOFVsOFU4dWt1OUNYZzgxemdYSFFqS0poamVEcVY3YnNlTGlXVkx4NGpCaGlSOHlKRnluTURVOGtTQTdKUUg0RkVnVFJ1Z2FOSUFCY1JJbUZtMUNqY1kwNmtFZlpCWk5UTnhtY0FKTjZTWEZpa2szRnRmUVpEMkswTVAtWW1LZmV5X0FfRTEyLVY1SURDTmM0NGJDUDJKTGZpdEY3?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T16:43:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "The Kimi Antonelli you don't know: Inside the Mercedes garage with F1's new world champion",
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNazJlazRUb3lPdWxKLXJUeTFUejFOWEwtZVcxMkh0QURQbzFsY2hZWE4xYVlmM0l3dDdBVEhSZEc2eFJWV3ZHOEYtOGFCRHppdVJzV3JFWkFKVC1ZS3A4TWdDU1Q4cG91WHoxN09QN05WYTh2WGZXZDJxTmNvSUhNb3M4YW42Mk9pMW1qeEN5RllPZ0t5ZW1mZ1doZ2c3UFdmSm9ET3BZMnVzZ01aNW1RZEMyM1FrU0sxbEVHUk1oNUNtTnoz?oc=5",
           "source": "Motorsport.com",
@@ -102,13 +109,6 @@
           "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-inside-the-mercedes-garage-with-f1s-new-world-champion/10874265/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-13T10:04:48+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Mercedes' incredible history of Formula 1 success",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNTFVjV3VmVG9qc0lzdjNMZ1ZUREJJRWZjZU1JeEh1anFSTlROYTBtT1hSRlBSMThxNzJVT0tfelp3TzY5cVBaaGxiQ1RRZjlXMERDeDhfcnJ0dlRhWUZ0SEtzMXhEaTRiMVZFOWFyR3VpNEFnYXZiOWppN1VRNGhVdUhaazNMdFMwSENYOFpMak1weUY5V0lnaVdsZ1hUdEFuSWh2TjVTUnc4WVFiMDZoOFRweXRBS2dvc2g4?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-13T09:58:00+00:00",
           "kind": "Team news"
         },
         {
@@ -133,6 +133,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "Piastri on his tough 2026 and why it could make him stronger",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTUV2bFNwclF3b2RiUXR3Y1RRaWpMMlh0dk4xWElTTGNHQXNqZHlJNlI5aXUxRnNOMllLVTR6cVMwVGlGV1dVbFVPTDY0aW9Ub2xnU0kzcWEtaUViZzdKR0JxdVBQOGJIZVYwMy1ILUxfVHB3MUkwWlMxcnE4VVp2ZjVEYkV2S3V0dlNCYjExWjRIbHBEc1pleVVHVkU3MHpzQmduTVFBcHliSlpHRWdvQkxNZmVGSmpjZHFlVFc2UXdtYzk2RUl0LVgyMVphc2dyaEZIdEU4Z0FGc01WbEFTVUI5UzBPclZPRHRTMVl5MFE3NnluWkZNcWl3?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T17:14:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "‘Not ideal’ – Alex Albon reflects on ‘unfortunate’ collision with Oscar Piastri that put him out of Canadian Grand Prix",
           "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxOcnJzRUpkX2Jnb0RKX1g3czRNX1NfNllXdWc3TndCSUpqRjM4Q3l6cGRoZlV0d1JKeDRoa0QyZGpJQm1Qa2JMYkUxbW1lOUtWbHlMNGpPMWJYU0VVbmp0Yk1VWTN1QUNzUzJMaW1MRUtZZVRFSFlmMlFHV0RvWGlhdXdDMFFJOHA3WlJZV1NtYXZxUlh3MmpSaExyS1Z5YU9JTmwyR1VvLTF6ZENiRmpWYUZTUG1WY2t4aWxPUmNsbW40cWhNRENMbFNjOEFLU1psUnNBeXM1QkhxSF9sQzVWdWlSM21iQ1dSRzhuUVBtNzlkZEJxbVgzM3htVEk?oc=5",
           "source": "Formula 1",
@@ -152,13 +159,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
           "kind": "Technical report"
-        },
-        {
-          "title": "What's behind Piastri's split with Webber – and what it means for his F1 career",
-          "url": "https://www.autosport.com/f1/news/whats-behind-piastris-split-with-webber-and-what-it-means-for-his-f1-career/10873410/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-09T15:53:07+00:00",
-          "kind": "Team news"
         },
         {
           "title": "Gary Anderson's verdict on McLaren's 2027-leaning upgrade",
@@ -229,13 +229,6 @@
       "name": "Alpine",
       "stories": [
         {
-          "title": "Alpine F1 Team Franco Colapinto 2026 Season 1:5 Helmet",
-          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPM1NGb1F2LU5oTnlpaE1vaWM4Yi1zOU8tNV9LdDBHWDBmUmR6bGtHcDNIencwMEdQQ0RySkk1cE1OSFRZWlN0eE5aMUZPamF0WTVLOWVKWnczcDhxdDZybXFxN1A0bWFNdEdGdm5XUTJTUTFFQnNIWm5sYXMyUTZXQmw5enBrTnMzU3UwRHgyZ0E0VEZnaFViaXVGQTVYZXB3OEVZM2xINXBjQWRxRl9SeXFTekVlYXNOT21FUVgxOUEyRXVQRjlxZndabDIwLUQ2OGhxZFo1VDVYRWk0c2xjeDlTNkpqbGQyT0F6cGRjMThQdjdMLWZEaUR0UzYwdw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-11T14:47:35+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Lawson predicts it will be ‘very, very close between us and Alpine’ in Brazil",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
           "source": "Formula 1",
@@ -247,6 +240,13 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaFFfblVPTVZ6SmMzZWZtUzVhd1BDT1NLOWVSSU1qbTJISVk0UUdRRWxYX2tCenhpRm4xQjIzQ2FyX1hIblEyUHUwbGdteUtXWGpSdEpaNnYxckpPS19FVVBfdFdJYXFDU1dqVlJwdmFtOVlOLWp4NEJWVEdBcjFoNC1IWmlyM0pUQ1ZubXBtUHhKaVdmbHJLc2FLX3NMbWR6VTI5S05YTlpOaVdXbWgweFNSQXhHR0pRcmNGTi1VcE53M3psa3E0VDg5bw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T21:47:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto insists Alpine ‘can improve a lot’ despite top 10 pace on Friday",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT3Vaa0VVcktvNmh0LWN0TDdyU2tGY094X3RiNi1GcWwyOV9IRnVNeXJSRUQ3am5YejAyWTVubWtRNGJ2U3FwUlBRM1pzYnBrNzExS0JjZVJ0SnJ4UnkwOWt0cU14dndQU2Q3QTF5ZGZZQ0NkQU5IalBfcEhKVzZDV1hqQVU1Z3lYcXlNRjBnMXljcVc2RFBiRVduemxtOFpWVTdNX2dZSDh3bUNtd0VwTVE2aUR4a2NkTXZPT2VJeUx0T0Zq?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-06T21:23:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -299,24 +299,24 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Lawson's top-six hopes after new Racing Bulls deal",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdVlaQk9qQmh5QkotLVBPQkdZdUxYMVdJLUZxRGpQY3J6cXdhM1Q1OTEyaXg1VG00NmVuYU1hZFRNZHlGZXJ1WnZVeGcyb01Sc2VzOC1QQzFaZDEtZU5GR1RTTmRVUnB2YXdMRVp5U1kwb2h4MjZ5MTdUNWZKUHFLNmVPaXJTd0tRQUZMQTBsUEJsamFNN2dHMDRKS3ZsOERGM29lb3B2Q0l1ZlIxMHI3bnNnckcxRTlJa1pLaDczYUNZN0JpNVpjV3Fjc0laOTFQZGtzZGE4bU1MODhXbzEwS0xXcGdvcUhl?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T18:19:32+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
+          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-13T15:35:32+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUmdSMWljZWczZTNETWxrd3FCTE9LZ2pYRkxDWkozNlNkYi1jM09odXhndEhzdzU1ZHVUaTJRLW9EVWxSTFhzQVEtOW5QcGdQc2JpMzljTXRxX3ZLeTlFMThHNFBnQW5NNFg1Z2hkUEdoRV9jT1NTcnQxWHVSTE9BT2dDdEZ5Nm4wa2JMSGNWUlowWmpyTVByeWtBWmNLMGdyVWNla1Yyb2drVGJQdDN1QmdKMm1qdlI2UG1MQm9DeG53T0RzdXdlcE81YlU5QQ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-12T15:21:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Our verdict on Lawson earning a 2027 F1 extension",
-          "url": "https://www.the-race.com/formula-1/liam-lawson-2027-f1-extension-our-verdict/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-12T13:04:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "ANALYSIS: Why Racing Bulls stuck with Lawson and Lindblad for 2027",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPay0wM0J0cHpXMUh3RkltbENJRHNYM0Q5Q3NNd1dsM1Q3bzI1N2VBUFdaVGtFNkVsV29JWG5vZnk1V2R1WEdKTC1jVFljWGx5RzZmWVJ3LS16QU9mclNnY0xXVUw1YV84eEVCN0JHYU1BM05DaUh0SGpHSVpfQTdnWFJQbnJYZW9XSUxVWmQwOTdxVTRIUkNvV3lHRGFsS3IxTFdJTXlzaU9Dd2ZOMVd5YnpYT2RDbVNWbC0zM0F3aVlPSHJPSmRzaEt3?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-12T12:58:00+00:00",
           "kind": "Team news"
         },
         {
