@@ -1,15 +1,22 @@
 {
-  "updatedAt": "2026-11-14T02:31:31.863048+00:00",
-  "newsUpdatedAt": "2026-11-14T02:31:31.863048+00:00",
+  "updatedAt": "2026-11-14T10:42:16.251334+00:00",
+  "newsUpdatedAt": "2026-11-14T10:42:16.251334+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
+          "title": "Verstappen reflects on ‘painful’ Monaco DNF",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVGpET2lTRHZuWmJDVExOOS1XYWUtbHE4djM1Z1U0eVpiNk1BeXJKaEE1RU45UjREZ2tPc3RFSk9VNFp1NC03RG9aamQxcGEtdktTZVVDX2NaUWhHNzZDenpRWDU5d2xyUURJT1Y5Y3JOOUtnOEV3OUk0NHBVbWl1OURiTTR1MWt2Z2EtTHhmOEptT3pGeWhtY0JVV2xFS3Fyc2o4bFJlXzlkRTlhUFdUaTVZVWVDdXgyZWhaS3FSTnZMOVU4V3RXQ2Zia29HUHFQcjBOcFFjRTFEX3JWXy1rdHpWaHQyUnpSeXhOOVlTMnJoZw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T23:25:52+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkJ4NHByU1Q5TDV5OE9ZUU1VV2hhUk9yczdBY2RrSGE2dlhyNDgzdTZtNVhBTllRNVV2RzJERS1sRS1lOUh6OEdUU0hiRDlyWnZxY0JsWVZSWl83TXZSaEpCMWZNdjFBOEdmbEFNcUdOaEV3UHBnMU1Wclh3ejBJYVNncDdJSi00WTU4Ul9Fbk5tak4tWXN2N0JTWWFubTBMMkJuTFV1bWg?oc=5",
-          "source": "RaceFans",
+          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+          "source": "www.racefans.net",
           "publishedAt": "2026-11-13T15:35:32+00:00",
           "kind": "Team news"
         },
@@ -18,13 +25,6 @@
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-13T12:03:27+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUmdSMWljZWczZTNETWxrd3FCTE9LZ2pYRkxDWkozNlNkYi1jM09odXhndEhzdzU1ZHVUaTJRLW9EVWxSTFhzQVEtOW5QcGdQc2JpMzljTXRxX3ZLeTlFMThHNFBnQW5NNFg1Z2hkUEdoRV9jT1NTcnQxWHVSTE9BT2dDdEZ5Nm4wa2JMSGNWUlowWmpyTVByeWtBWmNLMGdyVWNla1Yyb2drVGJQdDN1QmdKMm1qdlI2UG1MQm9DeG53T0RzdXdlcE81YlU5QQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-12T15:21:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -43,8 +43,8 @@
       "stories": [
         {
           "title": "Spotlight: FIA pulls F1 reporter’s pass over column calling Leclerc a ‘sneaky b*****d’",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWk82QWwyZXVEXzFLS0I4OExQdTlvbTNGakt5d1IxeFlQMjR0bU13WXdPWGxtTTQwYllCX2QtdUNmX1ZPVUExVDRTUUxvYmdmSTdVM21yM1FyaXFzOUxxMjJZSUlfc3llMGdpM29NNXVMcjNkem9rbERFSnBmaUFFS212Vzh5M0lTaG43YWt4MlgzOTh2dmVUQUg0UzdtVld2blBKaDBCX3c2YmEwN1hocThTMzU?oc=5",
-          "source": "RaceFans",
+          "url": "https://www.racefans.net/2026/11/13/spotlight-fia-pulls-f1-reporters-pass-over-column-calling-leclerc-a-sneaky-bd/",
+          "source": "www.racefans.net",
           "publishedAt": "2026-11-13T09:33:53+00:00",
           "kind": "Team news"
         },
@@ -84,6 +84,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Our writers on Antonelli’s title success and what it means",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYkZzZUVWSndEUkxCZG5yYzFCdE11ZUI0bzNKWUF5UkJmRlRDT01LSm9VbE9hdDRQQU5KV0xfVnd2SFV1TUVsRnJLSVlKYU81M2RueGlmUktRWnVtQjUyMjBMVjh1bERJRkdfcm9JOGlnT0U4QlVlLTRjQXRGeDcta3FCc1JTYkhlWmx2cllTTlRrbDUwNVE2a1ZHU292OTJMRlF1QUoyczlZeVdzTlBBMHVjaEh5OWhvdWR1UGhPbnA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-14T08:36:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Antonelli names his biggest threat for 2027 title defence",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSFdYWEZMZFVpZTJESTJ5aVQzQVhJaDItZ1pTMGZuNnp0UDRwMHNCR1lFVW5xclRRbnpoU213SXhVaXhJNEVJR2N3czBzOFVsOFU4dWt1OUNYZzgxemdYSFFqS0poamVEcVY3YnNlTGlXVkx4NGpCaGlSOHlKRnluTURVOGtTQTdKUUg0RkVnVFJ1Z2FOSUFCY1JJbUZtMUNqY1kwNmtFZlpCWk5UTnhtY0FKTjZTWEZpa2szRnRmUVpEMkswTVAtWW1LZmV5X0FfRTEyLVY1SURDTmM0NGJDUDJKTGZpdEY3?oc=5",
           "source": "Formula 1",
@@ -95,13 +102,6 @@
           "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNazJlazRUb3lPdWxKLXJUeTFUejFOWEwtZVcxMkh0QURQbzFsY2hZWE4xYVlmM0l3dDdBVEhSZEc2eFJWV3ZHOEYtOGFCRHppdVJzV3JFWkFKVC1ZS3A4TWdDU1Q4cG91WHoxN09QN05WYTh2WGZXZDJxTmNvSUhNb3M4YW42Mk9pMW1qeEN5RllPZ0t5ZW1mZ1doZ2c3UFdmSm9ET3BZMnVzZ01aNW1RZEMyM1FrU0sxbEVHUk1oNUNtTnoz?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-13T10:05:51+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "The Antonelli you don't know: Inside the Mercedes garage with F1's new world champion",
-          "url": "https://www.autosport.com/f1/news/the-antonelli-you-dont-know-inside-the-mercedes-garage-with-f1s-new-world-champion/10874265/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-13T10:04:48+00:00",
           "kind": "Team news"
         },
         {
@@ -125,6 +125,20 @@
     {
       "name": "McLaren",
       "stories": [
+        {
+          "title": "McLaren to upgrade MCL40 F1 car at its bogey track Las Vegas",
+          "url": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-14T09:13:34+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "McLaren to upgrade MCL40 car at its bogey F1 track Las Vegas",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMXM5aDNSYlltSzVLdXV3S3U1ZWswaTNNaWtIaHY2UXc3MFoyMk9aV0xrZDUxakh5clNabmZsek0zQ3hTUU95YTh3cVRSdUYtbXVwV3dzZ2FIN0hGRU1meVBjLWZVdTVDS25zZTdtZndLSU0wTHJEU1lmTTF4MkM2Y3dyaElnNjhKNEF5QzlSTkNySTU1LXNPcEMyRzRRQjcxaUluT0E3RQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-14T09:09:51+00:00",
+          "kind": "Technical report"
+        },
         {
           "title": "Piastri on his tough 2026 and why it could make him stronger",
           "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQTUV2bFNwclF3b2RiUXR3Y1RRaWpMMlh0dk4xWElTTGNHQXNqZHlJNlI5aXUxRnNOMllLVTR6cVMwVGlGV1dVbFVPTDY0aW9Ub2xnU0kzcWEtaUViZzdKR0JxdVBQOGJIZVYwMy1ILUxfVHB3MUkwWlMxcnE4VVp2ZjVEYkV2S3V0dlNCYjExWjRIbHBEc1pleVVHVkU3MHpzQmduTVFBcHliSlpHRWdvQkxNZmVGSmpjZHFlVFc2UXdtYzk2RUl0LVgyMVphc2dyaEZIdEU4Z0FGc01WbEFTVUI5UzBPclZPRHRTMVl5MFE3NnluWkZNcWl3?oc=5",
@@ -151,20 +165,6 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRmNPWGJZUS1DRjNOa0xBSGk2alRwT0EtZFJZSWpHMC0xU0tJQjZTTmdSU1VqbmtxRU1zdmFyQTR1bUxJc2ZCU3J5dHh1Mi1TQ0dWUXF1aUxLeUlXVUFvS3lHbVBfRDFEUllVaXl2NVFyVUplSTFjNW85d1hIY3JPWlVYczdYb21IY0lZTmN0NTlKNHc3TXZ5QTY2YUJNQ015V2M1M3drQzhoWG1BODdQcXdxU2JQX2JKRG9YamhxTVZZRUdJMGlSSkZtdw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Gary Anderson's verdict on McLaren's 2027-leaning upgrade",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY1g3cHh0bnA5MmVRZkxWcW1uZHRXYThYYzhmbURwd2pMcWJNLWZtc19YUmllbXpiNEs0Uy1OTTBPcHM3NVppWHBDeHZfc0xoZENUYVJrU3M1YWFNb0hURUFtTVdHU1Q3Vmh0NW80TW1WV0dENDlGSVBLQkpCVjhqZW1LWUl5WW5sTUpSUFVkLUxULWc?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-07T10:55:59+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "'We seemed to gain performance' – Norris offers update on McLaren's upgrades in Sao Paulo",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPRFNDZTFOcENxaUY0QWVWcVZTc2I5Um16RTZEWHRtSUFxeHhZV24wUVdGV3FGM1lsRjc5b3otLV9RamwtQzYycFBXVHpRTy1xWDdrOVFHX0lXd2RobU0wX0l4UmhzbUJ0YU5kdnV2SkF0RHYydk9YRDdmMFQxaXBVRkhWZ1VpUkdtZmtwVEJlVWx6X1hmZWRGMDZfTG9aZmFSUGFKeVZwRk1XZ2VPdE9aRGhxYXlqTERVM0ZTVzZwWWVyM2dCU2xucUpoSWM5djBZYklwdEw2SlpBZml3bTRaallVS24?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:56:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -222,6 +222,13 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "How seizing every chance – and making it happen – keeps Gasly’s fire burning",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPOEdaUWRBRFZQVGI4ZHJ0cGoyZ0dIZDR1ZlhLV21aSk9OeGVLRU5KWmJULTVvQkZOM1hMY0xwOElXRXUtSk5Oc0lzWXNpMFZVNlVOWU9TSm8tUzBmck5lbHV0aDlIUWphX3RhdmI0NEhqV2NMZmRUU1ctdGJaX2FvbVRmN0p5RDgxc3RMUEttSzAtSDkzb2xQM1hJU1VyUW9hd2VOQ3Q3RnhuWkE4ZGQ0S3d2Z0JKN2lTNjZJdGJyLWQ?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-14T10:00:03+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Alpine F1 Team Franco Colapinto 2026 Season 1:5 Helmet",
           "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPM1NGb1F2LU5oTnlpaE1vaWM4Yi1zOU8tNV9LdDBHWDBmUmR6bGtHcDNIencwMEdQQ0RySkk1cE1OSFRZWlN0eE5aMUZPamF0WTVLOWVKWnczcDhxdDZybXFxN1A0bWFNdEdGdm5XUTJTUTFFQnNIWm5sYXMyUTZXQmw5enBrTnMzU3UwRHgyZ0E0VEZnaFViaXVGQTVYZXB3OEVZM2xINXBjQWRxRl9SeXFTekVlYXNOT21FUVgxOUEyRXVQRjlxZndabDIwLUQ2OGhxZFo1VDVYRWk0c2xjeDlTNkpqbGQyT0F6cGRjMThQdjdMLWZEaUR0UzYwdw?oc=5",
           "source": "Formula 1",
@@ -233,13 +240,6 @@
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T22:04:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Colapinto insists Alpine ‘can improve a lot’ despite top 10 pace on Friday",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT3Vaa0VVcktvNmh0LWN0TDdyU2tGY094X3RiNi1GcWwyOV9IRnVNeXJSRUQ3am5YejAyWTVubWtRNGJ2U3FwUlBRM1pzYnBrNzExS0JjZVJ0SnJ4UnkwOWt0cU14dndQU2Q3QTF5ZGZZQ0NkQU5IalBfcEhKVzZDV1hqQVU1Z3lYcXlNRjBnMXljcVc2RFBiRVduemxtOFpWVTdNX2dZSDh3bUNtd0VwTVE2aUR4a2NkTXZPT2VJeUx0T0Zq?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:23:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -260,7 +260,7 @@
           "title": "Toto Wolff's journey from Williams to nine F1 titles",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDB6cjlmeWZkek9uM1JxSEZ4QXoyQjJpYjE2YzdKc1hJaVMxWHV2S1hibFJCNWFvLVF2MG9mdnVBNlFlOVRmTFZwZURzcW1abVVkNnl0NFU5S3RNTEl6Ql9UWXFfTTFNelFRLUpLX2FLazVtaERwVmJRcG5UQldtdjlRcWJxc3QzdVFleU1MTDRXeWFLTVlzY2xMZEJuR1J2dDJMMThud1BIU1dPTmFnWTFNQjFNYWNuNTBnOU5BNkhwanR4QldMeU5NUzlQVXlv?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-13T11:38:00+00:00",
+          "publishedAt": "2026-11-13T11:42:06+00:00",
           "kind": "Team news"
         },
         {
@@ -300,8 +300,8 @@
         },
         {
           "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkJ4NHByU1Q5TDV5OE9ZUU1VV2hhUk9yczdBY2RrSGE2dlhyNDgzdTZtNVhBTllRNVV2RzJERS1sRS1lOUh6OEdUU0hiRDlyWnZxY0JsWVZSWl83TXZSaEpCMWZNdjFBOEdmbEFNcUdOaEV3UHBnMU1Wclh3ejBJYVNncDdJSi00WTU4Ul9Fbk5tak4tWXN2N0JTWWFubTBMMkJuTFV1bWg?oc=5",
-          "source": "RaceFans",
+          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
+          "source": "www.racefans.net",
           "publishedAt": "2026-11-13T15:35:32+00:00",
           "kind": "Team news"
         },
@@ -348,17 +348,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Camara experiences every condition in ‘tricky’ Haas debut",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdVIxLUtLU2NtZHpNaGIwY3VVLUlBMG9qQ3VuV2VCWFlzOGdLaVNuUEVGWGxndzRyNW5VWW1ROXF3cElaVlNOZ1p4TlNKUEtacWpucF9VRG03VUhXOFQwMFgzNHpGengtWFJENFZXRmQzWVFXQjlyZWs3TWlSUTEya2ppVkxRSkJpcElsRDNrZ1JqXzgxYk5ab1FHdGE2MHBQQTBwb28zMWdIVVFEbkQtaWc3OXVPN3ZIUVc3T1dyeGdEMkUwTFE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-10T14:01:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
           "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-08T21:59:31+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Charles Leclerc penalised for Liam Lawson clash; Kimi Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQQ25UQi15clNsbERhTUlqM1BvSWhEdzljeHFqRFFwemt4R0ZSNzZ1M29ObjRpR0VzNnpfaXpXemxUZDZwWXZKbHYyN2hhemNVa2tPeUhHSjlpOXdPQmgwcUUzRjFsZmhKdV95ZWt3U3paQXp2dkhGalVsbGw5UXhHeGZkTXlQV2gwNmtjWGNGV3lKdjZVR2M3VkxlQTJmZmY4Z1VRZEl5TWVWVUxwVVh1WmtzUHJIME5PTHVwdFppeFl3ZGRtbVhQYVc3MnlaWkFubllyeU5KMFV5ejQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-08T21:58:33+00:00",
           "kind": "Team news"
         }
       ],
@@ -377,8 +377,8 @@
       "stories": [
         {
           "title": "Court of Appeal to hear Audi’s case over Tsunoda decision on November 25th",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeWlqRU81T2xqUW43dllzUnRQWG9SSWd0dnFuSmJtRFNMN3JNVWQ0aGpXbG8yajhPd2s0dDhQbnJuY2g2Y0x4SnhOLWNUWFF1OXg1eDZmZUhsMW1rTnA1Z3czV3Z0Sjd1RTBPWjBabkVmQWxlQmcyQzk3VGlZYm5yZE44aFltWjFpdlRtMHdPLXFEV0JoREJSbW1LOENKQ3hsQUtrNXl4Wkg0NjM1WDFZ?oc=5",
-          "source": "RaceFans",
+          "url": "https://www.racefans.net/2026/11/12/court-of-appeal-to-hear-audis-case-over-tsunoda-decision-on-november-25th/",
+          "source": "www.racefans.net",
           "publishedAt": "2026-11-12T16:52:19+00:00",
           "kind": "Team news"
         },
