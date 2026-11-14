@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T22:02:27.957891+00:00",
-  "newsUpdatedAt": "2026-11-13T22:02:27.957891+00:00",
+  "updatedAt": "2026-11-14T02:31:31.863048+00:00",
+  "newsUpdatedAt": "2026-11-14T02:31:31.863048+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
@@ -8,9 +8,16 @@
       "stories": [
         {
           "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkJ4NHByU1Q5TDV5OE9ZUU1VV2hhUk9yczdBY2RrSGE2dlhyNDgzdTZtNVhBTllRNVV2RzJERS1sRS1lOUh6OEdUU0hiRDlyWnZxY0JsWVZSWl83TXZSaEpCMWZNdjFBOEdmbEFNcUdOaEV3UHBnMU1Wclh3ejBJYVNncDdJSi00WTU4Ul9Fbk5tak4tWXN2N0JTWWFubTBMMkJuTFV1bWg?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-13T15:35:32+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T12:03:27+00:00",
           "kind": "Team news"
         },
         {
@@ -18,13 +25,6 @@
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUmdSMWljZWczZTNETWxrd3FCTE9LZ2pYRkxDWkozNlNkYi1jM09odXhndEhzdzU1ZHVUaTJRLW9EVWxSTFhzQVEtOW5QcGdQc2JpMzljTXRxX3ZLeTlFMThHNFBnQW5NNFg1Z2hkUEdoRV9jT1NTcnQxWHVSTE9BT2dDdEZ5Nm4wa2JMSGNWUlowWmpyTVByeWtBWmNLMGdyVWNla1Yyb2drVGJQdDN1QmdKMm1qdlI2UG1MQm9DeG53T0RzdXdlcE81YlU5QQ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-12T15:21:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Red Bull's Lawson decision is a clean break from its Marko era",
-          "url": "https://www.the-race.com/formula-1/why-red-bull-avoided-an-unprecedented-driver-sacking/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-12T11:28:52+00:00",
           "kind": "Team news"
         }
       ],
@@ -43,8 +43,8 @@
       "stories": [
         {
           "title": "Spotlight: FIA pulls F1 reporter’s pass over column calling Leclerc a ‘sneaky b*****d’",
-          "url": "https://www.racefans.net/2026/11/13/spotlight-fia-pulls-f1-reporters-pass-over-column-calling-leclerc-a-sneaky-bd/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWk82QWwyZXVEXzFLS0I4OExQdTlvbTNGakt5d1IxeFlQMjR0bU13WXdPWGxtTTQwYllCX2QtdUNmX1ZPVUExVDRTUUxvYmdmSTdVM21yM1FyaXFzOUxxMjJZSUlfc3llMGdpM29NNXVMcjNkem9rbERFSnBmaUFFS212Vzh5M0lTaG43YWt4MlgzOTh2dmVUQUg0UzdtVld2blBKaDBCX3c2YmEwN1hocThTMzU?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-13T09:33:53+00:00",
           "kind": "Team news"
         },
@@ -67,13 +67,6 @@
           "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPV1VwaGg3TTR1bVJPN3VlLTBKZWtJeHlNYTlsU3ByVGpFSkJrVTZJYUFQOFAxYUw3eWQ2T2lISHBuZ0ZNbkZFMEYxcDJvU1lkR2l5dWhXYzlLN0Z3ZVVZZGVMOUp6QmNwWXhKUW8zcE5RbDFVdTR0ZFhHam1BTTVPUURjRkt2OUltUUpGX1NhalMtMjdCdHI4ekdkcUE5N3BFaGZfREpLWnNjMTR6cjFENGZjUXpaems0M2dFXzBMNDBsQXFLY2NrY3M4MW1rV0c4QXdlU3BVWjJBNWlFdmdkcmdoaXh3QVhYMHloaFNYMEpnemdpTXZ2ZzFuQnhtX1FUZ1ZZ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-07T23:01:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Ferrari's last major 2026 F1 upgrade explained",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPWkhiZHN2c2R1U1pZUlQzcFBhYzVUUUl5MUhBeXM0X0FVckhPQTQtbWRyRGtxU1haM2JVM01WYlJrQm1mOGVDYUx1UWg5UkpWZmw1Q0NYdDhmeGpnTVN0Nk1oZnhDQVBqZFF1TkZ2SXlmTXBRXzBCTEdPUEE3ZjNncG85U293NDg?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-10-24T07:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -202,8 +195,8 @@
         },
         {
           "title": "Aston Martin told Alonso he was “quicker than the Mercedes” at end of Brazilian GP",
-          "url": "https://www.racefans.net/2026/11/09/aston-martin-told-alonso-he-was-quicker-than-the-mercedes-at-end-of-brazilian-gp/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUU4dlpRcTdOX0l1Wm9ENXpjMlJaNnVIMWQxT2kwUUVXZVloRFF6R1RadUphSlVTam9ZQkV3cWFkRlZKNElxZnp4TG5rR1U3cXNxMi1McmowUWlpSV9aVHZ5bGxOaVk5cVdFU0c0aERNU05hbENZR3NxNFVCdnQzSTFyQ0NKTHczc3ZVcWFaS2dva1Q0WU1GOUp5Tl9PME4wYmJXTnRwcHlXNWtTMURjS3IxMzVkZU9v?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-09T14:35:19+00:00",
           "kind": "Team news"
         },
@@ -229,17 +222,17 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "Alpine F1 Team Franco Colapinto 2026 Season 1:5 Helmet",
+          "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPM1NGb1F2LU5oTnlpaE1vaWM4Yi1zOU8tNV9LdDBHWDBmUmR6bGtHcDNIencwMEdQQ0RySkk1cE1OSFRZWlN0eE5aMUZPamF0WTVLOWVKWnczcDhxdDZybXFxN1A0bWFNdEdGdm5XUTJTUTFFQnNIWm5sYXMyUTZXQmw5enBrTnMzU3UwRHgyZ0E0VEZnaFViaXVGQTVYZXB3OEVZM2xINXBjQWRxRl9SeXFTekVlYXNOT21FUVgxOUEyRXVQRjlxZndabDIwLUQ2OGhxZFo1VDVYRWk0c2xjeDlTNkpqbGQyT0F6cGRjMThQdjdMLWZEaUR0UzYwdw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-11T14:47:35+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Lawson predicts it will be ‘very, very close between us and Alpine’ in Brazil",
           "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPdWFScERpcUM1T09PWUlfQzUwNlMwb3BPbFp3Y3pUWTJhN2FzaU91LXlEN1gwczNISk9RVzd1VmMzdUJ1c3ZzMkh0aHRlVkViMVk0OGtUTjJpNktWMzU1Y24tWnVhd2psN0lCN3U2OW8tQWtRZ3lod0J1UmRvQ0ZuY2kxZkhxMVB0MVdYdk1vQ3pYbVhXUXB6bERaaXBMQmFaUXZweFRoMFNPWG5FUXJTTFJlYkdfV2NHMW9RcUZJMWo0cDE4aE9v?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-06T22:04:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘He didn’t put a foot wrong’ – Nielsen assesses Mini’s FP1 run for Alpine in Brazil",
-          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOaFFfblVPTVZ6SmMzZWZtUzVhd1BDT1NLOWVSSU1qbTJISVk0UUdRRWxYX2tCenhpRm4xQjIzQ2FyX1hIblEyUHUwbGdteUtXWGpSdEpaNnYxckpPS19FVVBfdFdJYXFDU1dqVlJwdmFtOVlOLWp4NEJWVEdBcjFoNC1IWmlyM0pUQ1ZubXBtUHhKaVdmbHJLc2FLX3NMbWR6VTI5S05YTlpOaVdXbWgweFNSQXhHR0pRcmNGTi1VcE53M3psa3E0VDg5bw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-06T21:47:00+00:00",
           "kind": "Team news"
         },
         {
@@ -307,8 +300,8 @@
         },
         {
           "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOUkJ4NHByU1Q5TDV5OE9ZUU1VV2hhUk9yczdBY2RrSGE2dlhyNDgzdTZtNVhBTllRNVV2RzJERS1sRS1lOUh6OEdUU0hiRDlyWnZxY0JsWVZSWl83TXZSaEpCMWZNdjFBOEdmbEFNcUdOaEV3UHBnMU1Wclh3ejBJYVNncDdJSi00WTU4Ul9Fbk5tak4tWXN2N0JTWWFubTBMMkJuTFV1bWg?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-13T15:35:32+00:00",
           "kind": "Team news"
         },
@@ -321,7 +314,7 @@
         },
         {
           "title": "How the Racing Bulls pendulum is swinging back towards undeniable Liam Lawson",
-          "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxOZlpDME4zTDdlbTQzbnV0bDhQN0NQdmM1LVdGR2RMRlo1c3JKM0k0eVM4LTlGN3lGN3VzcEVNblBQY0JIRHNwWVJwemlUUFRHd0Z2aEZpc255UUtKTTJCbkdlODRqZXNPX21lNUMtWHEyemQ4ckpTQl8wc0Y4MmNrSmNzbE9rQm82b09zSlVUZ1k3dmZwRG9oNVNfbndTbmp1ODBQV3NqU2dpcE9MVDlpQnNiNVZidmFZdXAyTGdlMUpPcXRJUFZJTTNsVmF5X0E3U1FKUlZPNGFnM0FLT2dpOGJFZlZHZ09Zck5xUzFzcHU1WnB5cE4zR0VPamJOLTZSdXBaRG5qMnp0WVo2VVRnMEdLYVR6T2lW?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcWdBWlFZS0VqZHdNZmgtUmxpU1g3WUItOEVoSFJwQlc4X3BuNG0xYklsTzhCRE5jT0hzUG9FOEozaGdBVlQzVGt5eUtZdGh3d2lBSXhPSUMxNTRwal9zUWlkXzlOQkVYbDhOU2FrOXlGTllaVGJZUTc2RUJIWTh5czZJZ3llTmtqUzhzdlAzX2piMENPX0ZpTVB0WlJTcXVCNThpMEt2QTg?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-09T11:55:10+00:00",
           "kind": "Technical report"
@@ -384,8 +377,8 @@
       "stories": [
         {
           "title": "Court of Appeal to hear Audi’s case over Tsunoda decision on November 25th",
-          "url": "https://www.racefans.net/2026/11/12/court-of-appeal-to-hear-audis-case-over-tsunoda-decision-on-november-25th/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOeWlqRU81T2xqUW43dllzUnRQWG9SSWd0dnFuSmJtRFNMN3JNVWQ0aGpXbG8yajhPd2s0dDhQbnJuY2g2Y0x4SnhOLWNUWFF1OXg1eDZmZUhsMW1rTnA1Z3czV3Z0Sjd1RTBPWjBabkVmQWxlQmcyQzk3VGlZYm5yZE44aFltWjFpdlRtMHdPLXFEV0JoREJSbW1LOENKQ3hsQUtrNXl4Wkg0NjM1WDFZ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-12T16:52:19+00:00",
           "kind": "Team news"
         },
