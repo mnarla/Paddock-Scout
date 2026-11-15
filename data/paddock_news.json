@@ -1,30 +1,30 @@
 {
-  "updatedAt": "2026-11-15T09:38:23.459998+00:00",
-  "newsUpdatedAt": "2026-11-15T09:38:23.459998+00:00",
+  "updatedAt": "2026-11-15T17:17:07.608124+00:00",
+  "newsUpdatedAt": "2026-11-15T17:17:07.608124+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
-          "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-14T07:01:02+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-13T15:35:32+00:00",
+          "title": "Retaining Lawson isn't enough – Red Bull must stop treating him like a failure",
+          "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-15T13:08:22+00:00",
           "kind": "Team news"
         },
         {
           "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
           "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-13T12:03:27+00:00",
+          "publishedAt": "2026-11-15T04:41:49+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-14T07:01:02+00:00",
           "kind": "Team news"
         }
       ],
@@ -75,6 +75,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-10-29T07:00:00+00:00",
           "kind": "Technical report"
+        },
+        {
+          "title": "What went into Ferrari's upgrade package in the US?",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQMkVaOHhIZ004ZmVlNFBRalhHNkRld1FOdVBDZ2oxeVVlZ1Z0cGx2TE1hbnFWYjdMZnJmaWhNR09WOXA3Qk81LVMxcGVsRVI1Tm1TLWxpMi1LdGg2YnRWQm15MWlSOEZ2MHg2M3haVUVnZnl2Z1hrU1pFcHA3RTZPcTAyNXl5cmR4MU4yOXd0UkNYRHlGNERaYkhjWEFDbTBEZkJmT2VWS3lKdFliWHZZR2pXeVp0bzJlY0RZTDFxZjkzZWRaZGFUSG11d09Kdw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-28T07:00:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -91,6 +98,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "'One of the best experiences of my life' – Mark Sutton on photographing Antonelli's F1 title",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNM1RYd3hJSE4xVWg3LUtjby1XbTlTTmliUnJ5RFZwR29GLU92TEVCMjgtWEVEaGZnT0xmbEEySE9ENzV2V2lpZWo0UlNuQkg2bnhhd0IzQ2taTGJ5b2k2UzdlSUlBbndRMHprQk9rVVV6ZGExTTRkVDB0N2pjZlhCWjhXcXY3d2x0aHA3ZXRlUFZheHpDUmVzLUZtV3BVb2pmV3Axc0h4RUowSHVBM3gyTkdFM1Ywek01MmhOVUZHdm8xZEF6MUZfUHFVTm1zTWdEX2hHbF9PRTBuTnZKVU1tRkhMdklLbzNM?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-15T17:06:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Poll: How many F1 drivers could have won the championship in Antonelli’s car?",
           "url": "https://www.racefans.net/2026/11/15/how-many-f1-drivers-could-have-won-the-championship-in-antonellis-car/",
           "source": "www.racefans.net",
@@ -105,17 +119,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-14T07:01:02+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Why McLaren went the opposite way to Mercedes' front wing",
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNRmNPWGJZUS1DRjNOa0xBSGk2alRwT0EtZFJZSWpHMC0xU0tJQjZTTmdSU1VqbmtxRU1zdmFyQTR1bUxJc2ZCU3J5dHh1Mi1TQ0dWUXF1aUxLeUlXVUFvS3lHbVBfRDFEUllVaXl2NVFyVUplSTFjNW85d1hIY3JPWlVYczdYb21IY0lZTmN0NTlKNHc3TXZ5QTY2YUJNQ015V2M1M3drQzhoWG1BODdQcXdxU2JQX2JKRG9YamhxTVZZRUdJMGlSSkZtdw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "How Mercedes got their front wing upgrade in the sweet spot",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZVhlY2JMYWhTSlBhZlFuYmQya3ZDSkxLT3ByZDFPV0FoQk5Gb01VVXo2eHhuV245T2xDcjhIanhCOUFZRkZWdHdSM1NmYVB4RlU1c0tueHZQcFVLUG9LRy1mT1ZmbmJ0Wll5OEZQdEVRbklZMDJJY1V2bnZFSnFSeGVoUXdveFJxNVRlRGliNUstZEtNd3ctQXd4MzFKTEZPUEJSOE44RTBaa3lOa3FoVkQ5U2xKcTl6QnFhbHRuZ1hjOUI3OXlZRUxYNEpzRU96QmJxNkh3?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-04T08:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -132,13 +146,6 @@
     {
       "name": "McLaren",
       "stories": [
-        {
-          "title": "McLaren F1® Team LEGO® MCL38 Race Car",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPYTNZc0hQbkNTcEU3dll1OG9kYVJ5czF3clVnNzMtRzRXU2tTZEhRYlFpMmozQ1l1cTV0NmQxTzVLeUpoTVVmbjI5S0tpeW9GVTVLZS1KV2hUYTRJVUQzdjlNQWNfSUhqYlFoMkRPM1U4b1lCc1pybWdsWHB2aHh0U1VFWkwyd250cGZTRUdmaDRIYlpXR0ljS3E4Q3FCV2g0REdMRTNmdnRFTUlhM1VMNlJHLUt1anBha3lWTzVCcEdVQnlsYS13YWhDempFaFFpNWJUS3F0RFdjZnA2d2tSeXhuVF9UQWxlekk3bTZmLUlnT3RXYXNxa1FIQldTSGVB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-14T10:35:52+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "McLaren to upgrade MCL40 F1 car at its bogey track Las Vegas",
           "url": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
@@ -173,6 +180,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
           "kind": "Technical report"
+        },
+        {
+          "title": "5 betting lessons learnt after Norris wins in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSWliUUs2M2xLSnhHQWRJWjRoQ1M5UUZxOGJFNEdsaDNUVDJoZFhEXzBOdk1rU2NYd3lnV2FtOS1kTkNmN0tOY1A4MnM4bXhKUk82RGx0ampwaUl4Z1VfSW5ZMUx0ZTFuMWtmZFl0U2VZYkdtN3liT3pRSDRnQmJfVnYzb1cyeHI3SGFjcy1vMl9YSmVrUlZhQzFnRUxwaFBFWnkySVZSNXNqZ2NkQVA1b19fMTFHay0xNkhLQVdSVGFRSWFxTm95Z0VxTW5aTUZoRWFJbHNheWo0eXFZcHZHTGJvZFlscFZJ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-10T08:05:04+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -299,6 +313,13 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Retaining Lawson isn't enough – Red Bull must stop treating him like a failure",
+          "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-15T13:08:22+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Lawson's top-six hopes after new Racing Bulls deal",
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdVlaQk9qQmh5QkotLVBPQkdZdUxYMVdJLUZxRGpQY3J6cXdhM1Q1OTEyaXg1VG00NmVuYU1hZFRNZHlGZXJ1WnZVeGcyb01Sc2VzOC1QQzFaZDEtZU5GR1RTTmRVUnB2YXdMRVp5U1kwb2h4MjZ5MTdUNWZKUHFLNmVPaXJTd0tRQUZMQTBsUEJsamFNN2dHMDRKS3ZsOERGM29lb3B2Q0l1ZlIxMHI3bnNnckcxRTlJa1pLaDczYUNZN0JpNVpjV3Fjc0laOTFQZGtzZGE4bU1MODhXbzEwS0xXcGdvcUhl?oc=5",
           "source": "Formula 1",
@@ -310,13 +331,6 @@
           "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-13T15:35:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Tsolov to serve as Red Bull and Racing Bulls reserve driver",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUmdSMWljZWczZTNETWxrd3FCTE9LZ2pYRkxDWkozNlNkYi1jM09odXhndEhzdzU1ZHVUaTJRLW9EVWxSTFhzQVEtOW5QcGdQc2JpMzljTXRxX3ZLeTlFMThHNFBnQW5NNFg1Z2hkUEdoRV9jT1NTcnQxWHVSTE9BT2dDdEZ5Nm4wa2JMSGNWUlowWmpyTVByeWtBWmNLMGdyVWNla1Yyb2drVGJQdDN1QmdKMm1qdlI2UG1MQm9DeG53T0RzdXdlcE81YlU5QQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-12T15:21:00+00:00",
           "kind": "Team news"
         },
         {
