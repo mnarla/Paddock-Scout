@@ -1,18 +1,11 @@
 {
-  "updatedAt": "2026-11-15T02:00:01.256082+00:00",
-  "newsUpdatedAt": "2026-11-15T02:00:01.256082+00:00",
+  "updatedAt": "2026-11-15T09:38:23.459998+00:00",
+  "newsUpdatedAt": "2026-11-15T09:38:23.459998+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
-        {
-          "title": "Verstappen reflects on ‘painful’ Monaco DNF",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVGpET2lTRHZuWmJDVExOOS1XYWUtbHE4djM1Z1U0eVpiNk1BeXJKaEE1RU45UjREZ2tPc3RFSk9VNFp1NC03RG9aamQxcGEtdktTZVVDX2NaUWhHNzZDenpRWDU5d2xyUURJT1Y5Y3JOOUtnOEV3OUk0NHBVbWl1OURiTTR1MWt2Z2EtTHhmOEptT3pGeWhtY0JVV2xFS3Fyc2o4bFJlXzlkRTlhUFdUaTVZVWVDdXgyZWhaS3FSTnZMOVU4V3RXQ2Zia29HUHFQcjBOcFFjRTFEX3JWXy1rdHpWaHQyUnpSeXhOOVlTMnJoZw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-14T13:05:16+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
@@ -25,6 +18,13 @@
           "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-13T15:35:32+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T12:03:27+00:00",
           "kind": "Team news"
         }
       ],
@@ -68,6 +68,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-07T23:01:00+00:00",
           "kind": "Technical report"
+        },
+        {
+          "title": "Hamilton 'grateful' of continued Ferrari upgrades",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaXFQSEd5RmZGYTVEQVZaYUt1NTVYMkJHLXlkUDl4bXUzT25NV0FjLUFscm9jV0tkVFkxdGNJNGtyY0dVS2pWdmtmcGx1QVZfVmsyZ0ZWbE1EaDRCRDBwX1k4c0sxQjNOeFFzbko2ZjB2UTNlYV9jR1Juc2RpMmppYlN6NnR2QnZudTgtakhmRVZJWDZDZDNNMDJqQXk3V2EwVDBJ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-10-29T07:00:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
@@ -84,6 +91,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Poll: How many F1 drivers could have won the championship in Antonelli’s car?",
+          "url": "https://www.racefans.net/2026/11/15/how-many-f1-drivers-could-have-won-the-championship-in-antonellis-car/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-15T08:30:30+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Our writers on Antonelli’s title success and what it means",
           "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNYkZzZUVWSndEUkxCZG5yYzFCdE11ZUI0bzNKWUF5UkJmRlRDT01LSm9VbE9hdDRQQU5KV0xfVnd2SFV1TUVsRnJLSVlKYU81M2RueGlmUktRWnVtQjUyMjBMVjh1bERJRkdfcm9JOGlnT0U4QlVlLTRjQXRGeDcta3FCc1JTYkhlWmx2cllTTlRrbDUwNVE2a1ZHU292OTJMRlF1QUoyczlZeVdzTlBBMHVjaEh5OWhvdWR1UGhPbnA?oc=5",
           "source": "Formula 1",
@@ -95,13 +109,6 @@
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-14T07:01:02+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli names his biggest threat for 2027 title defence",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPSFdYWEZMZFVpZTJESTJ5aVQzQVhJaDItZ1pTMGZuNnp0UDRwMHNCR1lFVW5xclRRbnpoU213SXhVaXhJNEVJR2N3czBzOFVsOFU4dWt1OUNYZzgxemdYSFFqS0poamVEcVY3YnNlTGlXVkx4NGpCaGlSOHlKRnluTURVOGtTQTdKUUg0RkVnVFJ1Z2FOSUFCY1JJbUZtMUNqY1kwNmtFZlpCWk5UTnhtY0FKTjZTWEZpa2szRnRmUVpEMkswTVAtWW1LZmV5X0FfRTEyLVY1SURDTmM0NGJDUDJKTGZpdEY3?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-13T16:43:00+00:00",
           "kind": "Team news"
         },
         {
@@ -125,6 +132,13 @@
     {
       "name": "McLaren",
       "stories": [
+        {
+          "title": "McLaren F1® Team LEGO® MCL38 Race Car",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPYTNZc0hQbkNTcEU3dll1OG9kYVJ5czF3clVnNzMtRzRXU2tTZEhRYlFpMmozQ1l1cTV0NmQxTzVLeUpoTVVmbjI5S0tpeW9GVTVLZS1KV2hUYTRJVUQzdjlNQWNfSUhqYlFoMkRPM1U4b1lCc1pybWdsWHB2aHh0U1VFWkwyd250cGZTRUdmaDRIYlpXR0ljS3E4Q3FCV2g0REdMRTNmdnRFTUlhM1VMNlJHLUt1anBha3lWTzVCcEdVQnlsYS13YWhDempFaFFpNWJUS3F0RFdjZnA2d2tSeXhuVF9UQWxlekk3bTZmLUlnT3RXYXNxa1FIQldTSGVB?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-14T10:35:52+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "McLaren to upgrade MCL40 F1 car at its bogey track Las Vegas",
           "url": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
@@ -159,13 +173,6 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-10T12:22:59+00:00",
           "kind": "Technical report"
-        },
-        {
-          "title": "5 betting lessons learnt after Norris wins in Brazil",
-          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSWliUUs2M2xLSnhHQWRJWjRoQ1M5UUZxOGJFNEdsaDNUVDJoZFhEXzBOdk1rU2NYd3lnV2FtOS1kTkNmN0tOY1A4MnM4bXhKUk82RGx0ampwaUl4Z1VfSW5ZMUx0ZTFuMWtmZFl0U2VZYkdtN3liT3pRSDRnQmJfVnYzb1cyeHI3SGFjcy1vMl9YSmVrUlZhQzFnRUxwaFBFWnkySVZSNXNqZ2NkQVA1b19fMTFHay0xNkhLQVdSVGFRSWFxTm95Z0VxTW5aTUZoRWFJbHNheWo0eXFZcHZHTGJvZFlscFZJ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-10T08:05:04+00:00",
-          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -257,6 +264,13 @@
       "name": "Williams",
       "stories": [
         {
+          "title": "Why Williams has turned Sainz and Albon into test drivers",
+          "url": "https://www.the-race.com/formula-1/why-williams-has-turned-sainz-and-albon-into-test-drivers/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-15T09:12:56+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Toto Wolff's journey from Williams to nine F1 titles",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDB6cjlmeWZkek9uM1JxSEZ4QXoyQjJpYjE2YzdKc1hJaVMxWHV2S1hibFJCNWFvLVF2MG9mdnVBNlFlOVRmTFZwZURzcW1abVVkNnl0NFU5S3RNTEl6Ql9UWXFfTTFNelFRLUpLX2FLazVtaERwVmJRcG5UQldtdjlRcWJxc3QzdVFleU1MTDRXeWFLTVlzY2xMZEJuR1J2dDJMMThud1BIU1dPTmFnWTFNQjFNYWNuNTBnOU5BNkhwanR4QldMeU5NUzlQVXlv?oc=5",
           "source": "Formula 1",
@@ -268,13 +282,6 @@
           "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUEVPQWx0cTVqX09abnJ0UWNvLUsyZjBLU0Y0WUpwZVV3Rm52Wk96eTg4dzNwbkZyMTBUb3NPSzN3ZGpBMXd2dXVDYTlPME1leU9VSjJTX3R1dXpsMW8yVzVRZzRBTHBBYnhYM0k5aVZhUzBqNkFwamV6Z3NrUW1sZzIzYkVNS0hkeW5adEhsT0pON2ZqdzJqd1AwaFJ5TDdKam43Smg5YTZ0VHBDS2FyVHJGQmpDbVlXOXBZQjAtVjhCaWtzYVZCNHViOA?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-08T20:10:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Mercedes wins the constructors’ title for the ninth time, tying with Williams",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPZTFfaEJZYVpIcDhGMUtpbHZMUllpYzVuZlcyLXZjU2c5U2VEUlpjNFBma3o2RDBDV2puWUt6M3UzUTFfdHBMNmJCUDgxNUpNV2JhY2ExS2NlN1ZQNnhxc0pxOF9ObUV6S2JsREd5dXdzNGQtUjFCVWtmNmF5MlA2SFdkZWZrUk1UVU9aajEzVGFZYklEZV9oQ3RsVVhNbjdfZ0c1RnJQc004TDhvaW02XzZR?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-08T18:39:55+00:00",
           "kind": "Team news"
         }
       ],
