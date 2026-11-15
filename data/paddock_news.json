@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-14T21:36:22.130296+00:00",
-  "newsUpdatedAt": "2026-11-14T21:36:22.130296+00:00",
+  "updatedAt": "2026-11-15T02:00:01.256082+00:00",
+  "newsUpdatedAt": "2026-11-15T02:00:01.256082+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Verstappen reflects on ‘painful’ Monaco DNF",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQVGpET2lTRHZuWmJDVExOOS1XYWUtbHE4djM1Z1U0eVpiNk1BeXJKaEE1RU45UjREZ2tPc3RFSk9VNFp1NC03RG9aamQxcGEtdktTZVVDX2NaUWhHNzZDenpRWDU5d2xyUURJT1Y5Y3JOOUtnOEV3OUk0NHBVbWl1OURiTTR1MWt2Z2EtTHhmOEptT3pGeWhtY0JVV2xFS3Fyc2o4bFJlXzlkRTlhUFdUaTVZVWVDdXgyZWhaS3FSTnZMOVU4V3RXQ2Zia29HUHFQcjBOcFFjRTFEX3JWXy1rdHpWaHQyUnpSeXhOOVlTMnJoZw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-14T13:05:16+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
           "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
@@ -18,13 +25,6 @@
           "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-13T15:35:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-13T12:03:27+00:00",
           "kind": "Team news"
         }
       ],
@@ -201,10 +201,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Aston Martin told Alonso he was “quicker than the Mercedes” at end of Brazilian GP",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORUU4dlpRcTdOX0l1Wm9ENXpjMlJaNnVIMWQxT2kwUUVXZVloRFF6R1RadUphSlVTam9ZQkV3cWFkRlZKNElxZnp4TG5rR1U3cXNxMi1McmowUWlpSV9aVHZ5bGxOaVk5cVdFU0c0aERNU05hbENZR3NxNFVCdnQzSTFyQ0NKTHczc3ZVcWFaS2dva1Q0WU1GOUp5Tl9PME4wYmJXTnRwcHlXNWtTMURjS3IxMzVkZU9v?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-09T14:35:19+00:00",
+          "title": "Stroll reveals what caused his DNF in Brazil",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdjhHUERkSFc5U1dmS1dTUTl2amU4Y2tDWjFNNVpLdFpCS1NPd0x1a2hXTkVhUmF5dWdyQmVWZmk1NkdyZGlFVUxSalBrbUZQZ1dtemdkMkhPZFYxY0VTcjhocXFMZTdjRWwyQndXQ3FRc09mNXAzVlpIOUV4ZGt5YU9IQ2U2S0V6WHZkVndqTExVWXZ3RnNCLW91aVhqNm8?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-08T18:49:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -236,10 +236,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Colapinto insists Alpine ‘can improve a lot’ despite top 10 pace on Friday",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPT3Vaa0VVcktvNmh0LWN0TDdyU2tGY094X3RiNi1GcWwyOV9IRnVNeXJSRUQ3am5YejAyWTVubWtRNGJ2U3FwUlBRM1pzYnBrNzExS0JjZVJ0SnJ4UnkwOWt0cU14dndQU2Q3QTF5ZGZZQ0NkQU5IalBfcEhKVzZDV1hqQVU1Z3lYcXlNRjBnMXljcVc2RFBiRVduemxtOFpWVTdNX2dZSDh3bUNtd0VwTVE2aUR4a2NkTXZPT2VJeUx0T0Zq?oc=5",
+          "title": "Alpine Duke + Dexter Blue Sports Jersey",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQU3ZEaTZEbWpNNHltcG9rdDZ5SlpVaXo3SXkzM1hkSEM1VnZ5OW50SXZ0dHpLQ083RXFNdl9LZ0lWNG5VWkUxcTZoNWVMUFJUUnBXNzZMRTRybUZYU21uNUdBT0RzX2owMzd0UnRsN2JjZVJJRkQ0b21IdHdXdGxwdHZBQmtkVEM3VllSa2hpRzlkYWUtRVgxczlDcVlmQVRPSW43WWFxUGR1M0lrbXpzQW13cWdVNTFrN0ZCdV9YajEzZ3dMUE81bnJUSQ?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-06T08:00:00+00:00",
+          "publishedAt": "2026-11-08T21:32:21+00:00",
           "kind": "Team news"
         }
       ],
@@ -348,17 +348,17 @@
           "kind": "Team news"
         },
         {
+          "title": "Camara experiences every condition in ‘tricky’ Haas debut",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdVIxLUtLU2NtZHpNaGIwY3VVLUlBMG9qQ3VuV2VCWFlzOGdLaVNuUEVGWGxndzRyNW5VWW1ROXF3cElaVlNOZ1p4TlNKUEtacWpucF9VRG03VUhXOFQwMFgzNHpGengtWFJENFZXRmQzWVFXQjlyZWs3TWlSUTEya2ppVkxRSkJpcElsRDNrZ1JqXzgxYk5ab1FHdGE2MHBQQTBwb28zMWdIVVFEbkQtaWc3OXVPN3ZIUVc3T1dyeGdEMkUwTFE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-10T14:01:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
           "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-08T21:59:31+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Ayao Komatsu: Esteban Ocon axing ‘surprised everybody at Haas’",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSWpjalNEa005N1k4N0JlMjNQTk5nQlZqdkFFbGtSMGtWNzhYZGtKN1pJTVJ0Y1VtSHlvM3FIZ01TM1BRYTNIV25Jd1djSFlLcnVEa0U3bEZqRWpHcU9rMGZrNHQyWlpZZ0FhV1d1cWt6b2kxOVlWeERlaWZJcS1odWdMQzh3VUxPbnNYbUNuUjducWJRRlZ1LXZXMjN4MlZxRFdzRGxn?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-07T13:13:57+00:00",
           "kind": "Team news"
         }
       ],
@@ -425,10 +425,10 @@
           "kind": "Team news"
         },
         {
-          "title": "WEC Monza: #8 Toyota seals drivers’ title as Cadillac wins chaotic finale",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNcXN5LXU5dGdaaV9qS1ZCcFB0UTJ2TkViLTBpbVN3dnNIM2NQbm5sMjZINm04TU9LUF9IZ19MbFVtdFlINkp0N1ZwbnZEMUlGY1lfczB0SDNhUDJoOE81TGNubnBsZ3JZNVVRS0k0T3NzNmdOV2oweEw4SHNaRWtzYjlrZG9lWG50TjVBMW5ZZDg5eWNZYUltOHdFLWJ6dlQ0UXlyQjBWZjlzWjhHSUFnSk0xZnk4Zw?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-08T19:18:27+00:00",
+          "title": "Herta qualifies for F1 superlicence as Bottas remains bullish on 2027 seat",
+          "url": "https://www.autosport.com/f1/news/herta-qualifies-for-f1-superlicence-as-bottas-remains-bullish-on-2027-seat/10872179/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-06T16:57:16+00:00",
           "kind": "Team news"
         }
       ],
