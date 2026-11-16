@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-11-15T21:55:28.825568+00:00",
-  "newsUpdatedAt": "2026-11-15T21:55:28.825568+00:00",
+  "updatedAt": "2026-11-16T02:16:19.556200+00:00",
+  "newsUpdatedAt": "2026-11-16T02:16:19.556200+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
+          "title": "Retaining Liam Lawson isn't enough – Red Bull must stop treating him like a failure",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1VZTnVRTkNvWFZhUEdpZ05TMXF5UFRaYmxzeHNRZU1hRnA2cm8yQVZ6Wk5HQ0kyWGdrOGpQN1A0LVNvWDVPQ2NocmtrTHotSWdER0x0bmI0Q1BmNTVrSEItSFhMMVlKZjI0MTFDRFRuUFdZUWR1Vk1CakFkNVFxVkVNZ29VZkJnem56TGVvSXdoajFHeWZEdG9tVklhTG93RW5DUWo1V2hCZzN3eXR5WmR0Y3oxUXFWNnRF?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-15T18:30:03+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Retaining Lawson isn't enough – Red Bull must stop treating him like a failure",
           "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-15T13:08:22+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Oracle Red Bull Racing Hot Wheels Premium 2-Pack",
-          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNdnlNZHhmUktzX1ZQekJ5aWdMYTBPczhYR3d6S2JDVU56d1JwS1JQVVpYR2VkZ0tmbXlZaVV2YTk3Yzd5RDJ1emlNYU1rdWNQUGh2Znk3TURHTjFHOU5JQUtPcXotWW80V2FxZUJZWHhtMmdKc1F0RUE0ZlR6MmFCYi05R09BREtkOEZYSGNRU0lXbTBlMWxtVzRkeWI5aWZWUWtRM3QwNXNZM0Z2ZktNX21fcl9NWHZucXo2WnpoRTRDUEQxamdYa0RiOS15ZXhpYldkMkJISWZDNVdZd0NsOWhabUFpWG9oWE96TDNDN1I4Z2xZZTVnYi1iUWtzUVU3R0Y0OUhUOA?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-15T04:59:14+00:00",
           "kind": "Team news"
         },
         {
@@ -42,6 +42,13 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "Unheard Radio: Exclusive radio from Lewis Hamilton's first win for Ferrari",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQeXhlWEVzNkpjb3JJM3BqNGtJMWxkbTBDYXlhSFhHTFpVZ0NfZHhKejJFekU3aFRBV1lmUkZ1Y3FyMFhYWHlwb01jVWhJVWhwWG5JczJhWXAybFU2WDZjZnNCYVF5WTZia2lMSjB5S0VRWVMwMmJuTzdTVW4zeURPZnR4bzFHX0E2RTVXZnFsZ3ltVGJlZXZzb1NDdGh2aDI2OUczWVllUm1heHJfa2htMGNOUUJsU1hzenZTR0ZWTWJZRjdu?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-13T10:36:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Spotlight: FIA pulls F1 reporter’s pass over column calling Leclerc a ‘sneaky b*****d’",
           "url": "https://www.racefans.net/2026/11/13/spotlight-fia-pulls-f1-reporters-pass-over-column-calling-leclerc-a-sneaky-bd/",
           "source": "www.racefans.net",
@@ -56,17 +63,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Hamilton loses 'most marketable athlete' status in 2026",
-          "url": "https://www.the-race.com/extra/hamilton-loses-most-marketable-athlete-status-in-2026/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-11T15:33:14+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "'Using the Qualifying session as a test' – Hamilton reflects on grid penalties and power unit changes in Brazil",
           "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPV1VwaGg3TTR1bVJPN3VlLTBKZWtJeHlNYTlsU3ByVGpFSkJrVTZJYUFQOFAxYUw3eWQ2T2lISHBuZ0ZNbkZFMEYxcDJvU1lkR2l5dWhXYzlLN0Z3ZVVZZGVMOUp6QmNwWXhKUW8zcE5RbDFVdTR0ZFhHam1BTTVPUURjRkt2OUltUUpGX1NhalMtMjdCdHI4ekdkcUE5N3BFaGZfREpLWnNjMTR6cjFENGZjUXpaems0M2dFXzBMNDBsQXFLY2NrY3M4MW1rV0c4QXdlU3BVWjJBNWlFdmdkcmdoaXh3QVhYMHloaFNYMEpnemdpTXZ2ZzFuQnhtX1FUZ1ZZ?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-07T23:01:00+00:00",
+          "publishedAt": "2026-11-07T08:00:00+00:00",
           "kind": "Technical report"
         },
         {
@@ -313,6 +313,13 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Retaining Liam Lawson isn't enough – Red Bull must stop treating him like a failure",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1VZTnVRTkNvWFZhUEdpZ05TMXF5UFRaYmxzeHNRZU1hRnA2cm8yQVZ6Wk5HQ0kyWGdrOGpQN1A0LVNvWDVPQ2NocmtrTHotSWdER0x0bmI0Q1BmNTVrSEItSFhMMVlKZjI0MTFDRFRuUFdZUWR1Vk1CakFkNVFxVkVNZ29VZkJnem56TGVvSXdoajFHeWZEdG9tVklhTG93RW5DUWo1V2hCZzN3eXR5WmR0Y3oxUXFWNnRF?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-15T18:30:03+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Retaining Lawson isn't enough – Red Bull must stop treating him like a failure",
           "url": "https://www.autosport.com/f1/news/retaining-lawson-isnt-enough-red-bull-must-stop-treating-him-like-a-failure/10874666/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -324,13 +331,6 @@
           "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPdVlaQk9qQmh5QkotLVBPQkdZdUxYMVdJLUZxRGpQY3J6cXdhM1Q1OTEyaXg1VG00NmVuYU1hZFRNZHlGZXJ1WnZVeGcyb01Sc2VzOC1QQzFaZDEtZU5GR1RTTmRVUnB2YXdMRVp5U1kwb2h4MjZ5MTdUNWZKUHFLNmVPaXJTd0tRQUZMQTBsUEJsamFNN2dHMDRKS3ZsOERGM29lb3B2Q0l1ZlIxMHI3bnNnckcxRTlJa1pLaDczYUNZN0JpNVpjV3Fjc0laOTFQZGtzZGE4bU1MODhXbzEwS0xXcGdvcUhl?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-13T18:19:32+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Featured Comment: Pay more attention to Racing Bulls helping Red Bull",
-          "url": "https://www.racefans.net/2026/11/13/featured-comment-pay-more-attention-to-racing-bulls-helping-red-bull/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-13T15:35:32+00:00",
           "kind": "Team news"
         },
         {
@@ -362,6 +362,13 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Haas F1 Team Toys & Games",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcGk5b1hpemV3ZTY0Sy1lMEZFcF9CQ3VNanV1VWJMZXo3eUhTQmJHSWQ5RmNlYWx4OHVfSnB6TW4wQm03bHo3dUY4ZXhma1hQN3JtcG4tcXY5bmtlODN6NWVHdGMzQ2ZUNHgzQ2xKZUsxU1NLMjZDZ3M4dUl3czFRWHRCeEFmUDZLYkFmRDhadzljbUU3X3N4VEhnaGRnd3FTOUE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-11T19:01:28+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Ollie Bearman relieved ‘horrible three weeks’ for Haas are over",
           "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNUExyemIyUFBXLXRTUmlVdmUxTFMyVHMwSlhIRkUyNVJMMnBqVDgxSFRWV2QtRTlraDdIVkRwZGsxRFpZZExQazZyOVRnNUVxeGR1cUYzR0p3azFtYTlCZzRvRGdHV3Q1MzBSMFJQMFJtMlI4SlkzaEhmNW5fRFozaGdCbWtDSF9KVFBNMWRYZ1BxTGJfOE5hSlBXMUl2anJxN2RrYV96Q2NGNlg4WUFTYVI4X3ZadXgzYWNkcVlB?oc=5",
           "source": "Formula 1",
@@ -373,13 +380,6 @@
           "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdVIxLUtLU2NtZHpNaGIwY3VVLUlBMG9qQ3VuV2VCWFlzOGdLaVNuUEVGWGxndzRyNW5VWW1ROXF3cElaVlNOZ1p4TlNKUEtacWpucF9VRG03VUhXOFQwMFgzNHpGengtWFJENFZXRmQzWVFXQjlyZWs3TWlSUTEya2ppVkxRSkJpcElsRDNrZ1JqXzgxYk5ab1FHdGE2MHBQQTBwb28zMWdIVVFEbkQtaWc3OXVPN3ZIUVc3T1dyeGdEMkUwTFE?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-10T14:01:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Leclerc penalised for Lawson clash; Antonelli and Oliver Bearman also punished after F1 Brazilian GP",
-          "url": "https://www.autosport.com/f1/news/leclerc-penalised-for-lawson-clash-antonelli-and-oliver-bearman-also-punished-after-f1-brazilian-gp/10873166/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-08T21:59:31+00:00",
           "kind": "Team news"
         }
       ],
