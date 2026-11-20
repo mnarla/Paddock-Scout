@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-20T17:05:33.012737+00:00",
-  "newsUpdatedAt": "2026-11-20T17:05:33.012737+00:00",
+  "updatedAt": "2026-11-20T23:13:36.385130+00:00",
+  "newsUpdatedAt": "2026-11-20T23:13:36.385130+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
@@ -65,16 +65,9 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "Spotlight: Donnelly to publish autobiography with contributions from Hamilton and Pitt",
-          "url": "https://www.racefans.net/2026/11/20/spotlight-donnelly-to-publish-autobiography-with-contributions-from-hamilton-and-pitt/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-20T11:05:09+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Wet Las Vegas practice was like a cold, miserable day karting at Rowrah – Hamilton",
-          "url": "https://www.racefans.net/2026/11/20/wet-las-vegas-practice-was-like-a-cold-miserable-day-karting-at-rowrah-hamilton/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXQ5WkVyZm95OWUzTXNCUmVMbU1wamkzMkd1ZlVKYkhOVk5Neldka0dxRmdBSnJiNnJqUEtOVUNPWm1tR1VxQjhsUUdwZ3JUcDg4SEtPZHpraUNHV0NPSkF6MG4tanQyYXcxamJqRm9HdUpMLUtLaVM3UURpLVRvdE9ITVptNzhQU1hLd3ZnbUJpMjVZbFlBLWVIM3ZMY3hGX0hxM0p5NjRaYlFoUmR6QUx4OHZObFE?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-20T09:09:46+00:00",
           "kind": "Team news"
         },
@@ -83,6 +76,13 @@
           "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOcm14OW12Q2FIVEFmdDFvV2xqUV90MG5WVjV0TkpLVWVoXzJJSU02MzFmYm5DYVFnTWt2Y2V0YlBWV2JzSXg4YndYMC15S2xzTGtLVlhzVTJqem1Tb0hGekxuekJFS25KcU5IT204Y1d6Tk02TnB5SG1ncGI3NkwzLTBtdm5oZE9vX2NfYm5TanNubDRURTdpdE9uQ2stdzg0MzBReHMwTV9qY0VFUlRUMWZ4cTFTdjdkajdmNG1INVhmTjZRUGE1Tm5aZGNqT3RnaTdzcjgxay1nTDMxSUxpVGc0X0dkcG4xMk0w?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-20T07:39:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Dino Beganovic said new Ferrari reserve role is ‘very intense’ and ‘very exciting’ after Las Vegas FP1",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPa09WUGYyb29zc2ROeEpQV2Nra1NUN2gyeVdyd3RzaTYzWkszVWUwOS1PdGNsal9mUi0wNURNZE1vd0JEeUwzbzFESlBMX1MzRHNSbFpFa3dNUUExeWVfelpzRkgxV3pSVjlyVHU2RFowR3Boc3I3SEJROGRqOU96N0lIUVRGWDFVNkpRQmRDM0FIOURrUl9nTWc4LTlySGQya2JFLU5aVm1vT1I0dTc1dll5NkxwWkt6RkNyOU43Y1FUSmJUcnNQelJ6clZWWnhhSjBqYV8zMFJBUjZJRmdFRkp3YXA2TVU?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-20T07:08:00+00:00",
           "kind": "Team news"
         },
         {
@@ -124,8 +124,8 @@
         },
         {
           "title": "Russell grabs fastest time after late red flag in second practice",
-          "url": "https://www.racefans.net/2026/11/20/russell-grabs-fastest-time-after-late-red-flag-in-second-practice/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQd2xMRHRyaGl5VHdPM2NTdWVkcHNoMUFKbXdDTUs3Z2FzU1ZLZjA5bjVULUpsTy15SDZ5RFF1NlFRaXBYZEdMNXJvVHpHczQ3dXhOeHlzUFg4Q3gwbVg3TTJWWkk4LVdKX1FGUndRMXowcDVyQkdsOXEyVkhtRHhmdlRsSC1PTVNCZ0dDYXNCN1dMNTJRclg4eTlJZV80S2VxOFpBYg?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-20T05:18:55+00:00",
           "kind": "Team news"
         },
@@ -145,8 +145,8 @@
         },
         {
           "title": "Russell explains why he chose not to use Mercedes’ turbo upgrade in Las Vegas",
-          "url": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEU4SzZjcDA0dzB2S2RHRzUyYW5aVVpBV0o3RVpsaWE0elFHQ09BM1hQdzNtZXVpWHQxWGpCSmR0dzRLLWpKQlRpSmpULWRCLV9KbDdELW9BcGxaUUtTOGdLV1lZbnVxTFdNTEstTkVucG1pQUFhSGRla1Z1eG9UbEtGRnFyU3l3Q0lpQVA2M2haVFBjZFAwT05aa25xV1JhVDkyV0lRRGNkMFY4YUN0R3BDOA?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-19T06:21:26+00:00",
           "kind": "Technical report"
         },
@@ -184,8 +184,8 @@
       "stories": [
         {
           "title": "Piastri needed to reduce his speed through F1’s quickest corners – Brown",
-          "url": "https://www.racefans.net/2026/11/20/piastri-needed-to-curb-his-speed-through-quick-corners-brown/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZnhIc09WcjhCZm1wUEVFTmFYalRLeGQ3VlZFVVFnOXZFeF9LRF9TMm04aFVZMWpmZUNkTkY0NUh4aVA1enoya0dSZU0xTGQ5TDhFZEFDZC1yZzdMTkZTNTFOajllZXNzVVRYSlROZ25YazA2Tk5FbmFaVEhrWGZBRTRBT1h6Q0JvMnFITnVpVzM2OFhxbU5oV0NxOHh6QQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-20T11:29:40+00:00",
           "kind": "Team news"
         },
@@ -359,8 +359,8 @@
         },
         {
           "title": "Sainz won’t tolerate “being a test driver on grand prix weekends” for long",
-          "url": "https://www.racefans.net/2026/11/19/sainz-wont-tolerate-being-a-test-driver-on-grand-prix-weekends-for-long/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZ05qeFNTRDBwMWduZmN6SldEYnVud0JqMEFjblhhZGVNc0RzcWN6d3NQLXlRT21ZZjBYMEMwYjNRMU5JeFdCZDgzQmtTaHlEZE15eXMtVDRMc1ZodUY0ekZkeko2c0VqZlVMYi1HdUQ1OG1pRDhqVXphNG11dVVYMExvXzRhWFBiSExucXdlREx4LVpUeENSUHpLZngwWXR6NFIySGd5ZEFMTUl0?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-19T06:35:51+00:00",
           "kind": "Team news"
         }
@@ -447,8 +447,8 @@
       "stories": [
         {
           "title": "Las Vegas F1 track is “not made for these conditions” – Bearman",
-          "url": "https://www.racefans.net/2026/11/20/las-vegas-f1-track-is-not-made-for-these-conditions-bearman/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQXzVRWTF6THYyWVdVVEFza2pxdFVlWVFGY0RuemwwYy1LNHRUeTlDYktlcnF3SGdvN0MxeFRScHRMX1cxRnlxc2Q4SGdsMXdZZXYwcmJuRFFKMy1YXy1NM3AzalI3ZGh0UWI5aXBCaVVKR3p2bjNPQk9ya2IzeWZGcnBZdXZqNDRpREtHNkcxX0FSQlpOWUw3RmJ0ZmQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-20T09:44:22+00:00",
           "kind": "Team news"
         },
@@ -549,8 +549,8 @@
         },
         {
           "title": "“He’s decided on a direction”: Cadillac offered reserve role to “disappointed” Herta",
-          "url": "https://www.racefans.net/2026/11/20/hes-decided-on-a-direction-cadillac-offered-reserve-role-to-disappointed-herta/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTm5XT1ByMGVJY0luYXp3TEhteV9YSmpNVnVpZ2s5TUJqRlFBa092ZUJCQ3VuYUp4R3FYSUNSV0k5X3ltek9nZlFuV1VXaDEwb1p5WHBObTREcS1RRWVOOGhmZnoyQ1ZQWWUtemZpRHVmLXFJZGF6cXRWLThpeWZOSl9KZXBQWUpEUWU5QTVsT2dIcmU3Q2dFT2pEYjZSUzVtRHBrYmJhM0R2TTQ5M3BMMFBaUzcyQQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-20T10:33:06+00:00",
           "kind": "Team news"
         },
@@ -563,9 +563,9 @@
         },
         {
           "title": "Cadillac scraps V6 F1 engine, delays entry as PU manufacturer",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckhMM1VBM1ExTF9jeWJhTWFJVll4dm12MDFYUk9fbUdWM09SWmNzN1J0aHkydlhFSVhIVVhxNXlCRGxMNGhFVWpLRk1tdXAwMVlGd2luUlV1WnAweUVlRnZOMnVPRzU2TUdqeE9GUVUzVVFkdWxZemV4NmV5SUpuc3IweHliYS1Hd0IyNE1Kc1BrRV80ZkVZOVhycDJZTVJZeVA4Vl9NUUFHRUR4VFdydDljUzVCU1VyWUE?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNS2ZWcVlVRFFIMzNQOUR5a3FQaF9WTEROR3BBMjFMdjJoYjA1Z1NtQmhxRmVXY29mRG8wZ2pBUGFUYjYwbGpaWDhzWWo3eWwwaXE2WFZ6R1A4V0MyMzVkc1V2T1FIUWtzRVZoQjhkdUpoRWowc09aN2xyU0d2bUw2YjF5OHRYaHF4ZXZLcEtEUExUdkYyNGttQ1R3WHJQUV9zendqVWJHT21BMVNHNFZZRkZpenpJQ2ZlTzdtQnR2ZDZZaDBVXzIzaThIUUNPRHlpRUxnNXl2bXRiNlNLb3NWSnN0QmdDU1AxdDBJRVczUnFrXzJaN3FEbkRJcTFFQ2pjZHRuZjA0ZFV0MjJ6dldvWjJ4S1dCdmM0aXVkR1ZkemRBcmtlUHRiWHp3?oc=5",
           "source": "Motorsport.com",
-          "publishedAt": "2026-11-20T04:02:24+00:00",
+          "publishedAt": "2026-11-20T05:19:37+00:00",
           "kind": "Technical report"
         },
         {
