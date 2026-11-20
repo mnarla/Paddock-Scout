@@ -38,29 +38,29 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "ADUO upgrade",
-        "Category": "Aero",
+        "Component": "Turbocharger upgrade",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "Mercedes is testing a new ADUO aerodynamic package specifically on Andrea Kimi Antonelli's car during the Las Vegas weekend.",
+        "Summary": "Mercedes introduced a new turbocharger design for the Las Vegas GP, though George Russell opted not to use it to avoid a grid penalty.",
         "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "RaceFans"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
         "As_Of": "Las Vegas Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
         "Badge": "New for Las Vegas Grand Prix"
     },
     "McLaren": {
-        "Component": "MCL40 performance package",
+        "Component": "MCL40 Aero Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren has introduced a new upgrade package for the MCL40 specifically targeting performance gains at the Las Vegas circuit.",
+        "Summary": "McLaren brought a new aerodynamic upgrade package to the Las Vegas Grand Prix to address performance at the circuit.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
