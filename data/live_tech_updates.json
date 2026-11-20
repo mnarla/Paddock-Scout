@@ -38,29 +38,29 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "No confirmed upgrade data yet",
-        "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Component": "Turbocharger Upgrade",
+        "Category": "Power Unit",
+        "Certainty": "confirmed",
+        "Summary": "A new turbo design introduced for the Las Vegas GP, utilized by Antonelli but declined by Russell to avoid grid penalties.",
+        "Pace_Delta": -0.05,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "RaceFans"
         ],
-        "URL": "",
-        "As_Of": "Las Vegas GP",
-        "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "URL": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
+        "As_Of": "Las Vegas Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Las Vegas Grand Prix"
     },
     "McLaren": {
         "Component": "2027-spec Front Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren is introducing further 2027-foundation upgrades in Las Vegas following the successful debut of the new front wing concept in Brazil which improved car predictability.",
+        "Summary": "A front wing assembly designed for 2027 regulations that improved car predictability and handling during its debut.",
         "Pace_Delta": -0.06,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.06,
@@ -69,11 +69,11 @@
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/",
-        "As_Of": "Las Vegas Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Las Vegas Grand Prix"
+        "URL": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMGppQkpURU1JbUN3V2Z6T05Zb3AwWmJYOWVMaFRFSHhRS2ZiMWkwQ29WMWFZQW9tc2tXYVFfZERFelE3aFNoVnFnY3hmWmcydy0zaUNmUldyTmZzYnl5T3lYejZhbEd0Z3VlWjFOVV9HYk1XTVI3RGxCUEJmSUVTN0ZwYmhyR1dpblpmSGFNOHpjdzUyUFBWdG1qQWFubUlyV01iclNLTi1CV1VoUmRTOXJn?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Brazil GP",
+        "Is_Current_Weekend": false,
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Brazil GP)"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
