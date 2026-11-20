@@ -38,42 +38,42 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Turbocharger Upgrade",
-        "Category": "Power Unit",
+        "Component": "ADUO upgrade",
+        "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A new turbo design introduced for the Las Vegas GP, utilized by Antonelli but declined by Russell to avoid grid penalties.",
+        "Summary": "Mercedes is testing a new ADUO aerodynamic package specifically on Andrea Kimi Antonelli's car during the Las Vegas weekend.",
         "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "RaceFans"
+            "The Race"
         ],
-        "URL": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
+        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Las Vegas Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
         "Badge": "New for Las Vegas Grand Prix"
     },
     "McLaren": {
-        "Component": "2027-spec Front Wing",
+        "Component": "MCL40 performance package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "A front wing assembly designed for 2027 regulations that improved car predictability and handling during its debut.",
-        "Pace_Delta": -0.06,
+        "Summary": "McLaren has introduced a new upgrade package for the MCL40 specifically targeting performance gains at the Las Vegas circuit.",
+        "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.06,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOMGppQkpURU1JbUN3V2Z6T05Zb3AwWmJYOWVMaFRFSHhRS2ZiMWkwQ29WMWFZQW9tc2tXYVFfZERFelE3aFNoVnFnY3hmWmcydy0zaUNmUldyTmZzYnl5T3lYejZhbEd0Z3VlWjFOVV9HYk1XTVI3RGxCUEJmSUVTN0ZwYmhyR1dpblpmSGFNOHpjdzUyUFBWdG1qQWFubUlyV01iclNLTi1CV1VoUmRTOXJn?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Brazil GP",
-        "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Brazil GP)"
+        "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX3lwSERyTkVtSUhrOWowMGVoNE9JbVpvVEtpV2wwWFg2Ylc3WHFMSmxVUHd5LXowdGJJdk1hckE5eW0yUVJnYU5aRFhfOG0wdW1jU2pweXRaVy1JbDN4Wm1LcDZEcEQwbmt5MzFMUTRuc2dGVzE3YzI3Y1ZYdThMd1E1MFJYZUdSSnh4RjNxenVpcjMtWDN2T2FCdmJiajdzRHVlLWNOdVk?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Las Vegas Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Las Vegas Grand Prix"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
