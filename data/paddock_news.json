@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-21T12:51:57.949842+00:00",
-  "newsUpdatedAt": "2026-11-21T12:51:57.949842+00:00",
+  "updatedAt": "2026-11-21T20:10:20.337307+00:00",
+  "newsUpdatedAt": "2026-11-21T20:10:20.337307+00:00",
   "race": "Las Vegas Grand Prix",
   "teams": [
     {
@@ -109,6 +109,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "Kimi Antonelli and George Russell set for Mercedes talks over Las Vegas GP qualifying woes",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcGJCcnRTMlhNRlVhZUVFeUVXSXF3V2MydGdNdndBdUIzZmxMSGVXV0doXzE3TXlqRndmOEFOQ1NKX1JCNlM2MHl3UG05S0xqZVBuTDhQNzk1QXVEbk4yZVpzX0NIRDNkOUZndUdDZ0ZEbExENHR4ZDdrQUpibmJRSm8ySjB3ZFphWjdzV0M5eTR6M3hKUlRhRnJIc3hwQ1I5VE5DcTBXR2xrUWdKS0ZHajRKb2hOVmV3bDNZRm1jbWpjeTJzWW1rYUVodnR5em8?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-21T11:20:58+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Antonelli and Russell set for Mercedes talks over Las Vegas GP qualifying mix-up",
           "url": "https://www.autosport.com/f1/news/kimi-antonelli-and-george-russell-set-for-mercedes-talks-over-las-vegas-gp-qualifying-woes/10876456/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -116,17 +123,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Kimi Antonelli and George Russell set for Mercedes talks over Las Vegas GP qualifying woes",
-          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNcGJCcnRTMlhNRlVhZUVFeUVXSXF3V2MydGdNdndBdUIzZmxMSGVXV0doXzE3TXlqRndmOEFOQ1NKX1JCNlM2MHl3UG05S0xqZVBuTDhQNzk1QXVEbk4yZVpzX0NIRDNkOUZndUdDZ0ZEbExENHR4ZDdrQUpibmJRSm8ySjB3ZFphWjdzV0M5eTR6M3hKUlRhRnJIc3hwQ1I5VE5DcTBXR2xrUWdKS0ZHajRKb2hOVmV3bDNZRm1jbWpjeTJzWW1rYUVodnR5em8?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-21T11:02:55+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Who was the biggest loser as Antonelli played draft excluder in Las Vegas?",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSzJmaTZ3WlZRSC1Jckh2d08xR29xQzY2NDl2cGJyQmwzaEg1UGpfcHRUcHQ0VGl3TDJGaHFRZkdURWYzZ3NPUko3ckp1akpmMENQSVFUYTlPaUt0UGlHRHVZUGlOU1dQd21CRm9qZlhPWFdkZVZjV1U1Vy1ZcXZFVDZpMW44Z1BqcUtnRF9nVHZ4dnhhajlVc2dvZmh2NmtGTElfSDRzVEZZTWFHZ1RJX0lPMGhWMVBT?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-21T10:19:47+00:00",
+          "title": "Antonelli says he made the decision to run at the back of the field in qualifying",
+          "url": "https://www.racefans.net/2026/11/21/antonelli-says-he-made-the-decision-to-run-at-the-back-of-the-field-in-qualifying/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-21T08:04:56+00:00",
           "kind": "Team news"
         },
         {
@@ -204,17 +204,17 @@
           "kind": "Technical report"
         },
         {
+          "title": "Piastri with 'some spots to make up' after taking engine penalty grid drop in Las Vegas",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOR3pZSUY2eFJtVFpuOUw3Mm9sb0FKaDdwUE9uS1dobDlmTjIxOV9fUFRib05qQS1IdGdxLW1EUWFyRG9aLW8wdVRSR2d1bW5hZHc3dVotVnphME41R3RsZHB6TG9uY1J0VjlBeUZ4M0F0R2NlU09WY01SZjU5SEJaZzlUc2I2NlpUQU5vVlJZal9udllmRTFBZ0c4cUYtV1Qya3lkNXRLNkl3c1drcGhCNHpYSWVfUmxwb2J0Y3UyemUyMUJlUHlMUTU1V2JteUxJR2R0STR3?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-19T05:11:00+00:00",
+          "kind": "Technical report"
+        },
+        {
           "title": "McLaren to upgrade MCL40 F1 car at its bogey track Las Vegas",
           "url": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-14T09:13:34+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "McLaren to upgrade MCL40 car at its bogey F1 track Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMXM5aDNSYlltSzVLdXV3S3U1ZWswaTNNaWtIaHY2UXc3MFoyMk9aV0xrZDUxakh5clNabmZsek0zQ3hTUU95YTh3cVRSdUYtbXVwV3dzZ2FIN0hGRU1meVBjLWZVdTVDS25zZTdtZndLSU0wTHJEU1lmTTF4MkM2Y3dyaElnNjhKNEF5QzlSTkNySTU1LXNPcEMyRzRRQjcxaUluT0E3RQ?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-14T09:09:51+00:00",
           "kind": "Technical report"
         }
       ],
@@ -295,17 +295,17 @@
           "kind": "Team news"
         },
         {
+          "title": "Colapinto: We were 'all over the place' in Qualifying despite promising P10 finish",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQd3ljUGlOYWliRG9VckRvN1hONTFjU3M4STJXQkpyeUNYejFDQjYyX1JZcFpOTS1wZUd1T3VfMkNic1hzdXpBblg0ZmlhYXF0Qnk3UDRZWEVaQ0NCUmc1blFneFNzdGc2dDZmdnBhem1wYnJiNDNvNm1LSm5jSUxTYzRMYjFYVW9OSFhXdjA0T1NhbGpVdEpleDVGeXFSdmVvX3F2QUZGbjltR0ltV2xJZHp1VUFRRFd4QllNWV9Hc0tnTjE0dEl6UjdyNUNNZw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-21T06:24:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Gasly hoping to 'find a way past' Racing Bulls in Las Vegas",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0hjcFNRVkFuOTVUVkFpejBuS0Y2S3ZhY2lsYnVQaUM1ZlZKUmJmd1hYcXVaVV9RSmFzUFAzcGltbWZfN0pCZVFZc3NvQzBzdnFvWm85VVBlZVdOX0c2bHAwZHhQbW9IVXRiR3JSX29CRjBTcVVxQjRvdHlydUt2Y2l3LUJyVU5PbnE5NWtxYklWTUlRam5vOFF6Y05uQ0MwRGxlTUVMc1BwUnM5NjZ2Uw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-21T06:18:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Verstappen warned over Russell incident, cleared over Colapinto incident in practice",
-          "url": "https://www.racefans.net/2026/11/21/verstappen-warned-over-russell-incident-cleared-over-colapinto-incident-in-practice/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-21T04:17:29+00:00",
           "kind": "Team news"
         }
       ],
@@ -337,13 +337,6 @@
           "kind": "Team news"
         },
         {
-          "title": "P14 Sainz feels 'more in the mix this weekend' after Las Vegas Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOczRmUHlWRDlrT0txcTF1Tld0aDVOcFh5S2lOazZ6cW5iTHhKYlMyRllDeHlxa2hNRjgtbXk4bndHcl8tZnVHNV93ZnhBUmRQRFRsXzBhWW0tQmx6Z3NuWklBOGRVMzNIZUxEWE5PN3J3UEt3WkJ5UFpWVnJicVYtSEdkV1pwN0hpUEJCbnZ4Wk1qamd0Nml1M3Q1OGpTeDZ4V3JJczJtanZUVXUwalhITmNTSWY5aXdvWVl3cEI0WEVpMmc?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:06:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Alexander Albon: New Williams engine 'looks good'",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUlpCNDZHVTh3VFB3M1l4TDFNNzlwUHp2S0o0MWJobGdxRHRodGQ0Q3ZURGJFck5hbG9fZHV6dDJOX05xQUNYa3lHVmNqUmhsWWZiRERnQy1XeWZBanR0S2RmZm9aMUQxMjl6eFlFWGFTM1N0eTJwWTNvUVl5SE5NSHlIQ19QNVB2SnAtNWhZZFp0VFlWTTBCNVNCa3puWFRtMWc?oc=5",
           "source": "Formula 1",
@@ -355,6 +348,13 @@
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPc2tHbkwtemctNnhBcWtPcEhSTExQZlIzcVQ4UXBrUUk2aTdaSEtUV21Fd0kxV01vWnhGZ0xad3RhcW15NXpFald6UmNuV0NzV1dRRjA0S2RnYWE5WWpWV1RpMHo2TWVDbnpDc201cjBock1ZQUE5ZW5lOFNrTWpjY0ZtclRhZkxZSXlVMFhWXzFFMWVWLUFNdHZpa0ZQUFI3d3ctbkUxbm5hSlhUYjZCSmw2bHFvVHFSaGNDTm5Oa0R3bmZFWTRGaEFzdVctQ2FLU1E?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-20T06:13:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Sainz handed grid penalty for Las Vegas Grand Prix after turbo change",
+          "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQbi1fRTVvTzZvMHJiZTJKa3FVOVQ4eXdWN05nc1hRVmplclVfNmUzWnFmbDJZSVUtZm1tZmphTUVHc3pBT29XaFBNYVdzclNIYkxLUW0tc1NZRkZ1NjcxQnlvMGc5WmZicmV0clQtd29GbU9zRk5DRFlVYm1pVDBnZ3p0dUw0cXpBMUIwNHJlTmZ3VlRvM3ZaTV93LUp0OHBxc0JUT2xyQXNJLXVDOVhzQklkYldpNUl6MHFsSmRkcml6QTFKYlZRd2xpTjg1czA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-20T00:15:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -379,6 +379,13 @@
       "name": "Racing Bulls",
       "stories": [
         {
+          "title": "Racing Bulls",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS0tWbjhNR0wtNUFrRlVNTTh5b1FLWnRySzhEZEFaSnJFS1U2YVVweHVnUl83ckJwVE9CRm9HRFlTZm5SVXpYZm8tQlNLR3QwUEUzWnEwWHhyZGJ1V1RyekJCazUxQ2RCcXZIM0M0eFJfbk8xOFlIYzd4Vk9UakFpVw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-21T11:56:40+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "'It was such a mess' – Arvid Lindblad reflects on 2026 Formula 1 Las Vegas Grand Prix Qualifying ahead of P5 start",
           "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQSWFOU0hvVk1YSW1sZU5WQVdDbmVvVHI3VWR3T2hiVDdKcUs2RHJpNHBwMXlZdy1XcGZDa2Z1SlJnM0xuNWU5VVRzVEd3Q0xHT3ppLXAtRkhTdHdCVjQ2a185ODN0ampmQlRvRTNuSTBGekhPNW0zTUZzTktVa0xDbDdBcWIxbWIyQS1iNUd4elI4TGJuejlEX0pyQVRKVkVPYWw3X0JNWmpXRy05cFZlNFVReGo1ZFg0Q0hUVXZGZ1B6eUljNTZiNUU5ZFZfLV9pUU9seVQwcVdsazlL?oc=5",
           "source": "Formula 1",
@@ -393,24 +400,10 @@
           "kind": "Team news"
         },
         {
-          "title": "'We did the basics well'",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNR0YwLWZfcVc4UEFDZXhpSTVpZUJxYWJjTF9iQnlTZDdZSHJYZ0FRS2M1R3dCMEIwVkxCMTVjVnR4aVU2NUJaSWc5a05wMzNVdnFmRTlTRWF3VFJxYUFZbEo2RkxmNU1Xc2lDYUFtZFNkNnRWdTIwclJRSTBFZWpPRFJqQy1ZWUxmR1RXYUdqaFNKOFFiRjczbUd3Uk1BdHhzb0hVWmRKcHJzejBHUlJlZ2xEdHVuTFA1aFd6NU9kODRqOFlfNmU3blBLcVA2bTgzLVJtYTln?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:17:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "How the Racing Bulls pendulum is swinging back towards Lawson",
           "url": "https://www.autosport.com/f1/news/how-the-racing-bulls-pendulum-is-swinging-back-towards-lawson/10873320/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-09T11:54:39+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "How the Racing Bulls pendulum is swinging back towards undeniable Liam Lawson",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcWdBWlFZS0VqZHdNZmgtUmxpU1g3WUItOEVoSFJwQlc4X3BuNG0xYklsTzhCRE5jT0hzUG9FOEozaGdBVlQzVGt5eUtZdGh3d2lBSXhPSUMxNTRwal9zUWlkXzlOQkVYbDhOU2FrOXlGTllaVGJZUTc2RUJIWTh5czZJZ3llTmtqUzhzdlAzX2piMENPX0ZpTVB0WlJTcXVCNThpMEt2QTg?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-09T08:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -530,7 +523,7 @@
           "title": "More Unknowns Than Ever in Vegas — Why Cadillac Scraps Its V6 Engine Plan",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcUd4WFpHQUw2aW1YU3NjWi1mTTlUMDZQTHlxMXVscWlSVjdjb2VzeHhvMTVGUnBTVWtPQnlnTFQ0N1VnRFY3NHJuUG1EM09OU1dzOXV1ckl2SVRzOVBXQjl6YmtGa0Y5NnJtM1RVOVhnbTY1WDJHZUtzQlB1MlNEMEs1QkJRTjRwR0ppc212NmJzaHpSVXVUM01sLTZ4UWFkeGJYRkt5bWU0cFZZVXhxak1wTjlKeTRfcm5WV2pOd2xobkprMjlBOHJoN3JKUFc5?oc=5",
           "source": "Autosport",
-          "publishedAt": "2026-11-20T12:34:06+00:00",
+          "publishedAt": "2026-11-20T12:35:20+00:00",
           "kind": "Technical report"
         },
         {
@@ -556,7 +549,7 @@
         },
         {
           "title": "Cadillac scraps V6 F1 engine, delays entry as PU manufacturer",
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNS2ZWcVlVRFFIMzNQOUR5a3FQaF9WTEROR3BBMjFMdjJoYjA1Z1NtQmhxRmVXY29mRG8wZ2pBUGFUYjYwbGpaWDhzWWo3eWwwaXE2WFZ6R1A4V0MyMzVkc1V2T1FIUWtzRVZoQjhkdUpoRWowc09aN2xyU0d2bUw2YjF5OHRYaHF4ZXZLcEtEUExUdkYyNGttQ1R3WHJQUV9zendqVWJHT21BMVNHNFZZRkZpenpJQ2ZlTzdtQnR2ZDZZaDBVXzIzaThIUUNPRHlpRUxnNXl2bXRiNlNLb3NWSnN0QmdDU1AxdDBJRVczUnFrXzJaN3FEbkRJcTFFQ2pjZHRuZjA0ZFV0MjJ6dldvWjJ4S1dCdmM0aXVkR1ZkemRBcmtlUHRiWHp3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckhMM1VBM1ExTF9jeWJhTWFJVll4dm12MDFYUk9fbUdWM09SWmNzN1J0aHkydlhFSVhIVVhxNXlCRGxMNGhFVWpLRk1tdXAwMVlGd2luUlV1WnAweUVlRnZOMnVPRzU2TUdqeE9GUVUzVVFkdWxZemV4NmV5SUpuc3IweHliYS1Hd0IyNE1Kc1BrRV80ZkVZOVhycDJZTVJZeVA4Vl9NUUFHRUR4VFdydDljUzVCU1VyWUE?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-20T04:02:24+00:00",
           "kind": "Technical report"
