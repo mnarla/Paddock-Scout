@@ -38,32 +38,32 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Turbocharger Upgrade",
-        "Category": "Power Unit",
+        "Component": "ADUO upgrade",
+        "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a new turbo design for the Las Vegas GP, though George Russell opted not to use it to avoid a grid penalty.",
+        "Summary": "Mercedes introduced a new ADUO upgrade package specifically for Kimi Antonelli's car during the Las Vegas Grand Prix weekend.",
         "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.05,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "RaceFans"
+            "The Race"
         ],
-        "URL": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
+        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Las Vegas Grand Prix",
         "Is_Current_Weekend": true,
         "Status": "NEW_THIS_WEEKEND",
         "Badge": "New for Las Vegas Grand Prix"
     },
     "McLaren": {
-        "Component": "MCL40 Aero Package",
+        "Component": "MCL40 performance upgrade",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren brought a new aero upgrade package to the Las Vegas Grand Prix to address performance issues at the circuit.",
-        "Pace_Delta": -0.08,
+        "Summary": "McLaren introduced a performance upgrade package for the MCL40 specifically targeting the low-downforce requirements of the Las Vegas street circuit.",
+        "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
