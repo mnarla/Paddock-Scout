@@ -38,29 +38,29 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Turbocharger upgrade",
+        "Component": "Turbocharger Upgrade",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "George Russell opted not to use the new turbocharger specification in Las Vegas, reverting to the previous version.",
-        "Pace_Delta": 0.0,
+        "Summary": "Mercedes introduced a new turbo design for the Las Vegas GP, though George Russell opted not to use it to avoid a grid penalty.",
+        "Pace_Delta": -0.05,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.0,
-        "Upgrade_Validation": "REVERTED",
+        "Upgrade_Score": 0.05,
+        "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "RaceFans"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEU4SzZjcDA0dzB2S2RHRzUyYW5aVVpBV0o3RVpsaWE0elFHQ09BM1hQdzNtZXVpWHQxWGpCSmR0dzRLLWpKQlRpSmpULWRCLV9KbDdELW9BcGxaUUtTOGdLV1lZbnVxTFdNTEstTkVucG1pQUFhSGRla1Z1eG9UbEtGRnFyU3l3Q0lpQVA2M2haVFBjZFAwT05aa25xV1JhVDkyV0lRRGNkMFY4YUN0R3BDOA?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://www.racefans.net/2026/11/19/russell-explains-why-he-chose-not-to-use-mercedes-turbo-upgrade-in-las-vegas/",
         "As_Of": "Las Vegas Grand Prix",
         "Is_Current_Weekend": true,
-        "Status": "REVERTED",
-        "Badge": "Reverted to pre-Las Vegas Grand Prix spec"
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Las Vegas Grand Prix"
     },
     "McLaren": {
-        "Component": "MCL40 Aero Upgrade Package",
+        "Component": "MCL40 Aero Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a new aero package specifically designed for the low-downforce requirements of the Las Vegas circuit.",
+        "Summary": "McLaren brought a new aero upgrade package to the Las Vegas Grand Prix to address performance issues at the circuit.",
         "Pace_Delta": -0.08,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.08,
