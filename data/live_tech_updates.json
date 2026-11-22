@@ -38,42 +38,42 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Turbocharger upgrade",
-        "Category": "Power Unit",
-        "Certainty": "confirmed",
-        "Summary": "George Russell opted not to use the new turbocharger specification in Las Vegas to prioritize reliability and balance for the race.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.0,
-        "Upgrade_Validation": "REVERTED",
-        "Is_Defective": false,
-        "Sources": [
-            "RaceFans"
-        ],
-        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEU4SzZjcDA0dzB2S2RHRzUyYW5aVVpBV0o3RVpsaWE0elFHQ09BM1hQdzNtZXVpWHQxWGpCSmR0dzRLLWpKQlRpSmpULWRCLV9KbDdELW9BcGxaUUtTOGdLV1lZbnVxTFdNTEstTkVucG1pQUFhSGRla1Z1eG9UbEtGRnFyU3l3Q0lpQVA2M2haVFBjZFAwT05aa25xV1JhVDkyV0lRRGNkMFY4YUN0R3BDOA?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Las Vegas GP",
-        "Is_Current_Weekend": false,
-        "Status": "REVERTED",
-        "Badge": "Reverted to pre-Las Vegas GP spec"
-    },
-    "McLaren": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "ADUO upgrade",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Certainty": "confirmed",
+        "Summary": "Mercedes plans to debut a new ADUO aerodynamic package specifically on Kimi Antonelli's car for the Qatar Grand Prix.",
+        "Pace_Delta": -0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Qatar GP",
+        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Qatar Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Qatar Grand Prix"
+    },
+    "McLaren": {
+        "Component": "MCL40 Aero/Floor Package",
+        "Category": "Aero",
+        "Certainty": "confirmed",
+        "Summary": "McLaren introduced a significant upgrade package at the Las Vegas GP intended as a foundation for their 2027 car development.",
+        "Pace_Delta": -0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.15,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Autosport"
+        ],
+        "URL": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Las Vegas GP)"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
@@ -133,23 +133,23 @@
         "Badge": "No update found"
     },
     "Racing Bulls": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "Front Wing Assembly",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
+        "Certainty": "confirmed",
+        "Summary": "Isack Hadjar suffered a structural failure of the front wing during the Las Vegas GP weekend, leading to a loss of performance.",
+        "Pace_Delta": 0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": -0.15,
+        "Upgrade_Validation": "DEFECTIVE",
+        "Is_Defective": true,
         "Sources": [
-            "Awaiting reports"
+            "Formula 1"
         ],
-        "URL": "",
-        "As_Of": "Qatar GP",
+        "URL": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQX0NhUTlYVDFWem4wRGtLcnhWZmJsU3pPRnpJSmd2Y0cxbHcxc2ZVR1pGM2RSeGFpSkJjdkN2MUh2bkc1UFJGZWtWN0w2Rl9xZkFjeF9KTWlKbFkzNG1kbVM3Q3JWVEwxelBqSmJtbkl2SXo4N190RVZDM3pOUTlpOW81QTZsNVlPYzAtVzlWdjJJNjIzRFBTVGFqSnJqNGlLT2hxTkgwTnR6dXNFZTBpOTcza0RfVl9IQWJzUHdCNVBoNUh1WTJMQWhEeG13dzdhb3FvdmpKSmdqSXNBMU9IYll2dG1GendaSzhoVEJ5VVZBSzRVN3ZwUFE2cUJMVGJR?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "Status": "DEFECTIVE",
+        "Badge": "Defective (+0.15s penalty)"
     },
     "Haas F1 Team": {
         "Component": "No confirmed upgrade data yet",

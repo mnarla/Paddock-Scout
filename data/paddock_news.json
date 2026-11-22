@@ -1,30 +1,37 @@
 {
-  "updatedAt": "2026-11-22T08:16:12.662128+00:00",
-  "newsUpdatedAt": "2026-11-22T08:16:12.662128+00:00",
+  "updatedAt": "2026-11-22T16:30:33.483217+00:00",
+  "newsUpdatedAt": "2026-11-22T16:30:33.483217+00:00",
   "race": "Qatar Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
         {
-          "title": "Verstappen hits back after Russell criticism: “He’s so far below my level”",
-          "url": "https://www.autosport.com/f1/news/max-verstappens-snarky-revenge-on-george-russell-karma-is-a-bitch/10876811/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-22T07:56:20+00:00",
+          "title": "'This is not F1'",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNV0kta3Z5am5xX1ZibHM0LUZBdDkwaEpyWHF3dGFmYVBaaGpZWm00SHJtWmYtVERNRkhKOG9zOXk0bFZENWgyX3M4c2dVZlhsR2VqelZJODFKXzJjNm4wSjV6N2wyMDI3azRZektteDZ6a3ljZ3NJc1NOcEk3NE90c1V4SGtUd2hrQkpGNzlFenhaNWJKOTZ1ejI4ZW9nZHRuMUE?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-22T14:09:29+00:00",
           "kind": "Team news"
         },
         {
           "title": "Mercedes on the ropes as Verstappen delivered knock-out in Las Vegas fight night",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObzJLX0R5a0tMRkt3VGlGbmpGck5MSkFwYXVibEVFekNZWm5HZXFTY1R4bkpXSHdXbDh2WDdPeWdRSHFicmU1MVVfdlF0Y08zUGE3VkJEajhLd2pCZkJDYmZ5ZzFLT3lMRlJRSUV6UjRXMmFQVHBzOGkzUUJ1aF9MM2tXR1l6aHJ0eTM3ZjRhQkV3MUNZVlJLN0VvbWNpVVVPdGk0blB5YlhnaDN5cmx6RGhtX29Mb19aTUlydkdEaHlQQQ?oc=5",
           "source": "Autosport",
-          "publishedAt": "2026-11-22T07:41:15+00:00",
+          "publishedAt": "2026-11-22T11:49:45+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Verstappen delivers brutal response to Russell criticism",
-          "url": "https://www.the-race.com/formula-1/max-verstappen-brutal-response-george-russell-f1-criticism/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-22T07:35:27+00:00",
+          "title": "Hadjar 'clueless' on reason for front wing failure in Vegas",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQX0NhUTlYVDFWem4wRGtLcnhWZmJsU3pPRnpJSmd2Y0cxbHcxc2ZVR1pGM2RSeGFpSkJjdkN2MUh2bkc1UFJGZWtWN0w2Rl9xZkFjeF9KTWlKbFkzNG1kbVM3Q3JWVEwxelBqSmJtbkl2SXo4N190RVZDM3pOUTlpOW81QTZsNVlPYzAtVzlWdjJJNjIzRFBTVGFqSnJqNGlLT2hxTkgwTnR6dXNFZTBpOTcza0RfVl9IQWJzUHdCNVBoNUh1WTJMQWhEeG13dzdhb3FvdmpKSmdqSXNBMU9IYll2dG1GendaSzhoVEJ5VVZBSzRVN3ZwUFE2cUJMVGJR?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T10:12:00+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
+          "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-22T09:11:46+00:00",
           "kind": "Team news"
         },
         {
@@ -51,24 +58,24 @@
       "name": "Ferrari",
       "stories": [
         {
-          "title": "Leclerc’s collision with Hamilton was “completely unacceptable”, fumes Vasseur",
-          "url": "https://www.racefans.net/2026/11/22/leclercs-collision-with-hamilton-was-completely-unacceptable-fumes-vasseur/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-22T06:50:28+00:00",
+          "title": "‘It's a lack of respect’ – Ferrari boss Fred Vasseur calls latest Hamilton-Leclerc clash in Las Vegas ‘unacceptable’",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbG9tWXQ1eTNOSFU3Y2RFbnFTdE85a2RwSWRGVWctZG5BVEtseEFtZjZnTlA3U2pSUzB6UzhZQ2xQTzBNV2hZSkhOMzFib1lyczdwaFhSdUJVc250Unh6blpjcVRMbGw0eTM5VVZ0MUZrczFBSVRmb3hCV0NHNmZ3N0FURU1jdTlVT1R0ckwyQXBOaU9FRjk5NTMwaTBaSjZObmZDTWJwR1ppeXJzNmlHRHI0czdWclU2cGNfZVdvbHN4ak9LdmRPUklfeUZKemhmS3Q0M3NwOXhpZXphSmo0VTRtOWx3d24tbTdZbkZ3?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T10:56:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Stewards explains Leclerc’s penalty for hitting Hamilton",
-          "url": "https://www.racefans.net/2026/11/22/stewards-explains-leclercs-penalty-for-hitting-hamilton/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-22T06:19:29+00:00",
+          "title": "Leclerc mistake 'completely unacceptable'",
+          "url": "https://www.the-race.com/formula-1/ferrari-reaction-unacceptable-f1-driver-clash-las-vegas/",
+          "source": "Ferrari",
+          "publishedAt": "2026-11-22T09:22:11+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Lewis Hamilton reveals Ferrari F1 car damage after Las Vegas Q2 exit",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQ0VGWjdZcGRUbmJEUDJnclhWRmxEZTEwY2tYYmxnbFBWT3p0LVFKRWtJdjRJRTdqRUY5LTJ3QXg4NHliWE5ZNFFjLW1EWVB4TmxWcGtsNVdBNXUtREhvSF9IMTRHX1Y3Uy05S201Q1BnZi1rMGZHR1F6N0FmTkZNdjdod2laUUo0ek83V2duWXQzMjQzMGcxSjdvRDFTNUFXSDl3Qkh3MGhPakhRd2c?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-21T08:34:40+00:00",
+          "title": "Vasseur furious with \"unprofessional\" Ferrari clash and demands fresh talks after Las Vegas GP",
+          "url": "https://www.autosport.com/f1/news/vasseur-furious-with-unprofessional-ferrari-clash-and-demands-fresh-talks-after-las-vegas-gp/10876847/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-22T08:40:17+00:00",
           "kind": "Team news"
         },
         {
@@ -95,24 +102,24 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "Verstappen hits back after Russell criticism: “He’s so far below my level”",
-          "url": "https://www.autosport.com/f1/news/max-verstappens-snarky-revenge-on-george-russell-karma-is-a-bitch/10876811/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-22T07:56:20+00:00",
+          "title": "Wolff explains how Mercedes challenge fell apart in Vegas",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSjMydi1Sd2hXTGdBX2hfUXFmYVBsMjMtRWRmY3RRY0ktODBYanAwUkYtWU5QOXF6dUZDVUhPUlNlTlJfNFc5NjRlY2g4TzI4eXlRVHRIalc4QTFtRUZ2cldGOGJzTGl1eXBDNlpDME4zV3NmZWJXLUt6MzdNeVlhVHhlSmRRamFzS2o2aWVfVkdjZ1hoVlB5WlhLWFU3bTFyZUJTb29NdVZMZHpLakZmcXlvTm4yb3NKNE9tUC0xUkhrY2EtS0djT2FtaEZhVmFkZXdkRmRJWllvdjVIbVp1NmtlX3E?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T15:07:00+00:00",
           "kind": "Team news"
         },
         {
           "title": "Mercedes on the ropes as Verstappen delivered knock-out in Las Vegas fight night",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObzJLX0R5a0tMRkt3VGlGbmpGck5MSkFwYXVibEVFekNZWm5HZXFTY1R4bkpXSHdXbDh2WDdPeWdRSHFicmU1MVVfdlF0Y08zUGE3VkJEajhLd2pCZkJDYmZ5ZzFLT3lMRlJRSUV6UjRXMmFQVHBzOGkzUUJ1aF9MM2tXR1l6aHJ0eTM3ZjRhQkV3MUNZVlJLN0VvbWNpVVVPdGk0blB5YlhnaDN5cmx6RGhtX29Mb19aTUlydkdEaHlQQQ?oc=5",
           "source": "Autosport",
-          "publishedAt": "2026-11-22T07:41:15+00:00",
+          "publishedAt": "2026-11-22T11:49:45+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Verstappen delivers brutal response to Russell criticism",
-          "url": "https://www.the-race.com/formula-1/max-verstappen-brutal-response-george-russell-f1-criticism/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-22T07:35:27+00:00",
+          "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
+          "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-22T09:11:46+00:00",
           "kind": "Team news"
         },
         {
@@ -123,17 +130,17 @@
           "kind": "Technical report"
         },
         {
+          "title": "Russell explains why he chose not to use Mercedes’ turbo upgrade in Las Vegas",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEU4SzZjcDA0dzB2S2RHRzUyYW5aVVpBV0o3RVpsaWE0elFHQ09BM1hQdzNtZXVpWHQxWGpCSmR0dzRLLWpKQlRpSmpULWRCLV9KbDdELW9BcGxaUUtTOGdLV1lZbnVxTFdNTEstTkVucG1pQUFhSGRla1Z1eG9UbEtGRnFyU3l3Q0lpQVA2M2haVFBjZFAwT05aa25xV1JhVDkyV0lRRGNkMFY4YUN0R3BDOA?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-19T06:21:26+00:00",
+          "kind": "Technical report"
+        },
+        {
           "title": "Why George Russell won't run Mercedes' upgraded turbocharger in Las Vegas but Kimi Antonelli will",
           "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPcVJCaXE2ak1UbUhYZWxPRHoyeTVYd3ViWkxfZlp1a0ZNVGhrTXhadnNCeS00Qjl6a0ZFeDJyODdKVXRzMTVxVXZaMGplOWRwb1Y1dG55RGJaSk0yOG1HMFUzSWZQUnM4RmFxTzVlbjNLTDRyb1JreVFKc0xlNWYxRFRsZTZ3Y2tacmticzN1Y19nVW1fWHVyTWdLOHozUTZQZVhQSWIzQ1hLTG56aEt0c0l1d2lTaWpkLThxTVZZV3JNcmViS0VfYnNR?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-18T12:16:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Mercedes plans to debut ADUO upgrade on Antonelli's car only",
-          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-17T22:28:56+00:00",
           "kind": "Technical report"
         }
       ],
@@ -155,6 +162,20 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "“Some overtakes weren’t overtakes”: Norris queries claim of ‘352 passes’ in Las Vegas",
+          "url": "https://www.racefans.net/2026/11/22/some-overtakes-werent-overtakes-norris-queries-claim-of-352-passes-in-las-vegas/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-22T12:08:45+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'Exactly the kind of result we needed' in Vegas – Piastri",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQNWVYRUItOTNhak9ZMWd2TzhQdkdHb2VfYnFHLXFwMDJVd3pqTEcwV0VOcHVfdWlYeXVubjdqQkVIWTRKaVFrc1EzWmROQzkySUUzZVlPZGswc2RWNjd4QWFZMGs4TkdCTzg5RWlicEZLWFVFSllPbDF3bXd4a013T1pZREp0VHZuMzBUNGUzaFJoZ09mZy1jdWw5cHdIampSNlY3VjhiMFdybGVnY1lacERONWJTM2pYbndlMVNRVmJEa0c5M0lvMXphWXJIZVgyUGRQdmhGMA?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T08:44:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
           "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd2dsZFRyaDNyUGNNQ013cGhBVW1IMVRHRFo3M01GWlRXVkZ1M0VZZHJ3LTZyRS1oNnZMeGswcFFNTWtnclhaVVduNVpVemVXSTF6ZkNBVTAzaTUxUmdwWDdBaVBpOVlQZ0o5ZlNJTWRaMVhNOEdOOGtDd2NGWk9ZWE12cXNGSllFb2pwSmpjRjR5UGJlSUNJUnBjM2RrVF84TFhVeUx5Nm1xNi0yOC1DcnZIMExvX09ZRTZCNGgxRDhPMjNIM255R2sxc2dfOGdlRVpES2VR?oc=5",
           "source": "Formula 1",
@@ -162,31 +183,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Plastic bag and a 'horrendous' weakness hurt Norris in Vegas",
-          "url": "https://www.the-race.com/formula-1/plastic-bag-and-a-horrendous-weakness-hurt-norris-in-vegas/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-21T07:50:04+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Norris expects tough Vegas GP amid McLaren speed struggles",
-          "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPQ0Z6WXl3NldQS2d6ekRwOWh1R3lBSXhOeGZMd2Q3c0lWVjlIZnZJNkRtZzVvOU5hb2swZTJZa2tZSURGbmdUbVhaYzZmOGpFMTVfaW1UUEpzMHBJOGkzWlhtang1WXBHcW9VM0tSaEh4cnRaX2NYQTBPZXZmclB2TnNsRm9kcGctdHptZG9zSWpZaWVnUjdlc09LbEpKdjN1Y2lDZ1dkcXEzRXNTU0hzVENnaUFnenpyOGVWdmVxZjV1TmMtZjBGNHN1SGh1NGwyaUlzQzRkc3NlejlhekFVS210VXBGczFNSlg3U1B6SGJ6d1l4R2x6c05rQQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T07:00:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Oscar Piastri shares early impressions of new engine in Las Vegas as he prepares for grid penalty",
           "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSlBxbHZjTFF0QkdLWFFtcEFSRVpzRVZJRTFTcC1vZEZ1dE8wbkdlTUQyUXl6bncwaTBEWTBUU3lObEIwVXduejgza1ZQN3lKamo2V0JKZUI0TUVXalVkSjZtMUtGUUF6V08zT01EbV9fM1VUVTl4M3h5NVpuUlZaUVdUejJ3SDlERl9pbjRDSkVtZXhBSnBJMDcybklXZTdFOUZkLUlnTFJTcDYweDE5V2Z2OEhRaG1fcHl2QjBnTkVXaHFMRVNLTkRBTVZ6U04yVm1xOUo2MVpZbU1aT2twLUc4Q1AxcDBFc3JBcnBB?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-20T06:36:00+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "Piastri with 'some spots to make up' after taking engine penalty grid drop in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOR3pZSUY2eFJtVFpuOUw3Mm9sb0FKaDdwUE9uS1dobDlmTjIxOV9fUFRib05qQS1IdGdxLW1EUWFyRG9aLW8wdVRSR2d1bW5hZHc3dVotVnphME41R3RsZHB6TG9uY1J0VjlBeUZ4M0F0R2NlU09WY01SZjU5SEJaZzlUc2I2NlpUQU5vVlJZal9udllmRTFBZ0c4cUYtV1Qya3lkNXRLNkl3c1drcGhCNHpYSWVfUmxwb2J0Y3UyemUyMUJlUHlMUTU1V2JteUxJR2R0STR3?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-19T05:11:00+00:00",
           "kind": "Technical report"
         },
         {
@@ -220,17 +220,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Stroll hoping 'for the best' during 'challenging weekend' in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ1QyYmg1VDZZek41LWcwMHVfa0dqejFxckNMNGMySFFKNVRvS2tKX3pfNHRNS3pzeVlUOG8zWHIyUzBMYTdOUTdkODFZUmV6bjZLdFhOQjZ4aW1VTXNibGlFNVl5TmVTRUZDUllKRnhOdUN3b3R0TWlZZ0paQ3FoZGtBN09VNllqU3VzQVA3Umpvay1GcHZlM3g2ajBLVFFHTUdSaEV4VFdydFBmXzctUzNaTkVUMDJmR2F0QQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:12:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Alonso: 'Losses on the straights' meant Aston Martin struggled in Las Vegas Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXFYUXp4V2xycEpmNUllRVhIOWNrYWlUUElCcGs1UnEzRXZkYmlSQjFyNzZMQ2VoeG5LZmptMzhOaG1sQ05Gc2xOeFNUSGdVMkxRaVQ1VHNQc1FuUzFZVGgzVjVOMm5ycU0xenFZR3BHREVfRjFLdWUxRVp2OU90cDBDZjFwZzB2YmczMlB3aDlXbno0VGpVand0bTJ1LW44T2JMYmtDYThacGE2b1YyOS1IOG13ZTdfSnJOdjZaUDJfRlFxcm1mMmgyMjBzaVI4UVlV?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-21T05:45:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "'It will be a challenge'",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOY1NRMGFENEVUbk9XMmNUT21yTWVXaFZETmt1dTNqNDlQdm90VU1pSGIzekpmazJ6TG5nUGI1MXNsaEhYTlVZN0dZV1dZT24zMkM0NjBtTEoxOUR4b1ktSVFQbU1pYldZbTNjcW5pSGFwVExBRnVJMGRXVzRmeUE2dUpwMHg5enp3VWo4blZ1MkJ2eE1vUmdQQ1B0bUxudkRfVktFdTFOS21kajY0MXc3MVpoaWN2YmptNHhoLUJqZ3Q5YVFYU0x6WGFFYw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-20T06:20:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -255,17 +255,17 @@
           "kind": "Team news"
         },
         {
-          "title": "Colapinto: We were 'all over the place' in Qualifying despite promising P10 finish",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQd3ljUGlOYWliRG9VckRvN1hONTFjU3M4STJXQkpyeUNYejFDQjYyX1JZcFpOTS1wZUd1T3VfMkNic1hzdXpBblg0ZmlhYXF0Qnk3UDRZWEVaQ0NCUmc1blFneFNzdGc2dDZmdnBhem1wYnJiNDNvNm1LSm5jSUxTYzRMYjFYVW9OSFhXdjA0T1NhbGpVdEpleDVGeXFSdmVvX3F2QUZGbjltR0ltV2xJZHp1VUFRRFd4QllNWV9Hc0tnTjE0dEl6UjdyNUNNZw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:24:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Gasly hoping to 'find a way past' Racing Bulls in Las Vegas",
           "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0hjcFNRVkFuOTVUVkFpejBuS0Y2S3ZhY2lsYnVQaUM1ZlZKUmJmd1hYcXVaVV9RSmFzUFAzcGltbWZfN0pCZVFZc3NvQzBzdnFvWm85VVBlZVdOX0c2bHAwZHhQbW9IVXRiR3JSX29CRjBTcVVxQjRvdHlydUt2Y2l3LUJyVU5PbnE5NWtxYklWTUlRam5vOFF6Y05uQ0MwRGxlTUVMc1BwUnM5NjZ2Uw?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-21T06:18:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Fan Forum: Red Bull, Haas, Ferrari, Alpine and Mercedes take to the Las Vegas Main Stage",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOek8yQXd0ZjA0ZnVZRl9lZXZxZzhJLTVPMjhpT1VDRGVwaXJMMjlEdkpoZzVSOWYzSU4yX3laaEZOelZEUVhjQ3lBOS1ySnMyT3IzR2VWU0xhS0p2QTFZY2VDX2wzME1fNnNEWGlHTXBzRnVfNi1lYzY5dHVJX1ByRy1yeHVKRnpZS1hBak8zODIyUTVYd0xJamJQb2ZaVTk4Y3FKVFc0ZmZkZXFHbEVnTVhJTDJiaEhoYjIzYU5QZWd6d2txUi15RTBkWWVFeDlJZW1oWg?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-21T01:59:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -282,13 +282,6 @@
     {
       "name": "Williams",
       "stories": [
-        {
-          "title": "'Amazing to get P8 from basically the back of the grid'",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2UybVBfOVhJd2lwa1BwMXR6a3M2cU0xTWVvQnI2TC1UVThIV1FuU1RPM1B1OEx3d3RXd2xxeDVvNmtSQXNITVliYXZMZ1k2NW5HQ0gtdzVqSUF0ejB4dFhodGJJR0VGcThVbnQ5OWxKREJleEk5UzFJYWFOZzNpM3ZVai00R1dxS1RjUEIyVjF6ajk0TFphMHpZbTlxRi1CUTNGYVl4MlNjQjdKRWRpcW5MemV5RE1UcklqbXhyeUR5elVULVhOY1doRXg5S0N5aDZqbg?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-22T06:45:00+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "Alexander Albon: New Williams engine 'looks good'",
           "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUlpCNDZHVTh3VFB3M1l4TDFNNzlwUHp2S0o0MWJobGdxRHRodGQ0Q3ZURGJFck5hbG9fZHV6dDJOX05xQUNYa3lHVmNqUmhsWWZiRERnQy1XeWZBanR0S2RmZm9aMUQxMjl6eFlFWGFTM1N0eTJwWTNvUVl5SE5NSHlIQ19QNVB2SnAtNWhZZFp0VFlWTTBCNVNCa3puWFRtMWc?oc=5",
@@ -309,6 +302,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-20T00:15:00+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "Sainz won’t tolerate “being a test driver on grand prix weekends” for long",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZ05qeFNTRDBwMWduZmN6SldEYnVud0JqMEFjblhhZGVNc0RzcWN6d3NQLXlRT21ZZjBYMEMwYjNRMU5JeFdCZDgzQmtTaHlEZE15eXMtVDRMc1ZodUY0ekZkeko2c0VqZlVMYi1HdUQ1OG1pRDhqVXphNG11dVVYMExvXzRhWFBiSExucXdlREx4LVpUeENSUHpLZngwWXR6NFIySGd5ZEFMTUl0?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-19T06:35:51+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -325,10 +325,17 @@
       "name": "Racing Bulls",
       "stories": [
         {
-          "title": "Racing Bulls",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS0tWbjhNR0wtNUFrRlVNTTh5b1FLWnRySzhEZEFaSnJFS1U2YVVweHVnUl83ckJwVE9CRm9HRFlTZm5SVXpYZm8tQlNLR3QwUEUzWnEwWHhyZGJ1V1RyekJCazUxQ2RCcXZIM0M0eFJfbk8xOFlIYzd4Vk9UakFpVw?oc=5",
+          "title": "'Massive lost opportunity' – Racing Bulls drivers reflect on no points in Las Vegas Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQa3RWbURiSS14N1pGeFk0RklXbWloVWV0U1hDMmRMakJ1TUVnQklaTnlvNUoxaWRRVjMwWDNSZFExb3FsZGQ5NUFqM2RxcjltQlB1VUFydUVZNVp1WGlYZVQtOEdhbWl3M2RVZk44YWlWYnNfSGlhVUxsbXM1ZUZGaGd1TnhfQlhPUGQ0UVdBTVFNWERpMjdwUno3NW8ta0FCUmNBS1BsM1hnVnhud3FFMG5kdVRjZHJjbVJYcjFQWnV6dU03MWlqNmxOc3RDRHhBMDNHNko5SXJLSTBOZ3V0TVl3?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-21T11:56:40+00:00",
+          "publishedAt": "2026-11-22T15:02:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Lindblad “still struggling to understand” how he spun out behind Safety Car",
+          "url": "https://www.racefans.net/2026/11/22/lindblad-still-struggling-to-understand-how-he-spun-out-behind-safety-car/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-22T09:13:41+00:00",
           "kind": "Team news"
         },
         {
@@ -339,24 +346,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Gasly hoping to 'find a way past' Racing Bulls in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOU0hjcFNRVkFuOTVUVkFpejBuS0Y2S3ZhY2lsYnVQaUM1ZlZKUmJmd1hYcXVaVV9RSmFzUFAzcGltbWZfN0pCZVFZc3NvQzBzdnFvWm85VVBlZVdOX0c2bHAwZHhQbW9IVXRiR3JSX29CRjBTcVVxQjRvdHlydUt2Y2l3LUJyVU5PbnE5NWtxYklWTUlRam5vOFF6Y05uQ0MwRGxlTUVMc1BwUnM5NjZ2Uw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:18:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "How the Racing Bulls pendulum is swinging back towards Lawson",
           "url": "https://www.autosport.com/f1/news/how-the-racing-bulls-pendulum-is-swinging-back-towards-lawson/10873320/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-09T11:54:39+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "How the Racing Bulls pendulum is swinging back towards undeniable Liam Lawson",
-          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPeWZwaE5HZWFaYjNzSzg1QklmUjdnTnBoYnJnTV9kaFV4RUFxY1BXNmlpZU9EX1pZM1JOWEpmZ2ZOdHVROVNlYmNnTENyY2hpeWZOYWdXVmpJenVCSkQ4OWdYZjU2UXpEeW1Cbm9ESE12VHBldWZFY0xHdGVTREswNGxjWG50dXlhTTBNV2Z2UVA1cGxUMFc4QjdidDFnNl9aOFRoZWYzWk4wa2RzZnM1SWpya0dVcklyemQwd2ZZRXhMSUdMQkRicFRnQ2Y2S2lyb2RlR3FzZ2g0Ny1tSWxWZmdraF9iekF0S0dXcXQyUnFDTWZwUUg1Um1nSTBoLUFwaUducTlzVWRhWVlLNmxrbWtZdkdtTWN0SEE?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-09T08:00:00+00:00",
           "kind": "Technical report"
         }
       ],
@@ -378,6 +371,13 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Rafael Camara",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T10:01:13+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Fan Forum: Red Bull, Haas, Ferrari, Alpine and Mercedes take to the Las Vegas Main Stage",
           "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOek8yQXd0ZjA0ZnVZRl9lZXZxZzhJLTVPMjhpT1VDRGVwaXJMMjlEdkpoZzVSOWYzSU4yX3laaEZOelZEUVhjQ3lBOS1ySnMyT3IzR2VWU0xhS0p2QTFZY2VDX2wzME1fNnNEWGlHTXBzRnVfNi1lYzY5dHVJX1ByRy1yeHVKRnpZS1hBak8zODIyUTVYd0xJamJQb2ZaVTk4Y3FKVFc0ZmZkZXFHbEVnTVhJTDJiaEhoYjIzYU5QZWd6d2txUi15RTBkWWVFeDlJZW1oWg?oc=5",
           "source": "Formula 1",
@@ -389,13 +389,6 @@
           "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQXzVRWTF6THYyWVdVVEFza2pxdFVlWVFGY0RuemwwYy1LNHRUeTlDYktlcnF3SGdvN0MxeFRScHRMX1cxRnlxc2Q4SGdsMXdZZXYwcmJuRFFKMy1YXy1NM3AzalI3ZGh0UWI5aXBCaVVKR3p2bjNPQk9ya2IzeWZGcnBZdXZqNDRpREtHNkcxX0FSQlpOWUw3RmJ0ZmQ?oc=5",
           "source": "RaceFans",
           "publishedAt": "2026-11-20T09:44:22+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Antonelli, Bearman and Stroll set for penalties in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTERJYUNaem54eWpacmFRM1F0a3p6ZGZrNXVSUEViV3hXRmhVa0FWUkdYRk1jTzFUQWR4T19acWgzelRQVHJ6OTZFc0RxZ1NMdDBzZXhuZVZxdFZSOXBkT1dHZEt3eVJ4NjRSWWVLcEJPODdCUHJGdHp5Yk9wa2hHeXVVRFVtcUdnVmpJX2tEc0tlTWpZYXcwUVNlbTFfekJLR3c4bkMtM0g5Z1NsQmcwcERuUWt5eEhBSHI1VVFtOURLUlUtOWhGOGxONnczdDZ5M3NGd21Mbw?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-20T04:55:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -452,24 +445,24 @@
       "name": "Cadillac",
       "stories": [
         {
+          "title": "Perez hit with five-place penalty in Qatar for Camara clash",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNNWNVVy1BZXY2VGdrbV82TWp5cm9HalU2emRpWEVGNjhjWFB4ektNcUk0YVpqdzk4eVdNbmZaNFNKeGNrWHhOSkNnNE0ycVVNa0hHQ0QyYVd5Rk4yZmR3RFN5Q2R4bmJrbldjRFk1MHFkUWI3dWZBZUxPQXJCaW8xYmEycDRhRm9MMGstbFBlNzNyYzd6d1dqejVLOEViaF9oakE5cXVkam5IMEV2WWtBVnI0OVExMXhUU0hMMGs3Q3o2Q0U4QTVWX1JNS2h6MEF3amttRUhfS2dSd3FQTEdzUlE3TDNpT0tKU2tJ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T09:35:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
+          "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-22T09:11:46+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Perez handed five-place grid penalty for Qatar Grand Prix for Camara collision",
           "url": "https://www.racefans.net/2026/11/22/perez-handed-five-place-grid-penalty-for-qatar-grand-prix-for-camara-collision/",
           "source": "www.racefans.net",
           "publishedAt": "2026-11-22T07:37:13+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Cadillac CEO Towriss on Herta’s future and Bottas’ extension",
-          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPbjViT3piejFLdDZpQnFIMFROR2dRb1pLRkdCdVdteUxzYlZWZjZGbzVyZmItZHBEMzJCRzFJcjY3Z3dpQUsweS1oVWRXYW9IeGxaYXpKZUR6dWp0eGdDem1oMVRaTmliOUt1UmxvRHVlbUtYY2FYa3JxSmZkdzRZSHVmekM0VDhlX0hxRUVKT0p3cUN3Y3kydDdlNlZTMUJJQU9ScGs0dnNlQnZhaXRHSWdNeGZhNlRiMFJ1bWptTjdFRHpxeGFxcTZvVHRZNklXVGRuSHNuY2NIUnVJUDJ5U21xaGVEZkxnLXRnZ1BBb3hvaWM1VU04S2FIaDJkb1pq?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-20T11:10:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "“He’s decided on a direction”: Cadillac offered reserve role to “disappointed” Herta",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTm5XT1ByMGVJY0luYXp3TEhteV9YSmpNVnVpZ2s5TUJqRlFBa092ZUJCQ3VuYUp4R3FYSUNSV0k5X3ltek9nZlFuV1VXaDEwb1p5WHBObTREcS1RRWVOOGhmZnoyQ1ZQWWUtemZpRHVmLXFJZGF6cXRWLThpeWZOSl9KZXBQWUpEUWU5QTVsT2dIcmU3Q2dFT2pEYjZSUzVtRHBrYmJhM0R2TTQ5M3BMMFBaUzcyQQ?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-20T10:33:06+00:00",
           "kind": "Team news"
         },
         {
