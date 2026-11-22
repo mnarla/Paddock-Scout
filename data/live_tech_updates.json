@@ -38,10 +38,10 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "Turbocharger Upgrade",
+        "Component": "Turbocharger upgrade",
         "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "George Russell opted not to use the new turbocharger upgrade in Las Vegas to prioritize reliability and performance consistency.",
+        "Summary": "George Russell opted not to use the new turbocharger specification in Las Vegas to prioritize reliability and balance for the race.",
         "Pace_Delta": 0.0,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": -0.0,
@@ -57,23 +57,23 @@
         "Badge": "Reverted to pre-Las Vegas GP spec"
     },
     "McLaren": {
-        "Component": "2027-spec Front Wing",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren introduced a 2027-concept front wing in Brazil to improve driveability and predictability, which was retained for subsequent races.",
-        "Pace_Delta": -0.06,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.06,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Autosport"
+            "Awaiting reports"
         ],
-        "URL": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-        "As_Of": "Brazilian GP",
+        "URL": "",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Brazilian GP)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
