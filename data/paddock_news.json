@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-21T20:10:20.337307+00:00",
-  "newsUpdatedAt": "2026-11-21T20:10:20.337307+00:00",
-  "race": "Las Vegas Grand Prix",
+  "updatedAt": "2026-11-22T00:31:26.802826+00:00",
+  "newsUpdatedAt": "2026-11-22T00:31:26.802826+00:00",
+  "race": "Qatar Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
@@ -44,13 +44,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -95,13 +88,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -162,13 +148,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -227,31 +206,12 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Rear Wing",
-            "Beam Wing",
-            "Floor Furniture"
-          ],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
     {
       "name": "Aston Martin",
       "stories": [
-        {
-          "title": "Stroll hoping 'for the best' during 'challenging weekend' in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZ1QyYmg1VDZZek41LWcwMHVfa0dqejFxckNMNGMySFFKNVRvS2tKX3pfNHRNS3pzeVlUOG8zWHIyUzBMYTdOUTdkODFZUmV6bjZLdFhOQjZ4aW1VTXNibGlFNVl5TmVTRUZDUllKRnhOdUN3b3R0TWlZZ0paQ3FoZGtBN09VNllqU3VzQVA3Umpvay1GcHZlM3g2ajBLVFFHTUdSaEV4VFdydFBmXzctUzNaTkVUMDJmR2F0QQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T06:12:00+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "Alonso: 'Losses on the straights' meant Aston Martin struggled in Las Vegas Qualifying",
           "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXFYUXp4V2xycEpmNUllRVhIOWNrYWlUUElCcGs1UnEzRXZkYmlSQjFyNzZMQ2VoeG5LZmptMzhOaG1sQ05Gc2xOeFNUSGdVMkxRaVQ1VHNQc1FuUzFZVGgzVjVOMm5ycU0xenFZR3BHREVfRjFLdWUxRVp2OU90cDBDZjFwZzB2YmczMlB3aDlXbno0VGpVand0bTJ1LW44T2JMYmtDYThacGE2b1YyOS1IOG13ZTdfSnJOdjZaUDJfRlFxcm1mMmgyMjBzaVI4UVlV?oc=5",
@@ -265,6 +225,13 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-20T06:20:00+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "Antonelli, Bearman and Stroll set for penalties in Las Vegas",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNTERJYUNaem54eWpacmFRM1F0a3p6ZGZrNXVSUEViV3hXRmhVa0FWUkdYRk1jTzFUQWR4T19acWgzelRQVHJ6OTZFc0RxZ1NMdDBzZXhuZVZxdFZSOXBkT1dHZEt3eVJ4NjRSWWVLcEJPODdCUHJGdHp5Yk9wa2hHeXVVRFVtcUdnVmpJX2tEc0tlTWpZYXcwUVNlbTFfekJLR3c4bkMtM0g5Z1NsQmcwcERuUWt5eEhBSHI1VVFtOURLUlUtOWhGOGxONnczdDZ5M3NGd21Mbw?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-20T04:55:00+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -274,13 +241,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -316,13 +276,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -365,13 +318,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -418,13 +364,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -462,13 +401,6 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
@@ -506,26 +438,12 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     },
     {
       "name": "Cadillac",
       "stories": [
-        {
-          "title": "More Unknowns Than Ever in Vegas — Why Cadillac Scraps Its V6 Engine Plan",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOcUd4WFpHQUw2aW1YU3NjWi1mTTlUMDZQTHlxMXVscWlSVjdjb2VzeHhvMTVGUnBTVWtPQnlnTFQ0N1VnRFY3NHJuUG1EM09OU1dzOXV1ckl2SVRzOVBXQjl6YmtGa0Y5NnJtM1RVOVhnbTY1WDJHZUtzQlB1MlNEMEs1QkJRTjRwR0ppc212NmJzaHpSVXVUM01sLTZ4UWFkeGJYRkt5bWU0cFZZVXhxak1wTjlKeTRfcm5WV2pOd2xobkprMjlBOHJoN3JKUFc5?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-20T12:35:20+00:00",
-          "kind": "Technical report"
-        },
         {
           "title": "Cadillac CEO Towriss on Herta’s future and Bottas’ extension",
           "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPbjViT3piejFLdDZpQnFIMFROR2dRb1pLRkdCdVdteUxzYlZWZjZGbzVyZmItZHBEMzJCRzFJcjY3Z3dpQUsweS1oVWRXYW9IeGxaYXpKZUR6dWp0eGdDem1oMVRaTmliOUt1UmxvRHVlbUtYY2FYa3JxSmZkdzRZSHVmekM0VDhlX0hxRUVKT0p3cUN3Y3kydDdlNlZTMUJJQU9ScGs0dnNlQnZhaXRHSWdNeGZhNlRiMFJ1bWptTjdFRHpxeGFxcTZvVHRZNklXVGRuSHNuY2NIUnVJUDJ5U21xaGVEZkxnLXRnZ1BBb3hvaWM1VU04S2FIaDJkb1pq?oc=5",
@@ -541,10 +459,10 @@
           "kind": "Team news"
         },
         {
-          "title": "What next for Herta after 'disappointing' Bottas 2027 decision",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNkp0SW9DUkVla0tQaXAwaXIxVkI1TEJXd3lMa0VWSnhIOGRyOGFWcmd6UVhhVHVIdFhjeUNuSnd0aktHLU5EWnV3SkVhMzN5aW9CMkFXYk9UU1BYQTRad0lLWnUwbEhpU3RwV2Y3bzRoX3JlZmotMmRlUGhNbUdrWThabkIxb2IyZ0JBNzljZWJBMU45MzVseFRibzg?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-20T05:22:27+00:00",
+          "title": "Valtteri Bottas says ‘tomorrow is a new day’ after rain limits Cadillac’s Las Vegas FP2",
+          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQLTlXOUgyN2ZVc3BMRGhqR1A5ekdxdG5IcVZjVWtnZ0RaXzJmb0t2MUNSUWI1QV9mQTJvbFBwMFc4WVFyLTNSZ2l0ZjFsWW9mNlN3YURmYmZEMGdDZ1JNQkxSdzlRRENoODdHdUdEQWE5OGhEREdudXp6TjAyZkpLYzJaak9ESng5VjUtNGdvSW1EZzhKVm1XZE92eU1LWkhuTXBPWmZtOElZYkRCM1d4UktPRlZWN1l0a25DdlozWDgxNWRWaC03OUtFX3JsbkNfWlgyWQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-20T05:57:00+00:00",
           "kind": "Team news"
         },
         {
@@ -569,18 +487,17 @@
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
-        },
-        {
-          "hasChanges": false,
-          "components": [],
-          "event": "São Paulo Grand Prix",
-          "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-          "publishedAt": "06 November 2026"
         }
       ]
     }
   ],
   "fiaDocuments": [
+    {
+      "event": "Qatar Grand Prix",
+      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/Qatar%20Grand%20Prix",
+      "status": "unavailable",
+      "teams": {}
+    },
     {
       "event": "Las Vegas Grand Prix",
       "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
@@ -650,64 +567,9 @@
         }
       },
       "status": "available"
-    },
-    {
-      "event": "São Paulo Grand Prix",
-      "url": "https://www.fia.com/system/files/decision-document/2026_sao_paulo_grand_prix_-_car_presentation_submissions.pdf",
-      "publishedAt": "06 November 2026",
-      "teams": {
-        "McLaren": {
-          "hasChanges": true,
-          "components": [
-            "Front Wing",
-            "Rear Wing",
-            "Beam Wing",
-            "Floor Furniture"
-          ]
-        },
-        "Mercedes": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Red Bull Racing": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Ferrari": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Williams": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Racing Bulls": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Aston Martin": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Haas F1 Team": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Audi": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Alpine": {
-          "hasChanges": false,
-          "components": []
-        },
-        "Cadillac": {
-          "hasChanges": false,
-          "components": []
-        }
-      },
-      "status": "available"
     }
   ],
-  "errors": []
+  "errors": [
+    "FIA documents could not be refreshed for Qatar Grand Prix."
+  ]
 }

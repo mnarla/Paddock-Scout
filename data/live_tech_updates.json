@@ -13,7 +13,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -32,48 +32,48 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "ADUO upgrade",
-        "Category": "Aero",
+        "Component": "Turbocharger Upgrade",
+        "Category": "Power Unit",
         "Certainty": "confirmed",
-        "Summary": "Mercedes introduced a new ADUO upgrade package specifically for Kimi Antonelli's car during the Las Vegas Grand Prix weekend.",
-        "Pace_Delta": -0.05,
+        "Summary": "George Russell opted not to use the new turbocharger upgrade in Las Vegas to prioritize reliability and performance consistency.",
+        "Pace_Delta": 0.0,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.05,
-        "Upgrade_Validation": "UNVERIFIED",
+        "Upgrade_Score": -0.0,
+        "Upgrade_Validation": "REVERTED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "RaceFans"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Las Vegas Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Las Vegas Grand Prix"
+        "URL": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZEU4SzZjcDA0dzB2S2RHRzUyYW5aVVpBV0o3RVpsaWE0elFHQ09BM1hQdzNtZXVpWHQxWGpCSmR0dzRLLWpKQlRpSmpULWRCLV9KbDdELW9BcGxaUUtTOGdLV1lZbnVxTFdNTEstTkVucG1pQUFhSGRla1Z1eG9UbEtGRnFyU3l3Q0lpQVA2M2haVFBjZFAwT05aa25xV1JhVDkyV0lRRGNkMFY4YUN0R3BDOA?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Las Vegas GP",
+        "Is_Current_Weekend": false,
+        "Status": "REVERTED",
+        "Badge": "Reverted to pre-Las Vegas GP spec"
     },
     "McLaren": {
-        "Component": "MCL40 performance upgrade",
+        "Component": "2027-spec Front Wing",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "McLaren introduced a performance upgrade package for the MCL40 specifically targeting the low-downforce requirements of the Las Vegas street circuit.",
-        "Pace_Delta": -0.15,
+        "Summary": "McLaren introduced a 2027-concept front wing in Brazil to improve driveability and predictability, which was retained for subsequent races.",
+        "Pace_Delta": -0.06,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
+        "Upgrade_Score": 0.06,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Autosport"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX3lwSERyTkVtSUhrOWowMGVoNE9JbVpvVEtpV2wwWFg2Ylc3WHFMSmxVUHd5LXowdGJJdk1hckE5eW0yUVJnYU5aRFhfOG0wdW1jU2pweXRaVy1JbDN4Wm1LcDZEcEQwbmt5MzFMUTRuc2dGVzE3YzI3Y1ZYdThMd1E1MFJYZUdSSnh4RjNxenVpcjMtWDN2T2FCdmJiajdzRHVlLWNOdVk?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Las Vegas Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Las Vegas Grand Prix"
+        "URL": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+        "As_Of": "Brazilian GP",
+        "Is_Current_Weekend": false,
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Brazilian GP)"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
@@ -89,7 +89,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -108,7 +108,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -127,7 +127,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -146,7 +146,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -165,7 +165,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -184,7 +184,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
@@ -203,7 +203,7 @@
             "Awaiting reports"
         ],
         "URL": "",
-        "As_Of": "Las Vegas GP",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
         "Status": "PENDING",
         "Badge": "No update found"
