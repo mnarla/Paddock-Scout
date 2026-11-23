@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-22T22:37:03.745861+00:00",
-  "newsUpdatedAt": "2026-11-22T22:37:03.745861+00:00",
+  "updatedAt": "2026-11-23T03:50:03.778292+00:00",
+  "newsUpdatedAt": "2026-11-23T03:50:03.778292+00:00",
   "race": "Qatar Grand Prix",
   "teams": [
     {
@@ -255,24 +255,24 @@
       "name": "Alpine",
       "stories": [
         {
+          "title": "Franco Colapinto, Alpine, Las Vegas Strip Circuit, 2026",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQOWpzenUxSWh3U3g1aWFxS3lyUjR0anF6bVkxcXQ0dzVMeEh2RmI1OHpoak9abUhFdkZaMC1wWlBWcVBmVXh0Q001V0JtVUdCT2hjRlhLVFpSQWlsZDBWanVfeW5KSE1QU2ROeEh5SDlMRTg4SFNRUXZJdW1XaWNoME1TS3hoTWc2YUV6bDZ0SDR4NFhfT3FEOFBybnZhOVljNVRCZjdtaEs?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-22T11:12:49+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto: 'Both Alpines in top six is very positive'",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOclgyWEdhNWM3NklLVnVXWlJ0ZlQzWVI3ZG1FNmlNMmpESXViM2lhM0xFTXI4c0JsWDVsZXRWWkI5MmlYRHZGN0NSaTJLdDJBTURSQW9nV0dVMHFLVWxyOS1HcnI2NkNpYWg5VlBqZTZjNWZ1YjRuY2JhM3dUN0dsOC03bXJtZzI3cVc2bVhqY0hUMXBPSWc3dXcwdE1laFAtLUV6Ml82QQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T06:52:00+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Alpine left disappointed despite Gasly’s ‘perfect’ Q2 lap",
           "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSWFtVUlubFl1V21sbDFhTWdITlF6R1AyRHdLQWxWaHBPVDVFa0N1SnlLektsSFVOZ0M5R05qeWlDZGNfR1FSRDMtemVoLWxzTnpsQlZEWEdYTVdrZFJHV09EY29aYWo0WkZJMTM1bUg2WWl1YUxBb3g0eWxRYTRrUTFEY0JTemdqWjV2ZGcxdDB3N184VEppNHNlTnpNeE4xMWRxbVhSdEFxbnR5N1g2Yjh2VHNreVZCRDdPR1dyM0JCNFBkbDNFVVJ0TmZIRXZK?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-21T08:06:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Fan Forum: Red Bull, Haas, Ferrari, Alpine and Mercedes take to the Las Vegas Main Stage",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOek8yQXd0ZjA0ZnVZRl9lZXZxZzhJLTVPMjhpT1VDRGVwaXJMMjlEdkpoZzVSOWYzSU4yX3laaEZOelZEUVhjQ3lBOS1ySnMyT3IzR2VWU0xhS0p2QTFZY2VDX2wzME1fNnNEWGlHTXBzRnVfNi1lYzY5dHVJX1ByRy1yeHVKRnpZS1hBak8zODIyUTVYd0xJamJQb2ZaVTk4Y3FKVFc0ZmZkZXFHbEVnTVhJTDJiaEhoYjIzYU5QZWd6d2txUi15RTBkWWVFeDlJZW1oWg?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T01:59:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Aron leaves Alpine as Vesti doubles up in reserve role for Enstone squad",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWUI0MTdzTjd0VXNyVVJyQTRJRmtSMS1Kd1EwS0h4REtNeGd2b3JWcTl0UVBOTWROMkpyd1pvdFRVN0xwTGJsYWNQMEFjTTdVVzlYdTZNMkJGckhsR1dTX0NOOXJqdDQxR1Ytc2FXSHE2TXpmbnprbGp6ZkdmaXE5MlFFd3liREZVVHI5MVAtTzdMS3pLeFNqU2pCRTdUeVBveGtxenU1LTczUXhtbWI1Z0ViaVJUUDdwUWZkWTVVYVE3Q3FDLV9lM3hfdllPSUc4MWRmbg?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-20T11:08:00+00:00",
           "kind": "Team news"
         }
       ],
