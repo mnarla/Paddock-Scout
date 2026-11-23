@@ -1,11 +1,32 @@
 {
-  "updatedAt": "2026-11-23T03:50:03.778292+00:00",
-  "newsUpdatedAt": "2026-11-23T03:50:03.778292+00:00",
+  "updatedAt": "2026-11-23T07:55:02.222606+00:00",
+  "newsUpdatedAt": "2026-11-23T07:55:02.222606+00:00",
   "race": "Qatar Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Verstappen expects F1’s ‘yo-yo racing’ won’t be fixed until 2030 engines arrive",
+          "url": "https://www.racefans.net/2026/11/23/verstappen-expects-f1s-yo-yo-racing-wont-be-fixed-until-2030-engines-arrive/",
+          "source": "www.racefans.net",
+          "publishedAt": "2026-11-23T07:15:50+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "War of the words: What will Verstappen and Russell do for an encore?",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYTlaWkN4dlpuRDJRNXNXN2lLOUdCb09KbmpVUzNzMHRhMTFzZUx1cGhueVZlc3NiYmpYTnA1QTd2SU4xQ1c2WVM0c3BLYnBMejdwbzZuRXEzbFgzQjRGa2dJOE56YjZrbHo5WkFDQ1FMcndEZHpMTExYOXVGS3pEU0F4RlpINWxhNVdHR3ZBQzZkQjNGTmVFaXg5bjUzM21wYUhUQXNaMTJLWnBWcHZN?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-23T07:01:36+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T12:19:19+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Mercedes on the ropes as Verstappen delivered knock-out in Las Vegas fight night",
           "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObzJLX0R5a0tMRkt3VGlGbmpGck5MSkFwYXVibEVFekNZWm5HZXFTY1R4bkpXSHdXbDh2WDdPeWdRSHFicmU1MVVfdlF0Y08zUGE3VkJEajhLd2pCZkJDYmZ5ZzFLT3lMRlJRSUV6UjRXMmFQVHBzOGkzUUJ1aF9MM2tXR1l6aHJ0eTM3ZjRhQkV3MUNZVlJLN0VvbWNpVVVPdGk0blB5YlhnaDN5cmx6RGhtX29Mb19aTUlydkdEaHlQQQ?oc=5",
@@ -21,31 +42,10 @@
           "kind": "Technical report"
         },
         {
-          "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
-          "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-22T09:11:46+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘So far below my level' – Max Verstappen responds to George Russell comments in Las Vegas as rivalry reignites",
-          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNV1N0dlhkay15UV9ndHFIemdPdldqa0ZkVlFNVHhNQWxJUXYzaXJxWTMxMzMwUnRXTl9iOGFLb0pEMHB4Z3d5SmUtMDZfLVlUWnZGOTloNm5ZX1dlVmdpNmJfc0tEeGU1TGtjM0VGN1oyekRBR3ZuMmFnaUhnVEF0Y29Ydk44c2ExckhXYlM5RGRLQTlUckVkN3pvWEkxSkdRV1hsNnNRNUxPbkVmLXhRQnFEUHd2QTVQN1BsaWpyd0VCWU1JMl9yM0N6c2JDejBEM0N3WmlfTzVpSHNnVElUVnAwSUZrYV96UjFJclA4U0paQnM?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-22T08:59:00+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Who has the best F1 power unit: Red Bull or Mercedes? Russell shares interesting theory",
           "url": "https://www.autosport.com/f1/news/who-has-the-best-f1-power-unit-red-bull-or-mercedes-russell-shares-interesting-theory/10875591/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
           "publishedAt": "2026-11-19T10:47:32+00:00",
-          "kind": "Technical report"
-        },
-        {
-          "title": "What Ford has really contributed to Red Bull's 'best' F1 engine",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeEZhTUNWWWFmYlJUd2RWdEFrMjZWbFVraFZFdUFwS0lDZm92bFJCLUNVdzV5UFZWejB3ZzNpeWJ5YjVQYlpET0xRc3ZLQ2U5UGFTakdKbWwxdktvSGFpc2tDVXd5SXFVTkhhWkJxSS1XSDd3LUQyNU03X21PRXQ2NnBPVQ?oc=5",
-          "source": "The Race",
-          "publishedAt": "2026-11-18T14:41:51+00:00",
           "kind": "Technical report"
         }
       ],
@@ -109,6 +109,13 @@
       "name": "Mercedes",
       "stories": [
         {
+          "title": "War of the words: What will Verstappen and Russell do for an encore?",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYTlaWkN4dlpuRDJRNXNXN2lLOUdCb09KbmpVUzNzMHRhMTFzZUx1cGhueVZlc3NiYmpYTnA1QTd2SU4xQ1c2WVM0c3BLYnBMejdwbzZuRXEzbFgzQjRGa2dJOE56YjZrbHo5WkFDQ1FMcndEZHpMTExYOXVGS3pEU0F4RlpINWxhNVdHR3ZBQzZkQjNGTmVFaXg5bjUzM21wYUhUQXNaMTJLWnBWcHZN?oc=5",
+          "source": "Autosport",
+          "publishedAt": "2026-11-23T07:01:36+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Wolff explains how Mercedes challenge fell apart in Vegas",
           "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSjMydi1Sd2hXTGdBX2hfUXFmYVBsMjMtRWRmY3RRY0ktODBYanAwUkYtWU5QOXF6dUZDVUhPUlNlTlJfNFc5NjRlY2g4TzI4eXlRVHRIalc4QTFtRUZ2cldGOGJzTGl1eXBDNlpDME4zV3NmZWJXLUt6MzdNeVlhVHhlSmRRamFzS2o2aWVfVkdjZ1hoVlB5WlhLWFU3bTFyZUJTb29NdVZMZHpLakZmcXlvTm4yb3NKNE9tUC0xUkhrY2EtS0djT2FtaEZhVmFkZXdkRmRJWllvdjVIbVp1NmtlX3E?oc=5",
           "source": "Formula 1",
@@ -116,17 +123,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Mercedes on the ropes as Verstappen delivered knock-out in Las Vegas fight night",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObzJLX0R5a0tMRkt3VGlGbmpGck5MSkFwYXVibEVFekNZWm5HZXFTY1R4bkpXSHdXbDh2WDdPeWdRSHFicmU1MVVfdlF0Y08zUGE3VkJEajhLd2pCZkJDYmZ5ZzFLT3lMRlJRSUV6UjRXMmFQVHBzOGkzUUJ1aF9MM2tXR1l6aHJ0eTM3ZjRhQkV3MUNZVlJLN0VvbWNpVVVPdGk0blB5YlhnaDN5cmx6RGhtX29Mb19aTUlydkdEaHlQQQ?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-22T11:49:45+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Hadjar penalised after backing up Russell in Las Vegas GP, Perez given grid drop for Qatar GP",
-          "url": "https://www.autosport.com/f1/news/hadjar-penalised-after-backing-up-russell-in-las-vegas-gp-perez-given-grid-drop-for-qatar-gp/10876867/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-          "source": "www.autosport.com",
-          "publishedAt": "2026-11-22T09:11:46+00:00",
+          "title": "Red Bull hire Gwen Lagrue from Mercedes to lead Junior Programme in 2027",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQM0syT0dQcXQ3a05JYWNlQTJCWUNYUG0tTDlLcVhtLU5GcE9aMjFnV0Q2YkNFTzUyRFNfUkRaUGhvb2tlTmtmRDA0S0tSYUJKUG5zaGZRTlVKVWplZmtOLTVTSG0xM2ktNFJCYmRzVjI5OU91M1Q4cGkxQkVvaEF6U0dXWE9KTmpCLTBBczB1bVlJMmtjbDRjNmNHN3V6bnIybEFkYWtyekVOMkxBXzhOUS1qeE5TM2JFNHNDeVEzWlE0UXR1TGVQMnlid3A?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T12:19:19+00:00",
           "kind": "Team news"
         },
         {
@@ -371,6 +371,13 @@
       "name": "Haas F1 Team",
       "stories": [
         {
+          "title": "Rafael Camara",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1SWmRDSkRJZ3N1TUJ2VWhlSFh6SncyMk9Yc0hBTnJXZm5VSnhId0Q0OFJUNXhoZ2Q5Q1JoYS1Yemo1eEtNUlBEMllFUUxxY3hITk9TRlIwdEJCNGpudlE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-23T01:42:06+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Camara to finish F1 season with Haas, ending F2 title bid",
           "url": "https://www.autosport.com/f1/news/haas-keeps-rafael-camara-in-f1-ending-his-2026-f2-title-bid/10877044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
           "source": "www.autosport.com",
@@ -378,17 +385,10 @@
           "kind": "Team news"
         },
         {
-          "title": "Camara to complete F1 season with Haas, sacrificing F2 title shot",
-          "url": "https://www.the-race.com/formula-1/camara-to-complete-f1-season-with-haas-sacrificing-f2-title-shot/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-22T18:12:46+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Camara confirmed at Haas for final two Formula 1 races of 2026",
-          "url": "https://www.racefans.net/2026/11/22/camara-confirmed-at-haas-for-final-two-formula-1-races-of-2026/",
-          "source": "www.racefans.net",
-          "publishedAt": "2026-11-22T18:05:03+00:00",
+          "title": "Haas keeps Rafael Camara in F1, ending his 2026 F2 title bid",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMFcwdnRmYUJFeHpucXhZdXJsaEFYU2Vlcko1eGV6YnFjQ3ZKdVlEQk5aNUV2N2pLNjZQeDNYVER4cXFFMnBsbHlqOXpvNWEtVlRSNlN1aE02MU9ZT1M1NUp5YWl2cXAzZFlrX3NqNTNXV1VkT3JVcUk0M29fOWYwb3U0eUdrNTJDUTNKcFpyWF9jemlueS1xMzkzWkxOUjZ6bzdVMXFB?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-22T18:28:04+00:00",
           "kind": "Team news"
         }
       ],
@@ -474,7 +474,7 @@
         },
         {
           "title": "Cadillac scraps V6 F1 engine, delays entry as PU manufacturer",
-          "url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxNS2ZWcVlVRFFIMzNQOUR5a3FQaF9WTEROR3BBMjFMdjJoYjA1Z1NtQmhxRmVXY29mRG8wZ2pBUGFUYjYwbGpaWDhzWWo3eWwwaXE2WFZ6R1A4V0MyMzVkc1V2T1FIUWtzRVZoQjhkdUpoRWowc09aN2xyU0d2bUw2YjF5OHRYaHF4ZXZLcEtEUExUdkYyNGttQ1R3WHJQUV9zendqVWJHT21BMVNHNFZZRkZpenpJQ2ZlTzdtQnR2ZDZZaDBVXzIzaThIUUNPRHlpRUxnNXl2bXRiNlNLb3NWSnN0QmdDU1AxdDBJRVczUnFrXzJaN3FEbkRJcTFFQ2pjZHRuZjA0ZFV0MjJ6dldvWjJ4S1dCdmM0aXVkR1ZkemRBcmtlUHRiWHp3?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckhMM1VBM1ExTF9jeWJhTWFJVll4dm12MDFYUk9fbUdWM09SWmNzN1J0aHkydlhFSVhIVVhxNXlCRGxMNGhFVWpLRk1tdXAwMVlGd2luUlV1WnAweUVlRnZOMnVPRzU2TUdqeE9GUVUzVVFkdWxZemV4NmV5SUpuc3IweHliYS1Hd0IyNE1Kc1BrRV80ZkVZOVhycDJZTVJZeVA4Vl9NUUFHRUR4VFdydDljUzVCU1VyWUE?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-20T04:02:24+00:00",
           "kind": "Technical report"
