@@ -1,11 +1,18 @@
 {
-  "updatedAt": "2026-11-27T08:51:02.445552+00:00",
-  "newsUpdatedAt": "2026-11-27T08:51:02.445552+00:00",
+  "updatedAt": "2026-11-27T19:06:14.753036+00:00",
+  "newsUpdatedAt": "2026-11-27T19:06:14.753036+00:00",
   "race": "Qatar Grand Prix",
   "teams": [
     {
       "name": "Red Bull Racing",
       "stories": [
+        {
+          "title": "Ricciardo ‘grateful’ Red Bull made F1 exit decision for him",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQNy1MS2RQbHE2cmdBdWw4a2E1SngyOG9pX1NJaGYyOU82bXBFQ0t5SjdhLXVza3BhOEp0TUhxTFN6cWFPQ0lxeHdmRm9vM0w0RG5UTU1CMi1OVHJfMzIyQUdyOHQwMWdWV2RUYVRwQVhrVUtTcHhvTXRqNUh6YmExeEtXVDdFa0NNeGZoZHdiU2VDaEdFdF90WVZQeUhGdVo0alpsVEo4VFBJVk95RnBhSGJ6RmI1cE9aeG5PYUtwb0swUzhJb2FQYWhlSk5qbTNkYmdVU1hLRHY?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-26T20:48:46+00:00",
+          "kind": "Team news"
+        },
         {
           "title": "Verstappen to work with new race engineer Tom Hart again at Qatar GP",
           "url": "https://www.autosport.com/f1/news/verstappen-to-work-with-new-race-engineer-tom-hart-again-at-qatar-gp/10878044/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
@@ -28,13 +35,6 @@
           "kind": "Team news"
         },
         {
-          "title": "Russell's biggest lesson from Verstappen war of words",
-          "url": "https://www.the-race.com/formula-1/russell-feels-punished-for-being-too-open-and-honest/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-26T16:06:16+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Hadjar says unfortunate timing caused his front wing to “explode” in Las Vegas",
           "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa0I4SWt2S2xxbFM5b3ZFcWkyMmNxTDhEYUFNU3dfVXhZeVhoMVo3RUpJQXZRQVNCZ3JlUGszbDFGbnV0M0FuR1dCcWtmN3hfUDNfWGtnRTBoWFhQZXFNTldLZmQ4TXNUY2FhWV93MDNTM3NkbEpEMnVjLTJ4UVhnSUxoTW9HbHVjeXJRRXE2S3hQdE82YjN2RW9JU3RRa21CS094MkEyM2hiTHVVNHVsMk5qRQ?oc=5",
           "source": "RaceFans",
@@ -51,6 +51,13 @@
       ],
       "declarations": [
         {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
+        {
           "hasChanges": true,
           "components": [
             "Front Wing Endplate"
@@ -65,24 +72,24 @@
       "name": "Ferrari",
       "stories": [
         {
+          "title": "How Nico Rosberg beat Lewis Hamilton – and his demons – to clinch F1 world title",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWlJFdkJLWTR5UkF0aWtseWdPUjh0UHVVTzFhdEt6cHA5a1ZIYnlZX2lCdFV3alRnQVNxX3c4dE1PY1AyLVF0a0ZtWnRYU2NoczJzWHJsN0VZRnNubi1TNTBGU3h4OEMxMmxQTUxnTHNxRDBhRUFzRnB1cVNaUDhnS2FVTGlKcmJadTgyR08waHQ0ZVNDbEFvc2sybExnY1J3THpLdDZrYWVYWVQtRWV0aFR2QjdyUGxEVllF?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-27T09:38:12+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "How Rosberg beat Hamilton – and his demons – to clinch F1 world title",
+          "url": "https://www.autosport.com/f1/news/how-nico-rosberg-beat-lewis-hamilton-and-his-demon-to-clinch-f1-world-title/10878126/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-27T09:35:50+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Lewis Hamilton on latest Charles Leclerc flashpoint: \"We're free to race\"",
           "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPTS1BVFFQdjlybXB2ckl6amJ4WmJWWXRkZnBHb3BXZzBzSG8ycWtnXzZ4QktqbFl5NlhNNUJ4SWF0VTFmY3RRQm9ZRFZVTWNlMXYwTFdSOGhOUUdGOWFyWjBIMklSQlJlenpIZGpEM1o0YmhrLU1Tbkd2ci1QWU1vNEwtSTVObVp1S1VlOEl6SzNnRGIzOVZaTE13Q000cWl6THhpZ2sycUxyMFFJdlJXUk1Cbkw5dXdacjNSc2xzVjZ3TXRwSnB4U1hRUU1wNndEdVpMQVBBMjBnbDlJOEQ0c1lmMC1UWmhqUVBtYjdVTEhzcmVNZndsMlF5OTRzWVhpZGN3Yw?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-26T21:23:15+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Leclerc denies claim he has a ‘number one’ clause in his Ferrari contract",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMDJSelU3dmlXUEdQbzBfWHppWGZDZFV0czRFUnpCLW5Rd3RkNGZsQkhnNUVpUUxFR3NlemhHemhzVWdySzRhYTY3SERVZEdOR0k2S21VSy1tTkttemhLanJVcTFPLTdfSXlTTjBvOU1zRXVVd2Z0eTlfbVgydUY5X21xR245Slc2OENhd3hPMHpBbEEzMGNYLUxDd2dMLTA3Wms3UHJsUWZOWFJ5?oc=5",
-          "source": "RaceFans",
-          "publishedAt": "2026-11-26T21:14:39+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘We’re all disappointed’ – Leclerc and Hamilton address aftermath of Las Vegas clash",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPS3FCVFVfTXlMRWFoeUpqWEtKU1pIcDhRbjhyaVotT21vNC1tVUNRV0Y1ZkVTR0p3OVI1WlBrTzBFSFVsTmhEMlFIZU51TTVfRUpVUjhNQnVON2dOTXVONHlFUWxHR2xZZ21iZDVVODd1U2dsaG03YkZSQ3I0anh3NmVvX2hsZGVtenNNN0NmSVg2MGloYTdyTUhsTzhPZ1VibllvZGVCYVpCWEhkb3I5VkJfVllCTTB5R1g5YV81cWwxY0NkUGxpOGZQcUZMSFB3c0pZRUN3LWxidDRTblE?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T18:35:00+00:00",
           "kind": "Team news"
         },
         {
@@ -102,6 +109,13 @@
       ],
       "declarations": [
         {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
+        {
           "hasChanges": true,
           "components": [
             "Floor Board"
@@ -116,24 +130,24 @@
       "name": "Mercedes",
       "stories": [
         {
-          "title": "'I was overconfident'",
-          "url": "https://www.the-race.com/formula-1/i-was-overconfident-antonelli-battling-post-title-hangover/",
-          "source": "Antonelli battling post-title hangover",
-          "publishedAt": "2026-11-26T20:29:36+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "‘It was quite amusing’ – George Russell shares his reaction to Max Verstappen’s Las Vegas comments",
-          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWG9ncFppclBfSkFwbjdZb0l1WlhveFJQWUNUSWNWcFZlNzRsNFB1Q0ktX2lkWXh3SWc2bDBGLWVQY2M2NjRicl9LQmRNMlJRdTczTWpJb2pkc3JtQUR2VTNGS2JGM1U2dGRTbTJSbmFOUmtKdTlRQnlUekZ1RzFvR3lRNkZFRGVhQVhHaXRRZVNGNUFMcjk1RmVBMkpLWmM0QlBxeGZGUmFfenpaM1VWODNWSU5UOEs0dVN2Y1h2dGs2UVhidEhsYmhpS1FQMkdxQUFISUZiVnoyX2hLaEtHaUFR?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T18:56:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Russell's biggest lesson from Verstappen war of words",
-          "url": "https://www.the-race.com/formula-1/russell-feels-punished-for-being-too-open-and-honest/",
+          "title": "Antonelli tops Qatar FP2 after multiple red flag delays",
+          "url": "https://www.the-race.com/formula-1/antonelli-tops-qatar-fp2-after-multiple-red-flag-delays-f1/",
           "source": "www.the-race.com",
-          "publishedAt": "2026-11-26T16:06:16+00:00",
+          "publishedAt": "2026-11-27T18:25:57+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "F1 Qatar GP: Antonelli remains on top in FP2 stalled by two red flags",
+          "url": "https://www.autosport.com/f1/news/f1-qatar-gp-fp2-report/10878347/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-27T18:20:55+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Antonelli leads Russell in Qatar as Mercedes control FP1",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQc0g4dlJidTZNSm1oWTNDbDVQYmtLYUhJY2FUazlPZ3FzZ3lCVVRwLTAya0l4OUJEMTVnTnNKeDBBM1FwOXZ4VGVVOXBoc0xDVVd2WXBJaHU4WXg3M1JrNThkNWJKXy1HbjBxSHBzbHl6bU94S3J1eXRxSnBRcXptTi0xVzlDcmN2NmZJMURLZWg3QktpWmdUS3RIaklwUEh5R0FyZkxzS0JWRzkzRGRqM1pfX1U4QnpSTE1yLTI3cHlvdkNjQTlXeW1tWnQwbVpMNmlqNExR?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-27T14:43:00+00:00",
           "kind": "Team news"
         },
         {
@@ -145,6 +159,13 @@
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -162,6 +183,13 @@
       "name": "McLaren",
       "stories": [
         {
+          "title": "Vegas 'a very good weekend'",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN0VoOXdOQ0lVNzdLMU1LbENXRnMteVZpd3ZHOFNZSHdoaGpuMEd1bTFYUnJab2hRTTA0MVRLMDNWbm1Hc3A3eVJ3Yk1rNWt6QnRwckZ5NmlUN2VtSFA4VTdTRHR4WmVOY3pGNXRHZEhlSl9fQVRkOTdwRE9mNWtWNEpHcGpLaWROMzd6Zk9wZXZqYVAycFkwaENLdnMzNjdieGEtbGQ2RHJWRjhsRWNDOERHQ1VBc1FRWU5JZUtn?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-26T18:29:15+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Norris concedes 2026 ‘certainly not been our finest’ year",
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQWFNVWFk3Z08zbzE2cXVvN253VFdLcUNkS2xOdm9zQWtscDY2Zm1HdXROM2xGMXBhUEs5WS1zWURfU1lvZmg5aGlKZkZPWmtzeTJybTBjM2xhT2F5bzg3cG5PV3Y2RnFQWkJQZURJLXc2ei0yV041UUFuS1BPclg4U3ZqYXJZMUM5WlZpelQyTUd1V1VLbDM0Um9BZ0xpTU52MmIyeXdWNWtfSWFKaWJadU5QN1UzV041NnRtRWczdWdpLUJZT2VCNDA0cGxoVnRRd2lMR2R4LWNodzl1SkNHclV6X3JMT2RfTzFZTg?oc=5",
           "source": "Formula 1",
@@ -170,20 +198,27 @@
         },
         {
           "title": "McLaren's driver management lessons for Ferrari",
-          "url": "https://www.the-race.com/formula-1/mclarens-driver-management-lessons-for-ferrari/",
-          "source": "www.the-race.com",
-          "publishedAt": "2026-11-25T12:01:29+00:00",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUmFEdXU4OElLZWQxVENFaTJIMjNaLWJXbGtJaHlEZWhZeFJtdEoyY3hRU3QtTE50R3lfMzFjZ3EyUTA2eEFSQnphc2hWTTNtelFRZVZSbGNEMWdhOVg0NExuemRzel9uMGJTTTVESXVfVjYtUTF6VHJLejhEU0ctOGFMZF9BS2dNWlE?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-25T12:03:32+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Why Norris & Piastri had 'one of their best races' in Vegas",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLTNZaEN3Z0ZlUWR2bEZTNktJLUZBUFFuZDhVbkJpN05LLXIzVUV1d29HMFhZYWdfUk5IRUg1bllqb1hvYnVoanEwMll4R2FNeFlHcGowZUNhVXdpOVY5UG1VSDRkTE5jb3VRM0laV055OUg0aE1ZS2p3T29KTXZHY0s1TF9RVklNSS1SNTdyR1lnTXRaeXA3dFJpQW5TSHhjRVJoX0VnUFJmNTUwaW9ERjdBWjR4Um5lTkxULVpReExTS2thZVlKT1RJVDdNNEFZSklvV2lMX3dzdEZwTUE?oc=5",
+          "title": "Oscar Piastri shares early impressions of new engine in Las Vegas as he prepares for grid penalty",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSlBxbHZjTFF0QkdLWFFtcEFSRVpzRVZJRTFTcC1vZEZ1dE8wbkdlTUQyUXl6bncwaTBEWTBUU3lObEIwVXduejgza1ZQN3lKamo2V0JKZUI0TUVXalVkSjZtMUtGUUF6V08zT01EbV9fM1VUVTl4M3h5NVpuUlZaUVdUejJ3SDlERl9pbjRDSkVtZXhBSnBJMDcybklXZTdFOUZkLUlnTFJTcDYweDE5V2Z2OEhRaG1fcHl2QjBnTkVXaHFMRVNLTkRBTVZ6U04yVm1xOUo2MVpZbU1aT2twLUc4Q1AxcDBFc3JBcnBB?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-23T10:27:00+00:00",
-          "kind": "Team news"
+          "publishedAt": "2026-11-20T06:36:00+00:00",
+          "kind": "Technical report"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -199,10 +234,24 @@
       "name": "Aston Martin",
       "stories": [
         {
+          "title": "Honda can't find an issue after Fernando Alonso's intriguing \"broken engine\" radio message",
+          "url": "https://www.autosport.com/f1/news/why-fernando-alonso-reported-a-broken-engine-in-las-vegas-but-honda-cant-find-an-issue/10878121/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-27T11:03:47+00:00",
+          "kind": "Technical report"
+        },
+        {
+          "title": "Stroll: 'We're at a huge deficit to the competition'",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZVdUblBEaWhFMFVwczZiQ2dpa2EzazRzMkIyTFQwb1k4Mzd1RG5fVFFzaGNxX0gxS3daQU1RR2FVSmNkNUdFaDFyMDNBTUFZek9KMGF4YWdacTlOQ1g3ZFNZcE1aUlY5bzlHZEhYUEVDN2JJMG10bWFnYl8zd2VQRnFVSkF6Ym9fcEtPNXFBMzBzMEhDejh4ME9oY1htNnozd1EwakNB?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-26T19:17:29+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Honda can't find Alonso's 'broken' engine issue",
-          "url": "https://www.the-race.com/formula-1/honda-cant-find-alonsos-broken-engine-issue-again/",
-          "source": "again",
-          "publishedAt": "2026-11-26T13:52:02+00:00",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNekZOVFF2WmF2ZF9vQUxSZERCNkNaMzkwRV9yZjljQ1NLZndWalY1Vm5nODlOWUdETHRHdnk4cEdIaEM5YnpPVGFZanpLWjUtUFRXaFRTMEhZWXhOZVFsYW1DSmRMSlBJUXNaTklmSjE4d3dyOTFiZW5MLVVUZmVFcC1FbmJuOGp3UU9UUThR?oc=5",
+          "source": "The Race",
+          "publishedAt": "2026-11-26T13:55:56+00:00",
           "kind": "Technical report"
         },
         {
@@ -225,16 +274,16 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-22T06:09:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "Alonso: 'Losses on the straights' meant Aston Martin struggled in Las Vegas Qualifying",
-          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXFYUXp4V2xycEpmNUllRVhIOWNrYWlUUElCcGs1UnEzRXZkYmlSQjFyNzZMQ2VoeG5LZmptMzhOaG1sQ05Gc2xOeFNUSGdVMkxRaVQ1VHNQc1FuUzFZVGgzVjVOMm5ycU0xenFZR3BHREVfRjFLdWUxRVp2OU90cDBDZjFwZzB2YmczMlB3aDlXbno0VGpVand0bTJ1LW44T2JMYmtDYThacGE2b1YyOS1IOG13ZTdfSnJOdjZaUDJfRlFxcm1mMmgyMjBzaVI4UVlV?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-21T05:45:00+00:00",
-          "kind": "Team news"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -248,20 +297,6 @@
       "name": "Alpine",
       "stories": [
         {
-          "title": "Gasly: Alpine's Vegas P5 and P6 'a very strong result'",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNWGFfZ01jbHRtT0x6VmhCNlo1SnZHbjVlNkZhaTl5S3ZJb280MmJSTWhsZmRRNGtkTmpyeDhPU000NVdKOXllLUxEODBwN1NPZHhNTW1NSmlfeVJKb2dCVDA4bkpwc3plOGhqZldFRi14bWp3SWEyNE1KQkpWa0ZQSk5EakViS0VkM2hIdk8tTl9XMTFQa2FnbGlJVldpRGJzNTJLZGNmU0c?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T17:46:16+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Colapinto: Vegas 'a strong result' and 'a good boost' for Alpine",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNR1ZJeEQ4eGV2OTRqdlItbFRFTTZXcVkyV0phZl9XbVp1czNrZTc3Z0pjX3V5NUd1NFU1Z2FQY3JiTVp3ZlpYZ1JudnBCMFpSeU9oTDlyaEl5aThFQmRMMlZEOEJJZVlaQktXb3ZzTmI2a0M3c3pGNDhrcW84YVlVY0FaV3A3d21CMWhsRUVrYkdKMEpXcmIyd3BONnNfLXhhcjk1b1pEcDdDSzRDaXNQRlM1RQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T16:41:59+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "‘I’d rather blow up the f***ing engine’: Gasly’s fury over cooling problems",
           "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXR6WmR2ekkzYkNWd3Y5dnBQdHhac1lJNEdEWlVEaEdyc2JfWU9wMk9FWGNIemNuMmFhQjdvYXlEMjk1RGtzLTNtcXN3b2lvdUxKZDlQWHZUUTVZcXlTX2Q1RmlPcU9nY29KU01CUEhaNHNWdmZtVEF0bGc0bjkzUFpTMWhwcl9jemZvMTNqVkZoM0Q5T0EzX3JQbllVYjhUZ2NLSmFzM3VpSGhlbEFz?oc=5",
           "source": "RaceFans",
@@ -274,9 +309,30 @@
           "source": "Formula 1",
           "publishedAt": "2026-11-23T10:48:00+00:00",
           "kind": "Team news"
+        },
+        {
+          "title": "'The podium was there'",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQaFFGV01oczVmQ1gzQ2pyX0NLenFJZjNPbkdsN3BTSUpJR2V6ckU0RksxaFEwS0laUGhHNV9ySEw3OXp0dG9pUU5QQzllVGJxS3kyZFVYY041UFpZNGQzcjVLamNQbDlwcUVqcnZHVEtwQnJGMlJUQlR4cGlfc1hwLXFXU0MzTUNlVWVZS2NMZXEwMnRpeGtPNVJTOGpFdkxQMzNrTGsxUloteTF2SU1tSFZOZGNqa2JkbTNjOUp6UnpvUQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T07:30:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Colapinto: 'Both Alpines in top six is very positive'",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOclgyWEdhNWM3NklLVnVXWlJ0ZlQzWVI3ZG1FNmlNMmpESXViM2lhM0xFTXI4c0JsWDVsZXRWWkI5MmlYRHZGN0NSaTJLdDJBTURSQW9nV0dVMHFLVWxyOS1HcnI2NkNpYWg5VlBqZTZjNWZ1YjRuY2JhM3dUN0dsOC03bXJtZzI3cVc2bVhqY0hUMXBPSWc3dXcwdE1laFAtLUV6Ml82QQ?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-22T06:52:00+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -290,28 +346,35 @@
       "name": "Williams",
       "stories": [
         {
+          "title": "Sainz proposes intriguing DRS solution for F1 2030",
+          "url": "https://www.autosport.com/f1/news/carlos-sainz-explains-his-intriguing-drs-proposal-for-f1-2030/10878170/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-27T11:48:18+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Carlos Sainz explains his intriguing DRS proposal for F1 2030",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOb3hGekRLaks4WHVTcjE1QmNBNzlTZXd0bGVZT2hOQzF0NDNGTWxVYWVEN2VJS3puT1RHUTA3WWpDZE9xTmhiTVdpLXllRko2RXpSR2Nfa1NtcXpYZDlqTFhwYkZlcXNuVlBZUjBmYWthQ002ZlhtdGVmVTh5dV9OYml1cnVxRXlnbF9NSTc4empmVGNaOGhub2ZkQ05fVGFXUk5aZkFfWQ?oc=5",
+          "source": "Motorsport.com",
+          "publishedAt": "2026-11-27T11:47:59+00:00",
+          "kind": "Team news"
+        },
+        {
           "title": "Sainz hails ‘amazing’ Las Vegas GP after ‘incredible’ P8",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPSnZWQTZkTUtLcEEzVjJqTnFmS19tNVpRckd6SF9QcUotVm55YkZxT014RzVIdmVEbVpaUmprRUMtSVpVY1dRUVoxLXMwMjlHMHp0ODR0cHFJcnJ6MWpxdWFjcjZRX0gzeGNrNUZZRVQ4bXhyLW1KdWE5dGgwUFU3Yk9KMWw4RlFjVEh0c296bjlHWFg5a1FqeWViOFJ4VjdOQndZbDZVUFMxa2JaQTk1bXJFSlhWTHFwTG03ZF92YUdzSEJKUUdpZ1dyYW03UQ?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-23T16:14:00+00:00",
           "kind": "Team news"
-        },
-        {
-          "title": "'Amazing to get P8 from basically the back of the grid'",
-          "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb2UybVBfOVhJd2lwa1BwMXR6a3M2cU0xTWVvQnI2TC1UVThIV1FuU1RPM1B1OEx3d3RXd2xxeDVvNmtSQXNITVliYXZMZ1k2NW5HQ0gtdzVqSUF0ejB4dFhodGJJR0VGcThVbnQ5OWxKREJleEk5UzFJYWFOZzNpM3ZVai00R1dxS1RjUEIyVjF6ajk0TFphMHpZbTlxRi1CUTNGYVl4MlNjQjdKRWRpcW5MemV5RE1UcklqbXhyeUR5elVULVhOY1doRXg5S0N5aDZqbg?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-22T06:45:00+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "Paul Williams expects 'a reset for everyone' after Thursday wet running in Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPc2tHbkwtemctNnhBcWtPcEhSTExQZlIzcVQ4UXBrUUk2aTdaSEtUV21Fd0kxV01vWnhGZ0xad3RhcW15NXpFald6UmNuV0NzV1dRRjA0S2RnYWE5WWpWV1RpMHo2TWVDbnpDc201cjBock1ZQUE5ZW5lOFNrTWpjY0ZtclRhZkxZSXlVMFhWXzFFMWVWLUFNdHZpa0ZQUFI3d3ctbkUxbm5hSlhUYjZCSmw2bHFvVHFSaGNDTm5Oa0R3bmZFWTRGaEFzdVctQ2FLU1E?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-20T06:13:00+00:00",
-          "kind": "Team news"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": false,
           "components": [],
@@ -355,6 +418,13 @@
       ],
       "declarations": [
         {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
+        {
           "hasChanges": true,
           "components": [
             "Floor Board",
@@ -394,6 +464,13 @@
       ],
       "declarations": [
         {
+          "hasChanges": false,
+          "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
+        {
           "hasChanges": true,
           "components": [
             "Rear Wing"
@@ -408,28 +485,37 @@
       "name": "Audi",
       "stories": [
         {
-          "title": "Bortoleto laments Audi near misses in 2026 battle for points",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZmszcHJCUlNxbVdmdUc5cWR3TXhSNUJ3UjNwRWMtckFRdm1ZV2xTN2pKajR4NXZwWXd3SlA3RmZpWFZoOTdoTW5OZWoyY0xFVUF4aUY2b1oyb2FyU0luV2F2TTdKWlRUQ2J2MnplQjJFcktDeExaekZTWXNUX0s1VnV2TGFKMEZJUnZ5aElDNjM0TlNYNzJWbEdENlRVX1lNZWN1R0dKUmY1NmhtR1pVR0xYVnU?oc=5",
+          "title": "Audi's Italian GP appeal over Tsunoda decision is dismissed",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNVHJCYndBWmdUNVVFSkRaaXNHRU4zc0NkNFgyQk14VEFHQUlPdDdiX0ZTUHhpOVQxVjVFa04yMFVhMWxLRlI5VmJvQVY1TkpJa3JCdE5jRnhxMFlUYU1ldnQ2bldpa2dVYWFEdXVaUi10T0ppVmJDRGNuYXdnbVBlRWFBRnhrd0g0RHNkRjc5ZUtjWDFueUdacVVJbVJjOG1RSzBOWFRVYkdZaWhDUldjNm5MS1cwQUt2LTB3VF9GNy1HYXFHQk8xMnk4MXFDT2Z0UDU2VFptMA?oc=5",
           "source": "Formula 1",
-          "publishedAt": "2026-11-26T18:31:25+00:00",
+          "publishedAt": "2026-11-27T18:38:00+00:00",
           "kind": "Team news"
         },
         {
-          "title": "'Eyes on the prize'",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdkZYejAzemRHMWZtc1gwY01zS1RYUU53Q3BYS2NpSEZWZDNfVmp2ckRjZGdtSFVOMloya2l4MG8wOUJUUk00SDNadVpTOHMzSmFxS2h5OVJrMjhuZTZ6aE11dm9WQlRYc1NHZ3JBanBxYzc1ZHEtNkN6MU1XWkZjVHNTM1pLUXVVMWswRzVyQzlnUFJFWmF2aXZaLWpselJOT2ZtTjdEZ3VCcHhfRnRwcFd5RTlWQmFEMzQ5dHI1WWRCVE1tei1vMQ?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T17:53:16+00:00",
+          "title": "Audi loses F1 appeal over Tsunoda’s Italian GP restart – here’s why",
+          "url": "https://www.autosport.com/f1/news/audi-appeal-against-yuki-tsunoda-dismissed-heres-why/10878359/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
+          "source": "www.autosport.com",
+          "publishedAt": "2026-11-27T17:58:05+00:00",
           "kind": "Team news"
         },
         {
-          "title": "Audi-backed Slater to take over Camara’s F2 seat for final two rounds in Qatar and Abu Dhabi",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQNlVpazF5S3VuYXgyQnhTeTNJTWFtVEtZMFRZTmF1VTUzV1VuMldnbmVZczc0LXY2V25uMnBoYWc5TXZvRHczcWRPbGZCa2pQVGdJN1ZqMDhPVlNVcVlhWW9HWUF2TGZMOXpPREdIbDFDcVRSdHdHMUg2dmlaNHVhblhJVmRCVGY4dlhiLUJwQ2FlRHMtQmdYbkVfN0dyeFVNbnVQNmxMSWpWMWFUYUdiSVNPZzhzcDNkLVRCLVVocVBjeWlIc1ZuSlVXS3pIdHlqaEE0V19EbGx1ajlNVnN4Ul96MERxOWhaVFhuendB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-24T11:50:00+00:00",
+          "title": "Court of Appeal rejects Audi’s call for Tsunoda penalty in Italian Grand Prix",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMTdvUGVyanlnSno4UWtvbVAxOEd5dDl3U05KZjFZLW1fSDIyMFBNNndidDVTVTExbTBQMi1BTDZWN01EVk9xVVZGM2RvVWhwczNjSlpnYkhYbER6WnlpbnFBSVNLYm5hdUVUTk11azZZUDRUTmNvWU9VSWtSMU52V0Z6QXJvd2dGOVVfa3V4blBWN0JNV1JIYmd3aFFjaTY2ejlEWFR4bnRxbkcyR3NCbF9kdw?oc=5",
+          "source": "RaceFans",
+          "publishedAt": "2026-11-27T17:09:21+00:00",
           "kind": "Team news"
         }
       ],
       "declarations": [
+        {
+          "hasChanges": true,
+          "components": [
+            "Front Corner"
+          ],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
         {
           "hasChanges": true,
           "components": [
@@ -477,6 +563,13 @@
         {
           "hasChanges": false,
           "components": [],
+          "event": "Qatar Grand Prix",
+          "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+          "publishedAt": "27 November 2026"
+        },
+        {
+          "hasChanges": false,
+          "components": [],
           "event": "Las Vegas Grand Prix",
           "url": "https://www.fia.com/system/files/decision-document/2026_las_vegas_grand_prix_-_car_presentation_submissions.pdf",
           "publishedAt": "19 November 2026"
@@ -487,9 +580,57 @@
   "fiaDocuments": [
     {
       "event": "Qatar Grand Prix",
-      "url": "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072/event/Qatar%20Grand%20Prix",
-      "teams": {},
-      "status": "not_published"
+      "url": "https://www.fia.com/system/files/decision-document/2026_qatar_grand_prix_-_car_presentation_submissions.pdf",
+      "publishedAt": "27 November 2026",
+      "teams": {
+        "McLaren": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Mercedes": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Red Bull Racing": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Ferrari": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Williams": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Racing Bulls": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Aston Martin": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Haas F1 Team": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Audi": {
+          "hasChanges": true,
+          "components": [
+            "Front Corner"
+          ]
+        },
+        "Alpine": {
+          "hasChanges": false,
+          "components": []
+        },
+        "Cadillac": {
+          "hasChanges": false,
+          "components": []
+        }
+      },
+      "status": "available"
     },
     {
       "event": "Las Vegas Grand Prix",

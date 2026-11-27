@@ -1,22 +1,22 @@
 {
     "Red Bull Racing": {
-        "Component": "Aero Update (Las Vegas Package)",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Red Bull introduced a specific aerodynamic package for the Las Vegas street circuit that contributed to Max Verstappen's race win.",
-        "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Motorsport.com"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZW02bUUwbGhjTnhZY3U1eVVacmprMWh0NFpVN040Z0h5Nl9JMno2WGg3ZlNjVjRwUEZrYVlUVzdfS2ZJR3k0eDJqTlZveWpqTGN1TzI5XzhpTl9jdVp1M1JrbmJ0cTJKZG1OeHkzREZCbUZwNzUxUDRacnlFa3RDa1FQeFVfZVd2TWpSd0VDcklrUE1wdzU0TFdocUJrc1ExZ0h6MzlJZmRuZXkwaTVvSldtZGM3VnFTZDdtdnVzZEU5V2QyZHBr?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Las Vegas GP",
+        "URL": "",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Las Vegas GP)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Ferrari": {
         "Component": "No confirmed upgrade data yet",
@@ -38,23 +38,23 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "ADUO upgrade",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Certainty": "confirmed",
+        "Summary": "Mercedes introduced the ADUO upgrade package specifically on Kimi Antonelli's car for evaluation during the Qatar Grand Prix weekend.",
+        "Pace_Delta": -0.08,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.08,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "The Race"
         ],
-        "URL": "",
-        "As_Of": "Qatar GP",
-        "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Qatar Grand Prix",
+        "Is_Current_Weekend": true,
+        "Status": "NEW_THIS_WEEKEND",
+        "Badge": "New for Qatar Grand Prix"
     },
     "McLaren": {
         "Component": "No confirmed upgrade data yet",
