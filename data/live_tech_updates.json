@@ -1,9 +1,9 @@
 {
     "Red Bull Racing": {
-        "Component": "Aero update package",
+        "Component": "Aero Update (Las Vegas Package)",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Red Bull introduced an aerodynamic update package in Las Vegas that contributed to Max Verstappen's race victory.",
+        "Summary": "Red Bull introduced a specific aerodynamic package for the Las Vegas street circuit that contributed to Max Verstappen's race win.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
@@ -12,7 +12,7 @@
         "Sources": [
             "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV25iNHBIQ2ZXOVdvMmEtRE1JOHZHRVY5Zk1JXzhMM3dNcF9fSmpYTVc2Q0wwdVBkOUU0dTVmS202V1pSRVdTbDNjVU9wNFNpMEZ5cmVHeVZya1lEVlJSc241c1lOSFFVUnFwSXE2dGFHNWpQV1Q1REZwWUhOWUJrZnp2bUdQeURfWFJvdkJQeFdXOHRVVTllNkU0QW91SzVDYThCbi1yMlo1emhYSXNqNl9NaWlKd3g1Yk1Ca3lieW1wNEdvNXd2cg?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "URL": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQZW02bUUwbGhjTnhZY3U1eVVacmprMWh0NFpVN040Z0h5Nl9JMno2WGg3ZlNjVjRwUEZrYVlUVzdfS2ZJR3k0eDJqTlZveWpqTGN1TzI5XzhpTl9jdVp1M1JrbmJ0cTJKZG1OeHkzREZCbUZwNzUxUDRacnlFa3RDa1FQeFVfZVd2TWpSd0VDcklrUE1wdzU0TFdocUJrc1ExZ0h6MzlJZmRuZXkwaTVvSldtZGM3VnFTZDdtdnVzZEU5V2QyZHBr?oc=5&hl=en-US&gl=US&ceid=US:en",
         "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
@@ -57,23 +57,23 @@
         "Badge": "No update found"
     },
     "McLaren": {
-        "Component": "Front wing (2027-spec)",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren debuted a new front wing design in Brazil intended for 2027 development, which provided a positive performance surprise.",
-        "Pace_Delta": -0.08,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.08,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVFtZlRxOVhMMlFnOHV2NHduM3hXU0dnbGFQdkQ4Q2hrdUdOMVN6UUc1MUVqT3lLcEpVblpvZjVVVWNiX3hOaXItVk9yM3NaVXFpbUFiWXBZM0ljZ3BIV3dvckdkQ0tXaHhPU0I2YkRveDNzN0FWQ1IwV3VEb0ZlNk9mSmgwNXh0RVBGM3N3?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Brazil GP",
+        "URL": "",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
-        "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Brazil GP)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",

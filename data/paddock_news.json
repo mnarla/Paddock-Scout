@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-27T01:47:25.911799+00:00",
-  "newsUpdatedAt": "2026-11-27T01:47:25.911799+00:00",
+  "updatedAt": "2026-11-27T08:51:02.445552+00:00",
+  "newsUpdatedAt": "2026-11-27T08:51:02.445552+00:00",
   "race": "Qatar Grand Prix",
   "teams": [
     {
@@ -17,7 +17,7 @@
           "title": "Max Verstappen without Gianpiero Lambiase at Qatar GP as Tom Hart steps in",
           "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOekZTSzJjc2dsOFphNWszVGVvaEowVUlQNjVYbnh5UDRxeS1tTDc5NEVZV1h1dmdlbFAwNm5wSmR2b0VsdzBlVjNIdjV4ei1iYmllOWNteUZ6VmNBZUFuWElmdHZVclhqV3JsQnBNUXhqYi1MSW94T2EwM2ZfN3V4TnpOTjJKVWdUQkJQSENIU3RXRGRKOHJ0emFJTzhUd2lOZ1pmU0hmUFhLWjlDVXkyMTdn?oc=5",
           "source": "Motorsport.com",
-          "publishedAt": "2026-11-26T19:55:34+00:00",
+          "publishedAt": "2026-11-26T19:57:55+00:00",
           "kind": "Team news"
         },
         {
@@ -36,8 +36,8 @@
         },
         {
           "title": "Hadjar says unfortunate timing caused his front wing to “explode” in Las Vegas",
-          "url": "https://www.racefans.net/2026/11/26/hadjar-says-unfortunate-timing-caused-his-front-wing-to-explode-in-las-vegas/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQa0I4SWt2S2xxbFM5b3ZFcWkyMmNxTDhEYUFNU3dfVXhZeVhoMVo3RUpJQXZRQVNCZ3JlUGszbDFGbnV0M0FuR1dCcWtmN3hfUDNfWGtnRTBoWFhQZXFNTldLZmQ4TXNUY2FhWV93MDNTM3NkbEpEMnVjLTJ4UVhnSUxoTW9HbHVjeXJRRXE2S3hQdE82YjN2RW9JU3RRa21CS094MkEyM2hiTHVVNHVsMk5qRQ?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-26T16:03:51+00:00",
           "kind": "Technical report"
         },
@@ -73,8 +73,8 @@
         },
         {
           "title": "Leclerc denies claim he has a ‘number one’ clause in his Ferrari contract",
-          "url": "https://www.racefans.net/2026/11/26/leclerc-denies-claim-he-has-a-number-one-clause-in-his-ferrari-contract/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMDJSelU3dmlXUEdQbzBfWHppWGZDZFV0czRFUnpCLW5Rd3RkNGZsQkhnNUVpUUxFR3NlemhHemhzVWdySzRhYTY3SERVZEdOR0k2S21VSy1tTkttemhLanJVcTFPLTdfSXlTTjBvOU1zRXVVd2Z0eTlfbVgydUY5X21xR245Slc2OENhd3hPMHpBbEEzMGNYLUxDd2dMLTA3Wms3UHJsUWZOWFJ5?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-26T21:14:39+00:00",
           "kind": "Team news"
         },
@@ -162,20 +162,6 @@
       "name": "McLaren",
       "stories": [
         {
-          "title": "Vegas 'a very good weekend'",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNN0VoOXdOQ0lVNzdLMU1LbENXRnMteVZpd3ZHOFNZSHdoaGpuMEd1bTFYUnJab2hRTTA0MVRLMDNWbm1Hc3A3eVJ3Yk1rNWt6QnRwckZ5NmlUN2VtSFA4VTdTRHR4WmVOY3pGNXRHZEhlSl9fQVRkOTdwRE9mNWtWNEpHcGpLaWROMzd6Zk9wZXZqYVAycFkwaENLdnMzNjdieGEtbGQ2RHJWRjhsRWNDOERHQ1VBc1FRWU5JZUtn?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T18:12:26+00:00",
-          "kind": "Team news"
-        },
-        {
-          "title": "McLaren asked us to unpick the \"crazy\" Las Vegas GP – so we did. Great racing or fake spectacle?",
-          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQa0lmejRxY0tLaFdxY3VTMWhBVHFnazh4UDByRXFoamM3RUNuTXFYbHRxaTRCTVZZWll3QnFmVVFMOE5BcDB6V3RkWlNncEtJZ0llTXRIYjR3ZkpFRFVxRUJONGltajFaNlhxTVJLaDFDQWo5OV9xb1FzYlptLWxRd0ZhSmotTlJmQnh2VU53QVNNMDViTnk4Y2JuRFhTZHVYNERnbnR5SGpnUFl0TGxERjZaaXo1M2NPSHJpYU80dWlZZldEMVo2aW9B?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-26T16:57:44+00:00",
-          "kind": "Team news"
-        },
-        {
           "title": "Norris concedes 2026 ‘certainly not been our finest’ year",
           "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQWFNVWFk3Z08zbzE2cXVvN253VFdLcUNkS2xOdm9zQWtscDY2Zm1HdXROM2xGMXBhUEs5WS1zWURfU1lvZmg5aGlKZkZPWmtzeTJybTBjM2xhT2F5bzg3cG5PV3Y2RnFQWkJQZURJLXc2ei0yV041UUFuS1BPclg4U3ZqYXJZMUM5WlZpelQyTUd1V1VLbDM0Um9BZ0xpTU52MmIyeXdWNWtfSWFKaWJadU5QN1UzV041NnRtRWczdWdpLUJZT2VCNDA0cGxoVnRRd2lMR2R4LWNodzl1SkNHclV6X3JMT2RfTzFZTg?oc=5",
           "source": "Formula 1",
@@ -183,18 +169,18 @@
           "kind": "Team news"
         },
         {
-          "title": "Oscar Piastri shares early impressions of new engine in Las Vegas as he prepares for grid penalty",
-          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSlBxbHZjTFF0QkdLWFFtcEFSRVpzRVZJRTFTcC1vZEZ1dE8wbkdlTUQyUXl6bncwaTBEWTBUU3lObEIwVXduejgza1ZQN3lKamo2V0JKZUI0TUVXalVkSjZtMUtGUUF6V08zT01EbV9fM1VUVTl4M3h5NVpuUlZaUVdUejJ3SDlERl9pbjRDSkVtZXhBSnBJMDcybklXZTdFOUZkLUlnTFJTcDYweDE5V2Z2OEhRaG1fcHl2QjBnTkVXaHFMRVNLTkRBTVZ6U04yVm1xOUo2MVpZbU1aT2twLUc4Q1AxcDBFc3JBcnBB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-20T06:36:00+00:00",
-          "kind": "Technical report"
+          "title": "McLaren's driver management lessons for Ferrari",
+          "url": "https://www.the-race.com/formula-1/mclarens-driver-management-lessons-for-ferrari/",
+          "source": "www.the-race.com",
+          "publishedAt": "2026-11-25T12:01:29+00:00",
+          "kind": "Team news"
         },
         {
-          "title": "McLaren to upgrade MCL40 F1 car at its bogey track Las Vegas",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMXM5aDNSYlltSzVLdXV3S3U1ZWswaTNNaWtIaHY2UXc3MFoyMk9aV0xrZDUxakh5clNabmZsek0zQ3hTUU95YTh3cVRSdUYtbXVwV3dzZ2FIN0hGRU1meVBjLWZVdTVDS25zZTdtZndLSU0wTHJEU1lmTTF4MkM2Y3dyaElnNjhKNEF5QzlSTkNySTU1LXNPcEMyRzRRQjcxaUluT0E3RQ?oc=5",
-          "source": "Autosport",
-          "publishedAt": "2026-11-14T09:13:34+00:00",
-          "kind": "Technical report"
+          "title": "Why Norris & Piastri had 'one of their best races' in Vegas",
+          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOLTNZaEN3Z0ZlUWR2bEZTNktJLUZBUFFuZDhVbkJpN05LLXIzVUV1d29HMFhZYWdfUk5IRUg1bllqb1hvYnVoanEwMll4R2FNeFlHcGowZUNhVXdpOVY5UG1VSDRkTE5jb3VRM0laV055OUg0aE1ZS2p3T29KTXZHY0s1TF9RVklNSS1SNTdyR1lnTXRaeXA3dFJpQW5TSHhjRVJoX0VnUFJmNTUwaW9ERjdBWjR4Um5lTkxULVpReExTS2thZVlKT1RJVDdNNEFZSklvV2lMX3dzdEZwTUE?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-23T10:27:00+00:00",
+          "kind": "Team news"
         }
       ],
       "declarations": [
@@ -212,13 +198,6 @@
     {
       "name": "Aston Martin",
       "stories": [
-        {
-          "title": "Stroll: 'We're at a huge deficit to the competition'",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZVdUblBEaWhFMFVwczZiQ2dpa2EzazRzMkIyTFQwb1k4Mzd1RG5fVFFzaGNxX0gxS3daQU1RR2FVSmNkNUdFaDFyMDNBTUFZek9KMGF4YWdacTlOQ1g3ZFNZcE1aUlY5bzlHZEhYUEVDN2JJMG10bWFnYl8zd2VQRnFVSkF6Ym9fcEtPNXFBMzBzMEhDejh4ME9oY1htNnozd1EwakNB?oc=5",
-          "source": "Formula 1",
-          "publishedAt": "2026-11-26T19:17:29+00:00",
-          "kind": "Team news"
-        },
         {
           "title": "Honda can't find Alonso's 'broken' engine issue",
           "url": "https://www.the-race.com/formula-1/honda-cant-find-alonsos-broken-engine-issue-again/",
@@ -241,17 +220,17 @@
           "kind": "Technical report"
         },
         {
-          "title": "Fernando Alonso: “We can't be competitive with the power unit we have”",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNVXNnMTR6UVFNN1ZwSWN4dnBqY0g5djBrYUV4NjJBd1BGZmlwclIwaU9CR0RHdDdqSEVncS1wTUtHd3hwNkxTdmFkZUpONVhTYWtBVGRkSDZaNmE2SWYzU0xnZlRYWDNFZk1YTGNLM3JHWkU1bG43LUZ4VExPSUZlRmVHS19OVXcwQld6Z1hrRXI5d0JpbVlDWXllTmgyRkRBOTVaaG56UzdEX3d1emc?oc=5",
-          "source": "Motorsport.com",
-          "publishedAt": "2026-11-25T09:12:51+00:00",
-          "kind": "Technical report"
-        },
-        {
           "title": "'We need a lot more horsepower' – Lance Stroll on Aston Martin's Las Vegas GP struggles",
           "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOZTNCNkRhRjBabzE4MVBpQlNibWZuVkJYRXlacUV1MGU3YWxILXdFTktFUi1NWnRTd2tET21qbVM3Nzgxb1VNRjE3bmVrQk9IbGUyVklLNFMzVG1tYnFZaWFDUFdjLVJ6NmphbURHWWFsaXRTVVhYZHAzZEtKLTUxVDJvRU1Rcm15Uzc3elVKUW5Da2FOZW5wTmJwU2pXY0xvdnh2WEZLdGRJVENSMjlpZ21yaVhBOU1pSE0wb1hEY2RFMDQ2cF9PempHNGhEa2hTVHc?oc=5",
           "source": "Formula 1",
           "publishedAt": "2026-11-22T06:09:00+00:00",
+          "kind": "Team news"
+        },
+        {
+          "title": "Alonso: 'Losses on the straights' meant Aston Martin struggled in Las Vegas Qualifying",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYXFYUXp4V2xycEpmNUllRVhIOWNrYWlUUElCcGs1UnEzRXZkYmlSQjFyNzZMQ2VoeG5LZmptMzhOaG1sQ05Gc2xOeFNUSGdVMkxRaVQ1VHNQc1FuUzFZVGgzVjVOMm5ycU0xenFZR3BHREVfRjFLdWUxRVp2OU90cDBDZjFwZzB2YmczMlB3aDlXbno0VGpVand0bTJ1LW44T2JMYmtDYThacGE2b1YyOS1IOG13ZTdfSnJOdjZaUDJfRlFxcm1mMmgyMjBzaVI4UVlV?oc=5",
+          "source": "Formula 1",
+          "publishedAt": "2026-11-21T05:45:00+00:00",
           "kind": "Team news"
         }
       ],
@@ -284,8 +263,8 @@
         },
         {
           "title": "‘I’d rather blow up the f***ing engine’: Gasly’s fury over cooling problems",
-          "url": "https://www.racefans.net/2026/11/24/video-id-rather-blow-up-the-fing-engine-gaslys-fury-over-cooling-problems/",
-          "source": "www.racefans.net",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQXR6WmR2ekkzYkNWd3Y5dnBQdHhac1lJNEdEWlVEaEdyc2JfWU9wMk9FWGNIemNuMmFhQjdvYXlEMjk1RGtzLTNtcXN3b2lvdUxKZDlQWHZUUTVZcXlTX2Q1RmlPcU9nY29KU01CUEhaNHNWdmZtVEF0bGc0bjkzUFpTMWhwcl9jemZvMTNqVkZoM0Q5T0EzX3JQbllVYjhUZ2NLSmFzM3VpSGhlbEFz?oc=5",
+          "source": "RaceFans",
           "publishedAt": "2026-11-24T10:13:49+00:00",
           "kind": "Technical report"
         },
@@ -474,7 +453,7 @@
         },
         {
           "title": "Decision time looms for Colton Herta after 2027 Cadillac F1 snub",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaFU3Sjd6WTI0cWpNUU0wWlVfWThNVXU3LVpEdjE3YmxCLWJvWTJuZUdWWlg5TXR5aVBMOHN5N0V6bHVDREh6dnd3WTEyS1dUazlIb09uSE1fY2VlSUZuVVc4X2R3OGtwb2ptUE52TDI5MkRPbUJwZnpmZ2N1NmhlOGd4SE1aQUxQcUow?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZjZzMWRZajJzT3VCdmpLUTlJajdZaXp4dG9BQm9pMTlRZE5USE9UYmJwNTZBelZtU1J1NmJwREo4Y0REdjRpZU0wTEszU2NNMG5JaVpyd1lubzlwcVFOYkdYOWxEeFBoYVBGcm55Y0dZXzBtbU1Wa1hKdXFkbUUyYWZZUFNkZkthSEE?oc=5",
           "source": "Motorsport.com",
           "publishedAt": "2026-11-24T17:57:03+00:00",
           "kind": "Team news"
