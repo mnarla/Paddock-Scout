@@ -1,22 +1,22 @@
 {
     "Red Bull Racing": {
-        "Component": "No confirmed upgrade data yet",
+        "Component": "Aero update package",
         "Category": "Aero",
-        "Certainty": "pending",
-        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": null,
-        "Upgrade_Score": 0.0,
+        "Certainty": "confirmed",
+        "Summary": "Red Bull introduced an aerodynamic update package in Las Vegas that contributed to Max Verstappen's race victory.",
+        "Pace_Delta": -0.15,
+        "FP2_Best_Pos": 0.0,
+        "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "Awaiting reports"
+            "Motorsport.com"
         ],
-        "URL": "",
-        "As_Of": "Qatar GP",
+        "URL": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV25iNHBIQ2ZXOVdvMmEtRE1JOHZHRVY5Zk1JXzhMM3dNcF9fSmpYTVc2Q0wwdVBkOUU0dTVmS202V1pSRVdTbDNjVU9wNFNpMEZ5cmVHeVZya1lEVlJSc241c1lOSFFVUnFwSXE2dGFHNWpQV1Q1REZwWUhOWUJrZnp2bUdQeURfWFJvdkJQeFdXOHRVVTllNkU0QW91SzVDYThCbi1yMlo1emhYSXNqNl9NaWlKd3g1Yk1Ca3lieW1wNEdvNXd2cg?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Las Vegas GP",
         "Is_Current_Weekend": false,
-        "Status": "PENDING",
-        "Badge": "No update found"
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Las Vegas GP)"
     },
     "Ferrari": {
         "Component": "No confirmed upgrade data yet",
@@ -38,42 +38,42 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "ADUO upgrade",
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Qatar GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "McLaren": {
+        "Component": "Front wing (2027-spec)",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes plans to debut a new ADUO aerodynamic package specifically on Kimi Antonelli's car for the Qatar Grand Prix.",
-        "Pace_Delta": -0.15,
+        "Summary": "McLaren debuted a new front wing design in Brazil intended for 2027 development, which provided a positive performance surprise.",
+        "Pace_Delta": -0.08,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
+        "Upgrade_Score": 0.08,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
             "The Race"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Qatar Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Qatar Grand Prix"
-    },
-    "McLaren": {
-        "Component": "MCL40 Aero/Floor Package",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren introduced a significant upgrade package at the Las Vegas GP intended as a foundation for their 2027 car development.",
-        "Pace_Delta": -0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
-        "Upgrade_Validation": "UNVERIFIED",
-        "Is_Defective": false,
-        "Sources": [
-            "Autosport"
-        ],
-        "URL": "https://www.autosport.com/f1/news/mclaren-to-upgrade-mcl40-f1-car-at-its-bogey-track-las-vegas/10874450/?utm_source=RSS&utm_medium=referral&utm_campaign=RSS-F1&utm_term=News&utm_content=uk",
-        "As_Of": "Las Vegas GP",
+        "URL": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOVFtZlRxOVhMMlFnOHV2NHduM3hXU0dnbGFQdkQ4Q2hrdUdOMVN6UUc1MUVqT3lLcEpVblpvZjVVVWNiX3hOaXItVk9yM3NaVXFpbUFiWXBZM0ljZ3BIV3dvckdkQ0tXaHhPU0I2YkRveDNzN0FWQ1IwV3VEb0ZlNk9mSmgwNXh0RVBGM3N3?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Brazil GP",
         "Is_Current_Weekend": false,
         "Status": "ACTIVE_SPEC",
-        "Badge": "Running spec (from Las Vegas GP)"
+        "Badge": "Running spec (from Brazil GP)"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
@@ -133,23 +133,23 @@
         "Badge": "No update found"
     },
     "Racing Bulls": {
-        "Component": "Front Wing Assembly",
+        "Component": "No confirmed upgrade data yet",
         "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "Isack Hadjar suffered a structural failure of the front wing during the Las Vegas GP weekend, leading to a loss of performance.",
-        "Pace_Delta": 0.15,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.15,
-        "Upgrade_Validation": "DEFECTIVE",
-        "Is_Defective": true,
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
         "Sources": [
-            "Formula 1"
+            "Awaiting reports"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQX0NhUTlYVDFWem4wRGtLcnhWZmJsU3pPRnpJSmd2Y0cxbHcxc2ZVR1pGM2RSeGFpSkJjdkN2MUh2bkc1UFJGZWtWN0w2Rl9xZkFjeF9KTWlKbFkzNG1kbVM3Q3JWVEwxelBqSmJtbkl2SXo4N190RVZDM3pOUTlpOW81QTZsNVlPYzAtVzlWdjJJNjIzRFBTVGFqSnJqNGlLT2hxTkgwTnR6dXNFZTBpOTcza0RfVl9IQWJzUHdCNVBoNUh1WTJMQWhEeG13dzdhb3FvdmpKSmdqSXNBMU9IYll2dG1GendaSzhoVEJ5VVZBSzRVN3ZwUFE2cUJMVGJR?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Las Vegas GP",
+        "URL": "",
+        "As_Of": "Qatar GP",
         "Is_Current_Weekend": false,
-        "Status": "DEFECTIVE",
-        "Badge": "Defective (+0.15s penalty)"
+        "Status": "PENDING",
+        "Badge": "No update found"
     },
     "Haas F1 Team": {
         "Component": "No confirmed upgrade data yet",
