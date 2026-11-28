@@ -3,10 +3,10 @@
         "Component": "Aero Update Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "FIA filings confirmed a specific aerodynamic update package was introduced for the Las Vegas Grand Prix, contributing to Max Verstappen's race win.",
-        "Pace_Delta": -0.15,
+        "Summary": "Red Bull implemented an aerodynamic update package that contributed to Max Verstappen's victory in Las Vegas.",
+        "Pace_Delta": -0.2,
         "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": 0.15,
+        "Upgrade_Score": 0.2,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
@@ -38,42 +38,42 @@
         "Badge": "No update found"
     },
     "Mercedes": {
-        "Component": "ADUO Upgrade",
+        "Component": "No confirmed upgrade data yet",
+        "Category": "Aero",
+        "Certainty": "pending",
+        "Summary": "No recent upgrade report found. This does not confirm an unchanged specification.",
+        "Pace_Delta": 0.0,
+        "FP2_Best_Pos": null,
+        "Upgrade_Score": 0.0,
+        "Upgrade_Validation": "UNVERIFIED",
+        "Is_Defective": false,
+        "Sources": [
+            "Awaiting reports"
+        ],
+        "URL": "",
+        "As_Of": "Qatar GP",
+        "Is_Current_Weekend": false,
+        "Status": "PENDING",
+        "Badge": "No update found"
+    },
+    "McLaren": {
+        "Component": "MCL40 Aero Upgrade Package",
         "Category": "Aero",
         "Certainty": "confirmed",
-        "Summary": "Mercedes is debuting a new 'ADUO' aerodynamic upgrade package, specifically fitted to Kimi Antonelli's car for evaluation.",
+        "Summary": "McLaren introduced an aero upgrade package specifically for the Las Vegas circuit to address performance deficits.",
         "Pace_Delta": -0.15,
         "FP2_Best_Pos": 0.0,
         "Upgrade_Score": 0.15,
         "Upgrade_Validation": "UNVERIFIED",
         "Is_Defective": false,
         "Sources": [
-            "The Race"
+            "Motorsport.com"
         ],
-        "URL": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU19RbEJ3OEw2bThnYjhHd0VJU2h3VjJsR0lKYlQ3S0x0Z3BxSHI4bE9KbnpqUXFPcFpoRlZLUnE0YWxXMmIzNmIxX0p6eTZ3amtvSkJpU2ZjLUZ5SDRIV0NMQy1TcEtZQ01Tbk9NbndvM2hJemxZc2dvZ3RqX09HR3U2bkliR3ZrVWVVTm02WGlBNHZRMEVkbG93?oc=5&hl=en-US&gl=US&ceid=US:en",
-        "As_Of": "Qatar Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "NEW_THIS_WEEKEND",
-        "Badge": "New for Qatar Grand Prix"
-    },
-    "McLaren": {
-        "Component": "Floor v2",
-        "Category": "Aero",
-        "Certainty": "confirmed",
-        "Summary": "McLaren opted not to run their latest floor specification in practice due to concerns over potential damage from the Losail circuit's aggressive kerbs.",
-        "Pace_Delta": 0.0,
-        "FP2_Best_Pos": 0.0,
-        "Upgrade_Score": -0.0,
-        "Upgrade_Validation": "REVERTED",
-        "Is_Defective": false,
-        "Sources": [
-            "RaceFans"
-        ],
-        "URL": "https://www.racefans.net/2026/11/27/not-worth-thinking-about-being-able-to-beat-mercedes-even-with-new-floor-norris/",
-        "As_Of": "Qatar Grand Prix",
-        "Is_Current_Weekend": true,
-        "Status": "REVERTED",
-        "Badge": "Reverted to pre-Qatar Grand Prix spec"
+        "URL": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPX3lwSERyTkVtSUhrOWowMGVoNE9JbVpvVEtpV2wwWFg2Ylc3WHFMSmxVUHd5LXowdGJJdk1hckE5eW0yUVJnYU5aRFhfOG0wdW1jU2pweXRaVy1JbDN4Wm1LcDZEcEQwbmt5MzFMUTRuc2dGVzE3YzI3Y1ZYdThMd1E1MFJYZUdSSnh4RjNxenVpcjMtWDN2T2FCdmJiajdzRHVlLWNOdVk?oc=5&hl=en-US&gl=US&ceid=US:en",
+        "As_Of": "Las Vegas GP",
+        "Is_Current_Weekend": false,
+        "Status": "ACTIVE_SPEC",
+        "Badge": "Running spec (from Las Vegas GP)"
     },
     "Aston Martin": {
         "Component": "No confirmed upgrade data yet",
